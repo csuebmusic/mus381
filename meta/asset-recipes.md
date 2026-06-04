@@ -67,3 +67,76 @@ Note that the empty Audacity window does not display the project sample rate any
 | `audacity-five-clips.png` | One mono track holding five clips in sequence: flat noise-profile clip first, then the four paper-sound clips of varying duration and amplitude |
 | `audacity-noise-reduction-profile.png` | The Noise Reduction dialog in its Step 1 state, with the Get Noise Profile button at the top |
 | `audacity-noise-reduction-apply.png` | The Noise Reduction dialog in its Step 2 state, with three sliders set to defaults (12 / 6.00 / 3) and OK at the bottom |
+
+---
+
+### Mon Wk 7 lecture · Cable and microphone images
+
+**Folder:** `assets/images/module-03-week-07/`
+
+**Used in:** `module-03-recording/lessons/04-reading-widening-the-flow.html` (the Wk 7 lecture reading)
+
+**Status:** provided by Inés (third-party product photos, manufacturer cross-sections, and pinout diagrams). Markers, where present, stay in the source style; only the `.annotation-key` / figcaption beneath is in the course voice (per `visual-conventions.md`).
+
+| Filename | Shows |
+|---|---|
+| `xlr-pinout.jpg` | XLR plug with its three conductors traced (two signal, one ground); the balanced-cable illustration |
+| `ts-pinout.jpg` | Quarter-inch TS plug: tip carries signal, sleeve carries ground (unbalanced, instrument level) |
+| `trs-pinout.jpg` | Quarter-inch TRS plug: the extra ring adds a third conductor (balanced line, or stereo) |
+| `trs-stereo-pinout.jpg` | TRS carrying unbalanced stereo to headphones (left, right, common) |
+| `rca-pinout.jpg` | Stereo RCA pair: red = right, white = left, outer sleeve = ground |
+| `three-mic-types-comparison.jpg` | Side-by-side of dynamic, condenser, and ribbon transducer types |
+| `condenser-microphone-cross-section.webp` | Cutaway of a condenser capsule |
+| `ribbon-microphone-cross-section.jpg` | Cutaway of a ribbon element |
+| `typical-microphone-polar-patterns.png` | Polar-pattern reference (omni, cardioid, figure-8) |
+| `radial-prodi-di-box.jpg` | A DI box (Radial ProDI), the instrument-to-mic-level modifier |
+| `rme-quadmic-preamp.jpg` | A hardware preamp (RME QuadMic), the mic-to-line-level modifier |
+
+**Substitution:** any equivalent product photo, cutaway, or pinout diagram for the same component works; the captions describe the function, not a specific brand.
+
+---
+
+### Mon Wk 8 lecture + Wed Wk 8 lab · Console images
+
+**Folder:** `assets/images/module-03-week-08/`
+
+**Used in:** `module-03-recording/lessons/06-reading-the-mixer.html` (Wk 8 lecture reading) and `module-03-recording/lessons/07-handout-the-mixer-in-practice.html` (Lab 3)
+
+**Status:** provided. The annotated front-panel photos were sourced separately; the rear-panel photos are credited to Toft Audio Designs / PMI Audio Group; the top-down overview is credited to Retro Gear Shop. The two annotated photos carry baked-in labels in their source style.
+
+| Filename | Shows | Used in |
+|---|---|---|
+| `console-overview.jpg` | Top-down view of the studio's 16-channel Toft ATB; chapter-opening overview | 06-reading-the-mixer |
+| `input-strip-annotated.png` | A single input strip, front panel, every control labeled (aux masters, EQ bands, monitor section, fader) | 06-reading-the-mixer |
+| `group-master-annotated.png` | The group/master section: eight submaster strips plus the master strip (used in sections 4 and 5) | 06-reading-the-mixer |
+| `rear-input-section.png` | Rear input jacks per channel: LINE / MON / INSERT / DIR. O/P + XLR | 06-reading-the-mixer |
+| `rear-output-section.png` | Rear output section: subgroup outs, monitor returns, effects returns, aux masters, master out | 06-reading-the-mixer |
+| `analog-stage-box-with-snake.jpg` | A stage box with a multicore snake; the live-sound input scenario | 07-handout-the-mixer-in-practice |
+
+**Substitution:** the annotated strip photos are specific to the Toft ATB and would need re-annotating against the same console if re-captured; the overview and stage-box photos can be swapped for any equivalent console / stage-box image.
+
+---
+
+### Mon Wk 9 studio visit · Studio gear images
+
+**Folder:** `assets/images/module-03-week-09/`
+
+**Used in:** `module-03-recording/lessons/08-handout-studio.html` (Lab 4, the self-guided studio walkthrough)
+
+**Status:** provided (manufacturer product photos of the MB2508 side-rack gear).
+
+| Filename | Shows |
+|---|---|
+| `focusrite-isa-828-mkii.png` | Focusrite ISA 828 MkII, first preamp in the live-room rack |
+| `focusrite-octopre-platinum.jpg` | Focusrite OctoPre Platinum, second preamp in the live-room rack |
+| `hosa-pdr-369-mic-panel.jpg` | Hosa 16-jack mic input panel (one per preamp; jacks 9-16 unused) |
+| `ssl-xlogic-g-compressor.jpg` | SSL XLogic G Series bus compressor |
+| `behringer-xenyx-qx1204usb.webp` | Behringer Xenyx QX1204USB, the desk mixer doing three jobs at once |
+| `rane-mh4-headphone-console.jpg` | Rane MH4 headphone amp (one cue mix, four players) |
+| `avid-hdx-io.webp` | Avid HDX I/O, the bridge between the analog console and Pro Tools |
+| `db25-to-trs-fan-cable.webp` | DB25-to-8×TRS fan cable |
+| `db25-to-xlr-fan-cable.webp` | DB25-to-8×XLR fan cable |
+
+**Substitution:** any equivalent manufacturer product photo for the same unit works.
+
+**On hand but not currently referenced:** the folder also contains `apogee-big-ben.webp`, `switchcraft-9625-close.jpeg`, `switchcraft-9625-patchbay.jpg`, `tc-electronic-m2000.jpg`, `trs-tt-size-comparison.jpg`, and `tt-bantam-cable.avif`. These were gathered for an earlier draft of the studio walkthrough that included a TT/bantam patchbay, a word clock, and an outboard effects unit in the signal path. The current handout 08 does not use them. Keep if the studio walkthrough is later expanded to cover patchbay routing; otherwise they can be removed.
