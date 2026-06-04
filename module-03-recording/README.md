@@ -66,7 +66,7 @@ Two parts, both due Wed Wk 9.
 
 A submitted folder of the student's own recorded sounds, prepped through the standardization pipeline and organized into a documented structure on the NAS.
 
-Full prompt and rubric: [`projects/project-02-sample-library.html`](https://csuebmusic.github.io/mus381/module-03-recording/projects/project-02-sample-library.html) *(to be written)*
+Full prompt and rubric: [`projects/project-02-sample-library.html`](https://csuebmusic.github.io/mus381/module-03-recording/projects/project-02-sample-library.html)
 
 **Scope (working target, revisit when drafting the prompt):** 20–25 prepped sounds, organized in a documented folder structure with a student-written README, all files at 44.1 kHz / 16-bit WAV, all named per convention.
 

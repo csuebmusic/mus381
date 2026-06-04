@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUS 381 · Project 2: Sample library</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+
+<header class="handout-header">
+  <span class="course">MUS 381 · Essentials of Music Technology</span>
+  <span class="meta">Module 03 · Project 2</span>
+</header>
+
+<div class="title-block">
+  <div class="module-tag">Module 03 · Recording, sample prep &amp; library building</div>
+  <h1>Project 2: Sample library</h1>
+  <div class="subtitle">A curated, organized collection of your own recorded and prepped sounds, built across Module 3 and submitted as the midterm.</div>
+</div>
+
+<p class="lede">Across Module 3 you have been recording your own sounds and preparing them for use. Project 2 is the library those sounds add up to: a collection you record, clean, name, and organize into a structure you can actually find your way around. It is the recording half of the midterm, the terminology exam is the other half on the same day, and it is the raw material you will build with in Module 4. The point is not to collect the most exotic sounds. It is to leave Module 3 with a usable palette of your own.</p>
+
+<hr>
+
+<h2>What you turn in</h2>
+
+<ul>
+  <li><strong>Count:</strong> at least 20 prepped sounds, with 20 to 25 as the target. A tight, well-made 20 beats a sloppy 40.</li>
+  <li><strong>Source:</strong> your own recordings, made in the lab and on your phone. No downloaded or borrowed sounds.</li>
+  <li><strong>Format:</strong> each sample a mono WAV, 44.1 kHz, 16-bit (the Module 3 standard, so the library stays consistent and ready for Module 4).</li>
+  <li><strong>Prep:</strong> every sample run through the three-step pipeline from Lab 1: denoise, trim with short fades, normalize to -1 dBFS.</li>
+  <li><strong>Naming:</strong> every file as <code>[category]-[descriptor]-[variant].wav</code>, lowercase, hyphens, no spaces (for example <code>paper-crumble-slow.wav</code> or <code>metal-pan-strike-hard.wav</code>).</li>
+  <li><strong>Organization:</strong> sorted into category folders, with a <code>README.txt</code> you write describing what is in the library and how it is laid out.</li>
+  <li><strong>Software:</strong> Audacity.</li>
+</ul>
+
+<hr>
+
+<h2>What makes a strong library</h2>
+
+<p>A library is graded on how usable it is, not on how unusual the sounds are. A strong one shows that you:</p>
+
+<ul>
+  <li><strong>Recorded cleanly:</strong> good levels with headroom, a low noise floor, no clipping.</li>
+  <li><strong>Prepped consistently:</strong> every sample went through the same pipeline, so they sit at a matched level with clean starts and ends.</li>
+  <li><strong>Named with meaning:</strong> the category, descriptor, and variant actually describe the sound, and a variant marks a real difference between sibling takes (slow vs fast, close vs far), not a guess.</li>
+  <li><strong>Organized for finding:</strong> categories group like with like, and the README tells a stranger, or you in three months, what is here.</li>
+  <li><strong>Curated a range:</strong> the library covers enough different sounds to be worth drawing from.</li>
+</ul>
+
+<p>You do not need a sound from every category, and rare material is not the goal. A library built from paper, a kitchen, and a walk across campus can be excellent.</p>
+
+<h3 id="on-organization">On organization</h3>
+
+<p>The library is only as good as your ability to find a sound in it. Organization is the part that turns a pile of files into a resource. The structure you set up in Lab 1 is the model: a folder per category, the Audacity project kept to one side, and a README at the top.</p>
+
+<pre><code>sample-library/
+  paper/
+    paper-crumble-slow.wav
+    paper-crumble-fast.wav
+    paper-rip-slow.wav
+    paper-rip-fast.wav
+  metal/
+    metal-pan-strike-soft.wav
+    metal-pan-strike-hard.wav
+    metal-wire-scrape-slow.wav
+  water/
+    water-drip-slow.wav
+    water-pour-steady.wav
+  audacity-projects/
+    sample-library.aup3
+  README.txt
+</code></pre>
+
+<p>Category names are yours to choose, as long as they group sounds the way you actually think about them. The README is short: list the categories, say roughly what is in each, and note anything a listener should know (a sample that is louder than the rest, a pair meant to be used together). Write it for someone who has never seen your library.</p>
+
+<hr>
+
+<h2>How to build it</h2>
+
+<p>This is not a one-session project. The library grows across the whole module, and the process counts as much as the final number:</p>
+
+<ul>
+  <li><strong>Start in Lab 1.</strong> Your first four paper sounds are the seed. The folder and the naming convention are set up that day.</li>
+  <li><strong>Record between sessions.</strong> Use the phone reference card. A short walk to record a handful of sounds is the easiest way to grow the library, and the best sounds are usually the ones you go looking for.</li>
+  <li><strong>Prep as you go.</strong> Run new recordings through the pipeline soon after you make them, rather than leaving a backlog of raw files for the last week.</li>
+  <li><strong>Upload every session.</strong> The library lives on the NAS. Download at the start, upload at the end, every time. By Wk 9 it holds real work, so keep it backed up rather than stranded on one lab machine.</li>
+</ul>
+
+<hr>
+
+<h2>Submission</h2>
+
+<p>The library is due at the start of class on Wed Wk 9, before the terminology exam. The TA checks each library for location, structure, README, formats, naming, and count before the exam begins, so arrive with it uploaded and ready.</p>
+
+<div class="submission-card">
+  <div class="submission-title">Submission details</div>
+
+  <div class="submission-row">
+    <div class="submission-label">Working folder</div>
+    <div class="submission-value">Your library on the NAS at <code>/music/students/lastname/sample-library/</code>. This is both where you work, synced from your local copy each session, and what you submit. The Audacity project lives in <code>audacity-projects/</code> inside it.</div>
+  </div>
+
+  <div class="submission-row">
+    <div class="submission-label">File format</div>
+    <div class="submission-value">Each sample a mono WAV, 44.1 kHz, 16-bit, normalized to -1 dBFS.</div>
+  </div>
+
+  <div class="submission-row">
+    <div class="submission-label">Naming</div>
+    <div class="submission-value"><code>[category]-[descriptor]-[variant].wav</code>, lowercase, hyphens, no spaces or special characters.</div>
+  </div>
+
+  <div class="submission-row">
+    <div class="submission-label">README</div>
+    <div class="submission-value">A plain-text <code>README.txt</code> at the top of the library, listing the categories and what is in each.</div>
+  </div>
+
+  <div class="submission-row">
+    <div class="submission-label">Count</div>
+    <div class="submission-value">At least 20 prepped samples, with 20 to 25 as the target.</div>
+  </div>
+
+  <div class="submission-row">
+    <div class="submission-label">Due</div>
+    <div class="submission-value">Start of class, Wed Wk 9, before the terminology exam.</div>
+  </div>
+</div>
+
+<p>After submission, your library is shared with the class for the peer-listening assignment (due Mon Wk 10, a separate assignment). You will browse and listen to classmates' libraries and respond briefly. The point is to hear how other people heard the world, and to pick up ideas for your own Module 4 work.</p>
+
+<hr>
+
+<h2>Rubric</h2>
+
+<p>The sample library is graded out of 100 points across five dimensions, equally weighted at 20 points each. The library and the terminology exam together make up the midterm.</p>
+
+<h3>Recording quality (20)</h3>
+<ul>
+  <li>Levels recorded with headroom, peaks around -12 to -6 dBFS, no clipping</li>
+  <li>Low noise floor: clean captures, not buried in hiss or room rumble</li>
+  <li>The sound you meant to record is the sound that is there</li>
+</ul>
+
+<h3>Sample prep (20)</h3>
+<ul>
+  <li>Denoise applied cleanly, without the watery artifacts of an over-aggressive pass</li>
+  <li>Trimmed to the sound, with short fades so there are no clicks at the start or end</li>
+  <li>Normalized to a consistent ceiling (-1 dBFS) so samples sit at a matched level</li>
+  <li>Each file a mono WAV at 44.1 kHz, 16-bit</li>
+</ul>
+
+<h3>Organization (20)</h3>
+<ul>
+  <li>Sorted into category folders that group like with like</li>
+  <li>A README that describes the contents clearly enough for someone else to navigate</li>
+  <li>The Audacity project kept in <code>audacity-projects/</code>, not loose among the samples</li>
+</ul>
+
+<h3>Naming (20)</h3>
+<ul>
+  <li>Every file follows <code>[category]-[descriptor]-[variant].wav</code></li>
+  <li>Lowercase, hyphens, no spaces or special characters</li>
+  <li>Descriptors and variants are meaningful: a variant marks a real difference between sibling takes</li>
+</ul>
+
+<h3>Range &amp; curation (20)</h3>
+<ul>
+  <li>At least 20 prepped samples</li>
+  <li>Enough variety to be a usable palette rather than 20 versions of one sound</li>
+  <li>Evidence of choice: weak or duplicate takes left out instead of padded in</li>
+</ul>
+
+<hr>
+
+<h2>What I'm not grading</h2>
+
+<ul>
+  <li><strong>How exotic the sounds are.</strong> Paper, a sink, and a stairwell can make a stronger library than rare field recordings used carelessly.</li>
+  <li><strong>Gear.</strong> Phone recordings are expected and welcome. A good phone recording beats a poor lab recording.</li>
+  <li><strong>Count beyond the minimum.</strong> Twenty well-made samples score higher than forty careless ones. Do not pad.</li>
+  <li><strong>Whether I find the sounds interesting.</strong> The rubric is the rubric.</li>
+</ul>
+
+<hr>
+
+<footer class="handout-footer">
+  <span>MUS 381 · CSU East Bay</span>
+  <span>Module 03 · Project 2</span>
+</footer>
+
+</body>
+</html>
