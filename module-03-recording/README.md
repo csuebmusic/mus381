@@ -2,7 +2,7 @@
 
 **Weeks 6–9 · 8 sessions (800 minutes total)**
 
-> **Status:** Spec and session roadmap in place. Lessons 01 through 09 are written. Session 2 (Wed Wk 6) is fully built out block by block; the other session blocks are stubs, filled in as the module is taught. Still to come: the midterm prompt, the peer-listening assignment, and the terminology exam.
+> **Status:** Lessons 01 through 09, the two-part historical listening, the peer-listening assignment, the midterm sample-library prompt, and the terminology exam (with answer key) are all written. Session 2 (Wed Wk 6) is fully built out block by block; the other session blocks are stubs, filled in as the module is taught.
 
 ---
 
@@ -36,7 +36,7 @@ By the end of this module, students should be able to:
 7. Prepare a recorded sample for use: denoise, trim, normalize to a consistent standard
 8. Organize a sample library with a documented folder structure, consistent naming, and a README
 9. Record audio on a phone (iPhone or Android) at a quality suitable for adding to the library
-10. Describe how a mixer routes multiple signal flows at once, and what auxes and busses do in live-sound vs. studio-recording contexts
+10. Describe how a mixer routes multiple signal flows at once, and what auxes and buses do in live-sound vs. studio-recording contexts
 11. Pass a cumulative terminology exam covering vocabulary from Modules 1 through 3
 
 ---
@@ -53,8 +53,8 @@ By the end of this module, students should be able to:
 - **Recording with headroom:** peaks around -12 to -6 dBFS while tracking. The reason: leaving room to make decisions in editing, not committing to a level you can't undo.
 - **The sample prep pipeline:** a three-step standardization process applied to every raw recording before it enters the library. (1) Denoise using a captured silence sample; (2) trim silence at start and end; (3) peak-normalize to a consistent ceiling. The pipeline turns a recording into a sample.
 - **Library organization:** folder structure, naming conventions, an internal README. The library is a usable resource, not a pile of files. Students who can find a sound in their library will use their library; students who can't, won't.
-- **The mixer (introduction):** the place where many signal flows converge, split, and route to different destinations. Channel strips, faders, auxes, busses. Students don't need to operate one yet; they need to understand what it is and why it's the shape it is.
-- **Auxes and busses:** routing tools that work the same way on the mixer; what's different is what they feed. In a live context, auxes feed monitor wedges so performers can hear themselves. In a studio, the same auxes feed headphone mixes for performers being recorded. The mechanism is the same; the destination is different.
+- **The mixer (introduction):** the place where many signal flows converge, split, and route to different destinations. Channel strips, faders, auxes, buses. Students don't need to operate one yet; they need to understand what it is and why it's the shape it is.
+- **Auxes and buses:** routing tools that work the same way on the mixer; what's different is what they feed. In a live context, auxes feed monitor wedges so performers can hear themselves. In a studio, the same auxes feed headphone mixes for performers being recorded. The mechanism is the same; the destination is different.
 
 ---
 
@@ -68,7 +68,7 @@ A submitted folder of the student's own recorded sounds, prepped through the sta
 
 Full prompt and rubric: [`projects/project-02-sample-library.html`](https://csuebmusic.github.io/mus381/module-03-recording/projects/project-02-sample-library.html)
 
-**Scope (working target, revisit when drafting the prompt):** 20–25 prepped sounds, organized in a documented folder structure with a student-written README, all files at 44.1 kHz / 16-bit WAV, all named per convention.
+**Scope:** at least 20 prepped sounds (target 20–25), organized in a documented folder structure with a student-written README, all files at 44.1 kHz / 16-bit WAV, all named per convention.
 
 **Timeline:**
 - Wk 6 Wed: students record their first 4 sounds in lab (paper crumble x2 speeds, paper rip x2 speeds), prep them, and submit them as a starter library
@@ -79,7 +79,7 @@ Full prompt and rubric: [`projects/project-02-sample-library.html`](https://csue
 
 ### Terminology exam
 
-A cumulative in-class exam covering Modules 1 through 3 vocabulary and concepts. ~30 minutes, in-class on Wed Wk 9 after library submission is verified.
+A cumulative in-class exam covering Modules 1 through 3 vocabulary and concepts. Closed-book, no devices. It runs as the second part of the Wed Wk 9 session, after each library is submitted and verified; Session 8 splits the 100-minute period.
 
 Full exam and answer key: [`projects/terminology-exam.md`](./projects/terminology-exam.md) *(TA-facing only)*
 
@@ -632,7 +632,7 @@ Students at the end of Module 3 should be able to:
 3. Move a phone recording through the prep pipeline into their library
 4. Navigate their own library and find a sound by category or by name
 5. Distinguish signal types, cables, and transducer types
-6. Describe what auxes and busses do in two different contexts
+6. Describe what auxes and buses do in two different contexts
 7. Pass the cumulative terminology exam
 
 ### Across-the-cohort signs of trouble
