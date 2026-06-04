@@ -81,7 +81,7 @@ Full prompt and rubric: [`projects/project-02-sample-library.html`](https://csue
 
 A cumulative in-class exam covering Modules 1 through 3 vocabulary and concepts. ~30 minutes, in-class on Wed Wk 9 after library submission is verified.
 
-Full exam and answer key: [`projects/terminology-exam.md`](./projects/terminology-exam.md) *(to be written, TA-facing only)*
+Full exam and answer key: [`projects/terminology-exam.md`](./projects/terminology-exam.md) *(TA-facing only)*
 
 ---
 
