@@ -138,5 +138,3 @@ Note that the empty Audacity window does not display the project sample rate any
 | `db25-to-xlr-fan-cable.webp` | DB25-to-8×XLR fan cable |
 
 **Substitution:** any equivalent manufacturer product photo for the same unit works.
-
-**On hand but not currently referenced:** the folder also contains `apogee-big-ben.webp`, `switchcraft-9625-close.jpeg`, `switchcraft-9625-patchbay.jpg`, `tc-electronic-m2000.jpg`, `trs-tt-size-comparison.jpg`, and `tt-bantam-cable.avif`. These were gathered for an earlier draft of the studio walkthrough that included a TT/bantam patchbay, a word clock, and an outboard effects unit in the signal path. The current handout 08 does not use them. Keep if the studio walkthrough is later expanded to cover patchbay routing; otherwise they can be removed.
