@@ -87,9 +87,13 @@ Full exam and answer key: [`projects/terminology-exam.md`](./projects/terminolog
 
 ## Listening assignment
 
-**Module 3 historical listening:** Built as a mixing-through-listening guide, "Three ways to mix a record": the same kind of material heard at three points on a spectrum that runs from the mix trying to disappear to the mix being the music (Bill Evans Trio, the Ronettes with Phil Spector, Augustus Pablo and King Tubby). It pairs with the mixer sessions, framing routing and level as compositional choices.
+**Module 3 historical listening (two parts):** One idea across two movements, that every choice which turns sound into a record is a compositional choice.
 
-**Planned expansion (two-part listening):** add a first part drawing on the module's original idea, the field-recording and acousmatic tradition that treats recording itself as the compositional act (Chris Watson, Hildegard Westerkamp, Francisco López as starting points). The assignment becomes two movements: recording as composition first, then mixing as composition. The `historical.html` revision that folds in the first part is pending; the current file is the mixing half.
+Part one, recording as composition: the field-recording and acousmatic tradition, three pieces on a spectrum of how present the recordist is, from the recordist vanishing into a place to the recordist narrating the listening (Francisco López, *La Selva*; Chris Watson, *El Tren Fantasma* / *El Divisadero*; Hildegard Westerkamp, *Kits Beach Soundwalk*).
+
+Part two, mixing as composition: the original "Three ways to mix a record" guide, three records on a spectrum from the mix trying to disappear to the mix being the music (Bill Evans Trio; the Ronettes with Phil Spector; Augustus Pablo and King Tubby). It pairs with the mixer sessions.
+
+Both parts share one writeup (`lastname-listening-03`, roughly 350 to 450 words).
 
 Full listening assignment with guided questions: [`listening/historical.html`](https://csuebmusic.github.io/mus381/module-03-recording/listening/historical.html)
 
