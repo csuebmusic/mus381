@@ -12,7 +12,7 @@ To define what happens to MUS 381 student working files on the lab NAS over time
 
 This policy applies to:
 
-- Student working folders on the MUS 381 NAS share (`/music/students/<lastname>/`)
+- Student working folders on the MUS 381 NAS share (`[path]/students/<lastname>/`)
 - Project deliverables and final exports stored on the NAS
 - The shared sample bank and any TA/instructor working files for MUS 381
 

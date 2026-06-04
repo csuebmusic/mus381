@@ -108,7 +108,7 @@ The course is structured around four modules, each ending in a real deliverable.
 
 **Listening:** musique concrète and sound collage tradition (Schaeffer, Henry, more recent examples). Module 2 also includes a peer listening assignment after Project 1 submission, where students listen to each other's pieces in the class listening folder and respond briefly.
 
-**Source sounds:** Provided on the NAS (`/music/shared/sample-banks/project-01/`). Students download, manipulate, and arrange.
+**Source sounds:** Provided on the NAS (`[path]/shared/sample-banks/project-01/`). Students download, manipulate, and arrange.
 
 **Deliverable: Project 1 — Musique concrète**
 - 2 minutes maximum (90 seconds minimum)

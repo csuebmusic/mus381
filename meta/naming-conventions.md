@@ -139,14 +139,16 @@ The week suffix is used when there's a script per week of generated assets (e.g.
 The lab NAS uses the same convention for the same reason. Paths that appear in student-facing materials:
 
 ```
-/music/students/[lastname]/                           Student private folders
-/music/students/[lastname]/project-NN/                Per-project working folders
-/music/students/[lastname]/sample-library/            Per-student sample library (Module 3 onward)
-/music/shared/sample-banks/project-01/                Project 1 sample bank
-/music/shared/mus-381-fall-2026/                      Per-semester shared resources
-/music/shared/mus-381-fall-2026/project-NN-pieces/    Class listening folders for each project
-/music/shared/module-XX/[purpose]/                    Module-specific shared assets (e.g. orientation samples)
+[path]/students/[lastname]/                           Student private folders
+[path]/students/[lastname]/project-NN/                Per-project working folders
+[path]/students/[lastname]/sample-library/            Per-student sample library (Module 3 onward)
+[path]/shared/sample-banks/project-01/                Project 1 sample bank
+[path]/shared/mus-381-fall-2026/                      Per-semester shared resources
+[path]/shared/mus-381-fall-2026/project-NN-pieces/    Class listening folders for each project
+[path]/shared/module-XX/[purpose]/                    Module-specific shared assets (e.g. orientation samples)
 ```
+
+`[path]` stands for the NAS mount root, finalized before the semester starts. Only the root is a placeholder; the `students/` and `shared/` structure below it is fixed.
 
 The `mus-381-fall-YYYY/` prefix is the only place a semester date appears in a path. Every other path is semester-stable.
 

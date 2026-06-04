@@ -248,7 +248,7 @@ Examples: `paper-crumble-slow.wav`, `paper-rip-fast.wav`. Lowercase, hyphens, no
   README.txt            <- student writes; what's in the library, how it's organized
 ```
 
-The library lives at `~/Documents/lastname/sample-library/` on the local machine and at `students/lastname/sample-library/` on the NAS. The Wk 6 lab handout includes a README template students fill in by hand; the template names the organization and lists the samples.
+The library lives at `~/Documents/lastname/sample-library/` on the local machine and at `[path]/students/lastname/sample-library/` on the NAS. The Wk 6 lab handout includes a README template students fill in by hand; the template names the organization and lists the samples.
 
 End-of-session: upload library folder to NAS following the standard session-end routine.
 
@@ -334,7 +334,7 @@ Filename and folder pattern: `sample-library/paper/paper-crumble-slow.wav` for t
 
 Then README. Open TextEdit. **Format → Make Plain Text** is the easily-missed step; if a student skips it, they save an .rtf file with smart quotes and styled text. The plain-text move converts the document before they paste the template in. Walk the room during this step.
 
-Then end-of-session NAS upload (same routine as every Wednesday). Drag `sample-library/` from local to `students/lastname/` on the NAS. **Watch the drag direction:** students sometimes drag the parent `lastname/` folder onto the NAS, ending up with `students/lastname/lastname/sample-library/`. Verify a few uploads by opening `students/lastname/sample-library/paper/` on the NAS and counting four WAVs.
+Then end-of-session NAS upload (same routine as every Wednesday). Drag `sample-library/` from local to `[path]/students/lastname/` on the NAS. **Watch the drag direction:** students sometimes drag the parent `lastname/` folder onto the NAS, ending up with `[path]/students/lastname/lastname/sample-library/`. Verify a few uploads by opening `[path]/students/lastname/sample-library/paper/` on the NAS and counting four WAVs.
 
 **Block 6 · Wrap and phone card (5 min).** Quick close. Hand out the phone-recording reference card on the way out the door. Frame: "From this week on, you can grow your library on your own time using your phone. The card walks through the iPhone and Android setup. Next session we'll talk about other signal types — instrument level, line level, condenser mics, DI boxes — and what cables go with them."
 
@@ -352,7 +352,7 @@ Reminder to do the end-of-session routine on the card before leaving the station
 - **Click pops at trim points.** Student skipped the 50-ms fade. Listen to a sample of theirs on headphones; if you hear a click at the start or end, walk them back to the fade step.
 - **Export Range left at Entire Project.** One WAV file with all four sounds in it instead of four separate WAVs. Catch on the first export; the remaining three should be fine once the dialog defaults to Current selection.
 - **TextEdit saved README as .rtf.** Format → Make Plain Text was skipped. The README has styled text and smart quotes. Fix: open the file in TextEdit, Format → Make Plain Text, re-save (overwriting). Or delete and start fresh from the template in the handout.
-- **NAS upload contains an extra nesting level.** Student dragged `lastname/` instead of `sample-library/`, ending up with `students/lastname/lastname/sample-library/` on the NAS. Verify by clicking into the upload destination; fix by moving the inner folder up one level.
+- **NAS upload contains an extra nesting level.** Student dragged `lastname/` instead of `sample-library/`, ending up with `[path]/students/lastname/lastname/sample-library/` on the NAS. Verify by clicking into the upload destination; fix by moving the inner folder up one level.
 
 ### Pacing fallbacks
 
@@ -375,7 +375,7 @@ Standard 8.5×11 printer paper. About 5 sheets per student (4 for recordings, 1+
 ### After class
 
 - Walk the room before locking up: all machines logged out, NAS ejected, headphones placed on holders, headphone sliders down to default, interface monitor blend reset to a neutral starting position (center for PreSonus, Direct Monitor unpressed for Behringer), gain knobs back to a sane starting position (around 9-10 o'clock).
-- Spot-check 3-4 student folders on the NAS at `students/lastname/sample-library/`: confirm the four WAVs are in `paper/`, the README.txt is at the root, the .aup3 is in `audacity-projects/`.
+- Spot-check 3-4 student folders on the NAS at `[path]/students/lastname/sample-library/`: confirm the four WAVs are in `paper/`, the README.txt is at the root, the .aup3 is in `audacity-projects/`.
 - Listen to one or two samples per spot-checked folder on headphones: confirm peaks at or near -1 dBFS, no click pops at the start or end, clean denoise without underwater artifacts.
 - Note recurring quality issues (e.g. "three of the four students I spot-checked had click pops") for a brief recap moment at the start of Mon Wk 7's lecture.
 - Note any interface or mic failures for repair before next session.
@@ -586,7 +586,7 @@ Students upload their final library to the NAS following the submission card on 
 - Filenames follow the convention
 - Minimum sound count met
 
-Once a library is verified, copy it into the shared peer-listening folder at `/music/shared/mus-381-fall-2026/project-02-libraries/<lastname>/` (read-only for the class). The peer-listening assignment, due Mon Wk 10, reads from there.
+Once a library is verified, copy it into the shared peer-listening folder at `[path]/shared/mus-381-fall-2026/project-02-libraries/<lastname>/` (read-only for the class). The peer-listening assignment, due Mon Wk 10, reads from there.
 
 **Part 2 (remaining ~60–70 minutes): terminology exam.**
 

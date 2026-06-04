@@ -42,7 +42,7 @@ By the end of this single session, students should be able to:
 
 ## Deliverable
 
-A `lastname/` folder uploaded to the NAS at `/music/students/[lastname]/`, containing `week-01/[lastname]-hello.m4a`. The local copy at `~/Documents/lastname/` should also exist. Not graded — confirmation everyone made it through Day 1 with the workflow established.
+A `lastname/` folder uploaded to the NAS at `[path]/students/[lastname]/`, containing `week-01/[lastname]-hello.m4a`. The local copy at `~/Documents/lastname/` should also exist. Not graded — confirmation everyone made it through Day 1 with the workflow established.
 
 ---
 
@@ -146,7 +146,7 @@ This block establishes the workflow model for the entire semester. Students will
 **Open with the conceptual frame.** Before any clicking, draw on the whiteboard:
 
 ```
-~/Documents/lastname/        <-->     /music/students/lastname/
+~/Documents/lastname/        <-->     [path]/students/lastname/
    (local working copy)               (NAS — sync between machines)
 ```
 
@@ -176,7 +176,7 @@ Once students are watching, have them all do it together. **This is the moment m
 - Common cause: wrong username or password. Direct to where this is documented.
 - Common cause: the NAS account wasn't pre-created. Have them work locally for the session — they can upload at end of class once you create the folder.
 
-**Once everyone is connected**, have them navigate to `/music/students/[lastname]/` and confirm their folder exists. It should be empty — that's expected. They'll upload their first work to it at end of class.
+**Once everyone is connected**, have them navigate to `[path]/students/[lastname]/` and confirm their folder exists. It should be empty — that's expected. They'll upload their first work to it at end of class.
 
 **Eject the NAS.** Have students eject the NAS from Finder's sidebar. Explicitly: *"You don't need the NAS connected during the session. We'll reconnect at the end of class to upload."* This builds the habit early — no one should be working with the NAS mounted all session.
 
@@ -283,8 +283,8 @@ Walk them through:
 
 1. Save the recording in QuickTime if they haven't already (`Cmd + S`)
 2. Connect to the NAS again: `Cmd + K`, address, sign in (no keychain save)
-3. Open two Finder windows side by side: one on `~/Documents/lastname/`, one on the NAS at `/music/students/lastname/`
-4. Drag the *contents* of the local `lastname/` folder (today: just `week-01/` with the hello file inside) onto the NAS `lastname/` folder. Or simply drag the entire local `lastname/` folder onto `/music/students/` and choose **Replace** if asked.
+3. Open two Finder windows side by side: one on `~/Documents/lastname/`, one on the NAS at `[path]/students/lastname/`
+4. Drag the *contents* of the local `lastname/` folder (today: just `week-01/` with the hello file inside) onto the NAS `lastname/` folder. Or simply drag the entire local `lastname/` folder onto `[path]/students/` and choose **Replace** if asked.
 5. Confirm the upload: the NAS folder should now show today's modification date and contain `week-01/[lastname]-hello.m4a`
 6. Eject the NAS from Finder's sidebar
 7. Sign out of any browser accounts (Canvas, Google, etc.); quit the browser
@@ -296,7 +296,7 @@ Walk them through:
 
 Tell them this is the same routine they'll do every session for the rest of the semester. Today it'll take a few extra minutes because it's the first time; once habit, it's about 5 minutes total. The Session Routines card at every station summarizes the same steps for daily reference.
 
-**Verify uploads on the projector.** Once everyone is done, open `/music/students/` on the projector and scroll through. Confirm every student's folder is there with their hello file inside. This is the same "small ritual" as before, but now it confirms upload happened, not just save.
+**Verify uploads on the projector.** Once everyone is done, open `[path]/students/` on the projector and scroll through. Confirm every student's folder is there with their hello file inside. This is the same "small ritual" as before, but now it confirms upload happened, not just save.
 
 **Common Day-1 confusions during the upload:**
 
@@ -352,7 +352,7 @@ If you're ahead:
 
 ## After class
 
-- [ ] Open the NAS at `/music/students/`. Confirm every student has a `lastname/week-01/[lastname]-hello.m4a` uploaded. Note any missing students for follow-up — these are students who didn't run the exit routine, which is the sync discipline we're trying to build from Day 1.
+- [ ] Open the NAS at `[path]/students/`. Confirm every student has a `lastname/week-01/[lastname]-hello.m4a` uploaded. Note any missing students for follow-up — these are students who didn't run the exit routine, which is the sync discipline we're trying to build from Day 1.
 - [ ] Note any technical issues (broken stations, NAS hiccups, gear that didn't work) in a running log so they get fixed before Monday.
 - [ ] If the NAS had problems, debrief with Inés about what happened and what to fix.
 - [ ] Email any students whose files are missing — don't shame, just make sure they know how to do it before Monday.

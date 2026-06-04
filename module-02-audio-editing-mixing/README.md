@@ -90,7 +90,7 @@ Block-by-block facilitation, demo scripts, common confusions, and pacing fallbac
 
 ## Pre-module preparation (Inés / TA)
 
-- **Sample bank curated and uploaded** to `/music/shared/sample-banks/project-01/` before Wed Wk 3; full scope and curation guidance in [`projects/project-01-sample-bank-notes.md`](./projects/project-01-sample-bank-notes.md)
+- **Sample bank curated and uploaded** to `[path]/shared/sample-banks/project-01/` before Wed Wk 3; full scope and curation guidance in [`projects/project-01-sample-bank-notes.md`](./projects/project-01-sample-bank-notes.md)
 - **Audacity installed and tested** on every lab machine
 - **Interactive tools built and tested** in advance of the sessions that use them
 
@@ -540,7 +540,7 @@ If a student is stuck on "I don't know what I want to make," that's normal. Sugg
 
 #### End of session: NAS upload (last 5 min)
 
-Final 5 minutes: students follow the handout's end-of-session routine. Save the project (`Cmd+S`), copy `lastname-project01.aup3` (NOT the sources folder, which is already on NAS; NOT the scratch project either, which lives only on local) to `students/lastname/project-01/` on the NAS, eject NAS, log out.
+Final 5 minutes: students follow the handout's end-of-session routine. Save the project (`Cmd+S`), copy `lastname-project01.aup3` (NOT the sources folder, which is already on NAS; NOT the scratch project either, which lives only on local) to `[path]/students/lastname/project-01/` on the NAS, eject NAS, log out.
 
 ### Common confusions
 
@@ -567,7 +567,7 @@ If running short (rare): give more time to free Project 1 sketching. More browsi
 
 ### After class
 
-- Verify NAS uploads. Every student should have `students/lastname/project-01/lastname-project01.aup3` on the NAS by end of class. Spot-check 3-4 student folders.
+- Verify NAS uploads. Every student should have `[path]/students/lastname/project-01/lastname-project01.aup3` on the NAS by end of class. Spot-check 3-4 student folders.
 - Walk the room before locking up: all gear back in the lab's gear storage, machines logged out. Spot-check that headphone sliders are down and interface mix knobs are reset to 60% direct / 40% USB.
 - Note any students whose project file shows zero or one tracks at the end of class. They didn't finish Project 1 setup; check in with them at Wed Wk 4.
 
@@ -666,7 +666,7 @@ For students who haven't engaged: this is your check-in moment. Sit with them. A
 
 #### End of session: NAS upload (last 5 min)
 
-Final 5 minutes: students follow the handout's end-of-session routine. Save Project 1 (and any version files), copy `lastname-project01.aup3` (and any -v2, -v3 versions) to `students/lastname/project-01/` on the NAS. **Don't copy the sources folder (already on NAS) or the scratch project (lives only on local).**
+Final 5 minutes: students follow the handout's end-of-session routine. Save Project 1 (and any version files), copy `lastname-project01.aup3` (and any -v2, -v3 versions) to `[path]/students/lastname/project-01/` on the NAS. **Don't copy the sources folder (already on NAS) or the scratch project (lives only on local).**
 
 ### Common confusions
 
@@ -787,7 +787,7 @@ This is the last session before submission. Anyone whose piece isn't substantial
 Wed Wk 5 is the final work session and submission deadline. Walk through what to expect:
 - Class is a final work session: no new content, just time to finish
 - Files due to NAS by **end of class**, not start
-- Two locations: their private working folder (`lastname/project-01/`) and the class listening folder (`/music/shared/mus-381-fall-2026/project-01-pieces/`). Both must have the final WAV.
+- Two locations: their private working folder (`lastname/project-01/`) and the class listening folder (`[path]/shared/mus-381-fall-2026/project-01-pieces/`). Both must have the final WAV.
 - A short peer-listening response is due Mon Wk 6 (about classmates' pieces in the listening folder), separate assignment
 
 Mention the rubric one more time: five dimensions, students should self-assess against it as they finish their work.
@@ -825,7 +825,7 @@ Every student finishes Project 1 and uploads to both NAS folders by end of class
 
 ### Pre-class checklist
 
-- **Verify the class listening folder exists and is writable by students.** Path: `/music/shared/mus-381-fall-2026/project-01-pieces/`. Permissions: students can write (drop their final WAV in), but cannot delete or modify others' files. Test this before class: drop a placeholder file in, then have one student try to add one and try to modify someone else's. If permissions aren't right, escalate to IT before students start uploading.
+- **Verify the class listening folder exists and is writable by students.** Path: `[path]/shared/mus-381-fall-2026/project-01-pieces/`. Permissions: students can write (drop their final WAV in), but cannot delete or modify others' files. Test this before class: drop a placeholder file in, then have one student try to add one and try to modify someone else's. If permissions aren't right, escalate to IT before students start uploading.
 - **Spot-check working folders** for 5-6 students. They should have at least a `lastname-project01-vN.aup3` project file by now, and ideally an in-progress export. If a student's working folder is empty or has only one early version, flag them to check in with first thing.
 - Walk the room and lab's gear storage (gear storage baseline).
 - Have the project prompt ([`projects/project-01-musique-concrete.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/projects/project-01-musique-concrete.html)) open on the instructor machine. Specifically the Submission section.
@@ -838,7 +838,7 @@ Open: "Today is your final work session for Project 1. By end of class, your fin
 
 Walk through the submission card from the prompt on the projector. Be explicit about both folders:
 1. Your private working folder: `lastname/project-01/lastname-project01.wav`
-2. The class listening folder: `/music/shared/mus-381-fall-2026/project-01-pieces/lastname-project01.wav`
+2. The class listening folder: `[path]/shared/mus-381-fall-2026/project-01-pieces/lastname-project01.wav`
 
 "Drag a copy of your final file to the class folder. Don't move it, copy. Your working folder still gets a copy too."
 
