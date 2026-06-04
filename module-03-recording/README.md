@@ -101,7 +101,7 @@ Full listening assignment with guided questions: [`listening/historical.html`](h
 
 **Peer listening:** Module 3 also includes a peer-listening assignment, where students browse and listen to each other's sample libraries after midterm submission and respond briefly. The format differs from Module 2's peer listening: students are listening to *libraries* (collections of curated sounds) rather than *finished pieces*, so the prompts orient toward what's in the libraries and what the listener would do with it.
 
-Peer listening assignment: [`listening/peer-midterm.html`](https://csuebmusic.github.io/mus381/module-03-recording/listening/peer-midterm.html) *(to be written)*
+Peer listening assignment: [`listening/peer-midterm.html`](https://csuebmusic.github.io/mus381/module-03-recording/listening/peer-midterm.html)
 
 **Due:** Mon Wk 10, before class.
 
@@ -585,6 +585,8 @@ Students upload their final library to the NAS following the submission card on 
 - All files are 44.1 kHz / 16-bit WAV
 - Filenames follow the convention
 - Minimum sound count met
+
+Once a library is verified, copy it into the shared peer-listening folder at `/music/shared/mus-381-fall-2026/project-02-libraries/<lastname>/` (read-only for the class). The peer-listening assignment, due Mon Wk 10, reads from there.
 
 **Part 2 (remaining ~60–70 minutes): terminology exam.**
 
