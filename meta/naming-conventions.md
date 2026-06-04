@@ -195,7 +195,7 @@ The filenames students use when submitting work follow the same lowercase-hyphen
 lastname-projectNN.wav                  Audio deliverables (e.g. lastname-project01.wav)
 lastname-projectNN-vN.wav               Versioned working copies (lastname-project01-v3.wav)
 lastname-listening-NN.docx              Historical listening writeups (NN = module number)
-lastname-peer-listening-NN.docx         Peer listening writeups (NN = project number being responded to)
+lastname-peer-listening-NN.docx         Peer listening writeups (NN = module number, same as the historical listening)
 lastname-orientation.wav                Module 1 / 2 orientation deliverables
 lastname-hello.m4a                      Module 1 Day 1 recording
 ```
@@ -215,9 +215,9 @@ This means `~/Documents/lastname/project-01/lastname-project01.wav` is the canon
 
 ### Listening filename NN meaning
 
-The `NN` in listening filenames is overloaded across the two assignment types:
+The `NN` in listening filenames is the module number, for both assignment types:
 
-- **Historical listening (one per module):** `NN` = module number (`lastname-listening-02.docx` is the Module 2 historical listening writeup, `lastname-listening-03.docx` will be Module 3, and so on).
-- **Peer listening (tied to a specific project):** `NN` = the project number being responded to (`lastname-peer-listening-01.docx` is the peer listening on Project 1 pieces, the Module 3 midterm peer-listening becomes `lastname-peer-listening-02.docx` if the midterm sample library counts as Project 2 in the global numbering).
+- **Historical listening (one per module):** `lastname-listening-02.docx` is the Module 2 historical writeup, `lastname-listening-03.docx` is Module 3, and so on.
+- **Peer listening (where a module has one):** the same module number as that module's historical listening, with `peer` as the distinguisher. `lastname-peer-listening-02.docx` is the Module 2 peer listening (on the Project 1 pieces); `lastname-peer-listening-03.docx` is the Module 3 peer listening (on the midterm sample libraries). The specific files a student responds to are named in the assignment, so the project anchor lives there rather than in the number.
 
 The two assignments are different enough (one is per-module, one is per-project) that giving them different placeholder meanings reads more clearly than forcing both onto the same axis.
