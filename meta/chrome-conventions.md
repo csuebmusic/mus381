@@ -126,7 +126,9 @@ The Session Routines card is the canonical source for what's in this list. The s
 
 Lab handouts that currently carry this sentence:
 - Module 2 Labs 1, 2, 3
-- Module 3 Labs 1, 2
+- Module 3 Labs 1, 2, 3 (handouts 02, 05, 07)
+
+Module 3's Lab 4 (handout 08, the self-guided studio walkthrough) does not carry the tail. It is worked through on the student's own time in MB2508, not a standard MB2525 lab session with shared-gear teardown and a NAS upload, so the routines-card cue does not apply.
 
 ## Markdown files (internal)
 
