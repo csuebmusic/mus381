@@ -66,7 +66,7 @@ Two parts, both due Wed Wk 9.
 
 A submitted folder of the student's own recorded sounds, prepped through the standardization pipeline and organized into a documented structure on the NAS.
 
-Full prompt and rubric: [`projects/project-02-sample-library.html`](https://csuebmusic.github.io/music-technology-essentials/module-03-recording/projects/project-02-sample-library.html) *(to be written)*
+Full prompt and rubric: [`projects/project-02-sample-library.html`](https://csuebmusic.github.io/mus381/module-03-recording/projects/project-02-sample-library.html) *(to be written)*
 
 **Scope (working target, revisit when drafting the prompt):** ~15–25 prepped sounds, organized in a documented folder structure with a student-written README, all files at 44.1 kHz / 16-bit WAV, all named per convention.
 
@@ -89,13 +89,13 @@ Full exam and answer key: [`projects/terminology-exam.md`](./projects/terminolog
 
 **Module 3 historical listening:** Field recording and acousmatic tradition. Composers and sound artists who treat recording itself as the compositional act. Chris Watson, Hildegard Westerkamp, Francisco López as starting points; the choice of three pieces and the framing are to be finalized when the assignment is drafted.
 
-Full listening assignment with guided questions: [`listening/historical.html`](https://csuebmusic.github.io/music-technology-essentials/module-03-recording/listening/historical.html) *(to be written)*
+Full listening assignment with guided questions: [`listening/historical.html`](https://csuebmusic.github.io/mus381/module-03-recording/listening/historical.html) *(to be written)*
 
 **Due:** Mon Wk 9, before class.
 
 **Peer listening:** Module 3 also includes a peer-listening assignment, where students browse and listen to each other's sample libraries after midterm submission and respond briefly. The format differs from Module 2's peer listening: students are listening to *libraries* (collections of curated sounds) rather than *finished pieces*, so the prompts orient toward what's in the libraries and what the listener would do with it.
 
-Peer listening assignment: [`listening/peer-midterm.html`](https://csuebmusic.github.io/music-technology-essentials/module-03-recording/listening/peer-midterm.html) *(to be written)*
+Peer listening assignment: [`listening/peer-midterm.html`](https://csuebmusic.github.io/mus381/module-03-recording/listening/peer-midterm.html) *(to be written)*
 
 **Due:** Mon Wk 10, before class.
 
@@ -175,7 +175,7 @@ This is the spine reading of the module. Everything else (the Wed Wk 6 lab, the 
 
 ### Reading
 
-[`lessons/01-reading-recording-chain.html`](https://csuebmusic.github.io/music-technology-essentials/module-03-recording/lessons/01-reading-recording-chain.html) *(to be written)*
+[`lessons/01-reading-recording-chain.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/01-reading-recording-chain.html) *(to be written)*
 
 ### Connection to Module 1
 
@@ -248,7 +248,7 @@ End-of-session: upload library folder to NAS following the standard session-end 
 
 ### Handout
 
-[`lessons/02-handout-recording-into-audacity.html`](https://csuebmusic.github.io/music-technology-essentials/module-03-recording/lessons/02-handout-recording-into-audacity.html) — Lab 1
+[`lessons/02-handout-recording-into-audacity.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/02-handout-recording-into-audacity.html) — Lab 1
 
 Ten numbered steps from cold start to NAS upload: configure Audacity for mono recording, set gain on the interface against the -12 to -6 dBFS target, set monitor blend, test recording, capture the noise-profile clip, record the four paper sounds, set up the sample-library folder, run the prep pipeline on each clip, export each as a WAV, write the library README, NAS upload. Includes an inline SVG diagram of the headroom target band and five Audacity screenshots at the moments students are most likely to drift.
 
@@ -404,7 +404,7 @@ Builds on Session 1. The basic flow used a dynamic mic, mic-level signal, XLR ca
 
 ### Reading
 
-[`lessons/NN-reading-signals-and-modifiers.html`](https://csuebmusic.github.io/music-technology-essentials/module-03-recording/lessons/) *(to be written; filename to be assigned after Lab 1 handout is named)*
+[`lessons/NN-reading-signals-and-modifiers.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/) *(to be written; filename to be assigned after Lab 1 handout is named)*
 
 ### Open questions for when we draft
 
@@ -442,7 +442,7 @@ This is the one mostly-unstructured session of the module. Use the room: circula
 
 ### Handout
 
-[`lessons/05-handout-phone-to-audacity.html`](https://csuebmusic.github.io/music-technology-essentials/module-03-recording/lessons/05-handout-phone-to-audacity.html) — Lab 2
+[`lessons/05-handout-phone-to-audacity.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/05-handout-phone-to-audacity.html) — Lab 2
 
 Eight steps from phone-side transfer through library upload: get the recording off the phone (transfer method TBD pending IT, currently a placeholder in the handout), pull the library down from the NAS, import, resample 48 kHz → 44.1 kHz, run the prep pipeline (with a noise profile captured from the phone recording itself), export to a student-chosen category folder, README update, worktime, NAS upload. References Lab 1 for the prep-pipeline detail rather than re-walking it.
 
@@ -472,7 +472,7 @@ The lecture explicitly does *not* walk the live-sound or studio-session scenario
 
 ### Reading
 
-[`lessons/06-reading-the-mixer.html`](https://csuebmusic.github.io/music-technology-essentials/module-03-recording/lessons/06-reading-the-mixer.html)
+[`lessons/06-reading-the-mixer.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/06-reading-the-mixer.html)
 
 Five sections plus vocabulary and a "for further exploration" pointer: (1) the mixer as the place where many flows meet (with the analog-vs-digital paragraph); (2) the channel strip walked top to bottom on the Toft ATB with seven embedded callouts (phase, EQ, aux sends with river-and-taps SVG, routing/pan worked example, TRS-as-insert-loop, aux-vs-insert with canonical effect categories, processing-vs-monitoring); (3) the in-line architecture and the I/P REV button; (4) the submaster section (subgroups, monitor returns, stereo effects returns); (5) the master section (aux masters, talkback, monitor switching, 2-track returns, master fader). Closes with vocabulary and a "for further exploration" pointer to the Tape Op review of the ATB Series Console, the Sound on Sound review of the ATB24, and the Shure Audio Systems Guide for Music Educators.
 
@@ -516,7 +516,7 @@ Twelve signals into the console total. With sixteen input channels on our consol
 
 ### Handout
 
-[`lessons/07-handout-the-mixer-in-practice.html`](https://csuebmusic.github.io/music-technology-essentials/module-03-recording/lessons/07-handout-the-mixer-in-practice.html) — Lab 3
+[`lessons/07-handout-the-mixer-in-practice.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/07-handout-the-mixer-in-practice.html) — Lab 3
 
 Walks the live-sound scenario in full detail, then opens the You-try widget. Today's gear is minimal (this is a desk-and-projector session, not a recording session). Students follow the walkthroughs as the lecturer demonstrates the routing decisions on the projected console image, then work the widget at their stations.
 
@@ -546,13 +546,13 @@ The detailed studio-recording walkthrough is not done in class. It lives in hand
 
 ### Handout
 
-[`lessons/08-handout-studio.html`](https://csuebmusic.github.io/music-technology-essentials/module-03-recording/lessons/08-handout-studio.html) — Lab 4
+[`lessons/08-handout-studio.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/08-handout-studio.html) — Lab 4
 
 A self-guided studio guide and walkthrough, written so a student can follow it at the desk on their own time. It documents the studio gear room by room (the live-room rack, the control-room console and side rack, and a full signal-flow map of every jack on the Toft), then walks one vocal mic end to end: from a mic in the live room, onto the Toft, into the singer's headphone cue, through a reverb on the Behringer FX processor and parallel compression on the SSL, and out to a 48 kHz / 16-bit recording on a laptop via the Behringer. Closes with a comping section (Logic Pro and Ableton Live). Not walked in class; handed out at the studio visit for students to work through when the studio is free.
 
 ### Midterm review packet
 
-[`lessons/09-handout-midterm-review.html`](https://csuebmusic.github.io/music-technology-essentials/module-03-recording/lessons/09-handout-midterm-review.html) *(to be written)*
+[`lessons/09-handout-midterm-review.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/09-handout-midterm-review.html) *(to be written)*
 
 Distributed at the end of Session 7 for take-home study. Synthesizes Module 3 vocabulary and concepts in one place. Maps every term back to the lesson where it was introduced so students can re-read the specific section if a term is unfamiliar. Closes with a "what to bring to the exam" reminder (just yourself; closed-book, no devices) and a note that the library submission happens before the exam, so students should arrive with the library uploaded and verified-ready.
 

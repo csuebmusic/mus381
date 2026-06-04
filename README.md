@@ -2,7 +2,7 @@
 
 Course materials, teaching tools, and TA resources for MUS 381 at CSU East Bay.
 
-This repository is the working hub for an introductory music-technology course taught by Inés Thiebaut (Department of Music, CSU East Bay). It functions as a textbook replacement: syllabus, weekly plans, readings, handouts, listening assignments, projects, and interactive browser-based tools all live here, organized by module. Student-facing HTML is also served via GitHub Pages at [`csuebmusic.github.io/music-technology-essentials/`](https://csuebmusic.github.io/music-technology-essentials/), which is what students follow links to.
+This repository is the working hub for an introductory music-technology course taught by Inés Thiebaut (Department of Music, CSU East Bay). It functions as a textbook replacement: syllabus, weekly plans, readings, handouts, listening assignments, projects, and interactive browser-based tools all live here, organized by module. Student-facing HTML is also served via GitHub Pages at [`csuebmusic.github.io/mus381/`](https://csuebmusic.github.io/mus381/), which is what students follow links to.
 
 ## Repository structure
 
