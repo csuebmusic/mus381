@@ -134,7 +134,7 @@ The course is structured around four modules, each ending in a real deliverable.
 **Listening:** Field recording and acousmatic tradition (Chris Watson, Hildegard Westerkamp, Francisco López, others). Module 3 also includes a peer listening assignment after midterm submission, where students browse and listen to each other's sample libraries and respond briefly. The format differs from Module 2's peer listening: students are listening to libraries (collections of curated sounds) rather than finished pieces, so the prompts are oriented toward what's in the libraries and what they'd do with it.
 
 **Deliverable: Midterm (Wk 9)**
-- **Sample library** — minimum [N] sounds, organized in a documented folder structure on the NAS, with naming conventions, prepared and ready for use
+- **Sample library** — minimum 20 sounds (target 20–25), organized in a documented folder structure on the NAS, with naming conventions, prepared and ready for use
 - **Terminology exam** — covers Modules 1–3 vocabulary and concepts
 
 ---
