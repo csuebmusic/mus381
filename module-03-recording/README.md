@@ -2,7 +2,7 @@
 
 **Weeks 6–9 · 8 sessions (800 minutes total)**
 
-> **Status:** Roadmap in place. Session blocks are stubs to be filled in between sessions as the module is built out. The spec at the top is the load-bearing part for now.
+> **Status:** Spec and session roadmap in place. Lessons 01 through 09 are written. Session 2 (Wed Wk 6) is fully built out block by block; the other session blocks are stubs, filled in as the module is taught. Still to come: the midterm prompt, the peer-listening assignment, and the terminology exam.
 
 ---
 
@@ -68,7 +68,7 @@ A submitted folder of the student's own recorded sounds, prepped through the sta
 
 Full prompt and rubric: [`projects/project-02-sample-library.html`](https://csuebmusic.github.io/mus381/module-03-recording/projects/project-02-sample-library.html) *(to be written)*
 
-**Scope (working target, revisit when drafting the prompt):** ~15–25 prepped sounds, organized in a documented folder structure with a student-written README, all files at 44.1 kHz / 16-bit WAV, all named per convention.
+**Scope (working target, revisit when drafting the prompt):** 20–25 prepped sounds, organized in a documented folder structure with a student-written README, all files at 44.1 kHz / 16-bit WAV, all named per convention.
 
 **Timeline:**
 - Wk 6 Wed: students record their first 4 sounds in lab (paper crumble x2 speeds, paper rip x2 speeds), prep them, and submit them as a starter library
@@ -87,9 +87,11 @@ Full exam and answer key: [`projects/terminology-exam.md`](./projects/terminolog
 
 ## Listening assignment
 
-**Module 3 historical listening:** Field recording and acousmatic tradition. Composers and sound artists who treat recording itself as the compositional act. Chris Watson, Hildegard Westerkamp, Francisco López as starting points; the choice of three pieces and the framing are to be finalized when the assignment is drafted.
+**Module 3 historical listening:** Built as a mixing-through-listening guide, "Three ways to mix a record": the same kind of material heard at three points on a spectrum that runs from the mix trying to disappear to the mix being the music (Bill Evans Trio, the Ronettes with Phil Spector, Augustus Pablo and King Tubby). It pairs with the mixer sessions, framing routing and level as compositional choices.
 
-Full listening assignment with guided questions: [`listening/historical.html`](https://csuebmusic.github.io/mus381/module-03-recording/listening/historical.html) *(to be written)*
+**Planned expansion (two-part listening):** add a first part drawing on the module's original idea, the field-recording and acousmatic tradition that treats recording itself as the compositional act (Chris Watson, Hildegard Westerkamp, Francisco López as starting points). The assignment becomes two movements: recording as composition first, then mixing as composition. The `historical.html` revision that folds in the first part is pending; the current file is the mixing half.
+
+Full listening assignment with guided questions: [`listening/historical.html`](https://csuebmusic.github.io/mus381/module-03-recording/listening/historical.html)
 
 **Due:** Mon Wk 9, before class.
 
@@ -128,7 +130,7 @@ Block-by-block facilitation, demo scripts, common confusions, and pacing fallbac
 - **Sample library template ready:** a folder structure students will mirror, ideally available as a downloadable starter on the NAS
 - **Lecture demo materials:** physical examples of XLR, TS, TRS cables (Wk 6 Mon and Wk 7 Mon); a condenser mic and a DI box to hold up in the Wk 7 Mon lecture
 - **MB2508 booked for Mon Wk 9:** the studio visit (Session 7) needs the room reserved a few weeks ahead. The session is a walk around the studio, so the console doesn't have to be powered; if you do power it on to show signal moving, confirm the Toft is in a known-good state and do a quick signal-path check the morning of.
-- **Handout 09 (midterm review) printed in advance:** Session 7 hands it out for take-home study, so the document needs to exist before that Monday. It is the next thing to build for this module. A few extra copies for students who lose theirs between Monday and Wednesday.
+- **Handout 09 (midterm review) printed in advance:** Session 7 hands it out for take-home study, so the document needs to exist before that Monday (it does; see lesson 09). Print a few extra copies for students who lose theirs between Monday and Wednesday.
 
 ---
 
@@ -175,7 +177,7 @@ This is the spine reading of the module. Everything else (the Wed Wk 6 lab, the 
 
 ### Reading
 
-[`lessons/01-reading-recording-chain.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/01-reading-recording-chain.html) *(to be written)*
+[`lessons/01-reading-recording-chain.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/01-reading-recording-chain.html)
 
 ### Connection to Module 1
 
@@ -404,7 +406,7 @@ Builds on Session 1. The basic flow used a dynamic mic, mic-level signal, XLR ca
 
 ### Reading
 
-[`lessons/NN-reading-signals-and-modifiers.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/) *(to be written; filename to be assigned after Lab 1 handout is named)*
+[`lessons/04-reading-widening-the-flow.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/04-reading-widening-the-flow.html)
 
 ### Open questions for when we draft
 
@@ -552,7 +554,7 @@ A self-guided studio guide and walkthrough, written so a student can follow it a
 
 ### Midterm review packet
 
-[`lessons/09-handout-midterm-review.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/09-handout-midterm-review.html) *(to be written)*
+[`lessons/09-handout-midterm-review.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/09-handout-midterm-review.html)
 
 Distributed at the end of Session 7 for take-home study. Synthesizes Module 3 vocabulary and concepts in one place. Maps every term back to the lesson where it was introduced so students can re-read the specific section if a term is unfamiliar. Closes with a "what to bring to the exam" reminder (just yourself; closed-book, no devices) and a note that the library submission happens before the exam, so students should arrive with the library uploaded and verified-ready.
 
