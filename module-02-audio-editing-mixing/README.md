@@ -378,7 +378,7 @@ Three components:
 - **Sustain**: what happens during the sound. Steady (an organ note) or evolving (a vocal "ahhh" that wavers).
 - **Release**: how the sound ends. Abrupt (a percussion clap, no tail) or gradual (a piano note decaying after the key is released).
 
-(Some teachers use ADSR (Attack, Decay, Sustain, Release), distinguishing the initial peak from the steady-state. For Module 2 we keep it to three; Module 4 will introduce the four-stage version with synthesis.)
+(Some teachers use ADSR (Attack, Decay, Sustain, Release), distinguishing the initial peak from the steady-state. For Module 2 we keep it to three.)
 
 Open the reading on the projector and play the three contrasting envelope demos (sharp / sustained / evolving). After each, ask the class: "Describe the envelope. Sharp attack, long sustain, no release? Slow attack, long sustain, gradual release?"
 
@@ -928,7 +928,6 @@ Module 02 readings make several "we'll come back to this" promises. Track them s
 
 - **Mon Wk 2 reading, section 5 (SNR / dynamic range):** "That principle (record with headroom, commit later) is one of the most important practices in audio. We'll return to it in Module 3." Module 3 covers recording, so the mic-gain / input-level discussion is the place to deliver this. Make sure recording-with-margin shows up explicitly in the Module 3 recording session.
 - **Mon Wk 2 reading, section 7 (warning callout):** points students forward to "the tape-physics situation we'll see in Week 3." Delivered by Mon Wk 3 reading's time-pitch coupling section. (Already in place.)
-- **Mon Wk 3 reading (synthesis vocab note + Reverse vocab):** "Module 4 will introduce ADSR when we get into synthesis with Ableton." Module 4 spec needs to introduce ADSR explicitly when synthesis comes online.
 - **Mon Wk 3 reading (Loop entry):** "Looping is far more central in DAWs built around it; we'll come back to it in Module 4 with Ableton." Module 4 needs to handle looping as a first-class concept once we move into Ableton.
 - **Mon Wk 5 reading, section 2 (Normalizing, "Why and when to normalize"):** "You'll do this in Module 3 when you build your midterm sample library." Module 3's sample-prep session needs to teach peak normalization to -1 dB as the standardization step, using the language from the Mon Wk 5 reading (one number applied uniformly; scale not shape).
 - **Mon Wk 5 reading, section 2 (LUFS sibling concept):** "LUFS becomes important when you're finishing a full piece for delivery, which you'll meet later in your studies." This is the one knowingly-vague pointer in Module 02. The course as currently designed doesn't return to LUFS. If Module 4's final-mix workflow ends up touching streaming-delivery considerations, this is the place to honor the pointer; otherwise the framing in the reading is honest enough that it can stand on its own as a "for awareness" mention.

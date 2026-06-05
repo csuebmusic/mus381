@@ -51,7 +51,7 @@ By the end of this module, students should be able to:
 - **Warping:** Ableton's time-stretching. A warped clip follows the set's tempo; warp markers pin moments in the audio to moments in the bar. Beginner level: warp on means "stretch to match the project tempo," warp off means "play at the recorded speed." When you want each: warp on for loops and rhythmic material you want locked to a grid; warp off for one-shots and sounds where the original timing is the point.
 - **Project sample rate vs file sample rate:** the Module 3 libraries are 44.1 kHz / 16-bit; Module 4 sets run at 48 kHz / 32-bit float. A 44.1 kHz file plays fine in a 48 kHz set: Ableton converts on the fly. The rate that matters for the deliverable is the one chosen at export. This echoes the Wk 7 resampling lesson from Module 3, now from the playback side rather than the conversion side.
 - **MIDI (beginner model):** data, not sound. A MIDI note carries pitch, timing, and velocity (how hard). The note triggers an instrument; the instrument makes the audio. "The piano roll says play C3 now, medium-hard; Simpler turns that into the sound of your sample at that pitch." First real encounter is as a *trigger* for the sampler instruments, not as composition.
-- **Simpler:** an instrument that plays one sample across the keyboard. A MIDI note picks the pitch; the sample plays back faster (higher) or slower (lower). Has a volume envelope (attack, decay, sustain, release) that shapes each note. *(See Decisions to settle: this envelope is the natural home for the Module 2 ADSR forward promise.)*
+- **Simpler:** an instrument that plays one sample across the keyboard. A MIDI note picks the pitch; the sample plays back faster (higher) or slower (lower). Has a volume envelope (attack, decay, sustain, release) that shapes each note.
 - **Drum Rack:** a grid of pads, each pad holding one sample. A MIDI note triggers a pad. The way students build a kit from their own library sounds and play or sequence it.
 - **The Ableton mixer:** track faders, pan, sends, return tracks, group tracks, the Master track. Introduced as the digital version of the Module 3 console: the same channel-strip / aux / subgroup / master architecture, rendered in software.
 - **Sends and return tracks:** a send routes a copy of a track's signal to a return track, where an effect (reverb, delay) lives. One reverb, many tracks feeding it. This is exactly the aux-send mechanism from the Toft, now in Ableton; name the connection explicitly.
@@ -95,7 +95,7 @@ Full listening assignment: `listening/historical.html` *(not yet written)*.
 
 | Wk | Day | Focus |
 |---|---|---|
-| 10 | Mon | Session 1 · Lecture: The DAW environment, through Ableton. Opens with the Module 3 peer-listening discussion (the sample libraries). Then: what a full DAW is, Session vs Arrangement view, the clip, nondestructive editing as the reframe of everything from Module 2. |
+| 10 | Mon | Session 1 · Lecture: The DAW environment, through Ableton. What a full DAW is, Session vs Arrangement view, the clip, nondestructive editing as the reframe of everything from Module 2. |
 | 10 | Wed | Session 2 · Lab: Audio editing in Ableton (Lab 1). Import your library, place clips on the Arrangement timeline, basic clip edits (start/end, fades, gain), an introduction to warping and the 44.1→48 playback story. |
 | 11 | Mon | Session 3 · Lecture: Simpler and Drum Rack. Super-basic sampling. First encounter with MIDI tracks as triggers: a MIDI note triggers an instrument; the instrument makes the sound. Simpler plays one sample across the keyboard; Drum Rack is a grid of one-sample pads. |
 | 11 | Wed | Session 4 · Lab: Basic sampling in practice (Lab 2). Load library sounds into Simpler and a Drum Rack, draw or play a short MIDI part, build one short playable idea from the student's own samples. |
@@ -116,17 +116,15 @@ These are the open calls from reshaping the module off the old 4a/4b (audio + MI
 
 1. **Synthesis is dropped from 381.** The new plan keeps Simpler and Drum Rack as *sampling* tools, with MIDI met only as a trigger. The old 4b synth-anatomy lecture (oscillator, filter, envelope, LFO) and the Operator/Wavetable instruments are gone. This reads as a deliberate decluttering for true beginners, with synthesis becoming the natural entry point of Sound Design rather than a rushed final-weeks topic in 381. Confirm that's the intent. If so, synthesis becomes an explicit MUS 381 → Sound Design bridge in the "What follows" note rather than course content.
 
-2. **The Module 2 ADSR forward promise.** Module 2's Wk 3 reading promised ADSR would return in Module 4 synthesis. Simpler's volume envelope exposes attack, decay, sustain, and release directly, so the cleanest resolution is to let ADSR reappear there, in a sampling context, in the Session 3 reading: "the envelope shapes how each triggered note plays." That honors the promise without a synth lecture. Alternative: retire the promise and bridge it to Sound Design. Recommendation: land it on Simpler's envelope.
+2. **Listening.** Proposed: one historical listening (sample-manipulation lineage), anchored to Wk 11; drop the old MIDI-as-control-layer listening; no peer listening. Confirm the one-listening shape and we'll pick artists when we draft it.
 
-3. **Listening.** Proposed: one historical listening (sample-manipulation lineage), anchored to Wk 11; drop the old MIDI-as-control-layer listening; no peer listening. Confirm the one-listening shape and we'll pick artists when we draft it.
+3. **Adobe Audition logistics.** Is Audition licensed and installed on the lab Macs, or is Session 7 a projector demo? Wk 13 Mon is a lecture day with no Wednesday lab, so a projector demo fits cleanly either way; but if Audition is on the stations, students could follow along. Needs an answer from the lab / IT before the session, and it shapes whether Session 7 gets a handout (follow-along) or stays a reading (demo).
 
-4. **Adobe Audition logistics.** Is Audition licensed and installed on the lab Macs, or is Session 7 a projector demo? Wk 13 Mon is a lecture day with no Wednesday lab, so a projector demo fits cleanly either way; but if Audition is on the stations, students could follow along. Needs an answer from the lab / IT before the session, and it shapes whether Session 7 gets a handout (follow-along) or stays a reading (demo).
+4. **Warping placement.** Warping was a standalone 4a topic. Working call: fold it into Session 2 (audio editing), introduced at the moment students import a library clip and meet the project-tempo question. Flag if you'd rather it get its own treatment.
 
-5. **Warping placement.** Warping was a standalone 4a topic. Working call: fold it into Session 2 (audio editing), introduced at the moment students import a library clip and meet the project-tempo question. Flag if you'd rather it get its own treatment.
+5. **The module thematic label.** The chrome label in `meta/templates/handout-module-04.html` still reads "Ableton — audio, MIDI, synthesis," which no longer matches. Proposed replacement: "Ableton — audio, sampling & mixing." No Module 4 handout uses the label yet, so this is the cheapest moment to change it; if approved, I'll update the template, `meta/chrome-conventions.md`, and the module-tag in one pass when we build the first lesson.
 
-6. **The module thematic label.** The chrome label in `meta/templates/handout-module-04.html` still reads "Ableton — audio, MIDI, synthesis," which no longer matches. Proposed replacement: "Ableton — audio, sampling & mixing." No Module 4 handout uses the label yet, so this is the cheapest moment to change it; if approved, I'll update the template, `meta/chrome-conventions.md`, and the module-tag in one pass when we build the first lesson.
-
-7. **Filenames for two lessons.** Session 3: `03-reading-samplers-and-triggers.html` (what it teaches) vs `03-reading-simpler-and-drum-rack.html` (the two instruments by name). Session 7: `07-reading-transferable-concepts.html` (the idea) vs `07-reading-adobe-audition.html` (the tool). Minor; will settle at draft time.
+6. **Filenames for two lessons.** Session 3: `03-reading-samplers-and-triggers.html` (what it teaches) vs `03-reading-simpler-and-drum-rack.html` (the two instruments by name). Session 7: `07-reading-transferable-concepts.html` (the idea) vs `07-reading-adobe-audition.html` (the tool). Minor; will settle at draft time.
 
 ---
 
@@ -136,7 +134,7 @@ These are the open calls from reshaping the module off the old 4a/4b (audio + MI
 
 - **Ableton edition and version confirmed on the lab Macs.** Simpler and Drum Rack are in every edition, so sampling is safe regardless; but handout screenshots and menu paths need to match the installed version (likely Live 12). Confirm the edition and version before any handout is drafted.
 - **MIDI keyboards inventoried and tested at every station.** They enter the gear list this module (the Module 4 handout gear tier adds the MIDI keyboard). Confirm each one is present, connects over USB through the hub, and registers in Ableton's MIDI preferences.
-- **Adobe Audition availability settled** (see Decisions to settle #4): licensed/installed on the lab Macs, or projector demo only.
+- **Adobe Audition availability settled** (see Decisions to settle #3): licensed/installed on the lab Macs, or projector demo only.
 - **A starter session for the mixing lab.** Session 6 (mixing in practice) goes faster if students mix a prepared multitrack session rather than building one from scratch. A small set with a few tracks of student-recognizable material, staged on the NAS, lets the session focus on mixing moves. To be built.
 - **Library readiness check.** Sessions 2 through 4 assume each student has a usable Module 3 library on the NAS. Spot-check that libraries survived the midterm and are findable before Wk 10.
 
@@ -178,9 +176,7 @@ Same as Modules 2 and 3.
 
 ### Roadmap
 
-Opens with the **Module 3 peer-listening discussion** (a forward promise from Module 3): students discuss the sample libraries they browsed, what they noticed, what they'd want to use. This is the cohort-formation bridge and it doubles as the on-ramp to "now let's go make things with these libraries." Budget the first chunk of class for it.
-
-Then the module's framing question: what is a full DAW, and what's new about it after two modules in Audacity? Introduce Session view vs Arrangement view, the clip as a reference to audio, and **nondestructive editing** as the reframe of everything they did in Module 2. Students should leave able to say what a clip is and why editing one doesn't touch the underlying file.
+The module's framing question: what is a full DAW, and what's new about it after two modules in Audacity? Introduce Session view vs Arrangement view, the clip as a reference to audio, and **nondestructive editing** as the reframe of everything they did in Module 2. Students should leave able to say what a clip is and why editing one doesn't touch the underlying file.
 
 ### Reading
 
@@ -234,11 +230,7 @@ The one genuinely new abstraction of the module: **MIDI as a trigger**. Build th
 
 ### Reading
 
-`lessons/03-reading-samplers-and-triggers.html` *(not yet written; filename open, see Decisions to settle #7)*
-
-### Connection to earlier modules
-
-This is the proposed home for the **Module 2 ADSR forward promise** (Decisions to settle #2): Simpler's volume envelope is ADSR, in plain sight, shaping a sample rather than an oscillator. If approved, define attack/decay/sustain/release here as the shape of each triggered note.
+`lessons/03-reading-samplers-and-triggers.html` *(not yet written; filename open, see Decisions to settle #6)*
 
 ### Open questions for when we draft
 
@@ -334,11 +326,11 @@ Step out of Ableton to show that the module's concepts belong to digital audio, 
 
 ### Reading
 
-`lessons/07-reading-transferable-concepts.html` *(not yet written; filename open, see Decisions to settle #7)*
+`lessons/07-reading-transferable-concepts.html` *(not yet written; filename open, see Decisions to settle #6)*
 
 ### Open questions for when we draft
 
-- Reading vs follow-along handout depends on Decisions to settle #4 (is Audition on the stations?). A projector demo wants a reading; a follow-along wants a handout.
+- Reading vs follow-along handout depends on Decisions to settle #3 (is Audition on the stations?). A projector demo wants a reading; a follow-along wants a handout.
 - Which concepts to map, and in what order. Probably the spine of the whole course (sample rate / bit depth → editing → EQ / dynamics → multitrack), so the session doubles as a quiet review of the semester.
 
 ### Block-by-block
@@ -364,7 +356,6 @@ Students at the end of Module 4 should be able to:
 ### Forward promises and bridges
 
 - **Sound Design bridge:** synthesis (oscillators, filters, envelopes, LFOs, the instruments left out of this module) is the entry point of Sound Design. If Decisions to settle #1 is confirmed, this is where the bridge gets named: students who want to make sound from scratch rather than from recordings go to Sound Design next.
-- **ADSR forward promise** from Module 2: resolved on Simpler's envelope if Decisions to settle #2 is approved.
 
 ### What gets logged
 

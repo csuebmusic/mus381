@@ -648,9 +648,7 @@ Students at the end of Module 3 should be able to:
 
 *Stub. To be filled in as readings are drafted.*
 
-- The peer-listening discussion on Mon Wk 10 (start of Module 4) opens with a discussion of the sample libraries students just submitted. Plan that into Module 4's first session.
 - Sample libraries built in this module become the source material for Module 4 audio work (Wks 10–11 in Ableton). The "your library" framing should appear in the Module 4 README.
-- The ADSR forward-promise from Module 2 (Mon Wk 3 reading) is still outstanding for Module 4 synthesis content.
 
 ### What gets logged
 
