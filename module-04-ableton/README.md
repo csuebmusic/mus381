@@ -46,7 +46,22 @@ The lab runs **Ableton Live 11 Suite**. Live is a large DAW; this module deliber
 - Monitoring — https://www.ableton.com/en/live-manual/11/routing-and-i-o/#monitoring
 - Internal Routings — https://www.ableton.com/en/live-manual/11/routing-and-i-o/#internal-routings
 - Mixing — https://www.ableton.com/en/live-manual/11/mixing/
-- Live Audio Effect Reference — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/ (the chapter is the reference; the lessons focus on a small subset, see Session 5's open question)
+- Live Audio Effect Reference — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/ . The locked effect set, the same effect types from Modules 2 and 3, now as Live devices, split into inserts (where chain order matters) and sends (shared on return tracks):
+
+*Insert effects, in chain order:*
+1. Utility — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#utility (first and/or last in the chain, when needed)
+2. EQ Eight — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#eq-eight
+3. Auto Filter — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#auto-filter
+4. Compressor — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#compressor
+5. Glue Compressor — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#glue-compressor (for the master or a bus)
+6. Limiter — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#limiter
+7. Multiband Dynamics — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#multiband-dynamics
+
+*Send effects:*
+- Hybrid Reverb — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#hybrid-reverb
+- Reverb — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#reverb
+- Delay — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#delay
+- Echo — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#echo
 
 **Week 13 (Adobe Audition):** outside the Ableton manual; scope settles with the Audition logistics decision.
 
@@ -82,7 +97,7 @@ By the end of this module, students should be able to:
 - **The Ableton mixer:** track faders, pan, sends, return tracks, group tracks, the Master track. Introduced as the digital version of the Module 3 console: the same channel-strip / aux / subgroup / master architecture, rendered in software.
 - **Sends and return tracks:** a send routes a copy of a track's signal to a return track, where an effect (reverb, delay) lives. One reverb, many tracks feeding it. This is exactly the aux-send mechanism from the Toft, now in Ableton; name the connection explicitly.
 - **Group tracks:** several tracks folded into one for combined level and processing. Ableton's subgroups. The connection back to the console's subgroup strips.
-- **Built-in devices (mixing):** EQ Eight (the EQ), Compressor (the dynamics tool), Reverb and Delay (the send effects). Beginner level: what each does and where it sits, mapped onto the EQ and compression students already met in Module 2.
+- **Built-in devices (mixing):** the same effect types from Modules 2 and 3, now as Live devices, in two roles. Insert effects sit in a track's chain where order matters (gain via Utility, EQ, filtering, compression, limiting, multiband dynamics); send effects live on return tracks and are shared across tracks (reverbs, delays). What each does and where it sits, mapped onto the EQ and dynamics from Module 2 and the aux-send architecture from Module 3. Full locked list in Reference scope.
 - **Transferable concepts (Audition coda):** sample rate, bit depth, gain, fades, EQ, compression, multitrack. The Session 7 point is that these are properties of digital audio and audio production, not of Ableton. Audition is the worked example of "the same ideas, a different tool."
 
 ---
@@ -310,7 +325,7 @@ Hands-on with the Session 3 instruments. Students load their own library sounds 
 
 ### Roadmap
 
-The Ableton mixer as the **digital version of the Module 3 console**. Walk the mapping explicitly: track fader = channel fader, pan = pan, send to a return = aux send, group track = subgroup, Master track = master bus. Then the built-in devices that do the mixing work: EQ Eight (the EQ from Module 2, now graphical and nondestructive) and Compressor (the dynamics tool from Module 2), plus Reverb and Delay as the things that live on return tracks. Mixing is reframed as the same set of decisions students met on the Toft, now in software they can actually drive.
+The Ableton mixer as the **digital version of the Module 3 console**. Walk the mapping explicitly: track fader = channel fader, pan = pan, send to a return = aux send, group track = subgroup, Master track = master bus. Then the built-in devices that do the mixing work, the same effect types students met in Modules 2 and 3, now as Live devices. Insert effects sit in a track's chain and their order matters (Utility, EQ Eight, Auto Filter, Compressor, then the bus and master tools: Glue Compressor, Limiter, Multiband Dynamics). Send effects live on return tracks and are shared across tracks (Hybrid Reverb, Reverb, Delay, Echo), which is the aux-send mechanism from the Toft. Mixing is reframed as the same set of decisions students met on the Toft, now in software they can actually drive. Full locked list in Reference scope.
 
 ### Reading
 
@@ -318,7 +333,7 @@ The Ableton mixer as the **digital version of the Module 3 console**. Walk the m
 
 ### Manual (Live 11)
 
-Monitoring; Internal Routings; Mixing; Live Audio Effect Reference (focused subset, see Open questions).
+Monitoring; Internal Routings; Mixing; Live Audio Effect Reference (locked insert + send set, see Reference scope).
 
 ### Connection to earlier modules
 
@@ -327,7 +342,6 @@ Two threads land at once: Module 2's EQ and compression (what these devices do) 
 ### Open questions for when we draft
 
 - Sends-and-returns is the conceptually rich part and the place students most often go wrong (insert vs send). Worth the most space.
-- The Live Audio Effect Reference chapter is the source, but the lesson focuses on a small subset. Proposed: EQ Eight, Compressor, Reverb, Delay (plus Utility for gain/width if useful). Confirm the subset; resist cataloguing Live's full device set.
 
 ### Block-by-block
 
