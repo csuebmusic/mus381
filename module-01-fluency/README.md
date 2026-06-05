@@ -228,6 +228,8 @@ The lab has different audio interface models (and different MIDI keyboard models
 
 **Audio MIDI Setup.** `Cmd + Space`, type "Audio MIDI Setup." It opens. Students should see their audio interface listed.
 
+**Naming gotcha.** The UM2 does not show up as "Behringer" or "UM2." It appears as **USB Audio CODEC**, and as two entries at that: CODEC 1 is the output, CODEC 2 the input. The PreSonus shows up as **AudioBox USB 96**. Students hunting for a brand name on a UM2 station get stuck here; point them to "USB Audio CODEC." The student reading covers this, but it's the most common Day 1 snag at this step.
+
 If they don't:
 - Common cause: USB cable not seated properly. Replug into the same hub port.
 - Common cause: a flaky port on the hub. Try a different port on the same hub.
