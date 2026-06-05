@@ -129,13 +129,13 @@ Each module has a default audio format that students use throughout. The standar
 | Module | Sample rate | Bit depth | DAW | Notes |
 |---|---|---|---|---|
 | 1 | n/a | n/a | QuickTime | Day 1 hello recording uses whatever default QuickTime sets |
-| 2 | 44.1 kHz | 16-bit | Audacity | CD standard, matches the destructive-editing pedagogy and Schaeffer historical context |
-| 3 | 44.1 kHz | 16-bit | Audacity | Continues Module 2 standard so sample-library files are compatible |
-| 4 | 48 kHz | 32-bit | Ableton | Higher resolution than Modules 2–3; the shift is taught explicitly |
+| 2 | 48 kHz | 24-bit | Audacity | Course-wide rate; 24-bit gives editing headroom |
+| 3 | 48 kHz | 24-bit | Audacity | Matches Module 2 and the 48/24 phone field recordings |
+| 4 | 48 kHz | 32-bit | Ableton | Same rate as Modules 2–3; bit depth steps to 32 at export |
 
-The Module 2 → Module 4 standards shift is a pedagogical moment, not a footnote. Module 4 readings should introduce 48/32 explicitly and explain why the module steps up from 44.1/16.
+The course works at 48 kHz throughout. Modules 2–3 use 24-bit; Module 4 exports at 32-bit. The only standards shift is the bit-depth step at Module 4, introduced where students export.
 
-Build scripts respect the per-module standard: anything that writes to `assets/audio/module-02-*` outputs 44.1/16, anything that writes to `assets/audio/module-04-*` outputs 48/32.
+Build scripts respect the per-module standard for working assets: `assets/audio/module-02-*` and `assets/audio/module-03-*` output 48/24, `assets/audio/module-04-*` outputs 48/32. Concept demos that teach a specific rate or depth (the Wk 2 sample-rate and bit-depth degradation demos) use whatever the lesson requires.
 
 ## Page width and structure
 

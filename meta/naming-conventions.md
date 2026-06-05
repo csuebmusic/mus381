@@ -185,7 +185,7 @@ The variant slot is optional when there's only one take of a descriptor (`metal-
 
 The category is also the folder. `paper-crumble-slow.wav` lives in `paper/`. The redundancy is intentional: the file is identifiable on its own (without the folder context) and the folder is browsable on its own (without renaming files when reorganizing).
 
-All samples in the library are mono, 44.1 kHz, 16-bit WAV, prepped through the denoise / trim / normalize pipeline (see the Module 3 Wk 6 lab handout).
+All samples in the library are mono, 48 kHz, 24-bit WAV, prepped through the denoise / trim / normalize pipeline (see the Module 3 Wk 6 lab handout).
 
 ## Student submission filenames
 

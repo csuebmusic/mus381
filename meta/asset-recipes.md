@@ -20,7 +20,7 @@ This file complements the build-script docs in [`../build/README.md`](../build/R
 
 **What it is:** a stereo bell-like resonance or sustained ringing texture, ~16 seconds, that gradually decays to silence across its full length.
 
-**Format:** WAV, 44.1 kHz, 16-bit, stereo.
+**Format:** WAV, 48 kHz, 24-bit, stereo.
 
 **Pedagogical fit:** the audible envelope shape (slow decay across the full clip) is what makes the lab work. Students cut into the decay around the 7-second mark and apply a fade to what remains; the visible taper across both stereo channels makes the editing moves easy to see on the waveform, and the audible fade-then-silence is what tells them the edit succeeded.
 
@@ -34,17 +34,17 @@ This file complements the build-script docs in [`../build/README.md`](../build/R
 
 **Used in:** Lab 1 (`module-02-audio-editing-mixing/lessons/03-handout-audacity-orientation.html`)
 
-**Status:** captured (Inés's Mac, May 2026). If re-capture is needed, the table below documents what each screenshot shows.
+**Status:** needs re-capture. The May 2026 originals show 44100 Hz / 16-bit; the course standard is now 48000 Hz / 24-bit, so `audacity-settings.png` and `audacity-export.png` must be re-shot to match the table below.
 
 | Filename | Content |
 |---|---|
-| `audacity-settings.png` | Preferences → Audio Settings: Quality section showing Project Sample Rate 44100 Hz, Default Sample Rate 44100 Hz, Default Sample Format 16-bit |
+| `audacity-settings.png` | Preferences → Audio Settings: Quality section showing Project Sample Rate 48000 Hz, Default Sample Rate 48000 Hz, Default Sample Format 24-bit |
 | `audacity-interface-empty.png` | Empty Audacity main window with eight numbered orange markers placed directly on the regions identified in Step 3's annotation key (menu bar, transport, tools, level meters, Audio Setup, ruler, track area, selection toolbar) |
 | `audacity-imported.png` | Main window with `orientation-sample.wav` imported as a stereo track, showing the ringing-decay waveform across both channels |
 | `audacity-selection.png` | Same window with a region selected from roughly 7s to the end of the file (visible blue highlighted region in the waveform and timeline) |
 | `audacity-fade-out.png` | Same window after the cut + fade-out: file now ends around 7.5s, last ~2.5s shows the visible fade taper |
 | `audacity-export-prompt.png` | The "How would you like to export?" interstitial dialog with two options (Share to audio.com / On your computer) and the "Don't show again" checkbox |
-| `audacity-export.png` | Export Audio dialog: filename `thiebaut-orientation.wav`, format WAV (Microsoft), Stereo, 44100 Hz, Signed 16-bit PCM, Entire Project |
+| `audacity-export.png` | Export Audio dialog: filename `thiebaut-orientation.wav`, format WAV (Microsoft), Stereo, 48000 Hz, Signed 24-bit PCM, Entire Project |
 
 **About the annotations on `audacity-interface-empty.png`:** the eight numbered markers are baked into the PNG itself (orange filled circles with white numbers, placed directly on the regions they identify). The handout's annotation key below the figure provides the legend. If the screenshot is ever re-captured, the new version will need fresh annotations drawn on; the numbering should match the order in the handout's Step 3 key.
 
