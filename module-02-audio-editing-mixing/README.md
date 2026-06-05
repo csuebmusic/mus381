@@ -241,7 +241,7 @@ Close with a small bridge to Wednesday: "On Wednesday we'll start working in Aud
 
 **"Why would anyone use lower sample rates?"** Smaller files, less CPU, certain aesthetic uses (lo-fi). Module 4 will touch on intentional sample-rate manipulation as an effect.
 
-**"Is 32-bit float just better?"** It's better for *working* (more headroom, no clipping), not necessarily for *delivering*. CDs and most distribution still use 16-bit. We'll use 32-bit in Module 4's Ableton work.
+**"Is 32-bit just better?"** It's better for *working* (more headroom, no clipping), not necessarily for *delivering*. CDs and most distribution still use 16-bit. We'll use 32-bit in Module 4's Ableton work.
 
 **"What's the difference between 16-bit and 24-bit if both sound 'good enough' to me?"** 24-bit gives you more headroom for editing without losing resolution. For final delivery, 16-bit is usually fine. For working files, 24-bit is the professional standard.
 
