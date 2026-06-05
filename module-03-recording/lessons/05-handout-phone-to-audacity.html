@@ -71,7 +71,7 @@
   <li>Get a phone recording off the phone and onto the lab Mac.</li>
   <li>Pull your library down from the NAS and open a fresh Audacity project for today's work.</li>
   <li>Import the phone recording into Audacity.</li>
-  <li>(4a) Feel what sample rate is by changing it from the Audio Track Dropdown Menu and listening to what happens, then (4b) resample properly from <strong>48 kHz</strong> down to your project's <strong>44.1 kHz</strong>.</li>
+  <li>Check the imported file's rate. Phone recordings are already at 48 kHz, so they match the project and you move on. If a file ever comes in at another rate, resample it to 48 kHz (Step 4 shows how).</li>
   <li>Run the prep pipeline: <strong>denoise → trim → normalize</strong>.</li>
   <li>Export the prepped sample to a new category folder in your library.</li>
   <li>Worktime: repeat for more phone recordings, record new sounds in the lab, grow the library.</li>
@@ -100,7 +100,7 @@
 
 <ol class="steps">
   <li>Pull your <code>sample-library/</code> folder down from the NAS to your local working folder. (Same routine as every Wednesday; the <strong>Session Routines</strong> card has it. NAS path: <code>[path]/students/lastname/sample-library/</code>. Local destination: <code>~/Documents/lastname/sample-library/</code>.)</li>
-  <li>Open Audacity. Confirm the project format is still <strong>44100 Hz</strong> / <strong>16-bit PCM</strong> in <span class="menu-path">Audacity → Preferences → Audio Settings</span>. (It should be from last week, but worth a glance.)</li>
+  <li>Open Audacity. Confirm the project format is still <strong>48000 Hz</strong> / <strong>24-bit PCM</strong> in <span class="menu-path">Audacity → Preferences → Audio Settings</span>. (It should be from last week, but worth a glance.)</li>
   <li>Save a new project file for today's work: <span class="menu-path">File → Save Project → Save Project As…</span>, and save it as <code>sample-library-week-07.aup3</code> inside <code>~/Documents/lastname/sample-library/audacity-projects/</code>. Keeping a separate project file per session makes it easy to find your work later.</li>
 </ol>
 
@@ -120,7 +120,7 @@
   <li>Press <strong>spacebar</strong> to play it back. Confirm it sounds like what you remember recording. If it doesn't, you probably grabbed the wrong file off the phone; check the filename and try again.</li>
 </ol>
 
-<p>To see the file's properties, open the <strong>Audio Track Dropdown Menu</strong>: click the three dots (<strong>…</strong>) next to the track's name in the Track Control Panel (the gray box on the left), or right-click anywhere on the track header. Hover over <strong>Format</strong> to see the bit depth, and over <strong>Rate</strong> to see the sample rate. The checked entries are what the track currently is. For a recording made with the recommended phone apps, this will be <strong>48000 Hz</strong> and <strong>16-bit PCM</strong> or <strong>24-bit PCM</strong>. The project's format is 44.1 kHz / 16-bit; the track is at 48 kHz. The two rates don't match.</p>
+<p>To see the file's properties, open the <strong>Audio Track Dropdown Menu</strong>: click the three dots (<strong>…</strong>) next to the track's name in the Track Control Panel (the gray box on the left), or right-click anywhere on the track header. Hover over <strong>Format</strong> to see the bit depth, and over <strong>Rate</strong> to see the sample rate. The checked entries are what the track currently is. For a recording made with the recommended phone apps, this will be <strong>48000 Hz</strong> and <strong>24-bit PCM</strong>, which is exactly your project's format. The rates match, so there is nothing to convert: go straight to the prep pipeline in Step 5. (If a file ever shows a different rate, Step 4 handles it.)</p>
 
 <div class="callout">
   <div class="callout-label">Stereo or mono?</div>
@@ -129,9 +129,9 @@
 
 <hr>
 
-<h2>Step 4a · Feel what sample rate is</h2>
+<h2>Step 4 · When a file isn't at 48 kHz</h2>
 
-<p>The phone recorded at 48 kHz. Your project is at 44.1 kHz. To use the recording in this project (and to keep your library consistent), the two rates need to match. There are <strong>two different operations</strong> in Audacity that look like they change a track's sample rate. They produce very different results. This step uses one of them as a hands-on experiment; Step 4b uses the other one for real.</p>
+<p>Most of what you import is already at 48 kHz. The phone apps record there, and so does Audacity when you record in the lab, so the file and the project match and you go straight to the prep pipeline in Step 5. This step is for the times they don't match: a sound you downloaded, a clip from an older project, anything that arrives at 44.1 kHz or some other rate. Matching it to 48 kHz keeps every file in your library on one rate. The experiment below is worth doing once in any case, because it shows you what sample rate actually is.</p>
 
 <h3>Two ways to change a track's rate</h3>
 
@@ -139,19 +139,19 @@
 
 <p>That instruction can be changed in two ways. You can <strong>reinterpret</strong> the track: tell Audacity to read the same numbers at a different speed. Or you can <strong>recalculate</strong> the track: ask Audacity to figure out what those same sounds would look like if they'd been stored at the new rate, and write new numbers to match. Reinterpreting is faster (Audacity just changes a setting) but the sound changes audibly. Recalculating is slower (Audacity runs a math operation across the whole track) and the sound is preserved.</p>
 
-<h3>Try it: change the rate in the Audio Track Dropdown Menu</h3>
+<h3>Feel the difference</h3>
 
-<p>Before doing the resample for real, do a quick experiment to feel the difference.</p>
+<p>This quick experiment makes the distinction audible. It works on any track, so try it once even when today's files all match the project.</p>
 
 <ol class="steps">
-  <li>Open the Audio Track Dropdown Menu (three dots <strong>…</strong> next to the track name) and hover over <strong>Rate</strong>. Confirm <strong>48000</strong> is currently checked.</li>
+  <li>Open the Audio Track Dropdown Menu (three dots <strong>…</strong> next to the track name) and hover over <strong>Rate</strong>. Note the rate that's currently checked.</li>
   <li>Press <strong>spacebar</strong> to play a few seconds of the recording. Listen, look at the waveform's length on the timeline. Then stop.</li>
-  <li>Open the dropdown again, hover over <strong>Rate</strong>, and click <strong>22050</strong> (about half of 44100). The waveform on the timeline visibly stretches out: the same numbers, read at half the speed, now take twice as long.</li>
+  <li>Open the dropdown again, hover over <strong>Rate</strong>, and click <strong>22050</strong> (about half the usual rate). The waveform on the timeline visibly stretches out: the same numbers, read at half the speed, now take twice as long.</li>
   <li>Press <strong>spacebar</strong>. The recording plays back slower and at a lower pitch.</li>
-  <li>Press <strong>spacebar</strong> again to stop. Press <kbd>Cmd</kbd> + <kbd>Z</kbd> to undo the rate change. The track returns to 48000 Hz and the waveform snaps back to its original length.</li>
+  <li>Press <strong>spacebar</strong> again to stop. Press <kbd>Cmd</kbd> + <kbd>Z</kbd> to undo the rate change. The track returns to its original rate and the waveform snaps back to its original length.</li>
 </ol>
 
-<p>What just happened: changing the rate in the dropdown menu didn't recalculate the audio. It changed the rate setting Audacity uses to read the samples back. Telling Audacity "these 48,000 samples represent one second of sound at 22,050 Hz" makes each second of recording take roughly twice as long to play out, and every sound in it dropped in pitch by the same factor. The numbers on disk never changed; only the speed at which Audacity walked through them.</p>
+<p>What just happened: changing the rate in the dropdown menu didn't recalculate the audio. It changed the rate setting Audacity uses to read the samples back. Telling Audacity to read the same samples at roughly half their rate makes each second of recording take about twice as long to play out, and every sound in it drops in pitch by the same factor. The numbers on disk never changed; only the speed at which Audacity walked through them.</p>
 
 <p>This is what sample rate <em>is</em>: a pacing instruction, attached to a stream of numbers. The two get used together. Decouple them by force and you hear what each one contributes.</p>
 
@@ -163,15 +163,15 @@
 
 <hr>
 
-<h2>Step 4b · Resample to 44.1 kHz</h2>
+<h3>Resample a stray file to 48 kHz</h3>
 
-<p>Now do the real conversion. <span class="menu-path">Tracks → Resample…</span> is the operation that recalculates the audio at the new rate. Pitch and length are preserved; only the number of measurements per second changes.</p>
+<p>When a file comes in at another rate and you want to keep it sounding the way it was recorded, resample it. <span class="menu-path">Tracks → Resample…</span> is the operation that recalculates the audio at the new rate. Pitch and length are preserved; only the number of measurements per second changes.</p>
 
 <ol class="steps">
   <li>Click anywhere in the <strong>Track Control Panel</strong> (the gray box on the left of the track). The whole track highlights to show it's selected.</li>
   <li>From the menu bar: <span class="menu-path">Tracks → Resample…</span></li>
-  <li>The Resample dialog opens with a dropdown labeled <strong>New sample rate (Hz)</strong>. Pick <strong>44100</strong>. Click <strong>OK</strong>.</li>
-  <li>Audacity processes the track. The waveform's length on the timeline stays the same; if you play it back now it sounds identical to before. Open the Audio Track Dropdown Menu and hover <strong>Rate</strong>: <strong>44100</strong> is now the checked entry, and the audio underneath has been recalculated to match.</li>
+  <li>The Resample dialog opens with a dropdown labeled <strong>New sample rate (Hz)</strong>. Pick <strong>48000</strong>. Click <strong>OK</strong>.</li>
+  <li>Audacity processes the track. The waveform's length on the timeline stays the same; if you play it back now it sounds identical to before. Open the Audio Track Dropdown Menu and hover <strong>Rate</strong>: <strong>48000</strong> is now the checked entry, and the audio underneath has been recalculated to match.</li>
 </ol>
 
 <div class="callout">
@@ -181,7 +181,7 @@
     <li><strong>Audio Track Dropdown Menu → Rate → [pick a rate]</strong> changes the rate setting on the track. Same samples, new speed of playback. Pitch and length both shift.</li>
     <li><strong>Tracks → Resample…</strong> changes the samples. New samples at the new rate. Pitch and length preserved.</li>
   </ul>
-  <p>The rule of thumb: if you want the sound to come along intact, use Resample. If you want the sound to bend, use the dropdown menu. The library standardizes on 44.1 kHz, so for prepping samples the answer is always Resample.</p>
+  <p>The rule of thumb: if you want the sound to come along intact, use Resample. If you want the sound to bend, use the dropdown menu. The library standardizes on 48 kHz, so for matching a stray file the answer is always Resample.</p>
 </div>
 
 <hr>
@@ -244,8 +244,8 @@
       <li><strong>Folder:</strong> click <strong>Browse…</strong> and pick the category folder you just created</li>
       <li><strong>Format:</strong> <code>WAV (Microsoft)</code></li>
       <li><strong>Channels:</strong> <strong>Mono</strong> (or <strong>Stereo</strong> if you kept it stereo in Step 3)</li>
-      <li><strong>Sample Rate:</strong> <code>44100 Hz</code></li>
-      <li><strong>Encoding:</strong> <code>Signed 16-bit PCM</code></li>
+      <li><strong>Sample Rate:</strong> <code>48000 Hz</code></li>
+      <li><strong>Encoding:</strong> <code>Signed 24-bit PCM</code></li>
       <li><strong>Export Range:</strong> <strong>Current selection</strong></li>
     </ul>
   </li>

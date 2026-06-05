@@ -68,7 +68,7 @@ A submitted folder of the student's own recorded sounds, prepped through the sta
 
 Full prompt and rubric: [`projects/project-02-sample-library.html`](https://csuebmusic.github.io/mus381/module-03-recording/projects/project-02-sample-library.html)
 
-**Scope:** at least 20 prepped sounds (target 20–25), organized in a documented folder structure with a student-written README, all files at 44.1 kHz / 16-bit WAV, all named per convention.
+**Scope:** at least 20 prepped sounds (target 20–25), organized in a documented folder structure with a student-written README, all files at 48 kHz / 24-bit WAV, all named per convention.
 
 **Timeline:**
 - Wk 6 Wed: students record their first 4 sounds in lab (paper crumble x2 speeds, paper rip x2 speeds), prep them, and submit them as a starter library
@@ -436,9 +436,9 @@ Two halves.
 - Transferring files from phone to computer: method TBD pending IT confirmation on what's possible between the lab Macs and the campus Wi-Fi student phones connect to. Step 1 of the lab handout is currently a placeholder; it gets filled in once the method is settled
 - File format: both apps produce 48 kHz / 24-bit WAV. Audacity opens them directly with no conversion step. This is the payoff of using dedicated field-recording apps instead of the phone's default voice recorder
 - Importing into Audacity (drag-and-drop, or File → Import → Audio)
-- **Resampling** to the project's 44.1 kHz / 16-bit standard. This is the teaching moment of the lab: sample rate conversion is a routine operation in recording, why we care about matching project rate, what changes (or doesn't) when you resample. Use Tracks → Resample (or the equivalent in the student's Audacity version) to bring the imported clip down to 44.1 kHz
+- **Resampling, now a conditional step.** Phone files arrive at 48 kHz and match the 48 kHz project, so most imports need no conversion. The lab keeps resampling as a skill for the case where a file comes in at another rate (a 44.1 kHz download): Tracks → Resample (or the equivalent in the student's Audacity version) to bring it to 48 kHz. The teaching moment is the reinterpret-vs-recalculate distinction and matching project rate, taught via the dropdown experiment even when no resample is needed
 - Running the same three-step prep pipeline (denoise, trim, normalize) on the resampled clip
-- Exporting as 44.1 kHz / 16-bit WAV to the library
+- Exporting as 48 kHz / 24-bit WAV to the library
 
 **Second half: worktime on the library.**
 
@@ -450,7 +450,7 @@ This is the one mostly-unstructured session of the module. Use the room: circula
 
 [`lessons/05-handout-phone-to-audacity.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/05-handout-phone-to-audacity.html) — Lab 2
 
-Eight steps from phone-side transfer through library upload: get the recording off the phone (transfer method TBD pending IT, currently a placeholder in the handout), pull the library down from the NAS, import, resample 48 kHz → 44.1 kHz, run the prep pipeline (with a noise profile captured from the phone recording itself), export to a student-chosen category folder, README update, worktime, NAS upload. References Lab 1 for the prep-pipeline detail rather than re-walking it.
+Eight steps from phone-side transfer through library upload: get the recording off the phone (transfer method TBD pending IT, currently a placeholder in the handout), pull the library down from the NAS, import (phone files already match the 48 kHz project; resampling is kept as a conditional step for stray rates), run the prep pipeline (with a noise profile captured from the phone recording itself), export to a student-chosen category folder, README update, worktime, NAS upload. References Lab 1 for the prep-pipeline detail rather than re-walking it.
 
 ### Block-by-block
 
@@ -582,7 +582,7 @@ Students upload their final library to the NAS following the submission card on 
 - Folder is at the correct location
 - Folder structure matches the convention
 - README is present and filled in
-- All files are 44.1 kHz / 16-bit WAV
+- All files are 48 kHz / 24-bit WAV
 - Filenames follow the convention
 - Minimum sound count met
 

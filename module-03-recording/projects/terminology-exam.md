@@ -74,7 +74,7 @@ Award full credit when the student conveys the idea, even if the wording differs
 ## Part A (2 points each)
 
 1. **The session workflow.** Download your folder from the NAS at the start of a session, work locally on the Mac, upload it back to the NAS at the end. Keeps the master copy current and protects work if a lab Mac is wiped. *(Full credit for the download/work-local/upload pattern.)*
-2. **Sample rate.** How many samples are taken per second, in Hz or kHz. The audio standard is 44.1 kHz. *(1 point for "samples per second," 1 for the unit or the 44.1 kHz standard.)*
+2. **Sample rate.** How many samples are taken per second, in Hz or kHz. Common rates are 44.1 kHz (CD) and 48 kHz (the course standard). *(1 point for "samples per second," 1 for the unit or naming a standard rate.)*
 3. **Nyquist theorem.** You must sample at twice the highest frequency you want to capture. This is why 44.1 kHz covers human hearing. *(Full credit for the "twice the highest frequency" idea.)*
 4. **Crossfade.** An overlapping fade-out and fade-in: one sound fades out as another fades in, so the seam blends instead of jumping.
 5. **Transient.** The brief, sharp burst at the start of a note or hit, before the body settles (a drum strike, a string pluck, a spoken consonant). Carries much of a sound's character.

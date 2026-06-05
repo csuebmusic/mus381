@@ -102,7 +102,7 @@
   <dd>A single measurement of a sound's amplitude at one moment in time. (The same word also means a recorded sound used as creative material; context tells you which is meant.)</dd>
 
   <dt>Sample rate</dt>
-  <dd>How many samples are taken per second, measured in Hz or kHz. The standard for audio is 44.1 kHz.</dd>
+  <dd>How many samples are taken per second, measured in Hz or kHz. Common rates: 44.1 kHz (CD) and 48 kHz (the course standard).</dd>
 
   <dt>Bit depth</dt>
   <dd>How many bits store each sample. Higher bit depth means finer amplitude resolution and a lower noise floor. Common values: 16-bit (CD), 24-bit (recording), 32-bit (DAW working files).</dd>
@@ -449,7 +449,7 @@
   <dd>The three steps applied to every raw recording before it enters the library: denoise (using a captured silence sample), trim the silence at the start and end, then peak-normalize to a consistent ceiling.</dd>
 
   <dt>Sample-rate conversion (resampling)</dt>
-  <dd>Changing a recording from one sample rate to another. In Lab 2 you resample phone recordings from 48 kHz down to the project's 44.1 kHz, so every file in the library shares one rate.</dd>
+  <dd>Changing a recording from one sample rate to another. Your phone recordings already match the 48 kHz project, but if a file arrives at another rate (a 44.1 kHz download, say) you resample it to 48 kHz so every file in the library shares one rate.</dd>
 
   <dt>Recording with headroom</dt>
   <dd>While tracking, keeping peaks around -12 to -6 dBFS. This leaves room to make decisions in editing rather than committing to a level you cannot undo.</dd>
