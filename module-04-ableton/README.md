@@ -163,7 +163,7 @@ These are the open calls from reshaping the module off the old 4a/4b (audio + MI
 
 4. **Warping placement.** Warping was a standalone 4a topic. Working call: fold it into Session 2 (audio editing), introduced at the moment students import a library clip and meet the project-tempo question. Flag if you'd rather it get its own treatment.
 
-5. **The module thematic label.** The chrome label in `meta/templates/handout-module-04.html` still reads "Ableton — audio, MIDI, synthesis," which no longer matches. Proposed replacement: "Ableton — audio, sampling & mixing." No Module 4 handout uses the label yet, so this is the cheapest moment to change it; if approved, I'll update the template, `meta/chrome-conventions.md`, and the module-tag in one pass when we build the first lesson.
+5. **The module thematic label.** Applied as "Audio, sampling & mixing in Ableton," dash-free (the old "Ableton — audio, MIDI, synthesis" both mismatched the plan and carried a banned em dash, and the content-style matches Modules 2 and 3). Now live in the Session 1 reading and the Module 4 handout template. Confirm the wording or tell me to adjust; changing it is a one-line sweep across Module 4 docs.
 
 6. **Filenames for two lessons.** Session 3: `03-reading-samplers-and-triggers.html` (what it teaches) vs `03-reading-simpler-and-drum-rack.html` (the two instruments by name). Session 7: `07-reading-transferable-concepts.html` (the idea) vs `07-reading-adobe-audition.html` (the tool). Minor; will settle at draft time.
 
