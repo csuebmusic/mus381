@@ -168,6 +168,11 @@
 </ol>
 
 <div class="callout">
+  <div class="callout-label">If your interface is the UM2</div>
+  <p>You just set the project to 24-bit, but the Behringer UM2 captures at 16-bit. (The PreSonus AudioBox does the full 24.) Recording a 16-bit interface into a 24-bit project is fine: Audacity wraps exactly what the UM2 sends in a 24-bit file, with no conversion. The recording carries 16 bits of real detail inside a 24-bit container. The audible effect is the noise floor, which at 16-bit sits near -96 dB, far below anything in the sounds you're capturing. Leave the project at 24-bit either way, so every file in your library shares one format. A bit-depth difference on the way in is harmless, unlike a sample-rate mismatch, which would shift the speed and pitch.</p>
+</div>
+
+<div class="callout">
   <div class="callout-label">The recording device lives here too</div>
   <p>The Audio Settings panel in Preferences also has <strong>Recording Device</strong>, <strong>Playback Device</strong>, and <strong>Recording Channels</strong> dropdowns. You can change them here. The next section shows you the same change from the main window's Audio Setup button, which is what you'll use day to day; the Preferences panel is just where everything lives if you ever need to dig in.</p>
 </div>
