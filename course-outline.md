@@ -147,7 +147,7 @@ The arc runs: introduce the DAW environment through Ableton (Session vs Arrangem
 
 **Topics:**
 - The DAW environment: Session view vs Arrangement view, the clip, nondestructive editing
-- Audio editing in Ableton: importing the library, clip edits, warping, project-rate vs file-rate (44.1 → 48)
+- Audio editing in Ableton: importing the library, clip edits, warping, exporting at 48 kHz / 32-bit
 - Basic sampling: Simpler and Drum Rack, with MIDI introduced as a trigger (a note triggers an instrument; the instrument makes the sound)
 - Basic mixing in Ableton: track faders, pan, sends and return tracks, group tracks, built-in EQ and compression, mapped onto the Module 3 console architecture
 - Transferable concepts: the same ideas (sample rate, bit depth, editing, EQ, dynamics, multitrack) in Adobe Audition, aimed in part at the art majors already in the Adobe suite

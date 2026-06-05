@@ -92,7 +92,7 @@ By the end of this module, students should be able to:
 - **Clip:** a reference to audio (or to MIDI), with its own start, end, gain, fades, and warp settings. The unit of work in Ableton. The key idea: the clip is not the file; it points at the file.
 - **Nondestructive editing:** edits live on the clip, not the source audio. Contrast explicitly with Audacity, where edits rewrote samples. This is the reframe of the module.
 - **Warping:** Ableton's time-stretching. A warped clip follows the set's tempo; warp markers pin moments in the audio to moments in the bar. Beginner level: warp on means "stretch to match the project tempo," warp off means "play at the recorded speed." When you want each: warp on for loops and rhythmic material you want locked to a grid; warp off for one-shots and sounds where the original timing is the point.
-- **Project sample rate vs file sample rate:** the Module 3 libraries are 44.1 kHz / 16-bit; Module 4 sets run at 48 kHz / 32-bit. A 44.1 kHz file plays fine in a 48 kHz set: Ableton converts on the fly. The rate that matters for the deliverable is the one chosen at export. This echoes the Wk 7 resampling lesson from Module 3, now from the playback side rather than the conversion side.
+- **Sample rate is constant; bit depth steps at export:** the Module 3 library is already 48 kHz and Module 4 sets run at 48 kHz, so library files import with nothing to convert. The only format change is bit depth: students export at 32-bit, up from the 24-bit they worked in through Modules 2–3. The rate that matters for the deliverable is set at export.
 - **MIDI (beginner model):** data, not sound. A MIDI note carries pitch, timing, and velocity (how hard). The note triggers an instrument; the instrument makes the audio. "The piano roll says play C3 now, medium-hard; Simpler turns that into the sound of your sample at that pitch." First real encounter is as a *trigger* for the sampler instruments, not as composition.
 - **Simpler:** an instrument that plays one sample across the keyboard. A MIDI note picks the pitch; the sample plays back faster (higher) or slower (lower). Has a volume envelope (attack, decay, sustain, release) that shapes each note.
 - **Drum Rack:** a grid of pads, each pad holding one sample. A MIDI note triggers a pad. The way students build a kit from their own library sounds and play or sequence it.
@@ -139,7 +139,7 @@ Full listening assignment: `listening/historical.html` *(not yet written)*.
 | Wk | Day | Focus |
 |---|---|---|
 | 10 | Mon | Session 1 · Lecture: The DAW environment, through Ableton. What a full DAW is, Session vs Arrangement view, the clip, nondestructive editing as the reframe of everything from Module 2. |
-| 10 | Wed | Session 2 · Lab: Audio editing in Ableton (Lab 1). Import your library, place clips on the Arrangement timeline, basic clip edits (start/end, fades, gain), an introduction to warping and the 44.1→48 playback story. |
+| 10 | Wed | Session 2 · Lab: Audio editing in Ableton (Lab 1). Import your library, place clips on the Arrangement timeline, basic clip edits (start/end, fades, gain), an introduction to warping. |
 | 11 | Mon | Session 3 · Lecture: Simpler and Drum Rack. Super-basic sampling. First encounter with MIDI tracks as triggers: a MIDI note triggers an instrument; the instrument makes the sound. Simpler plays one sample across the keyboard; Drum Rack is a grid of one-sample pads. |
 | 11 | Wed | Session 4 · Lab: Basic sampling in practice (Lab 2). Load library sounds into Simpler and a Drum Rack, draw or play a short MIDI part, build one short playable idea from the student's own samples. |
 | 12 | Mon | Session 5 · Lecture: Basic mixing in Ableton. The Ableton mixer as the digital console: track faders, pan, sends and return tracks, group tracks, the Master. Built-in EQ and Compressor mapped onto Module 2's EQ and dynamics and Module 3's console architecture. |
@@ -250,7 +250,7 @@ Module 2 taught editing as something you do *to a file*. This lecture reframes e
 
 ### Roadmap
 
-Students pull their Module 3 library down from the NAS, import sounds into an Ableton set, and edit them on the Arrangement timeline: clip start and end, fades, clip gain, duplicating and arranging. Warping is introduced here, at the moment a clip's tempo relationship first matters, along with the **44.1 → 48 playback story** (their library files play fine in a 48 kHz set; Ableton converts; the export rate is what counts).
+Students pull their Module 3 library down from the NAS, import sounds into an Ableton set, and edit them on the Arrangement timeline: clip start and end, fades, clip gain, duplicating and arranging. Warping is introduced here, at the moment a clip's tempo relationship first matters. (The library is already at 48 kHz, so it imports into the 48 kHz set with nothing to convert.)
 
 ### Handout
 
