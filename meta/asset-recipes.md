@@ -34,7 +34,7 @@ This file complements the build-script docs in [`../build/README.md`](../build/R
 
 **Used in:** Lab 1 (`module-02-audio-editing-mixing/lessons/03-handout-audacity-orientation.html`)
 
-**Status:** needs re-capture. The May 2026 originals show 44100 Hz / 16-bit; the course standard is now 48000 Hz / 24-bit, so `audacity-settings.png` and `audacity-export.png` must be re-shot to match the table below.
+**Status:** `audacity-settings.png` re-captured June 2026 (shows 48000 Hz / 24-bit). `audacity-export.png` still needs a re-capture at 48000 Hz / Signed 24-bit PCM, with Channels Stereo and File Name `lastname-orientation.wav`, to match the lab's export step (the orientation sample is stereo); the current file still shows the old 44100 Hz / 16-bit.
 
 | Filename | Content |
 |---|---|
