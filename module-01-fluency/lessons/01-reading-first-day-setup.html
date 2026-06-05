@@ -5,6 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MUS 381 · Your First Day</title>
   <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    /* Photo pair: two interface photos side by side; stacks on narrow
+       viewports. Mirrors the pattern used in the Module 3 studio handout. */
+    figure.photo-pair {
+      margin: 1.75rem 0 2rem;
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    figure.photo-pair .photo-pair-item {
+      flex: 1 1 280px;
+      max-width: 360px;
+      text-align: center;
+    }
+    figure.photo-pair img {
+      max-width: 100%;
+      max-height: 220px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+    figure.photo-pair figcaption {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ink-soft);
+      margin-top: 0.6rem;
+    }
+  </style>
 </head>
 <body>
 
@@ -140,6 +173,11 @@
     <tr><td><kbd>Cmd</kbd> + <kbd>Z</kbd></td><td>Undo (works almost everywhere)</td></tr>
   </tbody>
 </table>
+
+<div class="callout">
+  <div class="callout-label">Closing vs. quitting on a Mac</div>
+  <p>On a Mac, clicking the red dot at the top-left of a window only <strong>closes the window</strong>: the app keeps running in the background. To actually <strong>quit</strong> an app, use <kbd>Cmd</kbd> + <kbd>Q</kbd>, or go to the app's menu (the bold name at the top-left of the menu bar) and choose Quit. This matters when working with audio software, because two apps trying to use the same audio interface at once will conflict.</p>
+</div>
 
 <hr>
 
@@ -307,16 +345,32 @@ garcia-fieldrec-traffic.wav</code></pre>
 <ol class="steps">
   <li>Hold <kbd>Cmd</kbd> + <kbd>Space</kbd>. A search bar opens in the middle of the screen.</li>
   <li>Type <strong>Audio MIDI Setup</strong> and press <kbd>return</kbd>. The app opens.</li>
-  <li>On the left, you should see your audio interface listed. (It will have the brand name on it, like "Focusrite Scarlett" or "PreSonus AudioBox.")</li>
+  <li>On the left, you should see your audio interface listed. The two interfaces used in this room are the <strong>PreSonus AudioBox USB 96</strong> and the <strong>Behringer U-Phoria UM2</strong>. Whichever one is at your station shows up here under its own name.</li>
   <li>Right-click your interface in the list, and click <strong>Use this device for sound input</strong>.</li>
   <li>Right-click again, and click <strong>Use this device for sound output</strong>.</li>
+  <li>With your interface still selected, find the <strong>Format</strong> line in the middle of the window. You won't change it today; the point is to see where it lives. The clip below shows where to look.</li>
   <li>Quit Audio MIDI Setup: from the menu bar at the top, click <strong>Audio MIDI Setup</strong>, then <strong>Quit Audio MIDI Setup</strong>. (Or press <kbd>Cmd</kbd> + <kbd>Q</kbd>.)</li>
 </ol>
 
-<div class="callout">
-  <div class="callout-label">Closing vs. quitting on a Mac</div>
-  <p>On a Mac, clicking the red dot at the top-left of a window only <strong>closes the window</strong>: the app keeps running in the background. To actually <strong>quit</strong> an app, use <kbd>Cmd</kbd> + <kbd>Q</kbd>, or go to the app's menu (the bold name at the top-left of the menu bar) and choose Quit. This matters when working with audio software, because two apps trying to use the same audio interface at once will conflict.</p>
-</div>
+<figure class="vocab-video">
+  <video controls preload="metadata" muted playsinline>
+    <source src="../../assets/videos/module-01-week-01/interface-format-um2.mp4" type="video/mp4">
+  </video>
+  <figcaption>Selecting an interface for input and output, then finding its Format line in Audio MIDI Setup.</figcaption>
+</figure>
+
+<p>That Format line is the interface's <strong>recording format</strong>: a couple of numbers that describe the audio it captures. You'll learn what they mean in Module 2. The thing to notice today is that the two interfaces in this room show different numbers and different choices in that spot, because they are built differently. The clip above is the Behringer; the PreSonus gives you more options in the same place. Whichever one is at your station, that is where the format lives, and you'll come back to it in Module 2.</p>
+
+<figure class="photo-pair">
+  <div class="photo-pair-item">
+    <img src="../../assets/images/module-03-week-06/presonus-audiobox-usb96-front.png" alt="Front panel of the PreSonus AudioBox USB 96, a blue audio interface with two combination XLR and quarter-inch Mic/Inst inputs, a red 48V button, two gain knobs, and headphone, mixer, and main output knobs." loading="lazy">
+    <figcaption>PreSonus AudioBox USB 96</figcaption>
+  </div>
+  <div class="photo-pair-item">
+    <img src="../../assets/images/module-03-week-06/behringer-um2-front.png" alt="Front panel of the Behringer U-Phoria UM2, a black audio interface with one combination XLR and quarter-inch Mic/Line input, a quarter-inch instrument input, a Direct Monitor button, a 48V power indicator, and a headphone jack." loading="lazy">
+    <figcaption>Behringer U-Phoria UM2</figcaption>
+  </div>
+</figure>
 
 <div class="callout warn">
   <div class="callout-label">If your interface isn't listed</div>
