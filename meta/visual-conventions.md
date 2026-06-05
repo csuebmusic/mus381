@@ -131,11 +131,11 @@ Each module has a default audio format that students use throughout. The standar
 | 1 | n/a | n/a | QuickTime | Day 1 hello recording uses whatever default QuickTime sets |
 | 2 | 44.1 kHz | 16-bit | Audacity | CD standard, matches the destructive-editing pedagogy and Schaeffer historical context |
 | 3 | 44.1 kHz | 16-bit | Audacity | Continues Module 2 standard so sample-library files are compatible |
-| 4 | 48 kHz | 32-bit float | Ableton | Ableton's native working format; the shift is taught explicitly |
+| 4 | 48 kHz | 32-bit | Ableton | Higher resolution than Modules 2–3; the shift is taught explicitly |
 
-The Module 2 → Module 4 standards shift is a pedagogical moment, not a footnote. Module 4 readings should introduce 48/32f explicitly and explain why Ableton wants it.
+The Module 2 → Module 4 standards shift is a pedagogical moment, not a footnote. Module 4 readings should introduce 48/32 explicitly and explain why the module steps up from 44.1/16.
 
-Build scripts respect the per-module standard: anything that writes to `assets/audio/module-02-*` outputs 44.1/16, anything that writes to `assets/audio/module-04-*` outputs 48/32f.
+Build scripts respect the per-module standard: anything that writes to `assets/audio/module-02-*` outputs 44.1/16, anything that writes to `assets/audio/module-04-*` outputs 48/32.
 
 ## Page width and structure
 

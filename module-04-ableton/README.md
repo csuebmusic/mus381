@@ -65,6 +65,8 @@ The lab runs **Ableton Live 11 Suite**. Live is a large DAW; this module deliber
 
 **Week 13 (Adobe Audition):** outside the Ableton manual; scope settles with the Audition logistics decision.
 
+**Exporting (used across the module):** Exporting Audio and Video — https://www.ableton.com/en/live-manual/11/managing-files-and-sets/#exporting-audio-and-video . Students export finished work at 48 kHz / 32-bit. Needed first when they render a short arrangement, then again at mixing and for the final project.
+
 ---
 
 ## Learning outcomes
@@ -90,7 +92,7 @@ By the end of this module, students should be able to:
 - **Clip:** a reference to audio (or to MIDI), with its own start, end, gain, fades, and warp settings. The unit of work in Ableton. The key idea: the clip is not the file; it points at the file.
 - **Nondestructive editing:** edits live on the clip, not the source audio. Contrast explicitly with Audacity, where edits rewrote samples. This is the reframe of the module.
 - **Warping:** Ableton's time-stretching. A warped clip follows the set's tempo; warp markers pin moments in the audio to moments in the bar. Beginner level: warp on means "stretch to match the project tempo," warp off means "play at the recorded speed." When you want each: warp on for loops and rhythmic material you want locked to a grid; warp off for one-shots and sounds where the original timing is the point.
-- **Project sample rate vs file sample rate:** the Module 3 libraries are 44.1 kHz / 16-bit; Module 4 sets run at 48 kHz / 32-bit float. A 44.1 kHz file plays fine in a 48 kHz set: Ableton converts on the fly. The rate that matters for the deliverable is the one chosen at export. This echoes the Wk 7 resampling lesson from Module 3, now from the playback side rather than the conversion side.
+- **Project sample rate vs file sample rate:** the Module 3 libraries are 44.1 kHz / 16-bit; Module 4 sets run at 48 kHz / 32-bit. A 44.1 kHz file plays fine in a 48 kHz set: Ableton converts on the fly. The rate that matters for the deliverable is the one chosen at export. This echoes the Wk 7 resampling lesson from Module 3, now from the playback side rather than the conversion side.
 - **MIDI (beginner model):** data, not sound. A MIDI note carries pitch, timing, and velocity (how hard). The note triggers an instrument; the instrument makes the audio. "The piano roll says play C3 now, medium-hard; Simpler turns that into the sound of your sample at that pitch." First real encounter is as a *trigger* for the sampler instruments, not as composition.
 - **Simpler:** an instrument that plays one sample across the keyboard. A MIDI note picks the pitch; the sample plays back faster (higher) or slower (lower). Has a volume envelope (attack, decay, sustain, release) that shapes each note.
 - **Drum Rack:** a grid of pads, each pad holding one sample. A MIDI note triggers a pad. The way students build a kit from their own library sounds and play or sequence it.
