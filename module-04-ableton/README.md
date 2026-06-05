@@ -40,7 +40,7 @@ The lab runs **Ableton Live 11 Suite**. Live is a large DAW; this module deliber
 **Week 11 (sampling + MIDI as trigger):**
 - Simpler — https://www.ableton.com/en/live-manual/11/live-instrument-reference/#simpler
 - Drum Racks — https://www.ableton.com/en/live-manual/11/instrument-drum-and-effect-racks/#drum-racks
-- Basic MIDI editing, enough to trigger (drawing and editing notes). Inés scoped this by description rather than a link; the matching Live 11 chapter is "Editing MIDI Notes and Velocities" (https://www.ableton.com/en/live-manual/11/editing-midi-notes-and-velocities/). Confirm at draft time.
+- Editing MIDI Notes and Velocities — https://www.ableton.com/en/live-manual/11/editing-midi-notes-and-velocities/ (scoped to just enough to trigger: drawing and editing notes)
 
 **Week 12 (mixing):**
 - Monitoring — https://www.ableton.com/en/live-manual/11/routing-and-i-o/#monitoring
