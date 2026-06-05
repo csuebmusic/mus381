@@ -30,6 +30,8 @@ By the end of Wk 13, students should be able to set up an Ableton session from c
 
 The lab runs **Ableton Live 11 Suite**. Live is a large DAW; this module deliberately teaches a curated subset and does not try to cover it. The sections below are the source of truth for drafting each week's lessons: screenshots, menu paths, and terminology all match Live 11, and lessons are drafted against the manual rather than from memory. Staying inside this list is the point, not a limitation to apologize for.
 
+**Screenshots.** The Ableton Live 11 screenshots used in this module's lessons come from the Live 11 reference manual and are used with Ableton's permission for educational use. They live in `assets/images/module-XX-week-YY/` under house names (Week 10's are in `module-04-week-10/`).
+
 **Week 10 (the environment + audio editing):**
 - First Steps — https://www.ableton.com/en/live-manual/11/first-steps/
 - Live Concepts — https://www.ableton.com/en/live-manual/11/live-concepts/
@@ -236,7 +238,7 @@ Module 2 taught editing as something you do *to a file*. This lecture reframes e
 ### Settled in the first draft
 
 - Filename: `01-reading-the-daw-environment.html` (the umbrella "a DAW," with Ableton as the vehicle; pairs with Session 7's "any DAW" coda). Still open for Inés to confirm over an Ableton-specific title.
-- Session view is named as "the thing that's genuinely new" and deferred ("met properly once you have some sound to play with"), with early hands-on work kept in Arrangement. The draft names it in prose but does not yet show it; a Session-vs-Arrangement visual is still open (see the deeper-content pass).
+- Session view is named as "the thing that's genuinely new" and deferred ("met properly once you have some sound to play with"), with early hands-on work kept in Arrangement. The deeper-content pass added Live 11 screenshots (browser, view selectors, Session grid, Arrangement track, Clip View, clip-edge trim), so Session view is now shown, not only named.
 
 ### Block-by-block
 
