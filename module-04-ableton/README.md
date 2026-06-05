@@ -26,6 +26,32 @@ By the end of Wk 13, students should be able to set up an Ableton session from c
 
 ---
 
+## Reference scope (Ableton Live 11 manual)
+
+The lab runs **Ableton Live 11 Suite**. Live is a large DAW; this module deliberately teaches a curated subset and does not try to cover it. The sections below are the source of truth for drafting each week's lessons: screenshots, menu paths, and terminology all match Live 11, and lessons are drafted against the manual rather than from memory. Staying inside this list is the point, not a limitation to apologize for.
+
+**Week 10 (the environment + audio editing):**
+- First Steps — https://www.ableton.com/en/live-manual/11/first-steps/
+- Live Concepts — https://www.ableton.com/en/live-manual/11/live-concepts/
+- Arrangement View, audio portions only (audio tracks and clips on the timeline; skip the MIDI-clip and Session-view-launch material, which arrive in Wk 11 or stay out of scope) — https://www.ableton.com/en/live-manual/11/arrangement-view/
+- Clip View — https://www.ableton.com/en/live-manual/11/clip-view/
+- Audio Clips, Tempo, and Warping — https://www.ableton.com/en/live-manual/11/audio-clips-tempo-and-warping/
+
+**Week 11 (sampling + MIDI as trigger):**
+- Simpler — https://www.ableton.com/en/live-manual/11/live-instrument-reference/#simpler
+- Drum Racks — https://www.ableton.com/en/live-manual/11/instrument-drum-and-effect-racks/#drum-racks
+- Basic MIDI editing, enough to trigger (drawing and editing notes). Inés scoped this by description rather than a link; the matching Live 11 chapter is "Editing MIDI Notes and Velocities" (https://www.ableton.com/en/live-manual/11/editing-midi-notes-and-velocities/). Confirm at draft time.
+
+**Week 12 (mixing):**
+- Monitoring — https://www.ableton.com/en/live-manual/11/routing-and-i-o/#monitoring
+- Internal Routings — https://www.ableton.com/en/live-manual/11/routing-and-i-o/#internal-routings
+- Mixing — https://www.ableton.com/en/live-manual/11/mixing/
+- Live Audio Effect Reference — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/ (the chapter is the reference; the lessons focus on a small subset, see Session 5's open question)
+
+**Week 13 (Adobe Audition):** outside the Ableton manual; scope settles with the Audition logistics decision.
+
+---
+
 ## Learning outcomes
 
 By the end of this module, students should be able to:
@@ -132,7 +158,7 @@ These are the open calls from reshaping the module off the old 4a/4b (audio + MI
 
 *To be expanded.*
 
-- **Ableton edition and version confirmed on the lab Macs.** Simpler and Drum Rack are in every edition, so sampling is safe regardless; but handout screenshots and menu paths need to match the installed version (likely Live 12). Confirm the edition and version before any handout is drafted.
+- **Ableton Live 11 Suite** is the lab version. Handout screenshots, menu paths, and manual references all target Live 11 (see Reference scope above for the exact sections). Suite confirms everything in scope is installed; Simpler and Drum Rack are in every edition regardless.
 - **MIDI keyboards inventoried and tested at every station.** They enter the gear list this module (the Module 4 handout gear tier adds the MIDI keyboard). Confirm each one is present, connects over USB through the hub, and registers in Ableton's MIDI preferences.
 - **Adobe Audition availability settled** (see Decisions to settle #3): licensed/installed on the lab Macs, or projector demo only.
 - **A starter session for the mixing lab.** Session 6 (mixing in practice) goes faster if students mix a prepared multitrack session rather than building one from scratch. A small set with a few tracks of student-recognizable material, staged on the NAS, lets the session focus on mixing moves. To be built.
@@ -182,6 +208,10 @@ The module's framing question: what is a full DAW, and what's new about it after
 
 `lessons/01-reading-the-daw-environment.html` *(not yet written)*
 
+### Manual (Live 11)
+
+First Steps; Live Concepts.
+
 ### Connection to earlier modules
 
 Module 2 taught editing as something you do *to a file*. This lecture reframes editing as something you do *to a clip*, with the file untouched underneath. The relief of "you can't ruin your source" is worth naming out loud: beginners edit timidly, and nondestructive editing is permission to experiment.
@@ -209,6 +239,10 @@ Students pull their Module 3 library down from the NAS, import sounds into an Ab
 
 `lessons/02-handout-audio-editing.html` — Lab 1 *(not yet written)*
 
+### Manual (Live 11)
+
+Arrangement View (audio portions); Clip View; Audio Clips, Tempo, and Warping.
+
 ### Open questions for when we draft
 
 - Warp depth: introduce on/off plus the loop-vs-one-shot rule of thumb, and leave warp modes (Beats/Tones/Texture/Complex) for a sentence of naming rather than a full treatment? Likely yes at this level.
@@ -231,6 +265,10 @@ The one genuinely new abstraction of the module: **MIDI as a trigger**. Build th
 ### Reading
 
 `lessons/03-reading-samplers-and-triggers.html` *(not yet written; filename open, see Decisions to settle #6)*
+
+### Manual (Live 11)
+
+Simpler; Drum Racks; basic MIDI editing (Editing MIDI Notes and Velocities), enough to trigger.
 
 ### Open questions for when we draft
 
@@ -278,6 +316,10 @@ The Ableton mixer as the **digital version of the Module 3 console**. Walk the m
 
 `lessons/05-reading-mixing-in-ableton.html` *(not yet written)*
 
+### Manual (Live 11)
+
+Monitoring; Internal Routings; Mixing; Live Audio Effect Reference (focused subset, see Open questions).
+
 ### Connection to earlier modules
 
 Two threads land at once: Module 2's EQ and compression (what these devices do) and Module 3's console architecture (how the routing is shaped). Name both. The console lecture in Module 3 was deliberately "what the desk is"; this is the first time students drive that architecture themselves.
@@ -285,7 +327,7 @@ Two threads land at once: Module 2's EQ and compression (what these devices do) 
 ### Open questions for when we draft
 
 - Sends-and-returns is the conceptually rich part and the place students most often go wrong (insert vs send). Worth the most space.
-- How many devices to name. EQ Eight, Compressor, Reverb, Delay is probably the right four. Resist cataloguing Ableton's full device set.
+- The Live Audio Effect Reference chapter is the source, but the lesson focuses on a small subset. Proposed: EQ Eight, Compressor, Reverb, Delay (plus Utility for gain/width if useful). Confirm the subset; resist cataloguing Live's full device set.
 
 ### Block-by-block
 
