@@ -2,7 +2,7 @@
 
 **Weeks 10–15 · instruction Wks 10–13 (7 sessions), final project Wks 14–15**
 
-> **Status:** Spec and session overview written to the new plan. No lessons, listening, or project files built yet. The final-project prompt (Wks 14–15) is deferred and will be drafted separately. Several cross-cutting decisions are still open; see **Decisions to settle** below before any lesson is drafted.
+> **Status:** Spec and session overview written to the new plan. Session 1's reading (`lessons/01-reading-the-daw-environment.html`) has a first draft; the other lessons, listening, and project files are not yet built. The final-project prompt (Wks 14–15) is deferred and will be drafted separately. Several cross-cutting decisions are still open; see **Decisions to settle** below before drafting further lessons.
 
 ---
 
@@ -223,7 +223,7 @@ The module's framing question: what is a full DAW, and what's new about it after
 
 ### Reading
 
-`lessons/01-reading-the-daw-environment.html` *(not yet written)*
+`lessons/01-reading-the-daw-environment.html` *(first draft in place)*
 
 ### Manual (Live 11)
 
@@ -233,10 +233,10 @@ First Steps; Live Concepts.
 
 Module 2 taught editing as something you do *to a file*. This lecture reframes editing as something you do *to a clip*, with the file untouched underneath. The relief of "you can't ruin your source" is worth naming out loud: beginners edit timidly, and nondestructive editing is permission to experiment.
 
-### Open questions for when we draft
+### Settled in the first draft
 
-- Filename: `01-reading-the-daw-environment.html` lands the umbrella ("a DAW," with Ableton as the vehicle) and pairs with Session 7's "any DAW" coda. Confirm over an Ableton-specific title.
-- How much Session view in week one? Probably name it and show it, but keep early hands-on work in Arrangement (closer to the Audacity timeline students know). Session view earns its own attention once they have something to loop.
+- Filename: `01-reading-the-daw-environment.html` (the umbrella "a DAW," with Ableton as the vehicle; pairs with Session 7's "any DAW" coda). Still open for Inés to confirm over an Ableton-specific title.
+- Session view is named as "the thing that's genuinely new" and deferred ("met properly once you have some sound to play with"), with early hands-on work kept in Arrangement. The draft names it in prose but does not yet show it; a Session-vs-Arrangement visual is still open (see the deeper-content pass).
 
 ### Block-by-block
 
