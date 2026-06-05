@@ -16,6 +16,7 @@
 <div class="title-block">
   <div class="module-tag">Module 04 · Audio, sampling &amp; mixing in Ableton</div>
   <h1>The DAW Environment</h1>
+  <div class="subtitle">What a full DAW is, and why editing a clip never changes the file underneath.</div>
 </div>
 
 <p class="lede">You spent Modules 2 and 3 in Audacity: first editing sound that was handed to you, then recording your own. This module moves you into Ableton Live, the program the rest of the course is built around. You will load the sample library you built in Module 3 and start making pieces from it. The biggest change from Audacity is that in Live your edits never alter the original sound files, so you can experiment freely. On Wednesday you open Live and get started.</p>
@@ -31,13 +32,13 @@
 
 <p>A <strong>DAW</strong> (digital audio workstation) is software for recording, editing, arranging, and mixing audio on a computer. By that definition, Audacity is already a DAW, and you have been doing DAW work since Week 2. So why switch?</p>
 
-<p>Because Ableton Live is a <em>full</em> DAW, and Audacity is a narrow one. In Audacity you mostly worked with one piece of sound at a time, on a short stack of tracks, with a fixed set of editing tools. Live is built to hold many tracks playing together, to play instruments you trigger from a keyboard, and to mix everything through a built-in mixing desk. It is the program the rest of the course is heading toward, and the one most studios you will meet use some version of.</p>
+<p>Because Ableton Live is a <em>full</em> DAW, and Audacity is a narrow one. In Audacity you mostly worked with one piece of sound at a time, on a short stack of tracks, with a fixed set of editing tools. Live is built to hold many tracks playing together, to play instruments you trigger from a keyboard, and to mix everything through a built-in mixing desk. A version of it runs in most studios you will walk into.</p>
 
 <p>The document you work in is called a <strong>Live Set</strong>. It plays the same role Audacity's project did: it is the file that holds your work. A Set lives inside a <strong>Project folder</strong>, which keeps the Set and the sounds it uses together in one place. Your local-first, NAS-as-sync habit does not change: you pull your work down at the start of a session and upload it at the end, the same as always.</p>
 
 <h3>1.1 · The audio format</h3>
 
-<p>You have worked at <strong>48 kHz</strong> since Module 2, and your Module 3 sample library is already there. Live runs at the same rate, so your library files sit in a Set with nothing to convert. The sample rate does not change in this module.</p>
+<p>You have worked at <strong>48 kHz</strong> since Module 2, and your Module 3 sample library is already there. Live runs at the same rate, so your library files load into a Set with nothing to convert. The sample rate does not change in this module.</p>
 
 <p>The one thing that does change is bit depth, and only at the end. When you export a finished piece, you export at <strong>32-bit</strong>, a step up from the 24-bit you have been working in. It is the setting you choose in the export dialog, and it gives the final file extra headroom from all the mixing Live has done.</p>
 
@@ -61,7 +62,7 @@
 
 <p>An audio clip does not contain the sound. It contains a <strong>reference</strong> to the sound: a pointer to a file on the drive, plus instructions for which part of that file to play and how to play it. The sound file it points at is called a <strong>sample</strong>, and the samples in your Module 3 library are exactly these files. The clip is the instruction sheet; the sample is the sound.</p>
 
-<p>A track holds clips and plays one of them at a time. Live has two kinds of track, audio and MIDI, and this module starts with audio. MIDI arrives in two weeks, when you start triggering sounds from a keyboard.</p>
+<p>A track holds clips and plays one of them at a time. Live has two kinds of track, audio and MIDI, and this module starts with audio. MIDI arrives next week, when you start triggering sounds from a keyboard.</p>
 
 <hr>
 
@@ -93,7 +94,7 @@
       <text x="60" y="140" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">start / end</text>
       <text x="60" y="162" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">fade in / out</text>
       <text x="60" y="184" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">gain (volume)</text>
-      <text x="60" y="206" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">warp (speed)</text>
+      <text x="60" y="206" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">stretch (speed)</text>
     </g>
 
     <!-- Arrow: clip points at the file -->
