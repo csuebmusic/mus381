@@ -135,7 +135,7 @@ Each module has a default audio format that students use throughout. The standar
 
 The course works at 48 kHz throughout. Modules 2–3 use 24-bit; Module 4 exports at 32-bit. The only standards shift is the bit-depth step at Module 4, introduced where students export.
 
-Build scripts respect the per-module standard for working assets: `assets/audio/module-02-*` and `assets/audio/module-03-*` output 48/24, `assets/audio/module-04-*` outputs 48/32. Concept demos that teach a specific rate or depth (the Wk 2 sample-rate and bit-depth degradation demos) use whatever the lesson requires.
+Build scripts respect the per-module standard for working assets: `assets/audio/module-02-*` and `assets/audio/module-03-*` output 48/24, `assets/audio/module-04-*` outputs 48/32. Concept demos that teach a specific rate or depth (the Wk 2 sample-rate and bit-depth degradation demos, and the Wk 3 tape-speed demos, whose pitch-shift math is tied to the working sample rate) use whatever the lesson requires.
 
 ## Page width and structure
 
