@@ -34,41 +34,100 @@
 
 <p>Because Ableton Live is a <em>full</em> DAW, and Audacity is a narrow one. In Audacity you mostly worked with one piece of sound at a time, on a short stack of tracks, with a fixed set of editing tools. Live is built to hold many tracks playing together, to play instruments you trigger from a keyboard, and to mix everything through a built-in mixing desk. A version of it runs in most studios you will walk into.</p>
 
-<p>The document you work in is called a <strong>Live Set</strong>. It plays the same role Audacity's project did: it is the file that holds your work. A Set lives inside a <strong>Project folder</strong>, which keeps the Set and the sounds it uses together in one place. Your local-first, NAS-as-sync habit does not change: you pull your work down at the start of a session and upload it at the end, the same as always.</p>
+<hr>
 
-<h3>1.1 · The audio format</h3>
+<h2>2 · What you see when you open Live</h2>
+
+<p>When you open Live, the window is divided into a few areas, each doing one job. Across the top is the <strong>Control Bar</strong>, which holds the play and stop buttons, the tempo, and the buttons that switch between Live's two views. Down the left is the <strong>browser</strong>, where your sounds, instruments, and effects live. The large area in the middle is where you build a piece. Along the bottom, when you select a clip, is the <strong>Clip View</strong>, where that clip's settings appear.</p>
+
+<p>The sections below walk the parts you use first. Wednesday's lab is where you open Live and put hands on all of it.</p>
+
+<hr>
+
+<h2>3 · The Live Set and the Project folder</h2>
+
+<p>The document you work in is called a <strong>Live Set</strong>. It plays the same role Audacity's project did: it is the file that holds your work, with its tracks, its clips, and all their settings.</p>
+
+<p>A Set lives inside a <strong>Project folder</strong>, which keeps the Set and the sounds it uses together in one place. Your local-first, NAS-as-sync habit does not change: pull your work down at the start of a session, upload it at the end, the same as always.</p>
+
+<hr>
+
+<h2>4 · The audio format</h2>
 
 <p>You have worked at <strong>48 kHz</strong> since Module 2, and your Module 3 sample library is already there. Live runs at the same rate, so your library files load into a Set with nothing to convert. The sample rate does not change in this module.</p>
 
-<p>The one thing that does change is bit depth, and only at the end. When you export a finished piece, you export at <strong>32-bit</strong>, a step up from the 24-bit you have been working in. It is the setting you choose in the export dialog, and it gives the final file extra headroom from all the mixing Live has done.</p>
+<p>Bit depth changes once, at the end. When you export a finished piece, you export at <strong>32-bit</strong>, a step up from the 24-bit you have worked in. It is a setting you choose in the export dialog, and it gives the final file extra headroom from all the mixing Live has done.</p>
 
 <hr>
 
-<h2>2 · Two views: Session and Arrangement</h2>
+<h2>5 · The browser</h2>
 
-<p>When you open a Live Set, you can look at it two different ways. They are called the <strong>Arrangement View</strong> and the <strong>Session View</strong>, and you switch between them with the <code>Tab</code> key.</p>
+<p>Down the left side of the window is the <strong>browser</strong>. It is where Live keeps everything you can put in a piece: the sounds that ship with Live, your own saved samples, the instruments, and the effects. You scroll or search, click a sound to hear it, then drag the one you want into your Set.</p>
 
-<p>The <strong>Arrangement View</strong> is a timeline. Time runs left to right, tracks stack top to bottom, and you build a piece by placing sound along the line. This is the view that will feel familiar, because it works like the Audacity window you already know. It is home base for this module, and where you will do most of your editing.</p>
+<figure class="screenshot">
+  <img src="../../assets/images/module-04-week-10/live-browser.png" alt="Live's browser panel: a Collections and Categories list on the left (Sounds, Drums, Instruments, Audio Effects, MIDI Effects, Max for Live) and a list of items on the right." loading="lazy">
+  <figcaption>Live's browser. Categories of material on the left; the contents of whatever you select on the right.</figcaption>
+</figure>
 
-<p>The <strong>Session View</strong> is a grid. Instead of a timeline, you get a set of slots, each holding a short piece of sound you can start and stop on the fly. Producers use it to try ideas and loop sections before committing them to a timeline. You will meet it properly once you have some sound to play with, so for now it is enough to know it is there.</p>
-
-<p>Both views show the <em>same</em> Set. Pressing <code>Tab</code> changes what you are looking at, not what is stored or what you hear. Think of them as two windows onto one room, not two different rooms.</p>
-
-<hr>
-
-<h2>3 · The clip</h2>
-
-<p>The basic unit of work in Live is the <strong>clip</strong>. A clip is a single piece of sound sitting on a track: one recording, one loop, one sample from your library. You build a piece by arranging clips along the timeline.</p>
-
-<p>An audio clip does not contain the sound. It contains a <strong>reference</strong> to the sound: a pointer to a file on the drive, plus instructions for which part of that file to play and how to play it. The sound file it points at is called a <strong>sample</strong>, and the samples in your Module 3 library are exactly these files. The clip is the instruction sheet; the sample is the sound.</p>
-
-<p>A track holds clips and plays one of them at a time. Live has two kinds of track, audio and MIDI, and this module starts with audio. MIDI arrives next week, when you start triggering sounds from a keyboard.</p>
+<p>When you drag a sound from the browser onto a track, Live makes a <strong>clip</strong> from it: a single piece of sound sitting on the track, the thing you actually arrange and edit. The sound file stays where it was. The clip points at it.</p>
 
 <hr>
 
-<h2>4 · Nondestructive editing</h2>
+<h2>6 · Two views: Session and Arrangement</h2>
 
-<p>That small detail, that a clip points at a file rather than containing it, is the difference that changes how you work.</p>
+<p>A Live Set gives you two ways to look at your work, called the <strong>Arrangement View</strong> and the <strong>Session View</strong>. You switch between them with the <code>Tab</code> key, or with the two buttons at the top right of the window.</p>
+
+<figure class="screenshot">
+  <img src="../../assets/images/module-04-week-10/view-selectors.png" alt="The Session and Arrangement view selector buttons at the top right of Live's window." loading="lazy">
+  <figcaption>The Session and Arrangement selectors, top right. <code>Tab</code> switches between the two.</figcaption>
+</figure>
+
+<p>The <strong>Arrangement View</strong> is a timeline. Time runs left to right, tracks stack top to bottom, and you build a piece by placing sound along the line. It works like the Audacity window you already know, and it is home base for this module.</p>
+
+<p>The <strong>Session View</strong> is a grid. Instead of a timeline, you get rows and columns of slots, each holding a short piece of sound you can start and stop on its own. Producers use it to try ideas and loop sections before committing them to a timeline. You meet it properly once you have sound to play with; for now it is enough to know it is there.</p>
+
+<figure class="screenshot">
+  <img src="../../assets/images/module-04-week-10/session-view-grid.png" alt="Live's Session View: a grid of colored clip slots arranged in columns, with one row highlighted." loading="lazy">
+  <figcaption>Session View: a grid of clip slots. Each slot holds a clip you can launch on its own.</figcaption>
+</figure>
+
+<p>The two views are not two separate pieces. They share one Set, one set of tracks, and one mixer. What each view keeps to itself is its clips: the Arrangement holds the clips on your timeline, the Session holds the clips in your grid. Pressing <code>Tab</code> changes which one you are looking at. It does not change what is stored, and it does not change what you hear.</p>
+
+<hr>
+
+<h2>7 · Tracks</h2>
+
+<p>A <strong>track</strong> is a lane that holds clips. In the Arrangement it runs left to right along the timeline; in the Session it is a column. The two views share the same tracks, which is what connects them.</p>
+
+<figure class="screenshot">
+  <img src="../../assets/images/module-04-week-10/arrangement-track.png" alt="A track in Live's Arrangement View showing audio clips with waveforms placed along a horizontal timeline." loading="lazy">
+  <figcaption>A track in the Arrangement View, with clips placed along the timeline.</figcaption>
+</figure>
+
+<p>A track plays one clip at a time. Sounds that need to play together go on separate tracks; sounds that take turns can share a track.</p>
+
+<p>Live has two kinds of track, audio and MIDI, and this module starts with audio. An <strong>audio track</strong> carries recorded sound, the kind your sample library is made of. MIDI arrives next week, when you start triggering sounds from a keyboard.</p>
+
+<hr>
+
+<h2>8 · The clip and the sample</h2>
+
+<p>You have been making clips since you dragged your first sound out of the browser. A <strong>clip</strong> is the basic unit of work in Live: one recording, one loop, one sample from your library, sitting on a track.</p>
+
+<p>An audio clip does not contain the sound. It contains a <strong>reference</strong> to the sound: a pointer to a file on the drive, plus instructions for which part of that file to play and how to play it. The file it points at is called a <strong>sample</strong>, and the samples in your Module 3 library are exactly these files. The clip is the instruction sheet; the sample is the sound.</p>
+
+<p>Double-click a clip and the <strong>Clip View</strong> opens along the bottom of the window. Everything you can do to a clip lives here: where it starts and ends, its fades, its volume, and more.</p>
+
+<figure class="screenshot">
+  <img src="../../assets/images/module-04-week-10/clip-view-audio.png" alt="Live's Clip View for an audio clip, showing controls for the clip's playback including gain, pitch, loop, and start and end." loading="lazy">
+  <figcaption>An audio clip in the Clip View. Many of these controls arrive later in the module; what matters now is that every one of them shapes playback and leaves the sample on disk untouched.</figcaption>
+</figure>
+
+<hr>
+
+<h2>9 · Nondestructive editing</h2>
+
+<p>That a clip points at a file, rather than containing it, changes how you edit.</p>
 
 <p>In Audacity, editing changed the file. A cut deleted samples. A fade rewrote them. Once you exported and closed, those edits were baked in, which is why you kept careful copies and worked a little cautiously. That approach is called <strong>destructive editing</strong>: the edit destroys the original and replaces it with the edited version.</p>
 
@@ -129,7 +188,12 @@
   <figcaption>An audio clip is an instruction sheet. It points at a sound file and carries your edits. The file underneath stays exactly as you recorded it.</figcaption>
 </figure>
 
-<p>The practical payoff is large: you cannot ruin your source. Trim too much, stretch a sound until it breaks, change your mind an hour later, and the original file is still sitting there untouched, ready for you to start over. Where Module 2 rewarded caution, Live rewards experiment. Try the edit. If you do not like it, undo it or drag the clip's edge back. Nothing was lost.</p>
+<p>The payoff is large: you cannot ruin your source. Trim too much, stretch a sound until it breaks, change your mind an hour later, and the original file is still sitting there untouched, ready for you to start over. Where Module 2 rewarded caution, Live rewards experiment. Try the edit. If you do not like it, undo it or drag the clip's edge back. Nothing was lost.</p>
+
+<figure class="screenshot">
+  <img src="../../assets/images/module-04-week-10/clip-edge-drag.png" alt="An audio clip in the Arrangement View being trimmed by dragging its edge inward." loading="lazy">
+  <figcaption>Trimming a clip by dragging its edge. You hear less of the sample; the file itself does not change. Drag the edge back and the rest returns.</figcaption>
+</figure>
 
 <div class="callout">
   <div class="callout-label">Coming from Audacity</div>
@@ -152,20 +216,29 @@
   <dt>Project folder</dt>
   <dd>The folder that keeps a Live Set and the sounds it uses together in one place.</dd>
 
+  <dt>Browser</dt>
+  <dd>The panel down the left side of Live's window where your sounds, instruments, and effects live. You drag from the browser into a Set.</dd>
+
+  <dt>Control Bar</dt>
+  <dd>The strip across the top of the window with the transport (play, stop), the tempo, and the buttons that switch between the two views.</dd>
+
   <dt>Arrangement View</dt>
   <dd>The timeline view of a Set: time left to right, tracks stacked top to bottom. Home base for editing this module.</dd>
 
   <dt>Session View</dt>
-  <dd>The grid view of a Set: slots holding short pieces of sound you can start and stop on the fly. Met later in the module.</dd>
+  <dd>The grid view of a Set: slots holding short pieces of sound you can start and stop on their own. Met properly later in the module.</dd>
+
+  <dt>Track</dt>
+  <dd>A lane that holds clips and plays one at a time. Both views share the same tracks. Live has audio tracks and MIDI tracks; this module starts with audio.</dd>
 
   <dt>Clip</dt>
-  <dd>A single piece of sound on a track. An audio clip is a reference to a sound file plus instructions for how to play it, not the sound itself.</dd>
+  <dd>A single piece of sound on a track. An audio clip is a reference to a sample plus instructions for how to play it, not the sound itself.</dd>
 
   <dt>Sample</dt>
   <dd>A sound file on the drive that a clip points at. The prepped sounds in your Module 3 library are samples.</dd>
 
-  <dt>Track</dt>
-  <dd>A lane that holds clips and plays one at a time. Live has audio tracks and MIDI tracks; this module starts with audio.</dd>
+  <dt>Clip View</dt>
+  <dd>The panel along the bottom of the window, opened by double-clicking a clip, where the clip's settings live.</dd>
 
   <dt>Destructive editing</dt>
   <dd>Editing that changes the original file, the way Audacity does. The edit replaces the original.</dd>
