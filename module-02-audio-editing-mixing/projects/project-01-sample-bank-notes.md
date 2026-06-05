@@ -36,7 +36,7 @@ This isn't a checklist students need to be aware of; it's a curatorial principle
 
 - **40–80 sounds total**: enough variety, not overwhelming
 - **Mix of short (under 5 sec) and longer (5–30 sec) sources**: students need both for editing flexibility
-- **Mostly 44.1 kHz / 16-bit WAV**: matches what they'll export for Project 1
+- **Mostly 48 kHz / 24-bit WAV**: matches what they'll export for Project 1
 - **Mostly mono or true stereo**: avoid sounds with weird stereo treatment that students will have to undo
 
 ---

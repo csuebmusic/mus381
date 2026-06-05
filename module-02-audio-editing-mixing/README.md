@@ -126,7 +126,7 @@ If anything is missing or broken, log it immediately in the lab gear tracker and
 Every student opens Audacity for every Module 2 session. The same opening sequence applies:
 
 1. Open Audacity (already in the dock on lab machines)
-2. Set project sample rate to 44.1 kHz (bottom-left of window). This is the Module 2 standard
+2. Set project sample rate to 48 kHz (bottom-left of window). This is the Module 2 standard
 3. Set project to record from the audio interface (top toolbar dropdown, should default correctly but verify)
 4. Open last session's project file from `~/Documents/lastname/` (after the first session)
 
@@ -219,7 +219,7 @@ Key beats:
 - **Dynamic range follows from bit depth.** ~6 dB per bit. 16-bit = ~96 dB of usable range. The bar chart in Section 5 makes this visceral; point at the orchestra column and say "an orchestra at full volume to a whisper-quiet pianissimo is about 80 dB of range. 16-bit fits that. 4-bit doesn't."
 - **Play the bit depth audio comparison.** Source / 8-bit / 4-bit. The 4-bit example goes silent in its tail because the decay falls below the noise floor; point this out.
 - **Aliasing.** This is the trickiest concept in the reading. The wagon-wheel analogy in the reading is the clearest framing. "If you sample too slowly, high frequencies don't disappear cleanly; they show up as fake low frequencies." Play the aliasing audio comparison: source / 8k properly filtered / 8k unfiltered. The unfiltered version sounds "wrong" in a specific way, and that wrongness is aliasing.
-- **File formats.** WAV (uncompressed, what we use), AIFF (similar, Mac native), MP3 (lossy compression, smaller files, throws information away), FLAC (lossless compression, smaller files but mathematically identical). For Module 2 we work in WAV at 44.1 kHz / 16-bit. That's the assignment standard; later modules will introduce 48 kHz / 32-bit for Ableton.
+- **File formats.** WAV (uncompressed, what we use), AIFF (similar, Mac native), MP3 (lossy compression, smaller files, throws information away), FLAC (lossless compression, smaller files but mathematically identical). For Module 2 we work in WAV at 48 kHz / 24-bit. That's the standard for the whole course; Module 4 steps the bit depth to 32 at export.
 
 #### Block 4: Listening assignment + close (15 min)
 
@@ -266,7 +266,7 @@ Close with a small bridge to Wednesday: "On Wednesday we'll start working in Aud
 Two halves:
 
 - **Part 1 (Digital Audio Explorer):** students hear *how complex sounds are built from sines*. The tool walks them from one sine, to summed sines, to the harmonic series, to timbre. By the end they should understand that "real sound is the sum of sines" is literal and physical, not a metaphor, and they should have hands-on intuition for fundamental, partial, and timbre.
-- **Part 2 (Audacity orientation):** students open Audacity for the first time, set the project format to course standard (44.1 kHz / 16-bit), import a sample, make a basic selection-cut-fade, save the project, export a WAV, and complete the NAS round-trip. Leave with hands on the software and the workflow.
+- **Part 2 (Audacity orientation):** students open Audacity for the first time, set the project format to course standard (48 kHz / 24-bit), import a sample, make a basic selection-cut-fade, save the project, export a WAV, and complete the NAS round-trip. Leave with hands on the software and the workflow.
 
 ### Materials
 
@@ -276,7 +276,7 @@ Two halves:
 ### Pre-class checklist
 
 - Walk the room and lab's gear storage: gear storage baseline (see Module-wide concerns)
-- Verify Audacity opens cleanly on every machine (test on at least 3 stations); confirm project sample rate defaults to 44100 Hz, 16-bit format
+- Verify Audacity opens cleanly on every machine (test on at least 3 stations); set project sample rate to 48000 Hz, 24-bit format
 - Confirm `orientation-sample.wav` is on the NAS at `shared/module-02/orientation/`. **If it's not there, the lab can't run; escalate to Inés.** It's a short (~16 s) stereo bell-like resonance that decays gradually to silence; students cut into the decay and fade what remains in Step 5 of the handout.
 - Open the explorer tool on the instructor station and confirm sound plays from the projector
 - Open the orientation handout (the Lab 1 handout, `03-handout-audacity-orientation.html`) on the instructor station and on each student station's desktop browser
@@ -472,7 +472,7 @@ Two halves:
 
 - Walk the room and lab's gear storage (gear storage baseline)
 - **Verify the sample bank is ready and complete on the NAS** at `shared/sample-banks/project-01/`. The handout assumes the canonical category folders (`attack-sharp`, `attack-soft`, `sustain-long`, `sustain-short`, `texture-continuous`, `voice-and-language`, `found-objects`, `natural-environment`, `mechanical-electronic`). If the bank is missing or has different folder names, **the handout's exercises won't work**. Confirm before class.
-- Verify Audacity opens cleanly on every machine; verify project format defaults are 44.1 kHz / 16-bit
+- Verify Audacity opens cleanly on every machine; set project format to 48 kHz / 24-bit
 - Open the Project 1 prompt on the instructor station
 - Have the Lab 2 handout (`05-handout-editing-techniques.html`) open in a browser at every student station's desktop
 
@@ -850,7 +850,7 @@ Students work. Walk the room. This is the most one-on-one time you'll have with 
 
 Triage what students need:
 
-- **Students nearly done:** check their export. WAV at 44.1/16-bit? Right filename? Right length (90 seconds to 2 minutes)? Listen to the last 30 seconds with them; endings often reveal whether the piece is actually finished. If yes, walk them through the upload to the class folder.
+- **Students nearly done:** check their export. WAV at 48/24? Right filename? Right length (90 seconds to 2 minutes)? Listen to the last 30 seconds with them; endings often reveal whether the piece is actually finished. If yes, walk them through the upload to the class folder.
 - **Students mid-mix:** sit with them, listen for 30-60 seconds on their headphones, give one specific suggestion. Don't try to fix everything; pick the highest-leverage thing.
 - **Students still editing:** check whether they're going to make the deadline. If their piece is 30 seconds and they have an hour left, that's a real problem; talk through what's achievable in the time. It's better to submit a 90-second piece they're proud of than a 2-minute piece that runs out of steam.
 - **Students who are stuck or panicking:** sit. Listen. Ask what's hard. Sometimes the unblock is small ("I don't know how to fade out the end") and sometimes it's bigger ("I hate everything I made"). Either way, the response is calm presence and small concrete next steps.

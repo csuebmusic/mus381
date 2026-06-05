@@ -358,7 +358,7 @@
 
 <h2>3 · Sample rate</h2>
 
-<p><strong>Sample rate</strong> is how many measurements we take per second. The unit is <strong>also hertz</strong> (Hz). Same unit you saw in section 1, counting a different thing: in section 1, Hz was wave cycles per second; here, it's measurements per second. The standard sample rate for CD audio, and the one you'll use throughout this course, is <strong>44,100 Hz</strong>, usually written as <strong>44.1 kHz</strong>. That means 44,100 measurements per second, per channel.</p>
+<p><strong>Sample rate</strong> is how many measurements we take per second. The unit is <strong>also hertz</strong> (Hz). Same unit you saw in section 1, counting a different thing: in section 1, Hz was wave cycles per second; here, it's measurements per second. The most familiar sample rate is the one CD audio uses: <strong>44,100 Hz</strong>, usually written as <strong>44.1 kHz</strong>. That means 44,100 measurements per second, per channel. This course works at a slightly higher rate, 48 kHz.</p>
 
 <p>The intuition is straightforward: more measurements per second means a more accurate digital representation of the original wave. Fewer measurements means the digital version starts to lose detail, especially at higher frequencies, where the wave is moving quickly and you need many samples per cycle to track it.</p>
 
@@ -442,12 +442,7 @@
 
 <p><strong>48 kHz</strong> became the standard for digital video and film. When sound is paired with picture, 48 kHz syncs more cleanly with various video frame rates. It's the default rate inside most professional video tools, broadcast equipment, and (increasingly) modern audio interfaces. It's what most contemporary digital production environments (including Ableton) assume by default.</p>
 
-<p>For this course:</p>
-
-<ul>
-  <li><strong>Module 2 (Audacity):</strong> we'll work at 44.1 kHz. CD standard, what most musique concrète recordings sit at, and Audacity defaults here cleanly.</li>
-  <li><strong>Module 4 (Ableton):</strong> we'll switch to 48 kHz, the modern digital production default. By then you'll be ready to make the change with intent.</li>
-</ul>
+<p>For this course, we work at <strong>48 kHz</strong> the whole way through. It's the modern production default, it matches the field recordings you'll make on a phone in Module 3, and it's what Ableton assumes in Module 4, so your projects stay at one rate all semester. You'll still meet 44.1 kHz everywhere in the wild (every CD, much of what you download), which is why it's worth knowing where it came from.</p>
 
 <p>Neither is "better." Both are conventions, chosen for different historical reasons. Knowing both exist prevents you from being surprised when a project file or interface uses one when you expected the other.</p>
 
@@ -704,10 +699,7 @@
 
 <h3>What we'll use in this course</h3>
 
-<ul>
-  <li><strong>Module 2 (Audacity):</strong> 16-bit for working files and final exports (CD standard).</li>
-  <li><strong>Module 4 (Ableton):</strong> 32-bit for working files and final exports (digital audio standard).</li>
-</ul>
+<p>You work at <strong>24-bit</strong> through Modules 2 and 3, which gives you headroom to edit and record without losing quiet detail. In Module 4 you step up to <strong>32-bit</strong> when you export your finished work in Ableton. The sample rate stays at 48 kHz the whole time; bit depth is the only setting that changes, and only at the end.</p>
 
 <p>You'll see 16, 24, and 32-bit in the wild. The standards are evolving: what was "professional" twenty years ago (16-bit) is now baseline, and what was high-end ten years ago (24-bit) is now common. The trend is toward more headroom.</p>
 
@@ -963,8 +955,8 @@
 
 <ul>
   <li><strong>Always work in WAV.</strong> Convert to MP3 only at the very end and only when needed.</li>
-  <li><strong>44.1 kHz, 16-bit</strong> is your default for Module 2 in Audacity.</li>
-  <li><strong>48 kHz, 32-bit</strong> is the default you'll move to in Module 4 with Ableton: the modern digital production standard.</li>
+  <li><strong>48 kHz, 24-bit</strong> is your working standard for Modules 2 and 3.</li>
+  <li><strong>48 kHz, 32-bit</strong> is what you export at in Module 4: same rate, higher bit depth.</li>
   <li><strong>Lower sample rates and bit depths have an aesthetic.</strong> "Lo-fi" is often literally that: files at low sample rates and bit depths, on purpose.</li>
   <li><strong>The numbers don't make the music.</strong> A great recording at 44.1 kHz / 16-bit will outlast a mediocre one at 192 kHz / 24-bit. Focus on what you're capturing and how, not on chasing the highest specs.</li>
 </ul>
@@ -987,7 +979,7 @@
   <dd>A single measurement of a sound's amplitude at one moment in time. Also (confusingly): a recorded sound used as creative material in music. Context tells you which meaning.</dd>
 
   <dt>Sample rate</dt>
-  <dd>How many samples are taken per second. Measured in Hz or kHz. Standard for audio: 44.1 kHz.</dd>
+  <dd>How many samples are taken per second. Measured in Hz or kHz. Common rates: 44.1 kHz (CD) and 48 kHz (video and modern production). This course uses 48 kHz.</dd>
 
   <dt>Bit depth</dt>
   <dd>How many bits are used to store each sample. Higher bit depth = finer amplitude resolution and a lower noise floor. Standards: 16-bit (CD), 24-bit (recording), 32-bit (DAW working files).</dd>
