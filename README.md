@@ -13,7 +13,7 @@ course-outline.md                    Full course outline, schedule, learning out
 module-01-fluency/                   Week 1 — computer & studio fluency
 module-02-audio-editing-mixing/      Weeks 2–5 — Audacity, editing, mixing → Project 1
 module-03-recording/                 Weeks 6–9 — recording & sample library → midterm
-module-04-ableton/                   Weeks 10–14 — Ableton audio + MIDI → final (Wk 15 revision)
+module-04-ableton/                   Weeks 10–13 — Ableton: DAW, audio, sampling, mixing → final (Wks 14–15)
 policies/                            Cross-cutting course policies (e.g. NAS archival)
 assets/                              Shared CSS, audio, images, videos
 build/                               Scripts that generate audio demos and other assets

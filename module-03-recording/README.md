@@ -660,4 +660,4 @@ After Module 3 ends, write a short retrospective covering what went well, what d
 
 ## What follows
 
-Module 4 (Wks 10–14) moves into Ableton. Audio work first, MIDI and synthesis second. The sample libraries built in this module are the bridge: students will load their own libraries into Ableton in Wk 10 and start making pieces from their own recorded material.
+Module 4 (Wks 10–13) moves into Ableton: the DAW environment, audio editing, basic sampling, and mixing, then a transferable-concepts session in Adobe Audition. The sample libraries built in this module are the bridge: students will load their own libraries into Ableton in Wk 10 and start making pieces from their own recorded material.

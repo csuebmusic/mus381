@@ -60,7 +60,7 @@ The course is structured around four modules, each ending in a real deliverable.
 
 - **Week 1 is intentionally a single Wed session** (orientation + setup) — content fits the half-week comfortably.
 - **Week 4 loses its Monday** (Labor Day) — falls during Module 2 (editing/mixing). Concepts that would have been introduced Monday are handled in the Wednesday lab.
-- **Week 13 loses its Wednesday** (Veterans Day) — falls during Module 4b (MIDI/synth). Reduces hands-on time slightly; students should have foundational MIDI competency by then.
+- **Week 13 loses its Wednesday** (Veterans Day) — falls at the end of the Ableton sequence. The Monday session is the Adobe Audition / transferable-concepts lecture, which is a single session by design, so the lost Wednesday costs no planned lab time.
 
 ---
 
@@ -71,8 +71,8 @@ The course is structured around four modules, each ending in a real deliverable.
 | 1 | Computer & studio fluency | 1 | — (setup) |
 | 2 | Digital audio + editing + mixing in Audacity | 2–5 | **Project 1: Musique concrète** (Wed Wk 5) |
 | 3 | Recording, sample prep, library building | 6–9 | **Midterm: sample library + terminology exam** (Wk 9) |
-| 4 | Ableton — audio (Wks 10–11) + MIDI/synth (Wks 12–14) | 10–14 | Final project Draft 1 (Wk 14) |
-| — | Revision week | 15 | Final project Draft 2 (Wk 15) |
+| 4 | Ableton — DAW environment, audio editing, sampling, mixing; transferable concepts (Adobe Audition) | 10–13 | (final project follows) |
+| — | Final project | 14–15 | Draft 1 (Wk 14), Draft 2 (Wk 15) |
 | — | Finals | Dec 7–12 | Final exam (cumulative) + final piece uploaded to NAS, posted for class listening |
 
 ---
@@ -139,32 +139,24 @@ The course is structured around four modules, each ending in a real deliverable.
 
 ---
 
-## Module 4 — Ableton (Weeks 10–14)
+## Module 4 — Ableton (Weeks 10–13, instruction; final project Weeks 14–15)
 
-**Why this module:** Ableton is the destination DAW for the course. Five weeks gives students working fluency. The module is split into two halves: audio first (which connects directly to their sample library work from Module 3), then MIDI and synthesis (which opens up a new creative dimension). The split lets students build confidence with familiar material before tackling new abstractions.
+**Why this module:** Ableton is the destination DAW for the course, and the place where the editing skills from Module 2 and the recorded material from Module 3 converge. Students load their own sample library and start making pieces from it. The module builds working fluency in a full DAW, then steps out of Ableton for one session to show that the concepts are portable to any tool.
 
-### Module 4a — Ableton: audio (Weeks 10–11)
-
-**Topics:**
-- Ableton interface: Session view vs Arrangement view
-- Importing samples and audio files
-- Warping: how it works, when to use it
-- Clip envelopes and basic automation
-- Effects in Ableton: built-in EQ, compressors, reverbs, delays
-- Building a track from the student's own sample library
-
-**Listening:** Producers using sample manipulation (Holly Herndon, Oneohtrix Point Never, hip-hop producers, others)
-
-### Module 4b — Ableton: MIDI + synthesis light touch (Weeks 12–14)
+The arc runs: introduce the DAW environment through Ableton (Session vs Arrangement view, the clip, nondestructive editing) → edit audio (import the library, warp, arrange) → meet the sampler instruments (Simpler and Drum Rack) and trigger them from MIDI for the first time → sample in practice → mix in Ableton → see the same concepts in a different DAW (Adobe Audition).
 
 **Topics:**
-- What is MIDI? (data, not sound)
-- MIDI in Ableton: drawing notes, recording from keyboard, editing
-- Ableton instruments: Drum Rack, Simpler, Operator, Wavetable
-- Anatomy of a synth (one lecture): oscillator, filter, envelope, LFO
-- Combining audio and MIDI in arrangement
+- The DAW environment: Session view vs Arrangement view, the clip, nondestructive editing
+- Audio editing in Ableton: importing the library, clip edits, warping, project-rate vs file-rate (44.1 → 48)
+- Basic sampling: Simpler and Drum Rack, with MIDI introduced as a trigger (a note triggers an instrument; the instrument makes the sound)
+- Basic mixing in Ableton: track faders, pan, sends and return tracks, group tracks, built-in EQ and compression, mapped onto the Module 3 console architecture
+- Transferable concepts: the same ideas (sample rate, bit depth, editing, EQ, dynamics, multitrack) in Adobe Audition, aimed in part at the art majors already in the Adobe suite
 
-**Listening:** MIDI as a control layer (Bach inventions to Aphex Twin to electronic dance music)
+MIDI appears only as a trigger for the sampler instruments. Synthesis (oscillators, filters, the Operator and Wavetable instruments) is deliberately left to Sound Design rather than rushed into the final weeks here.
+
+**Listening:** one historical listening on sample manipulation, the lineage of building music from recorded sound from musique concrète through hip-hop and sampling to contemporary producers. It closes the loop opened by Module 2's musique concrète listening. No peer listening in this module; final pieces are shared in the class folder for everyone to hear.
+
+**Session-by-session teaching notes:** `module-04-ableton/README.md`.
 
 **Deliverable:**
 - Week 14 (Wed): Final project Draft 1
