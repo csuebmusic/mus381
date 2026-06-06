@@ -5,6 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MUS 381 · The DAW Environment</title>
   <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    /* Manual-link card: a styled hyperlink to a section of the Live 11 manual.
+       Mirrors the .listen-link card used on listening pages. */
+    .manual-link {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 0.9rem 1.25rem; margin: 1rem 0 0.75rem;
+      background: var(--bg-alt);
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--accent);
+      border-radius: 4px;
+      text-decoration: none; color: var(--ink);
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+    .manual-link:hover { background: var(--bg); border-color: var(--accent); }
+    .manual-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .manual-link .manual-icon {
+      flex: 0 0 auto; width: 34px; height: 34px; border-radius: 50%;
+      background: var(--accent); color: var(--bg);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--mono); font-size: 1.05rem; line-height: 1;
+    }
+    .manual-link .manual-body { flex: 1 1 auto; min-width: 0; }
+    .manual-link .manual-title { font-weight: 600; font-size: 0.95rem; line-height: 1.35; color: var(--ink); }
+    .manual-link .manual-scope {
+      font-family: var(--mono); font-size: 0.74rem; text-transform: uppercase;
+      letter-spacing: 0.05em; color: var(--ink-soft); margin-top: 0.25rem;
+    }
+    .manual-link .manual-arrow { flex: 0 0 auto; font-family: var(--mono); font-size: 1rem; color: var(--ink-soft); }
+    /* Index of the subsections to read within a linked manual chapter. */
+    .manual-index { list-style: none; padding-left: 0; margin: 0.25rem 0 0; }
+    .manual-index li { position: relative; padding-left: 3.4rem; margin-bottom: 0.9rem; }
+    .manual-index .idx-num {
+      position: absolute; left: 0; top: 0.1rem;
+      font-family: var(--mono); font-size: 0.78rem; color: var(--accent);
+      background: var(--bg-alt); padding: 0.1em 0.45em; border-radius: 2px;
+      min-width: 2.6rem; text-align: center;
+    }
+    .manual-index .idx-title { font-weight: 600; }
+    .manual-index .idx-note { display: block; color: var(--ink-soft); font-size: 0.95rem; margin-top: 0.15rem; }
+  </style>
 </head>
 <body>
 
@@ -16,241 +56,83 @@
 <div class="title-block">
   <div class="module-tag">Module 04 · Audio, sampling &amp; mixing in Ableton</div>
   <h1>The DAW Environment</h1>
-  <div class="subtitle">What a full DAW is, and why editing a clip never changes the file underneath.</div>
+  <div class="subtitle">What a full DAW does, how audio and MIDI differ, and how we use each in this course.</div>
 </div>
 
-<p class="lede">You spent Modules 2 and 3 in Audacity: first editing sound that was handed to you, then recording your own. This module moves you into Ableton Live, the program the rest of the course is built around. You will load the sample library you built in Module 3 and start making pieces from it. The biggest change from Audacity is that in Live your edits never alter the original sound files, so you can experiment freely. On Wednesday you open Live and get started.</p>
-
-<div class="callout">
-  <div class="callout-label">Today's gear</div>
-  <p>Take from the lab's gear storage: <strong>audio interface, headphones</strong>. Plug in and run through the start-of-session steps on the <strong>Session Routines</strong> card before continuing here.</p>
-</div>
+<p class="lede">You spent Modules 2 and 3 in Audacity, first editing sound and then recording your own. This module moves you into Ableton Live, the program the rest of the course is built around. Live does more than Audacity, and it works with a second kind of material alongside audio, called MIDI. Getting comfortable with that difference is what this first week is about.</p>
 
 <hr>
 
-<h2>1 · A full DAW</h2>
+<h2>1 &middot; The DAW environment</h2>
 
-<p>A <strong>DAW</strong> (digital audio workstation) is software for recording, editing, arranging, and mixing audio on a computer. By that definition, Audacity is already a DAW, and you have been doing DAW work since Week 2. So why switch?</p>
+<p>A DAW, a digital audio workstation, is software for recording, editing, arranging, and mixing sound. You have already used one: Audacity. Ableton Live is a fuller version of the same idea. Where Audacity mostly handles a few tracks of recorded sound at a time, Live is built to run many tracks together, to play instruments you trigger from a keyboard, and to mix the whole thing through a built-in mixer. The rest of the course lives inside it.</p>
 
-<p>Because Ableton Live is a <em>full</em> DAW, and Audacity is a narrow one. In Audacity you mostly worked with one piece of sound at a time, on a short stack of tracks, with a fixed set of editing tools. Live is built to hold many tracks playing together, to play instruments you trigger from a keyboard, and to mix everything through a built-in mixing desk. A version of it runs in most studios you will walk into.</p>
+<h3>Real-time, and nondestructive</h3>
 
-<hr>
+<p>Two ideas from Module 2 matter even more here.</p>
 
-<h2>2 · What you see when you open Live</h2>
+<p>The first is that Live works in <strong>real time</strong>. When you add a fade, change a volume, or put an effect on a track, Live does not rewrite the sound on the disk. It performs the change as the audio plays, every time you press play, computing it on the spot. Turn the effect off and the sound returns to what it was, because the change was never written down.</p>
 
-<p>When you open Live, the window is divided into a few areas, each doing one job. Across the top is the <strong>Control Bar</strong>, which holds the play and stop buttons, the tempo, and the buttons that switch between Live's two views. Down the left is the <strong>browser</strong>, where your sounds, instruments, and effects live. The large area in the middle is where you build a piece. Along the bottom, when you select a clip, is the <strong>Clip View</strong>, where that clip's settings appear.</p>
+<p>The second follows from the first. Editing in Live is <strong>nondestructive</strong>: your edits never alter the original sound files. When you cut, trim, or fade, Live changes how it reads a file, not the file itself. The recording on the disk stays whole. (In Audacity some edits were destructive, changing the file directly, which is why you kept careful copies. In Live you can relax that habit.) The payoff is freedom: you can try anything, because you cannot ruin your source.</p>
 
-<p>The sections below walk the parts you use first. Wednesday's lab is where you open Live and put hands on all of it.</p>
+<h3>MIDI: the data of music</h3>
 
-<hr>
+<p>Live works with two kinds of material. The first you know: <strong>audio</strong>, the recorded sound itself, the waveforms you edited in Audacity. The second is new: <strong>MIDI</strong>.</p>
 
-<h2>3 · The Live Set and the Project folder</h2>
+<p>MIDI is not sound. It is <strong>data</strong>, editable information about music. A line of MIDI says which note, when it starts, how long it lasts, and how hard it was played. It carries the instructions for music while carrying no sound of its own. Think of a player-piano roll: held up to your ear it makes no sound, but fed through the piano, its holes tell the instrument what to play. MIDI is that roll, written as data.</p>
 
-<p>The document you work in is called a <strong>Live Set</strong>. It plays the same role Audacity's project did: it is the file that holds your work, with its tracks, its clips, and all their settings.</p>
+<p>Because MIDI is data, it is endlessly editable. Long after you play a passage you can move a note, change its pitch, make it louder, or shift its timing, the same way you would edit a line of text.</p>
 
-<p>A Set lives inside a <strong>Project folder</strong>, which keeps the Set and the sounds it uses together in one place. Your local-first, NAS-as-sync habit does not change: pull your work down at the start of a session, upload it at the end, the same as always.</p>
+<h3>Two kinds of track</h3>
 
-<hr>
+<p>A DAW like Live keeps audio and MIDI side by side. A <strong>track</strong> is a lane that holds one kind of material: an audio track carries recorded sound, a MIDI track carries note data. They live in the same project and play together, so a piece can run recorded audio on some tracks and MIDI-driven sound on others. Live shows you both at once.</p>
 
-<h2>4 · The audio format</h2>
+<p>A MIDI track makes no sound on its own. Its notes drive an <strong>instrument</strong>, and the instrument makes the sound you hear.</p>
 
-<p>You have worked at <strong>48 kHz</strong> since Module 2, and your Module 3 sample library is already there. Live runs at the same rate, so your library files load into a Set with nothing to convert. The sample rate does not change in this module.</p>
+<h3>How we use MIDI in this course</h3>
 
-<p>Bit depth changes once, at the end. When you export a finished piece, you export at <strong>32-bit</strong>, a step up from the 24-bit you have worked in. It is a setting you choose in the export dialog, and it gives the final file extra headroom from all the mixing Live has done.</p>
+<p>We use MIDI in one specific way: to <strong>trigger samples</strong>.</p>
 
-<hr>
+<p>First, the word <strong>sample</strong>. You met it in Module 2, where it meant a single measurement of a sound wave, thousands taken every second. Here it means something different: a sample is a chunk of recorded audio, a sound you can load and play. Your Module 3 library is full of them. Same word, two meanings, and in this module a sample is the chunk of sound.</p>
 
-<h2>5 · The browser</h2>
-
-<p>Down the left side of the window is the <strong>browser</strong>. It is where Live keeps everything you can put in a piece: the sounds that ship with Live, your own saved samples, the instruments, and the effects. You scroll or search, click a sound to hear it, then drag the one you want into your Set.</p>
-
-<figure class="screenshot">
-  <img src="../../assets/images/module-04-week-10/live-browser.png" alt="Live's browser panel: a Collections and Categories list on the left (Sounds, Drums, Instruments, Audio Effects, MIDI Effects, Max for Live) and a list of items on the right." loading="lazy">
-  <figcaption>Live's browser. Categories of material on the left; the contents of whatever you select on the right.</figcaption>
-</figure>
-
-<p>When you drag a sound from the browser onto a track, Live makes a <strong>clip</strong> from it: a single piece of sound sitting on the track, the thing you actually arrange and edit. The sound file stays where it was. The clip points at it.</p>
+<p>The instrument on a MIDI track will be one that plays your samples. A MIDI note tells a sample to sound: press a key and a sample plays; press a higher key and the same sample plays higher. That is the whole role MIDI has here. We are not using it to compose music note by note, writing melodies and harmonies into a grid. That is its own craft, and a rich one. If it draws you in, it lives in my advanced sound design courses and in applied composition and music production, where there is room to chase it.</p>
 
 <hr>
 
-<h2>6 · Two views: Session and Arrangement</h2>
+<h2>2 &middot; Getting into Live: First Steps</h2>
 
-<p>A Live Set gives you two ways to look at your work, called the <strong>Arrangement View</strong> and the <strong>Session View</strong>. You switch between them with the <code>Tab</code> key, or with the two buttons at the top right of the window.</p>
+<p>With that in mind, open Live's own manual. Ableton wrote it, it matches the version in the lab, and learning to find your way around it is part of learning the tool. We read these sections together in class, so skim them first and bring questions.</p>
 
-<figure class="screenshot">
-  <img src="../../assets/images/module-04-week-10/view-selectors.png" alt="The Session and Arrangement view selector buttons at the top right of Live's window." loading="lazy">
-  <figcaption>The Session and Arrangement selectors, top right. <code>Tab</code> switches between the two.</figcaption>
-</figure>
+<p>Start with <strong>First Steps</strong>. Three parts of it matter right now.</p>
 
-<p>The <strong>Arrangement View</strong> is a timeline. Time runs left to right, tracks stack top to bottom, and you build a piece by placing sound along the line. It works like the Audacity window you already know, and it is home base for this module.</p>
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/first-steps/" target="_blank" rel="noopener noreferrer">
+  <span class="manual-icon" aria-hidden="true">&sect;</span>
+  <span class="manual-body">
+    <span class="manual-title">First Steps</span>
+    <span class="manual-scope">Chapter 2 of the Live 11 manual &middot; opens in a new tab</span>
+  </span>
+  <span class="manual-arrow" aria-hidden="true">&#8599;</span>
+</a>
 
-<p>The <strong>Session View</strong> is a grid. Instead of a timeline, you get rows and columns of slots, each holding a short piece of sound you can start and stop on its own. Producers use it to try ideas and loop sections before committing them to a timeline. You meet it properly once you have sound to play with; for now it is enough to know it is there.</p>
+<ul class="manual-index">
+  <li>
+    <span class="idx-num">2.1.1</span>
+    <span class="idx-title">Using the Info View and Index</span>
+    <span class="idx-note">Live's built-in help. Hover over anything and the Info View, in the lower left, tells you what it is. Your fastest way to learn the interface on your own.</span>
+  </li>
+  <li>
+    <span class="idx-num">2.2</span>
+    <span class="idx-title">Setting up Preferences</span>
+    <span class="idx-note">Where you point Live at the lab's gear. Until the audio interface is set here, Live makes no sound.</span>
+  </li>
+  <li>
+    <span class="idx-num">2.3</span>
+    <span class="idx-title">The Main Live Screen</span>
+    <span class="idx-note">A tour of the window: the areas you will be looking at all module. Read it to put names to what you see.</span>
+  </li>
+</ul>
 
-<figure class="screenshot">
-  <img src="../../assets/images/module-04-week-10/session-view-grid.png" alt="Live's Session View: a grid of colored clip slots arranged in columns, with one row highlighted." loading="lazy">
-  <figcaption>Session View: a grid of clip slots. Each slot holds a clip you can launch on its own.</figcaption>
-</figure>
-
-<p>The two views are not two separate pieces. They share one Set, one set of tracks, and one mixer. What each view keeps to itself is its clips: the Arrangement holds the clips on your timeline, the Session holds the clips in your grid. Pressing <code>Tab</code> changes which one you are looking at. It does not change what is stored, and it does not change what you hear.</p>
-
-<hr>
-
-<h2>7 · Tracks</h2>
-
-<p>A <strong>track</strong> is a lane that holds clips. In the Arrangement it runs left to right along the timeline; in the Session it is a column. The two views share the same tracks, which is what connects them.</p>
-
-<figure class="screenshot">
-  <img src="../../assets/images/module-04-week-10/arrangement-track.png" alt="A track in Live's Arrangement View showing audio clips with waveforms placed along a horizontal timeline." loading="lazy">
-  <figcaption>A track in the Arrangement View, with clips placed along the timeline.</figcaption>
-</figure>
-
-<p>A track plays one clip at a time. Sounds that need to play together go on separate tracks; sounds that take turns can share a track.</p>
-
-<p>Live has two kinds of track, audio and MIDI, and this module starts with audio. An <strong>audio track</strong> carries recorded sound, the kind your sample library is made of. MIDI arrives next week, when you start triggering sounds from a keyboard.</p>
-
-<hr>
-
-<h2>8 · The clip and the sample</h2>
-
-<p>You have been making clips since you dragged your first sound out of the browser. A <strong>clip</strong> is the basic unit of work in Live: one recording, one loop, one sample from your library, sitting on a track.</p>
-
-<p>An audio clip does not contain the sound. It contains a <strong>reference</strong> to the sound: a pointer to a file on the drive, plus instructions for which part of that file to play and how to play it. The file it points at is called a <strong>sample</strong>, and the samples in your Module 3 library are exactly these files. The clip is the instruction sheet; the sample is the sound.</p>
-
-<p>Double-click a clip and the <strong>Clip View</strong> opens along the bottom of the window. Everything you can do to a clip lives here: where it starts and ends, its fades, its volume, and more.</p>
-
-<figure class="screenshot">
-  <img src="../../assets/images/module-04-week-10/clip-view-audio.png" alt="Live's Clip View for an audio clip, showing controls for the clip's playback including gain, pitch, loop, and start and end." loading="lazy">
-  <figcaption>An audio clip in the Clip View. Many of these controls arrive later in the module; what matters now is that every one of them shapes playback and leaves the sample on disk untouched.</figcaption>
-</figure>
-
-<hr>
-
-<h2>9 · Nondestructive editing</h2>
-
-<p>That a clip points at a file, rather than containing it, changes how you edit.</p>
-
-<p>In Audacity, editing changed the file. A cut deleted samples. A fade rewrote them. Once you exported and closed, those edits were baked in, which is why you kept careful copies and worked a little cautiously. That approach is called <strong>destructive editing</strong>: the edit destroys the original and replaces it with the edited version.</p>
-
-<p>Live works the other way. When you trim a clip, fade it, change its volume, or stretch it, those edits live on the <strong>clip</strong>, and Live applies them as the sound plays. The sample on the drive is never touched. This is called <strong>nondestructive editing</strong>: the edit shapes playback without changing the original.</p>
-
-<figure>
-  <svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg"
-       role="img" aria-label="Diagram showing a clip as an instruction sheet that points at a sound file on disk. The clip holds edits: start and end, fades, gain, and warp. The sound file underneath is never changed; the clip points at the portion of it that plays.">
-    <!-- Top label -->
-    <text x="360" y="24" text-anchor="middle"
-          font-family="DM Mono, monospace" font-size="11" letter-spacing="0.12em"
-          fill="var(--accent)">A CLIP POINTS AT A FILE</text>
-
-    <!-- Clip box (the instruction sheet) -->
-    <g>
-      <rect x="40" y="58" width="250" height="170" rx="4"
-            fill="var(--bg-alt)" stroke="var(--accent)" stroke-width="1.5"/>
-      <text x="60" y="86" text-anchor="start"
-            font-family="DM Sans, sans-serif" font-size="15" font-weight="600" fill="var(--ink)">Clip</text>
-      <text x="60" y="104" text-anchor="start"
-            font-family="DM Mono, monospace" font-size="10" fill="var(--ink-soft)">your edits live here</text>
-      <line x1="60" y1="116" x2="270" y2="116" stroke="var(--rule)" stroke-width="1"/>
-      <text x="60" y="140" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">start / end</text>
-      <text x="60" y="162" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">fade in / out</text>
-      <text x="60" y="184" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">gain (volume)</text>
-      <text x="60" y="206" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">stretch (speed)</text>
-    </g>
-
-    <!-- Arrow: clip points at the file -->
-    <defs>
-      <marker id="arrow-points" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-        <polygon points="0 0, 10 3, 0 6" fill="var(--accent)"/>
-      </marker>
-    </defs>
-    <line x1="292" y1="150" x2="446" y2="150"
-          stroke="var(--accent)" stroke-width="2" marker-end="url(#arrow-points)"/>
-    <text x="369" y="142" text-anchor="middle"
-          font-family="DM Mono, monospace" font-size="10" fill="var(--accent)">points at</text>
-
-    <!-- Sound file box (never changes) -->
-    <g>
-      <rect x="450" y="92" width="240" height="116" rx="4"
-            fill="var(--bg-alt)" stroke="var(--rule)" stroke-width="1.5"/>
-      <text x="570" y="116" text-anchor="middle"
-            font-family="DM Sans, sans-serif" font-size="14" font-weight="600" fill="var(--ink)">Sound file on disk</text>
-      <!-- highlighted played region -->
-      <rect x="512" y="132" width="116" height="46" rx="2"
-            fill="var(--accent-soft)" opacity="0.28"/>
-      <!-- simple waveform -->
-      <polyline points="466,155 478,140 490,168 502,146 514,172 526,134 538,176 550,140 562,170 574,148 586,166 598,138 610,172 622,150 634,164 646,144 658,160 670,152"
-                fill="none" stroke="var(--ink-soft)" stroke-width="1.5"/>
-      <text x="570" y="198" text-anchor="middle"
-            font-family="DM Mono, monospace" font-size="10" fill="var(--ink-soft)">never changes</text>
-    </g>
-    <text x="570" y="246" text-anchor="middle"
-          font-family="DM Mono, monospace" font-size="10" fill="var(--ink-soft)">shaded = the part this clip plays</text>
-  </svg>
-  <figcaption>An audio clip is an instruction sheet. It points at a sound file and carries your edits. The file underneath stays exactly as you recorded it.</figcaption>
-</figure>
-
-<p>The payoff is large: you cannot ruin your source. Trim too much, stretch a sound until it breaks, change your mind an hour later, and the original file is still sitting there untouched, ready for you to start over. Where Module 2 rewarded caution, Live rewards experiment. Try the edit. If you do not like it, undo it or drag the clip's edge back. Nothing was lost.</p>
-
-<figure class="screenshot">
-  <img src="../../assets/images/module-04-week-10/clip-edge-drag.png" alt="An audio clip in the Arrangement View being trimmed by dragging its edge inward." loading="lazy">
-  <figcaption>Trimming a clip by dragging its edge. You hear less of the sample; the file itself does not change. Drag the edge back and the rest returns.</figcaption>
-</figure>
-
-<div class="callout">
-  <div class="callout-label">Coming from Audacity</div>
-  <p>The "save a copy before you cut" habit you built in Module 2 was the right instinct for destructive editing. In Live you can relax it. The edits sit on the clip, and the file they point at is safe.</p>
-</div>
-
-<p>On Wednesday you put this to work: you pull your library down from the NAS, drop your own sounds into a Set as clips, and arrange and edit them on the Arrangement timeline, knowing the files themselves are never at risk.</p>
-
-<hr>
-
-<h2>Vocabulary</h2>
-
-<dl class="vocab">
-  <dt>DAW (digital audio workstation)</dt>
-  <dd>Software for recording, editing, arranging, and mixing audio. Audacity is a narrow one; Ableton Live is a full one.</dd>
-
-  <dt>Live Set</dt>
-  <dd>The document you work in, the file that holds your work in Live. It lives inside a Project folder.</dd>
-
-  <dt>Project folder</dt>
-  <dd>The folder that keeps a Live Set and the sounds it uses together in one place.</dd>
-
-  <dt>Browser</dt>
-  <dd>The panel down the left side of Live's window where your sounds, instruments, and effects live. You drag from the browser into a Set.</dd>
-
-  <dt>Control Bar</dt>
-  <dd>The strip across the top of the window with the transport (play, stop), the tempo, and the buttons that switch between the two views.</dd>
-
-  <dt>Arrangement View</dt>
-  <dd>The timeline view of a Set: time left to right, tracks stacked top to bottom. Home base for editing this module.</dd>
-
-  <dt>Session View</dt>
-  <dd>The grid view of a Set: slots holding short pieces of sound you can start and stop on their own. Met properly later in the module.</dd>
-
-  <dt>Track</dt>
-  <dd>A lane that holds clips and plays one at a time. Both views share the same tracks. Live has audio tracks and MIDI tracks; this module starts with audio.</dd>
-
-  <dt>Clip</dt>
-  <dd>A single piece of sound on a track. An audio clip is a reference to a sample plus instructions for how to play it, not the sound itself.</dd>
-
-  <dt>Sample</dt>
-  <dd>A sound file on the drive that a clip points at. The prepped sounds in your Module 3 library are samples.</dd>
-
-  <dt>Clip View</dt>
-  <dd>The panel along the bottom of the window, opened by double-clicking a clip, where the clip's settings live.</dd>
-
-  <dt>Destructive editing</dt>
-  <dd>Editing that changes the original file, the way Audacity does. The edit replaces the original.</dd>
-
-  <dt>Nondestructive editing</dt>
-  <dd>Editing that shapes playback without changing the original file, the way Live does. The edits live on the clip.</dd>
-</dl>
-
-<div class="callout">
-  <div class="callout-label">End of session</div>
-  <p>Before leaving the station, run the end-of-session routine on the <strong>Session Routines</strong> card. NAS upload first, gear teardown second.</p>
-</div>
+<p>On Wednesday you open Live in the lab, and we walk the main screen together.</p>
 
 <footer class="handout-footer">
   <span>MUS 381 · CSU East Bay</span>
