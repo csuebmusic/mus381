@@ -32,6 +32,8 @@ The lab runs **Ableton Live 11 Suite**. Live is a large DAW; this module deliber
 
 **Screenshots.** The Ableton Live 11 screenshots used in this module's lessons come from the Live 11 reference manual and are used with Ableton's permission for educational use. They live in `assets/images/module-XX-week-YY/` under house names (Week 10's are in `module-04-week-10/`).
 
+**Video companion (TA + students).** Ableton's [Learn Live](https://www.ableton.com/en/live/learn-live/) video library covers most of the topics below (sorted into Setup, Interface, Instruments & Effects, Workflows) and is linked from the Session 1 reading. It's a useful fallback when a manual page is dense or a student learns better from video, and a good place for the TA to send students who want a second pass on a concept. The videos track the current shipping version (Live 12 at time of writing) rather than Live 11, so the UI may look slightly newer; for the beginner-level concepts in this module the difference is cosmetic. Use it as a companion, not a substitute for the version-pinned manual links, which stay the source of truth for menu paths and terminology.
+
 **Week 10 (the environment + audio editing):**
 - First Steps — https://www.ableton.com/en/live-manual/11/first-steps/
 - Live Concepts — https://www.ableton.com/en/live-manual/11/live-concepts/
