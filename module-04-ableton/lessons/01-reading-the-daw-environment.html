@@ -79,15 +79,23 @@
 
 <h2>A short history</h2>
 
-<p>The DAW is the newest tool in a long line for capturing sound and reshaping it after the fact.</p>
+<p>The DAW is the newest tool in a long line for capturing sound and reshaping it after the fact. Recording itself is over a century old, but for most of that time a recording was fixed: once it was made, changing it was hard. The story of the DAW is the story of recordings becoming editable.</p>
 
-<p>That line starts with magnetic tape. In the studios of the late 1940s and 1950s, composers recorded sound to tape and then edited it with a razor blade and splicing tape, cutting a recording apart and reassembling it into something new. You heard the result in the Module 2 listening: musique concrète was made this way, by hand, one cut at a time. Multitrack tape machines followed, stacking several recordings so they could be combined and balanced.</p>
+<p>That story runs through magnetic tape. From the 1940s, studios recorded sound onto tape, and for the first time a recording could be cut apart and rearranged. Composers spliced tape with a razor blade, joining pieces of different recordings into something new. You heard the result in the Module 2 listening: musique concrète was made this way, by hand, one cut at a time.</p>
 
-<p>Computers entered in the 1980s, first as sequencers that arranged electronic instruments, then as recorders. In 1989 Digidesign released Sound Tools, a two-track system that edited audio on a Macintosh screen, and in 1991 it grew into Pro Tools, which recorded many tracks straight to the computer's hard disk. Over the next decade the razor blade gave way to the cursor, and the studio that had been a room full of tape machines became software. A laptop could hold the whole studio.</p>
+<p>In the 1950s the guitarist Les Paul helped develop multitrack tape, machines that held several recordings side by side so parts could be layered and balanced. A band no longer had to play all at once: a take could be built up piece by piece. Multitrack recording is still the heart of how a studio works, and it is what the tracks in Live descend from.</p>
+
+<p>Tape had one hard limit. Editing it was physical, so it was permanent. A cut was a cut, with no undo, and a mistake could cost you the take. The move into digital is in large part the move past that limit.</p>
+
+<p>By the late 1970s, the first systems recorded sound as digital data, as numbers a computer could store. Once sound was numbers, it could be drawn on a screen as a waveform, edited with a cursor, and copied without wearing out. The work that took a razor blade became a selection and a keystroke.</p>
+
+<p>Computers also learned the other half of music: the performance. In 1983 the MIDI standard gave instruments and computers a shared language for notes, so a computer could capture which keys you played and send them back out to a synthesizer. The programs that did this were called sequencers, and they grew into the software we use now.</p>
+
+<p>The two halves came together. In 1989 and 1991, Digidesign's Sound Tools and then Pro Tools recorded many tracks straight to a computer's hard disk, and through the 1990s the studio that had been a room full of tape machines became software. In 1996, Steinberg's VST let effects and instruments themselves run inside the program, using the computer's own power to shape sound as it played. A laptop could now hold the whole studio: the recorder, the mixer, the effects, and the instruments.</p>
 
 <p>Ableton Live arrived in 2001, made by a small company in Berlin for musicians who wanted to perform with a computer on stage, not only record in a studio. That origin is still visible in Live today. It is why the program is called Live, why it has a grid for launching loops on the fly (the Session View), and why it can stretch a recording to match a tempo on the spot (warping). You meet both over the next four weeks.</p>
 
-<p>The tools changed at every step, from blade to mouse, from tape to disk. The work stayed the same: take recorded sound, cut it, layer it, and shape it into a piece.</p>
+<p>The tools changed at every step, from blade to mouse, from tape to disk, from hardware to software. The work stayed the same: take sound, cut it, layer it, and shape it into a piece.</p>
 
 <hr>
 
@@ -115,7 +123,57 @@
 
 <p>MIDI is data, not sound. A MIDI note contains no audio. It is a small instruction that says which pitch to play, when to play it, and how hard. On its own it makes no sound at all. To hear anything, the note has to trigger an <strong>instrument</strong>, and the instrument is what produces the audio.</p>
 
-<p>A short way to hold it: the MIDI note says play this pitch, now, this hard; the instrument turns that into sound. You meet MIDI in Wk 11, where you use it to play the samples in your own library. A note triggers a sound from your collection, and the same note moved higher or lower plays that sound higher or lower. For now it is enough to know that Live keeps audio and MIDI side by side, and that MIDI is the trigger, not the sound.</p>
+<p>The difference between audio and MIDI is the difference between a recording of a performance and the instructions for one. To make audio, a person plays an instrument, the sound moves through the air, and a microphone captures it. To make sound from MIDI, the data takes the performer's place: it tells an instrument inside Live which notes to play, and the instrument generates the sound. One captures a sound that already happened. The other holds the decisions and makes the sound on demand.</p>
+
+<figure class="form-diagram">
+<svg viewBox="0 0 560 320" role="img" aria-label="Two signal flows compared. In the audio flow, a performer plays an instrument, the sound moves through the air, and a microphone captures it as digital audio. In the MIDI flow, a MIDI note carrying pitch, timing, and velocity triggers an instrument inside Live, which generates the digital audio. The MIDI note stands in for the performer." xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="44" font-family="DM Mono, monospace" font-size="12" fill="var(--accent)" letter-spacing="1.5">AUDIO</text>
+  <text x="20" y="200" font-family="DM Mono, monospace" font-size="12" fill="var(--accent)" letter-spacing="1.5">MIDI</text>
+
+  <rect x="20" y="56" width="120" height="64" rx="6" fill="var(--bg-alt)" stroke="var(--accent)" stroke-width="1.5"/>
+  <text x="80" y="84" text-anchor="middle" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">Performer</text>
+  <text x="80" y="101" text-anchor="middle" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)">plays an instrument</text>
+
+  <rect x="210" y="56" width="120" height="64" rx="6" fill="var(--bg-alt)" stroke="var(--accent)" stroke-width="1.5"/>
+  <text x="270" y="92" text-anchor="middle" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">Microphone</text>
+
+  <rect x="400" y="56" width="120" height="64" rx="6" fill="var(--bg-alt)" stroke="var(--accent)" stroke-width="1.5"/>
+  <text x="460" y="92" text-anchor="middle" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">Digital audio</text>
+
+  <line x1="140" y1="88" x2="204" y2="88" stroke="var(--ink-soft)" stroke-width="1.5"/>
+  <polygon points="210,88 204,84.5 204,91.5" fill="var(--ink-soft)"/>
+  <text x="172" y="80" text-anchor="middle" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)">in the air</text>
+  <line x1="330" y1="88" x2="394" y2="88" stroke="var(--ink-soft)" stroke-width="1.5"/>
+  <polygon points="400,88 394,84.5 394,91.5" fill="var(--ink-soft)"/>
+  <text x="362" y="80" text-anchor="middle" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)">captures</text>
+
+  <rect x="20" y="212" width="120" height="64" rx="6" fill="var(--bg-alt)" stroke="var(--accent)" stroke-width="1.5"/>
+  <text x="80" y="240" text-anchor="middle" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">MIDI note</text>
+  <text x="80" y="257" text-anchor="middle" font-family="DM Mono, monospace" font-size="7.5" fill="var(--ink-soft)">pitch · timing · velocity</text>
+
+  <rect x="210" y="212" width="120" height="64" rx="6" fill="var(--bg-alt)" stroke="var(--accent)" stroke-width="1.5"/>
+  <text x="270" y="240" text-anchor="middle" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">Instrument</text>
+  <text x="270" y="257" text-anchor="middle" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)">inside Live</text>
+
+  <rect x="400" y="212" width="120" height="64" rx="6" fill="var(--bg-alt)" stroke="var(--accent)" stroke-width="1.5"/>
+  <text x="460" y="248" text-anchor="middle" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">Digital audio</text>
+
+  <line x1="140" y1="244" x2="204" y2="244" stroke="var(--ink-soft)" stroke-width="1.5"/>
+  <polygon points="210,244 204,240.5 204,247.5" fill="var(--ink-soft)"/>
+  <text x="172" y="236" text-anchor="middle" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)">triggers</text>
+  <line x1="330" y1="244" x2="394" y2="244" stroke="var(--ink-soft)" stroke-width="1.5"/>
+  <polygon points="400,244 394,240.5 394,247.5" fill="var(--ink-soft)"/>
+  <text x="362" y="236" text-anchor="middle" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)">generates</text>
+
+  <line x1="80" y1="120" x2="80" y2="212" stroke="var(--accent)" stroke-width="1.3" stroke-dasharray="4 3"/>
+  <text x="92" y="169" font-family="DM Mono, monospace" font-size="9.5" fill="var(--accent)">stands in for the performer</text>
+</svg>
+<figcaption>Audio captures a performance. MIDI holds the decisions, and an instrument makes the sound.</figcaption>
+</figure>
+
+<p>Because MIDI is only the decisions, you can change them afterward with nothing lost. Move a note to another pitch, shift its timing, play it harder or softer, or swap the instrument entirely, and the part plays back the new way. A wrong note is not a ruined take. It is one note to drag.</p>
+
+<p>You meet MIDI in Wk 11, where you use it to play the samples in your own library. A note triggers a sound from your collection, and the same note moved higher or lower plays that sound higher or lower. For now it is enough to know that Live keeps audio and MIDI side by side, and that MIDI is the trigger, not the sound.</p>
 
 <hr>
 
@@ -319,11 +377,6 @@
   <div class="callout-label">Audio standard for this module</div>
   <p>Your library files are already 48 kHz, the rate the course has used since Module 2, so they import into a Live set with nothing to convert. The one change this module is bit depth: you export finished work at <strong>32-bit</strong>, up from the 24-bit you worked in before. The rate that matters for a deliverable is set when you export.</p>
 </div>
-
-<div class="week-kicker">Wk 13</div>
-<h3>The same ideas in another DAW</h3>
-
-<p>This week has no Ableton manual reading. You step out of Live into Adobe Audition, a different program from a different company, and look for the same concepts under new names: sample rate, bit depth, editing, fades, equalization, compression, multitrack. It closes the module and doubles as a quiet review of the whole course.</p>
 
 <div class="callout">
   <div class="callout-label">End of session</div>
