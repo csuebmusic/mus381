@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MUS 381 · The DAW Environment</title>
+  <title>MUS 381 · Into the DAW</title>
   <link rel="stylesheet" href="../../assets/style.css">
   <style>
     /* Manual-link card: a styled hyperlink to a section of the Live 11 manual.
        Mirrors the .listen-link card used on listening pages. */
     .manual-link {
       display: flex; align-items: center; gap: 1rem;
-      padding: 0.9rem 1.25rem; margin: 1rem 0 0.75rem;
+      padding: 0.9rem 1.25rem; margin: 0.75rem 0;
       background: var(--bg-alt);
       border: 1px solid var(--rule);
       border-left: 3px solid var(--accent);
@@ -33,17 +33,18 @@
       letter-spacing: 0.05em; color: var(--ink-soft); margin-top: 0.25rem;
     }
     .manual-link .manual-arrow { flex: 0 0 auto; font-family: var(--mono); font-size: 1rem; color: var(--ink-soft); }
-    /* Index of the subsections to read within a linked manual chapter. */
-    .manual-index { list-style: none; padding-left: 0; margin: 0.25rem 0 0; }
-    .manual-index li { position: relative; padding-left: 3.4rem; margin-bottom: 0.9rem; }
-    .manual-index .idx-num {
-      position: absolute; left: 0; top: 0.1rem;
-      font-family: var(--mono); font-size: 0.78rem; color: var(--accent);
-      background: var(--bg-alt); padding: 0.1em 0.45em; border-radius: 2px;
-      min-width: 2.6rem; text-align: center;
+    /* Week heading inside the roadmap: a small mono kicker above the section title. */
+    .week-kicker {
+      font-family: var(--mono); font-size: 0.78rem; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--accent); margin: 2rem 0 0.1rem;
     }
-    .manual-index .idx-title { font-weight: 600; }
-    .manual-index .idx-note { display: block; color: var(--ink-soft); font-size: 0.95rem; margin-top: 0.15rem; }
+    /* Locked effect set: two small groups of inline manual links. */
+    .effect-set { margin: 0.75rem 0 0.25rem; }
+    .effect-set .effect-group-label {
+      font-family: var(--mono); font-size: 0.74rem; text-transform: uppercase;
+      letter-spacing: 0.05em; color: var(--ink-soft); margin-bottom: 0.2rem;
+    }
+    .effect-set p { margin: 0 0 0.9rem; }
   </style>
 </head>
 <body>
@@ -55,148 +56,268 @@
 
 <div class="title-block">
   <div class="module-tag">Module 04 · Audio, sampling &amp; mixing in Ableton</div>
-  <h1>The DAW Environment</h1>
-  <div class="subtitle">What a full DAW does, and why nothing you do in Live can ruin your sound.</div>
+  <h1>Into the DAW</h1>
+  <div class="subtitle">A map of the next four weeks in Ableton Live, and the ideas that carry into any DAW.</div>
 </div>
 
-<p class="lede">You spent Modules 2 and 3 in Audacity, first editing sound and then recording your own. This module moves you into Ableton Live, the program the rest of the course is built around. Today we open Live at the front of the room and move through it together. Follow along here as we go: this page holds the ideas, and the linked sections are where we stop and look at Live's own manual.</p>
+<p class="lede">You spent two modules in Audacity, first shaping sound that was handed to you, then recording your own. Now you move into Ableton Live, the program the rest of the course runs on. Live is a full DAW, different enough from Audacity that the first thing to do is get its shape: what a DAW is, where it came from, and what changes once you are working inside one. This page is the map of the next four weeks, and the ideas on it carry past Ableton into any DAW you open later.</p>
+
+<div class="callout">
+  <div class="callout-label">Today's gear</div>
+  <p>Take from the lab's gear storage: <strong>audio interface, headphones</strong>. Plug in and run through the start-of-session steps on the <strong>Session Routines</strong> card before continuing here.</p>
+</div>
 
 <hr>
 
-<h2>1 &middot; The DAW environment</h2>
+<h2>What a DAW is</h2>
 
-<p>Open Live. The window in front of you is where the rest of the course happens, so today is about getting our bearings in it before we make anything.</p>
+<p>Live is a <strong>DAW</strong>, a digital audio workstation: software for recording, editing, arranging, and mixing sound. You have already used one. Audacity is a DAW, a small one, built mostly for recording and editing a few tracks at a time. Live is the full version of the same idea.</p>
 
-<p>Live is a <strong>DAW</strong>, a digital audio workstation: software for recording, editing, arranging, and mixing sound. You have used one already. Audacity is a DAW, a small one. Live is the full version of the same idea. Audacity handled a few tracks of recorded sound at a time. Live runs many tracks at once, plays instruments you trigger, and mixes the whole thing through a built-in console like the one you sat at in Module 3.</p>
+<p>A full DAW does more in one place. It runs many tracks at once. It holds instruments you can play and trigger. It mixes everything through a built-in console laid out like the Toft desk you sat at in Module 3, with faders, sends, and a master. Recording, editing, instruments, and mixing live together in a single window, and that is what makes Live the place where the two halves of this course, the sounds you edited and the sounds you recorded, finally come together.</p>
 
-<p>Before the parts have names, look at the whole. The manual's tour of the main window labels every region you are looking at right now.</p>
+<hr>
+
+<h2>A short history</h2>
+
+<p>The DAW is the newest tool in a long line for capturing sound and reshaping it after the fact.</p>
+
+<p>That line starts with magnetic tape. In the studios of the late 1940s and 1950s, composers recorded sound to tape and then edited it with a razor blade and splicing tape, cutting a recording apart and reassembling it into something new. You heard the result in the Module 2 listening: musique concrète was made this way, by hand, one cut at a time. Multitrack tape machines followed, stacking several recordings so they could be combined and balanced.</p>
+
+<p>Computers entered in the 1980s, first as sequencers that arranged electronic instruments, then as recorders. In 1989 Digidesign released Sound Tools, a two-track system that edited audio on a Macintosh screen, and in 1991 it grew into Pro Tools, which recorded many tracks straight to the computer's hard disk. Over the next decade the razor blade gave way to the cursor, and the studio that had been a room full of tape machines became software. A laptop could hold the whole studio.</p>
+
+<p>Ableton Live arrived in 2001, made by a small company in Berlin for musicians who wanted to perform with a computer on stage, not only record in a studio. That origin is still visible in Live today. It is why the program is called Live, why it has a grid for launching loops on the fly (the Session View), and why it can stretch a recording to match a tempo on the spot (warping). You meet both over the next four weeks.</p>
+
+<p>The tools changed at every step, from blade to mouse, from tape to disk. The work stayed the same: take recorded sound, cut it, layer it, and shape it into a piece.</p>
+
+<hr>
+
+<h2>What changes once you are inside a DAW</h2>
+
+<p>Moving into Live changes editing in two ways and adds one kind of material you have not worked with before.</p>
+
+<h3>Nondestructive editing</h3>
+
+<p>In Audacity, an edit changed the file. Cut a second of sound and that second was gone from the recording on disk. That is why you kept careful copies: a wrong move was permanent.</p>
+
+<p>Live works the other way. When you cut, trim, fade, or move sound in Live, you are not editing the file. You are editing a <strong>clip</strong>. A clip is a reference to an audio file: it points at the file on disk and carries a set of instructions for how to play it, where to start, where to stop, how loud, where to fade. The file itself stays whole. Change the instructions and the file underneath does not move.</p>
+
+<p>This is <strong>nondestructive editing</strong>, and it is the one habit to unlearn from Module 2. Because the file never changes, you cannot ruin your source, and you can try anything. An edit you dislike is undone by changing the instruction back, not by digging out a backup. Beginners tend to edit timidly, afraid of breaking something. In Live there is nothing to break.</p>
+
+<h3>Live processing</h3>
+
+<p>The same idea runs through effects. In Audacity, applying an effect like a fade or an equalizer rewrote the samples in the file. In Live, an effect sits on the track and does its work while the music plays. Press play and Live carries out the effect in real time, building the processed sound on the spot. This is <strong>live processing</strong>, and it is where the name of the program points.</p>
+
+<p>Because the processing happens during playback, an effect is a setting you can change or switch off at any time, and the recording underneath never changes. You can stack an equalizer, a compressor, and a reverb on a track, adjust them while you listen, and turn any of them off to hear the track without it. Nothing is committed until you export a finished file at the end.</p>
+
+<h3>MIDI</h3>
+
+<p>Live holds two kinds of material. One you already know: <strong>audio</strong>, the recorded sound you edited in Module 2 and captured in Module 3. The other is new, and it is called <strong>MIDI</strong>.</p>
+
+<p>MIDI is data, not sound. A MIDI note contains no audio. It is a small instruction that says which pitch to play, when to play it, and how hard. On its own it makes no sound at all. To hear anything, the note has to trigger an <strong>instrument</strong>, and the instrument is what produces the audio.</p>
+
+<p>A short way to hold it: the MIDI note says play this pitch, now, this hard; the instrument turns that into sound. You meet MIDI in Wk 11, where you use it to play the samples in your own library. A note triggers a sound from your collection, and the same note moved higher or lower plays that sound higher or lower. For now it is enough to know that Live keeps audio and MIDI side by side, and that MIDI is the trigger, not the sound.</p>
+
+<hr>
+
+<h2>The concepts travel</h2>
+
+<p>You are learning Live, but you are really learning how a DAW works. The names and the layout change from one program to the next; the concepts underneath do not.</p>
+
+<p>Tracks, clips, nondestructive editing, a timeline, a mixer with faders and sends, an equalizer, a compressor, a reverb: every serious DAW has these, because they are properties of digital audio and of how production works, not features unique to Ableton. Learn them once and you can sit down at an unfamiliar program and find your footing by looking for the same parts under different labels.</p>
+
+<p>A few of the programs you will hear about:</p>
+
+<ul>
+  <li><strong>Pro Tools</strong>: the long-running standard in recording studios, film, and television.</li>
+  <li><strong>Logic Pro</strong>: Apple's studio DAW, widely used for songwriting and production.</li>
+  <li><strong>Cubase</strong>: one of the oldest, strong for arranging and scoring.</li>
+  <li><strong>FL Studio</strong>: a favorite for beat-making and electronic production.</li>
+  <li><strong>Reaper</strong>: lightweight and inexpensive, popular for recording and editing.</li>
+  <li><strong>GarageBand</strong>: Apple's free starter DAW, a simpler cousin of Logic.</li>
+  <li><strong>Adobe Audition</strong>: the audio editor in the Adobe suite, common for podcasts and post-production.</li>
+</ul>
+
+<p>That last name is where Wk 13 goes. After three weeks in Live you step into Adobe Audition, a different program many of you already know from the Adobe suite, and find the same ideas waiting: sample rate, bit depth, editing, fades, equalization, compression, multitrack. Different program, different buttons, same concepts. That session is the proof that the skills you are about to build are yours to carry, not on loan from one app.</p>
+
+<hr>
+
+<h2>The next four weeks</h2>
+
+<p>The four weeks go like this, each paired with the pages from Ableton's own manual that cover it. The manual is thorough and clearly written, so this module leans on it directly instead of repeating it. Read the linked sections before the class they belong to. Each card opens its page in a new tab.</p>
+
+<div class="week-kicker">Wk 10</div>
+<h3>The DAW environment and audio editing</h3>
+
+<p>Get your bearings in Live, then start editing audio from your own library on the timeline. Monday is the layout and the core ideas; Wednesday is hands on, importing library sounds, placing them as clips, and trimming, fading, and warping them.</p>
 
 <a class="manual-link" href="https://www.ableton.com/en/live-manual/11/first-steps/" target="_blank" rel="noopener noreferrer">
   <span class="manual-icon" aria-hidden="true">&sect;</span>
   <span class="manual-body">
-    <span class="manual-title">The Main Live Screen</span>
-    <span class="manual-scope">First Steps &middot; a labeled tour of the window &middot; opens in a new tab</span>
+    <span class="manual-title">First Steps</span>
+    <span class="manual-scope">A labeled tour of the main Live window</span>
   </span>
   <span class="manual-arrow" aria-hidden="true">&#8599;</span>
 </a>
 
-<h3>Edits that leave your files alone</h3>
-
-<p>In Audacity, an edit changed the file. Cut a second of sound and that second was gone from the recording on disk, which is why you kept careful copies: a wrong move was permanent. Live works the other way.</p>
-
-<p>When you cut, fade, or drop an effect on a track in Live, the program changes how it <em>reads</em> the file, not the file itself. The recording on disk stays whole. Press play and Live carries out your edits in real time, building the result on the spot. Switch an edit off and the sound returns to what it was, because the edit was only ever an instruction. This is <strong>nondestructive editing</strong>, and it is the one habit to unlearn from Module 2.</p>
-
-<p>What carries those instructions is the <strong>clip</strong>. A clip is not the audio: it points at the audio. The start and end you set, the fades, the gain, all of it lives on the clip, layered over a file that stays untouched underneath. You will work with clips constantly starting Wednesday. Because that file never changes, you cannot ruin your source, and you can try anything.</p>
-
-<h3>Audio and MIDI</h3>
-
-<p>Live holds two kinds of material. One you know: <strong>audio</strong>, the recorded sound you edited in Audacity and captured in Module 3. The other is <strong>MIDI</strong>, data that drives an instrument rather than sound on its own. We meet MIDI in Week 11, when we use it to trigger the samples in your library. For today it is enough that Live keeps both side by side.</p>
-
-<hr>
-
-<h2>2 &middot; Live concepts</h2>
-
-<p>These are the pieces of Live you touch every week. Read each linked section before class, and we go through them together.</p>
-
-<h3>The browser</h3>
-
-<p>Down the left side of the window is the <strong>browser</strong>, where everything you can put in a piece lives, sorted into categories: Sounds, Drums, Instruments, Audio Effects, MIDI Effects, Max for Live, Plug-Ins, Clips, Samples, Grooves, and Templates, plus any folders you add yourself. We will not use all of them. Most of our work draws on two, <strong>Audio Effects</strong> and <strong>Samples</strong>. What matters now is knowing how to move around the browser, preview a sound, and drag it into a Set.</p>
-
-<p>The lab runs <strong>Ableton Live Suite</strong>, the largest edition, which ships with a deep set of instruments, effects, and sounds. We have no third-party plug-ins installed, and we do not need any. Everything we use is <strong>stock</strong>: what comes with the DAW. Live's stock devices are first-class, good enough to make finished work with nothing added.</p>
-
-<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/managing-files-and-sets/#working-with-the-browser" target="_blank" rel="noopener noreferrer">
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-concepts/" target="_blank" rel="noopener noreferrer">
   <span class="manual-icon" aria-hidden="true">&sect;</span>
   <span class="manual-body">
-    <span class="manual-title">Working with the Browser</span>
-    <span class="manual-scope">Managing Files and Sets &middot; opens in a new tab</span>
+    <span class="manual-title">Live Concepts</span>
+    <span class="manual-scope">Tracks, clips, Sets, and the two views</span>
   </span>
   <span class="manual-arrow" aria-hidden="true">&#8599;</span>
 </a>
 
-<h3>Live Sets and saving your work</h3>
-
-<p>The document you work in is a <strong>Live Set</strong>, saved as a file with the extension <code>.als</code>. A Set lives inside a <strong>Project folder</strong> that holds the Set and the sounds it uses, so the whole piece stays together. Save early, save often, and use <strong>Collect All and Save</strong> at the end of a session, which pulls copies of your samples into the Project folder so nothing goes missing later. Your local-first, NAS-as-sync habit then carries the folder as one: pull it down at the start of a session, upload it at the end.</p>
-
-<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/managing-files-and-sets/#live-sets" target="_blank" rel="noopener noreferrer">
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/arrangement-view/" target="_blank" rel="noopener noreferrer">
   <span class="manual-icon" aria-hidden="true">&sect;</span>
   <span class="manual-body">
-    <span class="manual-title">Live Sets</span>
-    <span class="manual-scope">Managing Files and Sets &middot; opens in a new tab</span>
+    <span class="manual-title">Arrangement View</span>
+    <span class="manual-scope">Audio tracks and clips on the timeline</span>
   </span>
   <span class="manual-arrow" aria-hidden="true">&#8599;</span>
 </a>
 
-<h3>Two views: Arrangement and Session</h3>
-
-<p>A Set gives you two ways to look at the same work, and this pair is specific to Live. The <strong>Arrangement View</strong> is a left-to-right timeline, close to the Audacity window you know. The <strong>Session View</strong> is a grid of slots for launching and looping ideas on the fly. We work mostly in Arrangement. You switch between the two with the <code>Tab</code> key. They share the same tracks and the same mixer, so switching views changes what you see, not what is stored or what you hear.</p>
-
-<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-concepts/#tracks" target="_blank" rel="noopener noreferrer">
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/clip-view/" target="_blank" rel="noopener noreferrer">
   <span class="manual-icon" aria-hidden="true">&sect;</span>
   <span class="manual-body">
-    <span class="manual-title">Arrangement and Session</span>
-    <span class="manual-scope">Live Concepts &middot; opens in a new tab</span>
+    <span class="manual-title">Clip View</span>
+    <span class="manual-scope">A clip's own settings: start, end, gain, fades</span>
   </span>
   <span class="manual-arrow" aria-hidden="true">&#8599;</span>
 </a>
 
-<h3>The mixer and routing</h3>
-
-<p>Every track has a <strong>channel strip</strong> in Live's <strong>mixer</strong>: a volume fader, a pan control, and sends. It is the same layout as the Toft console you used in Module 3, now on screen.</p>
-
-<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/mixing/#the-live-mixer" target="_blank" rel="noopener noreferrer">
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/audio-clips-tempo-and-warping/" target="_blank" rel="noopener noreferrer">
   <span class="manual-icon" aria-hidden="true">&sect;</span>
   <span class="manual-body">
-    <span class="manual-title">The Live Mixer</span>
-    <span class="manual-scope">Mixing &middot; opens in a new tab</span>
+    <span class="manual-title">Audio Clips, Tempo, and Warping</span>
+    <span class="manual-scope">Matching a clip to the project tempo</span>
   </span>
   <span class="manual-arrow" aria-hidden="true">&#8599;</span>
 </a>
 
-<p>Inside Live you decide where each track's signal goes. That is <strong>internal routing</strong>, and it is the idea to hold onto from this section. A signal gets shaped or combined in three ways, and they are easy to mix up, so here is the difference.</p>
+<div class="week-kicker">Wk 11</div>
+<h3>Sampling and MIDI as a trigger</h3>
 
-<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/routing-and-i-o/#routing-and-io" target="_blank" rel="noopener noreferrer">
+<p>Turn your library into instruments. A MIDI note triggers an instrument, and the instrument plays a sound from your collection. Simpler plays one sample across the keyboard. A Drum Rack is a grid of pads, each pad holding one sound.</p>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-instrument-reference/#simpler" target="_blank" rel="noopener noreferrer">
   <span class="manual-icon" aria-hidden="true">&sect;</span>
   <span class="manual-body">
-    <span class="manual-title">Routing and I/O</span>
-    <span class="manual-scope">Routing and I/O &middot; opens in a new tab</span>
+    <span class="manual-title">Simpler</span>
+    <span class="manual-scope">Play one sample across the keyboard</span>
   </span>
   <span class="manual-arrow" aria-hidden="true">&#8599;</span>
 </a>
 
-<p><strong>Inserts</strong> sit in a track's own chain, in the <strong>Device View</strong>, the panel at the bottom that shows a track's devices. The signal passes through each device in order, and the device affects only that one track. Equalization and compression usually go here.</p>
-
-<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/working-with-instruments-and-effects/#working-with-instruments-and-effects" target="_blank" rel="noopener noreferrer">
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/instrument-drum-and-effect-racks/#drum-racks" target="_blank" rel="noopener noreferrer">
   <span class="manual-icon" aria-hidden="true">&sect;</span>
   <span class="manual-body">
-    <span class="manual-title">Working with Instruments and Effects</span>
-    <span class="manual-scope">Inserts and the Device View &middot; opens in a new tab</span>
+    <span class="manual-title">Drum Racks</span>
+    <span class="manual-scope">A grid of pads, each holding one sound</span>
   </span>
   <span class="manual-arrow" aria-hidden="true">&#8599;</span>
 </a>
 
-<p><strong>Sends and returns</strong> share one effect across many tracks. A track sends a portion of its signal to a <strong>Return track</strong> that holds the effect, and the return is mixed back into the output, so a single reverb can serve the whole piece. This is the same aux send and return you used on the studio console in Module 3.</p>
-
-<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/mixing/#return-tracks-and-the-master-track" target="_blank" rel="noopener noreferrer">
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/editing-midi-notes-and-velocities/" target="_blank" rel="noopener noreferrer">
   <span class="manual-icon" aria-hidden="true">&sect;</span>
   <span class="manual-body">
-    <span class="manual-title">Return Tracks and the Master Track</span>
-    <span class="manual-scope">Sends and returns &middot; opens in a new tab</span>
+    <span class="manual-title">Editing MIDI Notes and Velocities</span>
+    <span class="manual-scope">Drawing and editing the notes that do the triggering</span>
   </span>
   <span class="manual-arrow" aria-hidden="true">&#8599;</span>
 </a>
 
-<p><strong>Group tracks</strong> fold several tracks into one. A <strong>Group track</strong> sums its members so you can set their level together and process them as a unit, which is what an engineer means by a summing bus, or a subgroup.</p>
+<div class="week-kicker">Wk 12</div>
+<h3>Mixing in Ableton</h3>
 
-<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/mixing/#group-tracks" target="_blank" rel="noopener noreferrer">
+<p>Mix a small session with Live's built-in tools. The mixer is the Toft console from Module 3 rebuilt in software: track faders, pan, sends to a shared effect, group tracks, and a master. The equalizer and compressor you met in Module 2 return here as Live devices.</p>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/routing-and-i-o/#monitoring" target="_blank" rel="noopener noreferrer">
   <span class="manual-icon" aria-hidden="true">&sect;</span>
   <span class="manual-body">
-    <span class="manual-title">Group Tracks</span>
-    <span class="manual-scope">Mixing &middot; opens in a new tab</span>
+    <span class="manual-title">Monitoring</span>
+    <span class="manual-scope">Hearing what you are working on</span>
   </span>
   <span class="manual-arrow" aria-hidden="true">&#8599;</span>
 </a>
 
-<p>On Wednesday you open Live in the lab, and we walk the main screen together.</p>
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/routing-and-i-o/#internal-routings" target="_blank" rel="noopener noreferrer">
+  <span class="manual-icon" aria-hidden="true">&sect;</span>
+  <span class="manual-body">
+    <span class="manual-title">Internal Routings</span>
+    <span class="manual-scope">Where each track's signal goes inside Live</span>
+  </span>
+  <span class="manual-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/mixing/" target="_blank" rel="noopener noreferrer">
+  <span class="manual-icon" aria-hidden="true">&sect;</span>
+  <span class="manual-body">
+    <span class="manual-title">Mixing</span>
+    <span class="manual-scope">Faders, pan, sends and returns, groups, the master</span>
+  </span>
+  <span class="manual-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/" target="_blank" rel="noopener noreferrer">
+  <span class="manual-icon" aria-hidden="true">&sect;</span>
+  <span class="manual-body">
+    <span class="manual-title">Live Audio Effect Reference</span>
+    <span class="manual-scope">The built-in effects, looked up one at a time</span>
+  </span>
+  <span class="manual-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<p>This module uses a fixed set of those effects, the same kinds you already know from Modules 2 and 3, in two roles.</p>
+
+<div class="effect-set">
+  <div class="effect-group-label">Insert effects, in chain order (order matters)</div>
+  <p>
+    <a href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#utility" target="_blank" rel="noopener noreferrer">Utility</a>,
+    <a href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#eq-eight" target="_blank" rel="noopener noreferrer">EQ Eight</a>,
+    <a href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#auto-filter" target="_blank" rel="noopener noreferrer">Auto Filter</a>,
+    <a href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#compressor" target="_blank" rel="noopener noreferrer">Compressor</a>,
+    <a href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#glue-compressor" target="_blank" rel="noopener noreferrer">Glue Compressor</a>,
+    <a href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#limiter" target="_blank" rel="noopener noreferrer">Limiter</a>,
+    <a href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#multiband-dynamics" target="_blank" rel="noopener noreferrer">Multiband Dynamics</a>.
+  </p>
+  <div class="effect-group-label">Send effects, shared on a return track</div>
+  <p>
+    <a href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#hybrid-reverb" target="_blank" rel="noopener noreferrer">Hybrid Reverb</a>,
+    <a href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#reverb" target="_blank" rel="noopener noreferrer">Reverb</a>,
+    <a href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#delay" target="_blank" rel="noopener noreferrer">Delay</a>,
+    <a href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#echo" target="_blank" rel="noopener noreferrer">Echo</a>.
+  </p>
+</div>
+
+<div class="week-kicker">Across the module</div>
+<h3>Exporting your work</h3>
+
+<p>When a piece is finished, you render it to a single audio file. You do this first in Wk 10 on a short arrangement, again when you mix, and finally on the project.</p>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/managing-files-and-sets/#exporting-audio-and-video" target="_blank" rel="noopener noreferrer">
+  <span class="manual-icon" aria-hidden="true">&sect;</span>
+  <span class="manual-body">
+    <span class="manual-title">Exporting Audio and Video</span>
+    <span class="manual-scope">Rendering a finished file</span>
+  </span>
+  <span class="manual-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<div class="callout">
+  <div class="callout-label">Audio standard for this module</div>
+  <p>Your library files are already 48 kHz, the rate the course has used since Module 2, so they import into a Live set with nothing to convert. The one change this module is bit depth: you export finished work at <strong>32-bit</strong>, up from the 24-bit you worked in before. The rate that matters for a deliverable is set when you export.</p>
+</div>
+
+<div class="week-kicker">Wk 13</div>
+<h3>The same ideas in another DAW</h3>
+
+<p>This week has no Ableton manual reading. You step out of Live into Adobe Audition, a different program from a different company, and look for the same concepts under new names: sample rate, bit depth, editing, fades, equalization, compression, multitrack. It closes the module and doubles as a quiet review of the whole course.</p>
+
+<div class="callout">
+  <div class="callout-label">End of session</div>
+  <p>Before leaving the station, run the end-of-session routine on the <strong>Session Routines</strong> card. NAS upload first, gear teardown second.</p>
+</div>
 
 <footer class="handout-footer">
   <span>MUS 381 · CSU East Bay</span>
