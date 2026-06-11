@@ -60,7 +60,7 @@
   <div class="subtitle">A map of the next four weeks in Ableton Live, and the ideas that carry into any DAW.</div>
 </div>
 
-<p class="lede">You spent two modules in Audacity, first shaping sound that was handed to you, then recording your own. Now you move into Ableton Live, the program the rest of the course runs on. Live is a DAW, different enough from Audacity that the first thing to do is get its shape: what a DAW is, where it came from, and what changes once you are working inside one. This page is the map of the next four weeks, and the ideas on it carry past Ableton into any DAW you open later.</p>
+<p class="lede">You spent two modules in Audacity, first shaping sound that was handed to you, then recording your own. Now you move into Ableton Live, the program the rest of the course runs on. Live is a DAW, a much larger kind of program than the audio editor you have used so far, and the concepts you learn in it carry past Ableton into any DAW you open later.</p>
 
 <div class="callout">
   <div class="callout-label">Today's gear</div>
@@ -71,9 +71,9 @@
 
 <h2>What a DAW is</h2>
 
-<p>Live is a <strong>DAW</strong>, a digital audio workstation: one program that records, edits, arranges, and mixes sound, and plays instruments too. Audacity, the program you used for the last two modules, is something narrower. It is an <strong>audio editor</strong>: it records sound and edits it, and that is where it stops. A DAW is the whole studio in software, where recorded sound becomes a finished piece. Live is the first DAW you meet.</p>
+<p>Live is a <strong>DAW</strong>, a digital audio workstation: one program that records, edits, arranges, and mixes sound, and plays instruments too. Audacity, the program you used for the last two modules, is something narrower. It is an <strong>audio editor</strong>: it records sound and edits it, and that is where it stops.</p>
 
-<p>A DAW adds what an audio editor leaves out. It holds instruments you play and trigger. It works with MIDI, the note data you meet later in this module. It mixes through a built-in console laid out like the Toft desk you sat at in Module 3, with faders, sends, groups, and a master. Recording, editing, instruments, and mixing share one window, and that is what makes Live the place where the two halves of this course, the sounds you edited and the sounds you recorded, finally come together.</p>
+<p>A DAW adds what an audio editor leaves out. It holds instruments you play and trigger. It works with MIDI, the note data you meet later in this module. It mixes through a built-in console laid out like the Toft desk you sat at in Module 3, with faders, sends, groups, and a master. Recording, editing, instruments, and mixing share one window. In this module you load the sample library you built in Module 3 and build pieces from those recordings.</p>
 
 <hr>
 
@@ -87,21 +87,17 @@
 
 <p>Tape had one hard limit. Editing it was physical, so it was permanent. A cut was a cut, with no undo, and a mistake could cost you the take. The move into digital is in large part the move past that limit.</p>
 
-<p>By the late 1970s, the first systems recorded sound as digital data, as numbers a computer could store. Once sound was numbers, it could be drawn on a screen as a waveform, edited with a cursor, and copied without wearing out. The work that took a razor blade became a selection and a keystroke.</p>
+<p>By the late 1970s, the first systems recorded sound as digital data, as numbers a computer could store. Once sound was numbers, it could be drawn on a screen as a waveform, edited with a cursor, and copied without wearing out. The work that took a razor blade became a selection and a keystroke. The same shift reached instruments: the Fairlight CMI, an Australian machine from 1979, was the first to record a sound and play it back across a keyboard, the move you make yourself in Wk 11.</p>
 
 <p>Computers also learned the other half of music: the performance. In 1983 the MIDI standard gave instruments and computers a shared language for notes, so a computer could capture which keys you played and send them back out to a synthesizer. The programs that did this were called sequencers, and they grew into the software we use now.</p>
 
 <p>The two halves came together. In 1989 and 1991, Digidesign's Sound Tools and then Pro Tools recorded many tracks straight to a computer's hard disk, and through the 1990s the studio that had been a room full of tape machines became software. In 1996, Steinberg's VST let effects and instruments themselves run inside the program, using the computer's own power to shape sound as it played. A laptop could now hold the whole studio: the recorder, the mixer, the effects, and the instruments.</p>
 
-<p>Ableton Live arrived in 2001, made by a small company in Berlin for musicians who wanted to perform with a computer on stage, not only record in a studio. That origin is still visible in Live today. It is why the program is called Live, why it has a grid for launching loops on the fly (the Session View), and why it can stretch a recording to match a tempo on the spot (warping). You meet both over the next four weeks.</p>
-
-<p>The tools changed at every step, from blade to mouse, from tape to disk, from hardware to software. The work stayed the same: take sound, cut it, layer it, and shape it into a piece.</p>
+<p>Ableton Live arrived in 2001, made by a small company in Berlin for musicians who wanted to perform with a computer on stage, not only record in a studio. That origin shaped the program: it is why it is called Live, why it has a grid for launching loops on the fly (the Session View), and why it can stretch a recording to match a tempo on the spot (warping). You meet both over the next four weeks.</p>
 
 <hr>
 
 <h2>What changes once you are inside a DAW</h2>
-
-<p>Moving into Live changes editing in two ways and adds one kind of material you have not worked with before.</p>
 
 <h3>Nondestructive editing</h3>
 
@@ -109,11 +105,11 @@
 
 <p>Live works the other way. When you cut, trim, fade, or move sound in Live, you are not editing the file. You are editing a <strong>clip</strong>. A clip is a reference to an audio file: it points at the file on disk and carries a set of instructions for how to play it, where to start, where to stop, how loud, where to fade. The file itself stays whole. Change the instructions and the file underneath does not move.</p>
 
-<p>This is <strong>nondestructive editing</strong>, and it is the one habit to unlearn from Module 2. Because the file never changes, you cannot ruin your source, and you can try anything. An edit you dislike is undone by changing the instruction back, not by digging out a backup. Beginners tend to edit timidly, afraid of breaking something. In Live there is nothing to break.</p>
+<p>This is <strong>nondestructive editing</strong>. Because the file never changes, an edit you dislike is undone by changing the instruction back, not by restoring a backup. The original recordings stay in the Set's project folder untouched; the Set stores only the list of clips and their instructions.</p>
 
 <h3>Live processing</h3>
 
-<p>The same idea runs through effects. In Audacity, applying an effect like a fade or an equalizer rewrote the samples in the file. In Live, an effect sits on the track and does its work while the music plays. Press play and Live carries out the effect in real time, building the processed sound on the spot. This is <strong>live processing</strong>, and it is where the name of the program points.</p>
+<p>The same idea runs through effects. In Audacity, applying an effect like a fade or an equalizer rewrote the samples in the file. In Live, an effect sits on the track and does its work while the music plays. Press play and Live carries out the effect in real time, building the processed sound on the spot. This is <strong>live processing</strong>, and it runs on the computer's own power, the shift VST brought in 1996, rather than on a rack of outboard hardware.</p>
 
 <p>Because the processing happens during playback, an effect is a setting you can change or switch off at any time, and the recording underneath never changes. You can stack an equalizer, a compressor, and a reverb on a track, adjust them while you listen, and turn any of them off to hear the track without it. Nothing is committed until you export a finished file at the end.</p>
 
@@ -121,7 +117,7 @@
 
 <p>Live holds two kinds of material. One you already know: <strong>audio</strong>, the recorded sound you edited in Module 2 and captured in Module 3. The other is new, and it is called <strong>MIDI</strong>.</p>
 
-<p>MIDI is data, not sound. It is a small instruction that says which pitch to play, when to play it, and how hard. On its own it makes no sound at all. To hear anything, the note has to trigger an <strong>instrument</strong>, and the instrument is what produces the audio.</p>
+<p>MIDI is data, not sound. It is a small instruction that says which pitch to play, when to play it, and how hard, a value called <strong>velocity</strong>. On its own it makes no sound at all. To hear anything, the note has to trigger an <strong>instrument</strong>, and the instrument is what produces the audio.</p>
 
 <p>The difference between audio and MIDI is the difference between a recording of a performance and the instructions for one. To make audio, a person plays an instrument, the sound moves through the air, and a microphone captures it. To make sound from MIDI, the data takes the performer's place: it tells an instrument inside Live which notes to play, and the instrument generates the sound. One captures a sound that already happened. The other holds the decisions and makes the sound on demand.</p>
 
@@ -173,7 +169,7 @@
 
 <p>Because MIDI is only the decisions, you can change them afterward with nothing lost. Move a note to another pitch, shift its timing, play it harder or softer, or swap the instrument entirely, and the part plays back the new way. A wrong note is not a ruined take. It is one note to drag.</p>
 
-<p>You meet MIDI in Wk 11, where you use it to play the samples in your own library. A note triggers a sound from your collection, and the same note moved higher or lower plays that sound higher or lower. For now it is enough to know that Live keeps audio and MIDI side by side, and that MIDI is the trigger, not the sound.</p>
+<p>You meet MIDI in Wk 11, where you use it to play the samples in your own library. A note triggers a sound from your collection, and the same note moved higher or lower plays that sound higher or lower. Live keeps audio and MIDI side by side, and MIDI is the trigger, not the sound.</p>
 
 <hr>
 
@@ -186,22 +182,22 @@
 <p>A few of the programs you will hear about:</p>
 
 <ul>
-  <li><strong>Pro Tools</strong>: the long-running standard in recording studios, film, and television.</li>
-  <li><strong>Logic Pro</strong>: Apple's studio DAW, widely used for songwriting and production.</li>
-  <li><strong>Cubase</strong>: one of the oldest, strong for arranging and scoring.</li>
-  <li><strong>FL Studio</strong>: a favorite for beat-making and electronic production.</li>
+  <li><strong>Pro Tools</strong>: the studio standard since the 1990s, especially in film, television, and recording studios.</li>
+  <li><strong>Logic Pro</strong>: Apple's studio DAW, originally made by Emagic, widely used for songwriting and production.</li>
+  <li><strong>Cubase</strong>: one of the oldest DAWs, and the program that introduced the VST plug-in format.</li>
+  <li><strong>FL Studio</strong>: popular for beat-making and electronic production.</li>
   <li><strong>Reaper</strong>: lightweight and inexpensive, popular for recording and editing.</li>
-  <li><strong>GarageBand</strong>: Apple's free starter DAW, a simpler cousin of Logic.</li>
+  <li><strong>GarageBand</strong>: Apple's free starter DAW, a simpler version of Logic.</li>
   <li><strong>Adobe Audition</strong>: the audio editor in the Adobe suite, common for podcasts and post-production.</li>
 </ul>
 
-<p>That last name is where Wk 13 goes. After three weeks in Live you step into Adobe Audition, a different program many of you already know from the Adobe suite, and find the same ideas waiting: sample rate, bit depth, editing, fades, equalization, compression, multitrack. Different program, different buttons, same concepts. That session is the proof that the skills you are about to build are yours to carry, not on loan from one app.</p>
+<p>That last name is where Wk 13 goes. After three weeks in Live you step into Adobe Audition, a different program many of you already know from the Adobe suite, and find the same ideas waiting: sample rate, bit depth, editing, fades, equalization, compression, multitrack. Different program, different buttons, same concepts.</p>
 
 <hr>
 
 <h2>The next four weeks</h2>
 
-<p>The four weeks go like this, each paired with the pages from Ableton's own manual that cover it. The manual is thorough and clearly written, so this module leans on it directly instead of repeating it. Read the linked sections before the class they belong to. Each card opens its page in a new tab.</p>
+<p>The four weeks go like this, each paired with the Live manual pages that cover it. The manual is the source for menu paths and terminology, so this module links to it instead of repeating it. Read the linked sections before the class they belong to. Each card opens its page in a new tab.</p>
 
 <p>Ableton also keeps a library of short video lessons covering most of these topics, sorted by setup, interface, instruments and effects, and workflows. When a manual page is dense, the matching video often makes it land faster. The videos may show a newer version of Live than the lab runs, but the ideas are the same.</p>
 
