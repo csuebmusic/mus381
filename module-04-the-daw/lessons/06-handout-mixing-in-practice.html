@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUS 381 · Mixing in Ableton</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    /* Manual-link cards, matching Lab 1 and Lab 2. */
+    .manual-link {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 0.85rem 1.15rem; margin: 0.6rem 0;
+      background: var(--bg-alt);
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--accent);
+      border-radius: 4px;
+      text-decoration: none; color: var(--ink);
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+    .manual-link:hover { background: var(--bg); border-color: var(--accent); }
+    .manual-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .manual-link .res-icon {
+      flex: 0 0 auto; width: 32px; height: 32px; border-radius: 50%;
+      background: var(--accent); color: var(--bg);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--mono); font-size: 1rem; line-height: 1;
+    }
+    .manual-link .res-body { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; }
+    .manual-link .res-title { font-weight: 600; font-size: 0.95rem; line-height: 1.35; color: var(--ink); }
+    .manual-link .res-scope {
+      font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase;
+      letter-spacing: 0.05em; color: var(--ink-soft); margin-top: 0.2rem;
+    }
+    .manual-link .res-arrow { flex: 0 0 auto; font-family: var(--mono); font-size: 1rem; color: var(--ink-soft); }
+  </style>
+</head>
+<body>
+
+<header class="handout-header">
+  <span class="course">MUS 381 · Essentials of Music Technology</span>
+  <span class="meta">Module 04 · Lab 3</span>
+</header>
+
+<div class="title-block">
+  <div class="module-tag">Module 04 · The DAW</div>
+  <h1>Mixing in Ableton</h1>
+  <div class="subtitle">Commit a finished session to audio, then mix it.</div>
+</div>
+
+<p class="lede">So far you have made things in Live. Today you mix something already made. You download a finished session from the NAS, a longer piece with several instruments, some played from MIDI and some recorded as audio. Before you touch a fader, you turn the whole thing into audio: you bounce the MIDI tracks and consolidate the audio tracks, so every track is one clip of plain audio. Then you mix, the way you mixed on the Toft in Module 3, now in software you drive yourself.</p>
+
+<div class="callout">
+  <div class="callout-label">Today's gear</div>
+  <p>Take from the lab's gear storage: <strong>audio interface and headphones</strong>. Mixing is done with faders and devices, so the keyboard stays in the drawer today. Run through the start-of-session steps on the <strong>Session Routines</strong> card before continuing here.</p>
+</div>
+
+<h2>What we're doing today</h2>
+
+<ol class="steps">
+  <li>Copy the session from the NAS and listen to it.</li>
+  <li>Save a separate mixing version.</li>
+  <li>Bounce the MIDI tracks to audio.</li>
+  <li>Consolidate every track into one clip.</li>
+  <li>Mix: levels, pan, a shared reverb, groups, EQ and compression.</li>
+  <li>Export the mix and upload to the NAS.</li>
+</ol>
+
+<div class="callout">
+  <div class="callout-label">Before you start</div>
+  <p>This lab has no videos, so the manual pages linked at each step are your reference. Read the step, do it, and open the manual when you want more. Keep the <strong>Session Routines</strong> card visible.</p>
+  <p>If you run short on time, set your levels and a little pan, export that, and upload. A rough balance handed in beats a detailed mix left on the desk.</p>
+</div>
+
+<hr>
+
+<h2>Get the session</h2>
+
+<p>During the start-of-session download, copy the prepared session's project folder from the NAS into your working folder at <code>~/Documents/lastname/</code>. Open the Set inside it and press play. Listen once through to hear what you are about to mix: which parts carry the music, which support it, what is loud, what is buried. Try the faders if you like, but leave the real mixing for after the next steps.</p>
+
+<hr>
+
+<h2>Make a mixing version</h2>
+
+<div class="callout">
+  <div class="callout-label">Creation and mixing are two jobs</div>
+  <p>Writing music and mixing it are different work. Creating is choosing sounds, playing parts, and arranging them, the work you did in the last two labs. Mixing is balancing and shaping a finished piece so it reads clearly: levels, placement, space, and tone. In the Module 3 listening you heard that difference, a piece written, then mixed into its final shape.</p>
+  <p>This lab keeps the two apart on purpose. You commit the music to audio first, then mix the audio, because mixing is a job done on audio. The Toft console mixes audio channels, and so will you. That is also why you mix on a separate saved version: the original holds your notes and instruments, and the mixing version is where you commit them and balance.</p>
+</div>
+
+<h3>Save a separate version</h3>
+
+<p>First save the session as it is: <strong>File</strong> then <strong>Save</strong>. Then make your mixing copy: <strong>File</strong> then <strong>Save As</strong>, and name it <code>lastname-wk12-mix</code>. From here on you work in that copy. The steps below commit the music permanently, and keeping them out of the original means you can always reopen the original to change a note or a sound.</p>
+
+<div class="callout">
+  <div class="callout-label">What bouncing means</div>
+  <p>Bouncing means printing what a track plays into a fixed audio file. The word comes from tape: engineers bounced several recorded tracks down onto one to free up room on the reel. Here you bounce each MIDI track in place, turning the instrument's live output into audio that sits right where the MIDI was. After a bounce, the track no longer plays an instrument in real time. It plays a recording of it.</p>
+</div>
+
+<h3>Bounce the MIDI tracks to audio</h3>
+
+<p>Each MIDI track plays an instrument as the piece runs. To mix it like everything else, you turn that into plain audio, in two steps: freeze, then flatten.</p>
+
+<p>Right-click a MIDI track's header and choose <strong>Freeze Track</strong>. Live renders the track to an audio file, which takes a moment, and the track turns blue. Freezing on its own is reversible: you could unfreeze and return to the MIDI and the instrument.</p>
+
+<p>To commit it, keep the frozen track selected and choose <strong>Flatten</strong> from the <strong>Edit</strong> menu. The instrument and the MIDI clips are replaced by the rendered audio, and the track becomes an audio track. Do this for every MIDI track. Flatten is permanent, which is the whole reason you are working in the mixing version: the original still has your instruments and notes, untouched.</p>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/computer-audio-resources-and-strategies/" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Track Freeze</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<h3>Consolidate every track into one clip</h3>
+
+<p>Your audio tracks hold several short clips each, and the tracks you just flattened may too. For mixing you want one clip per track, one continuous piece of audio to set a level for. Select all the clips with <code>Cmd-A</code>, then press <code>Cmd-J</code> to consolidate. Each track's clips merge into a single clip that runs the full length. Live writes the new audio into the project's Samples folder, so it travels with the Set.</p>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/arrangement-view/" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Consolidate</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<p>Every track is now one clip of audio. This is the session a mixing engineer would sit down to: a stack of audio channels, ready to balance.</p>
+
+<hr>
+
+<h2>Mix</h2>
+
+<p>You built and bounced everything in the Arrangement. To mix, switch to the mixer: press <code>Tab</code> to go to Session view, where every track stands as a channel strip with a volume fader, a pan control, and send knobs, the same controls you met on the Toft. Your music still lives in the Arrangement, and this view just gives you the console. Press play to hear it. The empty clip slots here belong to a different way of working, so leave them alone today.</p>
+
+<h3>Set levels</h3>
+
+<p>Start with the faders. Play the piece and move each track's fader to where it sits right against the others: the parts that carry the music up front, the parts that support them lower. Mix with your ears, not your eyes, and watch that the Master meter on the right stays out of the red. Level is the first and biggest mixing move, so spend real time here before reaching for anything else.</p>
+
+<h3>Place sounds with pan</h3>
+
+<p>The pan control at the top of each strip moves a track left or right between your ears. Spread the parts across the field so they are not all stacked in the middle: one sound a little left, another a little right, room between them. Keep the low parts, the kick and the bass, near the center, where they sit best.</p>
+
+<h3>Add reverb on a send</h3>
+
+<p>Reverb is shared, so it lives on its own track and every channel sends to it, the way an effect sat on an aux send on the Toft. From the <strong>Create</strong> menu, choose <strong>Insert Return Track</strong>. Drag a <strong>Reverb</strong> from the browser's Audio Effects onto that return. Each channel now has a <strong>Send</strong> knob for it: turn up a track's send to place that track in the reverb. One reverb, fed by every track that sends to it, which is why it goes on a return rather than on each track.</p>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/routing-and-i-o/#internal-routings" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Internal Routings</span>
+    <span class="res-scope">Live 11 manual · sends and returns</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<h3>Group related tracks</h3>
+
+<p>Select a few tracks that belong together, the drums for instance, and press <code>Cmd-G</code>. Live wraps them in a <strong>Group</strong> track with its own fader. Now one fader rides the whole group at once, the way a subgroup worked on the console. Group what moves together, so you can balance it as a block and then balance the blocks against each other.</p>
+
+<h3>Shape with EQ and compression</h3>
+
+<p>Where a track needs more than level and pan, reach for an insert effect, an effect that sits in that one track's chain. Drag <strong>EQ Eight</strong> onto a track to lift or cut frequencies, the equalizer from Module 2 as a Live device. Drag <strong>Compressor</strong> onto a track that jumps around in level to even it out, the dynamics tool from Module 2. These stack in the track's chain and their order matters, with EQ usually before compression. Add them only where a track asks for help, not on everything.</p>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/mixing/" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Mixing</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#eq-eight" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">EQ Eight</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#compressor" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Compressor</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#reverb" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Reverb</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<hr>
+
+<h2>Export the mix</h2>
+
+<p>Export your mix to a single audio file at <strong>48 kHz, 32-bit</strong>, saved into your working folder. Name it <code>lastname-wk12-mix.wav</code>. Open the export dialog the same way as the last labs, with <strong>File</strong> then <strong>Export Audio/Video</strong>, or <code>Cmd-Shift-R</code>.</p>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/managing-files-and-sets/#exporting-audio-and-video" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Exporting Audio and Video</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<hr>
+
+<h2>End of session</h2>
+
+<h3>What to upload today</h3>
+
+<ol class="steps">
+  <li>In Live, run <strong>File &rarr; Collect All and Save</strong>. Freezing and consolidating wrote new audio into the project's Samples folder, and this gathers all of it into the Set's Project folder so nothing goes missing.</li>
+  <li>During the NAS-upload phase of the routine, upload your <code>lastname/</code> working folder to <code>[path]/students/lastname/</code>, choosing <strong>Replace</strong> when prompted. The <code>lastname-wk12-mix</code> Project folder and your exported WAV go up with it.</li>
+  <li>Verify the <code>lastname-wk12-mix</code> Project folder and <code>lastname-wk12-mix.wav</code> are on the NAS.</li>
+</ol>
+
+<p>Then continue with the rest of the card's end-of-session routine: eject the NAS, sign out of browser accounts, quit all apps, knobs back to zero, unplug everything, stow the gear back in the lab's gear storage, chair in.</p>
+
+<footer class="handout-footer">
+  <span>MUS 381 · CSU East Bay</span>
+  <span>Module 04 · Lab 3</span>
+</footer>
+
+</body>
+</html>
