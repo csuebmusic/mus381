@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUS 381 · Sampling in Ableton</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    /* Resource cards: a styled link to a how-to video or a manual page.
+       Mirrors the .manual-link card from the Session 1 reading and Lab 1. */
+    .video-link, .manual-link {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 0.85rem 1.15rem; margin: 0.6rem 0;
+      background: var(--bg-alt);
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--accent);
+      border-radius: 4px;
+      text-decoration: none; color: var(--ink);
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+    .video-link:hover, .manual-link:hover { background: var(--bg); border-color: var(--accent); }
+    .video-link:focus-visible, .manual-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .video-link .res-icon, .manual-link .res-icon {
+      flex: 0 0 auto; width: 32px; height: 32px; border-radius: 50%;
+      background: var(--accent); color: var(--bg);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--mono); font-size: 1rem; line-height: 1;
+    }
+    .video-link .res-body, .manual-link .res-body { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; }
+    .video-link .res-title, .manual-link .res-title { font-weight: 600; font-size: 0.95rem; line-height: 1.35; color: var(--ink); }
+    .video-link .res-scope, .manual-link .res-scope {
+      font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase;
+      letter-spacing: 0.05em; color: var(--ink-soft); margin-top: 0.2rem;
+    }
+    .video-link .res-arrow, .manual-link .res-arrow { flex: 0 0 auto; font-family: var(--mono); font-size: 1rem; color: var(--ink-soft); }
+  </style>
+</head>
+<body>
+
+<header class="handout-header">
+  <span class="course">MUS 381 · Essentials of Music Technology</span>
+  <span class="meta">Module 04 · Lab 2</span>
+</header>
+
+<div class="title-block">
+  <div class="module-tag">Module 04 · The DAW</div>
+  <h1>Sampling in Ableton</h1>
+  <div class="subtitle">Turn your library into instruments, then sequence a short idea.</div>
+</div>
+
+<p class="lede">In Lab 1 your library sounds sat on the timeline as clips. Today they become instruments you play. You load a sample into Simpler and it plays across the keyboard, you build a small kit in a Drum Rack from a handful of sounds, and then you sequence a short part by drawing the notes into a clip. By the end you will have one short playable idea built from your own samples, saved and uploaded.</p>
+
+<div class="callout">
+  <div class="callout-label">Today's gear</div>
+  <p>Take from the lab's gear storage: <strong>audio interface, headphones, MIDI keyboard</strong>. The keyboard is new this week, and you use it to hear your instruments as you build them. Plug in and run through the start-of-session steps on the <strong>Session Routines</strong> card before continuing here.</p>
+</div>
+
+<h2>What we're doing today</h2>
+
+<ol class="steps">
+  <li>Pull your library down and start a Set.</li>
+  <li>Load a sample into Simpler and play it across the keyboard.</li>
+  <li>Build a small kit in a Drum Rack from your library sounds.</li>
+  <li>Sequence a short part by drawing notes into a clip.</li>
+  <li>Build one short playable idea from your samples.</li>
+  <li>Export, Collect All and Save, and upload to the NAS.</li>
+</ol>
+
+<div class="callout">
+  <div class="callout-label">Before you start</div>
+  <p>You know your way around Live now from Lab 1. Today adds instruments and MIDI. The steps for Simpler and the Drum Rack live in the manual pages linked at each one, and the MIDI sequencing has short videos. Keep the <strong>Session Routines</strong> card visible.</p>
+  <p>Move at a steady pace, and if you run short on time, save the idea you have and upload it.</p>
+</div>
+
+<hr>
+
+<h2>Start a Set</h2>
+
+<p>Your start-of-session routine has the NAS mounted and your audio set up. If your sample library is not already in your working folder at <code>~/Documents/lastname/</code>, copy it down now. Open a new Live Set, save it into your working folder, and name it <code>lastname-wk11</code>. Work from the local copy.</p>
+
+<div class="callout">
+  <div class="callout-label">Instruments go on MIDI tracks</div>
+  <p>Everything today happens on MIDI tracks. An audio track holds recordings, the clips you worked with in Lab 1. A MIDI track holds an instrument and the notes that play it. Simpler and the Drum Rack are instruments, so they go on MIDI tracks. Dropping a sample straight onto an audio track plays it as a clip, the Lab 1 way; today you load it into an instrument instead.</p>
+</div>
+
+<hr>
+
+<h2>Play one sound: Simpler</h2>
+
+<p>Simpler is an instrument that plays a single sample across the keyboard. Open Live's browser, find <strong>Simpler</strong> under Instruments, and drag it onto a MIDI track. Simpler opens with a <strong>Drop Sample Here</strong> box.</p>
+
+<p>Drag one sound from your library onto that box. The waveform appears, and Simpler is now an instrument built from your sample. Play it: the sample plays at its recorded pitch around the middle of the keyboard, faster and higher as you go up, slower and lower as you go down. Simpler sets <strong>C3</strong> as the root, the key that plays the sample unchanged, so the pitch you hear may sit higher or lower than you expect. The <strong>Transpose</strong> control in the Controls tab shifts the whole mapping if you want it centered differently.</p>
+
+<p>To play it from the keyboard, click the track to select it, then click its round <strong>Arm</strong> button so the track listens for the keyboard. If you press keys and hear nothing, that arm is usually why.</p>
+
+<p>Two of Simpler's modes matter today. <strong>Classic</strong> plays the sample melodically across the keyboard. <strong>One-Shot</strong> triggers the whole sample from its start, which suits a single hit. Pick whichever fits the sound. A third mode, Slicing, chops a sample into many keys; leave it for later.</p>
+
+<p>The amp envelope shapes each note: <strong>Attack</strong> is how fast it fades in, <strong>Decay</strong> and <strong>Sustain</strong> set the body, <strong>Release</strong> is how long it rings after you let go. Nudge them and listen. The full reference is here:</p>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-instrument-reference/#simpler" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Simpler</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<hr>
+
+<h2>Build a kit: Drum Rack</h2>
+
+<p>A Drum Rack is a grid of pads, each pad holding one sample, each triggered by a key. Add a second MIDI track, then drag a <strong>Drum Rack</strong> from the browser onto it. You get a grid of empty pads.</p>
+
+<p>Drag a sound from your library onto a pad. The pad fills, and Live loads the sample into a Simpler under the hood, ready to play. Drop a few more sounds onto other pads to build a small kit: something low, something sharp, something in between. Three or four pads is plenty.</p>
+
+<p>Each pad answers to one key. The bottom-left pad of the visible grid is <strong>C1</strong>, and the pads climb from there. Play those keys, or click the pads with the mouse, to hear your kit. To rename a pad so you remember which sound is where, select it and press <code>Cmd-R</code>. The full reference is here:</p>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/instrument-drum-and-effect-racks/#drum-racks" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Drum Racks</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<hr>
+
+<h2>Sequence a part</h2>
+
+<div class="callout">
+  <div class="callout-label">Recording vs sequencing</div>
+  <p>Recording MIDI means arming a track and playing a part on the keyboard, with Live capturing your timing and how hard you hit. Sequencing means drawing the notes into the grid by hand, placing each one exactly where you want it. Today you sequence. You draw the notes, so the keyboard is for hearing your instrument, and a steady hand on the mouse matters more than playing skill.</p>
+</div>
+
+<p>Make a MIDI clip on one of your instrument tracks: double-click an empty spot on the track in the Arrangement timeline to create an empty clip, then double-click the clip to open the <strong>MIDI Note Editor</strong>, the grid also called the piano roll. Each row is a pitch on Simpler, or a pad on the Drum Rack. Left to right is time.</p>
+
+<p>Turn on <strong>Draw Mode</strong> (the pencil, or press <code>B</code>) and click in the grid to place notes. Place a few, press play, and listen. The strip below the notes is <strong>velocity</strong>, how hard each note plays; drag a note's velocity bar to make it softer or louder. These videos walk the whole process:</p>
+
+<a class="video-link" href="https://www.youtube.com/watch?v=1cFTonBejIQ" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&#9654;</span>
+  <span class="res-body">
+    <span class="res-title">Sequencing MIDI, part 1</span>
+    <span class="res-scope">Video</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<a class="video-link" href="https://www.youtube.com/watch?v=Paq66RsgpIk" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&#9654;</span>
+  <span class="res-body">
+    <span class="res-title">Sequencing MIDI, part 2</span>
+    <span class="res-scope">Video</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<a class="video-link" href="https://www.youtube.com/watch?v=_gDAcf0EUUY" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&#9654;</span>
+  <span class="res-body">
+    <span class="res-title">Editing MIDI clips</span>
+    <span class="res-scope">Video</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/editing-midi-notes-and-velocities/" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Editing MIDI Notes and Velocities</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<hr>
+
+<h2>Build a short playable idea</h2>
+
+<p>Build one short playable idea, about fifteen to thirty seconds. It can be a melodic line from Simpler, a beat from your Drum Rack, or the two together. Keep it small. The point of today is that the sounds are your own and you are playing them, not just placing them on a timeline. Save as you go with <code>Cmd-S</code>.</p>
+
+<hr>
+
+<h2>Export</h2>
+
+<p>Export your idea to a single audio file at <strong>48 kHz, 32-bit</strong>, saved into your working folder. Name it <code>lastname-wk11-idea.wav</code>. This is the same export you did in Lab 1.</p>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/managing-files-and-sets/#exporting-audio-and-video" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Exporting Audio and Video</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<hr>
+
+<h2>End of session</h2>
+
+<h3>What to upload today</h3>
+
+<ol class="steps">
+  <li>In Live, run <strong>File &rarr; Collect All and Save</strong>. This copies the library sounds you loaded into Simpler and the Drum Rack into the Set's Project folder, so the project travels as one piece and nothing goes missing.</li>
+  <li>During the NAS-upload phase of the routine, upload your <code>lastname/</code> working folder to <code>[path]/students/lastname/</code>, choosing <strong>Replace</strong> when prompted. The <code>lastname-wk11</code> Project folder and your exported WAV go up with it.</li>
+  <li>Verify the <code>lastname-wk11</code> Project folder and <code>lastname-wk11-idea.wav</code> are on the NAS.</li>
+</ol>
+
+<p>Then continue with the rest of the card's end-of-session routine: eject the NAS, sign out of browser accounts, quit all apps, knobs back to zero, unplug everything, stow the gear back in the lab's gear storage, chair in.</p>
+
+<footer class="handout-footer">
+  <span>MUS 381 · CSU East Bay</span>
+  <span>Module 04 · Lab 2</span>
+</footer>
+
+</body>
+</html>
