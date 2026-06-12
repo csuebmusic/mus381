@@ -130,42 +130,13 @@
 
 <p>Every track is now one unbroken clip of audio. This is the session a mixing engineer sits down to: a stack of audio channels with nothing left to build, ready to balance.</p>
 
+<p>The commitment stops here. Freezing, flattening, and consolidating were the one place you traded reversibility for a fixed recording. From now on, mixing changes nothing in those files. Every fader, pan, and device is a setting you can undo, and the audio stays whole underneath, so you can remix as much as you like. You could open a fresh project on the same files tomorrow and build a second, different mix from them. What you commit is the material. How you mix it stays as open as ever.</p>
+
 <hr>
 
 <h2>Mix</h2>
 
 <p>Switch to the mixer with <code>Tab</code>, which opens Session view. Each track now stands as a vertical channel strip, the same shape as a channel on the Toft. The strip carries the controls you mix with: a <strong>fader</strong> for how loud the track is, a <strong>pan</strong> control for where it sits left to right, and <strong>send</strong> knobs that tap a copy of the track off to a shared effect. The <strong>Master</strong> strip on the right sums every channel into the one stereo output you will export. Your music still lives in the Arrangement, so press play to hear it; this view only changes the controls in front of you. Leave the empty clip slots alone, they belong to a way of working you meet later.</p>
-
-<h3>Set levels</h3>
-
-<p>Level is the first move and the one that fixes the most, so give it real time before reaching for anything else. Most mixes that sound wrong are not missing an effect, they are out of balance. Work with your ears rather than your eyes. One reliable way in: pull every fader down, bring up the part that carries the music to a comfortable level, then raise each other part only until you can hear it doing its job. Lead parts sit forward, supporting parts sit under them. As you go, watch the <strong>Master</strong> meter on the right and keep it out of the red, the point where the summed signal clips and distorts.</p>
-
-<h3>Place sounds with pan</h3>
-
-<p>Pan moves a track left or right across the stereo field, the space between your two ears. Its real use is separation: two parts in the same spot fight for the same place and blur together, but slide one left and the other right and the ear hears each on its own. Spread the parts out, a little one way, a little the other, and the mix opens up. Keep the lowest parts, the kick and the bass, in the center. Low frequencies are hard for the ear to locate and they carry the most energy, so centering them holds that energy even across both speakers.</p>
-
-<h3>Add reverb on a send</h3>
-
-<p>This is the spot in mixing routing that trips people up, so take it slowly. An effect can go in two places. An <strong>insert</strong> sits in one track's chain and processes that track alone, which is how you will use EQ and compression below. A <strong>send</strong> works differently: it taps a copy of a track's signal and routes it to a separate <strong>return</strong> track, where a single effect processes everything sent to it. Reverb belongs on a send. You want one room that several parts share, so the mix sounds like one space instead of a stack of separate rooms, and one reverb costs the computer far less than ten.</p>
-
-<p>From the <strong>Create</strong> menu, choose <strong>Insert Return Track</strong>, and drag a <strong>Reverb</strong> from the browser's Audio Effects onto it. Every channel now shows a <strong>Send</strong> knob feeding that return. Turn a track's send up and more of that track goes into the reverb: the dry track stays exactly where it is, and the wet copy is added on top. The send knob is that track's wet amount into the one shared room.</p>
-
-<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/routing-and-i-o/#internal-routings" target="_blank" rel="noopener noreferrer">
-  <span class="res-icon" aria-hidden="true">&sect;</span>
-  <span class="res-body">
-    <span class="res-title">Internal Routings</span>
-    <span class="res-scope">Live 11 manual · sends and returns</span>
-  </span>
-  <span class="res-arrow" aria-hidden="true">&#8599;</span>
-</a>
-
-<h3>Group related tracks</h3>
-
-<p>Once a set of tracks belongs together, the drums for instance, you can handle them as one. Select them and press <code>Cmd-G</code>. Live wraps them in a <strong>Group</strong> track whose fader moves all of them at once, the way a subgroup worked on the console. After you balance the pieces inside the group, one fader rides the whole kit up or down against the rest of the mix. Grouping also turns a wall of single tracks into a few blocks, drums, then bass, then the rest, which are far easier to balance against each other. Group what moves together.</p>
-
-<h3>Shape with EQ and compression</h3>
-
-<p>Level and pan place a part. Two more tools shape it, and both are inserts that sit in the one track's chain. <strong>EQ Eight</strong> lifts or cuts chosen frequency ranges, the equalizer from Module 2. Its main job in a mix is room: when two parts crowd the same range and mask each other, cut that range on the one that needs it less and both come through. <strong>Compressor</strong> evens out a part that swings between loud and quiet, the dynamics tool from Module 2, so it holds a steady place in the balance instead of jumping forward and falling back. Order matters, because each device feeds the next: put EQ before Compressor so the compressor reacts to the sound you have already shaped. Reach for these only where a part asks for one. An effect on every track is usually a level problem you skipped.</p>
 
 <a class="manual-link" href="https://www.ableton.com/en/live-manual/11/mixing/" target="_blank" rel="noopener noreferrer">
   <span class="res-icon" aria-hidden="true">&sect;</span>
@@ -175,6 +146,30 @@
   </span>
   <span class="res-arrow" aria-hidden="true">&#8599;</span>
 </a>
+
+<h3>Set levels</h3>
+
+<p>Level is the first move and the one that fixes the most, so give it real time before reaching for anything else. Most mixes that sound wrong are not missing an effect, they are out of balance. Work with your ears rather than your eyes. One reliable way in: pull every fader down, bring up the part that carries the music to a comfortable level, then raise each other part only until you can hear it doing its job. Lead parts sit forward, supporting parts sit under them. As you go, watch the <strong>Master</strong> meter on the right and keep it out of the red, the point where the summed signal clips and distorts.</p>
+
+<h3>Place sounds with pan</h3>
+
+<p>Pan moves a track left or right across the stereo field, the space between your two ears. Its real use is separation: two parts in the same spot fight for the same place and blur together, but slide one left and the other right and the ear hears each on its own. Spread the parts out, a little one way, a little the other, and the mix opens up. Keep the lowest parts, the kick and the bass, in the center. Low frequencies are hard for the ear to locate and they carry the most energy, so centering them holds that energy even across both speakers.</p>
+
+<h3>Group related tracks</h3>
+
+<p>Once a set of tracks belongs together, the drums for instance, you can handle them as one. Select them and press <code>Cmd-G</code>. Live wraps them in a <strong>Group</strong> track (a bus, in console terms) whose fader moves all of them at once, the way a subgroup worked on the console. After you balance the pieces inside the group, one fader rides the whole kit up or down against the rest of the mix. A group also gives you one channel where you can treat the whole submix at once, which the next step uses. Grouping turns a wall of single tracks into a few blocks, drums, then bass, then the rest, which are far easier to balance against each other. Group what moves together.</p>
+
+<h3>Shape with inserts</h3>
+
+<p>An <strong>insert</strong> sits in a track's chain and processes that one signal in series, in the order you stack the devices on it. Drag a device from the browser's Audio Effects onto a track, a group, or the master to add it there. The dynamics tools come as a set, and the move that keeps a mix clean is to let each one work at a different stage rather than stacking them all on one track.</p>
+
+<p><strong>On a single track</strong>, two tools shape one part. <strong>EQ Eight</strong> lifts or cuts chosen frequency ranges, the equalizer from Module 2. Its main job in a mix is room: when two parts crowd the same range and mask each other, cut that range on the one that needs it less and both come through. <strong>Compressor</strong> evens out a part that swings between loud and quiet, the dynamics tool from Module 2, so it holds a steady place in the balance. Put EQ before Compressor in the chain, so the compressor reacts to the sound you have already shaped.</p>
+
+<p><strong>On a group</strong>, the <strong>Glue Compressor</strong> does a gentler job across a whole submix. It is Ableton's version of the SSL bus compressor you met in the Module 3 studio, built to pull a set of tracks together so they read as one thing rather than several. A light touch on the drum group glues the kit. Use one Glue Compressor on the group, not one on every track inside it.</p>
+
+<p><strong>On the master</strong>, a <strong>Limiter</strong> goes last in the chain and catches the loudest peaks, setting a ceiling the signal cannot cross. That ceiling is what keeps the exported file from clipping. One Limiter, on the Master strip, at the very end.</p>
+
+<p>So the dynamics spread across three stages: Compressor on the parts that need it, Glue Compressor on the groups, Limiter on the master. Each does its own job at its own place. Reach for any of them only where you hear the need; an effect on every track is usually a level problem you skipped. Live carries more tone and dynamics devices than these, gathered in the reference, but this set is what the mix in front of you asks for.</p>
 
 <a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#eq-eight" target="_blank" rel="noopener noreferrer">
   <span class="res-icon" aria-hidden="true">&sect;</span>
@@ -194,10 +189,54 @@
   <span class="res-arrow" aria-hidden="true">&#8599;</span>
 </a>
 
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#glue-compressor" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Glue Compressor</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#limiter" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Limiter</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<h3>Add space with the sends</h3>
+
+<p>The other way to place an effect is a <strong>send</strong>. Where an insert processes one track alone, a send taps a copy of a track's signal and routes it to a separate <strong>return</strong> track, where one effect treats everything sent to it. Your Set already has two returns ready: return <strong>A</strong> holds a <strong>Reverb</strong> and return <strong>B</strong> holds a <strong>Delay</strong>, shared and waiting for tracks to feed them. This is why the reverb sits on a return: you want one room that several parts share, so the mix sounds like one space rather than a stack of separate rooms, and one shared reverb costs the computer far less than ten.</p>
+
+<p>Every channel carries a <strong>Send A</strong> and a <strong>Send B</strong> knob. Turn Send A up on a track and a copy of it feeds the reverb: the dry track stays exactly where it is, and a wet, roomy copy is added on top. Turn Send B up and that track picks up the delay instead. The send knob is each track's wet amount into the shared effect, so a touch on several tracks settles them into one space.</p>
+
+<p>To change the reverb itself, click return <strong>A</strong> to select it and its <strong>Reverb</strong> opens in the device area along the bottom. Adjust it there, or swap it for a different reverb by dragging a new one from the browser onto the return. Whatever you set applies to every track sending to A.</p>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/routing-and-i-o/#internal-routings" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Internal Routings</span>
+    <span class="res-scope">Live 11 manual · sends and returns</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
 <a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#reverb" target="_blank" rel="noopener noreferrer">
   <span class="res-icon" aria-hidden="true">&sect;</span>
   <span class="res-body">
     <span class="res-title">Reverb</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#delay" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Delay</span>
     <span class="res-scope">Live 11 manual</span>
   </span>
   <span class="res-arrow" aria-hidden="true">&#8599;</span>
