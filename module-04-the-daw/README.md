@@ -140,15 +140,17 @@ Full listening assignment: `listening/historical.html` *(not yet written)*.
 
 ## Session overview
 
+**How the materials map to sessions.** Each week runs on one document. The module **reading** (`01-reading-the-daw-environment.html`) is met Monday of Wk 10 as the module's map and is referred back to all module. The three **handouts** (`02` audio editing, `03` sampling, `04` mixing) each drive a full week, both the Monday session and the Wednesday session: the TA works through the handout while students follow hands-on, so concept and doing happen together rather than splitting into a separate lecture and lab. There are no standalone Monday lecture documents for Wks 11 and 12; the week's handout carries both days. Wk 13 is the exception, a Monday-only Audition reading (`05-reading-transferable-concepts.html`), since Wed Wk 13 is Veterans Day.
+
 | Wk | Day | Focus |
 |---|---|---|
-| 10 | Mon | Session 1 · Lecture: The DAW environment, through Ableton. What a full DAW is, Session vs Arrangement view, the clip, nondestructive editing as the reframe of everything from Module 2. |
-| 10 | Wed | Session 2 · Lab: Audio editing in Ableton (Lab 1). Import your library, place clips on the Arrangement timeline, basic clip edits (start/end, fades, gain), an introduction to warping. |
-| 11 | Mon | Session 3 · Lecture: Simpler and Drum Rack. Super-basic sampling. First encounter with MIDI tracks as triggers: a MIDI note triggers an instrument; the instrument makes the sound. Simpler plays one sample across the keyboard; Drum Rack is a grid of one-sample pads. |
-| 11 | Wed | Session 4 · Lab: Basic sampling in practice (Lab 2). Load library sounds into Simpler and a Drum Rack, draw or play a short MIDI part, build one short playable idea from the student's own samples. |
-| 12 | Mon | Session 5 · Lecture: Basic mixing in Ableton. The Ableton mixer as the digital console: track faders, pan, sends and return tracks, group tracks, the Master. Built-in EQ and Compressor mapped onto Module 2's EQ and dynamics and Module 3's console architecture. |
-| 12 | Wed | Session 6 · Lab: Mixing in practice (Lab 3). Take a small multitrack session and mix it: set levels and pan, send to a reverb return, group, EQ and compress where it helps. |
-| 13 | Mon | Session 7 · Lecture: Transferable concepts, through Adobe Audition. *(Mon only; Wed is Veterans Day.)* The same concepts in a different tool: sample rate, bit depth, editing, EQ, dynamics, multitrack, under Audition's UI and names. The point is portability of skills, aimed in part at the art majors already in the Adobe suite. |
+| 10 | Mon | Session 1 · Reading (the module map), then begin Lab 1 (handout 02). What a full DAW is, Session vs Arrangement view, the clip, nondestructive editing as the reframe of everything from Module 2. Students also create their final-project Set. |
+| 10 | Wed | Session 2 · Lab 1 continues (handout 02). Import your library, place clips on the Arrangement timeline, basic clip edits (start/end, fades, gain), an introduction to warping. |
+| 11 | Mon | Session 3 · Begin Lab 2 (handout 03). MIDI as trigger: a MIDI note triggers an instrument; the instrument makes the sound. Simpler plays one sample across the keyboard; Drum Rack is a grid of one-sample pads. |
+| 11 | Wed | Session 4 · Lab 2 continues (handout 03). Load library sounds into Simpler and a Drum Rack, sequence a short MIDI part, build one short playable idea from the student's own samples. |
+| 12 | Mon | Session 5 · Begin Lab 3 (handout 04). The Ableton mixer as the digital console: track faders, pan, sends and return tracks, group tracks, the Master. EQ and Compressor mapped onto Module 2 and the Module 3 console. |
+| 12 | Wed | Session 6 · Lab 3 continues (handout 04). Commit the session to audio (freeze and flatten the MIDI tracks, consolidate), then mix: levels, pan, a reverb return, groups, EQ and compression. |
+| 13 | Mon | Session 7 · Transferable concepts, through Adobe Audition (reading 05). *(Mon only; Wed is Veterans Day.)* The same concepts in a different tool: sample rate, bit depth, editing, EQ, dynamics, multitrack, under Audition's UI and names. The point is portability of skills, aimed in part at the art majors already in the Adobe suite. |
 | 14 | Mon / Wed | Final project worktime; Draft 1 due Wed Wk 14. *(To be drafted.)* |
 | 15 | Mon / Wed | Final project revision; Draft 2 due Wed Wk 15. *(To be drafted.)* |
 | Finals | — | Final piece to NAS + class folder; cumulative final exam. *(To be drafted.)* |
@@ -171,7 +173,7 @@ These are the open calls from reshaping the module off the old 4a/4b (audio + MI
 
 5. **The module thematic label — settled as "The DAW."** Retitled from "Audio, sampling & mixing in Ableton" (Inés's call): Ableton is the DAW students spend three weeks in, and the module's point is what a DAW is and where its concepts carry. Applied as the module-tag (`Module 04 · The DAW`) across the Session 1 reading, Lab 1, and the handout template, the README H1, and the course outline. Pairs with the reading's H1, "Into the DAW."
 
-6. **Filenames for two lessons.** Session 3: `03-reading-samplers-and-triggers.html` (what it teaches) vs `03-reading-simpler-and-drum-rack.html` (the two instruments by name). Session 7: `07-reading-transferable-concepts.html` (the idea) vs `07-reading-adobe-audition.html` (the tool). Minor; will settle at draft time.
+6. **Settled.** Wks 11 and 12 no longer have separate Monday readings; each week runs on one handout (`03-handout-sampling-in-practice.html`, `04-handout-mixing-in-practice.html`) across both days. The Wk 13 Audition reading is `05-reading-transferable-concepts.html`.
 
 ---
 
@@ -182,7 +184,8 @@ These are the open calls from reshaping the module off the old 4a/4b (audio + MI
 - **Ableton Live 11 Suite** is the lab version. Handout screenshots, menu paths, and manual references all target Live 11 (see Reference scope above for the exact sections). Suite confirms everything in scope is installed; Simpler and Drum Rack are in every edition regardless.
 - **MIDI keyboards inventoried and tested at every station.** They enter the gear list this module (the Module 4 handout gear tier adds the MIDI keyboard). Confirm each one is present, connects over USB through the hub, and registers in Ableton's MIDI preferences.
 - **Adobe Audition availability settled** (see Decisions to settle #3): licensed/installed on the lab Macs, or projector demo only.
-- **A starter session for the mixing lab.** Session 6 (mixing in practice) goes faster if students mix a prepared multitrack session rather than building one from scratch. A small set with a few tracks of student-recognizable material, staged on the NAS, lets the session focus on mixing moves. To be built.
+- **A starter session for the mixing lab.** Session 6 mixes a prepared multitrack session staged on the NAS: a longer piece with several instruments, some MIDI and some audio, so there is MIDI to commit and audio to consolidate. Inés provides it; stage it on the NAS before Wk 12.
+- **Final-project Set.** Students create their own project Set in Session 1 (the reading ends by walking them through it), named `lastname-project`, and build it in the end-of-class block of each lab. Nothing to pre-stage; be ready to help with the create-and-save step on Day 1.
 - **Library readiness check.** Sessions 2 through 4 assume each student has a usable Module 3 library on the NAS. Spot-check that libraries survived the midterm and are findable before Wk 10.
 
 ---
@@ -207,7 +210,7 @@ Same as Module 3, minus the mic and XLR (the lab sessions here are not recording
 
 ### Pacing across the module
 
-The pressure point is **Session 3 → 4** (the MIDI-as-trigger jump). MIDI is the one genuinely new abstraction in a module otherwise built on familiar material (audio, editing, mixing). If the trigger model doesn't land in Session 3's lecture, Session 4's lab stalls. Plan Session 3 to leave students able to state the note → instrument → sound chain before they touch a keyboard in Session 4.
+The pressure point is **Session 3 → 4** (the MIDI-as-trigger jump). MIDI is the one genuinely new abstraction in a module otherwise built on familiar material (audio, editing, mixing). If the trigger model doesn't land on the Monday (Session 3), the Wednesday lab stalls. Plan the Monday to leave students able to state the note → instrument → sound chain before they build with it on Wednesday.
 
 The other risk is **Session 7 (Audition)** turning into an Audition tutorial. It isn't one. The session is about portability of concepts; Audition is the example. Keep the emphasis on "you already know this; here it is wearing different clothes," not on Audition's feature set.
 
@@ -219,11 +222,11 @@ Same as Modules 2 and 3.
 
 ## Session 1 · Mon Wk 10: The DAW environment, through Ableton
 
-**100 min · Lecture-style · MB2525**
+**100 min · Reading, then Lab 1 begins · MB2525**
 
 ### Roadmap
 
-The module's framing question: what is a DAW, and what's new about it after two modules in an audio editor (Audacity)? Introduce Session view vs Arrangement view, the clip as a reference to audio, and **nondestructive editing** as the reframe of everything they did in Module 2. Students should leave able to say what a clip is and why editing one doesn't touch the underlying file.
+The module's framing question: what is a DAW, and what's new about it after two modules in an audio editor (Audacity)? Introduce Session view vs Arrangement view, the clip as a reference to audio, and **nondestructive editing** as the reframe of everything they did in Module 2. Students should leave able to say what a clip is and why editing one doesn't touch the underlying file. After the reading, the session moves into Lab 1: students create their final-project Set, which the reading introduces, and begin handout 02 (Wednesday continues it).
 
 ### Reading
 
@@ -243,7 +246,7 @@ Rebuilt from scratch as the module's map, encountered Mon Wk 10 and referred bac
 
 - Filename `01-reading-the-daw-environment.html` is confirmed.
 - No screenshots: the rebuild keeps the reading lean as a concept-and-roadmap map. The Wk 10 Live 11 screenshots stay in `assets/images/module-04-week-10/` for the lab handouts.
-- Wk 13 (Audition) is not in the roadmap; it gets its own handout. The concepts-travel section still names it as where the skills prove portable.
+- Wk 13 (Audition) is not in the roadmap; it gets its own reading (05). The concepts-travel section still names it as where the skills prove portable.
 - House style enforced over several passes with Inés: no em dashes, no announcement sentences, fact over fluff.
 
 ### Block-by-block
@@ -281,15 +284,15 @@ Arrangement View (audio portions); Clip View; Audio Clips, Tempo, and Warping.
 
 ## Session 3 · Mon Wk 11: Simpler and Drum Rack
 
-**100 min · Lecture-style · MB2525**
+**100 min · Lab 2 begins (Mon of the week) · MB2525**
 
 ### Roadmap
 
 The one genuinely new abstraction of the module: **MIDI as a trigger**. Build the model carefully: a MIDI note is data (pitch, timing, velocity), a MIDI note triggers an instrument, the instrument makes the sound. Then the two sampler instruments. **Simpler** plays one sample across the keyboard, with a volume envelope (attack, decay, sustain, release) shaping each note. **Drum Rack** is a grid of pads, each pad one sample, each triggered by a MIDI note. Both are framed as ways to *play* the student's library rather than just arrange it.
 
-### Reading
+### Handout
 
-`lessons/03-reading-samplers-and-triggers.html` *(not yet written; filename open, see Decisions to settle #6)*
+`lessons/03-handout-sampling-in-practice.html` — Lab 2. One document for the whole week: this Monday session works through the concept material (the trigger model, Simpler, Drum Rack), and Session 4 on Wednesday continues into the hands-on build.
 
 ### Manual (Live 11)
 
@@ -316,7 +319,7 @@ Hands-on with the Session 3 instruments. Students load their own library sounds 
 
 ### Handout
 
-`lessons/03-handout-sampling-in-practice.html` — Lab 2
+`lessons/03-handout-sampling-in-practice.html` — Lab 2. The same handout begun on Monday (Session 3); Wednesday continues into the hands-on build.
 
 ### Open questions for when we draft
 
@@ -331,15 +334,15 @@ Hands-on with the Session 3 instruments. Students load their own library sounds 
 
 ## Session 5 · Mon Wk 12: Basic mixing in Ableton
 
-**100 min · Lecture-style · MB2525**
+**100 min · Lab 3 begins (Mon of the week) · MB2525**
 
 ### Roadmap
 
 The Ableton mixer as the **digital version of the Module 3 console**. Walk the mapping explicitly: track fader = channel fader, pan = pan, send to a return = aux send, group track = subgroup, Master track = master bus. Then the built-in devices that do the mixing work, the same effect types students met in Modules 2 and 3, now as Live devices. Insert effects sit in a track's chain and their order matters (Utility, EQ Eight, Auto Filter, Compressor, then the bus and master tools: Glue Compressor, Limiter, Multiband Dynamics). Send effects live on return tracks and are shared across tracks (Hybrid Reverb, Reverb, Delay, Echo), which is the aux-send mechanism from the Toft. Mixing is reframed as the same set of decisions students met on the Toft, now in software they can actually drive. Full locked list in Reference scope.
 
-### Reading
+### Handout
 
-`lessons/05-reading-mixing-in-ableton.html` *(not yet written)*
+`lessons/04-handout-mixing-in-practice.html` — Lab 3. One document for the whole week: this Monday session works through the mixer concepts, and Session 6 on Wednesday continues into committing to audio and mixing.
 
 ### Manual (Live 11)
 
@@ -365,15 +368,15 @@ Two threads land at once: Module 2's EQ and compression (what these devices do) 
 
 ### Roadmap
 
-Students mix a small multitrack session: set levels and pan, send to a shared reverb return, group related tracks, and apply EQ and compression where they help. Faster and more focused if they mix a **prepared starter session** (see Pre-module preparation) rather than building one from scratch, so the time goes to mixing moves rather than setup.
+The Wednesday half of the mixing week. Students download a prepared multitrack session from the NAS, then commit it to audio before mixing: freeze and flatten the MIDI tracks, consolidate each track to one clip, so creation and mixing stay separate jobs. Then they mix: levels, pan, a shared reverb return, groups, and EQ and compression where they help. The prepared session keeps the time on mixing moves rather than setup.
 
 ### Handout
 
-`lessons/04-handout-mixing-in-practice.html` — Lab 3
+`lessons/04-handout-mixing-in-practice.html` — Lab 3. The same handout begun on Monday (Session 5); Wednesday continues into committing to audio and mixing.
 
 ### Open questions for when we draft
 
-- Prepared session vs the student's own Session 4 idea as the thing they mix. A prepared session guarantees enough tracks to practice routing; their own idea is more motivating but may be too sparse to mix meaningfully. Possibly offer both: mix the prepared session as the exercise, then apply the moves to their own.
+- Resolved: students mix the prepared NAS session as the exercise, and the end-of-class project block lets them carry the moves into their own project.
 - Whether to introduce sidechain or keep strictly to level/pan/EQ/comp/reverb. Probably keep it to the core five at this level.
 
 ### Block-by-block
@@ -392,7 +395,7 @@ Step out of Ableton to show that the module's concepts belong to digital audio, 
 
 ### Reading
 
-`lessons/07-reading-transferable-concepts.html` *(not yet written; filename open, see Decisions to settle #6)*
+`lessons/05-reading-transferable-concepts.html` *(not yet written)*
 
 ### Open questions for when we draft
 
