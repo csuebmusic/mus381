@@ -45,9 +45,9 @@ The lab runs **Ableton Live 11 Suite**. Live is a large DAW; this module deliber
 - Simpler — https://www.ableton.com/en/live-manual/11/live-instrument-reference/#simpler
 - Drum Racks — https://www.ableton.com/en/live-manual/11/instrument-drum-and-effect-racks/#drum-racks
 - Editing MIDI Notes and Velocities — https://www.ableton.com/en/live-manual/11/editing-midi-notes-and-velocities/ (scoped to just enough to trigger: drawing and editing notes)
+- Monitoring — https://www.ableton.com/en/live-manual/11/routing-and-i-o/#monitoring (the track Monitor setting, paired with arming a MIDI track to play the instrument; moved here from Wk 12 since Live work in this module never records audio)
 
 **Week 12 (mixing):**
-- Monitoring — https://www.ableton.com/en/live-manual/11/routing-and-i-o/#monitoring
 - Internal Routings — https://www.ableton.com/en/live-manual/11/routing-and-i-o/#internal-routings
 - Mixing — https://www.ableton.com/en/live-manual/11/mixing/
 - Live Audio Effect Reference — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/ . The locked effect set, the same effect types from Modules 2 and 3, now as Live devices, split into inserts (where chain order matters) and sends (shared on return tracks):
@@ -343,7 +343,7 @@ The Ableton mixer as the **digital version of the Module 3 console**. Walk the m
 
 ### Manual (Live 11)
 
-Monitoring; Internal Routings; Mixing; Live Audio Effect Reference (locked insert + send set, see Reference scope).
+Internal Routings; Mixing; Live Audio Effect Reference (locked insert + send set, see Reference scope).
 
 ### Connection to earlier modules
 
