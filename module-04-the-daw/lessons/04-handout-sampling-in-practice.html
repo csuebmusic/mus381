@@ -52,13 +52,13 @@
 
 <div class="callout">
   <div class="callout-label">Today's gear</div>
-  <p>Take from the lab's gear storage: <strong>audio interface, headphones, MIDI keyboard</strong>. The keyboard is new this week, and you use it to hear your instruments as you build them. Plug in and run through the start-of-session steps on the <strong>Session Routines</strong> card before continuing here.</p>
+  <p>Take from the lab's gear storage: <strong>audio interface, headphones, MIDI keyboard</strong>. The keyboard is new this week. You use it to hear your instruments as you build them, and you connect it below before you play. Run through the start-of-session steps on the <strong>Session Routines</strong> card before continuing here.</p>
 </div>
 
 <h2>What we're doing today</h2>
 
 <ol class="steps">
-  <li>Pull your library down and start a Set.</li>
+  <li>Pull your library down, start a Set, and connect the MIDI keyboard.</li>
   <li>Load a sample into Simpler and play it across the keyboard.</li>
   <li>Build a small kit in a Drum Rack from your library sounds.</li>
   <li>Sequence a short part by drawing notes into a clip.</li>
@@ -82,6 +82,42 @@
   <div class="callout-label">Instruments go on MIDI tracks</div>
   <p>Everything today happens on MIDI tracks. An audio track holds recordings, the clips you worked with in Lab 1. A MIDI track holds an instrument and the notes that play it. Simpler and the Drum Rack are instruments, so they go on MIDI tracks. Dropping a sample straight onto an audio track plays it as a clip, the Lab 1 way; today you load it into an instrument instead.</p>
 </div>
+
+<hr>
+
+<h2>Connect the MIDI keyboard</h2>
+
+<p>This is the first time you use the MIDI keyboard, so it needs connecting before Live can hear it. Plug its USB cable into the hub at your station.</p>
+
+<h3>Check that the Mac sees it</h3>
+
+<p>Open <strong>Audio MIDI Setup</strong>, the same utility where you check your audio interface. This time look at its MIDI side: in the menu bar choose <strong>Window</strong>, then <strong>Show MIDI Studio</strong>, or press <code>Command-2</code>. The MIDI Studio window shows an icon for every MIDI device the Mac has found. Your keyboard appears here by name, in full color, once it is connected. An icon that is grayed out is a device the Mac is not seeing, which usually means the cable is loose or in the wrong port. If your keyboard is grayed, reseat the USB cable and watch the icon come up to full color.</p>
+
+<h3>Tell Live to use it</h3>
+
+<p>Seeing the keyboard in MIDI Studio means the Mac has it. Live still needs to be told to use it, because Live does not assume what a new device is for. Open Live's <strong>Preferences</strong> from the Live menu, or press <code>Command-comma</code>, and click the <strong>Link, Tempo &amp; MIDI</strong> tab.</p>
+
+<p>The lower half of that tab is the <strong>MIDI Ports</strong> list. It shows every MIDI input and output Live can find, your keyboard among them, each with three switches: <strong>Track</strong>, <strong>Sync</strong>, and <strong>Remote</strong>. Find the row for your keyboard's input and turn its <strong>Track</strong> switch on. Track lets the keyboard send its notes into Live, so an armed MIDI track plays its instrument from the keys. Leave <strong>Sync</strong> off, which is for matching tempo with other gear, and leave <strong>Remote</strong> off, which is for mapping knobs and buttons to controls in Live. Playing notes needs only Track.</p>
+
+<p>If your keyboard's row shows in red, Live cannot reach it: check that it is plugged in and that MIDI Studio still shows it. Once Track is on, close Preferences. The keyboard now plays any armed MIDI track. This video walks the same setup:</p>
+
+<a class="video-link" href="https://www.youtube.com/watch?v=CWOXblksDxE" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&#9654;</span>
+  <span class="res-body">
+    <span class="res-title">Setting up MIDI in Live</span>
+    <span class="res-scope">Video</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/midi-and-key-remote-control/" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">MIDI and Key Remote Control</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
 
 <hr>
 
