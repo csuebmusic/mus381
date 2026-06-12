@@ -209,7 +209,7 @@
 
 <div class="callout">
   <div class="callout-label">Where 0 to 127 comes from</div>
-  <p>Velocity tops out at 127, an odd ceiling that comes straight from how MIDI was built. MIDI is the language your instruments speak, agreed on by the synth makers in 1983 so gear from different companies could finally play together. It carries each value, a pitch, a velocity, a knob position, in seven bits of data, and seven bits can count 128 values, numbered 0 to 127. (A byte holds eight bits. MIDI spends one of them flagging whether a message is a command or a number, which leaves seven for the value.) That 1983 decision is why your hardest hit reads 127, and DAWs have counted velocity the same way ever since.</p>
+  <p>Velocity tops out at 127, an odd ceiling that comes straight from how MIDI was built. MIDI is the language your instruments speak, agreed on by the synth makers in 1983 so gear from different companies could finally play together. It carries each value, a pitch, a velocity, a knob position, in seven bits of data, and seven bits can count 128 values, numbered 0 to 127. (A byte holds eight bits. MIDI spends one of them flagging whether a message is a command or a number, which leaves seven for the value.) That 1983 decision is why your hardest hit reads 127, and velocity is only one of the values counted this way. Pitch uses the same 0 to 127 scale: middle C is note 60. Live labels the keys by name in the piano roll, where middle C reads as C3, the name for MIDI note 60.</p>
 </div>
 
 <p>These videos walk the whole process:</p>
