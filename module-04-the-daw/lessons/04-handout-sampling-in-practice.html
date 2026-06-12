@@ -207,6 +207,11 @@
 
 <p>The lane under the notes is <strong>velocity</strong>: how hard each note plays, soft to loud. Every note has a thin marker there. Drag a marker down for a quieter hit or up for a stronger one. A little variation keeps a part from sounding flat, a stronger downbeat here, a softer note there.</p>
 
+<div class="callout">
+  <div class="callout-label">Where 0 to 127 comes from</div>
+  <p>Velocity tops out at 127, an odd ceiling that comes straight from how MIDI was built. MIDI is the language your instruments speak, agreed on by the synth makers in 1983 so gear from different companies could finally play together. It carries each value, a pitch, a velocity, a knob position, in seven bits of data, and seven bits can count 128 values, numbered 0 to 127. (A byte holds eight bits. MIDI spends one of them flagging whether a message is a command or a number, which leaves seven for the value.) That 1983 decision is why your hardest hit reads 127, and DAWs have counted velocity the same way ever since.</p>
+</div>
+
 <p>These videos walk the whole process:</p>
 
 <a class="video-link" href="https://www.youtube.com/watch?v=1cFTonBejIQ" target="_blank" rel="noopener noreferrer">
