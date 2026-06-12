@@ -33,7 +33,7 @@ course-outline.md
 module-01-fluency/
 module-02-audio-editing-mixing/
 module-03-recording/
-module-04-ableton/
+module-04-the-daw/
 policies/
 assets/
 build/

@@ -156,7 +156,7 @@ MIDI appears only as a trigger for the sampler instruments. Synthesis (oscillato
 
 **Listening:** one historical listening on sample manipulation, the lineage of building music from recorded sound from musique concrète through hip-hop and sampling to contemporary producers. It closes the loop opened by Module 2's musique concrète listening. No peer listening in this module; final pieces are shared in the class folder for everyone to hear.
 
-**Session-by-session teaching notes:** `module-04-ableton/README.md`.
+**Session-by-session teaching notes:** `module-04-the-daw/README.md`.
 
 **Deliverable:**
 - Week 14 (Wed): Final project Draft 1
