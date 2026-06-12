@@ -213,7 +213,7 @@
 
 <p>Every channel carries a <strong>Send A</strong> and a <strong>Send B</strong> knob. Turn Send A up on a track and a copy of it feeds the reverb: the dry track stays exactly where it is, and a wet, roomy copy is added on top. Turn Send B up and that track picks up the delay instead. The send knob is each track's wet amount into the shared effect, so a touch on several tracks settles them into one space.</p>
 
-<p>To change the reverb itself, click return <strong>A</strong> to select it and its <strong>Reverb</strong> opens in the device area along the bottom. Adjust it there, or swap it for a different reverb by dragging a new one from the browser onto the return. Whatever you set applies to every track sending to A.</p>
+<p>To change the reverb itself, click return <strong>A</strong> to select it and its <strong>Reverb</strong> opens in the device area along the bottom. Adjust it there, or swap it for a different one: drag <strong>Hybrid Reverb</strong> from the browser onto the return in place of the stock device. Hybrid Reverb is Live's larger reverb, two reverb engines running at once, and it trades a heavier load on the computer for richer, deeper spaces. Whatever you set applies to every track sending to A. Return <strong>B</strong> works the same way for its <strong>Delay</strong>, where <strong>Echo</strong> is the fuller alternative, one device that folds several delay lines together with its own filtering and modulation.</p>
 
 <a class="manual-link" href="https://www.ableton.com/en/live-manual/11/routing-and-i-o/#internal-routings" target="_blank" rel="noopener noreferrer">
   <span class="res-icon" aria-hidden="true">&sect;</span>
@@ -233,10 +233,75 @@
   <span class="res-arrow" aria-hidden="true">&#8599;</span>
 </a>
 
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#hybrid-reverb" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Hybrid Reverb</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
 <a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#delay" target="_blank" rel="noopener noreferrer">
   <span class="res-icon" aria-hidden="true">&sect;</span>
   <span class="res-body">
     <span class="res-title">Delay</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#echo" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Echo</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<hr>
+
+<h2>More of the set</h2>
+
+<p>Three more devices round out what this module uses. The first belongs on every track. The other two are tools you reach for when a particular sound asks for them.</p>
+
+<h3>Utility, on every track</h3>
+
+<p><strong>Utility</strong> is the small device your Lab 1 gain-staging diagram pointed to, and it earns a place on every track. Its first job is gain: the <strong>Gain</strong> knob sets a track's level cleanly without moving the fader, which keeps the fader free for mixing and your gain staging in one predictable spot. The <strong>Width</strong> control narrows or widens the stereo image, so a pad that feels narrow can spread wider, or a part that feels too wide can pull in. <strong>Bass Mono</strong> collapses everything below a frequency you set down to the center, which keeps the kick and bass solid while the rest of the track stays in stereo. A <strong>Mono</strong> button sums the whole track to one channel, a quick check for how the mix holds up on a phone speaker or a club system.</p>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#utility" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Utility</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<h3>Auto Filter, a dedicated filter</h3>
+
+<p><strong>Auto Filter</strong> is a filter on its own, the tool to reach for when EQ Eight is more than you need and you simply want to roll off a range. It carries the filter types you know, low-pass, high-pass, band-pass, and a few more, and you set the cutoff and resonance by dragging in its display. As an insert it usually sits at the end of a track's chain, after the dynamics, shaping the final tone on the way out. It can also sweep its own cutoff with an envelope or an LFO, which turns it into a moving, rhythmic filter, though for a clean mix you will mostly leave it fixed.</p>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#auto-filter" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Auto Filter</span>
+    <span class="res-scope">Live 11 manual</span>
+  </span>
+  <span class="res-arrow" aria-hidden="true">&#8599;</span>
+</a>
+
+<h3>Multiband Dynamics, and a de-esser</h3>
+
+<p><strong>Multiband Dynamics</strong> splits a sound into three frequency bands, low, mid, and high, and compresses or expands each one on its own. Reach for it when a single band of a sound misbehaves: a boomy low end you want to tame, or a harsh top you want to bump down, while the rest stays as it is. Each band has an <strong>Above</strong> section that pulls down whatever gets too loud and a <strong>Below</strong> section that lifts whatever gets too quiet, set by their two thresholds.</p>
+
+<p>Its most useful trick is a <strong>de-esser</strong>, which tames the sharp <em>ess</em> and <em>sh</em> sounds in a voice. A de-esser sold on its own can cost real money, and it is mostly a multiband compressor aimed at one band. To build one, put Multiband Dynamics on the voice, then turn off the Low and Mid bands with the buttons on the left so only the High band works. Set the High band's crossover so it starts around five to eight kilohertz, where the sibilance lives, and solo that band to hear and tune the range. Then lower the High band's <strong>Above</strong> threshold until the meter dips only on each harsh <em>ess</em>. Unsolo, and the esses sit back while the rest of the voice stays untouched.</p>
+
+<a class="manual-link" href="https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#multiband-dynamics" target="_blank" rel="noopener noreferrer">
+  <span class="res-icon" aria-hidden="true">&sect;</span>
+  <span class="res-body">
+    <span class="res-title">Multiband Dynamics</span>
     <span class="res-scope">Live 11 manual</span>
   </span>
   <span class="res-arrow" aria-hidden="true">&#8599;</span>
