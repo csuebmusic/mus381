@@ -2,7 +2,7 @@
 
 **Weeks 10–15 · instruction Wks 10–13 (7 sessions), final project Wks 14–15**
 
-> **Status:** Spec and session overview written to the new plan. Session 1's reading (`lessons/01-reading-the-daw-environment.html`) has a first draft; the other lessons, listening, and project files are not yet built. The final-project prompt (Wks 14–15) is deferred and will be drafted separately. Several cross-cutting decisions are still open; see **Decisions to settle** below before drafting further lessons.
+> **Status:** Spec and session overview written to the new plan. Session 1's reading (`lessons/01-reading-the-daw-environment.html`) is drafted and revised; Lab 1 (`lessons/02-handout-audio-editing.html`, Wk 10 audio editing) is drafted. The remaining lessons, listening, and project files are not yet built. The final-project prompt (Wks 14–15) is deferred and will be drafted separately. Several cross-cutting decisions are still open; see **Decisions to settle** below before drafting further lessons.
 
 ---
 
@@ -91,7 +91,7 @@ By the end of this module, students should be able to:
 
 ## Key concepts introduced
 
-- **DAW (digital audio workstation):** the umbrella term. Audacity was a DAW too, in a narrow sense, but Ableton is the first *full* one students meet: multitrack, nondestructive, with instruments and a built-in mixer. Define the term here even though students have been doing DAW work for two modules.
+- **DAW (digital audio workstation):** Audacity is an *audio editor*, not a DAW: it records and edits audio but has no instruments, no MIDI, and no full mixer. Ableton is the first DAW students meet: multitrack, nondestructive, with instruments and a built-in mixer. Define the term here and draw the editor-vs-DAW line explicitly, since the last two modules were spent in an editor. (Inés is firm on this: do not call Audacity a DAW.)
 - **Session view vs Arrangement view:** Session view is the clip grid, for trying ideas and looping; Arrangement view is the linear timeline, for committing to a structure. Two views of one set. Beginners do most early work in Arrangement (it resembles Audacity's timeline) and meet Session view as the thing that's genuinely new.
 - **Clip:** a reference to audio (or to MIDI), with its own start, end, gain, fades, and warp settings. The unit of work in Ableton. The key idea: the clip is not the file; it points at the file.
 - **Nondestructive editing:** edits live on the clip, not the source audio. Contrast explicitly with Audacity, where edits rewrote samples. This is the reframe of the module.
@@ -223,11 +223,11 @@ Same as Modules 2 and 3.
 
 ### Roadmap
 
-The module's framing question: what is a full DAW, and what's new about it after two modules in Audacity? Introduce Session view vs Arrangement view, the clip as a reference to audio, and **nondestructive editing** as the reframe of everything they did in Module 2. Students should leave able to say what a clip is and why editing one doesn't touch the underlying file.
+The module's framing question: what is a DAW, and what's new about it after two modules in an audio editor (Audacity)? Introduce Session view vs Arrangement view, the clip as a reference to audio, and **nondestructive editing** as the reframe of everything they did in Module 2. Students should leave able to say what a clip is and why editing one doesn't touch the underlying file.
 
 ### Reading
 
-`lessons/01-reading-the-daw-environment.html` *(first draft in place)*
+`lessons/01-reading-the-daw-environment.html` *(drafted and revised)*
 
 ### Manual (Live 11)
 
@@ -237,10 +237,14 @@ First Steps; Live Concepts.
 
 Module 2 taught editing as something you do *to a file*. This lecture reframes editing as something you do *to a clip*, with the file untouched underneath. The relief of "you can't ruin your source" is worth naming out loud: beginners edit timidly, and nondestructive editing is permission to experiment.
 
-### Settled in the first draft
+### What the reading is now
 
-- Filename: `01-reading-the-daw-environment.html` (the umbrella "a DAW," with Ableton as the vehicle; pairs with Session 7's "any DAW" coda). Still open for Inés to confirm over an Ableton-specific title.
-- Session view is named as "the thing that's genuinely new" and deferred ("met properly once you have some sound to play with"), with early hands-on work kept in Arrangement. The deeper-content pass added Live 11 screenshots (browser, view selectors, Session grid, Arrangement track, Clip View, clip-edge trim), so Session view is now shown, not only named.
+Rebuilt from scratch as the module's map, encountered Mon Wk 10 and referred back to across the module. In order: what a DAW is (audio editor vs DAW, with Audacity as the editor); a short history (tape and musique concrète, Les Paul and multitrack, the Fairlight sampler, MIDI in 1983, Pro Tools, VST, Ableton Live 2001); the three things that change inside a DAW (nondestructive editing, live processing, and a simple MIDI model with an inline audio-vs-MIDI diagram); the concepts travel (a short survey of other DAWs); and the combined Wk 10–12 manual roadmap, plus the Learn Live video library, the Exporting link, and the 48 kHz / 32-bit audio standard.
+
+- Filename `01-reading-the-daw-environment.html` is confirmed.
+- No screenshots: the rebuild keeps the reading lean as a concept-and-roadmap map. The Wk 10 Live 11 screenshots stay in `assets/images/module-04-week-10/` for the lab handouts.
+- Wk 13 (Audition) is not in the roadmap; it gets its own handout. The concepts-travel section still names it as where the skills prove portable.
+- House style enforced over several passes with Inés: no em dashes, no announcement sentences, fact over fluff.
 
 ### Block-by-block
 
