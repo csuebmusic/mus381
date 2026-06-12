@@ -83,7 +83,66 @@
 
 <h2>Make a mixing version</h2>
 
-<p>Up to now your work has been creation: choosing sounds, playing parts, arranging them into a piece. Creation decides what happens in the music. Mixing decides how the finished parts are heard, and it does not change what any part plays. It sets how loud each part is against the others (level), where each sits from left to right (pan), how near or far it feels (space, mostly from reverb), how parts share the frequency range so they do not mask each other (tone, from EQ), and how steady each part holds its level (dynamics, from compression). Those are the moves you make later in this lab, and every one of them acts on parts that are already written.</p>
+<p>Up to now your work has been creation: choosing sounds, playing parts, arranging them into a piece. Creation decides what happens in the music. Mixing decides how the finished parts are heard, and it does not change what any part plays. It sets how loud each part is against the others (level), where each sits from left to right (pan), how near or far it feels (space, mostly from reverb), how parts share the frequency range so they do not mask each other (tone, from EQ), and how steady each part holds its level (dynamics, from compression).</p>
+
+<div style="display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;align-items:flex-start;margin:1.9rem 0;">
+
+<figure class="form-diagram" style="flex:1 1 260px;margin:0;">
+<svg viewBox="0 0 300 300" role="img" aria-label="A top-down view of a listener's head at the center. A horizontal axis is pan, running from L on the left to R on the right, the stereo image. A vertical axis is depth, running from front (dry, near) at the top to back (reverb, far) at the bottom. Two example sounds sit at different places in the field." xmlns="http://www.w3.org/2000/svg">
+  <text x="150" y="20" text-anchor="middle" font-family="DM Mono, monospace" font-size="11" letter-spacing="0.08em" fill="var(--accent)">PAN AND DEPTH</text>
+  <rect x="40" y="40" width="220" height="236" rx="10" fill="var(--bg-alt)" stroke="var(--rule-soft)" stroke-width="1.2"/>
+  <line x1="150" y1="80" x2="150" y2="250" stroke="var(--ink-soft)" stroke-width="1.4"/>
+  <polygon points="146,86 154,86 150,78" fill="var(--ink-soft)"/>
+  <polygon points="146,244 154,244 150,252" fill="var(--ink-soft)"/>
+  <line x1="64" y1="164" x2="236" y2="164" stroke="var(--ink-soft)" stroke-width="1.4"/>
+  <polygon points="70,160 70,168 62,164" fill="var(--ink-soft)"/>
+  <polygon points="230,160 230,168 238,164" fill="var(--ink-soft)"/>
+  <circle cx="106" cy="122" r="5" fill="var(--accent)"/>
+  <circle cx="196" cy="208" r="5" fill="var(--accent-soft)"/>
+  <circle cx="150" cy="164" r="22" fill="var(--bg-alt)" stroke="var(--ink)" stroke-width="2"/>
+  <polygon points="143,145 157,145 150,134" fill="var(--ink)"/>
+  <ellipse cx="128" cy="164" rx="3.4" ry="6" fill="none" stroke="var(--ink)" stroke-width="1.6"/>
+  <ellipse cx="172" cy="164" rx="3.4" ry="6" fill="none" stroke="var(--ink)" stroke-width="1.6"/>
+  <text x="150" y="60" text-anchor="middle" font-family="DM Mono, monospace" font-size="10" fill="var(--ink)">FRONT</text>
+  <text x="150" y="72" text-anchor="middle" font-family="DM Mono, monospace" font-size="8" fill="var(--ink-soft)">dry &middot; near</text>
+  <text x="150" y="266" text-anchor="middle" font-family="DM Mono, monospace" font-size="10" fill="var(--ink)">BACK</text>
+  <text x="150" y="278" text-anchor="middle" font-family="DM Mono, monospace" font-size="8" fill="var(--ink-soft)">reverb &middot; far</text>
+  <text x="50" y="168" text-anchor="middle" font-family="DM Mono, monospace" font-size="11" fill="var(--ink)">L</text>
+  <text x="250" y="168" text-anchor="middle" font-family="DM Mono, monospace" font-size="11" fill="var(--ink)">R</text>
+  <text x="206" y="156" text-anchor="middle" font-family="DM Mono, monospace" font-size="8.5" letter-spacing="0.05em" fill="var(--ink-soft)">PAN</text>
+  <text x="168" y="104" font-family="DM Mono, monospace" font-size="8.5" letter-spacing="0.05em" fill="var(--ink-soft)">DEPTH</text>
+</svg>
+<figcaption>Pan sets a sound left to right; reverb sets it near to far. Every part gets a place in this field.</figcaption>
+</figure>
+
+<figure class="form-diagram" style="flex:1 1 260px;margin:0;">
+<svg viewBox="0 0 300 300" role="img" aria-label="A mix shown as four stacked pizza layers. From bottom to top: dough, the sustaining base, such as drums and bass; sauce, the glue in the middle, such as pads; cheese, the granular middle, such as rhythmic guitar; and toppings, what sits on top, such as vocals, solos, and fills." xmlns="http://www.w3.org/2000/svg">
+  <text x="150" y="20" text-anchor="middle" font-family="DM Mono, monospace" font-size="11" letter-spacing="0.08em" fill="var(--accent)">THE MIX AS A PIZZA</text>
+
+  <rect x="38" y="44" width="224" height="50" rx="7" fill="var(--bg-alt)" stroke="var(--accent)" stroke-width="1.6"/>
+  <text x="54" y="66" font-family="DM Mono, monospace" font-size="12" fill="var(--accent)">TOPPINGS</text>
+  <text x="54" y="82" font-family="DM Mono, monospace" font-size="8.5" fill="var(--ink-soft)">on top: vocals, solos, fills</text>
+  <circle cx="224" cy="60" r="4" fill="var(--meter-good)"/>
+  <circle cx="241" cy="72" r="3.5" fill="var(--gr-heavy)"/>
+  <circle cx="228" cy="78" r="3" fill="var(--accent)"/>
+
+  <rect x="38" y="100" width="224" height="50" rx="7" fill="var(--gr-light)" fill-opacity="0.5" stroke="var(--rule)" stroke-width="1.3"/>
+  <text x="54" y="122" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">CHEESE</text>
+  <text x="54" y="138" font-family="DM Mono, monospace" font-size="8.5" fill="var(--ink-soft)">granular middle: rhythmic guitar</text>
+
+  <rect x="38" y="156" width="224" height="50" rx="7" fill="var(--accent)" fill-opacity="0.28" stroke="var(--accent)" stroke-width="1.3"/>
+  <text x="54" y="178" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">SAUCE</text>
+  <text x="54" y="194" font-family="DM Mono, monospace" font-size="8.5" fill="var(--ink-soft)">the glue in the middle: pads</text>
+
+  <rect x="38" y="212" width="224" height="56" rx="7" fill="var(--bg-alt)" stroke="var(--rule)" stroke-width="1.9"/>
+  <text x="54" y="236" font-family="DM Mono, monospace" font-size="12" fill="var(--ink)">DOUGH</text>
+  <text x="54" y="252" font-family="DM Mono, monospace" font-size="8.5" fill="var(--ink-soft)">the sustaining base: drums, bass</text>
+</svg>
+<figcaption>A mix stacks like a pizza: a base that sustains, a middle that glues and fills, and the bright things on top.</figcaption>
+</figure>
+
+</div>
+
 
 <p>Mixing acts on audio, and a MIDI track is not audio yet. It holds notes and an instrument that turns those notes into sound as the piece plays, and that sound still changes the moment you edit a note or swap the instrument. You cannot set a fixed level or tone for something that can still move under you. So before mixing, you commit every MIDI track to audio, fixing its sound in place. Once every track is audio, they are all the same kind of thing, and the Live mixer becomes the Toft from Module 3: one audio channel per part, with faders, sends, and a master.</p>
 
