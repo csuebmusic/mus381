@@ -1,4 +1,4 @@
-# Module 04 — Ableton: Audio, Sampling & Mixing
+# Module 04 — The DAW
 
 **Weeks 10–15 · instruction Wks 10–13 (7 sessions), final project Wks 14–15**
 
@@ -169,7 +169,7 @@ These are the open calls from reshaping the module off the old 4a/4b (audio + MI
 
 4. **Warping placement.** Warping was a standalone 4a topic. Working call: fold it into Session 2 (audio editing), introduced at the moment students import a library clip and meet the project-tempo question. Flag if you'd rather it get its own treatment.
 
-5. **The module thematic label.** Applied as "Audio, sampling & mixing in Ableton," dash-free (the old "Ableton — audio, MIDI, synthesis" both mismatched the plan and carried a banned em dash, and the content-style matches Modules 2 and 3). Now live in the Session 1 reading and the Module 4 handout template. Confirm the wording or tell me to adjust; changing it is a one-line sweep across Module 4 docs.
+5. **The module thematic label — settled as "The DAW."** Retitled from "Audio, sampling & mixing in Ableton" (Inés's call): Ableton is the DAW students spend three weeks in, and the module's point is what a DAW is and where its concepts carry. Applied as the module-tag (`Module 04 · The DAW`) across the Session 1 reading, Lab 1, and the handout template, the README H1, and the course outline. Pairs with the reading's H1, "Into the DAW."
 
 6. **Filenames for two lessons.** Session 3: `03-reading-samplers-and-triggers.html` (what it teaches) vs `03-reading-simpler-and-drum-rack.html` (the two instruments by name). Session 7: `07-reading-transferable-concepts.html` (the idea) vs `07-reading-adobe-audition.html` (the tool). Minor; will settle at draft time.
 

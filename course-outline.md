@@ -71,7 +71,7 @@ The course is structured around four modules, each ending in a real deliverable.
 | 1 | Computer & studio fluency | 1 | — (setup) |
 | 2 | Digital audio + editing + mixing in Audacity | 2–5 | **Project 1: Musique concrète** (Wed Wk 5) |
 | 3 | Recording, sample prep, library building | 6–9 | **Midterm: sample library + terminology exam** (Wk 9) |
-| 4 | Ableton — DAW environment, audio editing, sampling, mixing; transferable concepts (Adobe Audition) | 10–13 | (final project follows) |
+| 4 | The DAW — environment, audio editing, sampling, mixing in Ableton; transferable concepts in Adobe Audition | 10–13 | (final project follows) |
 | — | Final project | 14–15 | Draft 1 (Wk 14), Draft 2 (Wk 15) |
 | — | Finals | Dec 7–12 | Final exam (cumulative) + final piece uploaded to NAS, posted for class listening |
 
@@ -139,7 +139,7 @@ The course is structured around four modules, each ending in a real deliverable.
 
 ---
 
-## Module 4 — Ableton (Weeks 10–13, instruction; final project Weeks 14–15)
+## Module 4 — The DAW (Weeks 10–13, instruction; final project Weeks 14–15)
 
 **Why this module:** Ableton is the destination DAW for the course, and the place where the editing skills from Module 2 and the recorded material from Module 3 converge. Students load their own sample library and start making pieces from it. The module builds working fluency in a full DAW, then steps out of Ableton for one session to show that the concepts are portable to any tool.
 
