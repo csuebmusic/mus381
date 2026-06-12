@@ -12,7 +12,7 @@ Modules 2 and 3 lived in Audacity: students edited handed-to-them sound (Module 
 
 The module is built around a single beginner question: what is a DAW, and what can you do in it that a destructive waveform editor like Audacity can't? Each session answers part of that. The arc:
 
-introduce the DAW environment (Session view vs Arrangement view, the timeline, nondestructive editing) → edit audio in Ableton (import the library, warp, arrange clips) → meet the sampler instruments (Simpler and Drum Rack) and trigger them from MIDI for the first time → sample in practice (build something playable from library sounds) → mix in Ableton (the channel strip, sends and returns, group tracks, built-in EQ and dynamics) → step out of Ableton for one session to see the same concepts in a different DAW (Adobe Audition), so the skills read as portable rather than app-specific → final project.
+introduce the DAW environment (Session view vs Arrangement view, the timeline, nondestructive editing) → edit audio in Ableton (import the library, warp, arrange clips) → meet the sampler instruments (Simpler and Drum Rack) and trigger them from MIDI for the first time → sample in practice (build something playable from library sounds) → mix in Ableton (the channel strip, sends and returns, group tracks, built-in EQ and dynamics) → step out of Ableton for one session to see the same concepts in an advanced audio editor (Adobe Audition), so the skills read as portable rather than app-specific → final project.
 
 Three throughlines:
 
@@ -85,7 +85,7 @@ By the end of this module, students should be able to:
 6. Explain the beginner-level model of MIDI: that a MIDI note is data (which pitch, when, how hard) that triggers an instrument, and that the instrument is what makes the sound
 7. Mix a small session using Ableton's built-in tools: track faders, pan, sends to a return track, group tracks, and the built-in EQ and compressor
 8. Map Ableton's mixer onto the console architecture from Module 3: track fader = channel fader, send = aux send, group = subgroup, Master = master bus
-9. Recognize the same core concepts (sample rate, bit depth, editing, EQ, dynamics, multitrack) in a second DAW (Adobe Audition) and articulate that the concepts are portable across tools
+9. Recognize the same core concepts (sample rate, bit depth, editing, EQ, dynamics, multitrack) in a different tool (Adobe Audition, an advanced audio editor) and articulate that the concepts are portable across tools
 
 ---
 
@@ -148,7 +148,7 @@ Full listening assignment: `listening/historical.html` *(not yet written)*.
 | 11 | Wed | Session 4 · Lab: Basic sampling in practice (Lab 2). Load library sounds into Simpler and a Drum Rack, draw or play a short MIDI part, build one short playable idea from the student's own samples. |
 | 12 | Mon | Session 5 · Lecture: Basic mixing in Ableton. The Ableton mixer as the digital console: track faders, pan, sends and return tracks, group tracks, the Master. Built-in EQ and Compressor mapped onto Module 2's EQ and dynamics and Module 3's console architecture. |
 | 12 | Wed | Session 6 · Lab: Mixing in practice (Lab 3). Take a small multitrack session and mix it: set levels and pan, send to a reverb return, group, EQ and compress where it helps. |
-| 13 | Mon | Session 7 · Lecture: Transferable concepts, through Adobe Audition. *(Mon only; Wed is Veterans Day.)* The same concepts in a different DAW: sample rate, bit depth, editing, EQ, dynamics, multitrack, under Audition's UI and names. The point is portability of skills, aimed in part at the art majors already in the Adobe suite. |
+| 13 | Mon | Session 7 · Lecture: Transferable concepts, through Adobe Audition. *(Mon only; Wed is Veterans Day.)* The same concepts in a different tool: sample rate, bit depth, editing, EQ, dynamics, multitrack, under Audition's UI and names. The point is portability of skills, aimed in part at the art majors already in the Adobe suite. |
 | 14 | Mon / Wed | Final project worktime; Draft 1 due Wed Wk 14. *(To be drafted.)* |
 | 15 | Mon / Wed | Final project revision; Draft 2 due Wed Wk 15. *(To be drafted.)* |
 | Finals | — | Final piece to NAS + class folder; cumulative final exam. *(To be drafted.)* |
@@ -388,7 +388,7 @@ Students mix a small multitrack session: set levels and pan, send to a shared re
 
 ### Roadmap
 
-Step out of Ableton to show that the module's concepts belong to digital audio, not to one app. Adobe Audition is the worked example: its waveform editor and multitrack session hold the same ideas students have been using all module, under different names and a different UI. Walk sample rate, bit depth, editing, fades, EQ, compression, and multitrack in Audition's terms, each time pointing back to where they met it in Ableton or Audacity. The takeaway: the skills are portable; the next tool will look different and work the same. Pitched in part at the art majors, who already use the Adobe suite and will recognize Audition's place in it.
+Step out of Ableton to show that the module's concepts belong to digital audio, not to one app. Adobe Audition is the worked example: its waveform editor and multitrack session hold the same ideas students have been using all module, under different names and a different UI. Frame Audition as an advanced audio editor in the Adobe suite, a hybrid: it has nondestructive editing and live processing like a DAW, but no instruments or MIDI, so it is not a DAW. That hybrid status is the point of using it as the transfer example, since the editing and processing concepts carry even into a tool that is not a full DAW. Walk sample rate, bit depth, editing, fades, EQ, compression, and multitrack in Audition's terms, each time pointing back to where they met it in Ableton or Audacity. The takeaway: the skills are portable; the next tool will look different and work the same. Pitched in part at the art majors, who already use the Adobe suite and will recognize Audition's place in it.
 
 ### Reading
 
@@ -417,7 +417,7 @@ Students at the end of Module 4 should be able to:
 2. Edit clips nondestructively and warp where appropriate
 3. Trigger a sampler instrument from MIDI and build a short playable idea
 4. Mix a small session with faders, pan, sends, groups, EQ, and compression
-5. Recognize the same concepts in a different DAW and articulate that the skills transfer
+5. Recognize the same concepts in a different tool (an advanced audio editor) and articulate that the skills transfer
 
 ### Forward promises and bridges
 

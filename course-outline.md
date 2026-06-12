@@ -143,7 +143,7 @@ The course is structured around four modules, each ending in a real deliverable.
 
 **Why this module:** Ableton is the destination DAW for the course, and the place where the editing skills from Module 2 and the recorded material from Module 3 converge. Students load their own sample library and start making pieces from it. The module builds working fluency in a full DAW, then steps out of Ableton for one session to show that the concepts are portable to any tool.
 
-The arc runs: introduce the DAW environment through Ableton (Session vs Arrangement view, the clip, nondestructive editing) → edit audio (import the library, warp, arrange) → meet the sampler instruments (Simpler and Drum Rack) and trigger them from MIDI for the first time → sample in practice → mix in Ableton → see the same concepts in a different DAW (Adobe Audition).
+The arc runs: introduce the DAW environment through Ableton (Session vs Arrangement view, the clip, nondestructive editing) → edit audio (import the library, warp, arrange) → meet the sampler instruments (Simpler and Drum Rack) and trigger them from MIDI for the first time → sample in practice → mix in Ableton → see the same concepts in a different tool (Adobe Audition, an advanced audio editor).
 
 **Topics:**
 - The DAW environment: Session view vs Arrangement view, the clip, nondestructive editing
