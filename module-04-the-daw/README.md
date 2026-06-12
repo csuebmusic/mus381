@@ -316,7 +316,7 @@ Hands-on with the Session 3 instruments. Students load their own library sounds 
 
 ### Handout
 
-`lessons/04-handout-sampling-in-practice.html` — Lab 2 *(not yet written)*
+`lessons/03-handout-sampling-in-practice.html` — Lab 2
 
 ### Open questions for when we draft
 
@@ -369,7 +369,7 @@ Students mix a small multitrack session: set levels and pan, send to a shared re
 
 ### Handout
 
-`lessons/06-handout-mixing-in-practice.html` — Lab 3 *(not yet written)*
+`lessons/04-handout-mixing-in-practice.html` — Lab 3
 
 ### Open questions for when we draft
 
