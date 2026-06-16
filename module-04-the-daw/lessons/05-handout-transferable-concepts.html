@@ -54,20 +54,17 @@
   <p>Take from the lab's gear storage: <strong>audio interface, headphones</strong>. Plug in and run through the start-of-session steps on the <strong>Session Routines</strong> card before continuing here.</p>
 </div>
 
-<div class="callout">
-  <div class="callout-label">No deliverable today</div>
-  <p>Nothing here is graded or submitted, so experiment freely. You still run the end-of-session routine and upload your working folder at the end, the same as every session.</p>
-</div>
+<p>Nothing today is graded or submitted, so experiment freely. You still run the end-of-session routine and upload your working folder at the end, the same as every session.</p>
 
 <h2>What we're doing today</h2>
 
 <ol class="steps">
-  <li>Meet Audition's two editors, and recognize them as the two working styles you already used.</li>
-  <li>Start a session and bring in a few sounds from your library.</li>
-  <li>Edit one sound in the Waveform Editor: select, ripple-delete, fade.</li>
-  <li>Clean it: capture a noise print, then reduce the noise.</li>
-  <li>Build a small multitrack mix: levels, pan, then EQ, compression, and a limiter.</li>
-  <li>See one thing that is new to you: the Spectral Frequency Display.</li>
+  <li>Meet Audition's two editors, the two working styles you already used.</li>
+  <li>Start a session and bring a few of your library sounds into it.</li>
+  <li>In the Waveform Editor, edit one file: select, delete, fade.</li>
+  <li>Clean a noisy recording from the NAS: capture a noise print, then reduce.</li>
+  <li>Try the Spectral Frequency Display, one move neither earlier tool gave you.</li>
+  <li>In the Multitrack Editor, build a small mix: levels, pan, and one effect you recognize.</li>
   <li>Export the mix, then run the end-of-session routine.</li>
 </ol>
 
@@ -131,42 +128,29 @@
 
 <h2>Start a session and bring in your sounds</h2>
 
-<p>Make a multitrack session with <strong>File &rarr; New &rarr; Multitrack Session</strong>. Set the <strong>Sample Rate</strong> to <strong>48000</strong>, the same rate you have worked at all term, and leave <strong>Bit Depth</strong> at 32-bit float. Name the session and choose a folder inside your working folder at <code>~/Documents/lastname/</code>, so the session file and its audio stay together. Audition saves the session as a <code>.sesx</code> file, which points at your audio.</p>
+<p>Make a multitrack session with <strong>File &rarr; New &rarr; Multitrack Session</strong>. Set the <strong>Sample Rate</strong> to <strong>48000</strong>, the same rate you have worked at all term, and set <strong>Bit Depth</strong> to 32-bit float. Name the session and choose a folder inside your working folder at <code>~/Documents/lastname/</code>, so the session file and its audio stay together. Audition saves the session as a <code>.sesx</code> file, which points at your audio.</p>
 
 <p>With the NAS still mounted from your start-of-session routine, copy a handful of sounds from your library at <code>[path]/students/lastname/sample-library/</code> down to your working folder. Bring them into the session with <strong>File &rarr; Import &rarr; File</strong>, or drag them onto the <strong>Files</strong> panel. The Files panel holds the media for this session, the same job the browser does in Ableton.</p>
 
 <hr>
 
-<h2>Edit one sound in the Waveform Editor</h2>
+<h2>Edit a single file in the Waveform Editor</h2>
 
-<p>Double-click a sound in the Files panel. It opens in the Waveform Editor, the destructive side, so work on a copy and keep your library original safe. This is the Audacity way of editing, one file, changes that stick.</p>
+<p>Double-click a sound in the Files panel. It opens in the Waveform Editor, the destructive side, so edits here change the file itself. You are working from the copies in your working folder, not your library originals, so it is safe to cut into them. This is the Audacity way of editing, one file, changes that stick.</p>
 
-<p>Pick the <strong>Time Selection tool</strong> (press <code>T</code>), then click and drag across a part you want gone, a long gap or a stray noise. Press <strong>Ripple Delete</strong> (<code>Delete</code> on the Mac) to remove the selection and close the gap in one move. A plain delete would leave silence behind; Ripple Delete pulls the audio together.</p>
+<p>Pick the <strong>Time Selection tool</strong> (press <code>T</code>), then click and drag across a part you want gone, a long gap or a stray noise. Press <strong>Delete</strong>. In the Waveform Editor the file closes up around the cut, the same as deleting a selection in Audacity.</p>
 
-<p>Smooth the start and end so they do not click. Select the first half-second, right-click, and choose <strong>Fade In</strong>. Do the same at the end with <strong>Fade Out</strong>. This is the same fade habit you built in Audacity, where a hard edit boundary pops unless you ramp it.</p>
-
-<div class="callout">
-  <div class="callout-label">Time and pitch, the tape link again</div>
-  <p>In the Multitrack Editor you can stretch a clip by dragging the small white triangles in its top corners. Right-click the clip, open <strong>Stretch</strong>, and look at the Stretch Properties. <strong>Varispeed</strong> changes pitch and duration together, faster means higher and shorter, like speeding up tape. That is the coupling you met in Module 2 and saw in Audacity's Change Speed. The other modes hold pitch while they stretch, the way Ableton's warp does.</p>
-</div>
+<p>Smooth the start and end so they do not click. In the top-left corner of the waveform, drag the <strong>fade handle</strong> inward to make a fade-in, and drag the handle in the top-right corner for a fade-out. This is the same fade habit you built in Audacity, where a hard edit boundary pops unless you ramp it.</p>
 
 <hr>
 
-<h2>Clean it: noise print, then reduce</h2>
+<h2>Clean up a noisy recording</h2>
 
 <p>You already ran this move in Module 3 when you prepped samples. You show the software a slice of pure background noise, then ask it to subtract that noise from the whole file.</p>
 
-<p>In the Waveform Editor, select one to three seconds of room tone, a stretch with no sound you want to keep. Open <strong>Effects &rarr; Noise Reduction/Restoration &rarr; Noise Reduction (Process)</strong> and click <strong>Capture Noise Print</strong>. Audition now holds a fingerprint of the noise. Select the whole file with <code>Cmd-A</code>, set the <strong>Noise Reduction</strong> amount to around 70 to 80 percent, press <strong>Preview</strong> to hear it, then <strong>Apply</strong>.</p>
+<p>Download the <strong>noise recording</strong> your instructor placed on the NAS to your working folder and open it with <strong>File &rarr; Open</strong>. It lands in the Waveform Editor. Find a short stretch of just the background noise, with no sound you want to keep, and select one to three seconds of it. Open <strong>Effects &rarr; Noise Reduction/Restoration &rarr; Noise Reduction (Process)</strong> and click <strong>Capture Noise Print</strong>. Audition now holds a fingerprint of the noise. Select the whole file with <code>Cmd-A</code>, set the <strong>Noise Reduction</strong> amount to around 70 to 80 percent, press <strong>Preview</strong> to hear it, then <strong>Apply</strong>.</p>
 
-<p>Keep a light touch. Pushed past about 90 percent, the reduction leaves voices sounding hollow and underwater. A little background left in sounds more natural than a heavily scrubbed file. Capturing a profile first, then reducing, is exactly the two-step shape from your sample-prep pipeline.</p>
-
-<hr>
-
-<h2>Build a small multitrack mix</h2>
-
-<p>Switch back to the Multitrack Editor (<code>Cmd-9</code>). Drag your cleaned sounds from the Files panel onto separate tracks. Each track has a channel strip down its left side, with a volume fader, a <strong>Mute</strong> button (M), a <strong>Solo</strong> button (S), and a pan control. Set rough levels with the faders and place sounds across the stereo field with pan. This is the Ableton mixer and the Toft console from Module 3 in another shape: the track fader is the channel fader, pan is pan, and solo lets you listen to one thing at a time.</p>
-
-<p>Now the effects. Select a track and open the <strong>Effects Rack</strong>, then add devices in order. A dependable starting chain is <strong>Parametric Equalizer</strong>, then <strong>Dynamics Processing</strong> for compression, then <strong>Hard Limiter</strong>: shape the tone first, even out the loud and quiet next, and catch the peaks last. These are the same EQ, compression, and limiting you met in Module 2 and used in Ableton, wearing Adobe's names. Because this is the Multitrack side, the effects are nondestructive, so you can change or remove any of them at any time.</p>
+<p>Keep a light touch. Pushed past about 90 percent, the reduction leaves the sound hollow and underwater. A little background left in sounds more natural than a heavily scrubbed file. Capturing a profile first, then reducing, is exactly the two-step shape from your sample-prep pipeline.</p>
 
 <hr>
 
@@ -175,6 +159,19 @@
 <p>Open a file in the Waveform Editor and switch to the <strong>Spectral Frequency Display</strong> using the view button at the top of the editor. Instead of the loudness shape you know from a waveform, you see frequency from low to high up the side and time across the bottom, with louder sounds drawn brighter. A cough, a chair squeak, or a phone buzz shows up as its own bright shape.</p>
 
 <p>Select that shape with the <strong>Marquee</strong> or <strong>Lasso</strong> tool and press <strong>Delete</strong>, or use <strong>Heal Selection</strong> to fill it with the sound around it. Neither Audacity nor Ableton gave you this.</p>
+
+<hr>
+
+<h2>Build a small multitrack mix</h2>
+
+<p>Switch to the Multitrack Editor (<code>Cmd-9</code>). Drag a few of your sounds from the Files panel onto separate tracks. Each track has a channel strip down its left side, with a volume fader, a <strong>Mute</strong> button (M), a <strong>Solo</strong> button (S), and a pan control. Set rough levels with the faders and place sounds across the stereo field with pan. This is the Ableton mixer and the Toft console from Module 3 in another shape: the track fader is the channel fader, pan is pan, and solo lets you listen to one thing at a time.</p>
+
+<p>Add one effect you already know. Select a track, open the <strong>Effects Rack</strong>, and add a <strong>Parametric Equalizer</strong>, the same EQ you used in Ableton under a different name. The rack also holds the compression and limiting you have met before, ready when you want them. Because this is the Multitrack side, the effect is nondestructive, so you can change or remove it at any time.</p>
+
+<div class="callout">
+  <div class="callout-label">Time and pitch, the tape link again</div>
+  <p>While you are here, try stretching a clip: drag the small white triangles in its top corners. Right-click the clip, open <strong>Stretch</strong>, and look at the Stretch Properties. <strong>Varispeed</strong> changes pitch and duration together, faster means higher and shorter, like speeding up tape. That is the coupling you met in Module 2 and saw in Audacity's Change Speed. The other modes hold pitch while they stretch, the way Ableton's warp does.</p>
+</div>
 
 <hr>
 
