@@ -119,7 +119,7 @@ By the end of this module, students should be able to:
 - Draft 2 due Wed Wk 15: the revision, after acting on the Draft 1 feedback.
 - Final during finals: WAV 48 kHz / 32-bit float, `lastname-final.wav`, to the NAS working folder and the class folder. Optional SoundCloud for portfolio.
 - Rubric (out of 100, no revision criterion): Technique & tools 35, Form & shape 30, Sound material & sourcing 20, Mix & craft 15.
-- A cumulative final exam runs during finals week (covers the whole course), separate from this project.
+- A cumulative final exam runs during finals week (covers the whole course), separate from this project. Exam and answer key: [`exams/final-exam.md`](../exams/final-exam.md) *(TA-facing)*.
 
 ---
 
