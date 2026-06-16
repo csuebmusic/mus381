@@ -65,7 +65,7 @@ The lab runs **Ableton Live 11 Suite**. Live is a large DAW; this module deliber
 - Delay — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#delay
 - Echo — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#echo
 
-**Week 13 (Adobe Audition):** outside the Ableton manual; scope settles with the Audition logistics decision.
+**Week 13 (Adobe Audition):** outside the Ableton manual; scope depends on whether Audition runs on the lab Macs or is shown as a projector demo.
 
 **Exporting (used across the module):** Exporting Audio and Video — https://www.ableton.com/en/live-manual/11/managing-files-and-sets/#exporting-audio-and-video . Students export finished work at 48 kHz / 32-bit. Needed first when they render a short arrangement, then again at mixing and for the final project.
 
@@ -108,31 +108,25 @@ By the end of this module, students should be able to:
 
 ## Deliverable: Final project
 
-**Weeks 14–15 + finals.** *Deferred: prompt and rubric to be drafted separately.*
+**Weeks 14–15 + finals.**
 
-The shape from the course outline, to be confirmed and detailed when we draft:
+The shape, from the course outline:
 
 - Open prompt: any kind of piece (audio-driven, sampler-driven, or combined) that demonstrates fluency with the semester's skills.
 - Draft 1 due Wed Wk 14, with in-class listening and feedback.
 - Draft 2 due Wed Wk 15 (revision week), after revision on the Draft 1 feedback.
 - Final piece uploaded to the NAS during finals and posted to the class folder for everyone to hear. Optional SoundCloud upload for portfolio use.
-- A cumulative final exam runs during finals week (covers the whole course; relationship to the Module 3 terminology exam to be settled when we draft the final project and exam together).
-
-Full prompt and rubric: `projects/` *(not yet written)*.
+- A cumulative final exam runs during finals week (covers the whole course).
 
 ---
 
 ## Listening assignment
 
-*Open: see Decisions to settle. Working plan below.*
+**Module 4 historical listening (one, sample manipulation):** the lineage of building music from recorded sound, from musique concrète through hip-hop and sampling into contemporary producers who chop and recontextualize samples. It closes the loop the course opened with: Module 2's musique concrète listening was the same idea with tape and razor blades; this is the same idea in a DAW. Anchored to Wk 11 (the sampling sessions).
 
-**Module 4 historical listening (one, sample manipulation):** the lineage of building music from recorded sound, from musique concrète through hip-hop and sampling into contemporary producers who chop and recontextualize samples. It closes the loop the course opened with: Module 2's musique concrète listening was the same idea with tape and razor blades; this is the same idea in a DAW. Anchored to Wk 11 (the sampling sessions). Candidate artists to be chosen when we draft.
+No peer listening in Module 4: final pieces are shared in the class folder for everyone to hear, with no formal written response assignment.
 
-The old plan also had a second Module 4 listening on MIDI as a control layer (Bach to Aphex Twin). With the synthesis arc dropped and MIDI present only as a trigger, that listening no longer fits the module and is proposed for removal.
-
-No peer listening in Module 4: final pieces are shared in the class folder for everyone to hear, with no formal written response assignment (consistent with the existing plan).
-
-Full listening assignment: `listening/historical.html` *(not yet written)*.
+Full listening assignment: `listening/historical.html`.
 
 ---
 
@@ -149,39 +143,19 @@ Full listening assignment: `listening/historical.html` *(not yet written)*.
 | 12 | Mon | Session 5 · Begin Lab 3 (handout 04). The Ableton mixer as the digital console: track faders, pan, sends and return tracks, group tracks, the Master. EQ and Compressor mapped onto Module 2 and the Module 3 console. |
 | 12 | Wed | Session 6 · Lab 3 continues (handout 04). Commit the session to audio (freeze and flatten the MIDI tracks, consolidate), then mix: levels, pan, a reverb return, groups, EQ and compression. |
 | 13 | Mon | Session 7 · Transferable concepts, through Adobe Audition (reading 05). *(Mon only; Wed is Veterans Day.)* The same concepts in a different tool: sample rate, bit depth, editing, EQ, dynamics, multitrack, under Audition's UI and names. The point is portability of skills, aimed in part at the art majors already in the Adobe suite. |
-| 14 | Mon / Wed | Final project worktime; Draft 1 due Wed Wk 14. *(To be drafted.)* |
-| 15 | Mon / Wed | Final project revision; Draft 2 due Wed Wk 15. *(To be drafted.)* |
-| Finals | — | Final piece to NAS + class folder; cumulative final exam. *(To be drafted.)* |
+| 14 | Mon / Wed | Final project worktime; Draft 1 due Wed Wk 14. |
+| 15 | Mon / Wed | Final project revision; Draft 2 due Wed Wk 15. |
+| Finals | — | Final piece to NAS + class folder; cumulative final exam. |
 
 Block-by-block facilitation, demo scripts, common confusions, and pacing fallbacks for each session will be filled in below as the module is built out.
 
 ---
 
-## Decisions to settle (before drafting lessons)
-
-These are the open calls from reshaping the module off the old 4a/4b (audio + MIDI/synthesis) plan. Flagging rather than deciding unilaterally.
-
-1. **Synthesis is dropped from 381.** The new plan keeps Simpler and Drum Rack as *sampling* tools, with MIDI met only as a trigger. The old 4b synth-anatomy lecture (oscillator, filter, envelope, LFO) and the Operator/Wavetable instruments are gone. This reads as a deliberate decluttering for true beginners, with synthesis becoming the natural entry point of Sound Design rather than a rushed final-weeks topic in 381. Confirm that's the intent. If so, synthesis becomes an explicit MUS 381 → Sound Design bridge in the "What follows" note rather than course content.
-
-2. **Listening.** Proposed: one historical listening (sample-manipulation lineage), anchored to Wk 11; drop the old MIDI-as-control-layer listening; no peer listening. Confirm the one-listening shape and we'll pick artists when we draft it.
-
-3. **Adobe Audition logistics.** Is Audition licensed and installed on the lab Macs, or is Session 7 a projector demo? Wk 13 Mon is a lecture day with no Wednesday lab, so a projector demo fits cleanly either way; but if Audition is on the stations, students could follow along. Needs an answer from the lab / IT before the session, and it shapes whether Session 7 gets a handout (follow-along) or stays a reading (demo).
-
-4. **Warping placement.** Warping was a standalone 4a topic. Working call: fold it into Session 2 (audio editing), introduced at the moment students import a library clip and meet the project-tempo question. Flag if you'd rather it get its own treatment.
-
-5. **The module thematic label — settled as "The DAW."** Retitled from "Audio, sampling & mixing in Ableton" (Inés's call): Ableton is the DAW students spend three weeks in, and the module's point is what a DAW is and where its concepts carry. Applied as the module-tag (`Module 04 · The DAW`) across the Session 1 reading, Lab 1, and the handout template, the README H1, and the course outline. Pairs with the reading's H1, "Into the DAW."
-
-6. **Settled.** Wks 11 and 12 no longer have separate Monday readings; each week runs on one handout (`03-handout-sampling-in-practice.html`, `04-handout-mixing-in-practice.html`) across both days. The Wk 13 Audition reading is `05-reading-transferable-concepts.html`.
-
----
-
 ## Pre-module preparation (Inés / TA)
-
-*To be expanded.*
 
 - **Ableton Live 11 Suite** is the lab version. Handout screenshots, menu paths, and manual references all target Live 11 (see Reference scope above for the exact sections). Suite confirms everything in scope is installed; Simpler and Drum Rack are in every edition regardless.
 - **MIDI keyboards inventoried and tested at every station.** They enter the gear list this module (the Module 4 handout gear tier adds the MIDI keyboard). Confirm each one is present, connects over USB through the hub, and registers in Ableton's MIDI preferences.
-- **Adobe Audition availability settled** (see Decisions to settle #3): licensed/installed on the lab Macs, or projector demo only.
+- **Adobe Audition availability:** confirm whether it is licensed and installed on the lab Macs, or shown as a projector demo only.
 - **A starter session for the mixing lab.** Session 6 mixes a prepared multitrack session staged on the NAS: a longer piece with several instruments, some MIDI and some audio, so there is MIDI to commit and audio to consolidate. Inés provides it; stage it on the NAS before Wk 12.
 - **Final-project Set.** Students create their own project Set in Session 1 (the reading ends by walking them through it), named `lastname-project`, and build it in the end-of-class block of each lab. Nothing to pre-stage; be ready to help with the create-and-save step on Day 1.
 - **Library readiness check.** Sessions 2 through 4 assume each student has a usable Module 3 library on the NAS. Spot-check that libraries survived the midterm and are findable before Wk 10.
@@ -190,17 +164,12 @@ These are the open calls from reshaping the module off the old 4a/4b (audio + MI
 
 ## Module-wide concerns
 
-*To be expanded as sessions are designed.*
-
 ### Recurring confusions to expect across the module
-
-*Stub. Likely candidates:*
 
 - The clip-vs-file distinction: students expect Audacity behavior (edits change the file) and are surprised or worried that Ableton edits seem reversible. Reframe as a feature, not a bug.
 - Warp on when they wanted it off (a one-shot stretched to the grid sounds wrong) or off when they wanted it on (a loop drifting out of time). The "loops want warp, one-shots don't" rule of thumb.
 - MIDI vs audio tracks confused: dropping a sample expecting it to play as a note, or drawing MIDI on an audio track. The trigger model (note → instrument → sound) is the fix.
 - Sends vs inserts: putting a reverb directly on a track (insert) when they meant to share one reverb across tracks (send to a return). Maps to the Module 3 aux-vs-insert distinction.
-- *(More to be added as we work through the sessions.)*
 
 ### Gear setup baseline (every Wednesday)
 
@@ -228,7 +197,7 @@ The module's framing question: what is a DAW, and what's new about it after two 
 
 ### Reading
 
-`lessons/01-reading-the-daw-environment.html` *(drafted and revised)*
+`lessons/01-reading-the-daw-environment.html`
 
 ### Manual (Live 11)
 
@@ -237,19 +206,6 @@ First Steps; Live Concepts.
 ### Connection to earlier modules
 
 Module 2 taught editing as something you do *to a file*. This lecture reframes editing as something you do *to a clip*, with the file untouched underneath. The relief of "you can't ruin your source" is worth naming out loud: beginners edit timidly, and nondestructive editing is permission to experiment.
-
-### What the reading is now
-
-Rebuilt from scratch as the module's map, encountered Mon Wk 10 and referred back to across the module. In order: what a DAW is (audio editor vs DAW, with Audacity as the editor); a short history (tape and musique concrète, Les Paul and multitrack, the Fairlight sampler, MIDI in 1983, Pro Tools, VST, Ableton Live 2001); the three things that change inside a DAW (nondestructive editing, live processing, and a simple MIDI model with an inline audio-vs-MIDI diagram); the concepts travel (a short survey of other DAWs); and the combined Wk 10–12 manual roadmap, plus the Learn Live video library, the Exporting link, and the 48 kHz / 32-bit audio standard.
-
-- Filename `01-reading-the-daw-environment.html` is confirmed.
-- No screenshots: the rebuild keeps the reading lean as a concept-and-roadmap map. The Wk 10 Live 11 screenshots stay in `assets/images/module-04-week-10/` for the lab handouts.
-- Wk 13 (Audition) is not in the roadmap; it gets its own reading (05). The concepts-travel section still names it as where the skills prove portable.
-- House style enforced over several passes with Inés: no em dashes, no announcement sentences, fact over fluff.
-
-### Block-by-block
-
-*To be filled in.*
 
 ---
 
@@ -263,20 +219,11 @@ Students pull their Module 3 library down from the NAS, import sounds into an Ab
 
 ### Handout
 
-`lessons/02-handout-audio-editing.html` — Lab 1 *(not yet written)*
+`lessons/02-handout-audio-editing.html` — Lab 1
 
 ### Manual (Live 11)
 
 Arrangement View (audio portions); Clip View; Audio Clips, Tempo, and Warping.
-
-### Open questions for when we draft
-
-- Warp depth: introduce on/off plus the loop-vs-one-shot rule of thumb, and leave warp modes (Beats/Tones/Texture/Complex) for a sentence of naming rather than a full treatment? Likely yes at this level.
-- Whether students arrange toward a tiny finished thing by end of session or just practice the edit moves. A small target ("a 30-second arrangement of three library sounds") gives the session a deliverable; flag if you'd rather keep it open practice.
-
-### Block-by-block
-
-*To be filled in.*
 
 ---
 
@@ -296,15 +243,6 @@ The one genuinely new abstraction of the module: **MIDI as a trigger**. Build th
 
 Simpler; Drum Racks; basic MIDI editing (Editing MIDI Notes and Velocities), enough to trigger.
 
-### Open questions for when we draft
-
-- How much of the note → instrument → sound model is reading vs lecture demo. The reading can carry the model; the live demo (drop a sample on Simpler, play a chord, hear the pitches) is what makes it click.
-- Slicing: Simpler's Slice mode and "slice to MIDI" are powerful but may be one step past "super basic." Probably mention, don't drill.
-
-### Block-by-block
-
-*To be filled in.*
-
 ---
 
 ## Session 4 · Wed Wk 11: Basic sampling in practice (Lab 2)
@@ -318,15 +256,6 @@ Hands-on with the Session 3 instruments. Students load their own library sounds 
 ### Handout
 
 `lessons/03-handout-sampling-in-practice.html` — Lab 2. The same handout begun on Monday (Session 3); Wednesday continues into the hands-on build.
-
-### Open questions for when we draft
-
-- Play-in (record from the MIDI keyboard) vs draw-in (mouse in the piano roll) as the primary path. Drawing is more reliable for true beginners; playing in is more satisfying. Probably teach drawing, offer playing.
-- Deliverable shape: a short loop or idea saved into the student's working folder, as a stepping stone toward the final project. Confirm whether Session 4's output feeds the final project formally or is just practice.
-
-### Block-by-block
-
-*To be filled in.*
 
 ---
 
@@ -350,14 +279,6 @@ Internal Routings; Mixing; Live Audio Effect Reference (locked insert + send set
 
 Two threads land at once: Module 2's EQ and compression (what these devices do) and Module 3's console architecture (how the routing is shaped). Name both. The console lecture in Module 3 was deliberately "what the desk is"; this is the first time students drive that architecture themselves.
 
-### Open questions for when we draft
-
-- Sends-and-returns is the conceptually rich part and the place students most often go wrong (insert vs send). Worth the most space.
-
-### Block-by-block
-
-*To be filled in.*
-
 ---
 
 ## Session 6 · Wed Wk 12: Mixing in practice (Lab 3)
@@ -372,15 +293,6 @@ The Wednesday half of the mixing week. Students download a prepared multitrack s
 
 `lessons/04-handout-mixing-in-practice.html` — Lab 3. The same handout begun on Monday (Session 5); Wednesday continues into committing to audio and mixing.
 
-### Open questions for when we draft
-
-- Resolved: students mix the prepared NAS session as the exercise, and the end-of-class project block lets them carry the moves into their own project.
-- Whether to introduce sidechain or keep strictly to level/pan/EQ/comp/reverb. Probably keep it to the core five at this level.
-
-### Block-by-block
-
-*To be filled in.*
-
 ---
 
 ## Session 7 · Mon Wk 13: Transferable concepts, through Adobe Audition
@@ -393,22 +305,11 @@ Step out of Ableton to show that the module's concepts belong to digital audio, 
 
 ### Reading
 
-`lessons/05-reading-transferable-concepts.html` *(not yet written)*
-
-### Open questions for when we draft
-
-- Reading vs follow-along handout depends on Decisions to settle #3 (is Audition on the stations?). A projector demo wants a reading; a follow-along wants a handout.
-- Which concepts to map, and in what order. Probably the spine of the whole course (sample rate / bit depth → editing → EQ / dynamics → multitrack), so the session doubles as a quiet review of the semester.
-
-### Block-by-block
-
-*To be filled in.*
+`lessons/05-reading-transferable-concepts.html`
 
 ---
 
 ## End-of-module assessment
-
-*To be expanded once the final project is drafted.*
 
 ### What success looks like
 
@@ -422,7 +323,7 @@ Students at the end of Module 4 should be able to:
 
 ### Forward promises and bridges
 
-- **Sound Design bridge:** synthesis (oscillators, filters, envelopes, LFOs, the instruments left out of this module) is the entry point of Sound Design. If Decisions to settle #1 is confirmed, this is where the bridge gets named: students who want to make sound from scratch rather than from recordings go to Sound Design next.
+- **Sound Design bridge:** synthesis (oscillators, filters, envelopes, LFOs, the instruments left out of this module) is the entry point of Sound Design. Students who want to make sound from scratch rather than from recordings go to Sound Design next.
 
 ### What gets logged
 

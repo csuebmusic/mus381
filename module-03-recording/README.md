@@ -124,8 +124,6 @@ Block-by-block facilitation, demo scripts, common confusions, and pacing fallbac
 
 ## Pre-module preparation (Inés / TA)
 
-*To be expanded.*
-
 - **Paper supplies:** scrap paper (not too thick, not too thin) at every station for Wed Wk 6 recordings. Quantity: enough for each student to have 4 sheets, plus extras
 - **Recording gear in the lab's gear storage and inventoried:** dynamic mic, mic stand, XLR cable, audio interface, headphones, one set per workstation. Quick visual check that nothing is missing before the start of Wk 6.
 - **Phone-to-Mac transfer method for Wed Wk 7:** to be finalized with IT before Wk 7. The lab Macs may be on a different network segment than the campus Wi-Fi student phones connect to, which rules out methods that depend on device-to-device discovery on the local network. Once IT confirms what's possible, Step 1 of `lessons/05-handout-phone-to-audacity.html` gets filled in
@@ -138,18 +136,13 @@ Block-by-block facilitation, demo scripts, common confusions, and pacing fallbac
 
 ## Module-wide concerns
 
-*To be expanded as sessions are designed.*
-
 ### Recurring confusions to expect across the module
-
-*Stub. Likely candidates from Module 2 carry-over and from the recording-specific content:*
 
 - Levels still confusing: the in-line slider, the mix knob, the gain trim, and the Audacity input level are four different things; students need help disambiguating
 - "My recording is too quiet" → almost always gain-trim too low (or in-line slider too low, or mix knob set wrong, in that order)
 - "My recording is too loud / clipping" → gain-trim too high; reinforce the -12 to -6 dBFS target
 - "I can't hear myself while recording" → monitor mix knob on interface set to USB-only instead of a blend
 - "My file disappeared" → carry-over from Module 2; the local-first / NAS-as-sync workflow needs to be reinforced because the library is starting to accumulate real value
-- *(More to be added as we work through the sessions.)*
 
 ### Gear setup baseline (every Wednesday)
 
@@ -184,16 +177,6 @@ This is the spine reading of the module. Everything else (the Wed Wk 6 lab, the 
 ### Connection to Module 1
 
 Module 1 introduced the lab interface and showed students how to plug things in. This lecture re-frames what they already touched as a **signal flow with named stages**, not just a list of objects. The vocabulary lands now because they have hands-on context from Module 2.
-
-### Open questions for when we draft
-
-- Filename: `01-reading-recording-chain.html` (what the reading is mostly about) or `01-reading-signal-flow.html` (what the reading opens with as umbrella)? Probably the former, with the umbrella concept landed in the subtitle and opening section.
-- How much polar-pattern detail goes in this reading? (Probably just cardioid mentioned by name, with a single diagram. The fuller polar-pattern treatment can land in the Wk 7 reading or in a separate diagram.)
-- Inline SVG diagram of the flow itself (four boxes, labeled connections, with the umbrella name above and the chain-specific labels below) is the visual anchor for the reading. Worth building before the prose.
-
-### Block-by-block
-
-*To be filled in.*
 
 ---
 
@@ -410,15 +393,6 @@ Builds on Session 1. The basic flow used a dynamic mic, mic-level signal, XLR ca
 
 [`lessons/04-reading-widening-the-flow.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/04-reading-widening-the-flow.html)
 
-### Open questions for when we draft
-
-- This reading is wide. Open question: one reading or split into two (signals + cables as one; mics + modifiers as another).
-- How much condenser-mic detail? Likely: what makes them different, when you'd reach for one, phantom power as a thing to know. Not: large-vs-small diaphragm distinctions, frequency-response curves, etc.
-
-### Block-by-block
-
-*To be filled in.*
-
 ---
 
 ## Session 4 · Wed Wk 7: Phone recordings into Audacity + worktime (Lab 2)
@@ -450,10 +424,6 @@ This is the one mostly-unstructured session of the module. Use the room: circula
 
 Eight steps from phone-side transfer through library upload: get the recording off the phone (transfer method TBD pending IT, currently a placeholder in the handout), pull the library down from the NAS, import (phone files already match the 48 kHz project; resampling is kept as a conditional step for stray rates), run the prep pipeline (with a noise profile captured from the phone recording itself), export to a student-chosen category folder, README update, worktime, NAS upload. References Lab 1 for the prep-pipeline detail rather than re-walking it.
 
-### Block-by-block
-
-*To be filled in.*
-
 ---
 
 ## Session 5 · Mon Wk 8: The mixer
@@ -481,17 +451,6 @@ The lecture explicitly does *not* walk the live-sound or studio-session scenario
 Five sections plus vocabulary and a "for further exploration" pointer: (1) the mixer as the place where many flows meet (with the analog-vs-digital paragraph); (2) the channel strip walked top to bottom on the Toft ATB with seven embedded callouts (phase, EQ, aux sends with river-and-taps SVG, routing/pan worked example, TRS-as-insert-loop, aux-vs-insert with canonical effect categories, processing-vs-monitoring); (3) the in-line architecture and the I/P REV button; (4) the submaster section (subgroups, monitor returns, stereo effects returns); (5) the master section (aux masters, talkback, monitor switching, 2-track returns, master fader). Closes with vocabulary and a "for further exploration" pointer to the Tape Op review of the ATB Series Console, the Sound on Sound review of the ATB24, and the Shure Audio Systems Guide for Music Educators.
 
 The reading uses five photos: a top-down shot of the studio's actual 16-channel ATB (sourced from Retro Gear Shop) as the chapter-opening overview; an annotated front-panel photo of a single input strip with every control labeled (Aux Masters, EQ bands, monitor section, fader); an annotated front-panel photo of the entire group/master section showing all eight submaster strips alongside the master strip (used twice in the reading: section 4 focuses on the submaster strips, section 5 focuses on the master strip); the rear-panel input section showing LINE / MON / INSERT / DIR. O/P + XLR per channel (from the Toft manual); the rear-panel output section showing subgroup outputs, monitor returns, effects returns, aux masters, master output (from the Toft manual). Annotated front-panel photos sourced separately; rear-panel photos credited to Toft Audio Designs / PMI Audio Group; the overview credited to Retro Gear Shop.
-
-### Resolved decisions
-
-- **Detail on the channel strip:** the reading covers what's on the front panel of the Toft input strip in beginner-friendly prose (input gain, phase, 80 Hz filter, four-band EQ, six aux sends, monitor section, solo/mute, pan, routing buttons, fader). Doesn't get into per-band EQ tuning or different EQ topologies.
-- **Photos vs schematic diagrams:** photos chosen. The Toft manual's own flow diagrams are too dense for beginners; five photos ground the explanations in the actual console. Conceptual flow is carried by prose, callouts (including the river-and-taps SVG for aux sends), and section structure, rather than by a master schematic.
-- **Lecture/lab split:** the console walkthrough (what it is) is Monday's lecture; what it does is split between Wednesday's live-sound lab and the take-home studio walkthrough. Wednesday covers the live-sound scenario in MB2525 with The Sound Below as the running example, then opens into the You-try widget where students generate a new band and route it themselves. The following Monday is a walk around the actual studio in MB2508; the studio-recording walkthrough itself is handout 08, which students work through on their own time.
-- **The fictional band:** named (The Sound Below), instrumented, and used as the running example for Wednesday's live-sound lab. The Monday lecture and its reading stay band-agnostic so the console walkthrough doesn't depend on a setup students haven't met yet.
-
-### Block-by-block
-
-*To be filled in.*
 
 ---
 
@@ -524,10 +483,6 @@ Twelve signals into the console total. With sixteen input channels on our consol
 
 Walks the live-sound scenario in full detail, then opens the You-try widget. Today's gear is minimal (this is a desk-and-projector session, not a recording session). Students follow the walkthroughs as the lecturer demonstrates the routing decisions on the projected console image, then work the widget at their stations.
 
-### Block-by-block
-
-*To be filled in.*
-
 ---
 
 ## Session 7 · Mon Wk 9: Studio visit to MB2508 — a walk around the studio (Lab 4)
@@ -540,7 +495,7 @@ The session moves to MB2508, where the actual Toft ATB lives, so students see a 
 
 The detailed studio-recording walkthrough is not done in class. It lives in handout 08, which students take home and work through on their own time when the studio is free. The handout is self-contained: it documents the gear room by room and walks one vocal mic from the live room to a finished recording, so a student can follow it at the desk without an instructor present. The reason it exists is exactly this, so they can try the whole chain themselves rather than watch it once.
 
-**Studio visit structure (working draft):**
+**Studio visit structure:**
 - Walk students to MB2508 at the start of class. (~5 min)
 - Tour the two rooms and the wall panel between them: what's in the live room (mics, the preamp and headphone racks), what's in the control room (the Toft, the side rack, the monitors), and how a signal crosses from one room to the other. (~20 min)
 - At the Toft, identify the input strips, submasters, master section, and master fader in person; point out the front-of-channel controls (phase, HPF, EQ, aux sends, monitor section, pan, routing buttons, fader) and the rear-panel jacks on a real input section (LINE, MON, INSERT, DIR. O/P, MIC). (~25 min)
@@ -559,10 +514,6 @@ A self-guided studio guide and walkthrough, written so a student can follow it a
 [`lessons/09-handout-midterm-review.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/09-handout-midterm-review.html)
 
 Distributed at the end of Session 7 for take-home study. Synthesizes Module 3 vocabulary and concepts in one place. Maps every term back to the lesson where it was introduced so students can re-read the specific section if a term is unfamiliar. Closes with a "what to bring to the exam" reminder (just yourself; closed-book, no devices) and a note that the library submission happens before the exam, so students should arrive with the library uploaded and verified-ready.
-
-### Block-by-block
-
-*To be filled in.*
 
 ---
 
@@ -590,11 +541,9 @@ Once a library is verified, copy it into the shared peer-listening folder at `[p
 
 Cumulative in-class exam covering Modules 1 through 3 vocabulary and concepts. Closed-book, no devices.
 
-### Exam scope (working draft)
+### Exam scope
 
-To be expanded into the actual exam document [`projects/terminology-exam.md`](./projects/terminology-exam.md) *(TA-facing, with answer key)*.
-
-Vocabulary and concepts on the exam should include:
+The full exam and answer key live in [`projects/terminology-exam.md`](./projects/terminology-exam.md) *(TA-facing)*. The exam covers:
 - Sample rate, bit depth, dynamic range (Module 2)
 - Envelope: attack, sustain, release (Module 2)
 - Edit techniques: cuts, fades, time-stretch, pitch-shift, reverse (Module 2)
@@ -611,15 +560,9 @@ Vocabulary and concepts on the exam should include:
 - Mixer: channel strip, aux, bus, monitor send (Module 3)
 - File workflow: local-first, NAS-as-sync (Module 1, reinforced throughout)
 
-### Block-by-block
-
-*To be filled in.*
-
 ---
 
 ## End-of-module assessment
-
-*To be expanded.*
 
 ### What success looks like
 
@@ -635,16 +578,12 @@ Students at the end of Module 3 should be able to:
 
 ### Across-the-cohort signs of trouble
 
-*To be filled in as the module is taught. Likely candidates:*
-
 - Libraries with no README or with a one-line README → the organization lesson didn't land; reinforce in Module 4 with an explicit "find a sound from your library" exercise
 - Libraries where every file peaks at 0 dBFS → normalization is being applied as a "make it loud" step rather than a standardization; the "scale not shape" framing from Module 2 needs another pass
 - Libraries where files have noticeable click pops at the cuts → trim step is being done sloppily, fades aren't being added at trim points; reinforce the fade habit explicitly
 - Students who can't trace signal flow on the terminology exam → the Wk 6 Mon reading didn't stick; rethink whether the flow diagram is doing enough
 
 ### Forward promises to deliver in later modules
-
-*Stub. To be filled in as readings are drafted.*
 
 - Sample libraries built in this module become the source material for Module 4 audio work (Wks 10–11 in Ableton). The "your library" framing should appear in the Module 4 README.
 
