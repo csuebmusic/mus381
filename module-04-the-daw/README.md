@@ -65,7 +65,7 @@ The lab runs **Ableton Live 11 Suite**. Live is a large DAW; this module deliber
 - Delay — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#delay
 - Echo — https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#echo
 
-**Week 13 (Adobe Audition):** outside the Ableton manual; scope depends on whether Audition runs on the lab Macs or is shown as a projector demo.
+**Week 13 (Adobe Audition):** outside the Ableton manual. Audition runs on the lab Macs, so Session 7 is a hands-on follow-along (handout 05); it links Adobe's own get-started guide rather than the Live manual.
 
 **Exporting (used across the module):** Exporting Audio and Video — https://www.ableton.com/en/live-manual/11/managing-files-and-sets/#exporting-audio-and-video . Students export finished work at 48 kHz / 32-bit. Needed first when they render a short arrangement, then again at mixing and for the final project.
 
@@ -132,7 +132,7 @@ Full listening assignment: `listening/historical.html`.
 
 ## Session overview
 
-**How the materials map to sessions.** Each week runs on one document. The module **reading** (`01-reading-the-daw-environment.html`) is met Monday of Wk 10 as the module's map and is referred back to all module. The three **handouts** (`02` audio editing, `03` sampling, `04` mixing) each drive a full week, both the Monday session and the Wednesday session: the TA works through the handout while students follow hands-on, so concept and doing happen together rather than splitting into a separate lecture and lab. There are no standalone Monday lecture documents for Wks 11 and 12; the week's handout carries both days. Wk 13 is the exception, a Monday-only Audition reading (`05-reading-transferable-concepts.html`), since Wed Wk 13 is Veterans Day.
+**How the materials map to sessions.** Each week runs on one document. The module **reading** (`01-reading-the-daw-environment.html`) is met Monday of Wk 10 as the module's map and is referred back to all module. The three **handouts** (`02` audio editing, `03` sampling, `04` mixing) each drive a full week, both the Monday session and the Wednesday session: the TA works through the handout while students follow hands-on, so concept and doing happen together rather than splitting into a separate lecture and lab. There are no standalone Monday lecture documents for Wks 11 and 12; the week's handout carries both days. Wk 13 is the exception, a Monday-only Audition follow-along (`05-handout-transferable-concepts.html`), since Wed Wk 13 is Veterans Day.
 
 | Wk | Day | Focus |
 |---|---|---|
@@ -142,7 +142,7 @@ Full listening assignment: `listening/historical.html`.
 | 11 | Wed | Session 4 · Lab 2 continues (handout 03). Load library sounds into Simpler and a Drum Rack, sequence a short MIDI part, build one short playable idea from the student's own samples. |
 | 12 | Mon | Session 5 · Begin Lab 3 (handout 04). The Ableton mixer as the digital console: track faders, pan, sends and return tracks, group tracks, the Master. EQ and Compressor mapped onto Module 2 and the Module 3 console. |
 | 12 | Wed | Session 6 · Lab 3 continues (handout 04). Commit the session to audio (freeze and flatten the MIDI tracks, consolidate), then mix: levels, pan, a reverb return, groups, EQ and compression. |
-| 13 | Mon | Session 7 · Transferable concepts, through Adobe Audition (reading 05). *(Mon only; Wed is Veterans Day.)* The same concepts in a different tool: sample rate, bit depth, editing, EQ, dynamics, multitrack, under Audition's UI and names. The point is portability of skills, aimed in part at the art majors already in the Adobe suite. |
+| 13 | Mon | Session 7 · Transferable concepts, through Adobe Audition (handout 05). *(Mon only; Wed is Veterans Day.)* The same concepts in a different tool: sample rate, bit depth, editing, EQ, dynamics, multitrack, under Audition's UI and names. The point is portability of skills, aimed in part at the art majors already in the Adobe suite. |
 | 14 | Mon / Wed | Final project worktime; Draft 1 due Wed Wk 14. |
 | 15 | Mon / Wed | Final project revision; Draft 2 due Wed Wk 15. |
 | Finals | — | Final piece to NAS + class folder; cumulative final exam. |
@@ -155,7 +155,7 @@ Block-by-block facilitation, demo scripts, common confusions, and pacing fallbac
 
 - **Ableton Live 11 Suite** is the lab version. Handout screenshots, menu paths, and manual references all target Live 11 (see Reference scope above for the exact sections). Suite confirms everything in scope is installed; Simpler and Drum Rack are in every edition regardless.
 - **MIDI keyboards inventoried and tested at every station.** They enter the gear list this module (the Module 4 handout gear tier adds the MIDI keyboard). Confirm each one is present, connects over USB through the hub, and registers in Ableton's MIDI preferences.
-- **Adobe Audition availability:** confirm whether it is licensed and installed on the lab Macs, or shown as a projector demo only.
+- **Adobe Audition installed and tested on the lab Macs.** Audition runs at every station, so Session 7 is a hands-on follow-along. Confirm it launches under the campus Adobe license before Wk 13.
 - **A starter session for the mixing lab.** Session 6 mixes a prepared multitrack session staged on the NAS: a longer piece with several instruments, some MIDI and some audio, so there is MIDI to commit and audio to consolidate. Inés provides it; stage it on the NAS before Wk 12.
 - **Final-project Set.** Students create their own project Set in Session 1 (the reading ends by walking them through it), named `lastname-project`, and build it in the end-of-class block of each lab. Nothing to pre-stage; be ready to help with the create-and-save step on Day 1.
 - **Library readiness check.** Sessions 2 through 4 assume each student has a usable Module 3 library on the NAS. Spot-check that libraries survived the midterm and are findable before Wk 10.
@@ -297,15 +297,15 @@ The Wednesday half of the mixing week. Students download a prepared multitrack s
 
 ## Session 7 · Mon Wk 13: Transferable concepts, through Adobe Audition
 
-**100 min · Lecture-style · MB2525** *(Mon only; Wed Wk 13 is Veterans Day.)*
+**100 min · Hands-on follow-along · MB2525** *(Mon only; Wed Wk 13 is Veterans Day.)*
 
 ### Roadmap
 
 Step out of Ableton to show that the module's concepts belong to digital audio, not to one app. Adobe Audition is the worked example: its waveform editor and multitrack session hold the same ideas students have been using all module, under different names and a different UI. Frame Audition as an advanced audio editor in the Adobe suite, a hybrid: it has nondestructive editing and live processing like a DAW, but no instruments or MIDI, so it is not a DAW. That hybrid status is the point of using it as the transfer example, since the editing and processing concepts carry even into a tool that is not a full DAW. Walk sample rate, bit depth, editing, fades, EQ, compression, and multitrack in Audition's terms, each time pointing back to where they met it in Ableton or Audacity. The takeaway: the skills are portable; the next tool will look different and work the same. Pitched in part at the art majors, who already use the Adobe suite and will recognize Audition's place in it.
 
-### Reading
+### Handout
 
-`lessons/05-reading-transferable-concepts.html`
+`lessons/05-handout-transferable-concepts.html`
 
 ---
 
