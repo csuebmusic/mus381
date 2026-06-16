@@ -132,6 +132,12 @@ Lab handouts that currently carry this sentence:
 
 Module 3's Lab 4 (handout 08, the self-guided studio walkthrough) does not carry the tail. It is worked through on the student's own time in MB2508, not a standard MB2525 lab session with shared-gear teardown and a NAS upload, so the routines-card cue does not apply.
 
+### Links
+
+Every link that navigates away from a student-facing page opens in a new tab, written `target="_blank" rel="noopener noreferrer"`. This holds for both external links (the Ableton manual, Adobe's guides) and cross-document links to another lesson in the repo, so a student who follows a link keeps the page they were reading open behind it.
+
+In-page links are the exception: a table of contents pointing to `#section` anchors within the same document stays in the same tab, since a new tab for a same-page jump would only duplicate the page. The rule is new tab if the link leaves the page, same tab if it scrolls within it.
+
 ## Markdown files (internal)
 
 Markdown docs (module specs, TA notes, this folder) use the H1 to identify themselves:
@@ -142,6 +148,8 @@ Markdown docs (module specs, TA notes, this folder) use the H1 to identify thems
 | Operational doc (NAS policy, sample bank prep, this folder's files) | `# [Document title]` (no module reference) |
 
 If a metadata line is useful immediately under the H1, put it as bold text and keep it dateless. For example: `**Weeks 2–5** (7 sessions)`. Calendar date ranges belong in `course-outline.md`, not here.
+
+Links in these files cannot be forced to open in a new tab. GitHub strips the `target` attribute when it renders Markdown, whether the link is written in Markdown syntax or as a raw HTML anchor, so the new-tab rule above applies to the student-facing HTML only. On GitHub a reader opens a link in a new tab with a middle-click or cmd/ctrl-click. This is a platform limitation, not a gap to fix.
 
 ## Why the chrome stays consistent
 
