@@ -7,7 +7,7 @@ TA-facing. Contains the exam and the answer key. The exam section can be copied 
 - **When:** Finals week (Dec 7 through 12), in the slot set by the registrar's final-exam schedule. Separate from the final project, which is uploaded the same week.
 - **Format:** Individual, in class, closed-book, no devices. Same conditions as the Wk 9 midterm.
 - **Scope:** Cumulative, Modules 1 through 4, weighted toward Module 4 (the DAW). The Wk 9 midterm already tested Modules 1 through 3 terminology, so the final spends most of its points on the DAW material and re-tests only the cross-course ideas most worth keeping live: sample rate, clipping, and the bit-depth-at-export idea.
-- **Total:** 60 points. Rescale to the gradebook weight as needed (the course-outline weight is still TBD).
+- **Total:** 60 points. Rescale to the gradebook weight as needed (the syllabus weight is still TBD).
 
 ### Note on study support
 

@@ -29,15 +29,17 @@ Note: `XX` and `NN` are interchangeable as "zero-padded number" placeholders; th
 
 ```
 README.md
-course-outline.md
+syllabus.html
 module-01-fluency/
 module-02-audio-editing-mixing/
 module-03-recording/
 module-04-the-daw/
-policies/
+exams/
 assets/
-build/
-meta/
+under-the-hood/
+  build/
+  meta/
+  policies/
 ```
 
 Module folders are `module-XX-shortname/` where XX is zero-padded (`01`, `02`, etc.) and shortname is a few hyphenated words capturing the module's content. The shortname is meant to make the folder readable in `cd` and `ls` output; it's not load-bearing for any reference.

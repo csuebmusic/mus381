@@ -6,7 +6,7 @@ Where calendar dates appear in the repo, and how everything else refers to time.
 
 ## The rule
 
-Calendar dates (`Aug 24`, `Sep 16`, etc.) appear **only** in `course-outline.md`.
+Calendar dates (`Aug 24`, `Sep 16`, etc.) appear **only** in the syllabus (`syllabus.html`).
 
 Re-running this course in a future semester should require editing only that file (and Canvas, externally). Every other reference to time uses a stable positional label that doesn't change between semesters.
 
@@ -16,7 +16,7 @@ Dates change every semester. If they appear in many places, they have to be upda
 
 ## Week references
 
-For everything except `course-outline.md`, use week references:
+For everything except the syllabus, use week references:
 
 - **`Day Wk N`** for a specific session: `Mon Wk 2`, `Wed Wk 5`. This is the default and matches the existing TA-notes phrasing.
 - **`Wk N`** when day-of-week doesn't matter: `By Wk 3`, `Starting Wk 2`.

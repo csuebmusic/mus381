@@ -7,7 +7,7 @@ TA-facing. Contains the exam and the answer key. The exam section can be copied 
 - **When:** Wed Wk 9, the second part of the session, after the sample libraries are submitted and verified (Part 1, roughly the first 30 minutes). Students have the rest of the 100-minute period, roughly an hour.
 - **Format:** Individual, in class, closed-book, no devices.
 - **Scope:** Cumulative, Modules 1 through 3. Everything on it comes from the midterm review packet (`lessons/09-handout-midterm-review.html`), which students were given as the study guide. Do not test terms or ideas the guide does not cover.
-- **Total:** 50 points. Rescale to the gradebook weight as needed (the course-outline weight is still TBD).
+- **Total:** 50 points. Rescale to the gradebook weight as needed (the syllabus weight is still TBD).
 
 ### How this exam maps to the guide
 
