@@ -11,7 +11,7 @@ TA-facing. Contains the exam and the answer key. The exam section can be copied 
 
 ### Note on study support
 
-The midterm mapped one-to-one to the Wk 9 review handout, so students knew exactly what to study. There is no equivalent final-review handout yet. As drafted, this exam draws from the Module 4 reading and handouts plus the midterm-level anchors, so a student who reviews the Module 4 lessons and the midterm guide is covered. If a single final-review study guide is wanted, it would sit in `module-04-the-daw/lessons/` as the last handout and this exam would then be pinned to it the way the midterm is pinned to its guide.
+This exam is pinned to the final review packet (`module-04-the-daw/lessons/06-handout-final-review.html`), the way the midterm is pinned to its Wk 9 review handout. Every question here is a sibling of something the packet covers: the Module 4 vocabulary, plus the three cross-course anchors it carries forward (sample rate, clipping, bit depth at export). Keep future versions inside what the packet covers, so students are tested on what they were given to study.
 
 ### How this exam is built
 
