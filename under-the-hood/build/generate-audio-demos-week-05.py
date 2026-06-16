@@ -73,7 +73,7 @@ from scipy.signal import butter, sosfilt
 
 # ----- Output paths -----
 
-REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 OUT_DIR = os.path.join(REPO_ROOT, "assets", "audio", "module-02-week-05")
 SOURCE_LOOP = os.path.join(REPO_ROOT, "assets", "audio", "source", "dynamic-loop.wav")
 SOURCE_AR_LOOP = os.path.join(REPO_ROOT, "assets", "audio", "source", "attack-release-loop.wav")

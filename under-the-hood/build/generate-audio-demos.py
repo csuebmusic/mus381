@@ -26,7 +26,7 @@ from scipy.signal import resample_poly
 
 # ----- Output paths -----
 
-REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 OUT_DIR = os.path.join(REPO_ROOT, "assets", "audio", "module-02-week-02")
 os.makedirs(OUT_DIR, exist_ok=True)
 

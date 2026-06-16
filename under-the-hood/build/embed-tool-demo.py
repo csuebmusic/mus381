@@ -26,7 +26,7 @@ import base64
 import os
 import re
 
-REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 WAV_PATH = os.path.join(REPO_ROOT, "assets", "audio", "module-02-week-05",
                         "dynamic-tool-demo.wav")
 TOOL_PATH = os.path.join(REPO_ROOT, "module-02-audio-editing-mixing",

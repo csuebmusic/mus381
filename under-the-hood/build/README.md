@@ -47,7 +47,7 @@ To regenerate any of the audio files (e.g. if the source sound
 should change, or if you want to add more degradation steps):
 
 ```
-python3 build/generate-audio-demos.py
+python3 under-the-hood/build/generate-audio-demos.py
 ```
 
 Requires `numpy` and `scipy`. The script is self-contained and idempotent —
@@ -128,7 +128,7 @@ modern processing.
 ### Re-running
 
 ```
-python3 build/generate-audio-demos-week-03.py
+python3 under-the-hood/build/generate-audio-demos-week-03.py
 ```
 
 Requires `numpy`, `scipy`, and `ffmpeg` (the latter for the tape
@@ -231,7 +231,7 @@ are touched.
 ### Re-running
 
 ```
-python3 build/embed-tool-demo.py
+python3 under-the-hood/build/embed-tool-demo.py
 ```
 
 Standard library only — no extra dependencies. Idempotent.
