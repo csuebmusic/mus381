@@ -121,6 +121,12 @@ By the end of this module, students should be able to:
 - Rubric (out of 100, no revision criterion): Technique & tools 35, Form & shape 30, Sound material & sourcing 20, Mix & craft 15.
 - A cumulative final exam runs during finals week (covers the whole course), separate from this project. Exam and answer key: [`exams/final-exam.md`](../exams/final-exam.md) *(TA-facing)*.
 
+### Final review packet
+
+[`lessons/06-handout-final-review.html`](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/06-handout-final-review.html)
+
+A take-home study packet for the cumulative final, parallel to the Module 3 midterm review. It gathers the Module 4 vocabulary (the DAW, the clip, nondestructive editing, warping, MIDI as a trigger, the sampler instruments, the mixer-as-console mapping, inserts vs sends) and the three cross-course anchors the final still tests (sample rate, clipping, bit depth at export), and closes with a self-check that mirrors the exam's question style. Handed out at the last class meeting (Wed Wk 15) for study before the finals-week exam, and on the course site throughout. The exam (`exams/final-exam.md`) is built to stay inside what this packet covers, the way the midterm is pinned to its review handout.
+
 ---
 
 ## Listening assignment
@@ -135,7 +141,7 @@ No peer listening in Module 4: final pieces are shared in the class folder for e
 
 ## Session overview
 
-**How the materials map to sessions.** Each week runs on one document. The module **reading** (`01-reading-the-daw-environment.html`) is met Monday of Wk 10 as the module's map and is referred back to all module. The three **handouts** (`02` audio editing, `03` sampling, `04` mixing) each drive a full week, both the Monday session and the Wednesday session: the TA works through the handout while students follow hands-on, so concept and doing happen together rather than splitting into a separate lecture and lab. There are no standalone Monday lecture documents for Wks 11 and 12; the week's handout carries both days. Wk 13 is the exception, a Monday-only Audition follow-along (`05-handout-transferable-concepts.html`), since Wed Wk 13 is Veterans Day.
+**How the materials map to sessions.** Each week runs on one document. The module **reading** (`01-reading-the-daw-environment.html`) is met Monday of Wk 10 as the module's map and is referred back to all module. The three **handouts** (`02` audio editing, `03` sampling, `04` mixing) each drive a full week, both the Monday session and the Wednesday session: the TA works through the handout while students follow hands-on, so concept and doing happen together rather than splitting into a separate lecture and lab. There are no standalone Monday lecture documents for Wks 11 and 12; the week's handout carries both days. Wk 13 is the exception, a Monday-only Audition follow-along (`05-handout-transferable-concepts.html`), since Wed Wk 13 is Veterans Day. Handout `06` is the take-home **final review packet**, not a session document: it is handed out at the last class meeting for study before the finals-week exam, parallel to the Module 3 midterm review.
 
 | Wk | Day | Focus |
 |---|---|---|
@@ -147,7 +153,7 @@ No peer listening in Module 4: final pieces are shared in the class folder for e
 | 12 | Wed | Session 6 · Lab 3 continues (handout 04). Commit the session to audio (freeze and flatten the MIDI tracks, consolidate), then mix: levels, pan, a reverb return, groups, EQ and compression. |
 | 13 | Mon | Session 7 · Transferable concepts, through Adobe Audition (handout 05). *(Mon only; Wed is Veterans Day.)* The same concepts in a different tool: sample rate, bit depth, editing, EQ, dynamics, multitrack, under Audition's UI and names. The point is portability of skills, aimed in part at the art majors already in the Adobe suite. |
 | 14 | Mon / Wed | Final project worktime; Draft 1 due Wed Wk 14. |
-| 15 | Mon / Wed | Final project revision; Draft 2 due Wed Wk 15. |
+| 15 | Mon / Wed | Final project revision; Draft 2 due Wed Wk 15. Final review packet (handout 06) handed out for the finals-week exam. |
 | Finals | — | Final piece to NAS + class folder; cumulative final exam. |
 
 Block-by-block facilitation, demo scripts, common confusions, and pacing fallbacks for each session will be filled in below as the module is built out.

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUS 381 · Final Review</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+  <style>
+    /* Review-packet helpers, same as the midterm review packet so the
+       two read as a pair. No new colors: all values pull from the shared
+       palette variables. */
+
+    /* A compact label that marks which module each cluster comes from,
+       so students can map the review back to where they learned it. */
+    .from-module {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-soft);
+      margin: 0 0 0.4rem;
+    }
+
+    /* The self-check question list. Numbered, with breathing room between
+       questions so they read as prompts, not prose. */
+    ol.self-check > li {
+      margin-bottom: 0.7rem;
+    }
+    ol.self-check {
+      padding-left: 1.4rem;
+    }
+  </style>
+</head>
+<body>
+
+<header class="handout-header">
+  <span class="course">MUS 381 · Essentials of Music Technology</span>
+  <span class="meta">Module 04 · Final review</span>
+</header>
+
+<div class="title-block">
+  <div class="module-tag">Module 04 · The DAW</div>
+  <h1>Final Review</h1>
+</div>
+
+<p class="lede">A study packet for the cumulative final. It gathers the Module 4 vocabulary, the DAW, the clip, MIDI as a trigger, and the Ableton mixer, into one place, then carries forward the handful of earlier ideas the final still tests. Read each definition, then check that you can give it back in your own words and point to where it shows up in your own Ableton work.</p>
+
+<hr>
+
+<h2>How the exam works</h2>
+
+<p>The final is cumulative, but it leans on Module 4. The Wk 9 midterm already tested the vocabulary of the first half of the course, so the final spends most of its points on the DAW and re-tests only the cross-course anchors worth keeping live: sample rate, clipping, and the bit-depth step at export. Those three appear again in section 9 below.</p>
+
+<p>Expect four kinds of thinking with the terms below: <em>define</em> a term in plain language, <em>identify</em> a part or a move from a description (which view you would commit a final arrangement in, which instrument spreads one sample per pad), <em>map or trace</em> a path (the Ableton mixer onto the Module 3 console, a sample from your library to a finished export), and answer a <em>short</em> conceptual question (why nondestructive editing means you cannot ruin a source, what a MIDI note actually does).</p>
+
+<div class="callout">
+  <div class="callout-label">How to use this packet</div>
+  <p>Cover the definitions and read only the terms. For each one, say what it is out loud or write it down, then uncover and compare. The terms you can already give back are done. The ones you stumble on are your study list. The full explanations live in the Module 4 reading and handouts. For the earlier material the final still touches (sample rate, bit depth, clipping), the midterm review packet is the fuller reference.</p>
+</div>
+
+<hr>
+
+<h2>1 · What a DAW is</h2>
+<p class="from-module">From Module 4 · Into the DAW</p>
+
+<p>The last two modules used Audacity, an audio editor. Module 4 is the first DAW. The line between the two is the first thing the exam expects you to draw.</p>
+
+<dl class="vocab">
+  <dt>DAW (digital audio workstation)</dt>
+  <dd>A full production environment: multitrack, nondestructive, with instruments, MIDI, and a built-in mixer. Ableton Live is the first DAW in this course.</dd>
+
+  <dt>Audio editor</dt>
+  <dd>A tool that records and edits audio but has no instruments, no MIDI, and no full mixer. Audacity is an audio editor, not a DAW. So is Adobe Audition.</dd>
+
+  <dt>Live Set</dt>
+  <dd>Ableton's word for a project. It holds your tracks, clips, and settings, and saves as a <code>.als</code> file.</dd>
+
+  <dt>Track</dt>
+  <dd>A lane in the set that holds clips. An audio track holds audio; a MIDI track holds MIDI notes and an instrument that turns them into sound.</dd>
+</dl>
+
+<hr>
+
+<h2>2 · The two views</h2>
+<p class="from-module">From Module 4 · Into the DAW</p>
+
+<p>One Live Set, two ways to look at it. Both show the same music; they differ in what they are good for.</p>
+
+<dl class="vocab">
+  <dt>Session view</dt>
+  <dd>The grid of clips, for trying ideas and looping. You fire clips off and audition combinations without committing to an order.</dd>
+
+  <dt>Arrangement view</dt>
+  <dd>The linear timeline, left to right, for committing to a structure. It resembles Audacity's timeline, which is why most early work happens here. You commit a final arrangement in Arrangement view.</dd>
+</dl>
+
+<hr>
+
+<h2>3 · The clip and nondestructive editing</h2>
+<p class="from-module">From Module 4 · Into the DAW</p>
+
+<p>This is the reframe of the whole module. Everything you learned about editing in Module 2 still applies, but what an edit touches has changed.</p>
+
+<dl class="vocab">
+  <dt>Clip</dt>
+  <dd>A reference to a file. It points at the audio on disk and carries its own start, end, gain, fades, and warp settings. The key idea: the clip is not the file.</dd>
+
+  <dt>Nondestructive editing</dt>
+  <dd>Edits live on the clip, not on the file. Shortening a clip or adding a fade changes the clip's instructions; the file's samples stay exactly as recorded. You cannot ruin your source, so you can edit freely and undo anything.</dd>
+
+  <dt>Destructive editing (the Audacity contrast)</dt>
+  <dd>In Module 2, an edit rewrote the samples in the file: a cut removed them, a fade changed them. That is destructive editing. Ableton leaves the file untouched and keeps the edits on the clip.</dd>
+</dl>
+
+<hr>
+
+<h2>4 · Warping</h2>
+<p class="from-module">From Module 4 · Audio editing in Ableton</p>
+
+<p>Warping is how Ableton fits a clip to your set's tempo. The only decision you usually make is whether you want it on or off.</p>
+
+<dl class="vocab">
+  <dt>Warping</dt>
+  <dd>Ableton's time-stretching. A warped clip follows the set's tempo instead of playing at the speed it was recorded.</dd>
+
+  <dt>Warp on / warp off</dt>
+  <dd>Warp on stretches a clip to match the project tempo: use it for loops and rhythmic material you want locked to the grid. Warp off plays the clip at its recorded speed: use it for one-shots and sounds where the original timing is the point.</dd>
+
+  <dt>Warp markers</dt>
+  <dd>Pins that tie a moment in the audio to a moment in the bar, so Ableton knows how to stretch the clip. You rarely need to set them by hand at this level.</dd>
+</dl>
+
+<hr>
+
+<h2>5 · MIDI as a trigger</h2>
+<p class="from-module">From Module 4 · Sampling in Ableton</p>
+
+<p>MIDI is the one genuinely new abstraction in the module. The model is small and worth holding exactly: a note is data, it triggers an instrument, and the instrument makes the sound.</p>
+
+<dl class="vocab">
+  <dt>MIDI note</dt>
+  <dd>Data, not sound. It carries pitch (which note), timing (when), and velocity (how hard). On its own it makes no sound at all.</dd>
+
+  <dt>The trigger chain</dt>
+  <dd>A MIDI note triggers an instrument; the instrument makes the sound. Note, then instrument, then sound. The piano roll says play C3 now, medium-hard; the instrument turns that into audio.</dd>
+
+  <dt>MIDI track vs audio track</dt>
+  <dd>A MIDI track holds notes and an instrument that turns them into sound. An audio track holds recorded audio. Dropping a sample where you meant to draw a note, or the reverse, is the usual mix-up.</dd>
+</dl>
+
+<hr>
+
+<h2>6 · The sampler instruments</h2>
+<p class="from-module">From Module 4 · Sampling in Ableton</p>
+
+<p>Two instruments turn your library from a folder of files into something you can play. Both take your own samples as their raw material.</p>
+
+<dl class="vocab">
+  <dt>Simpler</dt>
+  <dd>An instrument that plays one sample across the keyboard. A higher note plays the sample faster (higher), a lower note slower (lower). Each note has a volume envelope, attack, decay, sustain, and release, that shapes it.</dd>
+
+  <dt>Drum Rack</dt>
+  <dd>A grid of pads, each pad holding one sample, each triggered by its own MIDI note. The way you build a kit from your library sounds and play or sequence it.</dd>
+
+  <dt>Envelope (ADSR)</dt>
+  <dd>Attack, decay, sustain, release: the four stages that shape a note's level over time. The same envelope idea you met in Module 2 editing, now a control on the instrument.</dd>
+</dl>
+
+<hr>
+
+<h2>7 · The Ableton mixer as the digital console</h2>
+<p class="from-module">From Module 4 · Mixing in Ableton, with Module 3's console</p>
+
+<p>The Ableton mixer is the Module 3 Toft console rendered in software. Same architecture, same job, now something you can actually drive. For each Ableton part, know the console part it maps to.</p>
+
+<dl class="vocab">
+  <dt>Track fader</dt>
+  <dd>Sets a track's level into the mix. The console's channel fader.</dd>
+
+  <dt>Pan</dt>
+  <dd>Places a track across the stereo field, left to right. The console's pan.</dd>
+
+  <dt>Send and return track</dt>
+  <dd>A send routes a copy of a track's signal to a return track, where a shared effect (reverb, delay) lives. One reverb, many tracks feeding it. This is the console's aux send and aux return.</dd>
+
+  <dt>Group track</dt>
+  <dd>Several tracks folded into one for combined level and processing. The console's subgroup, which the Toft labels a submaster.</dd>
+
+  <dt>Master track</dt>
+  <dd>The final stereo bus every track sums into, with the master fader on it. The console's master mix.</dd>
+</dl>
+
+<hr>
+
+<h2>8 · Inserts, sends, and the built-in devices</h2>
+<p class="from-module">From Module 4 · Mixing in Ableton</p>
+
+<p>The same effect types you met in Modules 2 and 3 are here as Live devices, in two roles. Where a device sits decides whether its order matters and whether other tracks can share it.</p>
+
+<dl class="vocab">
+  <dt>Insert effect</dt>
+  <dd>A device in a track's own chain, processing only that track. Order matters: the signal passes through each device in turn.</dd>
+
+  <dt>The insert chain order</dt>
+  <dd>Gain first (Utility where needed), then EQ (EQ Eight), then filtering (Auto Filter), then compression (Compressor), then the bus and master tools (Glue Compressor, Limiter, Multiband Dynamics).</dd>
+
+  <dt>Send effect</dt>
+  <dd>A device on a return track, shared by any track that sends to it. The reverbs and delays live here (Hybrid Reverb, Reverb, Delay, Echo), so several tracks share one.</dd>
+
+  <dt>Insert vs send</dt>
+  <dd>Put an effect on the track itself (insert) when only that track needs it. Send to a return when several tracks share one effect. The same choice you met on the console as aux versus insert.</dd>
+</dl>
+
+<hr>
+
+<h2>9 · Concepts that carry across tools</h2>
+<p class="from-module">From Module 4 · Adobe Audition, plus the cross-course anchors</p>
+
+<p>The close of the course makes one point: these are properties of digital audio and of audio production, not of Ableton. The next tool will look different and work the same. Three of these are the earlier ideas the final still tests.</p>
+
+<dl class="vocab">
+  <dt>Sample rate</dt>
+  <dd>How many samples are taken per second, in Hz or kHz. The course standard is 48 kHz. <em>(Cross-course anchor.)</em></dd>
+
+  <dt>Bit depth and the export step</dt>
+  <dd>You worked at 24-bit through Modules 2 and 3. You export the finished piece at 32-bit (48 kHz / 32-bit float). The rate already matches your library, so importing resamples nothing; only the bit depth steps up, and only at export. <em>(Cross-course anchor.)</em></dd>
+
+  <dt>Clipping</dt>
+  <dd>When a signal goes past the digital ceiling (0 dBFS) and its peaks are flattened off. It happens at capture and cannot be undone. Leave headroom to avoid it. <em>(Cross-course anchor.)</em></dd>
+
+  <dt>Transferable concepts</dt>
+  <dd>Sample rate, bit depth, gain staging, EQ, compression, fades, multitrack arrangement. Every one of them exists in any serious audio tool.</dd>
+
+  <dt>Adobe Audition</dt>
+  <dd>The worked example of the same ideas in a different tool. An advanced audio editor in the Adobe suite, with nondestructive editing and live effects like a DAW, but with no instruments and no MIDI, so by this course's definition it is not a DAW.</dd>
+</dl>
+
+<hr>
+
+<h2>10 · From library to finished piece</h2>
+<p class="from-module">From Module 4 · The whole module</p>
+
+<p>The deliverable for the second half of the course is the final piece, built in Ableton from your own recorded sound. These ideas hold the project together.</p>
+
+<dl class="vocab">
+  <dt>Your library as raw material</dt>
+  <dd>The sample library you built in Module 3 is the source for everything here. It is already 48 kHz, so it imports into a 48 kHz set with nothing to convert.</dd>
+
+  <dt>The final project</dt>
+  <dd>Any kind of piece, 2 to 3 minutes, built in Ableton, demonstrating the semester's skills. It is drafted twice (Wk 14 and Wk 15) and uploaded as a finished WAV during finals.</dd>
+
+  <dt>Sourcing and credit</dt>
+  <dd>Every sound must be yours: your library plus anything new you record. The one exception is another student's recording, used with permission and credited in a credits file. Crediting is the point, not a formality.</dd>
+</dl>
+
+<hr>
+
+<h2>The thread that connects it all</h2>
+
+<p>The terms above are easier to hold onto as one path than as a list, and that path runs back through the whole course. A sound starts as pressure in the air. In Module 3 a microphone turned it into a mic-level signal, a cable carried it to the interface, a preamp lifted it, and an ADC stored it as a WAV at 48 kHz. You prepped that recording into a sample and filed it in your library. In Module 4 you import that sample into a Live Set, where it becomes a clip that points at the file without changing it. You arrange it on the timeline, or load it into Simpler or a Drum Rack and trigger it with a MIDI note. You mix it through the same channel-fader, aux-send, subgroup, and master architecture you met on the Toft. Then you export the result at 32-bit. Every term in this packet names a stage or a decision on that one path.</p>
+
+<div class="callout">
+  <div class="callout-label">The console shows up twice</div>
+  <p>Module 3 taught what the desk is: channels, faders, buses, aux sends, subgroups, the master mix. Module 4 is where you finally drive that architecture yourself, in software. The track fader is the channel fader, the send is the aux send, the group is the subgroup, the Master is the master mix. Same console, now mixable.</p>
+</div>
+
+<div class="callout">
+  <div class="callout-label">Nondestructive editing reframes Module 2</div>
+  <p>In Audacity an edit changed the file: a cut removed samples, a fade rewrote them. In Ableton the same moves (cut, fade, gain) live on the clip, and the file underneath is untouched. The editing skills are identical; what changed is that they now cost you nothing to undo.</p>
+</div>
+
+<hr>
+
+<h2>Test yourself</h2>
+
+<p>Work through these without the definitions in front of you. Each one points back to a section above and to the lesson it came from.</p>
+
+<ol class="self-check">
+  <li>What makes Ableton a DAW and Audacity not? Name two things a DAW has that an audio editor lacks.</li>
+  <li>Name the two views of a Live Set, and say which you would use to commit to a final arrangement.</li>
+  <li>Explain nondestructive editing using the clip-and-file idea. When you add a fade to a clip, what happens to the underlying file?</li>
+  <li>You have a one-shot vocal sample and a drum loop you want locked to tempo. Warp on or off for each, and why?</li>
+  <li>What three things does a MIDI note carry, and what actually makes the sound the listener hears?</li>
+  <li>What is the difference between Simpler and Drum Rack? What does each one do with a sample?</li>
+  <li>Map the Ableton mixer onto the Toft console: a track fader, pan, a send to a return, a group track, the Master track.</li>
+  <li>A producer wants one reverb shared by four tracks. Describe the routing, and name the console feature it is the digital version of.</li>
+  <li>When does an effect go on the track itself, and when does it go on a return track instead?</li>
+  <li>Name three concepts from this course that would carry to any audio tool, and say why that portability is the point of the final week.</li>
+  <li>Why is Adobe Audition not a DAW, even though it has nondestructive editing and live effects?</li>
+  <li>Your library files are 48 kHz / 24-bit and your set runs at 48 kHz. What converts on import, and at what bit depth do you export the final piece?</li>
+  <li>A recording clips. Can you fix it in editing? Why or why not?</li>
+  <li>What is sample rate, and what is the course standard?</li>
+</ol>
+
+<footer class="handout-footer">
+  <span>MUS 381 · CSU East Bay</span>
+  <span>Module 04 · Final review</span>
+</footer>
+
+</body>
+</html>
