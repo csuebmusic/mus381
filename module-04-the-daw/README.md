@@ -129,7 +129,7 @@ By the end of this module, students should be able to:
 
 No peer listening in Module 4: final pieces are shared in the class folder for everyone to hear, with no formal written response assignment.
 
-**Built:** `listening/historical.html`. Works: Grandmaster Flash (1981), DJ Shadow (1996), The Avalanches (2000), J Dilla (2006), plus a student-choice contemporary piece. Photos in place (Flash at the turntables; an Akai MPC60) in `assets/images/module-04-week-11/`, alongside a lineage timeline SVG. Photo credit lines are currently blank, pending sourcing info from Inés.
+**Built:** `listening/historical.html`. Works: Grandmaster Flash (1981), DJ Shadow (1996), The Avalanches (2000), J Dilla (2006), plus a student-choice contemporary piece. Photos in place (Flash at the turntables; an Akai MPC60) in `assets/images/module-04-week-11/`, alongside a lineage timeline SVG. Photo credits resolved.
 
 ---
 
