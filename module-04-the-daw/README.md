@@ -2,8 +2,6 @@
 
 **Weeks 10–15 · instruction Wks 10–13 (7 sessions), final project Wks 14–15**
 
-> **Status:** Spec and session overview written to the new plan. Session 1's reading (`lessons/01-reading-the-daw-environment.html`) is drafted and revised; Lab 1 (`lessons/02-handout-audio-editing.html`, Wk 10 audio editing) is drafted. The remaining lessons, listening, and project files are not yet built. The final-project prompt (Wks 14–15) is deferred and will be drafted separately. Several cross-cutting decisions are still open; see **Decisions to settle** below before drafting further lessons.
-
 ---
 
 ## Module purpose

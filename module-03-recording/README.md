@@ -2,8 +2,6 @@
 
 **Weeks 6–9 · 8 sessions (800 minutes total)**
 
-> **Status:** Lessons 01 through 09, the two-part historical listening, the peer-listening assignment, the midterm sample-library prompt, and the terminology exam (with answer key) are all written. Session 2 (Wed Wk 6) is fully built out block by block; the other session blocks are stubs, filled in as the module is taught.
-
 ---
 
 ## Module purpose
