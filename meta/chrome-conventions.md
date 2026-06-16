@@ -75,6 +75,8 @@ Three gear tiers, mapped across file type and module:
 
 The Module 3 recording-lab variant uses the inline "(with stand and XLR cable)" parenthetical rather than listing the stand and cable as separate items, since the mic-stand-cable triplet is a unit (you can't use any one of them without the other two).
 
+Module 4's Adobe Audition follow-along (`05-handout-transferable-concepts.html`) is an exception to the Module 4 row. It is an audio editing and mixing session with no instruments and no MIDI, so its gear is audio interface, headphones only (the reading/tool tier), not the MIDI-keyboard tier.
+
 The callout markup is always the same:
 
 ```html
