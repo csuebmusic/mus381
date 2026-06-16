@@ -110,13 +110,16 @@ By the end of this module, students should be able to:
 
 **Weeks 14–15 + finals.**
 
-The shape, from the course outline:
+**Built:** `projects/final-project.html`.
 
-- Open prompt: any kind of piece (audio-driven, sampler-driven, or combined) that demonstrates fluency with the semester's skills.
-- Draft 1 due Wed Wk 14, with in-class listening and feedback.
-- Draft 2 due Wed Wk 15 (revision week), after revision on the Draft 1 feedback.
-- Final piece uploaded to the NAS during finals and posted to the class folder for everyone to hear. Optional SoundCloud upload for portfolio use.
-- A cumulative final exam runs during finals week (covers the whole course).
+- Open prompt: any kind of piece (audio-driven, sampler-driven, or combined) that demonstrates fluency with the semester's skills. Built in Ableton.
+- Length: 2 to 3 minutes.
+- Source material: every sound must be student-recorded (their Module 3 library plus anything new they record). No pre-recorded, found, or downloaded sound, and no pre-made loops. One exception: they may use another student's recording *with permission*, and must credit it. Crediting is the teaching point; credits go in a `lastname-final-credits.txt` file in the working folder.
+- Draft 1 due Wed Wk 14: a complete rough pass, submitted to the working folder for instructor/TA written feedback. No in-class listening (no time).
+- Draft 2 due Wed Wk 15: the revision, after acting on the Draft 1 feedback.
+- Final during finals: WAV 48 kHz / 32-bit float, `lastname-final.wav`, to the NAS working folder and the class folder. Optional SoundCloud for portfolio.
+- Rubric (out of 100, no revision criterion): Technique & tools 35, Form & shape 30, Sound material & sourcing 20, Mix & craft 15.
+- A cumulative final exam runs during finals week (covers the whole course), separate from this project.
 
 ---
 
@@ -126,7 +129,7 @@ The shape, from the course outline:
 
 No peer listening in Module 4: final pieces are shared in the class folder for everyone to hear, with no formal written response assignment.
 
-Full listening assignment: `listening/historical.html`.
+**Built:** `listening/historical.html`. Works: Grandmaster Flash (1981), DJ Shadow (1996), The Avalanches (2000), J Dilla (2006), plus a student-choice contemporary piece. Two photo slots (a turntablist; an MPC sampler) await Inés's photos in `assets/images/module-04-week-11/`; the page ships with a lineage timeline SVG in the meantime.
 
 ---
 
