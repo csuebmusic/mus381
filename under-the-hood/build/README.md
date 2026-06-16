@@ -142,7 +142,7 @@ random seed (42), so output is deterministic across runs.
 
 ## `generate-audio-demos-week-05.py`
 
-Generates the audio demo files used in the Module 2 Week 5 reading
+Generates the audio demo files and two SVG diagrams used in the Module 2 Week 5 reading
 (`module-02-audio-editing-mixing/lessons/07-reading-dynamics.html`)
 and the source for the dynamics tool's embedded demo
 (`module-02-audio-editing-mixing/lessons/08-tool-mixing-dynamics.html`).
@@ -163,6 +163,11 @@ Output directory: `assets/audio/module-02-week-05/`
 - `norm-quiet.wav`, `norm-loud.wav` — Section 2 supplement (normalization contrast: same shape, different peak; pairs with the wide/narrow demo to land the "scale vs. shape" distinction)
 - `timbre-scaled.wav`, `timbre-compressed.wav` — Section 2 supplement (timbre A/B at matched loudness: a scaled-only vs. compressed-then-makeup version, both peak-matched, so students can hear how compression changes the *sound* once the loudness illusion is removed)
 - `dynamic-tool-demo.wav` — source audio for the dynamics tool's built-in demo button (`08-tool-mixing-dynamics.html`). The tool embeds this file as base64 inside the HTML; see `embed-tool-demo.py` below for the re-embed step.
+
+Diagrams (`assets/images/module-02-week-05/`), rendered as the source of truth and inlined into the reading:
+
+- `wide-vs-narrow.svg` — Section 1 (dynamic range): the source loop as wide and narrow waveform panels stacked on one shared vertical scale.
+- `norm-quiet-vs-loud.svg` — Section 2 (normalizing): quiet and peak-normalized versions of one loop stacked under a shared dashed ceiling, showing that normalization changes scale, not shape.
 
 ### Implementation notes
 
