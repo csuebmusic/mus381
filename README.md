@@ -1,6 +1,6 @@
 # MUS 381 — Essentials of Music Technology
 
-Course materials, teaching tools, and TA resources for MUS 381 at CSU East Bay. This repository is the working hub for the course: readings, handouts, interactive tools, listening assignments, projects, exams, and TA notes, organized by module. The student-facing pages are served via GitHub Pages at [`csuebmusic.github.io/mus381`](https://csuebmusic.github.io/mus381/).
+Course materials, teaching tools, and TA resources for MUS 381 at CSU East Bay. This repository is the working hub for the course: readings, handouts, interactive tools, listening assignments, projects, and TA notes, organized by module. The student-facing pages are served via GitHub Pages at [`csuebmusic.github.io/mus381`](https://csuebmusic.github.io/mus381/).
 
 **Students:** start with the [syllabus](https://csuebmusic.github.io/mus381/syllabus.html) for the schedule, grading, policies, and what to bring. This README is the teaching-side map.
 
@@ -39,7 +39,7 @@ Audacity is free, simple, and forces destructive-editing thinking, which is usef
 
 ### Module 3 — Recording, sample prep & library building · Weeks 6–9
 
-Students learn to generate their own raw material: field recording, studio recording, and preparing sounds for later creative use. The deliverable is the library itself, a curated resource they draw on for the rest of the course. **Deliverable:** the midterm, a sample library plus a terminology exam (Wk 9).
+Students learn to generate their own raw material: field recording, studio recording, and preparing sounds for later creative use. The deliverable is the library itself, a curated resource they draw on for the rest of the course. **Deliverable:** the midterm sample library (Wk 9).
 
 - Reading: [The recording chain](https://csuebmusic.github.io/mus381/module-03-recording/lessons/01-reading-recording-chain.html)
 - Handout: [Recording into Audacity](https://csuebmusic.github.io/mus381/module-03-recording/lessons/02-handout-recording-into-audacity.html)
@@ -66,10 +66,6 @@ Ableton Live is the destination DAW, where Module 2's editing skills and Module 
 - Listening: [Historical (sampling)](https://csuebmusic.github.io/mus381/module-04-the-daw/listening/historical.html)
 - Project: [Final project](https://csuebmusic.github.io/mus381/module-04-the-daw/projects/final-project.html)
 
-## Exams
-
-Both graded written exams live in [`exams/`](exams/): the Module 3 midterm (`midterm-exam.md`) and the cumulative final (`final-exam.md`). Each holds the administration notes, the exam, and an answer key, and each is pinned to a take-home review packet (Module 3 handout 09, Module 4 handout 06). These files are TA-facing; the exam section of each can be copied as the student handout.
-
 ## Repository structure
 
 ```
@@ -79,7 +75,6 @@ module-01-fluency/                   Wk 1 — computer & studio fluency
 module-02-audio-editing-mixing/      Wks 2–5 — Audacity, editing, mixing → Project 1
 module-03-recording/                 Wks 6–9 — recording & sample library → midterm
 module-04-the-daw/                   Wks 10–13 — Ableton, then Audition → final project
-exams/                               Graded exams: Module 3 midterm + cumulative final
 assets/                              Shared CSS, audio, images, videos
 under-the-hood/                      Dev / build-time material (Inés + Claude; the TA can skip it)
   build/                             Scripts that generate audio demos and diagrams
@@ -108,7 +103,7 @@ Two patterns worth knowing without opening a convention file:
 
 ## For the TA
 
-To prep a week, open the relevant module's `README.md`: it carries the session-by-session plan (what to say, where students get stuck, how to use each tool, what to assess and how). The live student pages are linked per module above; the exams and their review packets are in [`exams/`](exams/).
+To prep a week, open the relevant module's `README.md`: it carries the session-by-session plan (what to say, where students get stuck, how to use each tool, what to assess and how). The live student pages are linked per module above.
 
 Faculty reference texts behind the materials (not assigned to students): Hosken, *An Introduction to Music Technology* (primary); Huber, *Modern Recording Techniques*; Holmes, *Electronic and Experimental Music*; *The Cambridge Companion to Electronic Music*.
 
