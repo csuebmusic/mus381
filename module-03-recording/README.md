@@ -79,7 +79,7 @@ Full prompt and rubric: [`projects/project-02-sample-library.html`](https://csue
 
 A cumulative in-class exam covering Modules 1 through 3 vocabulary and concepts. Closed-book, no devices. It runs as the second part of the Wed Wk 9 session, after each library is submitted and verified; Session 8 splits the 100-minute period.
 
-Full exam and answer key: [`exams/terminology-exam.md`](../exams/terminology-exam.md) *(TA-facing only)*
+Full exam and answer key: [`exams/midterm-exam.md`](../exams/midterm-exam.md) *(TA-facing only)*
 
 ---
 
@@ -543,7 +543,7 @@ Cumulative in-class exam covering Modules 1 through 3 vocabulary and concepts. C
 
 ### Exam scope
 
-The full exam and answer key live in [`exams/terminology-exam.md`](../exams/terminology-exam.md) *(TA-facing)*. The exam covers:
+The full exam and answer key live in [`exams/midterm-exam.md`](../exams/midterm-exam.md) *(TA-facing)*. The exam covers:
 - Sample rate, bit depth, dynamic range (Module 2)
 - Envelope: attack, sustain, release (Module 2)
 - Edit techniques: cuts, fades, time-stretch, pitch-shift, reverse (Module 2)
