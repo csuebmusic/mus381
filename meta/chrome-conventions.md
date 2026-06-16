@@ -75,7 +75,7 @@ Three gear tiers, mapped across file type and module:
 
 The Module 3 recording-lab variant uses the inline "(with stand and XLR cable)" parenthetical rather than listing the stand and cable as separate items, since the mic-stand-cable triplet is a unit (you can't use any one of them without the other two).
 
-Module 4's Adobe Audition follow-along (`05-handout-transferable-concepts.html`) is an exception to the Module 4 row. It is an audio editing and mixing session with no instruments and no MIDI, so its gear is audio interface, headphones only (the reading/tool tier), not the MIDI-keyboard tier.
+The MIDI-keyboard tier applies only to the sampling handout (`03-handout-sampling-in-practice.html`), the one Module 4 session where students play the keyboard (Simpler and Drum Rack). The other three Module 4 lab documents are exceptions to the row and run on the reading/tool tier (audio interface, headphones only): audio editing (`02-handout-audio-editing.html`) imports and edits clips, mixing (`04-handout-mixing-in-practice.html`) mixes an already-committed session, and the Adobe Audition follow-along (`05-handout-transferable-concepts.html`) has no instruments and no MIDI. None of the three touches the keyboard.
 
 The callout markup is always the same:
 
