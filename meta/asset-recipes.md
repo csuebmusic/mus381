@@ -138,3 +138,25 @@ Note that the empty Audacity window does not display the project sample rate any
 | `db25-to-xlr-fan-cable.webp` | DB25-to-8×XLR fan cable |
 
 **Substitution:** any equivalent manufacturer product photo for the same unit works.
+
+
+---
+
+## Module 04 — The DAW
+
+### Mon Wk 11 listening · Sampling-lineage photos
+
+**Folder:** `assets/images/module-04-week-11/`
+
+**Used in:** `module-04-the-daw/listening/historical.html` (the Module 4 historical listening, sample manipulation)
+
+**Status:** provided by Inés. Credits resolved.
+
+| Filename | Shows |
+|---|---|
+| `flash-turntables.jpg` | Grandmaster Flash at two turntables with a mixer between them and two copies of the same record: the turntablist setup behind the 1981 listening |
+| `mpc60.jpg` | An Akai MPC60: sixteen pads, each holding a sample loaded and played by hand; the sampler that anchors the lineage |
+
+**Substitution:** any equivalent photo of a two-turntable DJ setup, and of an MPC-family sampler, works; the captions describe the function, not a specific image.
+
+**No Live screenshots for this module.** Module 4's lessons embed no Ableton screenshots: they link the version-pinned Live 11 manual and follow a live instructor walk-through rather than reproducing captures, so there is no Live-screenshot asset set to document here. (An earlier draft staged Wk 10 captures in `module-04-week-10/`; that folder was removed when the approach changed.) The listening's lineage timeline is an inline SVG in the HTML, not a separate asset file.
