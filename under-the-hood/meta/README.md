@@ -25,6 +25,6 @@ Before drafting anything student-facing, scan the relevant convention file. The 
 
 ## Scope notes
 
-Most conventions in this folder apply only to **student-facing material** (the HTML in `module-XX-name/lessons/`, `listening/`, and `projects/`). Internal docs (READMEs, TA notes, module specs, this folder) are written for Inés and the TA and follow their own looser rhythm. Each convention file flags its scope at the top.
+Most conventions in this folder apply only to **student-facing material** (the HTML in `module-XX-name/lessons/`, `listening/`, and `projects/`), where they are airtight. Each convention file flags its scope at the top.
 
-The point of the scope distinction is that student-facing material is read by beginners and stylistic friction matters; internal docs are read by people who already know the material and stylistic friction would just make the docs stiffer without making them clearer.
+Internal docs (READMEs, TA notes, module specs, this folder) record state and rules rather than deliberation: the decision, the rule, the current status, the open question, without why the rule was chosen or what was weighed against it. Process belongs in chat with Inés and nowhere else.
