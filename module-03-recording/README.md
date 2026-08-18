@@ -315,7 +315,7 @@ Filename and folder pattern: `sample-library/paper/paper-crumble-slow.wav` for t
 
 Then README. Open TextEdit. **Format → Make Plain Text** is the easily-missed step; if a student skips it, they save an .rtf file with smart quotes and styled text. The plain-text move converts the document before they paste the template in. Walk the room during this step.
 
-Then end-of-session upload (same routine as every Wednesday). Drag `sample-library/` from the left pane into their own folder on the server. **Watch the drag direction:** students sometimes drag the parent local folder across instead, ending up with `[netid]/[netid]/sample-library/`. Verify a few uploads by opening `[path]/students/lastname/sample-library/paper/` on the server and counting four WAVs.
+Then end-of-session upload (same routine as every Wednesday). Drag `sample-library/` from the left pane into their own folder on the server. **Watch the drag direction:** students sometimes drag the parent local folder across instead, ending up with `[netid]/[netid]/sample-library/`. Verify a few uploads by opening `sample-library/paper/` in the student's folder on the server and counting four WAVs.
 
 **Block 6 · Wrap and phone card (5 min).** Quick close. Hand out the phone-recording reference card on the way out the door. Frame: "From this week on, you can grow your library on your own time using your phone. The card walks through the iPhone and Android setup. Next session we'll talk about other signal types — instrument level, line level, condenser mics, DI boxes — and what cables go with them."
 
