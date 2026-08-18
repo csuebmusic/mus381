@@ -4,7 +4,7 @@ Cross-cutting course policies that apply across modules. Operational documents t
 
 ## Contents
 
-- [`nas-archival-policy.md`](./nas-archival-policy.md) — what happens to student working files on the lab NAS over time. Defines the active → archive → deleted lifecycle, who runs it, and how students are notified. The TA executes the annual archive transition under the instructor's supervision.
+- [`server-archival-policy.md`](./server-archival-policy.md) — what happens to student working files on the class server over time. Files stay until the instructor removes them; the annual summer review clears folders for students who have left or are not continuing.
 
 ## Adding new policies
 
