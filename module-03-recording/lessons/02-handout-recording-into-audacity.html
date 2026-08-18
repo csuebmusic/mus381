@@ -123,7 +123,7 @@
   <li>Record the four paper sounds.</li>
   <li>Prep each recording through the three-step pipeline: <strong>denoise → trim → normalize</strong>.</li>
   <li>Export each prepped sample as a WAV.</li>
-  <li>Write the library README. Upload everything to the NAS.</li>
+  <li>Write the library README. Upload everything to the class server.</li>
 </ol>
 
 <div class="callout">
@@ -138,7 +138,7 @@
 <p>Build the folder now, before you open Audacity. This is the home for every sample you record this semester; you'll be living in it for the rest of the course, so take a minute to get the structure right.</p>
 
 <ol class="steps">
-  <li>In Finder, navigate to your local working folder: <code>~/Documents/lastname/</code>. (If you don't have a folder there yet, make one with your lowercase last name.)</li>
+  <li>In Finder, navigate to your local working folder: <code>~/Documents/netid/</code>. (If you don't have a folder there yet, make one named with your NetID, lowercase.)</li>
   <li>Inside that folder, create a new folder named <strong>sample-library</strong>. Lowercase, hyphenated. This is the library's root.</li>
   <li>Inside <code>sample-library/</code>, create a folder named <strong>paper</strong>. This is the first category folder; you'll add more categories (metal, water, voice, etc.) as you record more sounds in later weeks.</li>
   <li>Inside <code>sample-library/</code>, also create a folder named <strong>audacity-projects</strong>. This is where your working Audacity project file will live (you'll save it there in a few minutes). Keeping it separate from the prepped samples means you can browse <code>paper/</code> as a flat list of finished sounds without your <code>.aup3</code> file cluttering the view.</li>
@@ -146,7 +146,7 @@
 
 <p>Your folder should now look like this:</p>
 
-<pre><code>~/Documents/lastname/
+<pre><code>~/Documents/netid/
   sample-library/
     paper/                    &lt;-- empty for now; samples land here in Step 9
     audacity-projects/        &lt;-- empty for now; the .aup3 project lands here after the test recording
@@ -372,7 +372,7 @@
 
 <div class="callout">
   <div class="callout-label">Save your work</div>
-  <p>Now is the right moment to save the Audacity project, before you start capturing real recordings. <span class="menu-path">File → Save Project As…</span>, navigate to <code>~/Documents/lastname/sample-library/audacity-projects/</code> (the folder you built in Step 1), name the project <code>sample-library.aup3</code>, click <strong>Save</strong>. From this point on, save every few minutes with <kbd>Cmd</kbd> + <kbd>S</kbd>.</p>
+  <p>Now is the right moment to save the Audacity project, before you start capturing real recordings. <span class="menu-path">File → Save Project As…</span>, navigate to <code>~/Documents/netid/sample-library/audacity-projects/</code> (the folder you built in Step 1), name the project <code>sample-library.aup3</code>, click <strong>Save</strong>. From this point on, save every few minutes with <kbd>Cmd</kbd> + <kbd>S</kbd>.</p>
 </div>
 
 <hr>
@@ -525,7 +525,7 @@
   <li>The Export Audio dialog opens. Fill it in:
     <ul>
       <li><strong>File Name:</strong> the sample's name following the convention below</li>
-      <li><strong>Folder:</strong> click <strong>Browse…</strong> and pick <code>~/Documents/lastname/sample-library/paper/</code></li>
+      <li><strong>Folder:</strong> click <strong>Browse…</strong> and pick <code>~/Documents/netid/sample-library/paper/</code></li>
       <li><strong>Format:</strong> <code>WAV (Microsoft)</code></li>
       <li><strong>Channels:</strong> <strong>Mono</strong></li>
       <li><strong>Sample Rate:</strong> <code>48000 Hz</code></li>
@@ -558,7 +558,7 @@
 <p>After all four exports, open the <code>paper/</code> folder in Finder. You should see exactly these four files:</p>
 
 <figure>
-  <pre><code>~/Documents/lastname/sample-library/paper/
+  <pre><code>~/Documents/netid/sample-library/paper/
   paper-crumble-fast.wav
   paper-crumble-slow.wav
   paper-rip-fast.wav
@@ -569,7 +569,7 @@
 
 <hr>
 
-<h2>Step 10 · Write the library README, upload to NAS</h2>
+<h2>Step 10 · Write the library README, upload to the server</h2>
 
 <p>A library without a README is a pile of files. A README is the document at the root of the library that explains what's in it, how it's organized, and how to find things. You write the first version today and update it every time you add to the library.</p>
 
@@ -577,7 +577,7 @@
   <li>Open <strong>TextEdit</strong> (in the Applications folder or via Spotlight).</li>
   <li>From the menu bar: <span class="menu-path">Format → Make Plain Text</span> (or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>). The document is now a plain-text file, not a styled document.</li>
   <li>Paste in the template below and fill in the bracketed parts.</li>
-  <li>Save as <code>README.txt</code> in <code>~/Documents/lastname/sample-library/</code>.</li>
+  <li>Save as <code>README.txt</code> in <code>~/Documents/netid/sample-library/</code>.</li>
 </ol>
 
 <pre><code>SAMPLE LIBRARY · [your name]
@@ -620,18 +620,18 @@ NOTES
 
 <h3>End of session</h3>
 
-<p>The <strong>Session Routines</strong> card has the full end-of-session routine. The steps below are the lab-specific part (what to upload) that fold into the card's NAS-upload phase.</p>
+<p>The <strong>Session Routines</strong> card has the full end-of-session routine. The steps below are the lab-specific part (what to upload) that fold into the card's upload phase.</p>
 
 <ol class="steps">
-  <li>Run the start of the card's NAS-upload phase (reconnect to the NAS if you've disconnected; <kbd>Cmd</kbd> + <kbd>K</kbd> in Finder, enter the server address from the whiteboard, sign in).</li>
-  <li>Navigate to <code>[path]/students/lastname/</code>.</li>
-  <li>Drag your entire <code>sample-library/</code> folder from <code>~/Documents/lastname/</code> to <code>[path]/students/lastname/</code> on the NAS. Wait for the copy to finish.</li>
-  <li>Verify everything copied by opening <code>[path]/students/lastname/sample-library/paper/</code> on the NAS and confirming all four WAVs are there.</li>
+  <li>Open FileZilla and connect from the Quickconnect bar.</li>
+  <li>Put the <strong>left</strong> pane on <code>~/Documents/netid/</code> and stay in your own folder on the <strong>right</strong>.</li>
+  <li>Drag your entire <code>sample-library/</code> folder across, choosing <strong>Overwrite if source newer</strong> if asked. Wait for the transfer queue to clear.</li>
+  <li>Verify everything copied by opening <code>sample-library/paper/</code> in the right pane and confirming all four WAVs are there.</li>
 </ol>
 
-<p>Then continue with the rest of the card's end-of-session routine: close Audacity and TextEdit, eject the NAS, sign out of browser accounts, quit any remaining apps, knobs back to zero, unplug everything (including the mic's XLR), stow the gear back in the lab's gear storage, chair in.</p>
+<p>Then continue with the rest of the card's end-of-session routine: close Audacity and TextEdit, disconnect and quit FileZilla, sign out of browser accounts, quit any remaining apps, knobs back to zero, unplug everything (including the mic's XLR), stow the gear back in the lab's gear storage, chair in.</p>
 
-<p>Your library now lives in two places: your local folder for today, and the NAS as the master copy. Next session you'll pull it back down to whichever lab machine you sit at, and continue.</p>
+<p>Your library now lives in two places: your local folder for today, and the server as the master copy. Next session you'll download it to whichever lab machine you sit at, and continue.</p>
 
 <hr>
 

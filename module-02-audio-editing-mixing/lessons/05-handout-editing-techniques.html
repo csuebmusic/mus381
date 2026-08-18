@@ -87,10 +87,10 @@
 <h2>What we're doing today</h2>
 
 <ol class="steps">
-  <li>Set up: connect to the NAS, copy the Project 1 sample bank into your local working folder, create a Project 1 Audacity project.</li>
+  <li>Set up: connect to the class server, copy the Project 1 sample bank into your local working folder, create a Project 1 Audacity project.</li>
   <li>Walk through ten editing techniques in order. For each: a one-line recap, where to click in Audacity, and a hands-on exercise on a sample.</li>
   <li>Open the Project 1 prompt. Browse the bank, pick three sounds you find interesting, place them in your project, save.</li>
-  <li>Upload everything to the NAS using the end-of-session routine.</li>
+  <li>Upload everything to the server using the end-of-session routine.</li>
 </ol>
 
 <div class="callout">
@@ -102,28 +102,29 @@
 
 <h2>Setup</h2>
 
-<h3>Pull the sample bank into your local folder</h3>
+<h3>Download the sample bank into your local folder</h3>
 
-<p>You're going to grab the Project 1 sample bank during your start-of-session routine, before the NAS gets ejected. If you're already past the NAS phase of the routine and the NAS is no longer in Finder's sidebar, reconnect (<kbd>Cmd</kbd> + <kbd>K</kbd>, server address, sign in).</p>
+<p>Grab the Project 1 sample bank while you're still connected during your start-of-session routine. If you've already disconnected, open FileZilla and connect again from the Quickconnect bar.</p>
 
 <ol class="steps">
-  <li>With the NAS mounted, navigate to <code>shared/sample-banks/project-01/</code>. You'll see folders organized by sound category: <code>attack-sharp</code>, <code>sustain-long</code>, <code>texture-continuous</code>, and so on.</li>
-  <li>In your local working folder at <code>~/Documents/lastname/</code>, make a new folder called <code>project-01</code>. Inside that, make a folder called <code>sources</code>.</li>
-  <li>Copy the entire contents of the NAS's <code>project-01/</code> folder into your local <code>~/Documents/lastname/project-01/sources/</code>. This may take a minute. The bank has 40 to 80 sounds.</li>
+  <li>In Finder, inside <code>~/Documents/netid/</code>, make a folder called <code>project-01</code>. Inside that, make a folder called <code>sources</code>.</li>
+  <li>In FileZilla's <strong>right</strong> pane, click the <code>/</code> at the top of the directory tree, then open <code>public</code>, then <code>sample-banks</code>, then <code>project-01</code>. You'll see folders organized by sound category: <code>attack-sharp</code>, <code>sustain-long</code>, <code>texture-continuous</code>, and so on.</li>
+  <li>In the <strong>left</strong> pane, navigate to <code>~/Documents/netid/project-01/sources/</code>.</li>
+  <li>Click into the right pane, select everything (<kbd>Cmd</kbd> + <kbd>A</kbd>), and drag it into the left pane. This may take a minute. The bank has 40 to 80 sounds. Watch the transfer queue at the bottom of the window and wait for it to clear.</li>
   <li>Verify the copy finished: open the local <code>sources</code> folder and confirm all the category subfolders are there.</li>
-  <li>Now eject the NAS. You're done with NAS for the working portion of the session.</li>
+  <li>Choose <strong>Server → Disconnect</strong> and quit FileZilla. You're done with it for the working portion of the session.</li>
 </ol>
 
 <div class="callout warn">
-  <div class="callout-label">Local-first, NAS as sync</div>
-  <p>You've copied the entire bank locally. You'll work from your local copy for the rest of the project. The NAS bank stays untouched, so anyone else can grab from it cleanly.</p>
+  <div class="callout-label">Local-first, server as sync</div>
+  <p>You've copied the entire bank locally. You'll work from your local copy for the rest of the project. The bank on the server stays untouched, so anyone else can grab from it cleanly.</p>
 </div>
 
 <h3>Create the Project 1 Audacity project</h3>
 
 <ol class="steps">
   <li>Open Audacity. Confirm the project format is <strong>48 kHz, 24-bit</strong> (the Module 2 standard).</li>
-  <li><strong>File → Save Project As…</strong> Save to <code>~/Documents/lastname/project-01/</code> as <code>lastname-project01.aup3</code>.</li>
+  <li><strong>File → Save Project As…</strong> Save to <code>~/Documents/netid/project-01/</code> as <code>lastname-project01.aup3</code>.</li>
   <li>You now have an empty project saved at the right place. <strong>Leave it empty for now.</strong> This is the file you'll fill in during the "Project 1 begins" block at the end of class. Today's technique exercises live somewhere else (next step).</li>
 </ol>
 
@@ -131,8 +132,8 @@
 
 <ol class="steps">
   <li><strong>File → New</strong> (or <kbd>Cmd</kbd> + <kbd>N</kbd>) to open a new empty project.</li>
-  <li><strong>File → Save Project As…</strong> Save it to <code>~/Documents/lastname/project-01/</code> as <code>lastname-techniques-scratch.aup3</code>.</li>
-  <li>This is where the ten technique exercises will happen. You can experiment freely, undo, delete tracks, try things twice. The scratch project is throwaway; it lives on your machine and won't be uploaded to the NAS at the end.</li>
+  <li><strong>File → Save Project As…</strong> Save it to <code>~/Documents/netid/project-01/</code> as <code>lastname-techniques-scratch.aup3</code>.</li>
+  <li>This is where the ten technique exercises will happen. You can experiment freely, undo, delete tracks, try things twice. The scratch project is throwaway; it lives on your machine and stays there.</li>
 </ol>
 
 <div class="callout">
@@ -467,12 +468,12 @@
 
 <ol class="steps">
   <li>Save the project once more (<kbd>Cmd</kbd> + <kbd>S</kbd>).</li>
-  <li>Run the start of the card's NAS-upload phase (reconnect to the NAS if you've disconnected; navigate to <code>[path]/students/lastname/project-01/</code>, making the folder if it doesn't exist).</li>
-  <li>Copy your <code>lastname-project01.aup3</code> from your local <code>~/Documents/lastname/project-01/</code> folder to the NAS folder. <strong>Don't copy the sources folder; it's already on the NAS. Don't copy the scratch project either; it lives only on your local machine.</strong></li>
-  <li>Verify the upload by reopening the NAS folder.</li>
+  <li>Open FileZilla and connect from the Quickconnect bar. In the <strong>right</strong> pane, open <code>project-01/</code> inside your own folder, making it if it isn't there yet (right-click, <strong>Create directory</strong>).</li>
+  <li>In the <strong>left</strong> pane, navigate to <code>~/Documents/netid/project-01/</code>. Drag <code>lastname-project01.aup3</code> across on its own. The sources folder is already on the server, and the scratch project stays on your machine.</li>
+  <li>Verify the upload: the transfer queue empties and the file appears in the right pane.</li>
 </ol>
 
-<p>Then continue with the rest of the card's end-of-session routine: eject the NAS, sign out of browser accounts, quit all apps, knobs back to zero, unplug everything, stow the gear back in the lab's gear storage, chair in.</p>
+<p>Then continue with the rest of the card's end-of-session routine: disconnect and quit FileZilla, sign out of browser accounts, quit all apps, knobs back to zero, unplug everything, stow the gear back in the lab's gear storage, chair in.</p>
 
 <hr>
 

@@ -104,7 +104,7 @@ The callout markup is always the same:
 ```html
 <div class="callout">
   <div class="callout-label">End of session</div>
-  <p>Before leaving the station, run the end-of-session routine on the <strong>Session Routines</strong> card. NAS upload first, gear teardown second.</p>
+  <p>Before leaving the station, run the end-of-session routine on the <strong>Session Routines</strong> card. Upload first, gear teardown second.</p>
 </div>
 ```
 
@@ -121,7 +121,7 @@ Files that don't:
 Every lab handout's End of session block closes with the same sentence pointing back to the Session Routines card:
 
 ```
-Then continue with the rest of the card's end-of-session routine: eject the NAS, sign out of browser accounts, quit all apps, knobs back to zero, unplug everything (including the mic's XLR from both ends), stow the gear back in the lab's gear storage, chair in.
+Then continue with the rest of the card's end-of-session routine: disconnect and quit FileZilla, sign out of browser accounts, quit all apps, knobs back to zero, unplug everything (including the mic's XLR from both ends), stow the gear back in the lab's gear storage, chair in.
 ```
 
 The Session Routines card is the canonical source for what's in this list. The sentence is repeated in lab handouts as a salience cue, not as the authoritative procedure. **If the routine changes (a step added, removed, or reordered on the card), update the card first, then sweep every lab handout for the same edit.** Otherwise the cue and the card will drift, and students who follow the cue will skip whatever the card added.

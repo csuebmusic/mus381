@@ -1,6 +1,6 @@
 # Project 1 sample bank: preparation notes
 
-**Location:** `[path]/shared/sample-banks/project-01/` on the NAS
+**Location:** `/public/sample-banks/project-01/` on the server
 **Curated by:** Inés
 **Needed by:** Wed Wk 3; students begin Project 1 this day
 
@@ -54,7 +54,7 @@ This isn't a checklist students need to be aware of; it's a curatorial principle
 ## Folder structure
 
 ```
-[path]/shared/sample-banks/project-01/
+/public/sample-banks/project-01/
   attack-sharp/
   attack-soft/
   sustain-long/
@@ -83,15 +83,15 @@ The actual curation is yours. Suggested rough timeline:
 
 - **Before Wk 1**: gather candidate sounds from your existing library, public-domain archives, Freesound (CC0 material), or new field recordings
 - **By Wk 1**: rough cut, organize into the folder structure
-- **By Wk 3 Wed**: bank uploaded to NAS, README finalized, tested by trying to import a few sounds into Audacity from a lab machine
+- **By Wk 3 Wed**: bank uploaded to the server, README finalized, tested by trying to import a few sounds into Audacity from a lab machine
 
 ---
 
-## NAS access
+## server access
 
-The bank lives at `[path]/shared/sample-banks/project-01/`. This is read-only for students; they can browse and copy from it but can't modify it. This needs to be set when the NAS is configured (talk to IT or whoever set up the share).
+The bank lives at `/public/sample-banks/project-01/`. This is read-only for students; they can browse and copy from it but can't modify it. This needs to be set when the server is configured (talk to IT or whoever set up the share).
 
-When students need to use a sound, they'll **copy** it from the shared bank into their own `~/Documents/lastname/project-01/sources/` folder. This way the master bank stays clean and students have local copies they can work with destructively.
+When students need to use a sound, they'll **copy** it from the shared bank into their own `~/Documents/[netid]/project-01/sources/` folder. This way the master bank stays clean and students have local copies they can work with destructively.
 
 ---
 

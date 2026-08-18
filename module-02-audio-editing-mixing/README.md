@@ -51,14 +51,14 @@ By the end of this module, students should be able to:
 
 ## Deliverable: Project 1: Musique concrète
 
-A 2-minute piece built entirely from source sounds provided on the NAS, demonstrating editing and mixing skills learned in the module.
+A 2-minute piece built entirely from source sounds provided on the server, demonstrating editing and mixing skills learned in the module.
 
 Full project prompt and rubric: [`projects/project-01-musique-concrete.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/projects/project-01-musique-concrete.html)
 
 **Timeline:**
 - Wk 3 Wed: students begin building
 - Wk 4 Wed: continue building, apply mixing concepts as they're introduced
-- Wk 5 Wed: final work session + submission, files uploaded to NAS (private working folder + class listening folder)
+- Wk 5 Wed: final work session + submission, files uploaded to the server (private working folder + class listening folder)
 
 ---
 
@@ -90,7 +90,7 @@ Block-by-block facilitation, demo scripts, common confusions, and pacing fallbac
 
 ## Pre-module preparation (Inés / TA)
 
-- **Sample bank curated and uploaded** to `[path]/shared/sample-banks/project-01/` before Wed Wk 3; full scope and curation guidance in [`projects/project-01-sample-bank-notes.md`](./projects/project-01-sample-bank-notes.md)
+- **Sample bank curated and uploaded** to `/public/sample-banks/project-01/` before Wed Wk 3; full scope and curation guidance in [`projects/project-01-sample-bank-notes.md`](./projects/project-01-sample-bank-notes.md)
 - **Audacity installed and tested** on every lab machine
 - **Interactive tools built and tested** in advance of the sessions that use them
 
@@ -101,7 +101,7 @@ Block-by-block facilitation, demo scripts, common confusions, and pacing fallbac
 ### Recurring confusions to expect across the module
 
 - **"Why does my recording sound thin/loud/quiet?"** Almost always a level-staging issue, an interface direct-monitor mix knob set wrong, or headphones with the in-line slider not all the way up. Train yourself to ask three questions in this order: (1) Is the in-line slider on the headphones up? (2) Is the interface mix knob set correctly (60% direct / 40% USB by default)? (3) Are the levels in Audacity reasonable (peaks around -12 to -6 dBFS, never clipping)?
-- **"My file disappeared."** Almost always means they saved to the wrong location, or saved as a project file (`.aup3`) when they meant to export as WAV, or didn't upload to NAS at session end. Walk them through the local-first / NAS-as-sync workflow again. The Session Routines reference card is at every station for this reason, point at it.
+- **"My file disappeared."** Almost always means they saved to the wrong location, or saved as a project file (`.aup3`) when they meant to export as WAV, or didn't upload to the server at session end. Walk them through the local-first / server-as-sync workflow again. The Session Routines reference card is at every station for this reason, point at it.
 - **"Audacity crashed."** It will. Audacity's autosave is good but not perfect. Reinforce the version-saving habit (`-v1.aup3`, `-v2.aup3`) early. If a student lost work, the right response is sympathy and a process correction, not panic.
 - **"Why doesn't my edit sound smooth?"** Usually missing fades. The single most useful Audacity habit is to add a small fade-in/fade-out (5-50 ms) on every edit boundary. Click pops at edit points are the audible signature of someone new to editing.
 - **"How do I [thing I've never done]?"** Resist the urge to do it for them. Sit next to them, ask where they are, ask what they've tried. The goal is for them to learn the move, not for you to demonstrate competence.
@@ -128,7 +128,7 @@ Every student opens Audacity for every Module 2 session. The same opening sequen
 1. Open Audacity (already in the dock on lab machines)
 2. Set project sample rate to 48 kHz (bottom-left of window). This is the Module 2 standard
 3. Set project to record from the audio interface (top toolbar dropdown, should default correctly but verify)
-4. Open last session's project file from `~/Documents/lastname/` (after the first session)
+4. Open last session's project file from `~/Documents/[netid]/` (after the first session)
 
 Demonstrate this once on Wed Wk 2 and reinforce it Mon Wk 3 and Wed Wk 3. By Wk 4, it should be automatic. If a student is fumbling with this in Wk 5, they've been disengaging; check in.
 
@@ -177,7 +177,7 @@ Students leave with conceptual fluency on what digital audio actually is: sample
 From Module 1 (Wk 1 Wed, six days ago):
 - They've recorded a short audio file with a microphone in QuickTime and saved it locally
 - They've done a light first pass at gain staging (Module 1 calls the move out by name and promises a deeper return in Module 3)
-- They know `~/Documents/lastname/` and the NAS workflow
+- They know `~/Documents/[netid]/` and the server workflow
 - They know the basic gear in the room (interface, mic, headphones)
 
 What they do **not** know:
@@ -266,7 +266,7 @@ Close with a small bridge to Wednesday: "On Wednesday we'll start working in Aud
 Two halves:
 
 - **Part 1 (Digital Audio Explorer):** students hear *how complex sounds are built from sines*. The tool walks them from one sine, to summed sines, to the harmonic series, to timbre. By the end they should understand that "real sound is the sum of sines" is literal and physical, not a metaphor, and they should have hands-on intuition for fundamental, partial, and timbre.
-- **Part 2 (Audacity orientation):** students open Audacity for the first time, set the project format to course standard (48 kHz / 24-bit), import a sample, make a basic selection-cut-fade, save the project, export a WAV, and complete the NAS round-trip. Leave with hands on the software and the workflow.
+- **Part 2 (Audacity orientation):** students open Audacity for the first time, set the project format to course standard (48 kHz / 24-bit), import a sample, make a basic selection-cut-fade, save the project, export a WAV, and complete the server round-trip. Leave with hands on the software and the workflow.
 
 ### Materials
 
@@ -277,7 +277,7 @@ Two halves:
 
 - Walk the room and lab's gear storage: gear storage baseline (see Module-wide concerns)
 - Verify Audacity opens cleanly on every machine (test on at least 3 stations); set project sample rate to 48000 Hz, 24-bit format
-- Confirm `orientation-sample.wav` is on the NAS at `shared/module-02/orientation/`. **If it's not there, the lab can't run; escalate to Inés.** It's a short (~16 s) stereo bell-like resonance that decays gradually to silence; students cut into the decay and fade what remains in Step 5 of the handout.
+- Confirm `orientation-sample.wav` is on the server at `/public/module-02/orientation/`. **If it's not there, the lab can't run; escalate to Inés.** It's a short (~16 s) stereo bell-like resonance that decays gradually to silence; students cut into the decay and fade what remains in Step 5 of the handout.
 - Open the explorer tool on the instructor station and confirm sound plays from the projector
 - Open the orientation handout (the Lab 1 handout, `03-handout-audacity-orientation.html`) on the instructor station and on each student station's desktop browser
 - Confirm the Session Routines reference card is posted and visible at every station
@@ -306,17 +306,17 @@ Walk the room throughout. Listen for genuine engagement vs. clicking-without-lis
 
 Switch to the Audacity orientation handout (the Lab 1 handout). Have students close the explorer and open the handout in a browser. Walk through the seven steps on the projector with students following along on their machines. **Don't move on until everyone is at each step.** This is one of those sessions where pacing to the slowest student is the right thing.
 
-The handout is detailed enough that students could in principle do it on their own. Your job in class is (a) catching the moments where someone misses a step and falls behind, (b) demonstrating each move on the projector so they have a model to mirror, (c) reinforcing the *workflow logic* (NAS-to-local at the start, work locally, local-to-NAS at the end) that the handout encodes.
+The handout is detailed enough that students could in principle do it on their own. Your job in class is (a) catching the moments where someone misses a step and falls behind, (b) demonstrating each move on the projector so they have a model to mirror, (c) reinforcing the *workflow logic* (server-to-local at the start, work locally, local-to-server at the end) that the handout encodes.
 
 Suggested pacing within Block 3:
 
-- **Step 1 (NAS pull, 6 min)**: first contact with the NAS workflow as a real action, not just a card on the wall. Watch for students who try to open `orientation-sample.wav` directly from the NAS rather than copying it locally first.
+- **Step 1 (download, 6 min)**: first contact with the server workflow as a real action, not just a card on the wall. Watch for students who try to open `orientation-sample.wav` directly from the server rather than copying it locally first.
 - **Step 2 (Open Audacity, set format, 4 min)**: quick.
 - **Step 3 (Interface tour, 5 min)**: point at the named regions on the projector. The annotated screenshot in the handout is a reference; students don't need to memorize it today.
 - **Step 4 (Import + play, 4 min)**: should be quick. Watch for students who try double-clicking the WAV in Finder instead of using File → Import.
 - **Step 5 (Selection, cut, fade, 12 min)**: the heart of Part 2. Demonstrate each move on the projector. Pause after the cut so they can play and *hear* the abrupt ending before doing the fade. The fade transforms the sound from "broken edit" to "deliberate edit"; that contrast is the lesson.
 - **Step 6 (Save + export, 9 min)**: the project-vs-export distinction trips students up. Reinforce: "Save the project to keep working tomorrow. Export the WAV to have something you can submit or share." On first export, students will see Audacity's new "How would you like to export?" interstitial (Share to audio.com vs. On your computer). Make sure they click <strong>Export to computer</strong> and tick <strong>Don't show again</strong> so the prompt is suppressed on future exports.
-- **Step 7 (NAS upload, 5 min)**: closes the loop on the workflow that opened the session.
+- **Step 7 (upload, 5 min)**: closes the loop on the workflow that opened the session.
 
 ### Block 4: Wrap and preview (10 min)
 
@@ -327,19 +327,19 @@ Quick close: "On Monday we go deeper into editing: the full vocabulary, plus env
 - **The explorer's pitch experience.** Some students will *hear* the harmonic series fusing into one note before others. If a student says "I hear separate notes" when partials 1+2 are on, ask them to bring up partials 3 and 4 too and listen again; the fusion strengthens with more partials. If they still hear separate notes, that's fine; it's a perceptual skill that develops with listening practice.
 - **Cursor vs. selection in Audacity.** Cursor is a single point in time; selection is a range. Many students try to "cut a section" with just the cursor placed. Demonstrate both, in contrast.
 - **Project file vs. audio file.** `.aup3` is the working document; you can't open it without Audacity, and links to the source data must be intact. Audio files (WAV/MP3) are universal. The handout calls this out, but expect to repeat it in person.
-- **NAS-direct editing.** Students will sometimes try to open `orientation-sample.wav` directly from the mounted NAS. Catch this early: always copy to local first.
+- **server-direct editing.** Students will sometimes try to open `orientation-sample.wav` directly from the server. Catch this early: always copy to local first.
 - **The audio.com export prompt.** Audacity's recent versions show a "How would you like to export?" interstitial on first export, with two big buttons (Share to audio.com vs. On your computer) and a "Don't show again" tick. Students who click the cloud option will upload their file to a third-party service instead of saving locally. Watch for this during Step 6; the handout names it explicitly, but it's worth pointing at on the projector. Tell them to tick "Don't show again" so the prompt is suppressed on future exports.
 
 ### Pacing fallbacks
 
 - **If running long in Part 1:** trim Section 4 (Timbre) free-exploration time. The first three sections carry the main pedagogical weight; Section 4 can be a 4-minute demo + brief student touch.
-- **If running long in Part 2:** the most cuttable step is Step 7 (NAS upload). It can be done after class with a 30-second reminder ("Don't leave without uploading. The card on your station has the steps.") But better to keep it in if at all possible; first-day NAS upload is the workflow-formation moment.
+- **If running long in Part 2:** the most cuttable step is Step 7 (upload). It can be done after class with a 30-second reminder ("Don't leave without uploading. The card on your station has the steps.") But better to keep it in if at all possible; first-day upload is the workflow-formation moment.
 - **If running short:** in Part 1 Section 4, give 5–7 minutes of timbre free-exploration ("Try to make a sound that's like a brass instrument, then a woodwind, then something inhuman"). In Part 2 Step 5, give them an extra try-this: "Now reverse the sample. What does the envelope look like? What does the slow fade-out become?"
 
 ### After class
 
 - Walk the room before locking up. Make sure all machines are logged out and all gear is back in the lab's gear storage. Spot-check that headphone sliders are down and interface mix knobs are reset to 60% direct / 40% USB (the next-session default).
-- Verify NAS uploads happened (spot-check 3-4 student folders for `lastname-orientation.aup3` and `lastname-orientation.wav`).
+- Verify uploads happened (spot-check 3-4 student folders for `lastname-orientation.aup3` and `lastname-orientation.wav`).
 - Note any common confusions for the after-Module retrospective.
 
 ---
@@ -464,14 +464,14 @@ Two halves:
 
 ### Materials
 
-- **Lab handout:** [`lessons/05-handout-editing-techniques.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/05-handout-editing-techniques.html): covers the full session including setup, all ten techniques with menu paths and exercises, the Project 1 starter, and the end-of-session NAS routine. The handout is the script; this TA-notes block is for pacing, common confusions, and judgment calls.
+- **Lab handout:** [`lessons/05-handout-editing-techniques.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/05-handout-editing-techniques.html): covers the full session including setup, all ten techniques with menu paths and exercises, the Project 1 starter, and the end-of-session the server routine. The handout is the script; this TA-notes block is for pacing, common confusions, and judgment calls.
 - **Project 1 prompt:** [`projects/project-01-musique-concrete.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/projects/project-01-musique-concrete.html): open on the projector during the Project-1-begins block.
-- **Sample bank** at NAS `shared/sample-banks/project-01/`: must be ready by class start. See [`projects/project-01-sample-bank-notes.md`](./projects/project-01-sample-bank-notes.md).
+- **Sample bank** at server `/public/sample-banks/project-01/`: must be ready by class start. See [`projects/project-01-sample-bank-notes.md`](./projects/project-01-sample-bank-notes.md).
 
 ### Pre-class checklist
 
 - Walk the room and lab's gear storage (gear storage baseline)
-- **Verify the sample bank is ready and complete on the NAS** at `shared/sample-banks/project-01/`. The handout assumes the canonical category folders (`attack-sharp`, `attack-soft`, `sustain-long`, `sustain-short`, `texture-continuous`, `voice-and-language`, `found-objects`, `natural-environment`, `mechanical-electronic`). If the bank is missing or has different folder names, **the handout's exercises won't work**. Confirm before class.
+- **Verify the sample bank is ready and complete on the server** at `/public/sample-banks/project-01/`. The handout assumes the canonical category folders (`attack-sharp`, `attack-soft`, `sustain-long`, `sustain-short`, `texture-continuous`, `voice-and-language`, `found-objects`, `natural-environment`, `mechanical-electronic`). If the bank is missing or has different folder names, **the handout's exercises won't work**. Confirm before class.
 - Verify Audacity opens cleanly on every machine; set project format to 48 kHz / 24-bit
 - Open the Project 1 prompt on the instructor station
 - Have the Lab 2 handout (`05-handout-editing-techniques.html`) open in a browser at every student station's desktop
@@ -482,8 +482,8 @@ Two halves:
 
 Walk students through the handout's "Setup" and "Before the techniques" sections together on the projector. Four parts:
 
-- NAS connect, then **copy the entire sample bank** (~40-80 sounds) from `shared/sample-banks/project-01/` into the student's local `~/Documents/lastname/project-01/sources/`. The local copy is what they'll work from for the rest of the module. The first time this copy runs it'll take a minute or two depending on bank size.
-- Open Audacity. Save an empty project as `lastname-project01.aup3` in `~/Documents/lastname/project-01/`. **This is *the* Project 1 file students will keep returning to. It stays empty for now.**
+- Connect with FileZilla, then **copy the entire sample bank** (~40-80 sounds) from `/public/sample-banks/project-01/` into the student's local `~/Documents/[netid]/project-01/sources/`. The local copy is what they'll work from for the rest of the module. The first time this copy runs it'll take a minute or two depending on bank size.
+- Open Audacity. Save an empty project as `lastname-project01.aup3` in `~/Documents/[netid]/project-01/`. **This is *the* Project 1 file students will keep returning to. It stays empty for now.**
 - File → New, then save as `lastname-techniques-scratch.aup3` in the same folder. **This is where today's technique exercises will happen.** The two-project model is intentional: keeping the Project 1 file untouched until the Project 1 begins block prevents technique-experiment contamination, which was a real risk in earlier drafts of this handout. If students forget which file they're in, look at the title bar; Audacity shows the filename.
 - Walk through the zoom and zero-crossings prelude (in the scratch project). Show the Cmd+E (zoom to selection) and Cmd+F (fit to width) pair on the projector. Then make a selection in a sample, press Z, and point out how the edges shift slightly to land on zero crossings. The handout has a "Try it" mini-exercise; students do it on their own machines once they've seen it on the projector. Total prelude time: about 5 min, included in this 15 min block.
 
@@ -538,9 +538,9 @@ Walk the room. The most useful thing you can do is *ask questions*, not provide 
 
 If a student is stuck on "I don't know what I want to make," that's normal. Suggest the handout's heuristic (short percussive + long continuous + specific thing) and let them pick from there. Don't let them sit frozen.
 
-#### End of session: NAS upload (last 5 min)
+#### End of session: upload (last 5 min)
 
-Final 5 minutes: students follow the handout's end-of-session routine. Save the project (`Cmd+S`), copy `lastname-project01.aup3` (NOT the sources folder, which is already on NAS; NOT the scratch project either, which lives only on local) to `[path]/students/lastname/project-01/` on the NAS, eject NAS, log out.
+Final 5 minutes: students follow the handout's end-of-session routine. Save the project (`Cmd+S`), copy `lastname-project01.aup3` (NOT the sources folder, which is already on the server; NOT the scratch project either, which lives only on local) to `project-01/` in their own folder on the server, eject server, log out.
 
 ### Common confusions
 
@@ -550,16 +550,16 @@ Final 5 minutes: students follow the handout's end-of-session routine. Save the 
 - **"Can I record my own sounds?"** Not for Project 1 (that's Module 3). For Project 1, bank only.
 - **Trim looks missing.** Hidden under Remove Special. Flag verbally when you reach technique 2.
 - **Reverse looks missing.** Hidden under Effect → Special. Flag when you reach technique 7.
-- **The sample bank is huge / scrolling Finder is slow.** Once it's copied locally, browsing is much faster than over the network. If a student is browsing the NAS share directly (because they skipped the copy step), they'll experience friction. Catch this and have them complete Block 1 properly.
+- **The sample bank is huge / scrolling Finder is slow.** Once it's copied locally, browsing is much faster than over the network. If a student is browsing the server directly (because they skipped the copy step), they'll experience friction. Catch this and have them complete Block 1 properly.
 
 ### Pacing fallbacks
 
-The session is tight. 100 min for a setup + zoom prelude + ten techniques + Project 1 starter + NAS upload runs slightly over on paper. Like Wed Wk 2, students who don't finish in class can finish technique exercises at home: the handout is self-contained and the bank is on their local machine. What MUST happen in class:
+The session is tight. 100 min for a setup + zoom prelude + ten techniques + Project 1 starter + upload runs slightly over on paper. Like Wed Wk 2, students who don't finish in class can finish technique exercises at home: the handout is self-contained and the bank is on their local machine. What MUST happen in class:
 
 1. The bank must get copied locally (Block 1)
 2. The zoom and zero-crossings habit must get a projector demo (Block 1's prelude). Without this, every cut they make for the next two weeks will produce click pops they don't know how to fix
 3. Crossfade and the time/pitch trio (techniques 5 and 8-10) must be demonstrated on the projector (these are the trickiest moves; students who skip them in class often skip them entirely in their pieces)
-4. Students must leave with `lastname-project01.aup3` containing three sounds, saved to NAS
+4. Students must leave with `lastname-project01.aup3` containing three sounds, saved to the server
 
 If running long: skip the in-audio loop variant in technique 6 (the playback-loop demo is enough). Skip the +100 percent variant in technique 8 and the +7 semitone variant in technique 10 (the -50%/-12 demos are enough).
 
@@ -567,7 +567,7 @@ If running short (rare): give more time to free Project 1 sketching. More browsi
 
 ### After class
 
-- Verify NAS uploads. Every student should have `[path]/students/lastname/project-01/lastname-project01.aup3` on the NAS by end of class. Spot-check 3-4 student folders.
+- Verify uploads. Every student should have `project-01/lastname-project01.aup3` in their own folder on the server by end of class. Spot-check 3-4 student folders.
 - Walk the room before locking up: all gear back in the lab's gear storage, machines logged out. Spot-check that headphone sliders are down and interface mix knobs are reset to 60% direct / 40% USB.
 - Note any students whose project file shows zero or one tracks at the end of class. They didn't finish Project 1 setup; check in with them at Wed Wk 4.
 
@@ -590,7 +590,7 @@ The session is deliberately compact on the new content because students need wor
 
 ### Materials
 
-- **Lab handout:** [`lessons/06-handout-mixing-in-audacity.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/06-handout-mixing-in-audacity.html): covers the full session including setup, the three mixing tools with hands-on exercises, the destructive vs. non-destructive comparison table, the Module 4 Ableton forecast, the Project 1 work block, and the end-of-session NAS routine.
+- **Lab handout:** [`lessons/06-handout-mixing-in-audacity.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/06-handout-mixing-in-audacity.html): covers the full session including setup, the three mixing tools with hands-on exercises, the destructive vs. non-destructive comparison table, the Module 4 Ableton forecast, the Project 1 work block, and the end-of-session the server routine.
 - **Project 1 prompt:** [`projects/project-01-musique-concrete.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/projects/project-01-musique-concrete.html): open on the projector during Block 4.
 - **Students' own Project 1 files** from last week's work, plus their scratch files from Wed Wk 3.
 
@@ -609,7 +609,7 @@ Open: "Show of hands, who's spent at least an hour on Project 1 since last Wedne
 
 Quick survey: "What's the hardest thing about it so far?" Listen to a few responses. Common answers: "I don't know what to make," "my edits sound choppy," "I don't know when to stop." All normal. Acknowledge. The mixing tools you're about to teach often help with the second one.
 
-Then have students follow the handout's Setup section: pull the latest Project 1 file from NAS, open both `lastname-project01.aup3` and `lastname-techniques-scratch.aup3`. Both should be open in separate Audacity windows by the time you start Block 2.
+Then have students follow the handout's Setup section: pull the latest Project 1 file from the server, open both `lastname-project01.aup3` and `lastname-techniques-scratch.aup3`. Both should be open in separate Audacity windows by the time you start Block 2.
 
 #### Block 2: The destructive vs. non-destructive frame + Levels & pan (15 min)
 
@@ -664,9 +664,9 @@ For students still in pure-editing mode (no mixing applies yet because they're s
 
 For students who haven't engaged: this is your check-in moment. Sit with them. Ask what they have so far. Help them get the next step started.
 
-#### End of session: NAS upload (last 5 min)
+#### End of session: upload (last 5 min)
 
-Final 5 minutes: students follow the handout's end-of-session routine. Save Project 1 (and any version files), copy `lastname-project01.aup3` (and any -v2, -v3 versions) to `[path]/students/lastname/project-01/` on the NAS. **Don't copy the sources folder (already on NAS) or the scratch project (lives only on local).**
+Final 5 minutes: students follow the handout's end-of-session routine. Save Project 1 (and any version files), copy `lastname-project01.aup3` (and any -v2, -v3 versions) to `project-01/` in their own folder on the server. **Don't copy the sources folder (already on the server) or the scratch project (lives only on local).**
 
 ### Common confusions
 
@@ -687,7 +687,7 @@ If running short (rare): use the extra time for one-on-one student check-ins. Pi
 
 ### After class
 
-- Verify NAS uploads. Every student should have an updated `lastname-project01.aup3` (newer modification date than last week's). Spot-check 3-4 student folders, especially ones for students who seemed disengaged during Block 4.
+- Verify uploads. Every student should have an updated `lastname-project01.aup3` (newer modification date than last week's). Spot-check 3-4 student folders, especially ones for students who seemed disengaged during Block 4.
 - Walk the room before locking up: all gear back in the lab's gear storage, machines logged out. Spot-check that headphone sliders are down and interface mix knobs are reset to 60% direct / 40% USB.
 - Note any students whose Project 1 file looks identical to last week's (zero progress). These are check-in candidates for Mon Wk 5.
 
@@ -717,7 +717,7 @@ Students learn what dynamics processing is (compression, limiting), why and when
 - Open the dynamics tool on the instructor station; test that the demo sound and a WAV upload both work
 - Pull up the reading on the instructor station for reference during the lecture (audio demos in Sections 1–4 are useful to replay during Block 2)
 - Project 1 prompt visible on instructor machine for reference
-- Confirm sample-bank folder is accessible on the NAS: students may want to grab a sound from it for the tool
+- Confirm sample-bank folder is accessible on the server: students may want to grab a sound from it for the tool
 
 ### Block-by-block
 
@@ -786,8 +786,8 @@ This is the last session before submission. Anyone whose piece isn't substantial
 
 Wed Wk 5 is the final work session and submission deadline. Walk through what to expect:
 - Class is a final work session: no new content, just time to finish
-- Files due to NAS by **end of class**, not start
-- Two locations: their private working folder (`lastname/project-01/`) and the class listening folder (`[path]/shared/mus-381-fall-2026/project-01-pieces/`). Both must have the final WAV.
+- Files due to the server by **end of class**, not start
+- Two locations: their private working folder (`lastname/project-01/`) and the class listening folder (`/public/mus-381-fall-2026/project-01-pieces/`). Both must have the final WAV.
 - A short peer-listening response is due Mon Wk 6 (about classmates' pieces in the listening folder), separate assignment
 
 Mention the rubric one more time: five dimensions, students should self-assess against it as they finish their work.
@@ -815,17 +815,17 @@ The shift from "presentations" to "submission + asynchronous listening" is inten
 
 **100 min · Lab-style · MB2525**
 
-This is the closing session of Module 2. There is no live presentation. Class time is dedicated to finishing pieces and uploading them to NAS by end of class. Listening to each other's pieces happens asynchronously in the days after, with a short peer-listening response due Mon Wk 6.
+This is the closing session of Module 2. There is no live presentation. Class time is dedicated to finishing pieces and uploading them to the server by end of class. Listening to each other's pieces happens asynchronously in the days after, with a short peer-listening response due Mon Wk 6.
 
 Why no presentations? Math: 25 students × 3-5 minutes each is longer than class time, and asynchronous listening gives students more careful, repeatable encounters with each other's work. The trade-off is the live "press play" moment, which some pedagogies value highly. We'll partly recover the cohort feeling on Mon Wk 6 with a brief discussion of what students heard.
 
 ### Goal
 
-Every student finishes Project 1 and uploads to both NAS folders by end of class. The class listening folder fills up. Students leave with a piece in the world.
+Every student finishes Project 1 and uploads to both server folders by end of class. The class listening folder fills up. Students leave with a piece in the world.
 
 ### Pre-class checklist
 
-- **Verify the class listening folder exists and is writable by students.** Path: `[path]/shared/mus-381-fall-2026/project-01-pieces/`. Permissions: students can write (drop their final WAV in), but cannot delete or modify others' files. Test this before class: drop a placeholder file in, then have one student try to add one and try to modify someone else's. If permissions aren't right, escalate to IT before students start uploading.
+- **Verify the class listening folder exists and is writable by students.** Path: `/public/mus-381-fall-2026/project-01-pieces/`. Test this before class: connect as a student would, drop a placeholder file in, and confirm it lands. Ask Inés whether students can also delete or overwrite each other's files there; if they can, tell students to upload only their own file and nothing else. Then have one student try to add one and try to modify someone else's. If permissions aren't right, escalate to IT before students start uploading.
 - **Spot-check working folders** for 5-6 students. They should have at least a `lastname-project01-vN.aup3` project file by now, and ideally an in-progress export. If a student's working folder is empty or has only one early version, flag them to check in with first thing.
 - Walk the room and lab's gear storage (gear storage baseline).
 - Have the project prompt ([`projects/project-01-musique-concrete.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/projects/project-01-musique-concrete.html)) open on the instructor machine. Specifically the Submission section.
@@ -838,7 +838,7 @@ Open: "Today is your final work session for Project 1. By end of class, your fin
 
 Walk through the submission card from the prompt on the projector. Be explicit about both folders:
 1. Your private working folder: `lastname/project-01/lastname-project01.wav`
-2. The class listening folder: `[path]/shared/mus-381-fall-2026/project-01-pieces/lastname-project01.wav`
+2. The class listening folder: `/public/mus-381-fall-2026/project-01-pieces/lastname-project01.wav`
 
 "Drag a copy of your final file to the class folder. Don't move it, copy. Your working folder still gets a copy too."
 

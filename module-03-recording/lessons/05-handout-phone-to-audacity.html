@@ -69,13 +69,13 @@
 
 <ol class="steps">
   <li>Get a phone recording off the phone and onto the lab Mac.</li>
-  <li>Pull your library down from the NAS and open a fresh Audacity project for today's work.</li>
+  <li>Download your library from the class server and open a fresh Audacity project for today's work.</li>
   <li>Import the phone recording into Audacity.</li>
   <li>Check the imported file's rate. Phone recordings are already at 48 kHz, so they match the project and you move on. If a file ever comes in at another rate, resample it to 48 kHz (Step 4 shows how).</li>
   <li>Run the prep pipeline: <strong>denoise → trim → normalize</strong>.</li>
   <li>Export the prepped sample to a new category folder in your library.</li>
   <li>Worktime: repeat for more phone recordings, record new sounds in the lab, grow the library.</li>
-  <li>Upload to the NAS.</li>
+  <li>Upload to the server.</li>
 </ol>
 
 <hr>
@@ -84,7 +84,7 @@
 
 <div class="callout">
   <div class="callout-label">To be finalized</div>
-  <p>The phone-to-Mac transfer procedure for this lab is pending IT confirmation about network device discovery in MB2525. The procedure will go here once the method is settled. Goal of this step, either way: end with a WAV (or M4A) file from your phone sitting in your <code>~/Documents/lastname/</code> working folder, ready to import into Audacity.</p>
+  <p>The phone-to-Mac transfer procedure for this lab is pending IT confirmation about network device discovery in MB2525. The procedure will go here once the method is settled. Goal of this step, either way: end with a WAV (or M4A) file from your phone sitting in your <code>~/Documents/netid/</code> working folder, ready to import into Audacity.</p>
 </div>
 
 <div class="callout">
@@ -99,9 +99,9 @@
 <p>Before you import the phone recording, you need your library in front of you so you can put the prepped sample in the right place.</p>
 
 <ol class="steps">
-  <li>Pull your <code>sample-library/</code> folder down from the NAS to your local working folder. (Same routine as every Wednesday; the <strong>Session Routines</strong> card has it. NAS path: <code>[path]/students/lastname/sample-library/</code>. Local destination: <code>~/Documents/lastname/sample-library/</code>.)</li>
+  <li>Download your <code>sample-library/</code> folder to your local working folder. (Same routine as every Wednesday; the <strong>Session Routines</strong> card has it. On the server it's <code>sample-library/</code> inside your own folder. Local destination: <code>~/Documents/netid/sample-library/</code>.)</li>
   <li>Open Audacity. Confirm the project format is still <strong>48000 Hz</strong> / <strong>24-bit PCM</strong> in <span class="menu-path">Audacity → Preferences → Audio Settings</span>. (It should be from last week, but worth a glance.)</li>
-  <li>Save a new project file for today's work: <span class="menu-path">File → Save Project → Save Project As…</span>, and save it as <code>sample-library-week-07.aup3</code> inside <code>~/Documents/lastname/sample-library/audacity-projects/</code>. Keeping a separate project file per session makes it easy to find your work later.</li>
+  <li>Save a new project file for today's work: <span class="menu-path">File → Save Project → Save Project As…</span>, and save it as <code>sample-library-week-07.aup3</code> inside <code>~/Documents/netid/sample-library/audacity-projects/</code>. Keeping a separate project file per session makes it easy to find your work later.</li>
 </ol>
 
 <div class="callout">
@@ -115,7 +115,7 @@
 
 <ol class="steps">
   <li>Click anywhere in the empty Audacity project window to make sure it's the active window.</li>
-  <li>From the menu bar: <span class="menu-path">File → Import → Audio…</span> (or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>). Navigate to <code>~/Documents/lastname/</code> and select the phone recording. Click <strong>Open</strong>.</li>
+  <li>From the menu bar: <span class="menu-path">File → Import → Audio…</span> (or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>). Navigate to <code>~/Documents/netid/</code> and select the phone recording. Click <strong>Open</strong>.</li>
   <li>The waveform appears as a new track in the project.</li>
   <li>Press <strong>spacebar</strong> to play it back. Confirm it sounds like what you remember recording. If it doesn't, you probably grabbed the wrong file off the phone; check the filename and try again.</li>
 </ol>
@@ -236,7 +236,7 @@
 <p>The category is your call; the names above are starting points. The rule is the same as the <code>paper/</code> folder: lowercase, hyphenated if needed, no spaces. Pick one that you'll remember and that fits more than just today's sound (so you can add to it later).</p>
 
 <ol class="steps">
-  <li>In Finder, create the new category folder inside <code>~/Documents/lastname/sample-library/</code>.</li>
+  <li>In Finder, create the new category folder inside <code>~/Documents/netid/sample-library/</code>.</li>
   <li>Back in Audacity, double-click the prepped clip to select it.</li>
   <li><span class="menu-path">File → Export Audio…</span> opens the Export dialog. Fill in:
     <ul>
@@ -252,7 +252,7 @@
   <li>Click <strong>Export</strong>. Leave the metadata dialog blank.</li>
 </ol>
 
-<p>One sample is now in the library at its new path: for example, <code>~/Documents/lastname/sample-library/kitchen/kitchen-kettle-boil.wav</code>, or <code>~/Documents/lastname/sample-library/kitchen/kitchen-kettle.wav</code> if you only have one kettle take so far.</p>
+<p>One sample is now in the library at its new path: for example, <code>~/Documents/netid/sample-library/kitchen/kitchen-kettle-boil.wav</code>, or <code>~/Documents/netid/sample-library/kitchen/kitchen-kettle.wav</code> if you only have one kettle take so far.</p>
 
 <h3>Update the README</h3>
 
@@ -293,12 +293,12 @@
 
 <ol class="steps">
   <li>Save the Audacity project for today (<kbd>Cmd</kbd> + <kbd>S</kbd>).</li>
-  <li>Confirm the README at <code>~/Documents/lastname/sample-library/README.txt</code> reflects everything you added today.</li>
-  <li>Run the NAS-upload phase of the <strong>Session Routines</strong> card: connect to the NAS, navigate to <code>[path]/students/lastname/</code>, drag the full <code>sample-library/</code> folder up to the NAS, allow it to overwrite. Wait for the copy to finish.</li>
-  <li>Verify by opening <code>[path]/students/lastname/sample-library/</code> on the NAS and confirming the new category folder(s) and new samples are there, and that <code>README.txt</code> at the root has today's date in <code>Last updated:</code>.</li>
+  <li>Confirm the README at <code>~/Documents/netid/sample-library/README.txt</code> reflects everything you added today.</li>
+  <li>Run the upload phase of the <strong>Session Routines</strong> card: connect with FileZilla, put the left pane on <code>~/Documents/netid/</code> and stay in your own folder on the right, drag the full <code>sample-library/</code> folder across, and choose <strong>Overwrite if source newer</strong>. Wait for the copy to finish.</li>
+  <li>Verify by opening <code>sample-library/</code> in the right pane and confirming the new category folder(s) and new samples are there, and that <code>README.txt</code> at the root has today's date in <code>Last updated:</code>.</li>
 </ol>
 
-<p>Then continue with the rest of the card's end-of-session routine: eject the NAS, sign out of browser accounts, quit all apps, knobs back to zero, unplug everything (including the mic's XLR from both ends), stow the gear back in the lab's gear storage, chair in.</p>
+<p>Then continue with the rest of the card's end-of-session routine: disconnect and quit FileZilla, sign out of browser accounts, quit all apps, knobs back to zero, unplug everything (including the mic's XLR from both ends), stow the gear back in the lab's gear storage, chair in.</p>
 
 <hr>
 

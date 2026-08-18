@@ -57,7 +57,7 @@
   <div class="subtitle">Open the DAW. Import a sound. Make your first edit. Save it the right way.</div>
 </div>
 
-<p class="lede">Audacity is the DAW we'll use for the rest of Module 2. By the end of this lab session, you'll have opened it, set its project format to the course standard, imported a short sample from the NAS, played it back, made a basic edit, exported the result, and uploaded everything back to the NAS so it's there for you next session. None of these moves is hard. The point of doing them now is so the workflow is automatic by the time Project 1 starts.</p>
+<p class="lede">Audacity is the DAW we'll use for the rest of Module 2. By the end of this lab session, you'll have opened it, set its project format to the course standard, imported a short sample from the class server, played it back, made a basic edit, exported the result, and uploaded everything back to the server so it's there for you next session. None of these moves is hard. The point of doing them now is so the workflow is automatic by the time Project 1 starts.</p>
 
 <div class="callout">
   <div class="callout-label">Today's gear</div>
@@ -68,13 +68,13 @@
 <h2>What we're doing today</h2>
 
 <ol class="steps">
-  <li>Pull the orientation sample from the NAS into your local working folder.</li>
+  <li>Download the orientation sample from the class server into your local working folder.</li>
   <li>Open Audacity and set the project format (48 kHz, 24-bit).</li>
   <li>Tour the Audacity interface: the parts you'll use today and the names of things.</li>
   <li>Import the sample, play it back, listen.</li>
   <li>Make one selection, one cut, one fade. Listen to the difference.</li>
   <li>Save the project, then export to WAV at the course-standard format.</li>
-  <li>Upload everything back to the NAS using the end-of-session routine.</li>
+  <li>Upload everything back to the server using the end-of-session routine.</li>
 </ol>
 
 <div class="callout">
@@ -84,22 +84,23 @@
 
 <hr>
 
-<h2>Step 1 · Pull the orientation sample from the NAS</h2>
+<h2>Step 1 · Download the orientation sample</h2>
 
-<p>Today's sample lives on the class NAS in <code>shared/module-02/orientation/</code>. It's a short bell-like resonance recorded in stereo, about sixteen seconds long, with a dense ringing body that slowly fades to silence. You'll use it to learn Audacity's basic moves.</p>
+<p>Today's sample lives on the class server in <code>/public/module-02/orientation/</code>. It's a short bell-like resonance recorded in stereo, about sixteen seconds long, with a dense ringing body that slowly fades to silence. You'll use it to learn Audacity's basic moves.</p>
 
-<p>You're going to grab the sample during your start-of-session routine, before the NAS gets ejected. If you're already past the NAS phase of the routine and the NAS is no longer in Finder's sidebar, reconnect (<kbd>Cmd</kbd> + <kbd>K</kbd>, server address, sign in).</p>
+<p>Grab it while you're still connected during your start-of-session routine. If you've already disconnected, open FileZilla and connect again from the Quickconnect bar.</p>
 
 <ol class="steps">
-  <li>With the NAS mounted, navigate in Finder to <code>shared/module-02/orientation/</code>.</li>
-  <li>You'll see one file: <code>orientation-sample.wav</code>. <strong>Copy it</strong> (drag it while holding <kbd>Option</kbd>, or right-click and choose <strong>Copy</strong>) into your local folder at <code>~/Documents/lastname/orientation/</code>. Make an <code>orientation</code> folder if you don't have one yet.</li>
-  <li>Verify the copy is there. Don't open it from the NAS: always work from your local folder.</li>
-  <li>Now eject the NAS (Finder sidebar, eject icon next to the NAS name). You're done with NAS for the working portion of the session.</li>
+  <li>In Finder, make an <code>orientation</code> folder inside <code>~/Documents/netid/</code> if you don't have one yet.</li>
+  <li>In FileZilla's <strong>right</strong> pane, click the <code>/</code> at the top of the directory tree, then open <code>public</code>, then <code>module-02</code>, then <code>orientation</code>. You'll see one file: <code>orientation-sample.wav</code>.</li>
+  <li>In the <strong>left</strong> pane, navigate to <code>~/Documents/netid/orientation/</code>.</li>
+  <li>Drag <code>orientation-sample.wav</code> from the right pane into the left pane. Wait for the transfer queue at the bottom to clear.</li>
+  <li>Choose <strong>Server → Disconnect</strong> and quit FileZilla. You're done with it for the working portion of the session.</li>
 </ol>
 
 <div class="callout warn">
-  <div class="callout-label">Local-first, NAS as sync</div>
-  <p>You always work from your local folder, never directly from the NAS. The NAS is the master copy that travels between you and the next session; your local folder is your live workbench. Pull from NAS at the start of session, work locally, push back to NAS at the end. This is the same workflow on the routines card: internalize it now.</p>
+  <div class="callout-label">Local-first, server as sync</div>
+  <p>You always work from your local folder. The server holds the master copy that travels between you and the next session; your local folder is your live workbench. Download at the start of session, work locally, upload at the end. This is the same workflow on the routines card: internalize it now.</p>
 </div>
 
 <hr>
@@ -160,7 +161,7 @@
 
 <ol class="steps">
   <li>From the menu bar, click <strong>File → Import → Audio…</strong> (or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>).</li>
-  <li>Navigate to your local folder at <code>~/Documents/lastname/orientation/</code> and select <code>orientation-sample.wav</code>. Click <strong>Open</strong>.</li>
+  <li>Navigate to your local folder at <code>~/Documents/netid/orientation/</code> and select <code>orientation-sample.wav</code>. Click <strong>Open</strong>.</li>
   <li>The waveform appears as a stereo track with two lanes (left channel on top, right channel below). The dense ringing body of the sound fills the first half; the second half tapers as the resonance decays toward silence.</li>
   <li>Press <strong>spacebar</strong> to play. Listen. Press <strong>spacebar</strong> again to stop.</li>
 </ol>
@@ -236,7 +237,7 @@
 
 <ol class="steps">
   <li><strong>File → Save Project As…</strong> (or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>).</li>
-  <li>Navigate to <code>~/Documents/lastname/orientation/</code>.</li>
+  <li>Navigate to <code>~/Documents/netid/orientation/</code>.</li>
   <li>Name the file <code>lastname-orientation.aup3</code>. (Replace <code>lastname</code> with your actual last name, lowercase.) Click <strong>Save</strong>.</li>
 </ol>
 
@@ -256,7 +257,7 @@
   <li>The <strong>Export Audio</strong> dialog opens. Fill it in:
     <ul>
       <li><strong>File Name:</strong> <code>lastname-orientation.wav</code> (lowercase, with your last name)</li>
-      <li><strong>Folder:</strong> click <strong>Browse…</strong> and pick <code>~/Documents/lastname/orientation/</code></li>
+      <li><strong>Folder:</strong> click <strong>Browse…</strong> and pick <code>~/Documents/netid/orientation/</code></li>
       <li><strong>Format:</strong> <code>WAV (Microsoft)</code></li>
       <li><strong>Channels:</strong> <strong>Stereo</strong> (matches the source)</li>
       <li><strong>Sample Rate:</strong> <code>48000 Hz</code></li>
@@ -274,26 +275,26 @@
 
 <div class="callout warn">
   <div class="callout-label">Filename conventions</div>
-  <p>Lowercase only. Hyphens between words. No spaces, no apostrophes, no accented characters. <code>your-last-name-orientation.wav</code> is correct; <code>YourLastName Orientation Final.wav</code> will cause problems with the NAS, with command-line tools, and eventually with you. Build the habit now.</p>
+  <p>Lowercase only. Hyphens between words. No spaces, no apostrophes, no accented characters. <code>your-last-name-orientation.wav</code> is correct; <code>YourLastName Orientation Final.wav</code> will cause problems on the server, with command-line tools, and eventually with you. Build the habit now.</p>
 </div>
 
 <hr>
 
 <h2>Step 7 · End of session</h2>
 
-<p>The <strong>Session Routines</strong> card has the full end-of-session routine. Today is the first time you do it yourself. Open the card and follow it; the steps below are the lab-specific part (what to upload) that fold into the card's NAS-upload phase.</p>
+<p>The <strong>Session Routines</strong> card has the full end-of-session routine. Today is the first time you do it yourself. Open the card and follow it; the steps below are the lab-specific part (what to upload) that fold into the card's upload phase.</p>
 
 <h3>What to upload today</h3>
 
 <ol class="steps">
-  <li>During the NAS-upload phase of the routine, navigate on the NAS to <code>[path]/students/lastname/</code>.</li>
-  <li>Drag your <code>lastname/</code> folder from <code>~/Documents/</code> onto the NAS, choosing <strong>Replace</strong> when prompted. Your <code>orientation/</code> subfolder (with both <code>lastname-orientation.aup3</code> and <code>lastname-orientation.wav</code>) goes up with it.</li>
-  <li>Verify both files are on the NAS at <code>[path]/students/lastname/orientation/</code>.</li>
+  <li>During the upload phase of the routine, put FileZilla's <strong>left</strong> pane on <code>~/Documents/netid/</code> and leave the <strong>right</strong> pane in your own folder on the server.</li>
+  <li>Click into the left pane, select everything (<kbd>Cmd</kbd> + <kbd>A</kbd>), and drag it across. Your <code>orientation/</code> subfolder (with both <code>lastname-orientation.aup3</code> and <code>lastname-orientation.wav</code>) goes up with it. Choose <strong>Overwrite if source newer</strong> when asked.</li>
+  <li>Verify both files landed: on the right pane, open <code>orientation/</code>.</li>
 </ol>
 
-<p>Then continue with the rest of the card's end-of-session routine: eject the NAS, sign out of browser accounts, quit all apps, knobs back to zero, unplug everything, stow the gear back in the lab's gear storage, chair in.</p>
+<p>Then continue with the rest of the card's end-of-session routine: disconnect and quit FileZilla, sign out of browser accounts, quit all apps, knobs back to zero, unplug everything, stow the gear back in the lab's gear storage, chair in.</p>
 
-<p>Your work is now safe. Next session, you'll start by pulling files <em>down</em> from the NAS to whatever lab machine you're sitting at, and continue.</p>
+<p>Your work is now safe. Next session, you'll start by downloading it to whatever lab machine you're sitting at, and continue.</p>
 
 <hr>
 

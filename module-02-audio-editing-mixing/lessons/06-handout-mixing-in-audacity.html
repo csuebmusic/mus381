@@ -132,17 +132,17 @@
   <li>Learn levels and panning. Practice them <em>on your Project 1 file</em>, since they don't change the underlying audio.</li>
   <li>Learn EQ. Practice in the <em>scratch file</em>, since EQ does change the underlying audio.</li>
   <li>Spend the rest of the session working on Project 1.</li>
-  <li>Upload everything to the NAS using the end-of-session routine.</li>
+  <li>Upload everything to the server using the end-of-session routine.</li>
 </ol>
 
 <hr>
 
 <h2>Setup</h2>
 
-<p>Your start-of-session routine on the card already syncs your <code>lastname/</code> folder from the NAS, so your Project 1 file should already be local before you open Audacity here. Quick check:</p>
+<p>Your start-of-session routine on the card already downloads your work from the server, so your Project 1 file should already be local before you open Audacity here. Quick check:</p>
 
 <ol class="steps">
-  <li>In Finder, open <code>~/Documents/lastname/project-01/</code> and confirm <code>lastname-project01.aup3</code> is present. If it isn't, run the start-of-session NAS sync on the card; the file lives in your <code>lastname/</code> folder on the NAS under <code>project-01/</code>.</li>
+  <li>In Finder, open <code>~/Documents/netid/project-01/</code> and confirm <code>lastname-project01.aup3</code> is present. If it isn't, run the start-of-session download on the card; the file lives in <code>project-01/</code> inside your own folder on the server.</li>
   <li>Open Audacity. Open <code>lastname-project01.aup3</code>. You should see your Project 1 in progress, with the tracks you've been building.</li>
   <li>Also open your scratch project from last week (<code>lastname-techniques-scratch.aup3</code>). Both projects can be open at once in different Audacity windows.</li>
 </ol>
@@ -670,12 +670,12 @@
 
 <ol class="steps">
   <li>Save your Project 1 project (<kbd>Cmd</kbd> + <kbd>S</kbd>). If you've made versioned saves (v2, v3), save the current one too.</li>
-  <li>Run the start of the card's NAS-upload phase (reconnect to the NAS if you've disconnected; navigate to <code>[path]/students/lastname/project-01/</code>).</li>
-  <li>Copy your Project 1 file (and any version files) from your local <code>~/Documents/lastname/project-01/</code> folder to the NAS folder. <strong>Don't copy the sources folder; it's already on the NAS. Don't copy the scratch project; it lives only on local.</strong></li>
-  <li>Verify the upload by reopening the NAS folder.</li>
+  <li>Open FileZilla and connect from the Quickconnect bar. In the <strong>right</strong> pane, open <code>project-01/</code> inside your own folder.</li>
+  <li>In the <strong>left</strong> pane, navigate to <code>~/Documents/netid/project-01/</code>. Drag your Project 1 file and any version files across. The sources folder is already on the server, and the scratch project stays on your machine.</li>
+  <li>Verify the upload: the transfer queue empties and the files appear in the right pane.</li>
 </ol>
 
-<p>Then continue with the rest of the card's end-of-session routine: eject the NAS, sign out of browser accounts, quit all apps, knobs back to zero, unplug everything, stow the gear back in the lab's gear storage, chair in.</p>
+<p>Then continue with the rest of the card's end-of-session routine: disconnect and quit FileZilla, sign out of browser accounts, quit all apps, knobs back to zero, unplug everything, stow the gear back in the lab's gear storage, chair in.</p>
 
 <hr>
 

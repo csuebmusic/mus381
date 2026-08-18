@@ -117,7 +117,7 @@ By the end of this module, students should be able to:
 - Source material: every sound must be student-recorded (their Module 3 library plus anything new they record). No pre-recorded, found, or downloaded sound, and no pre-made loops. One exception: they may use another student's recording *with permission*, and must credit it. Crediting is the teaching point; credits go in a `lastname-final-credits.txt` file in the working folder.
 - Draft 1 due Wed Wk 14: a complete rough pass, submitted to the working folder for instructor/TA written feedback. No in-class listening (no time).
 - Draft 2 due Wed Wk 15: the revision, after acting on the Draft 1 feedback.
-- Final during finals: WAV 48 kHz / 32-bit float, `lastname-final.wav`, to the NAS working folder and the class folder. Optional SoundCloud for portfolio.
+- Final during finals: WAV 48 kHz / 32-bit float, `lastname-final.wav`, to the server working folder and the class folder. Optional SoundCloud for portfolio.
 - Rubric (out of 100, no revision criterion): Technique & tools 35, Form & shape 30, Sound material & sourcing 20, Mix & craft 15.
 - A cumulative final exam runs during finals week (covers the whole course), separate from this project. Exam and answer key: [`exams/final-exam.md`](../exams/final-exam.md) *(TA-facing)*.
 
@@ -154,7 +154,7 @@ No peer listening in Module 4: final pieces are shared in the class folder for e
 | 13 | Mon | Session 7 · Transferable concepts, through Adobe Audition (handout 05). *(Mon only; Wed is Veterans Day.)* The same concepts in a different tool: sample rate, bit depth, editing, EQ, dynamics, multitrack, under Audition's UI and names. The point is portability of skills, aimed in part at the art majors already in the Adobe suite. |
 | 14 | Mon / Wed | Final project worktime; Draft 1 due Wed Wk 14. |
 | 15 | Mon / Wed | Final project revision; Draft 2 due Wed Wk 15. Final review packet (handout 06) handed out for the finals-week exam. |
-| Finals | — | Final piece to NAS + class folder; cumulative final exam. |
+| Finals | — | Final piece to the server + class folder; cumulative final exam. |
 
 Block-by-block facilitation, demo scripts, common confusions, and pacing fallbacks for each session will be filled in below as the module is built out.
 
@@ -165,9 +165,9 @@ Block-by-block facilitation, demo scripts, common confusions, and pacing fallbac
 - **Ableton Live 11 Suite** is the lab version. Handout screenshots, menu paths, and manual references all target Live 11 (see Reference scope above for the exact sections). Suite confirms everything in scope is installed; Simpler and Drum Rack are in every edition regardless.
 - **MIDI keyboards inventoried and tested at every station.** They enter the gear list this module (the Module 4 handout gear tier adds the MIDI keyboard). Confirm each one is present, connects over USB through the hub, and registers in Ableton's MIDI preferences.
 - **Adobe Audition installed and tested on the lab Macs.** Audition runs at every station, so Session 7 is a hands-on follow-along. Confirm it launches under the campus Adobe license before Wk 13.
-- **A starter session for the mixing lab.** Session 6 mixes a prepared multitrack session staged on the NAS: a longer piece with several instruments, some MIDI and some audio, so there is MIDI to commit and audio to consolidate. Inés provides it; stage it on the NAS before Wk 12.
+- **A starter session for the mixing lab.** Session 6 mixes a prepared multitrack session staged on the server: a longer piece with several instruments, some MIDI and some audio, so there is MIDI to commit and audio to consolidate. Inés provides it; stage it on the server before Wk 12.
 - **Final-project Set.** Students create their own project Set in Session 1 (the reading ends by walking them through it), named `lastname-project`, and build it in the end-of-class block of each lab. Nothing to pre-stage; be ready to help with the create-and-save step on Day 1.
-- **Library readiness check.** Sessions 2 through 4 assume each student has a usable Module 3 library on the NAS. Spot-check that libraries survived the midterm and are findable before Wk 10.
+- **Library readiness check.** Sessions 2 through 4 assume each student has a usable Module 3 library on the server. Spot-check that libraries survived the midterm and are findable before Wk 10.
 
 ---
 
@@ -224,7 +224,7 @@ Module 2 taught editing as something you do *to a file*. This lecture reframes e
 
 ### Roadmap
 
-Students pull their Module 3 library down from the NAS, import sounds into an Ableton set, and edit them on the Arrangement timeline: clip start and end, fades, clip gain, duplicating and arranging. Warping is introduced here, at the moment a clip's tempo relationship first matters. (The library is already at 48 kHz, so it imports into the 48 kHz set with nothing to convert.)
+Students pull their Module 3 library down from the server, import sounds into an Ableton set, and edit them on the Arrangement timeline: clip start and end, fades, clip gain, duplicating and arranging. Warping is introduced here, at the moment a clip's tempo relationship first matters. (The library is already at 48 kHz, so it imports into the 48 kHz set with nothing to convert.)
 
 ### Handout
 
@@ -296,7 +296,7 @@ Two threads land at once: Module 2's EQ and compression (what these devices do) 
 
 ### Roadmap
 
-The Wednesday half of the mixing week. Students download a prepared multitrack session from the NAS, then commit it to audio before mixing: freeze and flatten the MIDI tracks, consolidate each track to one clip, so creation and mixing stay separate jobs. Then they mix: levels, pan, a shared reverb return, groups, and EQ and compression where they help. The prepared session keeps the time on mixing moves rather than setup.
+The Wednesday half of the mixing week. Students download a prepared multitrack session from the server, then commit it to audio before mixing: freeze and flatten the MIDI tracks, consolidate each track to one clip, so creation and mixing stay separate jobs. Then they mix: levels, pan, a shared reverb return, groups, and EQ and compression where they help. The prepared session keeps the time on mixing moves rather than setup.
 
 ### Handout
 

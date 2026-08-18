@@ -79,7 +79,7 @@ assets/                              Shared CSS, audio, images, videos
 under-the-hood/                      Dev / build-time material (Inés + Claude; the TA can skip it)
   build/                             Scripts that generate audio demos and diagrams
   meta/                              Build-time conventions (prose, chrome, naming, visual) + page templates
-  policies/                          Cross-cutting course policies (e.g. NAS archival)
+  policies/                          Cross-cutting course policies (e.g. server archival)
 ```
 
 Each module folder follows the same layout:
@@ -99,7 +99,7 @@ Build-time conventions (prose rules, document chrome, file naming, dates, the vi
 Two patterns worth knowing without opening a convention file:
 
 - **Student-facing materials** are HTML sharing `assets/style.css`. **TA notes, specs, and policies** are Markdown.
-- **File workflow:** local-first with the NAS as sync. Students work in `~/Documents/lastname/`, download from the NAS at the start of a session, and upload at the end.
+- **File workflow:** local-first with the server as sync. Students work in `~/Documents/[netid]/`, download from the server at the start of a session, and upload at the end.
 
 ## For the TA
 

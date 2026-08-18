@@ -62,7 +62,7 @@ Two parts, both due Wed Wk 9.
 
 ### Sample library
 
-A submitted folder of the student's own recorded sounds, prepped through the standardization pipeline and organized into a documented structure on the NAS.
+A submitted folder of the student's own recorded sounds, prepped through the standardization pipeline and organized into a documented structure on the server.
 
 Full prompt and rubric: [`projects/project-02-sample-library.html`](https://csuebmusic.github.io/mus381/module-03-recording/projects/project-02-sample-library.html)
 
@@ -127,7 +127,7 @@ Block-by-block facilitation, demo scripts, common confusions, and pacing fallbac
 - **Paper supplies:** scrap paper (not too thick, not too thin) at every station for Wed Wk 6 recordings. Quantity: enough for each student to have 4 sheets, plus extras
 - **Recording gear in the lab's gear storage and inventoried:** dynamic mic, mic stand, XLR cable, audio interface, headphones, one set per workstation. Quick visual check that nothing is missing before the start of Wk 6.
 - **Phone-to-Mac transfer method for Wed Wk 7:** to be finalized with IT before Wk 7. The lab Macs may be on a different network segment than the campus Wi-Fi student phones connect to, which rules out methods that depend on device-to-device discovery on the local network. Once IT confirms what's possible, Step 1 of `lessons/05-handout-phone-to-audacity.html` gets filled in
-- **Sample library template ready:** a folder structure students will mirror, ideally available as a downloadable starter on the NAS
+- **Sample library template ready:** a folder structure students will mirror, ideally available as a downloadable starter on the server
 - **Lecture demo materials:** physical examples of XLR, TS, TRS cables (Wk 6 Mon and Wk 7 Mon); a condenser mic and a DI box to hold up in the Wk 7 Mon lecture
 - **MB2508 booked for Mon Wk 9:** the studio visit (Session 7) needs the room reserved a few weeks ahead. The session is a walk around the studio, so the console doesn't have to be powered; if you do power it on to show signal moving, confirm the Toft is in a known-good state and do a quick signal-path check the morning of.
 - **Handout 09 (midterm review) printed in advance:** Session 7 hands it out for take-home study, so the document needs to exist before that Monday (it does; see lesson 09). Print a few extra copies for students who lose theirs between Monday and Wednesday.
@@ -142,7 +142,7 @@ Block-by-block facilitation, demo scripts, common confusions, and pacing fallbac
 - "My recording is too quiet" → almost always gain-trim too low (or in-line slider too low, or mix knob set wrong, in that order)
 - "My recording is too loud / clipping" → gain-trim too high; reinforce the -12 to -6 dBFS target
 - "I can't hear myself while recording" → monitor mix knob on interface set to USB-only instead of a blend
-- "My file disappeared" → carry-over from Module 2; the local-first / NAS-as-sync workflow needs to be reinforced because the library is starting to accumulate real value
+- "My file disappeared" → carry-over from Module 2; the local-first / server-as-sync workflow needs to be reinforced because the library is starting to accumulate real value
 
 ### Gear setup baseline (every Wednesday)
 
@@ -218,7 +218,7 @@ Examples: `paper-crumble-slow.wav`, `paper-rip-fast.wav`. Lowercase, hyphens, no
 **Library folder structure** (canonical):
 
 ```
-~/Documents/lastname/sample-library/
+~/Documents/[netid]/sample-library/
   paper/
     paper-crumble-slow.wav
     paper-crumble-fast.wav
@@ -229,15 +229,15 @@ Examples: `paper-crumble-slow.wav`, `paper-rip-fast.wav`. Lowercase, hyphens, no
   README.txt            <- student writes; what's in the library, how it's organized
 ```
 
-The library lives at `~/Documents/lastname/sample-library/` on the local machine and at `[path]/students/lastname/sample-library/` on the NAS. The Wk 6 lab handout includes a README template students fill in by hand; the template names the organization and lists the samples.
+The library lives at `~/Documents/[netid]/sample-library/` on the local machine and as `sample-library/` in their own folder on the server. The Wk 6 lab handout includes a README template students fill in by hand; the template names the organization and lists the samples.
 
-End-of-session: upload library folder to NAS following the standard session-end routine.
+End-of-session: upload library folder to the server following the standard session-end routine.
 
 ### Handout
 
 [`lessons/02-handout-recording-into-audacity.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/02-handout-recording-into-audacity.html) — Lab 1
 
-Ten numbered steps from cold start to NAS upload: configure Audacity for mono recording, set gain on the interface against the -12 to -6 dBFS target, set monitor blend, test recording, capture the noise-profile clip, record the four paper sounds, set up the sample-library folder, run the prep pipeline on each clip, export each as a WAV, write the library README, NAS upload. Includes an inline SVG diagram of the headroom target band and five Audacity screenshots at the moments students are most likely to drift.
+Ten numbered steps from cold start to upload: configure Audacity for mono recording, set gain on the interface against the -12 to -6 dBFS target, set monitor blend, test recording, capture the noise-profile clip, record the four paper sounds, set up the sample-library folder, run the prep pipeline on each clip, export each as a WAV, write the library README, upload. Includes an inline SVG diagram of the headroom target band and five Audacity screenshots at the moments students are most likely to drift.
 
 ### Phone-recording reference card
 
@@ -266,7 +266,7 @@ The session runs 100 min. Pacing target:
 | 2. Monitor and test | 10 min | Steps 3–4 | Hear yourself, confirm chain end-to-end |
 | 3. Noise profile and recording | 20 min | Steps 5–6 | Room tone clip, four paper sounds |
 | 4. Library folder and prep | 30 min | Steps 7–8 | Folder structure, prep pipeline four times |
-| 5. Export and NAS upload | 15 min | Steps 9–10 | Mono WAV export, README, end-of-session NAS upload |
+| 5. Export and upload | 15 min | Steps 9–10 | Mono WAV export, README, end-of-session upload |
 | 6. Wrap and phone card | 5 min | — | Hand out phone reference card, preview Mon Wk 7 |
 
 The 100-min budget assumes students arrive on time and complete the start-of-session routine before Block 1 starts. Today's routine is the first session where the mic and XLR cable enter the gear list, so it runs a bit longer than usual; allow 8–10 minutes rather than the usual 5. Demo the mic-and-XLR setup on the instructor station at the front of the class as students arrive so the lab handout's Before-you-start callout gets a visual reinforcement. The 4-stage chain diagram from Monday's reading is the mental model: students should be able to point at their own setup and name each piece.
@@ -293,7 +293,7 @@ By end of Block 3, every student should have five clips on one mono track: noise
 
 **Block 4 · Library folder and prep (30 min, Steps 7–8).** The longest block. Two distinct phases.
 
-*Phase 1: Folder setup (5 min).* Step 7 in the handout. Students create `~/Documents/lastname/sample-library/` with subfolders `paper/` and `audacity-projects/`. Move the .aup3 file into `audacity-projects/`. The callout in the handout flags that Audacity may lose track of the file after the move; close and re-open the project from the new location. Walk the room and verify the folder structure looks right at every station before any student starts Step 8.
+*Phase 1: Folder setup (5 min).* Step 7 in the handout. Students create `~/Documents/[netid]/sample-library/` with subfolders `paper/` and `audacity-projects/`. Move the .aup3 file into `audacity-projects/`. The callout in the handout flags that Audacity may lose track of the file after the move; close and re-open the project from the new location. Walk the room and verify the folder structure looks right at every station before any student starts Step 8.
 
 *Phase 2: Prep pipeline (25 min).* Step 8. This is procedure-dense and students will rush. Demonstrate the full pipeline on the instructor station with one sound clip from start to finish before students try it themselves:
 
@@ -309,17 +309,17 @@ Common errors in this block, in rough frequency order:
 - Skipping the fades. Audible click pop at the start or end of the file. Easy to miss visually; remind the room when most students are at the trim step.
 - Trimming too aggressively, cutting off the natural decay of the sound. The handout says "to just before the sound starts" and "after the sound ends"; let the natural ring or scrape decay into silence rather than chopping it.
 
-**Block 5 · Export and NAS upload (15 min, Steps 9–10).** Export first. Demo the first export on the instructor station: select the clip, File → Export Audio…, fill in the dialog with **special attention to Export Range → Current selection** (the most common error: leaving it at Entire Project, which produces one big file with all four sounds in it). Walk the room during the first export by each student; catch the Export Range error early so the remaining three exports go right.
+**Block 5 · Export and upload (15 min, Steps 9–10).** Export first. Demo the first export on the instructor station: select the clip, File → Export Audio…, fill in the dialog with **special attention to Export Range → Current selection** (the most common error: leaving it at Entire Project, which produces one big file with all four sounds in it). Walk the room during the first export by each student; catch the Export Range error early so the remaining three exports go right.
 
 Filename and folder pattern: `sample-library/paper/paper-crumble-slow.wav` for the first sound, mirroring for the other three.
 
 Then README. Open TextEdit. **Format → Make Plain Text** is the easily-missed step; if a student skips it, they save an .rtf file with smart quotes and styled text. The plain-text move converts the document before they paste the template in. Walk the room during this step.
 
-Then end-of-session NAS upload (same routine as every Wednesday). Drag `sample-library/` from local to `[path]/students/lastname/` on the NAS. **Watch the drag direction:** students sometimes drag the parent `lastname/` folder onto the NAS, ending up with `[path]/students/lastname/lastname/sample-library/`. Verify a few uploads by opening `[path]/students/lastname/sample-library/paper/` on the NAS and counting four WAVs.
+Then end-of-session upload (same routine as every Wednesday). Drag `sample-library/` from the left pane into their own folder on the server. **Watch the drag direction:** students sometimes drag the parent local folder across instead, ending up with `[netid]/[netid]/sample-library/`. Verify a few uploads by opening `[path]/students/lastname/sample-library/paper/` on the server and counting four WAVs.
 
 **Block 6 · Wrap and phone card (5 min).** Quick close. Hand out the phone-recording reference card on the way out the door. Frame: "From this week on, you can grow your library on your own time using your phone. The card walks through the iPhone and Android setup. Next session we'll talk about other signal types — instrument level, line level, condenser mics, DI boxes — and what cables go with them."
 
-Reminder to do the end-of-session routine on the card before leaving the station: log out, eject NAS, headphones placed on the holder.
+Reminder to do the end-of-session routine on the card before leaving the station: log out, disconnect and quit FileZilla, headphones placed on the holder.
 
 ### Common confusions
 
@@ -333,12 +333,12 @@ Reminder to do the end-of-session routine on the card before leaving the station
 - **Click pops at trim points.** Student skipped the 50-ms fade. Listen to a sample of theirs on headphones; if you hear a click at the start or end, walk them back to the fade step.
 - **Export Range left at Entire Project.** One WAV file with all four sounds in it instead of four separate WAVs. Catch on the first export; the remaining three should be fine once the dialog defaults to Current selection.
 - **TextEdit saved README as .rtf.** Format → Make Plain Text was skipped. The README has styled text and smart quotes. Fix: open the file in TextEdit, Format → Make Plain Text, re-save (overwriting). Or delete and start fresh from the template in the handout.
-- **NAS upload contains an extra nesting level.** Student dragged `lastname/` instead of `sample-library/`, ending up with `[path]/students/lastname/lastname/sample-library/` on the NAS. Verify by clicking into the upload destination; fix by moving the inner folder up one level.
+- **upload contains an extra nesting level.** Student dragged `lastname/` instead of `sample-library/`, ending up with `[netid]/[netid]/sample-library/` on the server. Verify by clicking into the upload destination; fix by moving the inner folder up one level.
 
 ### Pacing fallbacks
 
 - **Running long in Block 1 (gain setup).** Most likely cause: students struggling with the monitoring-mode click. Demo it once more on the projector with the whole room watching; have neighbors verify each other got the meter live before moving on.
-- **Running long in Block 4 (prep pipeline).** The most cuttable thing is the fourth pass through the pipeline: students can apply the pipeline to three sounds in class and the fourth at home, since the project file goes home on the NAS anyway. Keep at least three full passes in class so they have the rhythm.
+- **Running long in Block 4 (prep pipeline).** The most cuttable thing is the fourth pass through the pipeline: students can apply the pipeline to three sounds in class and the fourth at home, since the project file goes home on the server anyway. Keep at least three full passes in class so they have the rhythm.
 - **Running short.** Add a fifth recording: students invent an interesting paper sound (e.g., paper sliding against itself, paper folded sharply, paper crinkled in slow motion). They name it themselves following the convention. This makes the naming convention a real decision rather than a recipe.
 - **One station's interface fails partway through.** Pair the student with a working-station neighbor; they share the interface for the recording portion and split the prep work between two stations. Note the failed interface for end-of-session diagnosis.
 
@@ -355,8 +355,8 @@ Standard 8.5×11 printer paper. About 5 sheets per student (4 for recordings, 1+
 
 ### After class
 
-- Walk the room before locking up: all machines logged out, NAS ejected, headphones placed on holders, headphone sliders down to default, interface monitor blend reset to a neutral starting position (center for PreSonus, Direct Monitor unpressed for Behringer), gain knobs back to a sane starting position (around 9-10 o'clock).
-- Spot-check 3-4 student folders on the NAS at `[path]/students/lastname/sample-library/`: confirm the four WAVs are in `paper/`, the README.txt is at the root, the .aup3 is in `audacity-projects/`.
+- Walk the room before locking up: all machines logged out, FileZilla quit, headphones placed on holders, headphone sliders down to default, interface monitor blend reset to a neutral starting position (center for PreSonus, Direct Monitor unpressed for Behringer), gain knobs back to a sane starting position (around 9-10 o'clock).
+- Spot-check 3-4 student folders on the server at `[netid]/sample-library/`: confirm the four WAVs are in `paper/`, the README.txt is at the root, the .aup3 is in `audacity-projects/`.
 - Listen to one or two samples per spot-checked folder on headphones: confirm peaks at or near -1 dBFS, no click pops at the start or end, clean denoise without underwater artifacts.
 - Note recurring quality issues (e.g. "three of the four students I spot-checked had click pops") for a brief recap moment at the start of Mon Wk 7's lecture.
 - Note any interface or mic failures for repair before next session.
@@ -422,7 +422,7 @@ This is the one mostly-unstructured session of the module. Use the room: circula
 
 [`lessons/05-handout-phone-to-audacity.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/05-handout-phone-to-audacity.html) — Lab 2
 
-Eight steps from phone-side transfer through library upload: get the recording off the phone (transfer method TBD pending IT, currently a placeholder in the handout), pull the library down from the NAS, import (phone files already match the 48 kHz project; resampling is kept as a conditional step for stray rates), run the prep pipeline (with a noise profile captured from the phone recording itself), export to a student-chosen category folder, README update, worktime, NAS upload. References Lab 1 for the prep-pipeline detail rather than re-walking it.
+Eight steps from phone-side transfer through library upload: get the recording off the phone (transfer method TBD pending IT, currently a placeholder in the handout), download the library from the server, import (phone files already match the 48 kHz project; resampling is kept as a conditional step for stray rates), run the prep pipeline (with a noise profile captured from the phone recording itself), export to a student-chosen category folder, README update, worktime, upload. References Lab 1 for the prep-pipeline detail rather than re-walking it.
 
 ---
 
@@ -527,7 +527,7 @@ Students walked out of Session 7 with the midterm review packet (handout 09) for
 
 **Part 1 (first ~30 minutes): library submission.**
 
-Students upload their final library to the NAS following the submission card on the midterm prompt. The TA verifies each upload before moving on:
+Students upload their final library to the server following the submission card on the midterm prompt. The TA verifies each upload before moving on:
 - Folder is at the correct location
 - Folder structure matches the convention
 - README is present and filled in
@@ -535,7 +535,7 @@ Students upload their final library to the NAS following the submission card on 
 - Filenames follow the convention
 - Minimum sound count met
 
-Once a library is verified, copy it into the shared peer-listening folder at `[path]/shared/mus-381-fall-2026/project-02-libraries/<lastname>/` (read-only for the class). The peer-listening assignment, due Mon Wk 10, reads from there.
+Once a library is verified, copy it into the peer-listening folder at `/public/mus-381-fall-2026/project-02-libraries/<lastname>/`. The peer-listening assignment, due Mon Wk 10, reads from there.
 
 **Part 2 (remaining ~60–70 minutes): terminology exam.**
 
@@ -558,7 +558,7 @@ The full exam and answer key live in [`exams/midterm-exam.md`](../exams/midterm-
 - Cables: XLR, TS, TRS (Module 3)
 - Signal modifiers: DI, preamp (Module 3)
 - Mixer: channel strip, aux, bus, monitor send (Module 3)
-- File workflow: local-first, NAS-as-sync (Module 1, reinforced throughout)
+- File workflow: local-first, server-as-sync (Module 1, reinforced throughout)
 
 ---
 
