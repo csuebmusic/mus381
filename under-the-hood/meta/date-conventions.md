@@ -36,7 +36,7 @@ Some dates describe historical facts or external metadata and don't change betwe
 - **Historical citations and bibliography:** `Schaeffer (1948)`, `Hosken (2nd ed., 2015)`, `June 1981` magazine reference. Historical facts.
 - **Doc-revision metadata:** `**Last updated:** April 2026` at the top of operational docs. Helps the reader know how stale the doc is.
 - **Year labels in timeline diagrams:** `1948`, `~2000`, `today (2026)`. Historical landmarks in a diagram about the history of recording.
-- **File path embeds:** `mus-381-fall-2026/`. The semester is part of the path on the NAS.
+- **File path embeds:** `mus-381-fall-2026/`. The semester is part of the path under `/public` on the class server.
 - **Filename illustrations:** `Screenshot 2026-08-19 at 3.21.45 PM.png`. Demonstrating the macOS default screenshot format.
 
 ## The content-vs-schedule test

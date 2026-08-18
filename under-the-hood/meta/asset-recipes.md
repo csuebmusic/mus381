@@ -14,7 +14,7 @@ This file complements the build-script docs in [`../build/README.md`](../build/R
 
 ### Wed Wk 2 lab handout · `orientation-sample.wav`
 
-**Path on NAS:** `shared/module-02/orientation/orientation-sample.wav`
+**Path on the server:** `/public/module-02/orientation/orientation-sample.wav`
 
 **Used in:** Lab 1 (`module-02-audio-editing-mixing/lessons/03-handout-audacity-orientation.html`)
 

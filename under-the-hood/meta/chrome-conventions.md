@@ -97,7 +97,7 @@ Once the callout is present, the body prose should not redundantly list the gear
 
 Readings and interactive tools close with a small **End of session** callout, placed at the very end of the body content, immediately before the `<footer>`. It mirrors the Today's gear callout at the top: a structural cue students see at the moment they're about to tab away from the page.
 
-The callout exists because the readings and tools don't otherwise carry an end-of-session prompt. Without it, a Monday-reading student can close the tab and walk out without doing the NAS upload and gear teardown. The card at the station carries the canonical routine; this callout is the salience cue that points back to it.
+The callout exists because the readings and tools don't otherwise carry an end-of-session prompt. Without it, a Monday-reading student can close the tab and walk out without doing the upload and gear teardown. The card at the station carries the canonical routine; this callout is the salience cue that points back to it.
 
 The callout markup is always the same:
 
@@ -130,7 +130,7 @@ Lab handouts that currently carry this sentence:
 - Module 2 Labs 1, 2, 3
 - Module 3 Labs 1, 2, 3 (handouts 02, 05, 07)
 
-Module 3's Lab 4 (handout 08, the self-guided studio walkthrough) does not carry the tail. It is worked through on the student's own time in MB2508, not a standard MB2525 lab session with shared-gear teardown and a NAS upload, so the routines-card cue does not apply.
+Module 3's Lab 4 (handout 08, the self-guided studio walkthrough) does not carry the tail. It is worked through on the student's own time in MB2508, not a standard MB2525 lab session with shared-gear teardown and an upload, so the routines-card cue does not apply.
 
 ### Links
 
@@ -145,7 +145,7 @@ Markdown docs (module specs, TA notes, this folder) use the H1 to identify thems
 | Document type | H1 line |
 |---|---|
 | Module spec / TA notes (merged) | `# Module XX — [Module title]` |
-| Operational doc (NAS policy, sample bank prep, this folder's files) | `# [Document title]` (no module reference) |
+| Operational doc (server archival policy, sample bank prep, this folder's files) | `# [Document title]` (no module reference) |
 
 If a metadata line is useful immediately under the H1, put it as bold text and keep it dateless. For example: `**Weeks 2–5** (7 sessions)`. Calendar date ranges belong in the syllabus (`syllabus.html`), not here.
 
