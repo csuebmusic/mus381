@@ -117,7 +117,7 @@ By the end of this module, students should be able to:
 - Source material: every sound must be student-recorded (their Module 3 library plus anything new they record). No pre-recorded, found, or downloaded sound, and no pre-made loops. One exception: they may use another student's recording *with permission*, and must credit it. Crediting is the teaching point; credits go in a `lastname-final-credits.txt` file in the working folder.
 - Draft 1 due Wed Wk 14: a complete rough pass, submitted to the working folder for instructor/TA written feedback. No in-class listening (no time).
 - Draft 2 due Wed Wk 15: the revision, after acting on the Draft 1 feedback.
-- Final during finals: WAV 48 kHz / 32-bit float, `lastname-final.wav`, to the server working folder and the class folder. Optional SoundCloud for portfolio.
+- Final during finals: WAV 48 kHz / 32-bit, `lastname-final.wav`, to the server working folder and the class folder. Optional SoundCloud for portfolio.
 - Rubric (out of 100, no revision criterion): Technique & tools 35, Form & shape 30, Sound material & sourcing 20, Mix & craft 15.
 - A cumulative final exam runs during finals week (covers the whole course), separate from this project. Exam and answer key: [`exams/final-exam.md`](../exams/final-exam.md) *(TA-facing)*.
 
@@ -134,6 +134,8 @@ A take-home study packet for the cumulative final, parallel to the Module 3 midt
 **Module 4 historical listening (one, sample manipulation):** the lineage of building music from recorded sound, from musique concrète through hip-hop and sampling into contemporary producers who chop and recontextualize samples. It closes the loop the course opened with: Module 2's musique concrète listening was the same idea with tape and razor blades; this is the same idea in a DAW. Anchored to Wk 11 (the sampling sessions).
 
 No peer listening in Module 4: final pieces are shared in the class folder for everyone to hear, with no formal written response assignment.
+
+**Due:** Mon Wk 13, before class.
 
 **Built:** `listening/historical.html`. Works: Grandmaster Flash (1981), DJ Shadow (1996), The Avalanches (2000), J Dilla (2006), plus a student-choice contemporary piece. Photos in place (Flash at the turntables; an Akai MPC60) in `assets/images/module-04-week-11/`, alongside a lineage timeline SVG. Photo credits resolved.
 
