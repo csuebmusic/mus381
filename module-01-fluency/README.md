@@ -284,7 +284,7 @@ Don't go deeper than that on Day 1. The temptation will be to teach digital head
 - *"My recording sounds distorted/crunchy."* — Gain was too high (clipping). Re-record with the gain lower.
 - *"I forgot to pick the audio interface in QuickTime."* — They recorded through the Mac mini's nonexistent built-in mic and got nothing, or got something through the wrong source. Have them re-record.
 
-**Fallback if gear is genuinely broken.** If a station has a hardware problem you can't fix in 5 minutes, have the student record through QuickTime's built-in option (which on a Mac mini may mean the monitor's mic, or no mic at all). The point is they leave having saved locally and uploaded to the server. Fix the gear after class. Day 1 success = file uploaded during the exit routine.
+**If gear is genuinely broken.** Swap in a spare, or move the student to a working station. Every student leaves with a recording saved locally and uploaded to the server. Fix the failed gear after class.
 
 **Before students leave**, connect on the projector and scroll through the student folders to confirm every student's file is there. This is a small ritual but makes the work feel real.
 
