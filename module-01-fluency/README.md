@@ -19,20 +19,20 @@ Plan to circulate constantly. Don't lecture for more than 5 minutes at a stretch
 By the end of this single session, students should be able to:
 
 1. Locate, open, and navigate Finder; understand file paths, folders, and basic keyboard shortcuts
-2. Set up a local working folder at `~/Documents/lastname/` and connect to the lab NAS
+2. Set up a local working folder at `~/Documents/netid/` and connect to the class server with FileZilla
 3. Save files using the course naming convention (lowercase, hyphens, no spaces, no special characters)
 4. Identify the gear used today (USB hub, audio interface, mic, headphones, XLR cable) and connect them correctly
 5. Set the three knobs on an audio interface (gain, main, headphone) in the correct order, starting from zero
 6. Use a software level meter to set mic gain at a usable level
 7. Record a short audio clip through the full signal chain and save it locally
-8. Run through the full end-of-session routine: upload local folder to NAS, eject NAS, sign out of browser accounts, quit apps, knobs to zero, unplug gear, return everything to the lab's gear storage, leave the station clean
-9. Articulate the local-first / NAS-as-sync workflow that the course will use all semester
+8. Run through the full end-of-session routine: upload the local folder to the server, disconnect and quit FileZilla, sign out of browser accounts, quit apps, knobs to zero, unplug gear, return everything to the lab's gear storage, leave the station clean
+9. Articulate the local-first / server-as-sync workflow that the course will use all semester
 
 ---
 
 ## Key concepts introduced
 
-- **The local-first / NAS-as-sync workflow** — students work locally during sessions and use the NAS to sync between machines. Download at start of session, upload at end. The NAS is the master copy; local is the working copy.
+- **The local-first / server-as-sync workflow** — students work locally during sessions and use the class server to sync between machines. Download at start of session, upload at end. The server is the master copy; local is the working copy. Transfers happen in FileZilla, over SFTP.
 - **The naming convention** — `lastname-projectname-version.ext`, all lowercase, hyphens not spaces, no special characters. Used for every file in the course.
 - **The audio signal chain** — physical sound → microphone → cable → audio interface → digital audio. Students touch every link on Day 1; full treatment of each comes in Module 3.
 - **Gain staging (light touch)** — input level should be strong but not clipping. Visual meter is the gauge. Full treatment in Module 3.
@@ -42,7 +42,7 @@ By the end of this single session, students should be able to:
 
 ## Deliverable
 
-A `lastname/` folder uploaded to the NAS at `[path]/students/[lastname]/`, containing `week-01/[lastname]-hello.m4a`. The local copy at `~/Documents/lastname/` should also exist. Not graded — confirmation everyone made it through Day 1 with the workflow established.
+`week-01/[lastname]-hello.m4a` uploaded into the student's own folder on the server (auto-created, named by NetID). The local copy at `~/Documents/[netid]/week-01/` should also exist. Not graded — confirmation everyone made it through Day 1 with the workflow established.
 
 ---
 
@@ -63,18 +63,19 @@ None for Week 1. Module 1 is a setup module. The first listening assignment land
 
 Do all of this **at least one day in advance** of the first session, ideally two:
 
-- [ ] Confirm the NAS is running and reachable from every lab machine
-- [ ] Confirm every student has a NAS account and a `lastname/` folder pre-created
-- [ ] Get the list of student last names from the registrar; pre-create folders matching exactly (lowercase, hyphenate any spaces)
-- [ ] Write the NAS server address on the whiteboard before class starts
+- [ ] Confirm the server is reachable from every lab machine: connect with FileZilla to `sftp://134.154.190.239`, port 22, using your own NetID
+- [ ] Confirm FileZilla is installed and launches on every station, and that Settings → Interface → Passwords is set to **Do not save passwords**
+- [ ] Get the host key fingerprint from Inés so you can confirm the first-connect prompt students will see is the right server
+- [ ] Confirm `/public` exists with this term's folders in place: `public/mus-381-fall-2026/project-01-pieces/`, `project-02-libraries/`, `final-pieces/`, and `public/sample-banks/project-01/`
+- [ ] Write the host address, port, and login (NetID and NetID password) on the whiteboard before class starts
 - [ ] Place `01-first-day-setup.pdf` (exported from `lessons/01-reading-first-day-setup.html`) into `/Users/Shared/Downloads/` on every lab machine
 - [ ] Print `02-session-routines.pdf` (exported from `lessons/02-handout-session-routines.html`) and post it at every station. This is the reference card students follow at the start and end of every session for the rest of the semester.
 - [ ] **Wipe local `~/Documents/` on every lab machine** of any leftover student folders from previous semesters. Local folders accumulate over time; clean state every fall and spring.
 - [ ] Walk through every station: confirm the USB hub is connected to the Mac mini behind the monitor and has open ports
 - [ ] Walk through the lab's gear storage: inventory enough sets for the class — one audio interface, one pair of headphones, one dynamic mic, one mic stand, one XLR cable per student (or per pair, depending on enrollment). Confirm each audio interface is recognized when test-connected. Confirm headphones have the in-line slider all the way up
-- [ ] Test-record end-to-end (take a gear set from storage, plug in at one station, test: mic → interface → QuickTime → local save → NAS upload, then stow the gear back) to confirm the full chain works
+- [ ] Test-record end-to-end (take a gear set from storage, plug in at one station, test: mic → interface → QuickTime → local save → FileZilla upload, then stow the gear back) to confirm the full chain works
 - [ ] Walk through the entire session yourself end-to-end on a lab machine the day before, as if you were a student. Time yourself. This will surface every broken thing.
-- [ ] Have a backup plan if the NAS is down: students save locally only, you collect their work via USB drive at the end. **Do not cancel the session over a network issue.**
+- [ ] Have a backup plan if the server is down: students save locally only, you collect their work via USB drive at the end. **Do not cancel the session over a network issue.**
 - [ ] Have at least one spare hub, one spare XLR cable, and one spare set of headphones available in case something fails during class
 
 ---
@@ -84,7 +85,7 @@ Do all of this **at least one day in advance** of the first session, ideally two
 Assume:
 
 - Most have **never used a Mac** in any meaningful way
-- Most have **never connected to a file server**
+- Most have **never connected to a file server**, and none will have used an SFTP client
 - Most do not know what an **audio interface** is
 - Some have used GarageBand or Audacity casually; very few have used a real DAW
 - A small number will be quite advanced relative to the rest — they'll be bored if you go too slow, but they're useful as peer helpers
@@ -99,9 +100,9 @@ The right pacing: **slow enough that the slowest student keeps up, with side-tas
 |---|---|---|
 | 1 — Welcome & framing | 3:00–3:10 | Course overview, the room, where things live |
 | 2 — Mac & Finder fundamentals | 3:10–3:35 | Finder, files, folders, screenshots, naming preview |
-| 3 — Set up folders + connect to NAS | 3:35–3:55 | Local-first / NAS-as-sync workflow established |
+| 3 — Set up folders + connect to the server | 3:35–3:55 | Local-first / server-as-sync workflow established |
 | 4 — Set up gear + make a recording | 3:55–4:30 | Full signal chain: mic → interface → QuickTime → local save |
-| 5 — Exit routine | 4:30–4:40 | First full end-of-session: upload to NAS, sign out, stow gear |
+| 5 — Exit routine | 4:30–4:40 | First full end-of-session: upload to the server, sign out, stow gear |
 
 ### Block 1 — Welcome (10 min)
 
@@ -113,7 +114,7 @@ The right pacing: **slow enough that the slowest student keeps up, with side-tas
   - **Late policy.** Spell out where it is in the syllabus and the headline (e.g., "X points per day late, communicate with the instructor in advance for extensions" — read the actual wording so you state it correctly). Don't dwell on it, but make sure they know it exists and where to find it.
 - Tell them where to find the full syllabus (Canvas) and that the headlines you just gave are not a substitute for reading it themselves.
 - The most important thing to communicate: **"You don't need to know any of this already. That's why we're here."**
-- Tell them about the NAS in plain words: *"Everyone in this room is going to be working with big audio files all semester. The lab has a shared file server — we call it the NAS — and that's where your work lives. By the end of today you'll have your own folder on it."*
+- Tell them about the server in plain words: *"Everyone in this room is going to be working with big audio files all semester. The department runs a file server, and that's where your work lives between sessions. By the end of today you'll have connected to it and put your first recording on it. You reach it from inside this room, using your NetID."*
 
 Aim for the syllabus walkthrough to take about 3 minutes. The point is to flag and locate, not to lecture. Students who want details have Canvas; what they need from you in class is *I know where this lives and that I'm responsible for it*.
 
@@ -139,46 +140,57 @@ That whole sequence in five minutes teaches: Finder, screenshots, Desktop locati
 
 **Practical exercise — local reading:** Have students find `01-first-day-setup.pdf` in `/Users/Shared/Downloads/` and open it. This proves they can navigate Finder. (You pre-loaded this earlier.)
 
-### Block 3 — Set up folders and connect to the NAS (20 min)
+### Block 3 — Set up folders and connect to the server (20 min)
 
-This block establishes the workflow model for the entire semester. Students will hear "two folders, the local one is where you work, the NAS is how you transport between machines" and that becomes the mental model they carry forward. It's worth slowing down and being explicit about the *why*.
+This block establishes the workflow model for the entire semester. Students will hear "two folders, the local one is where you work, the server is how you transport between machines" and that becomes the mental model they carry forward. It's worth slowing down and being explicit about the *why*.
 
 **Open with the conceptual frame.** Before any clicking, draw on the whiteboard:
 
 ```
-~/Documents/lastname/        <-->     [path]/students/lastname/
-   (local working copy)               (NAS — sync between machines)
+~/Documents/netid/          <-->     your folder on the server
+  (local working copy)               (master copy, syncs between machines)
 ```
 
-Say something like: *"You'll keep two copies of your work. The local copy on whichever computer you're sitting at is where you actually do the work — it's fast and reliable. The NAS is the master copy. You download from it at the start of every session, and upload to it at the end. That way, if you sit at a different computer next time, your work is waiting on the NAS."*
+Say something like: *"You'll keep two copies of your work. The local copy on whichever computer you're sitting at is where you actually do the work, and it's fast and reliable. The server holds the master copy. You download from it at the start of every session, and upload to it at the end. That way, if you sit at a different computer next time, your work is waiting for you."*
+
+Add the constraint out loud, because it shapes how they plan: the server is reachable from inside the lab. Work that doesn't get uploaded stays on that one machine until they are back in the room.
 
 This is the most important conceptual moment of Day 1. Don't rush it.
 
 **Then: the local folder, first.**
 
 1. Finder → click **Documents** in the sidebar
-2. `Cmd + Shift + N` → name it `lastname` (lowercase) → return
+2. `Cmd + Shift + N` → name it with their NetID (lowercase) → return
 3. Open it, `Cmd + Shift + N` again → name it `week-01`
+
+The local folder is named by NetID so the two FileZilla panes carry the same name and line up visually. Filenames still lead with last name, so submitted work stays identifiable.
 
 Have students do this together with you on the projector. Drill the lowercase / no-spaces rule again here.
 
-**Then: connect to the NAS.**
+**Then: connect to the server.**
 
-1. In Finder: `Cmd + K`
-2. Type the NAS address: `smb://[address]`
-3. Authenticate
+Open FileZilla on the projector first and name the parts before anyone types: Quickconnect bar across the top, message log under it, local machine on the left, server on the right, transfer queue along the bottom. Two panes, drag between them.
 
-**Important: do not save the password.** When students authenticate, the Mac will offer a checkbox to save the password to the keychain. **Tell students explicitly to leave it unchecked.** Lab machines are shared — saving credentials means the next student at that station can connect under someone else's account. Students type their password each session. The handout doesn't mention this checkbox so students aren't nudged toward it; just call it out verbally if you see anyone hovering over it.
+1. `Cmd + Space`, type FileZilla, return
+2. Quickconnect bar: Host `sftp://134.154.190.239`, Username their NetID, Password their NetID password, Port `22`
+3. Quickconnect
+4. Accept the unknown host key prompt
 
-Once students are watching, have them all do it together. **This is the moment most likely to break.** If it does:
+Then have them all do it together. **This is the moment most likely to break.** If it does:
 
-- Common cause: typo in the server address. Have them re-check.
-- Common cause: wrong username or password. Direct to where this is documented.
-- Common cause: the NAS account wasn't pre-created. Have them work locally for the session — they can upload at end of class once you create the folder.
+- Common cause: the `sftp://` prefix left off the host. Without it FileZilla tries plain FTP on port 21 and the connection times out or is refused. This is the single most likely failure of the day.
+- Common cause: port left at 21 or blank when the host has no prefix. Both fields have to agree: `sftp://` and 22.
+- Common cause: NetID password typo, or a student typing a password for a different account. Campus password resets propagate to the server, so a recently changed password is the current one.
+- Common cause: caps lock, or an autofilled username with a stray space.
+- If one student cannot connect after two careful attempts, have them work locally for the session and sort it out after class. Do not let one login hold the room.
 
-**Once everyone is connected**, have them navigate to `[path]/students/[lastname]/` and confirm their folder exists. It should be empty — that's expected. They'll upload their first work to it at end of class.
+**Once everyone is connected**, have them look at the right pane. Their folder is created by the server on first login and named with their NetID. It should be empty. They'll upload their first work into it at end of class.
 
-**Eject the NAS.** Have students eject the NAS from Finder's sidebar. Explicitly: *"You don't need the NAS connected during the session. We'll reconnect at the end of class to upload."* This builds the habit early — no one should be working with the NAS mounted all session.
+**Point out `/public` but don't dwell.** Click the `/` at the top of the server's directory tree, open `public`, show that class material and peer-review submissions live there, then navigate back. Module 2 is where they actually use it.
+
+**Passwords.** FileZilla on the lab machines is set to leave passwords unsaved, so students type theirs each session. Keep them on the Quickconnect bar and off the Site Manager, which is where saved-site entries would otherwise accumulate on a shared machine.
+
+**Disconnect.** Have students choose Server → Disconnect and quit FileZilla. Explicitly: *"You don't need FileZilla open during the session. We'll reconnect at the end of class to upload."*
 
 **File naming convention.** Write the convention on the whiteboard:
 
@@ -195,11 +207,11 @@ smith-soundpiece-v1.wav
 
 Drill the rules: lowercase, hyphens, no spaces, no special characters. **Tell them why:** different operating systems and different software treat capitalization, spaces, and special characters inconsistently. A file named `My Project (final!).wav` will eventually break something.
 
-**Sync discipline — preview the lesson.** Briefly tell them: *"Starting next session, every session will start with you downloading your folder from the NAS, and end with you uploading it back. We'll go through the full routine at the end of class today. The most important rule: always upload before you leave. If you don't, your work is stranded on this computer, and the next time you sit at a different computer you'll be working from an older version."*
+**Sync discipline — preview the lesson.** Briefly tell them: *"Starting next session, every session will start with you downloading your work from the server, and end with you uploading it back. We'll go through the full routine at the end of class today. The most important rule: always upload before you leave. If you don't, your work is stranded on this computer, and the next time you sit at a different computer you'll be working from an older version."*
 
 ### Block 4 — Set up gear and make a recording (35 min) + Exit routine (10 min)
 
-This is the day's main event. Students take gear from the lab's gear storage, plug in their full signal chain, set their levels, and produce one successful recording, then run the exit routine to upload to the NAS and stow the gear back. The pedagogical arc is one continuous activity from storage to upload.
+This is the day's main event. Students take gear from the lab's gear storage, plug in their full signal chain, set their levels, and produce one successful recording, then run the exit routine to upload to the server and stow the gear back. The pedagogical arc is one continuous activity from storage to upload.
 
 The lab has different audio interface models (and different MIDI keyboard models later in the semester) in storage; the audio interfaces don't all look identical or have the same knob layout. The USB hub at each station is permanently connected to the Mac mini behind the monitor. Teach categories, not specific models.
 
@@ -258,7 +270,7 @@ This is the first time most students will see input level visually represented. 
 
 Don't go deeper than that on Day 1. The temptation will be to teach digital headroom, dBFS, the relationship between input gain and noise floor — save it. Day 1 is the introduction; Module 3 is the proper treatment.
 
-**Record + save.** Hit record, say name + one word, stop, listen back. Save as `lastname-hello.m4a` to `~/Documents/lastname/week-01/` (local). The NAS upload happens during the exit routine.
+**Record + save.** Hit record, say name + one word, stop, listen back. Save as `lastname-hello.m4a` to `~/Documents/[netid]/week-01/` (local). The upload happens during the exit routine.
 
 **Block 4 confusions — gear, signal chain, recording:**
 
@@ -271,51 +283,54 @@ Don't go deeper than that on Day 1. The temptation will be to teach digital head
 - *"My recording sounds distorted/crunchy."* — Gain was too high (clipping). Re-record with the gain lower.
 - *"I forgot to pick the audio interface in QuickTime."* — They recorded through the Mac mini's nonexistent built-in mic and got nothing, or got something through the wrong source. Have them re-record.
 
-**Fallback if gear is genuinely broken.** If a station has a hardware problem you can't fix in 5 minutes, have the student record through QuickTime's built-in option (which on a Mac mini may mean the monitor's mic, or no mic at all). The point is they leave having saved locally and uploaded to the NAS. Fix the gear after class. Day 1 success = file uploaded to the NAS during the exit routine.
+**Fallback if gear is genuinely broken.** If a station has a hardware problem you can't fix in 5 minutes, have the student record through QuickTime's built-in option (which on a Mac mini may mean the monitor's mic, or no mic at all). The point is they leave having saved locally and uploaded to the server. Fix the gear after class. Day 1 success = file uploaded during the exit routine.
 
-**Before students leave**, open the NAS folder on the projector and scroll through to confirm every student's file is there. This is a small ritual but makes the work feel real.
+**Before students leave**, connect on the projector and scroll through the student folders to confirm every student's file is there. This is a small ritual but makes the work feel real.
 
 If a student's file isn't there in their local folder:
 - Don't single them out publicly. Quietly help them after class or in office hours.
-- Most often the issue is they saved to Desktop or Downloads. Walk them through Recents in Finder to find the file, then drag it into `~/Documents/lastname/week-01/`.
+- Most often the issue is they saved to Desktop or Downloads. Walk them through Recents in Finder to find the file, then drag it into `~/Documents/[netid]/week-01/`.
 
 **Teach the exit routine — last 10 minutes of class.** Before dismissing, walk students through the end-of-session routine on the projector. They have a printed copy at every station (the **Session Routines** reference card) and a version inside today's reading, but verbal reinforcement on Day 1 sets the habit. This is the first time they'll run the routine end-to-end, including the gear teardown.
 
 Walk them through:
 
 1. Save the recording in QuickTime if they haven't already (`Cmd + S`)
-2. Connect to the NAS again: `Cmd + K`, address, sign in (no keychain save)
-3. Open two Finder windows side by side: one on `~/Documents/lastname/`, one on the NAS at `[path]/students/lastname/`
-4. Drag the *contents* of the local `lastname/` folder (today: just `week-01/` with the hello file inside) onto the NAS `lastname/` folder. Or simply drag the entire local `lastname/` folder onto `[path]/students/` and choose **Replace** if asked.
-5. Confirm the upload: the NAS folder should now show today's modification date and contain `week-01/[lastname]-hello.m4a`
-6. Eject the NAS from Finder's sidebar
-7. Sign out of any browser accounts (Canvas, Google, etc.); quit the browser
-8. Quit all apps with `Cmd + Q`
-9. Turn the audio interface knobs (gain, main / output, headphone) back to zero
-10. Unplug: headphones from the interface, the interface's USB from the hub, the mic's XLR from both ends. Coil cables loosely without kinks
-11. Return everything to the lab's gear storage: interface, headphones, mic, mic stand, XLR cable
-12. Chair in
+2. Open FileZilla and reconnect from the Quickconnect bar
+3. Left pane to `~/Documents/[netid]/`; right pane stays in their own folder on the server
+4. Click into the left pane, `Cmd + A`, drag across to the right pane
+5. On the overwrite dialog, **Overwrite if source newer**, tick **Always use this action**, OK
+6. Confirm the upload: the transfer queue empties, and the right pane shows `week-01/[lastname]-hello.m4a`
+7. Server → Disconnect, then quit FileZilla (`Cmd + Q`)
+8. Sign out of any browser accounts (Canvas, Google, etc.); quit the browser
+9. Quit all apps with `Cmd + Q`
+10. Turn the audio interface knobs (gain, main / output, headphone) back to zero
+11. Unplug: headphones from the interface, the interface's USB from the hub, the mic's XLR from both ends. Coil cables loosely without kinks
+12. Return everything to the lab's gear storage: interface, headphones, mic, mic stand, XLR cable
+13. Chair in
 
 Tell them this is the same routine they'll do every session for the rest of the semester. Today it'll take a few extra minutes because it's the first time; once habit, it's about 5 minutes total. The Session Routines card at every station summarizes the same steps for daily reference.
 
-**Verify uploads on the projector.** Once everyone is done, open `[path]/students/` on the projector and scroll through. Confirm every student's folder is there with their hello file inside. This is the same "small ritual" as before, but now it confirms upload happened, not just save.
+**Verify uploads on the projector.** Once everyone is done, connect on the projector and scroll the student folders. Confirm every student's folder holds their hello file. This is the same "small ritual" as before, but now it confirms upload happened, not just save.
 
 **Common Day-1 confusions during the upload:**
 
-- *Move vs copy.* When dragging from local to NAS, macOS may try to *move* (delete the local copy). Students should hold `Option` while dragging to force a copy, or use `Cmd + C` / `Cmd + V` (which always copies). Demo this explicitly. Losing the local copy isn't a disaster on Day 1, but it sets a bad habit.
-- *Replace prompt confusion.* If macOS asks whether to replace the existing folder, the answer today is **Replace** — the local version is the latest. (Going forward, students should be checking modification dates before replacing, but on Day 1 there's no ambiguity.)
-- *Two Finder windows.* Some students will be confused about how to have two windows open. Show them `Cmd + N` to make a new Finder window. Demo dragging between them.
+- *Which pane is which.* The most common Day 1 disorientation. Say it the same way every time: left is this computer, right is the server. Point at the screen when you say it.
+- *Dragging the folder instead of its contents.* A student who drags `~/Documents/[netid]/` itself into their server folder ends up with `netid/netid/week-01/`. Teach the pattern once and hold to it: click into the pane, `Cmd + A`, drag the selection.
+- *Nothing appears to happen.* The transfer went into the queue at the bottom of the window and finished in under a second. Show them the queue and the **Successful transfers** tab so they know where to look for confirmation.
+- *Overwrite dialog dismissed with the wrong option.* **Overwrite** and **Overwrite if source newer** both work at end of session; **Skip** silently uploads nothing. If a student reports an empty-looking upload, this is why.
 
 ---
 
 ## Common questions
 
-- *"Do I need a Mac at home?"* — No. The lab has everything they need. The NAS keeps your work synced between lab machines.
+- *"Do I need a Mac at home?"* — No. The lab has everything they need. The server keeps your work synced between lab machines.
+- *"Can I connect to the server from home?"* — No. It's reachable from inside the lab. Carry work out on a USB drive or personal cloud storage if you want it with you.
 - *"Can I use my own headphones?"* — Yes. The lab provides them but personal headphones are fine.
 - *"What if my audio interface isn't working?"* — Try: unplug from the hub, replug into a different hub port, check Audio MIDI Setup. If still broken, switch stations and report it.
-- *"Can I take my files home on a USB drive?"* — Yes — copy your `lastname/` folder from `~/Documents/` to a USB drive, personal cloud storage, or anywhere you can access from home. The NAS stays in the lab. Audacity is free and runs anywhere, so working at home on Module 2 material is fine. Ableton is lab-license-only, so Module 4 work mostly stays in the lab.
-- *"What if I forget to upload at the end?"* — Your work is stranded on that machine. The next time you're at that exact same station, it'll still be in `~/Documents/lastname/`, but if you're at a different station, you'll be working from an older version. Always upload.
-- *"What if I forget to download at the start?"* — You'll be working from an older version. Sync regularly: download at start, upload at end. If you realize mid-session, save what you've done, then go check the NAS to see what you should have started with.
+- *"Can I take my files home on a USB drive?"* — Yes. Copy your folder from `~/Documents/` to a USB drive, personal cloud storage, or anywhere you can reach from home. The server itself is reachable from the lab only, so a copy you carry out is the way to work at home. Audacity is free and runs anywhere, so working at home on Module 2 material is fine. Ableton is lab-license-only, so Module 4 work mostly stays in the lab.
+- *"What if I forget to upload at the end?"* — Your work is stranded on that machine. The next time you're at that exact same station, it'll still be in `~/Documents/[netid]/`, but if you're at a different station, you'll be working from an older version. Always upload.
+- *"What if I forget to download at the start?"* — You'll be working from an older version. Sync regularly: download at start, upload at end. If you realize mid-session, save what you've done, then connect and check the server to see what you should have started with.
 - *"Do I need to buy a textbook?"* — No. Course materials are in the GitHub repo and on Canvas.
 
 ---
@@ -324,25 +339,25 @@ Tell them this is the same routine they'll do every session for the rest of the 
 
 These show up across the whole day, not tied to any one block. Block-specific confusions live with their respective blocks above.
 
-- **"I saved it but I can't find it."** — They saved to Desktop or Downloads instead of `~/Documents/lastname/`. Walk them through Recents in Finder to find the file, then drag it.
+- **"I saved it but I can't find it."** — They saved to Desktop or Downloads instead of `~/Documents/[netid]/`. Walk them through Recents in Finder to find the file, then drag it.
 - **"My screenshot didn't work."** — They held the wrong key combination. `Cmd + Shift + 4` to drag a region. The screenshot lands on Desktop.
-- **"I don't know my last name's spelling on the NAS."** — Send them to the projector list of folders and have them find theirs.
-- **"The NAS folder doesn't have my name."** — Account creation gap. Have them work locally for the session; create the folder after class and have them upload at the next session.
-- **"Local and NAS folders look different."** — Sync issue. Whichever has the newer modification date is the trusted version. Copy that one over the older one. If they can't tell which is newer, ask the TA before deleting anything.
-- **"macOS asked me Replace or Keep Both."** — Always Replace at end of session. Keep Both creates `lastname` and `lastname 2` on the NAS, which is a sync mess.
+- **"I don't know my NetID."** — It's the front half of their campus email address, the same login as Canvas. Have them check Canvas in the browser.
+- **"FileZilla says it can't connect."** — Check the `sftp://` prefix and port 22 first. That pair accounts for most of it. Password next.
+- **"Local and server folders look different."** — Sync issue. Whichever has the newer modification date is the trusted version. Copy that one over the older one. Turn on View → Directory Comparison → Compare modification time to make the difference visible. If they can't tell which is newer, ask the TA before deleting anything.
+- **"FileZilla asked me Overwrite, Skip, or Rename."** — At end of session the answer is **Overwrite if source newer**. Skip uploads nothing; Rename leaves two copies with confusing names.
 
 ---
 
 ## Pacing fallbacks
 
-The day's clock is genuinely tight: Welcome 10 + Mac/Finder 25 + Folders/NAS 20 + Gear/recording 35 + Exit routine 10 = 100 min. That assumes Block 4 holds at 35 min for the gear and recording portion, with the last 10 min of class reserved for the exit routine. If gear setup or gain staging runs long, the exit routine is non-negotiable — cut something inside Block 4 instead.
+The day's clock is genuinely tight: Welcome 10 + Mac/Finder 25 + Folders/server 20 + Gear/recording 35 + Exit routine 10 = 100 min. That assumes Block 4 holds at 35 min for the gear and recording portion, with the last 10 min of class reserved for the exit routine. If gear setup or gain staging runs long, the exit routine is non-negotiable — cut something inside Block 4 instead.
 
 If you're behind:
 
 - Cut Block 2 short. Mac fundamentals continue informally throughout the semester. As long as students can find Finder and save a file, the rest can be picked up.
 - Block 4 (gear + recording) is the heart of the day. Don't shortcut the order-of-operations (knobs to zero, slider up, plug in, monitor up, gain last). That sequence is the lesson.
 - If absolutely necessary, accept a less-than-perfect gain setting and let students just get a recording. Module 3 will treat this properly.
-- **Never skip the exit routine.** If everything else has run long, dismiss students one-by-one only after they've uploaded to the NAS. The whole semester's workflow depends on this habit forming on Day 1.
+- **Never skip the exit routine.** If everything else has run long, dismiss students one-by-one only after they've uploaded to the server. The whole semester's workflow depends on this habit forming on Day 1.
 
 If you're ahead:
 
@@ -354,16 +369,16 @@ If you're ahead:
 
 ## After class
 
-- [ ] Open the NAS at `[path]/students/`. Confirm every student has a `lastname/week-01/[lastname]-hello.m4a` uploaded. Note any missing students for follow-up — these are students who didn't run the exit routine, which is the sync discipline we're trying to build from Day 1.
-- [ ] Note any technical issues (broken stations, NAS hiccups, gear that didn't work) in a running log so they get fixed before Monday.
-- [ ] If the NAS had problems, debrief with Inés about what happened and what to fix.
+- [ ] Connect and check the student folders. Confirm every student has `week-01/[lastname]-hello.m4a` uploaded. Note any missing students for follow-up — these are students who didn't run the exit routine, which is the sync discipline we're trying to build from Day 1.
+- [ ] Note any technical issues (broken stations, server or login trouble, gear that didn't work) in a running log so they get fixed before Monday.
+- [ ] If the server or logins had problems, debrief with Inés about what happened and what to fix.
 - [ ] Email any students whose files are missing — don't shame, just make sure they know how to do it before Monday.
 
 ---
 
 ## What to assess
 
-Nothing in Module 1 is graded. The deliverable (`lastname-hello.m4a` uploaded to the NAS) is a check that everyone made it through Day 1 and ran the exit routine. The only thing to "assess" is whether each student's file is in the right place on the NAS — that's binary, no rubric needed.
+Nothing in Module 1 is graded. The deliverable (`lastname-hello.m4a` uploaded to the server) is a check that everyone made it through Day 1 and ran the exit routine. The only thing to "assess" is whether each student's file is in the right place on the server — that's binary, no rubric needed.
 
 If a student is missing the file by Monday's class, that's an early signal they may need extra support, particularly with the sync workflow. Reach out individually.
 

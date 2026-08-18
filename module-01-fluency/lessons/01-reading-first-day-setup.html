@@ -52,16 +52,16 @@
   <div class="subtitle">Get set up. Make a sound. Save a file.</div>
 </div>
 
-<p class="lede">Welcome. By the end of class today, you'll have a working folder set up on this computer, a master folder set up on the lab server (the NAS), and your first audio file synced between the two. If anything in this reading looks unfamiliar, that's expected. We'll go through everything together.</p>
+<p class="lede">Welcome. By the end of class today, you'll have a working folder set up on this computer, a folder of your own on the class server, and your first audio file synced between the two. If anything in this reading looks unfamiliar, that's expected. We'll go through everything together.</p>
 
 <h2>What we're doing today</h2>
 
 <ol class="steps">
   <li>Get comfortable with the Mac and Finder.</li>
-  <li>Set up your local folder on this computer, and verify your account on the class file server (the NAS).</li>
+  <li>Set up your local folder on this computer, and connect to the class server.</li>
   <li>Plug in your audio interface, microphone, and headphones.</li>
   <li>Set your levels and make a short recording: your first piece of work in this class.</li>
-  <li>Upload your work to the NAS so you can pick it up from any computer next time.</li>
+  <li>Upload your work to the class server so you can pick it up from any computer in the lab next time.</li>
 </ol>
 
 <div class="callout">
@@ -85,7 +85,7 @@
 
 <div class="callout warn">
   <div class="callout-label">Don't save work to the Desktop</div>
-  <p>The Desktop on the lab computers gets cleared periodically, and anything saved there will be lost. Always save your work to <code>~/Documents/lastname/</code>: never to the Desktop, the Downloads folder, or anywhere else. We'll set up that <code>lastname</code> folder shortly.</p>
+  <p>The Desktop on the lab computers gets cleared periodically, and anything saved there will be lost. Always save your work to <code>~/Documents/netid/</code>: never to the Desktop, the Downloads folder, or anywhere else. We'll set up that <code>netid</code> folder shortly.</p>
 </div>
 
 <h3>Open Finder</h3>
@@ -98,7 +98,7 @@
 
 <h3>Make a folder</h3>
 
-<p>The next few steps are a quick practice run: we'll make a throwaway folder on the Desktop, drop a file in, and delete it. This is just to learn the mechanics. <strong>Your real work goes in your <code>~/Documents/lastname/</code> folder</strong>, which we'll set up shortly.</p>
+<p>The next few steps are a quick practice run: we'll make a throwaway folder on the Desktop, drop a file in, and delete it. This is just to learn the mechanics. <strong>Your real work goes in your <code>~/Documents/netid/</code> folder</strong>, which we'll set up shortly.</p>
 
 <ol class="steps">
   <li>In the Finder window, click <strong>Desktop</strong> in the left sidebar.</li>
@@ -183,9 +183,14 @@
 
 <h2>Part 2 · Set up your folders</h2>
 
-<p>In this class, you'll keep <strong>two copies</strong> of your work: a <strong>local</strong> copy on the computer you're using, and a master copy on the <strong>NAS</strong> (the lab's file server). The local copy is where you actually work during a session. The NAS is how your work moves between computers: when you sit at a different lab machine next session, you'll download your work from the NAS to that machine.</p>
+<p>In this class, you'll keep <strong>two copies</strong> of your work: a <strong>local</strong> copy on the computer you're using, and a master copy on the <strong>class server</strong>. The local copy is where you actually work during a session. The server is how your work moves between computers: when you sit at a different lab machine next session, you'll download your work from the server to that machine.</p>
 
-<p>Today, since this is your first session, we'll create the local folder, then connect to the NAS to confirm your account works.</p>
+<p>Today, since this is your first session, we'll create the local folder, then connect to the server and find the folder waiting for you there.</p>
+
+<div class="callout warn">
+  <div class="callout-label">The server lives on campus</div>
+  <p>You can reach the class server from inside the lab. Plan your work around that: anything you want at a different station next session has to be uploaded before you leave this one.</p>
+</div>
 
 <h3>Make your local folder</h3>
 
@@ -193,51 +198,54 @@
   <li>Open Finder.</li>
   <li>In the left sidebar, click <strong>Documents</strong>.</li>
   <li>Press <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd> to make a new folder.</li>
-  <li>Name it <code>lastname</code> using your actual last name, lowercase. Press <kbd>return</kbd>.</li>
+  <li>Name it with your <strong>NetID</strong>, lowercase, the same one you sign in to Canvas with. Press <kbd>return</kbd>.</li>
   <li>Double-click the folder to open it.</li>
   <li>Press <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd> again to make another new folder. Name it <code>week-01</code>.</li>
 </ol>
 
 <p>This is where today's work will go.</p>
 
-<h3>Connect to the NAS</h3>
+<h3>Meet FileZilla</h3>
 
-<p>The NAS is the lab's shared file server. Think of it as a giant hard drive that every computer in the room can connect to. Your work goes there at the end of every session.</p>
+<p>The class server is a computer in the building that holds everyone's work. You reach it with an app called <strong>FileZilla</strong>, already installed on every machine in the lab. Its window is split down the middle: <strong>this computer on the left, the server on the right</strong>. You move work between them by dragging from one side to the other.</p>
 
-<ol class="steps">
-  <li>Click any empty area of the Desktop, or click a Finder window, so Finder is the active app.</li>
-  <li>Hold <kbd>Cmd</kbd> + <kbd>K</kbd>. A small window opens that says "Connect to Server."</li>
-  <li>Type the server address: your TA will write it on the whiteboard.</li>
-  <li>Click <strong>Connect</strong>.</li>
-  <li>Enter the username and password your TA gives you.</li>
-  <li>Click <strong>Connect</strong>.</li>
-</ol>
+<p>The server uses <strong>SFTP</strong>, secure file transfer protocol, which is why the address you type starts with <code>sftp://</code>.</p>
 
-<p>The NAS now appears in Finder's sidebar on the left, under <strong>Locations</strong>.</p>
+<p>Everything you need today is below. The FileZilla project also keeps a short guide at <a href="https://wiki.filezilla-project.org/Using" target="_blank" rel="noopener noreferrer">wiki.filezilla-project.org/Using</a>. Four of its sections apply to us: <em>Using the Quick Connect bar</em>, <em>Navigating on the server</em>, <em>Navigating on your machine</em>, and <em>Transferring files</em>. Its troubleshooting section is written for Windows machines.</p>
 
-<h3>Find your folder on the NAS</h3>
+<h3>Connect to the server</h3>
 
 <ol class="steps">
-  <li>Click the NAS in Finder's sidebar.</li>
-  <li>Open the <code>music</code> folder.</li>
-  <li>Open the <code>students</code> folder.</li>
-  <li>Find the folder with your last name. That one is yours.</li>
-  <li>Open it. It should be empty, that's expected. You'll upload your first work to it at the end of class today.</li>
+  <li>Hold <kbd>Cmd</kbd> + <kbd>Space</kbd>, type <strong>FileZilla</strong>, press <kbd>return</kbd>.</li>
+  <li>Across the top of the window is the <strong>Quickconnect bar</strong>: four small fields and a button. Fill them in:
+    <ul>
+      <li><strong>Host:</strong> <code>sftp://134.154.190.239</code></li>
+      <li><strong>Username:</strong> your NetID</li>
+      <li><strong>Password:</strong> your NetID password, the same one you use for Canvas and campus email</li>
+      <li><strong>Port:</strong> <code>22</code></li>
+    </ul>
+  </li>
+  <li>Click <strong>Quickconnect</strong>.</li>
+  <li>A message appears about an unknown host key. Click <strong>OK</strong>. You'll see this once per station, the first time you connect there.</li>
 </ol>
+
+<p>Text scrolls past in the panel at the top: that's FileZilla reporting what it's doing. When it settles, the right side of the window fills with the contents of <strong>your own folder on the server</strong>, created for you and named with your NetID. Today it's empty. That's expected.</p>
+
+<div class="callout">
+  <div class="callout-label">Your folder and the shared folder</div>
+  <p>What you see on the right when you connect is yours alone. Class material, and work your classmates post for peer review, live in a separate folder called <code>public</code>. To get there, click the <code>/</code> at the top of the directory tree on the right side, then open <code>public</code>. We'll use it starting in Module 2.</p>
+</div>
 
 <div class="callout warn">
   <div class="callout-label">If something goes wrong</div>
-  <p>The most common problem is a typo in the server address, or a wrong password. Re-read what's on the whiteboard, retype carefully, and try again. If you still can't connect, raise your hand. Your TA will help.</p>
+  <p>The most common problem is a typo in the host address, or a NetID password typed from muscle memory for a different account. Retype both carefully, watching for the <code>sftp://</code> at the front. If you still can't connect, raise your hand. Your TA will help.</p>
 </div>
 
-<h3>Eject the NAS for now</h3>
+<h3>Disconnect for now</h3>
 
-<p>You don't need the NAS connected during the session. You'll reconnect at the end of class to upload your work. For now, eject:</p>
+<p>You'll reconnect at the end of class to upload your work. For now, choose <strong>Server → Disconnect</strong> from the menu bar, then quit FileZilla with <kbd>Cmd</kbd> + <kbd>Q</kbd>.</p>
 
-<ol class="steps">
-  <li>In Finder's sidebar, find the NAS under <strong>Locations</strong>.</li>
-  <li>Click the small eject icon (⏏) next to its name.</li>
-</ol>
+<p>FileZilla on the lab computers is set to leave passwords unsaved, so you type yours at the start of every session.</p>
 
 <h3>Part 2 shortcuts</h3>
 
@@ -246,8 +254,8 @@
     <tr><th>Keys</th><th>What it does</th></tr>
   </thead>
   <tbody>
-    <tr><td><kbd>Cmd</kbd> + <kbd>K</kbd></td><td>Connect to a server (in Finder)</td></tr>
-    <tr><td><kbd>Cmd</kbd> + <kbd>N</kbd></td><td>New Finder window (useful for dragging between locations)</td></tr>
+    <tr><td><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd></td><td>New folder in Finder</td></tr>
+    <tr><td><kbd>Cmd</kbd> + <kbd>A</kbd></td><td>Select everything in a FileZilla pane</td></tr>
   </tbody>
 </table>
 
@@ -453,7 +461,7 @@ garcia-fieldrec-traffic.wav</code></pre>
   <li>A save dialog opens.</li>
   <li>In the Name field, type <code>lastname-hello</code> (using your actual last name, no caps, no spaces).</li>
   <li>In the sidebar of the save dialog, click <strong>Documents</strong>.</li>
-  <li>Navigate into your <code>lastname</code> folder, then into <code>week-01</code>.</li>
+  <li>Navigate into your <code>netid</code> folder, then into <code>week-01</code>.</li>
   <li>Click <strong>Save</strong>.</li>
 </ol>
 
@@ -476,22 +484,23 @@ garcia-fieldrec-traffic.wav</code></pre>
 
 <h2>Before you leave today · the exit routine</h2>
 
-<p>Lab machines and gear are shared. The room gets reset for the Art department between our class meetings, so before you leave you'll <strong>upload your local folder to the NAS</strong> (so you can pick it up at any computer next session) and <strong>stow the gear</strong> (so it's all back in the lab's gear storage). This is the same routine you'll do every session for the rest of the semester. Today is the first time you'll do it, so it'll feel slow; that's fine. The <strong>Session Routines</strong> reference card at your station has the same routine summarized for every session from here on.</p>
+<p>Lab machines and gear are shared. The room gets reset for the Art department between our class meetings, so before you leave you'll <strong>upload your work to the class server</strong> (so you can pick it up at any computer next session) and <strong>stow the gear</strong> (so it's all back in the lab's gear storage). This is the same routine you'll do every session for the rest of the semester. Today is the first time you'll do it, so it'll feel slow; that's fine. The <strong>Session Routines</strong> reference card at your station has the same routine summarized for every session from here on.</p>
 
-<h3>NAS upload</h3>
+<h3>Upload to the server</h3>
 
 <ol class="steps">
   <li>Make sure your work is saved (<kbd>Cmd</kbd> + <kbd>S</kbd> in whatever app you used).</li>
-  <li>Connect to the NAS again: <kbd>Cmd</kbd> + <kbd>K</kbd>, enter the address, sign in.</li>
-  <li>Open two Finder windows side by side: one on your <code>lastname/</code> folder on the NAS, one on <code>~/Documents/lastname/</code>.</li>
-  <li>Drag your local <code>lastname/</code> folder onto the NAS. If macOS asks because a folder with that name already exists, choose <strong>Replace</strong>: your local version is the one with today's work.</li>
-  <li>Confirm the upload finished. The folder on the NAS should now show today's modification date and contain <code>week-01/lastname-hello.m4a</code>.</li>
-  <li>Eject the NAS from Finder's sidebar.</li>
+  <li>Open FileZilla and connect again with the Quickconnect bar: <code>sftp://134.154.190.239</code>, your NetID, your NetID password, port <code>22</code>.</li>
+  <li>On the <strong>left side</strong>, navigate to <code>~/Documents/netid/</code>. On the <strong>right side</strong>, stay in your own folder on the server.</li>
+  <li>Click into the left side, select everything (<kbd>Cmd</kbd> + <kbd>A</kbd>), and drag it across into the right side.</li>
+  <li>If FileZilla asks about files that already exist, choose <strong>Overwrite if source newer</strong>, tick <strong>Always use this action</strong>, and click <strong>OK</strong>.</li>
+  <li>Watch the <strong>transfer queue</strong> along the bottom of the window. When it empties and your file appears under <strong>Successful transfers</strong>, you're done. The right side should now show <code>week-01/lastname-hello.m4a</code>.</li>
+  <li>Choose <strong>Server → Disconnect</strong>, then quit FileZilla (<kbd>Cmd</kbd> + <kbd>Q</kbd>).</li>
 </ol>
 
 <div class="callout warn">
-  <div class="callout-label">Don't choose "Keep Both"</div>
-  <p>When macOS asks whether to Replace, the dialog also offers <strong>Keep Both</strong>. Don't pick that: it'll create <code>lastname</code> and <code>lastname 2</code> on the NAS, and the next session you'll have no idea which is current. Always choose <strong>Replace</strong> when uploading at end of session.</p>
+  <div class="callout-label">The overwrite dialog</div>
+  <p>FileZilla asks what to do whenever a file exists on both sides. <strong>Overwrite if source newer</strong> is the choice in both directions: downloading, it takes the server's copy when the server is ahead; uploading, it takes today's work over last session's. <strong>Always use this action</strong> applies your choice to the rest of that transfer.</p>
 </div>
 
 <h3>Sign out and quit</h3>
