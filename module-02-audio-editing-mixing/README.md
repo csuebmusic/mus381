@@ -540,7 +540,7 @@ If a student is stuck on "I don't know what I want to make," that's normal. Sugg
 
 #### End of session: upload (last 5 min)
 
-Final 5 minutes: students follow the handout's end-of-session routine. Save the project (`Cmd+S`), select everything in `~/Documents/[netid]/` and drag it into their own folder on the server with **Overwrite if source newer**. Today that includes the sample bank, so it runs a minute long; from Wk 4 on the bank is already there and gets skipped. Eject server, log out.
+Final 5 minutes: students follow the handout's end-of-session routine. Save the project (`Cmd+S`), select everything in `~/Documents/[netid]/` and drag it into their own folder on the server with **Overwrite if source newer**. Today that includes the sample bank, so it runs a minute long; from Wk 4 on the bank is already there and gets skipped. Disconnect, quit FileZilla, log out.
 
 ### Common confusions
 
