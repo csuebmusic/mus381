@@ -241,6 +241,54 @@ python3 under-the-hood/build/embed-tool-demo.py
 
 Standard library only — no extra dependencies. Idempotent.
 
+## `generate-orientation-sample.py`
+
+Generates `orientation-sample.wav`, the shared asset for the Module 2
+Week 2 Audacity orientation lab
+(`module-02-audio-editing-mixing/lessons/03-handout-audacity-orientation.html`).
+
+### What it produces
+
+Output directory: `assets/audio/module-02-week-02/`
+
+| File | Sample rate | Bit depth | Length | Purpose |
+|---|---|---|---|---|
+| `orientation-sample.wav` | 48 kHz | 24-bit | 16.0 s | Stereo bell-like resonance for the Lab 1 import, cut, and fade exercises |
+
+The lab copy is uploaded to `/public/module-02/orientation/` on the class
+server; the repo copy is the source of truth.
+
+### The sound
+
+Struck-bell additive synthesis: eleven inharmonic partials at Risset bell
+ratios over a 400 Hz base, each with its own T60, plus a filtered noise
+burst at the onset for the mallet contact. Upper partials are given short
+T60s so the strike brightness falls away in the first few seconds and
+leaves the low ringing body behind; the spectral centroid runs from about
+860 Hz at the onset to about 550 Hz by 7 s. A global `(1 - t/16) ** 1.25`
+envelope carries the whole sound to true digital silence at the final
+sample.
+
+Measured decay, peak per second: -3 dBFS at 0 s, -13 at 5 s, -17 at 7 s,
+-29 at 12 s, -47 at 15 s. The level at the 7-second mark is what the lab
+depends on: students select from roughly there to the end, delete, and fade
+what remains, so the region has to be audible on headphones and visible on
+the waveform. Anything steeper leaves them selecting a flat line.
+
+The two channels share partial phases and differ by 4 cents of detune in
+opposite directions, a 6 percent difference in decay rate, and a 4 ms
+inter-channel delay. This gives slow beating and a wide image; the mono
+sum loses 1.7 dB against the stereo peak, with no deep cancellation.
+
+### Re-running
+
+```
+python3 under-the-hood/build/generate-orientation-sample.py
+```
+
+Requires `numpy` and `scipy`. Fully seeded: every run produces byte-identical
+output.
+
 ## File naming convention
 
 Build scripts use lowercase with hyphens, matching the rest of the
