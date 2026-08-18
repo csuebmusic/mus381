@@ -87,9 +87,9 @@ The actual curation is yours. Suggested rough timeline:
 
 ---
 
-## server access
+## Server access
 
-The bank lives at `/public/sample-banks/project-01/`. This is read-only for students; they can browse and copy from it but can't modify it. This needs to be set when the server is configured (talk to IT or whoever set up the share).
+The bank lives at `/public/sample-banks/project-01/`. Students browse and copy from it. Confirm with Inés whether the server prevents them from modifying it; if it does not, say so in class and rely on the instruction rather than the permission.
 
 When students need to use a sound, they'll **copy** it from the shared bank into their own `~/Documents/[netid]/project-01/sources/` folder. This way the master bank stays clean and students have local copies they can work with destructively.
 

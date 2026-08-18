@@ -188,8 +188,8 @@
 <p>Today, since this is your first session, we'll create the local folder, then connect to the server and find the folder waiting for you there.</p>
 
 <div class="callout warn">
-  <div class="callout-label">The server lives on campus</div>
-  <p>You can reach the class server from inside the lab. Plan your work around that: anything you want at a different station next session has to be uploaded before you leave this one.</p>
+  <div class="callout-label">The server is reachable from the lab only</div>
+  <p>Plan your work around that: anything you want at a different station next session has to be uploaded before you leave this one, and anything you want at home has to leave on a USB drive or your own cloud storage.</p>
 </div>
 
 <h3>Make your local folder</h3>
@@ -211,7 +211,7 @@
 
 <p>The server uses <strong>SFTP</strong>, secure file transfer protocol, which is why the address you type starts with <code>sftp://</code>.</p>
 
-<p>Everything you need today is below. The FileZilla project also keeps a short guide at <a href="https://wiki.filezilla-project.org/Using" target="_blank" rel="noopener noreferrer">wiki.filezilla-project.org/Using</a>. Four of its sections apply to us: <em>Using the Quick Connect bar</em>, <em>Navigating on the server</em>, <em>Navigating on your machine</em>, and <em>Transferring files</em>. Its troubleshooting section is written for Windows machines.</p>
+<p>The FileZilla project keeps a short guide at <a href="https://wiki.filezilla-project.org/Using" target="_blank" rel="noopener noreferrer">wiki.filezilla-project.org/Using</a>. Four of its sections apply to us: <em>Using the Quick Connect bar</em>, <em>Navigating on the server</em>, <em>Navigating on your machine</em>, and <em>Transferring files</em>. Its troubleshooting section is written for Windows machines.</p>
 
 <h3>Connect to the server</h3>
 
@@ -226,7 +226,7 @@
     </ul>
   </li>
   <li>Click <strong>Quickconnect</strong>.</li>
-  <li>A message appears about an unknown host key. Click <strong>OK</strong>. You'll see this once per station, the first time you connect there.</li>
+  <li>A message appears about an unknown host key. Tick <strong>Always trust this host, add this key to the cache</strong>, then click <strong>OK</strong>. Without the tick you'll see this dialog on every connection.</li>
 </ol>
 
 <p>Text scrolls past in the panel at the top: that's FileZilla reporting what it's doing. When it settles, the right side of the window fills with the contents of <strong>your own folder on the server</strong>, created for you and named with your NetID. Today it's empty. That's expected.</p>
@@ -500,7 +500,7 @@ garcia-fieldrec-traffic.wav</code></pre>
 
 <div class="callout warn">
   <div class="callout-label">The overwrite dialog</div>
-  <p>FileZilla asks what to do whenever a file exists on both sides. <strong>Overwrite if source newer</strong> is the choice in both directions: downloading, it takes the server's copy when the server is ahead; uploading, it takes today's work over last session's. <strong>Always use this action</strong> applies your choice to the rest of that transfer.</p>
+  <p>FileZilla asks what to do whenever a file exists on both sides. <strong>Overwrite if source newer</strong> is the choice in both directions: downloading, it takes the server's copy when the server is ahead; uploading, it takes today's work over last session's. <strong>Always use this action</strong> applies your choice to every file in the transfer. Tick <strong>Apply to current queue only</strong> next to it so the choice stops there rather than carrying into your next transfer.</p>
 </div>
 
 <h3>Sign out and quit</h3>

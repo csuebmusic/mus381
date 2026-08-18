@@ -64,9 +64,10 @@ None for Week 1. Module 1 is a setup module. The first listening assignment land
 Do all of this **at least one day in advance** of the first session, ideally two:
 
 - [ ] Confirm the server is reachable from every lab machine: connect with FileZilla to `sftp://134.154.190.239`, port 22, using your own NetID
-- [ ] Confirm FileZilla is installed and launches on every station, and that Settings → Interface → Passwords is set to **Do not save passwords**
-- [ ] Get the host key fingerprint from Inés so you can confirm the first-connect prompt students will see is the right server
-- [ ] Confirm `/public` exists with this term's folders in place: `public/mus-381-fall-2026/project-01-pieces/`, `project-02-libraries/`, `final-pieces/`, and `public/sample-banks/project-01/`
+- [ ] Confirm FileZilla is installed and launches on every station, and that **FileZilla → Settings… → Interface → Passwords** is set to **Do not save passwords**
+- [ ] Confirm `Cmd + A` selects everything in FileZilla's file panes on the lab build; the download and upload steps in every handout depend on it
+- [ ] Get the host key fingerprint from Inés and compare it against the unknown-host-key dialog at one station before class, so you know the prompt students accept is the right server
+- [ ] Confirm `/public` exists with this term's folders in place: `/public/mus-381-fall-2026/project-01-pieces/`, `project-02-libraries/`, `final-pieces/`, plus `/public/sample-banks/project-01/`, `/public/module-02/orientation/`, and `/public/module-04/`
 - [ ] Write the host address, port, and login (NetID and NetID password) on the whiteboard before class starts
 - [ ] Place `01-first-day-setup.pdf` (exported from `lessons/01-reading-first-day-setup.html`) into `/Users/Shared/Downloads/` on every lab machine
 - [ ] Print `02-session-routines.pdf` (exported from `lessons/02-handout-session-routines.html`) and post it at every station. This is the reference card students follow at the start and end of every session for the rest of the semester.
@@ -153,7 +154,7 @@ This block establishes the workflow model for the entire semester. Students will
 
 Say something like: *"You'll keep two copies of your work. The local copy on whichever computer you're sitting at is where you actually do the work, and it's fast and reliable. The server holds the master copy. You download from it at the start of every session, and upload to it at the end. That way, if you sit at a different computer next time, your work is waiting for you."*
 
-Add the constraint out loud, because it shapes how they plan: the server is reachable from inside the lab. Work that doesn't get uploaded stays on that one machine until they are back in the room.
+Add the constraint out loud, because it shapes how they plan: the server is reachable from inside the lab only. Work that doesn't get uploaded stays on that one machine until they are back in the room.
 
 This is the most important conceptual moment of Day 1. Don't rush it.
 
@@ -174,7 +175,7 @@ Open FileZilla on the projector first and name the parts before anyone types: Qu
 1. `Cmd + Space`, type FileZilla, return
 2. Quickconnect bar: Host `sftp://134.154.190.239`, Username their NetID, Password their NetID password, Port `22`
 3. Quickconnect
-4. Accept the unknown host key prompt
+4. On the unknown host key prompt, tick **Always trust this host, add this key to the cache**, then OK. Without the tick the dialog returns on every connection, twice a session, all term
 
 Then have them all do it together. **This is the moment most likely to break.** If it does:
 
@@ -325,7 +326,7 @@ Tell them this is the same routine they'll do every session for the rest of the 
 ## Common questions
 
 - *"Do I need a Mac at home?"* — No. The lab has everything they need. The server keeps your work synced between lab machines.
-- *"Can I connect to the server from home?"* — No. It's reachable from inside the lab. Carry work out on a USB drive or personal cloud storage if you want it with you.
+- *"Can I connect to the server from home?"* — No. It's reachable from inside the lab only. Carry work out on a USB drive or personal cloud storage if you want it with you.
 - *"Can I use my own headphones?"* — Yes. The lab provides them but personal headphones are fine.
 - *"What if my audio interface isn't working?"* — Try: unplug from the hub, replug into a different hub port, check Audio MIDI Setup. If still broken, switch stations and report it.
 - *"Can I take my files home on a USB drive?"* — Yes. Copy your folder from `~/Documents/` to a USB drive, personal cloud storage, or anywhere you can reach from home. The server itself is reachable from the lab only, so a copy you carry out is the way to work at home. Audacity is free and runs anywhere, so working at home on Module 2 material is fine. Ableton is lab-license-only, so Module 4 work mostly stays in the lab.

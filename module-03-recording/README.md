@@ -333,7 +333,7 @@ Reminder to do the end-of-session routine on the card before leaving the station
 - **Click pops at trim points.** Student skipped the 50-ms fade. Listen to a sample of theirs on headphones; if you hear a click at the start or end, walk them back to the fade step.
 - **Export Range left at Entire Project.** One WAV file with all four sounds in it instead of four separate WAVs. Catch on the first export; the remaining three should be fine once the dialog defaults to Current selection.
 - **TextEdit saved README as .rtf.** Format → Make Plain Text was skipped. The README has styled text and smart quotes. Fix: open the file in TextEdit, Format → Make Plain Text, re-save (overwriting). Or delete and start fresh from the template in the handout.
-- **upload contains an extra nesting level.** Student dragged `lastname/` instead of `sample-library/`, ending up with `[netid]/[netid]/sample-library/` on the server. Verify by clicking into the upload destination; fix by moving the inner folder up one level.
+- **Upload contains an extra nesting level.** Student dragged `lastname/` instead of `sample-library/`, ending up with `[netid]/[netid]/sample-library/` on the server. Verify by clicking into the upload destination; fix by moving the inner folder up one level.
 
 ### Pacing fallbacks
 

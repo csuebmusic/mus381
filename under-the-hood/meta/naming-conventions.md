@@ -138,7 +138,7 @@ The week suffix is used when there's a script per week of generated assets (e.g.
 
 ## Server paths (referenced in handouts)
 
-The class server is an SFTP server at `sftp://134.154.190.239`, port 22. Students authenticate with their NetID and NetID password, using FileZilla. It is reachable from inside the lab.
+The class server is an SFTP server at `sftp://134.154.190.239`, port 22. Students authenticate with their NetID and NetID password, using FileZilla. It is reachable from inside the lab only.
 
 A student's login lands at the root of their own folder, created by the server on first login and named with their NetID. Student-facing materials therefore name private paths **relative to that folder**, never as absolute paths:
 
@@ -154,13 +154,16 @@ Shared material lives under `/public`, reached by clicking the `/` at the top of
 /public/sample-banks/project-01/             Project 1 sample bank
 /public/module-XX/[purpose]/                 Module-specific shared assets (e.g. orientation samples)
 /public/mus-381-fall-2026/                   Per-semester shared resources
-/public/mus-381-fall-2026/project-NN-pieces/ Class listening folders for each project
+/public/mus-381-fall-2026/project-NN-pieces/ Class listening folders for Projects 1 and 3
+/public/mus-381-fall-2026/project-02-libraries/ Peer-listening folder for the Module 3 libraries
 /public/mus-381-fall-2026/final-pieces/      Final piece listening folder
 ```
 
 Students create their own subfolders inside `/public` when a submission has more than one file. The top-level structure is built for them before the term.
 
 The local mirror is `~/Documents/[netid]/`, matching the server-side folder name so FileZilla's two panes line up. Filenames still lead with last name.
+
+Student-facing pages write the placeholder bare, as `~/Documents/netid/`. Internal docs bracket it, as `~/Documents/[netid]/`.
 
 The `mus-381-fall-YYYY/` prefix is the only place a semester date appears in a path. Every other path is semester-stable.
 

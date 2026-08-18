@@ -24,7 +24,7 @@ This policy does **not** apply to:
 
 ## The server
 
-An SFTP server at `sftp://134.154.190.239`, port 22, reachable from inside the lab. Students authenticate with their NetID and NetID password. Total capacity is 4 TB.
+An SFTP server at `sftp://134.154.190.239`, port 22, reachable from inside the lab only. Students authenticate with their NetID and NetID password. Total capacity is 4 TB.
 
 ## Storage states
 

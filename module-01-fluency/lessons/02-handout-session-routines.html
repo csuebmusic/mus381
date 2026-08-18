@@ -46,7 +46,7 @@
 
 <div class="callout warn">
   <div class="callout-label">The most important rule</div>
-  <p>Always upload to the server before you leave. The server is reachable from inside the lab only. Anything you forget to upload stays on that one computer until you are back in the room, and if you sit somewhere else next session you'll be working from an older version.</p>
+  <p>Always upload to the server before you leave. You can reach the server from inside the lab only. Anything you forget to upload stays on that one computer until you are back in the room, and if you sit somewhere else next session you'll be working from an older version.</p>
 </div>
 
 <hr>
@@ -74,7 +74,7 @@
       <li><strong>Port:</strong> <code>22</code></li>
     </ul>
     Press <strong>Quickconnect</strong>.</li>
-  <li>The first time you connect at a given station, FileZilla shows a message about an unknown host key. Click <strong>OK</strong>.</li>
+  <li>FileZilla shows a message about an unknown host key. Tick <strong>Always trust this host, add this key to the cache</strong>, then click <strong>OK</strong>.</li>
   <li>Look at the two halves of the window. The <strong>left side is this computer</strong>; the <strong>right side is the server</strong>. You land inside your own folder on the server, and everything in it is yours alone.</li>
 </ol>
 
@@ -88,8 +88,7 @@
 <ol class="steps" start="9">
   <li>On the <strong>left side</strong>, navigate to <code>~/Documents/</code>. If a folder named with your NetID is there, open it. If this is a computer you haven't used before, make one first: in Finder, open <strong>Documents</strong>, press <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>, and name it your NetID.</li>
   <li>Click into the <strong>right side</strong> and select everything (<kbd>Cmd</kbd> + <kbd>A</kbd>), then drag it across into the left side.</li>
-  <li>If FileZilla asks about files that already exist, choose <strong>Overwrite if source newer</strong>, tick <strong>Always use this action</strong>, and click <strong>OK</strong>.</li>
-  <li>Choose <strong>Server → Disconnect</strong>, then quit FileZilla (<kbd>Cmd</kbd> + <kbd>Q</kbd>).</li>
+  <li>If FileZilla asks about files that already exist, choose <strong>Overwrite if source newer</strong>, tick <strong>Always use this action</strong> and <strong>Apply to current queue only</strong>, and click <strong>OK</strong>.</li>
 </ol>
 
 <div class="callout">
@@ -97,13 +96,19 @@
   <p>To compare the two sides before you drag anything, choose <strong>View → Directory Comparison → Compare modification time</strong>, then <strong>View → Directory Comparison → Enable</strong>. FileZilla colors any file that differs between the two sides and marks any file that exists on one side only.</p>
 </div>
 
+<p>If you need anything from the shared folder today, get it now, before you disconnect: see <a href="#shared-files">Shared files</a> below.</p>
+
+<ol class="steps" start="12">
+  <li>Choose <strong>Server → Disconnect</strong>, then quit FileZilla (<kbd>Cmd</kbd> + <kbd>Q</kbd>).</li>
+</ol>
+
 <p>Now you're ready to work. Open Audacity, Ableton, or whatever you're using, and work entirely from your local <code>~/Documents/netid/</code> folder.</p>
 
 <hr>
 
-<h2>Shared files</h2>
+<h2 id="shared-files">Shared files</h2>
 
-<p>Material from your instructor, and files your classmates post for peer review, live in a folder called <code>public</code> at the top level of the server. From your own folder, click the <code>/</code> at the top of the server's directory tree on the right side, then open <code>public</code>. Download what you need the same way you download your own work. The day's handout or project prompt names the exact folder.</p>
+<p>Material from your instructor, and files your classmates post for peer review, live in a folder called <code>public</code> at the top level of the server. From your own folder, click the <code>/</code> at the top of the server's directory tree on the right side, then open <code>public</code>. Download what you need the same way you download your own work, while you're still connected. The day's handout or project prompt names the exact folder.</p>
 
 <hr>
 
@@ -125,7 +130,7 @@
 
 <div class="callout warn">
   <div class="callout-label">The overwrite dialog</div>
-  <p>FileZilla asks what to do whenever a file exists on both sides. <strong>Overwrite if source newer</strong> is the choice in both directions: downloading, it takes the server's copy when the server is ahead; uploading, it takes today's work over last session's. <strong>Always use this action</strong> applies your choice to the rest of that transfer.</p>
+  <p>FileZilla asks what to do whenever a file exists on both sides. <strong>Overwrite if source newer</strong> is the choice in both directions: downloading, it takes the server's copy when the server is ahead; uploading, it takes today's work over last session's. <strong>Always use this action</strong> applies your choice to every file in the transfer. Tick <strong>Apply to current queue only</strong> next to it so the choice stops there rather than carrying into your next transfer.</p>
 </div>
 
 <h3>Sign out and quit</h3>

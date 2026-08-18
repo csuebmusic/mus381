@@ -327,7 +327,7 @@ Quick close: "On Monday we go deeper into editing: the full vocabulary, plus env
 - **The explorer's pitch experience.** Some students will *hear* the harmonic series fusing into one note before others. If a student says "I hear separate notes" when partials 1+2 are on, ask them to bring up partials 3 and 4 too and listen again; the fusion strengthens with more partials. If they still hear separate notes, that's fine; it's a perceptual skill that develops with listening practice.
 - **Cursor vs. selection in Audacity.** Cursor is a single point in time; selection is a range. Many students try to "cut a section" with just the cursor placed. Demonstrate both, in contrast.
 - **Project file vs. audio file.** `.aup3` is the working document; you can't open it without Audacity, and links to the source data must be intact. Audio files (WAV/MP3) are universal. The handout calls this out, but expect to repeat it in person.
-- **server-direct editing.** Students will sometimes try to open `orientation-sample.wav` directly from the server. Catch this early: always copy to local first.
+- **Editing straight off the server.** Students will sometimes try to open `orientation-sample.wav` directly from the server. Catch this early: always copy to local first.
 - **The audio.com export prompt.** Audacity's recent versions show a "How would you like to export?" interstitial on first export, with two big buttons (Share to audio.com vs. On your computer) and a "Don't show again" tick. Students who click the cloud option will upload their file to a third-party service instead of saving locally. Watch for this during Step 6; the handout names it explicitly, but it's worth pointing at on the projector. Tell them to tick "Don't show again" so the prompt is suppressed on future exports.
 
 ### Pacing fallbacks
@@ -464,7 +464,7 @@ Two halves:
 
 ### Materials
 
-- **Lab handout:** [`lessons/05-handout-editing-techniques.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/05-handout-editing-techniques.html): covers the full session including setup, all ten techniques with menu paths and exercises, the Project 1 starter, and the end-of-session the server routine. The handout is the script; this TA-notes block is for pacing, common confusions, and judgment calls.
+- **Lab handout:** [`lessons/05-handout-editing-techniques.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/05-handout-editing-techniques.html): covers the full session including setup, all ten techniques with menu paths and exercises, the Project 1 starter, and the end-of-session upload routine. The handout is the script; this TA-notes block is for pacing, common confusions, and judgment calls.
 - **Project 1 prompt:** [`projects/project-01-musique-concrete.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/projects/project-01-musique-concrete.html): open on the projector during the Project-1-begins block.
 - **Sample bank** at server `/public/sample-banks/project-01/`: must be ready by class start. See [`projects/project-01-sample-bank-notes.md`](./projects/project-01-sample-bank-notes.md).
 
@@ -540,7 +540,7 @@ If a student is stuck on "I don't know what I want to make," that's normal. Sugg
 
 #### End of session: upload (last 5 min)
 
-Final 5 minutes: students follow the handout's end-of-session routine. Save the project (`Cmd+S`), copy `lastname-project01.aup3` (NOT the sources folder, which is already on the server; NOT the scratch project either, which lives only on local) to `project-01/` in their own folder on the server, eject server, log out.
+Final 5 minutes: students follow the handout's end-of-session routine. Save the project (`Cmd+S`), select everything in `~/Documents/[netid]/` and drag it into their own folder on the server with **Overwrite if source newer**. Today that includes the sample bank, so it runs a minute long; from Wk 4 on the bank is already there and gets skipped. Eject server, log out.
 
 ### Common confusions
 
@@ -590,7 +590,7 @@ The session is deliberately compact on the new content because students need wor
 
 ### Materials
 
-- **Lab handout:** [`lessons/06-handout-mixing-in-audacity.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/06-handout-mixing-in-audacity.html): covers the full session including setup, the three mixing tools with hands-on exercises, the destructive vs. non-destructive comparison table, the Module 4 Ableton forecast, the Project 1 work block, and the end-of-session the server routine.
+- **Lab handout:** [`lessons/06-handout-mixing-in-audacity.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/06-handout-mixing-in-audacity.html): covers the full session including setup, the three mixing tools with hands-on exercises, the destructive vs. non-destructive comparison table, the Module 4 Ableton forecast, the Project 1 work block, and the end-of-session upload routine.
 - **Project 1 prompt:** [`projects/project-01-musique-concrete.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/projects/project-01-musique-concrete.html): open on the projector during Block 4.
 - **Students' own Project 1 files** from last week's work, plus their scratch files from Wed Wk 3.
 
@@ -787,7 +787,7 @@ This is the last session before submission. Anyone whose piece isn't substantial
 Wed Wk 5 is the final work session and submission deadline. Walk through what to expect:
 - Class is a final work session: no new content, just time to finish
 - Files due to the server by **end of class**, not start
-- Two locations: their private working folder (`lastname/project-01/`) and the class listening folder (`/public/mus-381-fall-2026/project-01-pieces/`). Both must have the final WAV.
+- Two locations: `project-01/` in their own folder on the server, and the class listening folder (`/public/mus-381-fall-2026/project-01-pieces/`). Both must have the final WAV.
 - A short peer-listening response is due Mon Wk 6 (about classmates' pieces in the listening folder), separate assignment
 
 Mention the rubric one more time: five dimensions, students should self-assess against it as they finish their work.
@@ -825,7 +825,7 @@ Every student finishes Project 1 and uploads to both server folders by end of cl
 
 ### Pre-class checklist
 
-- **Verify the class listening folder exists and is writable by students.** Path: `/public/mus-381-fall-2026/project-01-pieces/`. Test this before class: connect as a student would, drop a placeholder file in, and confirm it lands. Ask Inés whether students can also delete or overwrite each other's files there; if they can, tell students to upload only their own file and nothing else. Then have one student try to add one and try to modify someone else's. If permissions aren't right, escalate to IT before students start uploading.
+- **Verify the class listening folder exists and is writable by students.** Path: `/public/mus-381-fall-2026/project-01-pieces/`. Test this before class: connect as a student would, drop a placeholder file in, and confirm it lands. Students upload their own file here and nothing else. Ask Inés whether the server permits them to delete or overwrite each other's files there; if they can, tell students to upload only their own file and nothing else. Then have one student try to add one and try to modify someone else's. If permissions aren't right, escalate to IT before students start uploading.
 - **Spot-check working folders** for 5-6 students. They should have at least a `lastname-project01-vN.aup3` project file by now, and ideally an in-progress export. If a student's working folder is empty or has only one early version, flag them to check in with first thing.
 - Walk the room and lab's gear storage (gear storage baseline).
 - Have the project prompt ([`projects/project-01-musique-concrete.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/projects/project-01-musique-concrete.html)) open on the instructor machine. Specifically the Submission section.
@@ -837,7 +837,7 @@ Every student finishes Project 1 and uploads to both server folders by end of cl
 Open: "Today is your final work session for Project 1. By end of class, your final WAV is uploaded to two places. After today, you'll listen to each other's pieces in the class listening folder, and a short response is due Monday."
 
 Walk through the submission card from the prompt on the projector. Be explicit about both folders:
-1. Your private working folder: `lastname/project-01/lastname-project01.wav`
+1. Your own folder on the server: `project-01/lastname-project01.wav`
 2. The class listening folder: `/public/mus-381-fall-2026/project-01-pieces/lastname-project01.wav`
 
 "Drag a copy of your final file to the class folder. Don't move it, copy. Your working folder still gets a copy too."
