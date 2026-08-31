@@ -1,6 +1,6 @@
 # Page templates
 
-Skeletal HTML files that embody the conventions in this folder. Copy one of these as the starting point for a new page.
+Skeletal HTML files that embody the conventions in [`build-conventions.md`](../build-conventions.md). Copy one of these as the starting point for a new page.
 
 | Template | Used for | Today's gear callout |
 |---|---|---|
@@ -30,7 +30,7 @@ The `End of session` closing paragraph that points back to the routines card is 
 
 ## When to skip the Today's gear callout
 
-Per `meta/chrome-conventions.md`:
+Per the chrome section of `build-conventions.md`:
 
 - The Session Routines card itself (`module-01-fluency/lessons/02-handout-session-routines.html`)
 - The Day 1 reading (`module-01-fluency/lessons/01-reading-first-day-setup.html`), which teaches the take-out cycle from scratch

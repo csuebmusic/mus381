@@ -94,7 +94,7 @@ module-XX-name/
 
 ## Conventions
 
-Build-time conventions (prose rules, document chrome, file naming, dates, the visual system, asset recipes, and the page templates) live in [`under-the-hood/meta/`](under-the-hood/meta/). Anyone drafting student-facing material consults the relevant file there first; a TA teaching from finished materials does not need them.
+Build-time conventions (naming, document chrome, dates, the visual system) live in [`under-the-hood/meta/build-conventions.md`](under-the-hood/meta/build-conventions.md), with page templates alongside it and per-asset specs in [`assets/asset-recipes.md`](assets/asset-recipes.md). Anyone drafting student-facing material consults them first; a TA teaching from finished materials does not need them.
 
 - **Student-facing materials** are HTML sharing `assets/style.css`. **TA notes, specs, and policies** are Markdown.
 - **File workflow:** local-first with the server as sync. Students work in `~/Documents/[netid]/`, download from the server at the start of a session, and upload at the end.

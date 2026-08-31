@@ -19,9 +19,9 @@ Every student-facing HTML document links to `assets/style.css`. Student-facing m
 
 ## Conventions
 
-Visual conventions (palette, fonts, SVG handling, per-module audio standards) live in [`../under-the-hood/meta/visual-conventions.md`](../under-the-hood/meta/visual-conventions.md).
+Naming, chrome, dates, and the visual system (palette, fonts, SVG handling, audio format standards) live in [`../under-the-hood/meta/build-conventions.md`](../under-the-hood/meta/build-conventions.md).
 
-Other build-time conventions (prose rules for student-facing HTML, document chrome, file naming, dates) live alongside it in [`../under-the-hood/meta/`](../under-the-hood/meta/).
+Per-asset specs live in [`asset-recipes.md`](asset-recipes.md) in this folder.
 
 ## Future contents
 
