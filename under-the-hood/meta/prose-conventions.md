@@ -22,6 +22,28 @@ Em dashes (`—`, U+2014) read as fussy or affected in beginner-facing material.
 
 En dashes (`–`, U+2013) are preserved where they form correct typographic compounds, like `musique concrète–style found sounds` (combining a multi-word noun phrase with a modifier). The rule is about em dashes, not en dashes.
 
+### No dead metaphor
+
+Applies to every layer: student-facing HTML, module READMEs, TA notes, the files in this folder, and commit messages.
+
+Nothing carries, lands, arrives, travels, or does work unless it literally does. Name the function or the mechanism.
+
+Signal flow is literal and stays. A cable carries a signal; a signal travels down a cable and arrives at an input; mic level travels on XLR, balanced.
+
+`land` is never literal. Replace it:
+
+| Context | Use |
+|---|---|
+| A peak, tick, or selection edge at a level | sits at, sits below |
+| A signal reaching a channel, bus, or mix | arrives on, arrives in, arrives at |
+| A file reaching a folder | appears, uploads, is written, is saved |
+| A document opening in a program | opens in |
+| A concept reaching a student | registers, comes across |
+
+No substitute, cut and rewrite: earns its place, does the work, real work, heavy lifting, at the heart of, the backbone.
+
+Terms of art that only look figurative stay: landing page, leading tone, passing tone, deceptive cadence, voice leading.
+
 ### No chains of negatives
 
 Avoid sentences built from a list of "no X, no Y, no Z" or "not X, not Y" constructions. They turn an explanation into a denial.
@@ -83,6 +105,7 @@ Use technical terms only when they earn their place. If a sentence works without
 Before publishing a student-facing HTML doc, scan for:
 
 - Em dashes (search the source for the character `—`)
+- `land` in any form, and the phrases `carries`, `travels`, `arrives` outside signal flow
 - Sequences of "no X, no Y, no Z" or "not X, not Y" sentences
 - Bullet lists where each bullet is a complete sentence flowing into the next
 - The words "essentially," "basically," "in some sense," "it's worth noting"
