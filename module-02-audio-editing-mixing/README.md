@@ -72,6 +72,23 @@ Full listening assignment with guided questions: [`listening/historical.html`](h
 
 ---
 
+## Student-facing materials
+
+- [`lessons/01-reading-digital-audio.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/01-reading-digital-audio.html) — Digital Audio Fundamentals
+- [`lessons/02-tool-digital-audio-explorer.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/02-tool-digital-audio-explorer.html) — Digital Audio Explorer
+- [`lessons/03-handout-audacity-orientation.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/03-handout-audacity-orientation.html) — Audacity Orientation
+- [`lessons/04-reading-editing-envelope.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/04-reading-editing-envelope.html) — Editing concepts & envelope
+- [`lessons/05-handout-editing-techniques.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/05-handout-editing-techniques.html) — Editing Techniques
+- [`lessons/06-handout-mixing-in-audacity.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/06-handout-mixing-in-audacity.html) — Mixing in Audacity
+- [`lessons/07-reading-dynamics.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/07-reading-dynamics.html) — Dynamics, compression & limiting
+- [`lessons/08-tool-mixing-dynamics.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/08-tool-mixing-dynamics.html) — The compressor: an interactive tool
+- [`lessons/09-reading-audacity-dynamics.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/09-reading-audacity-dynamics.html) — Compression & limiting in Audacity
+- [`listening/historical.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/listening/historical.html) — Listening: Musique concrète
+- [`listening/peer-project-01.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/listening/peer-project-01.html) — Peer Listening: Project 1
+- [`projects/project-01-musique-concrete.html`](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/projects/project-01-musique-concrete.html) — Project 1: Musique concrète
+
+---
+
 ## Session overview
 
 | Wk | Day | Focus |

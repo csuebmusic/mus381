@@ -105,6 +105,23 @@ Peer listening assignment: [`listening/peer-midterm.html`](https://csuebmusic.gi
 
 ---
 
+## Student-facing materials
+
+- [`lessons/01-reading-recording-chain.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/01-reading-recording-chain.html) — A Simple Recording Chain
+- [`lessons/02-handout-recording-into-audacity.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/02-handout-recording-into-audacity.html) — Recording into Audacity
+- [`lessons/03-handout-recording-on-phone.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/03-handout-recording-on-phone.html) — Recording on Your Phone
+- [`lessons/04-reading-widening-the-flow.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/04-reading-widening-the-flow.html) — Widening the Flow
+- [`lessons/05-handout-phone-to-audacity.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/05-handout-phone-to-audacity.html) — Phone Recordings into Audacity
+- [`lessons/06-reading-the-mixer.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/06-reading-the-mixer.html) — The Mixer
+- [`lessons/07-handout-the-mixer-in-practice.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/07-handout-the-mixer-in-practice.html) — The Mixer in Practice · Live Sound
+- [`lessons/08-handout-studio.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/08-handout-studio.html) — The Mixer in Practice · Studio Recording
+- [`lessons/09-handout-midterm-review.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/09-handout-midterm-review.html) — Midterm Review
+- [`listening/historical.html`](https://csuebmusic.github.io/mus381/module-03-recording/listening/historical.html) — Listening: Recording and mixing as composition
+- [`listening/peer-midterm.html`](https://csuebmusic.github.io/mus381/module-03-recording/listening/peer-midterm.html) — Peer Listening: Sample libraries
+- [`projects/project-02-sample-library.html`](https://csuebmusic.github.io/mus381/module-03-recording/projects/project-02-sample-library.html) — Project 2: Sample library
+
+---
+
 ## Session overview
 
 | Wk | Day | Focus |

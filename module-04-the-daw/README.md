@@ -141,6 +141,19 @@ No peer listening in Module 4: final pieces are shared in the class folder for e
 
 ---
 
+## Student-facing materials
+
+- [`lessons/01-reading-the-daw-environment.html`](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/01-reading-the-daw-environment.html) — Into the DAW
+- [`lessons/02-handout-audio-editing.html`](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/02-handout-audio-editing.html) — Audio Editing in Ableton
+- [`lessons/03-handout-sampling-in-practice.html`](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/03-handout-sampling-in-practice.html) — Sampling in Ableton
+- [`lessons/04-handout-mixing-in-practice.html`](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/04-handout-mixing-in-practice.html) — Mixing in Ableton
+- [`lessons/05-handout-transferable-concepts.html`](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/05-handout-transferable-concepts.html) — Adobe Audition
+- [`lessons/06-handout-final-review.html`](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/06-handout-final-review.html) — Final Review
+- [`listening/historical.html`](https://csuebmusic.github.io/mus381/module-04-the-daw/listening/historical.html) — Listening: Sampling
+- [`projects/final-project.html`](https://csuebmusic.github.io/mus381/module-04-the-daw/projects/final-project.html) — Final project
+
+---
+
 ## Session overview
 
 **How the materials map to sessions.** Each week runs on one document. The module **reading** (`01-reading-the-daw-environment.html`) is met Monday of Wk 10 as the module's map and is referred back to all module. The three **handouts** (`02` audio editing, `03` sampling, `04` mixing) each drive a full week, both the Monday session and the Wednesday session: the TA works through the handout while students follow hands-on, so concept and doing happen together rather than splitting into a separate lecture and lab. There are no standalone Monday lecture documents for Wks 11 and 12; the week's handout carries both days. Wk 13 is the exception, a Monday-only Audition follow-along (`05-handout-transferable-concepts.html`), since Wed Wk 13 is Veterans Day. Handout `06` is the take-home **final review packet**, not a session document: it is handed out at the last class meeting for study before the finals-week exam, parallel to the Module 3 midterm review.
