@@ -642,7 +642,7 @@
 
 <h2>4 · Bit depth</h2>
 
-<p>If sample rate is about <em>when</em> we measure, <strong>bit depth</strong> is about <em>how precisely</em>. Each sample isn't just a number; it's a number with finite resolution. Bit depth tells you how many possible values that number can take. Each sample is stored as a binary number, and bit depth is how many digits long that number is.</p>
+<p>If sample rate is about <em>when</em> we measure, <strong>bit depth</strong> is about <em>how precisely</em>. Each sample is a number with finite resolution. Bit depth tells you how many possible values that number can take. Each sample is stored as a binary number, and bit depth is how many digits long that number is.</p>
 
 <p>An 8-bit sample can take 256 possible values (because 2 to the power of 8 is 256). A 16-bit sample can take 65,536 values. A 24-bit sample can take over 16 million values. The more bits, the finer the gradations of amplitude available: the more precisely each sample can describe the actual height of the wave at that moment.</p>
 
@@ -776,7 +776,7 @@
 
 <p>Aliasing is genuinely strange-sounding. It produces inharmonic whistles, sliding tones, and a kind of sour, "off" quality on bright sounds. Once you hear it, you recognize it.</p>
 
-<p>This is why <strong>every digital audio system applies an anti-alias filter before sampling</strong>. The filter removes any content above the Nyquist limit before the ADC sees it, so there's nothing left to fold back. Your audio interface does this automatically; so does Audacity when it resamples a file to a lower rate; so do all professional ADCs. You don't have to think about it as long as you stay inside the standard tools. But knowing the filter exists tells you why "above Nyquist" isn't just a number: it's the boundary of what reality the digital system can hold.</p>
+<p>This is why <strong>every digital audio system applies an anti-alias filter before sampling</strong>. The filter removes any content above the Nyquist limit before the ADC sees it, so there's nothing left to fold back. Your audio interface does this automatically; so does Audacity when it resamples a file to a lower rate; so do all professional ADCs. You don't have to think about it as long as you stay inside the standard tools. But knowing the filter exists tells you what "above Nyquist" marks: the boundary of what reality the digital system can hold.</p>
 
 <div class="audio-compare">
   <div class="audio-compare-title">Listen: with vs. without anti-alias filtering</div>
@@ -811,7 +811,7 @@
   <li><strong>32-bit:</strong> ~192 dB SNR (vastly more than human hearing can resolve)</li>
 </ul>
 
-<p>For comparison, here's how those numbers sit alongside the dynamic range of unamplified music:</p>
+<p>For comparison, alongside the dynamic range of unamplified music:</p>
 
 <figure>
   <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
@@ -895,7 +895,7 @@
 
 <p>This is why CDs settled on 16-bit: it covers the full dynamic range of unamplified music with a small margin to spare. It's also why professional recording uses 24-bit even when delivering at 16-bit: the extra headroom protects you from accidentally clipping during recording or losing detail during processing. <strong>You record with margin, then commit to less margin only at the final mixdown.</strong></p>
 
-<p>That principle (record with headroom, commit later) is one of the most important practices in audio. We'll return to it in Module 3.</p>
+<p>That principle (record with headroom, commit later) recurs throughout audio work. Module 3 returns to it.</p>
 
 <hr>
 
@@ -946,7 +946,7 @@
 
 <div class="callout warn">
   <div class="callout-label">Watch out: importing audio at the wrong sample rate</div>
-  <p>This is one of the most common ways a student project goes wrong. You're working in a 48 kHz Ableton session and you drag in a 44.1 kHz sound file (or the other way around). Most DAWs will notice the mismatch and pop up a <em>resample</em> prompt: that's the safe path. But if you click through it, dismiss it, or use a tool that doesn't ask, the file's samples get played out at the project's rate <em>without any conversion</em>. The result is exactly the tape-physics situation we'll see in Week 3: the file plays back at the wrong speed, and its pitch shifts with it.</p>
+  <p>This is one of the most common ways a student project goes wrong. You're working in a 48 kHz Ableton session and you drag in a 44.1 kHz sound file (or the other way around). Most DAWs will notice the mismatch and pop up a <em>resample</em> prompt: that's the safe path. But if you click through it, dismiss it, or use a tool that doesn't ask, the file's samples get played out at the project's rate <em>without any conversion</em>. The result is exactly the tape-physics situation from Wk 3: the file plays back at the wrong speed, and its pitch shifts with it.</p>
   <p>Between 44.1 and 48 kHz the shift is about a semitone and a half: small enough that you might not catch it, but large enough to put a sample out of tune with the rest of your session. Drop a 44.1 kHz drum loop into a 48 kHz project without resampling and it plays slightly faster and higher than it should; do the reverse and it drags slightly slower and lower. Neither sounds obviously broken on its own. It just doesn't sit right.</p>
   <p><strong>Resampling</strong> is what fixes this: the DAW computes a new set of samples at the project's rate, so the file keeps its original duration and pitch when played back. Always say yes to the resample prompt, or convert the file beforehand (Audacity's <em>File → Export</em> lets you set the target sample rate). The rule of thumb: <em>match the project's sample rate before audio enters the timeline</em>, not after.</p>
 </div>
