@@ -1,4 +1,4 @@
-# MUS 381 — Essentials of Music Technology
+# MUS 381 · Essentials of Music Technology
 
 Course materials, teaching tools, and TA resources for MUS 381 at CSU East Bay. This repository is the working hub for the course: readings, handouts, interactive tools, listening assignments, projects, and TA notes, organized by module. The student-facing pages are served via GitHub Pages at [`csuebmusic.github.io/mus381`](https://csuebmusic.github.io/mus381/).
 
@@ -8,22 +8,22 @@ Course materials, teaching tools, and TA resources for MUS 381 at CSU East Bay. 
 
 MUS 381 is a 3-unit introduction to music technology for students with little or no prior experience: digital audio, editing, mixing, recording, sample-based production, and DAW work, built through hands-on, project-based learning. Students listen, analyze, and create in response throughout.
 
-The semester runs in four modules, each ending in a real deliverable. Mondays are lecture (a concept plus a listening example); Wednesdays are lab (a guided hands-on tutorial) in MB2525. The dated calendar, grading weights, and course policies live in the [syllabus](https://csuebmusic.github.io/mus381/syllabus.html); this README and the module folders hold the teaching materials behind them.
+The semester runs in four modules, each ending in a deliverable. Mondays are lecture (a concept plus a listening example); Wednesdays are lab (a guided hands-on tutorial) in MB2525. The dated calendar, grading weights, and course policies live in the [syllabus](https://csuebmusic.github.io/mus381/syllabus.html); this README and the module folders hold the teaching materials behind them.
 
 ## Modules
 
 Each module folder holds everything for that module: a `README.md` with session-by-session teaching notes, `lessons/` (readings, tools, lab handouts in encounter order), `listening/`, and `projects/`. The live student pages are linked under each module below.
 
-### Module 1 — Computer & studio fluency · Week 1
+### Module 1: Computer & studio fluency · Week 1
 
-Most students arrive without Mac or studio fluency. Before any music-technology content makes sense, they need to navigate files, plug things in, and find their work. Short but essential. **Deliverable:** none (a setup and orientation week).
+Navigating the Mac and Finder, the local-first file workflow, and the signal chain from mic to interface to computer. **Deliverable:** none (a setup and orientation week).
 
 - Reading: [First-day setup](https://csuebmusic.github.io/mus381/module-01-fluency/lessons/01-reading-first-day-setup.html)
 - Handout: [Session routines](https://csuebmusic.github.io/mus381/module-01-fluency/lessons/02-handout-session-routines.html)
 
-### Module 2 — Digital audio, editing & mixing in Audacity · Weeks 2–5
+### Module 2: Digital audio, editing & mixing in Audacity · Weeks 2–5
 
-Audacity is free, simple, and forces destructive-editing thinking, which is useful for learning what edits actually do. The musique concrète tradition is the anchor: students manipulate existing sound to make something new. **Deliverable:** Project 1, a musique concrète piece (Wed Wk 5).
+Digital audio, editing, and mixing in Audacity, where an edit changes the file. The musique concrète tradition is the anchor: existing sound manipulated into something new. **Deliverable:** Project 1, a musique concrète piece (Wed Wk 5).
 
 - Reading: [Digital audio](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/01-reading-digital-audio.html)
 - Tool: [Digital audio explorer](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/02-tool-digital-audio-explorer.html)
@@ -35,11 +35,11 @@ Audacity is free, simple, and forces destructive-editing thinking, which is usef
 - Tool: [Mixing dynamics](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/08-tool-mixing-dynamics.html)
 - Reading: [Dynamics in Audacity](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/lessons/09-reading-audacity-dynamics.html)
 - Listening: [Historical](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/listening/historical.html) · [Peer (Project 1)](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/listening/peer-project-01.html)
-- Project: [Project 1 — Musique concrète](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/projects/project-01-musique-concrete.html)
+- Project: [Project 1: Musique concrète](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/projects/project-01-musique-concrete.html)
 
-### Module 3 — Recording, sample prep & library building · Weeks 6–9
+### Module 3: Recording, sample prep & library building · Weeks 6–9
 
-Students learn to generate their own raw material: field recording, studio recording, and preparing sounds for later creative use. The deliverable is the library itself, a curated resource they draw on for the rest of the course. **Deliverable:** the midterm sample library (Wk 9).
+Students generate their own raw material: field recording, studio recording, and preparing sounds for later use. **Deliverable:** the midterm sample library (Wk 9).
 
 - Reading: [The recording chain](https://csuebmusic.github.io/mus381/module-03-recording/lessons/01-reading-recording-chain.html)
 - Handout: [Recording into Audacity](https://csuebmusic.github.io/mus381/module-03-recording/lessons/02-handout-recording-into-audacity.html)
@@ -51,11 +51,11 @@ Students learn to generate their own raw material: field recording, studio recor
 - Handout: [Studio walkthrough](https://csuebmusic.github.io/mus381/module-03-recording/lessons/08-handout-studio.html)
 - Handout: [Midterm review](https://csuebmusic.github.io/mus381/module-03-recording/lessons/09-handout-midterm-review.html)
 - Listening: [Historical](https://csuebmusic.github.io/mus381/module-03-recording/listening/historical.html) · [Peer (midterm)](https://csuebmusic.github.io/mus381/module-03-recording/listening/peer-midterm.html)
-- Project: [Midterm — Sample library](https://csuebmusic.github.io/mus381/module-03-recording/projects/project-02-sample-library.html)
+- Project: [Midterm: Sample library](https://csuebmusic.github.io/mus381/module-03-recording/projects/project-02-sample-library.html)
 
-### Module 4 — The DAW · Weeks 10–13
+### Module 4: The DAW · Weeks 10–13
 
-Ableton Live is the destination DAW, where Module 2's editing skills and Module 3's recordings converge. Students load their own library and build pieces from it, then step out of Ableton once to see the concepts carry to another tool (Adobe Audition). **Deliverable:** the final project (drafted Wks 14–15, final during finals).
+Ableton Live, where Module 2's editing skills and Module 3's recordings converge. Students load their own library and build pieces from it, then step out of Ableton once to meet the same concepts in another tool (Adobe Audition). **Deliverable:** the final project (drafted Wks 14–15, final during finals).
 
 - Reading: [Into the DAW](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/01-reading-the-daw-environment.html)
 - Handout: [Audio editing in Ableton](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/02-handout-audio-editing.html)
@@ -71,10 +71,10 @@ Ableton Live is the destination DAW, where Module 2's editing skills and Module 
 ```
 README.md                            This file: the teaching-side map
 syllabus.html                        Student-facing syllabus (served via Pages)
-module-01-fluency/                   Wk 1 — computer & studio fluency
-module-02-audio-editing-mixing/      Wks 2–5 — Audacity, editing, mixing → Project 1
-module-03-recording/                 Wks 6–9 — recording & sample library → midterm
-module-04-the-daw/                   Wks 10–13 — Ableton, then Audition → final project
+module-01-fluency/                   Wk 1 · computer & studio fluency
+module-02-audio-editing-mixing/      Wks 2–5 · Audacity, editing, mixing → Project 1
+module-03-recording/                 Wks 6–9 · recording & sample library → midterm
+module-04-the-daw/                   Wks 10–13 · Ableton, then Audition → final project
 assets/                              Shared CSS, audio, images, videos
 under-the-hood/                      Dev / build-time material (Inés + Claude; the TA can skip it)
   build/                             Scripts that generate audio demos and diagrams
@@ -96,14 +96,12 @@ module-XX-name/
 
 Build-time conventions (prose rules, document chrome, file naming, dates, the visual system, asset recipes, and the page templates) live in [`under-the-hood/meta/`](under-the-hood/meta/). Anyone drafting student-facing material consults the relevant file there first; a TA teaching from finished materials does not need them.
 
-Two patterns worth knowing without opening a convention file:
-
 - **Student-facing materials** are HTML sharing `assets/style.css`. **TA notes, specs, and policies** are Markdown.
 - **File workflow:** local-first with the server as sync. Students work in `~/Documents/[netid]/`, download from the server at the start of a session, and upload at the end.
 
 ## For the TA
 
-To prep a week, open the relevant module's `README.md`: it carries the session-by-session plan (what to say, where students get stuck, how to use each tool, what to assess and how). The live student pages are linked per module above.
+To prep a week, open the relevant module's `README.md`: it holds the session-by-session plan (what to say, where students get stuck, how to use each tool, what to assess and how). The live student pages are linked per module above.
 
 Faculty reference texts behind the materials (not assigned to students): Hosken, *An Introduction to Music Technology* (primary); Huber, *Modern Recording Techniques*; Holmes, *Electronic and Experimental Music*; *The Cambridge Companion to Electronic Music*.
 

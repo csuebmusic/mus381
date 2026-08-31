@@ -147,6 +147,8 @@ Markdown docs (module specs, TA notes, this folder) use the H1 to identify thems
 | Module spec / TA notes (merged) | `# Module XX — [Module title]` |
 | Operational doc (server archival policy, sample bank prep, this folder's files) | `# [Document title]` (no module reference) |
 
+The repository README (`README.md` at the repo root) is student-facing and follows `prose-conventions.md`, including the em-dash rule. The em-dash H1 form in the table above applies to internal Markdown only.
+
 If a metadata line is useful immediately under the H1, put it as bold text and keep it dateless. For example: `**Weeks 2–5** (7 sessions)`. Calendar date ranges belong in the syllabus (`syllabus.html`), not here.
 
 Links in these files cannot be forced to open in a new tab. GitHub strips the `target` attribute when it renders Markdown, whether the link is written in Markdown syntax or as a raw HTML anchor, so the new-tab rule above applies to the student-facing HTML only. On GitHub a reader opens a link in a new tab with a middle-click or cmd/ctrl-click. This is a platform limitation, not a gap to fix.
