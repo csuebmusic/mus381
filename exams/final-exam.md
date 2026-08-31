@@ -11,7 +11,7 @@ TA-facing. Contains the exam and the answer key. The exam section can be copied 
 
 ### Note on study support
 
-This exam is pinned to the final review packet (`module-04-the-daw/lessons/06-handout-final-review.html`), the way the midterm is pinned to its Wk 9 review handout. Every question here is a sibling of something the packet covers: the Module 4 vocabulary, plus the three cross-course anchors it carries forward (sample rate, clipping, bit depth at export). Keep future versions inside what the packet covers, so students are tested on what they were given to study.
+This exam matches the final review packet (`module-04-the-daw/lessons/06-handout-final-review.html`), the way the midterm is pinned to its Wk 9 review handout. Every question here is a sibling of something the packet covers: the Module 4 vocabulary, plus the three cross-course anchors it includes forward (sample rate, clipping, bit depth at export). Keep future versions inside what the packet covers, so students are tested on what they were given to study.
 
 ### How this exam is built
 
@@ -65,7 +65,7 @@ Give a one or two sentence definition for each term.
 
 16. **(4 points)** Explain the beginner model of MIDI as a trigger. What does a MIDI note carry, what does it do, and what actually makes the sound the listener hears?
 
-17. **(3 points)** Across the course you worked in Audacity, on the studio console, and in Ableton. Name two concepts that carried across all three, and explain why "the skills transfer, the tool changes" is the point of the final week.
+17. **(3 points)** Across the course you worked in Audacity, on the studio console, and in Ableton. Name two concepts that appear in all three, and explain why "the skills transfer, the tool changes" is the point of the final week.
 
 18. **(3 points)** Your library files are 48 kHz / 24-bit. Your Ableton set runs at 48 kHz. When you import a library sound into the set, what converts and what does not? At what bit depth do you export the finished piece?
 

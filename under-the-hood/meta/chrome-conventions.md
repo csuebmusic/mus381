@@ -103,7 +103,7 @@ Once the callout is present, the body prose should not redundantly list the gear
 
 Readings and interactive tools close with a small **End of session** callout, placed at the very end of the body content, immediately before the `<footer>`. It mirrors the Today's gear callout at the top: a structural cue students see at the moment they're about to tab away from the page.
 
-The callout exists because the readings and tools don't otherwise carry an end-of-session prompt. Without it, a Monday-reading student can close the tab and walk out without doing the upload and gear teardown. The card at the station carries the canonical routine; this callout is the salience cue that points back to it.
+The readings and tools have no other end-of-session prompt. Without it, a Monday-reading student can close the tab and walk out without doing the upload and gear teardown. The card at the station holds the canonical routine; this callout is the salience cue that points back to it.
 
 The callout markup is always the same:
 
@@ -119,7 +119,7 @@ Files that get this callout:
 - Interactive tools
 
 Files that don't:
-- Lab handouts (Wed): they already carry an `<h2>End of session</h2>` block with the session-specific "what to upload today" steps plus the same "continue with the rest of the card's routine" tail. That block does the same job in heading-and-prose form; adding the callout would double up.
+- Lab handouts (Wed): they already have an `<h2>End of session</h2>` block with the session-specific "what to upload today" steps plus the same "continue with the rest of the card's routine" tail. That block does the same job in heading-and-prose form; adding the callout would double up.
 - The Session Routines card itself, the Day 1 reading, listening pages, and project prompts: same exception list as Today's gear, for the same reasons.
 
 ### Lab handout end-of-session tail (canonical sentence)
@@ -132,11 +132,11 @@ Then continue with the rest of the card's end-of-session routine: disconnect and
 
 The Session Routines card is the canonical source for what's in this list. The sentence is repeated in lab handouts as a salience cue, not as the authoritative procedure. **If the routine changes (a step added, removed, or reordered on the card), update the card first, then sweep every lab handout for the same edit.** Otherwise the cue and the card will drift, and students who follow the cue will skip whatever the card added.
 
-Lab handouts that currently carry this sentence:
+Lab handouts that currently use this sentence:
 - Module 2 Labs 1, 2, 3
 - Module 3 Labs 1, 2, 3 (handouts 02, 05, 07)
 
-Module 3's Lab 4 (handout 08, the self-guided studio walkthrough) does not carry the tail. It is worked through on the student's own time in MB2508, not a standard MB2525 lab session with shared-gear teardown and an upload, so the routines-card cue does not apply.
+Module 3's Lab 4 (handout 08, the self-guided studio walkthrough) does not use the tail. It is worked through on the student's own time in MB2508, not a standard MB2525 lab session with shared-gear teardown and an upload, so the routines-card cue does not apply.
 
 ### Links
 

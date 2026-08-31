@@ -142,7 +142,7 @@ Block-by-block facilitation, demo scripts, common confusions, and pacing fallbac
 - "My recording is too quiet" → almost always gain-trim too low (or in-line slider too low, or mix knob set wrong, in that order)
 - "My recording is too loud / clipping" → gain-trim too high; reinforce the -12 to -6 dBFS target
 - "I can't hear myself while recording" → monitor mix knob on interface set to USB-only instead of a blend
-- "My file disappeared" → carry-over from Module 2; the local-first / server-as-sync workflow needs to be reinforced because the library is starting to accumulate real value
+- "My file disappeared" → left over from Module 2; the local-first / server-as-sync workflow needs to be reinforced because the library is starting to accumulate real value
 
 ### Gear setup baseline (every Wednesday)
 
@@ -408,7 +408,7 @@ Two halves.
 - Transferring files from phone to computer: method TBD pending IT confirmation on what's possible between the lab Macs and the campus Wi-Fi student phones connect to. Step 1 of the lab handout is currently a placeholder; it gets filled in once the method is settled
 - File format: both apps produce 48 kHz / 24-bit WAV. Audacity opens them directly with no conversion step. This is the payoff of using dedicated field-recording apps instead of the phone's default voice recorder
 - Importing into Audacity (drag-and-drop, or File → Import → Audio)
-- **Resampling, now a conditional step.** Phone files arrive at 48 kHz and match the 48 kHz project, so most imports need no conversion. The lab keeps resampling as a skill for the case where a file comes in at another rate (a 44.1 kHz download): Tracks → Resample (or the equivalent in the student's Audacity version) to bring it to 48 kHz. The teaching moment is the reinterpret-vs-recalculate distinction and matching project rate, taught via the dropdown experiment even when no resample is needed
+- **Resampling, now a conditional step.** Phone files come in at 48 kHz and match the 48 kHz project, so most imports need no conversion. The lab keeps resampling as a skill for the case where a file comes in at another rate (a 44.1 kHz download): Tracks → Resample (or the equivalent in the student's Audacity version) to bring it to 48 kHz. The teaching moment is the reinterpret-vs-recalculate distinction and matching project rate, taught via the dropdown experiment even when no resample is needed
 - Running the same three-step prep pipeline (denoise, trim, normalize) on the resampled clip
 - Exporting as 48 kHz / 24-bit WAV to the library
 
@@ -438,7 +438,7 @@ The lecture walks the actual console in the studio (a Toft Audio Designs ATB) to
 
 1. **The mixer as the place where flows meet.** Conceptual frame: what a mixer is for, how it sits in the chain between mics and audio interface, the analog-vs-digital distinction (a digital mixer like an X32 or SQ can replace the interface; an analog console like the Toft cannot).
 2. **The channel strip.** Walked control by control: input gain, phase reverse, 80 Hz HPF, four-band EQ, six aux sends, monitor section, pan/solo/mute, routing buttons to L-R and to subgroup pairs, the channel fader and unity gain. Callouts connect each control back to material from Lectures 1 and 2 (phase to the XLR balanced-cable trick; the EQ to Audacity's Filter Curve EQ; the aux sends to the river-with-taps metaphor; TRS as a third-way wiring on the insert jack).
-3. **In-line architecture.** Every strip carries two paths (channel and monitor), both active at the same time. The processing-vs-monitoring distinction comes in here, plus the I/P REV button that swaps them at mixdown.
+3. **In-line architecture.** Every strip has two paths (channel and monitor), both active at the same time. The processing-vs-monitoring distinction comes in here, plus the I/P REV button that swaps them at mixdown.
 4. **The submaster section.** Eight subgroup strips, what they do, how channels get routed to them, the stereo effects returns.
 5. **The master section.** Aux masters, talkback, monitor switching, 2-track returns, the master stereo fader.
 

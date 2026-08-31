@@ -332,7 +332,7 @@ Quick close: "On Monday we go deeper into editing: the full vocabulary, plus env
 
 ### Pacing fallbacks
 
-- **If running long in Part 1:** trim Section 4 (Timbre) free-exploration time. The first three sections carry the main pedagogical weight; Section 4 can be a 4-minute demo + brief student touch.
+- **If running long in Part 1:** trim Section 4 (Timbre) free-exploration time. The first three sections hold the main pedagogical weight; Section 4 can be a 4-minute demo + brief student touch.
 - **If running long in Part 2:** the most cuttable step is Step 7 (upload). It can be done after class with a 30-second reminder ("Don't leave without uploading. The card on your station has the steps.") But better to keep it in if at all possible; first-day upload is the workflow-formation moment.
 - **If running short:** in Part 1 Section 4, give 5–7 minutes of timbre free-exploration ("Try to make a sound that's like a brass instrument, then a woodwind, then something inhuman"). In Part 2 Step 5, give them an extra try-this: "Now reverse the sample. What does the envelope look like? What does the slow fade-out become?"
 
@@ -949,4 +949,4 @@ This becomes the basis for revising the module README for the next time the cour
 
 ## What follows
 
-Module 3 (Weeks 6–9) is recording and sample library building. Students will move from manipulating *provided* sounds to generating their own. The mixing and editing fluency built in Module 2 carries forward; the source material changes.
+Module 3 (Weeks 6–9) is recording and sample library building. Students will move from manipulating *provided* sounds to generating their own. The mixing and editing fluency built in Module 2 stays; the source material changes.

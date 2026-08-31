@@ -8,7 +8,7 @@
 
 Most students arrive without Mac experience or studio fluency. Before any music-technology content makes sense, students need basic computer fluency, a clear file workflow, and confident hands on the gear at their station. This module is short but foundational. Everything downstream depends on it.
 
-The single biggest thing the TA can do on Day 1 is establish that the lab is a low-stakes, supportive place to learn. Most students arrive nervous about technology. If they leave feeling like *they* did something — saved a file, plugged in gear, made a recording — they'll come back Monday ready to learn. If they leave feeling lost, the rest of the semester is harder.
+The main thing the TA does on Day 1 is establish that the lab is a low-stakes, supportive place to learn. Most students arrive nervous about technology. If they leave feeling like *they* did something — saved a file, plugged in gear, made a recording — they'll come back Monday ready to learn. If they leave feeling lost, the rest of the semester is harder.
 
 Plan to circulate constantly. Don't lecture for more than 5 minutes at a stretch. Demo, then have them do it. Be willing to repeat instructions twice; some students will need to see something three times.
 
@@ -143,7 +143,7 @@ That whole sequence in five minutes teaches: Finder, screenshots, Desktop locati
 
 ### Block 3 — Set up folders and connect to the server (20 min)
 
-This block establishes the workflow model for the entire semester. Students will hear "two folders, the local one is where you work, the server is how you transport between machines" and that becomes the mental model they carry forward. It's worth slowing down and being explicit about the *why*.
+This block establishes the workflow model for the entire semester. Students will hear "two folders, the local one is where you work, the server is how you transport between machines" and that becomes the mental model they keep. It's worth slowing down and being explicit about the *why*.
 
 **Open with the conceptual frame.** Before any clicking, draw on the whiteboard:
 
@@ -152,7 +152,7 @@ This block establishes the workflow model for the entire semester. Students will
   (local working copy)               (master copy, syncs between machines)
 ```
 
-Say something like: *"You'll keep two copies of your work. The local copy on whichever computer you're sitting at is where you actually do the work, and it's fast and reliable. The server holds the master copy. You download from it at the start of every session, and upload to it at the end. That way, if you sit at a different computer next time, your work is waiting for you."*
+Say something like: *"You'll keep two copies of your work. The local copy on whichever computer you're sitting at is where you edit, and it's fast and reliable. The server holds the master copy. You download from it at the start of every session, and upload to it at the end. That way, if you sit at a different computer next time, your work is waiting for you."*
 
 Add the constraint out loud, because it shapes how they plan: the server is reachable from inside the lab only. Work that doesn't get uploaded stays on that one machine until they are back in the room.
 
@@ -164,7 +164,7 @@ This is the most important conceptual moment of Day 1. Don't rush it.
 2. `Cmd + Shift + N` → name it with their NetID (lowercase) → return
 3. Open it, `Cmd + Shift + N` again → name it `week-01`
 
-The local folder is named by NetID so the two FileZilla panes carry the same name and line up visually. Filenames still lead with last name, so submitted work stays identifiable.
+The local folder is named by NetID so the two FileZilla panes show the same name and line up visually. Filenames still lead with last name, so submitted work stays identifiable.
 
 Have students do this together with you on the projector. Drill the lowercase / no-spaces rule again here.
 
@@ -326,7 +326,7 @@ Tell them this is the same routine they'll do every session for the rest of the 
 ## Common questions
 
 - *"Do I need a Mac at home?"* — No. The lab has everything they need. The server keeps your work synced between lab machines.
-- *"Can I connect to the server from home?"* — No. It's reachable from inside the lab only. Carry work out on a USB drive or personal cloud storage if you want it with you.
+- *"Can I connect to the server from home?"* — No. It's reachable from inside the lab only. Take work out on a USB drive or personal cloud storage if you want it with you.
 - *"Can I use my own headphones?"* — Yes. The lab provides them but personal headphones are fine.
 - *"What if my audio interface isn't working?"* — Try: unplug from the hub, replug into a different hub port, check Audio MIDI Setup. If still broken, switch stations and report it.
 - *"Can I take my files home on a USB drive?"* — Yes. Copy your folder from `~/Documents/` to a USB drive, personal cloud storage, or anywhere you can reach from home. The server itself is reachable from the lab only, so a copy you carry out is the way to work at home. Audacity is free and runs anywhere, so working at home on Module 2 material is fine. Ableton is lab-license-only, so Module 4 work mostly stays in the lab.
