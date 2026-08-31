@@ -31,9 +31,9 @@ The header `<span class="meta">` and the matching footer span both contain the r
 All within-module counts reset at the module boundary. Most numbers are within-module; project numbers are the exception (global, since projects build on each other across the semester).
 
 - **Lecture numbers** count Monday lectures within a module. Mon Wk 2 in Module 2 is Lecture 1, Mon Wk 3 is Lecture 2, etc.
-- **Supplement readings** carry the parent lecture's number with `(supplement)` appended. Example: `Lecture 3 (supplement)` for a reading that backs up Lecture 3.
+- **Supplement readings** take the parent lecture's number with `(supplement)` appended. Example: `Lecture 3 (supplement)` for a reading that backs up Lecture 3.
 - **Lab numbers** count Wednesday lab sessions within a module. Module 2 has three lab sessions and three Lab-numbered handouts (Lab 1 → Lab 2 → Lab 3). Used when a module has multiple labs and the number serves as session-navigation help.
-- **Handout numbers** count handouts within a module when the document is module-tied but not paired with a single lab session. Used when a module has multiple module-wide handouts and the number serves as a within-module disambiguator. No document currently uses this pattern; the slot is reserved for future module-tied handouts that aren't paired with a specific Wednesday lab. (Module 1's `Your First Day` document was previously chromed `Handout 1` and has since been reclassified as `Lecture 1`, since the Mon Wk 1 session is a lecture-style reading even though it's also operationally guided.)
+- **Handout numbers** count handouts within a module when the document is module-tied but not paired with a single lab session. No document currently uses this pattern; the slot is reserved for future module-tied handouts that aren't paired with a specific Wednesday lab.
 - **Tool numbers** count interactive tools within a module. Module 2's digital audio explorer is Tool 1; its dynamics tool is Tool 2.
 - **Project numbers** count globally across the semester. Project 1 (Module 2), Project 2 (Module 3 midterm), etc.
 
@@ -44,6 +44,12 @@ If the module has multiple labs (Wednesday sessions) and the handout is the prin
 If the handout isn't tied to a specific lab session (e.g. a "general orientation" handout used across multiple weeks of the module), use `Handout N`, where N counts handouts within the module.
 
 The distinction is about whether the number provides session-navigation value. If yes → Lab. If no → Handout.
+
+### Separators
+
+Middle dot (`·`, U+00B7) separates title metadata in `<title>` elements and in metadata-style headings: `Step 1 · Turn the knobs down`.
+
+En dashes (`–`, U+2013) stay where they form a typographic compound, as in `musique concrète–style found sounds`, and in number ranges.
 
 ### Title block
 
@@ -147,7 +153,7 @@ Markdown docs (module specs, TA notes, this folder) use the H1 to identify thems
 | Module spec / TA notes (merged) | `# Module XX — [Module title]` |
 | Operational doc (server archival policy, sample bank prep, this folder's files) | `# [Document title]` (no module reference) |
 
-The repository README (`README.md` at the repo root) is student-facing and follows `prose-conventions.md`, including the em-dash rule. The em-dash H1 form in the table above applies to internal Markdown only.
+The repository README (`README.md` at the repo root) is student-facing and takes no em dashes. The em-dash H1 form in the table above applies to internal Markdown only.
 
 If a metadata line is useful immediately under the H1, put it as bold text and keep it dateless. For example: `**Weeks 2–5** (7 sessions)`. Calendar date ranges belong in the syllabus (`syllabus.html`), not here.
 
