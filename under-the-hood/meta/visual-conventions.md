@@ -129,13 +129,13 @@ Each module has a default audio format that students use throughout. The standar
 | Module | Sample rate | Bit depth | DAW | Notes |
 |---|---|---|---|---|
 | 1 | n/a | n/a | QuickTime | Day 1 hello recording uses whatever default QuickTime sets |
-| 2 | 48 kHz | 24-bit | Audacity | Course-wide rate; 24-bit gives editing headroom |
+| 2 | 48 kHz | 24-bit | Audacity | Course-wide rate |
 | 3 | 48 kHz | 24-bit | Audacity | Matches Module 2 and the 48/24 phone field recordings |
 | 4 | 48 kHz | 32-bit | Ableton | Same rate as Modules 2–3; bit depth steps to 32 at export |
 
-The course works at 48 kHz throughout. Modules 2–3 use 24-bit; Module 4 exports at 32-bit. The only standards shift is the bit-depth step at Module 4, introduced where students export.
+Write the depth as `32-bit` in student-facing material, never `32-bit float`. Write the pair rate first: `48 kHz, 24-bit`.
 
-Build scripts target the per-module standard (48/24 for Modules 2–3, 48/32 for Module 4) for audio a student works with as a project or library file. Demo clips embedded in readings, handouts, and lectures are exempt, because students listen to them rather than load them into a project: the existing sets (Wk 2 rate/depth degradation, Wk 3 tape-speed and editing, Wk 5 dynamics) stay at the rate they were rendered, and the Wk 2 demos in particular keep the specific rates and depths they teach.
+Build scripts target the per-module standard (48/24 for Modules 2–3, 48/32 for Module 4) for audio a student works with as a project or library file. Demo clips embedded in readings, handouts, and lectures are exempt: the existing sets (Wk 2 rate/depth degradation, Wk 3 tape-speed and editing, Wk 5 dynamics) stay at the rate they were rendered, and the Wk 2 demos in particular keep the specific rates and depths they teach.
 
 ## Page width and structure
 
