@@ -153,6 +153,3 @@ If a metadata line is useful immediately under the H1, put it as bold text and k
 
 Links in these files cannot be forced to open in a new tab. GitHub strips the `target` attribute when it renders Markdown, whether the link is written in Markdown syntax or as a raw HTML anchor, so the new-tab rule above applies to the student-facing HTML only. On GitHub a reader opens a link in a new tab with a middle-click or cmd/ctrl-click. This is a platform limitation, not a gap to fix.
 
-## Why the chrome stays consistent
-
-Students see roughly thirty documents across the semester. Consistent chrome means they can navigate any one of them within a few seconds: the header tells them what document it is, the title block tells them what module it belongs to, the subtitle tells them what it covers. Reinventing that vocabulary per document would cost the reader attention they should spend on the content.

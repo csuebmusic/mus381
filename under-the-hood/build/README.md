@@ -62,18 +62,6 @@ If you want the exact same output every time, add a line near the top:
 np.random.seed(42)
 ```
 
-### Why Python and not ChucK
-
-The synthesis itself could absolutely be done in ChucK (and would
-arguably be more idiomatic for this course). The reason this is in
-Python: the *degradation* steps (sample rate reduction with proper
-anti-aliasing, integer quantization for bit depth reduction) are
-straightforward in scipy and awkward in ChucK. Keeping the whole
-pipeline in one language and one script keeps the build simple.
-
-The students never see this code — they just hear the resulting files
-embedded in the reading.
-
 ## `generate-audio-demos-week-03.py`
 
 Generates the audio demo files used in the Module 2 Week 3 reading
@@ -218,13 +206,12 @@ Re-embeds the dynamics tool's demo audio as base64 inside
 Run this after regenerating `dynamic-tool-demo.wav` if the embedded
 copy should reflect the new audio.
 
-### Why the tool has an embedded copy
+### The embedded copy
 
-Browsers block `fetch()` across origins under the `file://` protocol,
-so fetching a sibling WAV from the tool's HTML fails when the page is
-opened by double-clicking. Embedding the WAV inside the HTML sidesteps
-that entirely. The trade-off is the HTML file grows from ~30 KB to
-~1.4 MB, which is fine for a teaching tool loaded once per session.
+Browsers block `fetch()` across origins under the `file://` protocol, so
+fetching a sibling WAV from the tool's HTML fails when the page is
+opened by double-clicking. The WAV is embedded in the HTML instead,
+which takes the file from ~30 KB to ~1.4 MB.
 
 The script reads the canonical WAV from
 `assets/audio/module-02-week-05/dynamic-tool-demo.wav`, base64-encodes

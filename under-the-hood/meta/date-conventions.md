@@ -10,10 +10,6 @@ Calendar dates (`Aug 24`, `Sep 16`, etc.) appear **only** in the syllabus (`syll
 
 Re-running this course in a future semester should require editing only that file (and Canvas, externally). Every other reference to time uses a stable positional label that doesn't change between semesters.
 
-## Why
-
-Dates change every semester. If they appear in many places, they have to be updated in many places, and they will inevitably drift. Lecture numbers, project numbers, week numbers, and module thematic labels are all stable across semesters; calendar dates aren't.
-
 ## Week references
 
 For everything except the syllabus, use week references:

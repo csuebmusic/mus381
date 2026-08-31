@@ -6,14 +6,6 @@
 
 ---
 
-## Why this matters
-
-Project 1 is built entirely from the sounds in this folder. The quality, variety, and conceptual coherence of the bank determines how much creative latitude students actually have. Too few sounds → everyone's piece sounds the same. Too many → students drown in choice and never start. Wrong kinds → students can't make anything interesting.
-
-This is one of the most important pieces of pre-semester prep.
-
----
-
 ## Curatorial direction
 
 The bank should have **enough variety to make distinct pieces** without being overwhelming. The aesthetic frame is **musique concrète–style found sounds**: recognizable everyday material that students can recontextualize, manipulate, and arrange.

@@ -9,13 +9,9 @@ Shared resources used across student-facing materials in the course.
 - `images/` — diagrams, screenshots, and photographs used in readings and handouts. Organized as `module-XX-week-YY/[shortname].[ext]`.
 - `videos/` — short Audacity screen recordings used as inline demos in readings. Provided by Inés. See [`videos/README.md`](videos/README.md) for recording specs and conventions.
 
-## Why one stylesheet
-
-Every document a student sees in this course shares the same visual system: warm cream background, dark warm grey text, rust accent, DM Sans body text, DM Mono labels, generous whitespace, technical-manual feel. This is achieved by every HTML document linking to `assets/style.css`.
-
 ## Stylesheet reference path
 
-Student-facing material lives two levels deep inside a module folder (e.g. `module-02-audio-editing-mixing/lessons/foo.html`), so the stylesheet reference is:
+Every student-facing HTML document links to `assets/style.css`. Student-facing material lives two levels deep inside a module folder (e.g. `module-02-audio-editing-mixing/lessons/foo.html`), so the reference is:
 
 - From `module-XX-name/lessons/` → `../../assets/style.css`
 - From `module-XX-name/listening/` → `../../assets/style.css`

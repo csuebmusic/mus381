@@ -4,10 +4,6 @@ Writing rules for student-facing HTML (readings, handouts, listening assignments
 
 > **Scope:** student-facing material only. Internal docs (READMEs, TA notes, module specs, this folder) follow their own looser rhythm and these rules don't apply there.
 
-## Why these rules exist
-
-Student-facing material is read by beginners who may have never opened a DAW. Prose friction (fussy punctuation, jargon chains, hedges) takes attention away from the content. The rules here are about removing that friction.
-
 ## The rules
 
 ### No em dashes
