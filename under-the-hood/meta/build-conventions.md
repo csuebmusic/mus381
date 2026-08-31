@@ -21,7 +21,7 @@ Internal docs (module READMEs, TA notes, this file) record state and rules rathe
 
 Lowercase. Hyphens, not spaces. No special characters (no `&`, `!`, `@`, `#`, `$`, `%`, `(`, `)`, quotes, apostrophes).
 
-This is the same convention taught to students on Day 1 (see Module 1's first-day handout). The repo follows the rule students follow.
+The same convention is taught to students on Day 1 (see Module 1's first-day handout).
 
 ### Placeholder syntax used in this file
 
@@ -387,13 +387,13 @@ Lab handouts that currently use this sentence:
 - Module 2 Labs 1, 2, 3
 - Module 3 Labs 1, 2, 3 (handouts 02, 05, 07)
 
-Module 3's Lab 4 (handout 08, the self-guided studio walkthrough) does not use the tail. It is worked through on the student's own time in MB2508, not a standard MB2525 lab session with shared-gear teardown and an upload, so the routines-card cue does not apply.
+Module 3's Lab 4 (handout 08, the self-guided studio walkthrough) does not use the tail. It is worked through on the student's own time in MB2508, not a standard MB2525 lab session with shared-gear teardown and an upload.
 
 #### Links
 
-Every link that navigates away from a student-facing page opens in a new tab, written `target="_blank" rel="noopener noreferrer"`. This holds for both external links (the Ableton manual, Adobe's guides) and cross-document links to another lesson in the repo, so a student who follows a link keeps the page they were reading open behind it.
+Every link that navigates away from a student-facing page opens in a new tab, written `target="_blank" rel="noopener noreferrer"`. This holds for both external links (the Ableton manual, Adobe's guides) and cross-document links to another lesson in the repo.
 
-In-page links are the exception: a table of contents pointing to `#section` anchors within the same document stays in the same tab, since a new tab for a same-page jump would only duplicate the page. The rule is new tab if the link leaves the page, same tab if it scrolls within it.
+In-page links are the exception: a table of contents pointing to `#section` anchors within the same document stays in the same tab. New tab if the link leaves the page, same tab if it scrolls within it.
 
 ### Markdown files (internal)
 
