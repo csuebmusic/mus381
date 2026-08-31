@@ -108,7 +108,7 @@ Award full credit when the student conveys the idea, even if the wording differs
 ## Part D (2 points each)
 
 16. **Noise floor, 16-bit vs 24-bit.** Bit depth sets the noise floor, roughly 6 dB of range per bit (so 16-bit gives about 96 dB). Fewer bits means coarser quantization, so the quantization noise sits louder relative to the signal. 24-bit has more bits, a lower floor, and more headroom for quiet detail. *(Full credit for tying the floor to bit depth and quantization.)*
-17. **Balanced cable.** It carries two opposite-polarity copies of the signal. Noise picked up along the run lands on both copies the same way (in phase). At the far end one copy is flipped and summed with the other: the signal doubles and the noise cancels. **Phase** (the opposite polarity of the two copies) is the property that makes it work.
+17. **Balanced cable.** It carries two opposite-polarity copies of the signal. Noise picked up along the run arrives on both copies the same way (in phase). At the far end one copy is flipped and summed with the other: the signal doubles and the noise cancels. **Phase** (the opposite polarity of the two copies) is the property that makes it work.
 18. **Clipping.** No, it cannot be fixed in editing. Clipping happens at capture when the signal exceeds the digital ceiling (0 dBFS) and the peaks are flattened off. That information is gone, so there is nothing to restore. Prevent it with gain and headroom while recording. *(Full credit for "unrecoverable because the peaks were lost at capture.")*
 19. **Sample prep pipeline, in order:**
     1. **Denoise**, using a captured silence sample, to remove background hiss and hum.

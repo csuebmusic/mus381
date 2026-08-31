@@ -16,7 +16,7 @@ Each module folder holds everything for that module: a `README.md` with session-
 
 ### Module 1 — Computer & studio fluency · Week 1
 
-Most students arrive without Mac or studio fluency. Before any music-technology content can land, they need to navigate files, plug things in, and find their work. Short but essential. **Deliverable:** none (a setup and orientation week).
+Most students arrive without Mac or studio fluency. Before any music-technology content makes sense, they need to navigate files, plug things in, and find their work. Short but essential. **Deliverable:** none (a setup and orientation week).
 
 - Reading: [First-day setup](https://csuebmusic.github.io/mus381/module-01-fluency/lessons/01-reading-first-day-setup.html)
 - Handout: [Session routines](https://csuebmusic.github.io/mus381/module-01-fluency/lessons/02-handout-session-routines.html)

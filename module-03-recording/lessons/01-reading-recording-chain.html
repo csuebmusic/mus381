@@ -299,7 +299,7 @@
   <div class="photo-attribution">Source: Shure SM57 product spec sheet, ©2009 Shure Incorporated</div>
 </figure>
 
-<p>The curve traced on the chart is what the mic actually does. Reading the plot above: at 0° (directly in front), the curve sits at the outermost ring, which means the mic is most sensitive there. That's full pickup. As you move around toward 90° (the side of the mic), the curve pulls inward, landing somewhere between the -5 and -10 dB rings depending on frequency. The side of the mic picks up sound, but less strongly than the front does (about a third to half as loud, roughly). Keep going around to 180° (directly behind the mic) and the curve pinches almost to the center: at -20 dB or beyond, the rear of the mic is barely picking up anything at all. This shape, full in front, reduced at the sides, near-zero behind, is what <strong>cardioid</strong> means.</p>
+<p>The curve traced on the chart is what the mic actually does. Reading the plot above: at 0° (directly in front), the curve sits at the outermost ring, which means the mic is most sensitive there. That's full pickup. As you move around toward 90° (the side of the mic), the curve pulls inward, sitting somewhere between the -5 and -10 dB rings depending on frequency. The side of the mic picks up sound, but less strongly than the front does (about a third to half as loud, roughly). Keep going around to 180° (directly behind the mic) and the curve pinches almost to the center: at -20 dB or beyond, the rear of the mic is barely picking up anything at all. This shape, full in front, reduced at the sides, near-zero behind, is what <strong>cardioid</strong> means.</p>
 
 <p>You'll notice the chart actually shows several curves at once, one for each frequency the manufacturer measured (125, 500, 1000, 2000, 4000, 8000 Hz). The shape isn't perfectly identical at every frequency: at very low frequencies the mic picks up a bit more from the rear than it does at mid frequencies; at very high frequencies the pattern can get a little narrower in front. But all of these curves are recognizably the same cardioid shape. For our purposes, "cardioid" is the right name for what this mic does at any frequency you'd care about.</p>
 
@@ -421,10 +421,10 @@
           font-family="var(--mono)" font-size="10" fill="var(--ink-soft)">result: signal doubled, noise cancelled</text>
 
   </svg>
-  <figcaption>The trick of a balanced cable. Noise picked up along the run lands on both wires the same way; the interface flips wire B upside down and sums it with wire A; the signal (flipped twice, so now in phase) doubles, and the noise (flipped once, so now out of phase) cancels.</figcaption>
+  <figcaption>The trick of a balanced cable. Noise picked up along the run arrives on both wires the same way; the interface flips wire B upside down and sums it with wire A; the signal (flipped twice, so now in phase) doubles, and the noise (flipped once, so now out of phase) cancels.</figcaption>
 </figure>
 
-<p>When the cable picks up interference along its run (electromagnetic noise from a fluorescent light fixture overhead, say), the interference lands on <em>both</em> wires equally, in the same direction. So at the far end of the cable, the interface sees:</p>
+<p>When the cable picks up interference along its run (electromagnetic noise from a fluorescent light fixture overhead, say), the interference arrives on <em>both</em> wires equally, in the same direction. So at the far end of the cable, the interface sees:</p>
 
 <ul>
   <li>Wire A: signal + noise</li>
@@ -437,7 +437,7 @@
   <div class="pause-label">Pause</div>
   <h4>Why summing waves cancels them or doubles them</h4>
   <p>The cancellation and doubling that make balanced cables work are not specific to cables. They're properties of how waveforms add. When two waveforms get summed together (in any medium: in a cable, in the air, in a mixer, on a track in Audacity), the rule is the same: at every moment in time, you add the two values to get the sum.</p>
-  <p>If the two waveforms are <em>in phase</em> (both going up at the same time, both going down at the same time), every moment of one adds to a matching moment of the other. The peaks land on peaks, the troughs on troughs. The result is the same waveform, twice as tall.</p>
+  <p>If the two waveforms are <em>in phase</em> (both going up at the same time, both going down at the same time), every moment of one adds to a matching moment of the other. The peaks line up with peaks, the troughs with troughs. The result is the same waveform, twice as tall.</p>
   <p>If the two waveforms are <em>out of phase</em> (one is the upside-down copy of the other: where A goes up, B goes down by the same amount), every moment of one adds to a matching <em>opposite</em> moment of the other. Peak plus trough equals zero, at every point. The result is silence.</p>
   <figure>
     <svg viewBox="0 0 640 295" xmlns="http://www.w3.org/2000/svg"
@@ -531,7 +531,7 @@
     </svg>
     <figcaption>Two identical waves sum to a doubled wave; a wave and its upside-down copy sum to silence.</figcaption>
   </figure>
-  <p>A balanced cable engineers this principle to its advantage. When the interface flips wire B upside down before summing the two wires, two things happen at once. The signal, which had been carried as two opposite copies (out of phase), now lands as two matching copies (in phase) and sums to double. The noise, which had been carried identically on both wires (in phase), now lands as two opposite copies (out of phase) and sums to silence. The same flip-and-sum does both jobs, because phase is what tells the math which case it's in.</p>
+  <p>A balanced cable engineers this principle to its advantage. When the interface flips wire B upside down before summing the two wires, two things happen at once. The signal, which had been carried as two opposite copies (out of phase), now arrives as two matching copies (in phase) and sums to double. The noise, which had been carried identically on both wires (in phase), now arrives as two opposite copies (out of phase) and sums to silence. The same flip-and-sum does both jobs, because phase is what tells the math which case it's in.</p>
 </div>
 
 <p>The practical upshot is that XLR cables can run long distances (50, 100 feet or more) carrying small mic-level signals without picking up audible noise. For a course like this one, where cables stay short, the protection isn't strictly necessary. But this is how every professional audio environment is wired, and it's the reason XLR is the standard mic cable.</p>
@@ -574,7 +574,7 @@
 <ul>
   <li><strong>Inputs.</strong> Both interfaces have at least one <em>combo jack</em> on the left side: a connector that physically accepts either an XLR plug (for a mic) or a 1/4" plug (for a higher-level signal). The PreSonus has two combo jacks, both labeled <strong>Mic/Inst</strong>, meaning each one can take a mic or an instrument signal. The Behringer has one combo jack labeled <strong>Mic/Line 1</strong> (mic or line-level signal) and, next to it, a dedicated 1/4" jack labeled <strong>Inst 2</strong> for instruments only. We won't use the instrument or line inputs this week (Wednesday's lab plugs an XLR mic into the leftmost input on either interface), but next week we'll talk about what "mic," "line," and "instrument" mean as distinct signal types, and these labels will start to make full sense.</li>
 
-  <li><strong>Gain knob</strong> for each input. The gain knob is the preamp control: it sets how much the mic-level signal gets amplified before the ADC sees it. On the PreSonus, two silver knobs sit on the front panel, one per channel, each marked <strong>1</strong> or <strong>2</strong>, with <strong>Inst</strong> and <strong>Mic</strong> labels around the knob and a numeric scale from <strong>-10</strong> to <strong>+30 dB</strong>. The Inst/Mic labels are rough guideposts for where each signal type typically lands; for a mic recording you'll usually end up somewhere in the lower part of the range. On the Behringer, the gain knobs are on the <em>top</em> of the unit, not the front: <strong>Mic/Line Gain 1</strong> for the combo jack and <strong>Inst Gain 2</strong> for the instrument jack.</li>
+  <li><strong>Gain knob</strong> for each input. The gain knob is the preamp control: it sets how much the mic-level signal gets amplified before the ADC sees it. On the PreSonus, two silver knobs sit on the front panel, one per channel, each marked <strong>1</strong> or <strong>2</strong>, with <strong>Inst</strong> and <strong>Mic</strong> labels around the knob and a numeric scale from <strong>-10</strong> to <strong>+30 dB</strong>. The Inst/Mic labels are rough guideposts for where each signal type typically sits; for a mic recording you'll usually end up somewhere in the lower part of the range. On the Behringer, the gain knobs are on the <em>top</em> of the unit, not the front: <strong>Mic/Line Gain 1</strong> for the combo jack and <strong>Inst Gain 2</strong> for the instrument jack.</li>
 
   <li><strong>Clip indicator</strong> for each input. The clip indicator is a red LED that lights up when the signal coming through the preamp exceeds the digital ceiling, the point at which clipping begins. On the PreSonus, the LED is integrated into the gain knob: a red dot labeled <strong>Clip</strong> just to the right of each gain knob lights up when that input is hitting its limit. On the Behringer, each input has a pair of stacked LEDs to the right of the jack: <strong>Sig</strong> (lights up when the input is receiving any signal at all) and <strong>Clip</strong> (lights up when the signal is clipping). Same diagnostic in two layouts.</li>
 

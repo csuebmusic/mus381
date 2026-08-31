@@ -746,7 +746,7 @@
           fill="none" stroke="var(--rule)" stroke-width="1.5"/>
 
     <!-- Sample dots at 9 evenly-spaced points across 8 cycles (severe undersampling) -->
-    <!-- Sampling at 9/600 px = sparse; samples land at near-zero crossings consistently -->
+    <!-- Sampling at 9/600 px = sparse; samples sit at near-zero crossings consistently -->
     <!-- Compute positions: sample at t=0/9, 1/9, ... 8/9 of the canvas, evaluate the sine -->
     <!-- Sine has 8 cycles in 600 px; period = 75 px; freq = 1/75 cycles/px -->
     <!-- Sample sine value: y = 100 - 60 * sin(2*pi * 8 * t / 600) where t is x position -->

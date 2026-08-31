@@ -57,7 +57,7 @@ Notes on the flags:
 - `+faststart` moves the MP4 metadata to the front so the video can start playing before fully loaded
 - `-an` strips any audio track
 
-For typical Audacity screen recordings at 1518×1160 source, this lands files at 200–400 KB per clip.
+For typical Audacity screen recordings at 1518×1160 source, this produces files at 200–400 KB per clip.
 
 ## Embedding
 

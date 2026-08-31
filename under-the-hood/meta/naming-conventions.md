@@ -140,7 +140,7 @@ The week suffix is used when there's a script per week of generated assets (e.g.
 
 The class server is an SFTP server at `sftp://134.154.190.239`, port 22. Students authenticate with their NetID and NetID password, using FileZilla. It is reachable from inside the lab only.
 
-A student's login lands at the root of their own folder, created by the server on first login and named with their NetID. Student-facing materials therefore name private paths **relative to that folder**, never as absolute paths:
+A student's login arrives at the root of their own folder, created by the server on first login and named with their NetID. Student-facing materials therefore name private paths **relative to that folder**, never as absolute paths:
 
 ```
 project-NN/                                  Per-project working folders

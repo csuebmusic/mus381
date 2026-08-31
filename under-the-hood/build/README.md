@@ -160,7 +160,7 @@ Output directory: `assets/audio/module-02-week-05/`
 - `ar-source.wav`, `ar-fast-attack.wav`, `ar-slow-attack.wav`,
   `ar-fast-release.wav`, `ar-slow-release.wav` — Section 3 (attack + release)
 - `limit-natural.wav`, `limit-light.wav`, `limit-crushed.wav` — Section 4 (limiting / loudness wars)
-- `norm-quiet.wav`, `norm-loud.wav` — Section 2 supplement (normalization contrast: same shape, different peak; pairs with the wide/narrow demo to land the "scale vs. shape" distinction)
+- `norm-quiet.wav`, `norm-loud.wav` — Section 2 supplement (normalization contrast: same shape, different peak; pairs with the wide/narrow demo to make the "scale vs. shape" distinction)
 - `timbre-scaled.wav`, `timbre-compressed.wav` — Section 2 supplement (timbre A/B at matched loudness: a scaled-only vs. compressed-then-makeup version, both peak-matched, so students can hear how compression changes the *sound* once the loudness illusion is removed)
 - `dynamic-tool-demo.wav` — source audio for the dynamics tool's built-in demo button (`08-tool-mixing-dynamics.html`). The tool embeds this file as base64 inside the HTML; see `embed-tool-demo.py` below for the re-embed step.
 
@@ -181,7 +181,7 @@ Ableton-rendered stereo loop as source material: conga slaps at
 maximum velocity, shaker and clave at low velocity. The natural
 dynamic range of the loop (~21 dB crest factor, ~57 dB spread between
 loudest and quietest 100 ms windows) makes the compression-vs-no
-demonstrations land much more clearly than any synthesized source.
+demonstrations much clearer than any synthesized source.
 The loop lives at `assets/audio/source/dynamic-loop.wav`. These two
 sections use stereo-linked compression (`compress_stereo`,
 `limit_stereo`): a single sidechain detector reads `max(|L|, |R|)` so

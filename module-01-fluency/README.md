@@ -6,11 +6,11 @@
 
 ## Module purpose
 
-Most students arrive without Mac experience or studio fluency. Before any music-technology content can land, students need basic computer fluency, a clear file workflow, and confident hands on the gear at their station. This module is short but foundational. Everything downstream depends on it.
+Most students arrive without Mac experience or studio fluency. Before any music-technology content makes sense, students need basic computer fluency, a clear file workflow, and confident hands on the gear at their station. This module is short but foundational. Everything downstream depends on it.
 
 The single biggest thing the TA can do on Day 1 is establish that the lab is a low-stakes, supportive place to learn. Most students arrive nervous about technology. If they leave feeling like *they* did something — saved a file, plugged in gear, made a recording — they'll come back Monday ready to learn. If they leave feeling lost, the rest of the semester is harder.
 
-Plan to circulate constantly. Don't lecture for more than 5 minutes at a stretch. Demo, then have them do it. Be willing to repeat instructions twice; some students will need to see something three times before it lands.
+Plan to circulate constantly. Don't lecture for more than 5 minutes at a stretch. Demo, then have them do it. Be willing to repeat instructions twice; some students will need to see something three times.
 
 ---
 
@@ -48,7 +48,7 @@ By the end of this single session, students should be able to:
 
 ## Listening assignment
 
-None for Week 1. Module 1 is a setup module. The first listening assignment lands at the start of Module 2.
+None for Week 1. Module 1 is a setup module. The first listening assignment comes at the start of Module 2.
 
 ---
 
@@ -341,7 +341,7 @@ Tell them this is the same routine they'll do every session for the rest of the 
 These show up across the whole day, not tied to any one block. Block-specific confusions live with their respective blocks above.
 
 - **"I saved it but I can't find it."** — They saved to Desktop or Downloads instead of `~/Documents/[netid]/`. Walk them through Recents in Finder to find the file, then drag it.
-- **"My screenshot didn't work."** — They held the wrong key combination. `Cmd + Shift + 4` to drag a region. The screenshot lands on Desktop.
+- **"My screenshot didn't work."** — They held the wrong key combination. `Cmd + Shift + 4` to drag a region. The screenshot is saved to Desktop.
 - **"I don't know my NetID."** — It's the front half of their campus email address, the same login as Canvas. Have them check Canvas in the browser.
 - **"FileZilla says it can't connect."** — Check the `sftp://` prefix and port 22 first. That pair accounts for most of it. Password next.
 - **"Local and server folders look different."** — Sync issue. Whichever has the newer modification date is the trusted version. Copy that one over the older one. Turn on View → Directory Comparison → Compare modification time to make the difference visible. If they can't tell which is newer, ask the TA before deleting anything.

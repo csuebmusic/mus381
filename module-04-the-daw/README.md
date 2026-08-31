@@ -16,7 +16,7 @@ Three throughlines:
 
 1. **Nondestructive editing is the new mental model.** Audacity edits the file: a cut removes samples, a fade rewrites them. Ableton edits a *view* of the file: the clip points at the audio, and the edits (start, end, fades, warp, gain) are instructions layered on top. Nothing happens to the source. This is the conceptual jump of the module, and it reframes everything they learned about editing in Module 2. Lead with it in Session 1 and reinforce it every time a student is afraid of "ruining" a sample.
 
-2. **Your library is the raw material.** Every audio session in this module pulls from the student's own Module 3 sample library. The "find a sound in your library and use it" loop is the payoff of the midterm: a student who organized their library well will move fast here; a student who didn't will feel the friction, which is itself the lesson. The Module 3 README flags this as a forward promise to deliver, and it lands across Sessions 2 through 4.
+2. **Your library is the raw material.** Every audio session in this module pulls from the student's own Module 3 sample library. The "find a sound in your library and use it" loop is the payoff of the midterm: a student who organized their library well will move fast here; a student who didn't will feel the friction, which is itself the lesson. The Module 3 README flags this as a forward promise to deliver, and it runs across Sessions 2 through 4.
 
 3. **Concepts transfer; tools differ.** The module opens by teaching "a DAW" through Ableton specifically, and closes (Session 7, Adobe Audition) by showing the same ideas under a different UI with different names. Sample rate, bit depth, gain staging, EQ, compression, fades, multitrack arrangement: every one of them exists in any serious audio tool. Students leave knowing they learned transferable concepts, not just where Ableton's buttons are. This matters especially for the art majors, who already live in the Adobe suite and will recognize Audition's place in it.
 
@@ -188,7 +188,7 @@ Same as Module 3, minus the mic and XLR (the lab sessions here are not recording
 
 ### Pacing across the module
 
-The pressure point is **Session 3 → 4** (the MIDI-as-trigger jump). MIDI is the one genuinely new abstraction in a module otherwise built on familiar material (audio, editing, mixing). If the trigger model doesn't land on the Monday (Session 3), the Wednesday lab stalls. Plan the Monday to leave students able to state the note → instrument → sound chain before they build with it on Wednesday.
+The pressure point is **Session 3 → 4** (the MIDI-as-trigger jump). MIDI is the one genuinely new abstraction in a module otherwise built on familiar material (audio, editing, mixing). If the trigger model doesn't register on the Monday (Session 3), the Wednesday lab stalls. Plan the Monday to leave students able to state the note → instrument → sound chain before they build with it on Wednesday.
 
 The other risk is **Session 7 (Audition)** turning into an Audition tutorial. It isn't one. The session is about portability of concepts; Audition is the example. Keep the emphasis on "you already know this; here it is wearing different clothes," not on Audition's feature set.
 
@@ -288,7 +288,7 @@ Internal Routings; Mixing; Live Audio Effect Reference (locked insert + send set
 
 ### Connection to earlier modules
 
-Two threads land at once: Module 2's EQ and compression (what these devices do) and Module 3's console architecture (how the routing is shaped). Name both. The console lecture in Module 3 was deliberately "what the desk is"; this is the first time students drive that architecture themselves.
+Two threads converge here: Module 2's EQ and compression (what these devices do) and Module 3's console architecture (how the routing is shaped). Name both. The console lecture in Module 3 was deliberately "what the desk is"; this is the first time students drive that architecture themselves.
 
 ---
 
@@ -338,7 +338,7 @@ Students at the end of Module 4 should be able to:
 
 ### What gets logged
 
-After Module 4 ends, write a short retrospective: pacing, what landed, what the final-project drafts revealed about which skills stuck.
+After Module 4 ends, write a short retrospective: pacing, what worked, what the final-project drafts revealed about which skills stuck.
 
 ---
 

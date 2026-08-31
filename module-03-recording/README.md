@@ -176,7 +176,7 @@ This is the spine reading of the module. Everything else (the Wed Wk 6 lab, the 
 
 ### Connection to Module 1
 
-Module 1 introduced the lab interface and showed students how to plug things in. This lecture re-frames what they already touched as a **signal flow with named stages**, not just a list of objects. The vocabulary lands now because they have hands-on context from Module 2.
+Module 1 introduced the lab interface and showed students how to plug things in. This lecture re-frames what they already touched as a **signal flow with named stages**, not just a list of objects. The vocabulary registers now because they have hands-on context from Module 2.
 
 ---
 
@@ -275,7 +275,7 @@ The 100-min budget assumes students arrive on time and complete the start-of-ses
 
 Then the mono track. `Tracks → Add New → Mono Track`. Quick.
 
-Step 2 (set gain) is where most of the block's time goes. Demonstrate the live-monitoring behavior on the projector: **click the recording level meter** to enter monitoring mode (the meter changes appearance once active), speak into the mic, watch the peaks. Reinforce the target band against the diagram in the handout: peaks of the *loudest sound you're about to make* should land at -12 to -6 dBFS. Then have students do the calibration with a test crumble or quick test rip using scrap paper from the extras pile (not their four sheets).
+Step 2 (set gain) is where most of the block's time goes. Demonstrate the live-monitoring behavior on the projector: **click the recording level meter** to enter monitoring mode (the meter changes appearance once active), speak into the mic, watch the peaks. Reinforce the target band against the diagram in the handout: peaks of the *loudest sound you're about to make* should sit at -12 to -6 dBFS. Then have students do the calibration with a test crumble or quick test rip using scrap paper from the extras pile (not their four sheets).
 
 The single most common error in this block: students set gain by speech-volume rather than by paper-sound volume. Speech into a dynamic mic at 15-20 cm reads quieter than a close-miked paper rip. They'll set gain too high. Demo the test-crumble approach explicitly.
 
@@ -438,7 +438,7 @@ The lecture walks the actual console in the studio (a Toft Audio Designs ATB) to
 
 1. **The mixer as the place where flows meet.** Conceptual frame: what a mixer is for, how it sits in the chain between mics and audio interface, the analog-vs-digital distinction (a digital mixer like an X32 or SQ can replace the interface; an analog console like the Toft cannot).
 2. **The channel strip.** Walked control by control: input gain, phase reverse, 80 Hz HPF, four-band EQ, six aux sends, monitor section, pan/solo/mute, routing buttons to L-R and to subgroup pairs, the channel fader and unity gain. Callouts connect each control back to material from Lectures 1 and 2 (phase to the XLR balanced-cable trick; the EQ to Audacity's Filter Curve EQ; the aux sends to the river-with-taps metaphor; TRS as a third-way wiring on the insert jack).
-3. **In-line architecture.** Every strip carries two paths (channel and monitor), both active at the same time. The processing-vs-monitoring distinction lands here, plus the I/P REV button that swaps them at mixdown.
+3. **In-line architecture.** Every strip carries two paths (channel and monitor), both active at the same time. The processing-vs-monitoring distinction comes in here, plus the I/P REV button that swaps them at mixdown.
 4. **The submaster section.** Eight subgroup strips, what they do, how channels get routed to them, the stereo effects returns.
 5. **The master section.** Aux masters, talkback, monitor switching, 2-track returns, the master stereo fader.
 
@@ -578,7 +578,7 @@ Students at the end of Module 3 should be able to:
 
 ### Across-the-cohort signs of trouble
 
-- Libraries with no README or with a one-line README → the organization lesson didn't land; reinforce in Module 4 with an explicit "find a sound from your library" exercise
+- Libraries with no README or with a one-line README → the organization lesson didn't register; reinforce in Module 4 with an explicit "find a sound from your library" exercise
 - Libraries where every file peaks at 0 dBFS → normalization is being applied as a "make it loud" step rather than a standardization; the "scale not shape" framing from Module 2 needs another pass
 - Libraries where files have noticeable click pops at the cuts → trim step is being done sloppily, fades aren't being added at trim points; reinforce the fade habit explicitly
 - Students who can't trace signal flow on the terminology exam → the Wk 6 Mon reading didn't stick; rethink whether the flow diagram is doing enough

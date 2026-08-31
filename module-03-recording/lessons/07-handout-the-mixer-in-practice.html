@@ -245,7 +245,7 @@
 
 <ol class="steps">
   <li>Meet the band: <strong>The Sound Below</strong>. Five players, twelve signals into the console.</li>
-  <li>Walk <strong>Scenario 1: Live sound.</strong> How the band's signals reach the console at a venue, where each signal lands on the desk, and how the audience and the performers each get a different mix from the same channels.</li>
+  <li>Walk <strong>Scenario 1: Live sound.</strong> How the band's signals reach the console at a venue, where each signal arrives on the desk, and how the audience and the performers each get a different mix from the same channels.</li>
   <li><strong>Scenario 2: You try!</strong> Generate a random lineup and work through the routing yourself, with reveals to check your thinking against one reasonable approach.</li>
 </ol>
 
@@ -378,7 +378,7 @@
   <li><strong>Stage monitors:</strong> a separate mix for each performer, so each player hears what <em>they</em> need to perform well. The vocalist mostly wants their own voice plus a bit of the kick to lock the timing; the bassist wants kick, snare, and their own bass; the drummer wants the bass and the click; the guitarist wants vocal, guitar, and drums; the keyboardist wants vocal, her own keys and laptop, and enough drums to lock in. Five performers, five different mixes, all built from the same twelve channels.</li>
 </ol>
 
-<p>Sketched at the level of inputs and outputs, the scenario looks like this. The band's twelve signals arrive on the left in two cable families: eight mic-level signals on XLR (vocal, guitar amp, bass DI, bass amp, four drum mics) and four line-level signals on TRS from the keyboardist (keys L/R, laptop L/R). All twelve land at the same console. From that console, two output mixes go to two destinations: the front-of-house speakers facing the audience, and the five stage monitors facing the performers.</p>
+<p>Sketched at the level of inputs and outputs, the scenario looks like this. The band's twelve signals arrive on the left in two cable families: eight mic-level signals on XLR (vocal, guitar amp, bass DI, bass amp, four drum mics) and four line-level signals on TRS from the keyboardist (keys L/R, laptop L/R). All twelve arrive at the same console. From that console, two output mixes go to two destinations: the front-of-house speakers facing the audience, and the five stage monitors facing the performers.</p>
 
 <figure class="diagram">
   <svg viewBox="0 0 720 460" xmlns="http://www.w3.org/2000/svg"
@@ -538,7 +538,7 @@
   <div class="photo-attribution">Photo via ProX Live Performance Gear.</div>
 </figure>
 
-<p><strong>The stage box jack number becomes the console channel number.</strong> Vocalist's mic plugged into stage box jack 1 lands on console channel 1. Kick mic plugged into jack 5 lands on console channel 5. The engineer working at the console knows which physical mic is on which channel because the stage box and the console agree on the numbering. Re-patch the mic into a different jack and the source moves to a different console channel; the engineer at FOH has to re-label the fader.</p>
+<p><strong>The stage box jack number becomes the console channel number.</strong> Vocalist's mic plugged into stage box jack 1 arrives on console channel 1. Kick mic plugged into jack 5 arrives on console channel 5. The engineer working at the console knows which physical mic is on which channel because the stage box and the console agree on the numbering. Re-patch the mic into a different jack and the source moves to a different console channel; the engineer at FOH has to re-label the fader.</p>
 
 <p>That works cleanly for every input on the band today except the keyboardist's. The stage box has female XLR jacks; the keyboard and the laptop have <strong>1/4" TRS line outputs</strong>. The connectors don't match. Stage boxes can carry line-level signals on a balanced XLR pair just fine, but the engineer has to know that's what's happening: at the console end, the preamp gain on those channels needs to be set much lower than for a mic, otherwise a line-level signal hitting a preamp turned up for mic level will clip. Both problems (the connector and the level mismatch) get solved by the same piece of gear: a <strong>DI box</strong>, the same kind that handled the bass guitar back in Lecture 2.</p>
 
@@ -608,7 +608,7 @@
   <li>On each of channels 5 (kick), 6 (snare), 7 (overhead L), 8 (overhead R): press the <strong>1-2</strong> button down. L-R stays up.</li>
   <li>On the channel pan knobs: kick centered, snare centered, overhead L hard left, overhead R hard right. The four channels now sum into the subgroup pair (sub 1 = left side of the kit, sub 2 = right).</li>
   <li>On submaster strips 1 and 2: set the <strong>TAPE</strong> button up (the live subgroup is the source, not playback).</li>
-  <li>On submaster strip 1: turn <strong>MON LEVEL</strong> up, set <strong>MON PAN</strong> hard left. On submaster strip 2: MON LEVEL up, MON PAN hard right. The drum kit now lands in the master mix as a stereo pair.</li>
+  <li>On submaster strip 1: turn <strong>MON LEVEL</strong> up, set <strong>MON PAN</strong> hard left. On submaster strip 2: MON LEVEL up, MON PAN hard right. The drum kit now arrives in the master mix as a stereo pair.</li>
   <li>Leave both submaster faders down. They control the level out to the SUBMASTER OUTPUTS jacks (the DAW send), which a live show isn't using.</li>
 </ol>
 
@@ -619,7 +619,7 @@
 <ol class="steps">
   <li>On each of channels 9 (keys L), 10 (keys R), 11 (laptop L), 12 (laptop R): press the <strong>3-4</strong> button down. L-R stays up.</li>
   <li>On the channel pan knobs: channels 9 and 11 hard left, channels 10 and 12 hard right. The two stereo pairs sum across the subgroup pair into one stereo electronic submix.</li>
-  <li>On submaster strips 3 and 4: TAPE up, MON LEVEL up, MON PAN hard left on sub 3 and hard right on sub 4. The electronic submix now lands in the master mix.</li>
+  <li>On submaster strips 3 and 4: TAPE up, MON LEVEL up, MON PAN hard left on sub 3 and hard right on sub 4. The electronic submix now arrives in the master mix.</li>
   <li>Leave submaster faders 3 and 4 down (same reason as the drum subs).</li>
 </ol>
 
@@ -737,7 +737,7 @@
     <line x1="512" y1="105" x2="563" y2="105" stroke="var(--accent)" stroke-width="2" marker-end="url(#ah-foh-main)"/>
     <text x="537" y="143" text-anchor="middle" font-family="DM Mono, monospace" font-size="8" fill="var(--accent)" font-style="italic">via FOH amps</text>
   </svg>
-  <figcaption>Scenario 1 main routing. Dotted arrows show internal routing on the console (channels and subgroups landing in the master mix); the solid arrow on the right represents the master mix leaving the console at MASTER O/P and driving the FOH amps that power the audience speakers.</figcaption>
+  <figcaption>Scenario 1 main routing. Dotted arrows show internal routing on the console (channels and subgroups arriving in the master mix); the solid arrow on the right represents the master mix leaving the console at MASTER O/P and driving the FOH amps that power the audience speakers.</figcaption>
 </figure>
 
 <h3>The stage monitor mixes: building five different mixes on the aux sends</h3>
@@ -903,9 +903,9 @@
           intro: "The stereo looper output gets its own subgroup pair so the engineer can ride the whole looped layer as a unit, without touching the dry voice and guitar.",
           steps: [
             "On Ch 3 (Looper L) and Ch 4 (Looper R): press the <strong>1-2</strong> button down. Leave L-R up.",
-            "Pan: Ch 3 hard left; Ch 4 hard right. The stereo image of the loops lands intact on the subgroup pair.",
+            "Pan: Ch 3 hard left; Ch 4 hard right. The stereo image of the loops arrives intact on the subgroup pair.",
             "On submaster strips 1 and 2: set the <strong>TAPE</strong> button up (the live subgroup is the source, not playback).",
-            "On submaster strip 1: turn <strong>MON LEVEL</strong> up, set <strong>MON PAN</strong> hard left. On submaster strip 2: MON LEVEL up, MON PAN hard right. The looper now lands in the master mix as a stereo pair.",
+            "On submaster strip 1: turn <strong>MON LEVEL</strong> up, set <strong>MON PAN</strong> hard left. On submaster strip 2: MON LEVEL up, MON PAN hard right. The looper now arrives in the master mix as a stereo pair.",
             "Leave the submaster faders down (no DAW to feed).",
           ]
         },
@@ -963,7 +963,7 @@
             "On Ch 8 (Overhead L): press the <strong>1-2</strong> button down, pan hard left.",
             "On Ch 9 (Overhead R): press the <strong>1-2</strong> button down, pan hard right.",
             "Set the kick-in and kick-out faders together to blend attack (in-mic) with body (out-mic). This is the kick tone control, set upstream of the subgroup.",
-            "On submaster strips 1 and 2: TAPE up, MON LEVEL up, MON PAN hard left on sub 1 and hard right on sub 2. The kit lands in the master mix as a stereo pair.",
+            "On submaster strips 1 and 2: TAPE up, MON LEVEL up, MON PAN hard left on sub 1 and hard right on sub 2. The kit arrives in the master mix as a stereo pair.",
             "Leave both submaster faders down.",
           ]
         },
@@ -1027,7 +1027,7 @@
         },
         {
           name: "Patch 3 · Piano (channels 7-8) routed to subgroup pair 3-4",
-          intro: "The piano's two mics land in the master mix as a stereo pair: bass strings on the left, treble strings on the right.",
+          intro: "The piano's two mics arrive in the master mix as a stereo pair: bass strings on the left, treble strings on the right.",
           steps: [
             "On Ch 7 (Piano L · bass strings): press the <strong>3-4</strong> button down, pan hard left.",
             "On Ch 8 (Piano R · treble strings): press the <strong>3-4</strong> button down, pan hard right.",
@@ -1035,7 +1035,7 @@
           ]
         },
       ],
-      fohTradeoff: "Why does the piano get the same treatment as the drums? Both are a single instrument (a piano, a kit) with multiple mics that need to land in the mix as a stereo image. Subgroup pairs are the console's way of saying 'treat these channels as a stereo group from now on,' and a piano with two mics earns that treatment the same way a kit does. The bass on two channels doesn't, because the two bass mics are both mono on the same instrument (no stereo width to preserve); they sum to mono at the master mix without needing a subgroup.",
+      fohTradeoff: "Why does the piano get the same treatment as the drums? Both are a single instrument (a piano, a kit) with multiple mics that need to arrive in the mix as a stereo image. Subgroup pairs are the console's way of saying 'treat these channels as a stereo group from now on,' and a piano with two mics earns that treatment the same way a kit does. The bass on two channels doesn't, because the two bass mics are both mono on the same instrument (no stereo width to preserve); they sum to mono at the master mix without needing a subgroup.",
       monitorMixes: [
         { aux: "Aux 1", performer: "Bassist's stage monitor", blend: "Piano L+R (a lot) · sax (some) · drums (light)" },
         { aux: "Aux 2", performer: "Drummer's stage monitor", blend: "Bass DI · piano L+R · sax · vocal/sax cues" },
@@ -1200,7 +1200,7 @@
     // Question 1: Channel chart
     html += '<div class="youtry-section">';
     html += '<div class="youtry-section-label">Question 1 · The channel chart</div>';
-    html += '<p class="youtry-prompt">Lay out the channel chart: which signal lands on which channel (Ch 1, Ch 2, ...)? For each channel, does it use the MIC or LINE jack on the back? Is phantom power on or off? Fill out the blank chart below before peeking at the reveal.</p>';
+    html += '<p class="youtry-prompt">Lay out the channel chart: which signal arrives on which channel (Ch 1, Ch 2, ...)? For each channel, does it use the MIC or LINE jack on the back? Is phantom power on or off? Fill out the blank chart below before peeking at the reveal.</p>';
     // Blank chart for the student to fill out
     html += '<table class="routing">';
     html += '<caption>Your channel chart · fill this out</caption>';
@@ -1224,7 +1224,7 @@
     // Question 2: FOH routing, actionable patches
     html += '<div class="youtry-section">';
     html += '<div class="youtry-section-label">Question 2 · The FOH mix</div>';
-    html += '<p class="youtry-prompt">You\'ve decided how this band should route. Now make it happen at the desk. For each channel, which routing button gets pressed down (L-R, or one of the subgroup pairs 1-2, 3-4, 5-6, 7-8)? Where do the pans go? For any signals routed via a subgroup, what do the submaster strips need to do to land that subgroup in the master mix? Write out the button-by-button steps before peeking.</p>';
+    html += '<p class="youtry-prompt">You\'ve decided how this band should route. Now make it happen at the desk. For each channel, which routing button gets pressed down (L-R, or one of the subgroup pairs 1-2, 3-4, 5-6, 7-8)? Where do the pans go? For any signals routed via a subgroup, what do the submaster strips need to do to route that subgroup into the master mix? Write out the button-by-button steps before peeking.</p>';
     html += '<button class="youtry-btn reveal" data-target="reveal-foh">Show one approach</button>';
     html += '<div class="youtry-reveal-target" id="reveal-foh">';
     for (const p of lineup.fohPatches) {

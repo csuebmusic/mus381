@@ -281,7 +281,7 @@
 
 <p>Before we get to the compressor, there's a much simpler tool worth knowing: <span class="term">normalization</span>. You'll use it almost every time you prepare a sample to keep, and it's the most common technique for making a quiet recording louder.</p>
 
-<p>Normalizing a sound does exactly one thing: it finds the loudest peak in the file, computes how much to multiply every sample by so that peak lands at a target level (of your choosing), and applies that single multiplier to every sample in the file. The operation is a pure rescaling: one number applied uniformly across the whole file. The whole signal goes up (or down) by the same amount of dB. The relationship between loud and quiet parts stays exactly the same.</p>
+<p>Normalizing a sound does exactly one thing: it finds the loudest peak in the file, computes how much to multiply every sample by so that peak sits at a target level (of your choosing), and applies that single multiplier to every sample in the file. The operation is a pure rescaling: one number applied uniformly across the whole file. The whole signal goes up (or down) by the same amount of dB. The relationship between loud and quiet parts stays exactly the same.</p>
 
 <p>This makes normalization fundamentally different from what you heard in Section 1. The compressed-and-boosted "narrow" version had its dynamic range squashed: the quiet parts came up more than the loud parts. Normalization can't do that. Normalization is just a scaler. If the loud parts go up by 12 dB, the quiet parts go up by 12 dB. The shape of the signal is preserved.</p>
 
@@ -677,7 +677,7 @@
   <h3>What to take from this reading</h3>
   <ul>
     <li><strong>Dynamic range</strong> is the difference between the loudest and quietest parts of a sound. Compression reduces it; limiting reduces it more, with a hard ceiling.</li>
-    <li><strong>Normalization</strong> is linear scaling: one number applied to every sample so the peak lands at a target. It changes the scale of a sound without changing its shape. The standard tool for sample prep; -1 dB is a safe target.</li>
+    <li><strong>Normalization</strong> is linear scaling: one number applied to every sample so the peak sits at a target. It changes the scale of a sound without changing its shape. The standard tool for sample prep; -1 dB is a safe target.</li>
     <li><strong>Compression changes shape, not just scale.</strong> That means it changes tone, not just loudness. Every compressor imparts some character to whatever passes through it.</li>
     <li><strong>Makeup gain</strong> is the boost applied after compression. Compression alone makes a sound quieter; compression with makeup gain is what makes a piece feel louder.</li>
     <li><strong>Threshold</strong> sets where the compressor starts working. <strong>Ratio</strong> sets how aggressively. <strong>Attack</strong> sets how quickly the compressor reacts; <strong>release</strong> sets how quickly it lets go.</li>
