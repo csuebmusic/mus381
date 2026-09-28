@@ -143,7 +143,8 @@ Block-by-block facilitation, demo scripts, common confusions, and pacing fallbac
 
 - **Paper supplies:** scrap paper (not too thick, not too thin) at every station for Wed Wk 6 recordings. Quantity: enough for each student to have 4 sheets, plus extras
 - **Recording gear in the lab's gear storage and inventoried:** dynamic mic, mic stand, XLR cable, audio interface, headphones, one set per workstation. Quick visual check that nothing is missing before the start of Wk 6.
-- **Phone-to-Mac transfer method for Wed Wk 7:** to be finalized with IT before Wk 7. The lab Macs may be on a different network segment than the campus Wi-Fi student phones connect to, which rules out methods that depend on device-to-device discovery on the local network. Once IT confirms what's possible, Step 1 of `lessons/05-handout-phone-to-audacity.html` gets filled in
+- **LocalSend for Wed Wk 7:** installed on every lab Mac. Before the session, test once in MB2525: a phone on campus Wi-Fi sees a lab Mac under Nearby devices, and a WAV sent from the phone arrives in that Mac's Downloads folder. If the test fails, tell Inés before Wednesday
+- **Students install LocalSend on their phones before Wed Wk 7:** Canvas announcement by Mon Wk 7, with the App Store and Google Play links from Step 1 of `lessons/05-handout-phone-to-audacity.html`
 - **Sample library template ready:** a folder structure students will mirror, ideally available as a downloadable starter on the server
 - **Lecture demo materials:** physical examples of XLR, TS, TRS cables (Wk 6 Mon and Wk 7 Mon); a condenser mic and a DI box to hold up in the Wk 7 Mon lecture
 - **MB2508 booked for Mon Wk 9:** the studio visit (Session 7) needs the room reserved a few weeks ahead. The session is a walk around the studio, so the console doesn't have to be powered; if you do power it on to show signal moving, confirm the Toft is in a known-good state and do a quick signal-path check the morning of.
@@ -422,7 +423,7 @@ Two halves.
 
 **First half: getting phone recordings into Audacity and through the prep pipeline.**
 
-- Transferring files from phone to computer: method TBD pending IT confirmation on what's possible between the lab Macs and the campus Wi-Fi student phones connect to. Step 1 of the lab handout is currently a placeholder; it gets filled in once the method is settled
+- Transferring files from phone to computer with LocalSend. The student opens LocalSend on the Mac and reads its two-word LocalSend name on the Receive tab, shares the recording from the phone app to LocalSend, taps the Mac under Nearby devices, clicks Accept on the Mac, and moves the file from Downloads to `~/Documents/netid/`. Common snags: the phone is still in airplane mode from recording, or on cellular instead of campus Wi-Fi; the iPhone's Local Network permission for LocalSend is off (Settings → Privacy & Security → Local Network); the recording app doesn't list LocalSend in its share sheet, in which case the student opens LocalSend, goes to Send → File, and picks the recording there. If a Mac never appears under Nearby devices, use LocalSend's manual sending on the phone with the Mac's IP address (System Settings → Network on the Mac)
 - File format: both apps produce 48 kHz / 24-bit WAV. Audacity opens them directly with no conversion step. This is the payoff of using dedicated field-recording apps instead of the phone's default voice recorder
 - Importing into Audacity (drag-and-drop, or File → Import → Audio)
 - **Resampling, now a conditional step.** Phone files come in at 48 kHz and match the 48 kHz project, so most imports need no conversion. The lab keeps resampling as a skill for the case where a file comes in at another rate (a 44.1 kHz download): Tracks → Resample (or the equivalent in the student's Audacity version) to bring it to 48 kHz. The teaching moment is the reinterpret-vs-recalculate distinction and matching project rate, taught via the dropdown experiment even when no resample is needed
@@ -439,7 +440,7 @@ This is the one mostly-unstructured session of the module. Use the room: circula
 
 [`lessons/05-handout-phone-to-audacity.html`](https://csuebmusic.github.io/mus381/module-03-recording/lessons/05-handout-phone-to-audacity.html) — Lab 2
 
-Eight steps from phone-side transfer through library upload: get the recording off the phone (transfer method TBD pending IT, currently a placeholder in the handout), download the library from the server, import (phone files already match the 48 kHz project; resampling is kept as a conditional step for stray rates), run the prep pipeline (with a noise profile captured from the phone recording itself), export to a student-chosen category folder, README update, worktime, upload. References Lab 1 for the prep-pipeline detail rather than re-walking it.
+Eight steps from phone-side transfer through library upload: send the recording from the phone to the Mac with LocalSend, download the library from the server, import (phone files already match the 48 kHz project; resampling is kept as a conditional step for stray rates), run the prep pipeline (with a noise profile captured from the phone recording itself), export to a student-chosen category folder, README update, worktime, upload. References Lab 1 for the prep-pipeline detail rather than re-walking it.
 
 ---
 

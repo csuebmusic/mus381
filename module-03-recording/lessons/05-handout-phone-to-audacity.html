@@ -68,7 +68,7 @@
 <h2>What we're doing today</h2>
 
 <ol class="steps">
-  <li>Get a phone recording off the phone and onto the lab Mac.</li>
+  <li>Send a phone recording from your phone to the lab Mac with LocalSend.</li>
   <li>Download your library from the class server and open a fresh Audacity project for today's work.</li>
   <li>Import the phone recording into Audacity.</li>
   <li>Check the imported file's rate. Phone recordings are already at 48 kHz, so they match the project and you move on. If a file ever comes in at another rate, resample it to 48 kHz (Step 4 shows how).</li>
@@ -82,14 +82,25 @@
 
 <h2>Step 1 · Get the recording off your phone</h2>
 
+<p>You'll move the file with <strong>LocalSend</strong>, a free app that sends files between devices on the same Wi-Fi network. It's already installed on the lab Macs. If it isn't on your phone yet, install it now: <a href="https://apps.apple.com/us/app/localsend/id1661733229" target="_blank" rel="noopener noreferrer">App Store (iPhone)</a> or <a href="https://play.google.com/store/apps/details?id=org.localsend.localsend_app" target="_blank" rel="noopener noreferrer">Google Play (Android)</a>. Open it once and allow the permissions it asks for.</p>
+
+<ol class="steps">
+  <li>On the lab Mac, open <strong>LocalSend</strong> from the Applications folder. It opens on the <strong>Receive</strong> tab, which shows this Mac's LocalSend name: two words, like <em>Clever Banana</em>. If macOS asks whether LocalSend can find devices on your local network, click <strong>Allow</strong>.</li>
+  <li>On your phone, turn airplane mode off and connect to the campus Wi-Fi.</li>
+  <li>In your recording app, find the recording, tap its <strong>share</strong> button, and choose <strong>LocalSend</strong>. (If LocalSend isn't in the share list, open LocalSend instead, go to the <strong>Send</strong> tab, tap <strong>File</strong>, and pick the recording.)</li>
+  <li>Under <strong>Nearby devices</strong>, tap the Mac's LocalSend name.</li>
+  <li>On the Mac, click <strong>Accept</strong>. The file lands in your <strong>Downloads</strong> folder.</li>
+  <li>In Finder, move the file from Downloads into <code>~/Documents/netid/</code>.</li>
+</ol>
+
 <div class="callout">
-  <div class="callout-label">To be finalized</div>
-  <p>The phone-to-Mac transfer procedure for this lab is pending IT confirmation about network device discovery in MB2525. The procedure will go here once the method is settled. Goal of this step, either way: end with a WAV (or M4A) file from your phone sitting in your <code>~/Documents/netid/</code> working folder, ready to import into Audacity.</p>
+  <div class="callout-label">If the Mac doesn't show up</div>
+  <p>Check that your phone is on Wi-Fi and out of airplane mode. On an iPhone, open <span class="menu-path">Settings → Privacy &amp; Security → Local Network</span> and make sure LocalSend is switched on. If the Mac still isn't listed, ask the TA.</p>
 </div>
 
 <div class="callout">
   <div class="callout-label">Other phone apps</div>
-  <p>If you've been recording with a different app (the iOS Voice Memos app, or a different Android recorder), the same goal applies: get the file onto the lab Mac. The file format may differ from what the recommended apps produce: Voice Memos produces M4A, not WAV. Audacity opens M4A directly, and the rest of today's procedure still applies. MP3 also works, with the caveat that MP3 is a lossy format, so it's the most compressed version of your recording. WAV is the cleanest option when the app gives you the choice.</p>
+  <p>If you've been recording with a different app (the iOS Voice Memos app, or a different Android recorder), LocalSend works the same way: share the file from that app to LocalSend. The file format may differ from what the recommended apps produce: Voice Memos produces M4A, not WAV. Audacity opens M4A directly, and the rest of today's procedure still applies. MP3 also works, with the caveat that MP3 is a lossy format, so it's the most compressed version of your recording. WAV is the cleanest option when the app gives you the choice.</p>
 </div>
 
 <hr>
