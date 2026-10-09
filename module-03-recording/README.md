@@ -151,7 +151,6 @@ Session 2 has block-by-block notes. The other sessions have a roadmap and notes 
 - Inventory the recording gear in the lab's gear storage: one set per workstation of audio interface, headphones, dynamic mic, mic stand, and XLR cable. Check that nothing is missing before Wk 6.
 - Confirm LocalSend is installed on every lab Mac before Wed Wk 7. Test it once in MB2525: a phone on campus Wi-Fi sees a lab Mac under Nearby devices, and a WAV sent from the phone shows up in that Mac's Downloads folder. If the test fails, tell Inés before Wednesday.
 - Post a Canvas announcement by Mon Wk 7 telling students to install LocalSend on their phones before Wed Wk 7, with the App Store and Google Play links from Step 1 of [phone recordings into Audacity](https://csuebmusic.github.io/mus381/module-03-recording/lessons/05-handout-phone-to-audacity.html). The phone reference card has the same links.
-- Have a sample-library template ready: a folder structure students mirror, as a downloadable starter on the server.
 - Gather lecture demo materials: physical XLR, TS, TRS, and RCA cables (Mon Wk 6 and Mon Wk 7), and a condenser mic and a DI box to hold up in the Mon Wk 7 lecture.
 - Book MB2508 for Mon Wk 9 a few weeks ahead. The studio visit is a walk around the room, and the console doesn't have to be powered. If you plan to power it on to show signal moving, check the Toft the morning of: master fader down, MONITOR LEVEL at zero, and one signal path tested.
 - Print handout 09 (midterm review) before Mon Wk 9, plus a few extra copies for students who lose theirs before Wednesday.
@@ -300,7 +299,6 @@ The card covers setup on each platform. On iPhone that's mic mode (bottom, front
 - Test-record on the instructor station: the meter goes live after you click it and choose Enable Silent Monitoring, the gain knob moves the meter, and the headphones play the live input with the monitor mix turned toward Inputs.
 - Open the Lab 1 handout on the projector and in the browser at each student station.
 - Stack the phone reference cards at the front of the room.
-- Check that the Session Routines card is posted and visible at every station.
 
 ### block-by-block
 

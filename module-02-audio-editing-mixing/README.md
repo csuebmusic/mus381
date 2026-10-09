@@ -51,7 +51,7 @@ EQ basics cover frequency ranges, what cutting and boosting do, and keeping soun
 
 Stereo placement covers pan, width, and the difference between mono and stereo material.
 
-Dynamics processing covers normalization (scale only), compression and limiting (shape changes), at an introductory level. Sound Design takes it further.
+Dynamics processing covers normalization (scale only), compression and limiting (shape changes), at an introductory level.
 
 Musique concrète is the tradition of Pierre Schaeffer, Pierre Henry, and the GRM lineage: recorded sound cut, transformed, and arranged as material.
 
@@ -122,7 +122,7 @@ Block-by-block facilitation, demo scripts, common confusions, and pacing fallbac
 
 ## pre-module preparation
 
-- The Project 1 sample bank is curated and uploaded to `/public/sample-banks/project-01/` before Wed Wk 3. The curation notes file named in build-conventions.md, `projects/project-01-sample-bank-notes.md`, isn't in the repo yet.
+- The Project 1 sample bank is curated and uploaded to `/public/sample-banks/project-01/` before Wed Wk 3.
 - `orientation-sample.wav` is on the server at `/public/module-02/orientation/` before Wed Wk 2.
 - Audacity is installed and tested on every lab machine.
 - The digital audio explorer and the compressor tool are tested on the instructor station before the sessions that use them.
@@ -154,11 +154,10 @@ Then walk through the lab's gear storage and check that the Module 2 gear (one s
 
 - Audio interfaces present, USB cables present, power LEDs lighting when test-connected
 - Headphones present, with the in-line slider checked (it drifts down)
-- The interface's mix knob (where present) at 60% direct / 40% USB, the Day 1 setting. Students move it; reset it after class each week.
 
 Module 2 doesn't use the mic or the MIDI keyboard. The mic comes back in Module 3, and the MIDI keyboard comes out in Module 4.
 
-If anything is missing or broken, log it in the lab gear tracker and use the spare. Don't teach with broken gear.
+If anything is missing or broken, report it to Inés and use the spare. Don't teach with broken gear.
 
 ### the Audacity setup routine
 

@@ -74,7 +74,6 @@ Do all of this at least one day before the first session, ideally two.
 - [ ] Get the host key fingerprint from Inés and compare it against the unknown-host-key dialog at one station before class.
 - [ ] Confirm `/public` exists with this term's folders in place: `/public/mus-381-fall-2026/project-01-pieces/`, `project-02-libraries/`, `final-pieces/`, plus `/public/sample-banks/project-01/`, `/public/module-02/orientation/`, and `/public/module-04/`.
 - [ ] Write the host address, port, and login (NetID and NetID password) on the whiteboard before class starts.
-- [ ] Place `01-first-day-setup.pdf` (exported from `lessons/01-reading-first-day-setup.html`) into `/Users/Shared/Downloads/` on every lab machine.
 - [ ] Print `02-session-routines.pdf` (exported from `lessons/02-handout-session-routines.html`) and post it at every station.
 - [ ] Wipe local `~/Documents/` on every lab machine of leftover student folders from previous semesters. Do this every fall and spring.
 - [ ] Walk through every station: confirm the USB hub is connected to the Mac mini behind the monitor and has open ports.
@@ -147,8 +146,6 @@ Show file extensions. Walk them through Finder → Settings → Advanced → **S
 Point out two callouts in Part 1. The lab Desktop gets cleared periodically, and students save work in `~/Documents/[netid]/`, never on the Desktop or in Downloads. Clicking the red dot closes a window but leaves the app running; `Cmd + Q` quits.
 
 Students don't realize that Documents, Desktop, and Downloads are folders like any other. Show the same locations in Finder's sidebar, and show that the Desktop in the sidebar is the Desktop behind their windows.
-
-For a practical exercise, have students find `01-first-day-setup.pdf` in `/Users/Shared/Downloads/` and open it. This shows they can navigate Finder.
 
 ### Block 3 · set up folders and connect to the server (20 min)
 
@@ -295,7 +292,6 @@ Record and save (Steps 9 and 10). Students click record, say their name and one 
 - When the meter is pinned at the right edge the whole time, the gain is too high. Turn it down until peaks stop hitting the right edge.
 - When the recording sounds quiet, the gain was too low. Have them re-record with the gain higher.
 - When the recording sounds distorted or crunchy, the gain was too high (clipping). Re-record with the gain lower.
-- When a student forgot to pick the audio interface in QuickTime, they recorded from the wrong source or nothing at all (the Mac mini has no built-in mic). Have them re-record.
 
 If gear is broken, swap in a spare or move the student to a working station. Every student leaves with a recording saved locally and uploaded to the server. Fix the failed gear after class.
 
