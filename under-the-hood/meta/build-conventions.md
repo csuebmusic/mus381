@@ -597,7 +597,7 @@ Build scripts target the per-module standard (48/24 for Modules 2–3, 48/32 for
 
 ### Page width and structure
 
-Student-facing HTML pages are constrained to `max-width: 720px` (see `body` in `style.css`). This is the readable-prose width and shouldn't be widened for any reason short of an interactive tool that needs more horizontal room. If a tool needs more width, scope the override to the tool block; don't widen the body.
+Student-facing HTML pages are constrained to `max-width: 960px` (see `body` in `style.css`); music-production uses the same width (`60rem`). If an interactive tool needs more horizontal room, scope the override to the tool block; don't widen the body.
 
 Header lives in `<header class="handout-header">` at the top. Title block lives in `<div class="title-block">` immediately after. The lede paragraph is `<p class="lede">` immediately after the title block. Footer is `<footer class="handout-footer">` at the bottom. The first horizontal rule `<hr>` after the lede separates intro from body content.
 
