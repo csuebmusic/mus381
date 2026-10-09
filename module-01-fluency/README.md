@@ -350,7 +350,6 @@ Block-specific confusions are with their blocks above.
 
 - A student who says "I saved it but I can't find it" saved to Desktop or Downloads instead of `~/Documents/[netid]/`. Walk them through Recents in Finder to find the file, then drag it into place.
 - A screenshot that didn't work means the wrong key combination: `Cmd + Shift + 4`, then drag a region. The screenshot saves to the Desktop.
-- A student who doesn't know their NetID can check Canvas in the browser: the NetID is their Canvas login and the front half of their campus email address.
 - When FileZilla can't connect, check the `sftp://` prefix and port 22 first, then the password.
 - When the local and server folders look different, it's a sync issue. The copy with the newer modification date is the one to keep; copy it over the older one. To see the difference, choose View → Directory Comparison → Compare modification time, then View → Directory Comparison → Enable. If a student can't tell which is newer, they ask you before deleting anything.
 - When FileZilla asks Overwrite, Skip, or Rename at the end of a session, the answer is **Overwrite if source newer**. Skip uploads nothing; Rename leaves two copies with confusing names.
