@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MUS 381 · Sampling in Ableton</title>
+  <title>MUS 381 · sampling in Ableton</title>
   <link rel="stylesheet" href="../../assets/style.css">
   <style>
     /* Resource cards: a styled link to a how-to video or a manual page.
@@ -44,7 +44,7 @@
 
 <div class="title-block">
   <div class="module-tag">Module 04 · The DAW</div>
-  <h1>Sampling in Ableton</h1>
+  <h1>sampling in Ableton</h1>
   <div class="subtitle">Turn your library into instruments, then sequence a short idea.</div>
 </div>
 
@@ -52,10 +52,10 @@
 
 <div class="callout">
   <div class="callout-label">Today's gear</div>
-  <p>Take from the lab's gear storage: <strong>audio interface, headphones, MIDI keyboard</strong>. The keyboard is new this week. You use it to hear your instruments as you build them, and you connect it below before you play. Run through the start-of-session steps on the <strong>Session Routines</strong> card before continuing here.</p>
+  <p>Take from the lab's gear storage: <strong>audio interface, headphones, MIDI keyboard</strong>. The keyboard is new this week. You use it to hear your instruments as you build them. Run through the start-of-session steps on the <strong>Session Routines</strong> card before continuing here.</p>
 </div>
 
-<h2>What we're doing today</h2>
+<h2>what we're doing today</h2>
 
 <ol class="steps">
   <li>Pull your library down, start a Set, and connect the MIDI keyboard.</li>
@@ -68,38 +68,38 @@
 
 <div class="callout">
   <div class="callout-label">Before you start</div>
-  <p>You know your way around Live now from Lab 1. Today adds instruments and MIDI. The steps for Simpler and the Drum Rack live in the manual pages linked at each one, and the MIDI sequencing has short videos. Keep the <strong>Session Routines</strong> card visible.</p>
+  <p>You know your way around Live from Lab 1. Today adds instruments and MIDI. The manual pages linked at each step have the details for Simpler and the Drum Rack, and short videos cover MIDI sequencing. Keep the <strong>Session Routines</strong> card visible.</p>
   <p>Move at a steady pace, and if you run short on time, save the idea you have and upload it.</p>
 </div>
 
 <hr>
 
-<h2>Start a Set</h2>
+<h2>start a Set</h2>
 
-<p>Your start-of-session routine has your work downloaded and your audio set up. If your sample library is not already in your working folder at <code>~/Documents/netid/</code>, download it now. Open a new Live Set, save it into your working folder, and name it <code>lastname-wk11</code>. Work from the local copy.</p>
+<p>Your start-of-session routine has your work downloaded and your audio set up. If your sample library isn't already in your working folder at <code>~/Documents/netid/</code>, download it now. Open a new Live Set, save it into your working folder, and name it <code>lastname-wk11</code>. Work from the local copy.</p>
 
 <div class="callout">
   <div class="callout-label">Instruments go on MIDI tracks</div>
-  <p>Everything today happens on MIDI tracks. An audio track holds recordings, the clips you worked with in Lab 1. A MIDI track holds an instrument and the notes that play it. Simpler and the Drum Rack are instruments, so they go on MIDI tracks. A new Set opens with two MIDI tracks ready, marked MIDI in their names, and you use both today, one for each instrument. (To add another, press Cmd-Shift-T.) Dropping a sample straight onto an audio track plays it as a clip, the Lab 1 way; today you load it into an instrument instead.</p>
+  <p>Everything today happens on MIDI tracks. An audio track holds recordings, the clips you worked with in Lab 1. A MIDI track holds an instrument and the notes that play it. Simpler and the Drum Rack are instruments, and they go on MIDI tracks. A new Set opens with two MIDI tracks ready, marked MIDI in their names, and you use both today, one for each instrument. (To add another, press Cmd-Shift-T.) Dropping a sample straight onto an audio track plays it as a clip, the Lab 1 way; today you load it into an instrument instead.</p>
 </div>
 
 <hr>
 
-<h2>Connect the MIDI keyboard</h2>
+<h2>connect the MIDI keyboard</h2>
 
-<p>This is the first time you use the MIDI keyboard, so it needs connecting before Live can hear it. Plug its USB cable into the hub at your station.</p>
+<p>Plug the keyboard's USB cable into the hub at your station.</p>
 
-<h3>Check that the Mac sees it</h3>
+<h3>check that the Mac sees it</h3>
 
-<p>Open <strong>Audio MIDI Setup</strong>, the same utility where you check your audio interface. This time look at its MIDI side: in the menu bar choose <strong>Window</strong>, then <strong>Show MIDI Studio</strong>, or press <code>Command-2</code>. The MIDI Studio window shows an icon for every MIDI device the Mac has found. Your keyboard appears here by name, in full color, once it is connected. An icon that is grayed out is a device the Mac is not seeing, which usually means the cable is loose or in the wrong port. If your keyboard is grayed, reseat the USB cable and watch the icon come up to full color.</p>
+<p>Open <strong>Audio MIDI Setup</strong>, the same utility where you check your audio interface. This time look at its MIDI side: in the menu bar choose <strong>Window</strong>, then <strong>Show MIDI Studio</strong>, or press <code>Cmd-2</code>. The MIDI Studio window shows an icon for every MIDI device the Mac has found. Your keyboard appears here by name, in full color, once it's connected. A grayed-out icon is a device the Mac isn't seeing, which usually means the cable is loose or in the wrong port. If your keyboard is grayed, reseat the USB cable and watch the icon come up to full color.</p>
 
-<h3>Tell Live to use it</h3>
+<h3>tell Live to use it</h3>
 
-<p>Seeing the keyboard in MIDI Studio means the Mac has it. Live still needs to be told to use it, because Live does not assume what a new device is for. Open Live's <strong>Preferences</strong> from the Live menu, or press <code>Command-comma</code>, and click the <strong>Link, Tempo &amp; MIDI</strong> tab.</p>
+<p>Seeing the keyboard in MIDI Studio means the Mac has it. Live still needs to be told to use it. Open Live's <strong>Preferences</strong> from the Live menu, or press <code>Cmd-comma</code>, and click the <strong>Link, Tempo &amp; MIDI</strong> tab.</p>
 
-<p>The lower half of that tab is the <strong>MIDI Ports</strong> list. It shows every MIDI input and output Live can find, your keyboard among them, each with three switches: <strong>Track</strong>, <strong>Sync</strong>, and <strong>Remote</strong>. Find the row for your keyboard's input and turn its <strong>Track</strong> switch on. Track lets the keyboard send its notes into Live, so an armed MIDI track plays its instrument from the keys. Leave <strong>Sync</strong> off, which is for matching tempo with other gear, and leave <strong>Remote</strong> off, which is for mapping knobs and buttons to controls in Live. Playing notes needs only Track.</p>
+<p>The lower half of that tab is the <strong>MIDI Ports</strong> list. It shows every MIDI input and output Live can find, your keyboard among them, each with three switches: <strong>Track</strong>, <strong>Sync</strong>, and <strong>Remote</strong>. Find the row for your keyboard's input and turn its <strong>Track</strong> switch on. Track lets the keyboard send its notes into Live, and an armed MIDI track then plays its instrument from the keys. <strong>Sync</strong> is for matching tempo with other gear, and <strong>Remote</strong> is for mapping knobs and buttons to controls in Live. Leave both off.</p>
 
-<p>If your keyboard's row shows in red, Live cannot reach it: check that it is plugged in and that MIDI Studio still shows it. Once Track is on, close Preferences. The keyboard now feeds any armed MIDI track, though it stays silent until you load an instrument in the next section. This video covers the same setup:</p>
+<p>If your keyboard's row shows in red, Live can't reach it: check that it's plugged in and that MIDI Studio still shows it. Once Track is on, close Preferences. The keyboard now feeds any armed MIDI track, though it stays silent until you load an instrument in the next section. This video covers the same setup:</p>
 
 <a class="video-link" href="https://www.youtube.com/watch?v=CWOXblksDxE" target="_blank" rel="noopener noreferrer">
   <span class="res-icon" aria-hidden="true">&#9654;</span>
@@ -121,22 +121,22 @@
 
 <hr>
 
-<h2>Play one sound: Simpler</h2>
+<h2>play one sound: Simpler</h2>
 
 <p>Simpler is an instrument that plays a single sample across the keyboard. Open Live's browser, find <strong>Simpler</strong> under Instruments, and drag it onto one of your MIDI tracks. Simpler opens with a <strong>Drop Sample Here</strong> box.</p>
 
 <div class="callout">
-  <div class="callout-label">Where the instrument sits</div>
-  <p>Simpler is now the track's instrument, the first device in that track's chain. To see it again later, double-click the track's name: the <strong>Device View</strong> opens along the bottom of the screen with Simpler at the front of the chain. It is the same Detail View you opened for clips in Lab 1, switched to show the track's devices.</p>
+  <div class="callout-label">Where the instrument is</div>
+  <p>Simpler is now the track's instrument, the first device in that track's chain. To see it again later, double-click the track's name: the <strong>Device View</strong> opens along the bottom of the screen with Simpler at the front of the chain. It's the same Detail View you opened for clips in Lab 1, switched to show the track's devices.</p>
 </div>
 
-<p>Drag one sound from your library onto that box. The waveform appears, and Simpler is now an instrument built from your sample. Keep your headphone level low to start and raise it as you go, since a sample can jump out louder than you expect. Play it: the sample plays at its recorded pitch around the middle of the keyboard, faster and higher as you go up, slower and lower as you go down. Simpler sets <strong>C3</strong> as the root, the key that plays the sample unchanged, so the pitch you hear may sit higher or lower than you expect. The <strong>Transpose</strong> control in the Controls tab shifts the whole mapping if you want it centered differently.</p>
+<p>Drag one sound from your library onto that box. The waveform appears, and Simpler is now an instrument built from your sample. Keep your headphone level low to start and raise it as you go. Some samples are much louder than others. Play it: the sample plays at its recorded pitch around the middle of the keyboard, faster and higher as you go up, slower and lower as you go down. Simpler sets <strong>C3</strong> as the root, the key that plays the sample unchanged. The pitch you hear may be higher or lower than you expect. The <strong>Transpose</strong> control in the Controls tab shifts the whole mapping if you want it centered differently.</p>
 
-<p>To play it from the keyboard, click the track to select it, then click its round <strong>Arm</strong> button so the track listens for the keyboard. If you press keys and hear nothing, that arm is usually why.</p>
+<p>To play it from the keyboard, click the track to select it, then click its round <strong>Arm</strong> button. An armed track listens for the keyboard. If you press keys and hear nothing, check the Arm button first.</p>
 
 <div class="callout">
   <div class="callout-label">What arming does</div>
-  <p>The round Arm button means something different on the two track types. On an audio track, arming preps the track to record. On a MIDI track, arming tells the track to listen, so the notes from your keyboard reach the instrument and you hear it. That connection is not automatic: arming is what makes it, and the keyboard plays the instrument while the track is armed. Once you sequence a part instead, the clip plays the instrument on its own, so arming is only for playing live like this. A few notes is all you need today, and you do not have to read music to place them.</p>
+  <p>The round Arm button does something different on the two track types. On an audio track, arming preps the track to record. On a MIDI track, arming tells the track to listen: the notes from your keyboard reach the instrument, and you hear it. That connection isn't automatic. The keyboard plays the instrument only while the track is armed. Once you sequence a part, the clip plays the instrument on its own, and you need the arm only for playing live like this.</p>
 </div>
 
 <a class="manual-link" href="https://www.ableton.com/en/live-manual/11/recording-new-clips/#arming-record-enabling-tracks" target="_blank" rel="noopener noreferrer">
@@ -148,7 +148,7 @@
   <span class="res-arrow" aria-hidden="true">&#8599;</span>
 </a>
 
-<p>Next to the Arm button is the track's <strong>Monitor</strong> setting, three buttons marked In, Auto, and Off. Monitoring decides whether the track passes its input through so you can hear it. <strong>Auto</strong>, the default, hears the input whenever the track is armed, which is what you want for playing: arm the track and the keyboard reaches the instrument. <strong>In</strong> hears the input all the time, and <strong>Off</strong> never does. If a track is armed and still silent, check that Monitor sits on Auto rather than Off.</p>
+<p>Next to the Arm button is the track's <strong>Monitor</strong> setting, three buttons marked In, Auto, and Off. Monitoring sets whether the track passes its input through to your headphones. <strong>Auto</strong>, the default, passes the input through whenever the track is armed. That's the setting for playing: arm the track and the keyboard reaches the instrument. <strong>In</strong> passes the input through all the time, and <strong>Off</strong> never does. If a track is armed and still silent, check that Monitor is set to Auto rather than Off.</p>
 
 <a class="manual-link" href="https://www.ableton.com/en/live-manual/11/routing-and-i-o/#monitoring" target="_blank" rel="noopener noreferrer">
   <span class="res-icon" aria-hidden="true">&sect;</span>
@@ -159,11 +159,11 @@
   <span class="res-arrow" aria-hidden="true">&#8599;</span>
 </a>
 
-<p>Simpler can play your sample in three ways, chosen with the Mode switch on the left of the Sample tab. Two of them matter today.</p>
+<p>Simpler can play your sample in three ways, chosen with the Mode switch on the left of the Sample tab. You use two of them today.</p>
 
-<p><strong>Classic</strong> is the default, and it plays your sample like an instrument: the note sounds for as long as you hold the key, and it moves up and down in pitch as you play across the keyboard. Reach for it with melodic sounds, a sung note or a sustained tone you want to play as a line. Classic gives you the full ADSR envelope you met in Module 2, with its controls in the amp area of the Sample tab and a graph of the shape on the Controls tab. This is the first time you bend it on your own sound rather than a fixed tone. Try the extremes the way you did with the Envelope Explorer: a long attack and release to make your sample swell in and fade away like a pad, all four stages short to turn the same sample into a sharp hit. Move one control at a time and listen.</p>
+<p><strong>Classic</strong> is the default, and it plays your sample like an instrument: the note sounds for as long as you hold the key, and it moves up and down in pitch as you play across the keyboard. Use it for melodic sounds, a sung note or a sustained tone you want to play as a line. Classic gives you the full ADSR envelope you met in Module 2, with its controls in the amp area of the Sample tab and a graph of the shape on the Controls tab. This is the first time you shape it on your own sound rather than a fixed tone. Try the extremes the way you did with the Envelope Explorer: a long attack and release make your sample swell in and fade away like a pad, and a short attack, decay, and release with a low sustain turn the same sample into a sharp hit. Move one control at a time and listen.</p>
 
-<p><strong>One-Shot</strong> is built for hits. It plays the whole sample from start to finish every time you press a key, however short the press, so reach for it with drums, claps, and single stabs. In place of the four-stage envelope it gives you two controls, <strong>Fade In</strong> and <strong>Fade Out</strong>. Fade In sets how long the sound takes to reach full volume at its start, and Fade Out sets how long it takes to fall away at its end, each up to two seconds, shown on the sample display. Leave both at zero and the sample fires at full and runs to its end. A short Fade In softens a hard attack, and a short Fade Out smooths a clipped tail or clears a click at the end. For a clean drum or stab, those two fades are usually all the shaping you need.</p>
+<p><strong>One-Shot</strong> is built for hits. It plays the whole sample from start to finish every time you press a key, however short the press. Use it for drums, claps, and single stabs. In place of the four-stage envelope it gives you two controls, <strong>Fade In</strong> and <strong>Fade Out</strong>. Fade In sets how long the sound takes to reach full volume at its start, and Fade Out sets how long it takes to fall away at its end, each up to two seconds, shown on the sample display. Leave both at zero and the sample fires at full and runs to its end. A short Fade In softens a hard attack, and a short Fade Out smooths a clipped tail or clears a click at the end. For a clean drum or stab, those two fades are usually all the shaping you need.</p>
 
 <p>The third mode, Slicing, chops one sample across many keys at once. Leave it for later. The full reference is here:</p>
 
@@ -178,17 +178,17 @@
 
 <hr>
 
-<h2>Build a kit: Drum Rack</h2>
+<h2>build a kit: Drum Rack</h2>
 
 <p>A Drum Rack is a grid of pads, each pad holding one sample, each triggered by its own key. On your other MIDI track, drag a <strong>Drum Rack</strong> from the browser, found under Instruments where you found Simpler. You get a grid of empty pads, sixteen in view.</p>
 
-<p>Drag a sound from your library onto a pad. The pad fills, and Live builds a Simpler under it to play that sound. Drop a few more onto other pads to build a small kit: something low for a kick, something sharp for a snare or clap, something short for a hat. Three or four pads is plenty. As you hover over a pad, the bar under the grid suggests the kind of sound that usually sits there, a kick on the lowest pad and percussion climbing from it. Follow those hints or ignore them.</p>
+<p>Drag a sound from your library onto a pad. The pad fills, and Live builds a Simpler under it to play that sound. Drop a few more onto other pads to build a small kit: something low for a kick, something sharp for a snare or clap, something short for a hat. Three or four pads is plenty. As you hover over a pad, the bar under the grid suggests the kind of sound that usually goes there, a kick on the lowest pad and percussion climbing from it. Follow those hints or ignore them.</p>
 
-<p>Each pad answers to one key. The bottom-left pad is <strong>C1</strong>, and the pads climb from there. Play those keys, or click the pads with the mouse, to hear your kit.</p>
+<p>Each pad has its own key. The bottom-left pad is <strong>C1</strong>, and the pads climb from there. Play those keys, or click the pads with the mouse, to hear your kit.</p>
 
-<p>Each filled pad carries small buttons to play it, mute it, or solo it, so you can drop a sound out or hear it on its own as you build, the same mute and solo you use when mixing. To swap a pad's sound, hover over it and click the Hot-Swap button to browse for a replacement. To rename a pad so you remember which sound is where, select it and press <code>Cmd-R</code>.</p>
+<p>Each filled pad has small buttons to play it, mute it, or solo it. Mute drops a sound out, and solo plays it on its own, the same mute and solo you use when mixing. To swap a pad's sound, hover over it and click the Hot-Swap button to browse for a replacement. To rename a pad, select it and press <code>Cmd-R</code>.</p>
 
-<p>Every pad is a Simpler, so the controls you just learned are all there. Double-click a pad to open its Simpler and shape that sound: One-Shot for a hit that fires and runs, a short Fade Out to clear a click, Classic if you want it to hold. The kit is a row of Simplers, one for each pad.</p>
+<p>Every pad is a Simpler, with the controls you just learned. Double-click a pad to open its Simpler and shape that sound: One-Shot for a hit that fires and runs, a short Fade Out to clear a click, Classic if you want it to hold.</p>
 
 <p>Drum Racks go further, with ways to make one pad cut another off or stack several sounds on a key. Leave those for later. The full reference is here:</p>
 
@@ -203,32 +203,32 @@
 
 <hr>
 
-<h2>Sequence a part</h2>
+<h2>sequence a part</h2>
 
 <div class="callout">
   <div class="callout-label">Recording vs sequencing</div>
-  <p>Recording MIDI means arming a track and playing a part on the keyboard, with Live capturing your timing and how hard you hit. Sequencing means drawing the notes into the grid by hand, placing each one exactly where you want it. Today you sequence. You draw the notes, so the keyboard is for hearing your instrument, and a steady hand on the mouse matters more than playing skill.</p>
+  <p>Recording MIDI means arming a track and playing a part on the keyboard, with Live capturing your timing and how hard you hit. Sequencing means drawing the notes into the grid by hand, placing each one exactly where you want it. Today you sequence. You draw the notes with the mouse, and the keyboard is for hearing your instrument.</p>
 </div>
 
 <p>Make a MIDI clip on one of your instrument tracks. Double-click an empty spot on the track in the Arrangement timeline, and an empty clip appears. Double-click that clip to open it in the lower half of the screen, in the <strong>MIDI Note Editor</strong>, also called the piano roll. A column of piano keys runs up the left side, one row per pitch, and time runs left to right. On a Simpler track each row is a pitch you can play, and on a Drum Rack track each row is one of your pads.</p>
 
 <div class="callout">
   <div class="callout-label">Your clip is a canvas</div>
-  <p>Think of a clip as a painter's canvas. How wide it is decides how much room you have to draw, and a fresh clip is small. A fresh clip also opens with its <strong>Loop</strong> switch on, which pins the canvas to the loop's width. With Loop on, dragging the clip's edge in the Arrangement repeats what is already there rather than giving you more room.</p>
-  <p>So before you draw a longer part, size the canvas. In the editor, click the <strong>Loop</strong> switch off. Then drag the clip's right edge in the Arrangement, or the clip's end marker in the editor, to make the canvas as wide as you want. Now there is room to draw the whole part.</p>
-  <p>When the part is drawn, switch <strong>Loop</strong> back on to make it repeat. A loop brace appears above the notes with a marker at each end. Drag those two markers to set where the loop starts and stops, which sets the loop's length. Live plays the notes inside the brace over and over, so the brace is how you choose what repeats and for how long. Spend time getting comfortable here. Resizing a clip and looping it on purpose is a move you will use constantly.</p>
+  <p>Think of a clip as a painter's canvas. Its width sets how much room you have to draw, and a fresh clip is small. A fresh clip also opens with its <strong>Loop</strong> switch on, which holds the clip to the loop's length. With Loop on, dragging the clip's edge in the Arrangement repeats what's already there rather than giving you more room.</p>
+  <p>Before you draw a longer part, resize the clip. In the editor, click the <strong>Loop</strong> switch off. Then drag the clip's right edge in the Arrangement, or the clip's end marker in the editor, to make the clip as long as you want.</p>
+  <p>When the part is drawn, switch <strong>Loop</strong> back on to make it repeat. A loop brace appears above the notes with a marker at each end. Drag those two markers to set where the loop starts and stops. Live plays the notes inside the brace over and over. Spend time getting comfortable resizing and looping a clip.</p>
 </div>
 
-<p>Turn on <strong>Draw Mode</strong> with the pencil button, or press <code>B</code>. Click in the grid to place a note on a row at the moment you want it, and it snaps to the nearest grid line. Click a note again to delete it, or drag its right edge to make it longer. Place a few notes, press play, and listen. Switch Draw Mode off when you want to select notes and drag them around instead.</p>
+<p>Turn on <strong>Draw Mode</strong> with the pencil button, or press <code>B</code>. Click in the grid to place a note on a row at the moment you want it, and it snaps to the nearest grid line. Click a note again to delete it, or drag its right edge to make it longer. Place a few notes, press play, and listen. A few notes is all you need today, and you don't have to read music to place them. Switch Draw Mode off when you want to select notes and drag them around instead.</p>
 
-<p>The lane under the notes is <strong>velocity</strong>: how hard each note plays, soft to loud. Every note has a thin marker there. Drag a marker down for a quieter hit or up for a stronger one. A little variation keeps a part from sounding flat, a stronger downbeat here, a softer note there.</p>
+<p>The lane under the notes is <strong>velocity</strong>: how hard each note plays, soft to loud. Every note has a thin marker there. Drag a marker down for a quieter hit or up for a stronger one. Vary it a little: a stronger downbeat here, a softer note there. A part with every velocity the same sounds flat.</p>
 
 <div class="callout">
-  <div class="callout-label">Where 0 to 127 comes from</div>
-  <p>Velocity tops out at 127, an odd ceiling that comes straight from how MIDI was built. MIDI is the language your instruments speak, agreed on by the synth makers in 1983 so gear from different companies could finally play together. It carries each value, a pitch, a velocity, a knob position, in seven bits of data, and seven bits can count 128 values, numbered 0 to 127. (A byte holds eight bits. MIDI spends one of them flagging whether a message is a command or a number, which leaves seven for the value.) That 1983 decision is why your hardest hit reads 127, and velocity is only one of the values counted this way. Pitch uses the same 0 to 127 scale: middle C is note 60. Live labels the keys by name in the piano roll, where middle C reads as C3, the name for MIDI note 60.</p>
+  <div class="callout-label">The origin of 0 to 127</div>
+  <p>Velocity tops out at 127, an odd ceiling set by how MIDI was built. MIDI is the language your instruments speak. Synth makers agreed on it in 1983, and it lets gear from different companies play together. It sends each value (a pitch, a velocity, a knob position) as seven bits of data, and seven bits can count 128 values, numbered 0 to 127. (A byte holds eight bits. MIDI spends one of them flagging whether a message is a command or a number, which leaves seven for the value.) Velocity is only one of the values counted this way. Pitch uses the same 0 to 127 scale: middle C is note 60. Live labels the keys by name in the piano roll, where middle C reads as C3, the name for MIDI note 60.</p>
 </div>
 
-<p>These videos walk the whole process:</p>
+<p>These videos show the whole process:</p>
 
 <a class="video-link" href="https://www.youtube.com/watch?v=1cFTonBejIQ" target="_blank" rel="noopener noreferrer">
   <span class="res-icon" aria-hidden="true">&#9654;</span>
@@ -268,13 +268,13 @@
 
 <hr>
 
-<h2>Build a short playable idea</h2>
+<h2>build a short playable idea</h2>
 
-<p>Build one short playable idea, about fifteen to thirty seconds. It can be a melodic line from Simpler, a beat from your Drum Rack, or the two together. Keep it small. What matters today is that the sounds are your own, and you built a part from them. Save as you go with <code>Cmd-S</code>.</p>
+<p>Build one short playable idea, about fifteen to thirty seconds. It can be a melodic line from Simpler, a beat from your Drum Rack, or the two together. Keep it small, and use your own samples for every sound. Save as you go with <code>Cmd-S</code>.</p>
 
 <hr>
 
-<h2>Export</h2>
+<h2>export</h2>
 
 <p>Export your idea to a single audio file at <strong>48 kHz, 32-bit</strong>, saved into your working folder. Name it <code>lastname-wk11-idea.wav</code>. Open the export dialog the same way as Lab 1, with File then Export Audio/Video, or <code>Cmd-Shift-R</code>.</p>
 
@@ -289,18 +289,18 @@
 
 <hr>
 
-<h2>Before class ends: your project</h2>
+<h2>before class ends: your project</h2>
 
-<p>If you have time left, open your project Set, <code>lastname-project</code>, and add to it with today's tools. Load one of your library sounds into Simpler or a Drum Rack and sequence a short part into the project. It saves with the project and goes up with your working folder at the end of session.</p>
+<p>If you have time left, open your final project Set (<code>lastname-final-v1</code>, or your latest version) and add to it with today's tools. Load one of your library sounds into Simpler or a Drum Rack and sequence a short part into the project. It saves with the project and goes up with your working folder at the end of session.</p>
 
 <hr>
 
-<h2>End of session</h2>
+<h2>end of session</h2>
 
-<h3>What to upload today</h3>
+<h3>what to upload today</h3>
 
 <ol class="steps">
-  <li>In Live, run <strong>File &rarr; Collect All and Save</strong>. This copies the library sounds you loaded into Simpler and the Drum Rack into the Set's Project folder, so the project stays one piece and nothing goes missing.</li>
+  <li>In Live, run <strong>File &rarr; Collect All and Save</strong>. This copies the library sounds you loaded into Simpler and the Drum Rack into the Set's Project folder.</li>
   <li>During the upload phase of the routine, select everything in <code>~/Documents/netid/</code> and drag it into your own folder on the server, choosing <strong>Overwrite if source newer</strong> when prompted. The <code>lastname-wk11</code> Project folder and your exported WAV go up with it.</li>
   <li>Verify the <code>lastname-wk11</code> Project folder and <code>lastname-wk11-idea.wav</code> are on the server.</li>
 </ol>
