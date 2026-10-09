@@ -1,8 +1,8 @@
-# Exams
+# exams
 
-The course's two graded written exams, kept in one place so the TA has a single home for both. TA-facing: each file holds the administration notes, the exam itself, and the answer key. The exam section of each file can be copied as the student handout; the answer key stays for grading.
+The course's two written exams. Each file is TA-facing and has the administration notes, the exam, and the answer key. Copy the exam section as the student handout and keep the answer key for grading.
 
-- `midterm-exam.md` — the Module 3 midterm. Cumulative over Modules 1 through 3, mapped one-to-one to the [midterm review handout](https://csuebmusic.github.io/mus381/module-03-recording/lessons/09-handout-midterm-review.html). Administered Wed Wk 9, after the sample libraries are submitted.
-- `final-exam.md` — the cumulative final. Whole course, Modules 1 through 4, weighted toward Module 4, pinned to the [final review packet](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/06-handout-final-review.html). Administered in class during finals week, separate from the final project.
+- `midterm-exam.md` is the midterm terminology exam: individual, in class, closed-book, no devices, 50 points. It's cumulative over Modules 1 through 3, and every question comes from the [midterm review](https://csuebmusic.github.io/mus381/module-03-recording/lessons/09-handout-midterm-review.html), which students get as the study guide. Give it Wed Wk 9 (Oct 14), after the sample libraries are submitted and checked at the start of class.
+- `final-exam.md` is the cumulative final exam: individual, in class, closed-book, no devices, 60 points. It covers Modules 1 through 4, weighted toward Module 4, and every question comes from the [final review](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/06-handout-final-review.html). Give it during finals week (Dec 7 to 12), in the slot set by the registrar's final-exam schedule. It's separate from the final project.
 
-The syllabus sets both exams at 20% of the course grade.
+In the syllabus, the midterm (sample library and terminology exam together) is 20% of the course grade, and the final exam is 20%.
