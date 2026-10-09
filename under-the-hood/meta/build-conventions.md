@@ -239,7 +239,7 @@ The token `project01` in filenames does **not** take an internal hyphen, but the
 
 Treat the filename's hyphen as the separator between last name and project token; inside the project token, no further hyphen. In folder names, the hyphen reads as a visual break between the word `project` and the number, since folder names tend to be longer and read better with the hyphen.
 
-This means `~/Documents/[netid]/project-01/lastname-project01.wav` is the canonical full local path for a student's Project 1 working file: hyphenated folder, unhyphenated filename.
+The Project 1 working file is `~/Documents/[netid]/project-01/lastname-project01.aup3` (versions `lastname-project01-v1.aup3`, `-v2`, `-v3`), and the submitted file is `lastname-project01.wav`: hyphenated folder, unhyphenated filename.
 
 #### Listening filename NN meaning
 
