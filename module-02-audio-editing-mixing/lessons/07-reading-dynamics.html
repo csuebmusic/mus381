@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MUS 381 · Dynamics, Compression &amp; Limiting</title>
+  <title>MUS 381 · dynamics, compression &amp; limiting</title>
   <link rel="stylesheet" href="../../assets/style.css">
   <style>
     /* Reading-specific styles (mirrors the other Module 02 readings) */
@@ -148,11 +148,11 @@
 
 <div class="title-block">
   <div class="module-tag">Module 02 · Digital audio, editing &amp; mixing</div>
-  <h1>Dynamics, compression &amp; limiting</h1>
+  <h1>dynamics, compression &amp; limiting</h1>
   <div class="subtitle">Shaping how loud a sound is, and how loud it <em>seems</em>.</div>
 </div>
 
-<p class="lede">In the Wednesday lab last week you set levels, panned tracks, and balanced sounds in your mix. The remaining tool in the mixing toolbox is <strong>dynamics processing</strong>: changing the relationship between the loud and quiet parts of a sound. Today we look at the three tools that do this work (<em>normalization</em>, <em>compression</em>, and <em>limiting</em>), what each one does, when each helps, and how the powerful ones get misused. This is the last new content of the module. Wednesday is the final work session and submission, and the choices in this reading will shape the last 20% of your piece.</p>
+<p class="lede">The last mixing tool in Module 2 is <strong>dynamics processing</strong>: changing the relationship between the loud and quiet parts of a sound. The tools are <em>compression</em> and <em>limiting</em>. <em>Normalization</em>, which changes overall level only, is covered alongside them. This is the last new content of the module. Wednesday is the final work session and Project 1 submission.</p>
 
 <div class="callout">
   <div class="callout-label">Today's gear</div>
@@ -162,13 +162,13 @@
 
 <hr>
 
-<h2>1 · Dynamic range</h2>
+<h2>1 · dynamic range</h2>
 
 <p>The <span class="term">dynamic range</span> of a sound is the difference between its quietest and loudest parts, measured in decibels (dB). A whisper followed by a shout has a wide dynamic range. A car alarm has a narrow one: it's loud, it stays loud, the loud and quiet parts aren't very different.</p>
 
-<p>Pieces of music have dynamic range too. A solo piano recording has a wide range: a soft passage might sit 30 or 40 dB below a loud chord. A modern pop song mastered for radio has a narrow range: from start to finish, everything sits within a few dB of the loudest peak.</p>
+<p>Pieces of music have dynamic range too. A solo piano recording has a wide range: a soft passage might be 30 or 40 dB below a loud chord. A modern pop song mastered for radio has a narrow range: from start to finish, everything is within a few dB of the loudest peak.</p>
 
-<p>Neither is automatically better. Wide dynamic range gives a piece room to breathe, and lets quiet moments feel quiet. Narrow dynamic range gives a piece consistent presence, useful in environments where the listener can't adjust their volume (in a car, on a phone speaker, on a noisy bus).</p>
+<p>Neither is automatically better. Wide dynamic range lets quiet moments sound quiet and loud moments sound loud. Narrow dynamic range gives a piece consistent presence, useful in environments where the listener can't adjust their volume (in a car, on a phone speaker, on a noisy bus).</p>
 
 <p>Listen to the same musical fragment with wide and narrow dynamic range:</p>
 
@@ -186,12 +186,12 @@
     </span>
     <audio controls src="../../assets/audio/module-02-week-05/range-narrow.wav"></audio>
   </div>
-  <p class="audio-note">Both files have the same peak level. The narrow version sounds <em>louder on average</em> because the quiet parts have been brought up. But you can hear what it's lost: the conga slaps no longer stand clearly above the shaker and clave; everything is closer to the same level than it was in the wide version.</p>
+  <p class="audio-note">Both files have the same peak level. The narrow version sounds <em>louder on average</em> because the quiet parts have been brought up. But you can hear what it's lost: the conga slaps are no longer clearly louder than the shaker and clave; everything is closer to the same level than it was in the wide version.</p>
 </figure>
 
 <div class="callout">
-  <div class="callout-title">Both files peak at the same level. How can one be louder?</div>
-  <p>Look at the two waveforms below. Both are stretched to fill the same vertical space, and the dashed line marks <em>exactly the same height</em> in each panel: that's the −3 dB peak ceiling. The conga slaps in both versions touch that line. Look how different the spaces between the slaps are.</p>
+  <div class="callout-title">How can one be louder?</div>
+  <p>Look at the two waveforms below. Both are stretched to fill the same vertical space, and the dashed line marks <em>exactly the same height</em> in each panel: that's the −3 dB peak ceiling. The conga slaps in both versions touch that line. Compare the spaces between the slaps.</p>
 
   <figure style="margin: 1.25rem 0;">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360"
@@ -262,51 +262,51 @@
     </tbody>
   </table>
 
-  <p>Identical peaks. About 6 dB louder average. Six decibels is a lot: roughly the perceptual difference between a normal conversation and a loud conversation. Your peak meter sees no difference between these two files; your ears hear a huge difference.</p>
+  <p>The averages differ by 6 dB, roughly the perceptual difference between a normal conversation and a loud one. A peak meter reads the same for both files, and your ears hear a clear difference.</p>
 
-  <p>This is the secret behind every "loud master" in commercial music. You don't make a piece louder by pushing the peaks higher; you can't, they're already at the ceiling. You make it louder by pulling the average level up toward the peaks. That's what compression and limiting do.</p>
+  <p>Commercial masters get loud this way. You can't make a piece louder by pushing the peaks higher: they're already at the ceiling. You make it louder by pulling the average level up toward the peaks. That's what compression and limiting do.</p>
 
-  <p><strong>Two knobs, not one.</strong> Strictly speaking, the narrow version above is <em>compressed and then boosted</em>. Compression by itself reduces the loud parts of a signal, which actually makes the file quieter overall (the loud bits got smaller, the quiet bits didn't change). To get the louder result you just heard, we then boost the whole compressed signal so the peaks come back up to the ceiling.</p>
+  <p>The narrow version above is <em>compressed and then boosted</em>, with two separate controls. Compression by itself reduces the loud parts of a signal, which makes the file quieter overall (the loud bits got smaller, the quiet bits didn't change). The louder result you just heard comes from boosting the whole compressed signal until the peaks are back up at the ceiling.</p>
 
-  <p>This second step is so common that most compressor plugins have a dedicated knob for it, usually labeled <strong>makeup gain</strong> (sometimes "output" or "gain"). It's just a multiplier applied after the compressor does its work. The compressor squashes; makeup gain pulls the squashed version back up.</p>
+  <p>Most compressor plugins have a dedicated knob for this second step, usually labeled <strong>makeup gain</strong> (sometimes "output" or "gain"). It's a multiplier applied after compression: the compressor squashes, and makeup gain brings the squashed version back up.</p>
 
-  <p>You'll meet this in the next lab: the Audacity compressor and the interactive tool in this reading both have a makeup gain control. Sometimes you'll want it; sometimes you won't. Compression <em>without</em> makeup gain is useful when you just want to tame a sound that's too loud, leaving the quiet parts where they are. Compression <em>with</em> makeup gain is what makes a piece feel louder. We combined them here to make the loudness change unmistakable, but they're separable choices in practice.</p>
+  <p>The interactive compressor tool and Audacity's Compressor, both later in this session, have a makeup gain control. Sometimes you'll want it; sometimes you won't. Compression <em>without</em> makeup gain is useful when you just want to tame a sound that's too loud, leaving the quiet parts where they are. Compression <em>with</em> makeup gain is what makes a piece feel louder.</p>
 </div>
 
-<p>The piece in your Project 1 has some dynamic range, whether you've thought about it or not. Some moments are louder, some are quieter, and that contrast is part of how the piece holds attention. Normalization, compression, and limiting are the tools you use to change that relationship deliberately. The next sections introduce them one at a time.</p>
+<p>The piece in your Project 1 has some dynamic range, whether you've thought about it or not. Some moments are louder, some are quieter, and that contrast is part of how the piece holds attention. Compression and limiting change that relationship; normalization changes the overall level.</p>
 
 <hr>
 
-<h2>2 · Normalizing</h2>
+<h2>2 · normalizing</h2>
 
-<p>Before we get to the compressor, there's a much simpler tool worth knowing: <span class="term">normalization</span>. You'll use it almost every time you prepare a sample to keep, and it's the most common technique for making a quiet recording louder.</p>
+<p><span class="term">Normalization</span> is a simpler tool than compression. You'll use it almost every time you prepare a sample to keep, and it's a common way to make a quiet recording louder.</p>
 
-<p>Normalizing a sound does exactly one thing: it finds the loudest peak in the file, computes how much to multiply every sample by so that peak sits at a target level (of your choosing), and applies that single multiplier to every sample in the file. The operation is a pure rescaling: one number applied uniformly across the whole file. The whole signal goes up (or down) by the same amount of dB. The relationship between loud and quiet parts stays exactly the same.</p>
+<p>Normalizing a sound does exactly one thing: it finds the loudest peak in the file, computes how much to multiply every sample by so that peak is at a target level (of your choosing), and applies that single multiplier to every sample in the file. The whole signal goes up (or down) by the same number of dB, and loud and quiet parts keep the same relationship.</p>
 
-<p>This makes normalization fundamentally different from what you heard in Section 1. The compressed-and-boosted "narrow" version had its dynamic range squashed: the quiet parts came up more than the loud parts. Normalization can't do that. Normalization is just a scaler. If the loud parts go up by 12 dB, the quiet parts go up by 12 dB. The shape of the signal is preserved.</p>
+<p>In the compressed-and-boosted "narrow" version in Section 1, the quiet parts came up more than the loud parts. Normalization can't do that: if the loud parts go up by 12 dB, the quiet parts go up by 12 dB.</p>
 
-<p>Listen for the difference. The conga loop at two normalization levels: a quiet version (peak around -18 dB, as if it had been recorded with a conservative gain setting) and the same recording normalized to a peak of -1 dB:</p>
+<p>Listen to the conga loop at two levels: a quiet version (peak around −18 dB, as if it had been recorded with a conservative gain setting) and the same recording normalized to a peak of −1 dB:</p>
 
 <figure class="audio-compare">
   <div class="audio-compare-title">Demo · Peak normalization</div>
   <div class="audio-row">
     <span class="audio-label">Quiet
-      <span class="audio-label-sub">peak ~ -18 dB</span>
+      <span class="audio-label-sub">peak ~ −18 dB</span>
     </span>
     <audio controls src="../../assets/audio/module-02-week-05/norm-quiet.wav"></audio>
   </div>
   <div class="audio-row">
     <span class="audio-label">Normalized
-      <span class="audio-label-sub">same signal, peak -1 dB</span>
+      <span class="audio-label-sub">same signal, peak −1 dB</span>
     </span>
     <audio controls src="../../assets/audio/module-02-week-05/norm-loud.wav"></audio>
   </div>
-  <p class="audio-note">The normalized version is louder. That's the only difference. The relative heights of the conga slaps, shaker, and clave are exactly the same; the shape is exactly the same. This is what "the whole signal scaled by one number" actually sounds like.</p>
+  <p class="audio-note">The normalized version is louder. The relative heights of the conga slaps, shaker, and clave are the same.</p>
 </figure>
 
 <figure style="margin: 1.5rem 0;">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360"
-     role="img" aria-label="Waveform comparison: quiet recording above, same recording normalized below. Same shape, different scale. Both panels show the -1 dB ceiling for reference; quiet sits well below it, normalized touches it.">
+     role="img" aria-label="Waveform comparison: quiet recording above, same recording normalized below. Same shape, different scale. Both panels show the -1 dB ceiling for reference; quiet peaks well below it, normalized touches it.">
   <rect width="720" height="360" fill="var(--bg-alt)"/>
 
   <!-- Panel labels -->
@@ -343,16 +343,16 @@
   <text x="388.00" y="352"
         font-family="DM Mono, monospace" font-size="10" fill="var(--ink-soft)" text-anchor="middle">6 seconds →</text>
 </svg>
-  <figcaption>The same source loop at two scales. Both panels share the same vertical scale and the same dashed −1 dB ceiling line. The quiet version sits well below the ceiling; the normalized version touches it. The pattern of slaps is identical in both: same positions, same relative heights. Normalization is just multiplication.</figcaption>
+  <figcaption>The same source loop at two scales. Both panels share the same vertical scale and the same dashed −1 dB ceiling line. The quiet version peaks well below the ceiling; the normalized version touches it. The pattern of slaps is identical in both: same positions, same relative heights.</figcaption>
 </figure>
 
 <p>Compare this to the wide/narrow comparison in Section 1. There, both files had identical peak levels but very different shapes. Here, the two files have very different peak levels but identical shapes. Normalization changes the <em>scale</em>. Compression changes the <em>shape</em>.</p>
 
 <div class="callout">
   <div class="callout-title">If compression changes the shape, does it also change the sound?</div>
-  <p>Yes. This is easy to miss: <strong>changing a signal's shape over time also changes its tone</strong>. When a compressor squashes the sharp start of a hit or thickens a sustained note, it is reshaping the waveform from moment to moment, and reshaping a waveform inherently changes what frequencies are present and at what levels. Two files can be at the same loudness and still sound very different.</p>
+  <p>Yes: <strong>changing a signal's shape over time also changes its tone</strong>. When a compressor squashes the sharp start of a hit or thickens a sustained note, it's reshaping the waveform from moment to moment, and reshaping a waveform changes what frequencies are present and at what levels. Two files can be at the same loudness and still sound very different.</p>
 
-  <p>Listen for it. Both clips below are at the same loudness (matched by RMS, the closest measurement we have to how loud the ear actually hears something). The first is the conga loop made louder by normalization (linear scaling). The second is the same loop made louder by compression and limiting (non-linear wave-shaping).</p>
+  <p>Listen for it. Both clips below are at the same loudness (matched by average level, measured as RMS). The first is the conga loop made louder by normalization (linear scaling). The second is the same loop made louder by compression and limiting (non-linear wave-shaping).</p>
 
   <figure class="audio-compare">
     <div class="audio-compare-title">Demo · Same loudness, different shape</div>
@@ -368,62 +368,60 @@
       </span>
       <audio controls src="../../assets/audio/module-02-week-05/timbre-compressed.wav"></audio>
     </div>
-    <p class="audio-note">The compressed version has more presence in the upper-mids and high frequencies. The slaps feel a little thicker; the shaker and clave feel a little more forward. The two files measure the same loudness but they have a different <em>tone</em>. The compressor reshaped the waveform, and the reshaping pulled in spectral character that the scaled version doesn't have.</p>
+    <p class="audio-note">The compressed version has more presence in the upper-mids and high frequencies. The slaps feel a little thicker; the shaker and clave feel a little more forward. The compressor reshaped the waveform, and the reshaping added spectral content that the scaled version doesn't have.</p>
   </figure>
 
-  <p>This is why "dynamics processing" is a slightly deceiving name for the category. Compression and limiting are sold as loudness tools, and they are. They are also <em>color</em> tools. Every compressor imparts some character to whatever passes through it, and different compressors have different characters.</p>
+  <p>The name "dynamics processing" describes only half of what these tools do. Compression and limiting are sold as loudness tools, and they are. They're also <em>color</em> tools. Every compressor imparts some character to whatever passes through it, and different compressors have different characters.</p>
 
-  <p>This isn't only marketing. The basic idea of a compressor (detect when the signal is loud, reduce the gain) is the same everywhere. But the specifics vary: how the detection works, what shape the gain reduction follows, how quickly it engages, whether the compressor deliberately adds a touch of distortion as part of its sound. A clean digital compressor like the one in Audacity does the math accurately and adds nothing else. A vintage hardware unit, or a software emulation of one, was built (or modeled) to add a specific character on top of the basic compression. People are paying for that character. They are also paying for the engineering hours spent measuring an old piece of hardware accurately enough to reproduce its quirks in software.</p>
+  <p>This isn't only marketing. The basic idea of a compressor (detect when the signal is loud, reduce the gain) is the same everywhere. But the specifics vary: how the detection works, what shape the gain reduction follows, how quickly it engages, whether the compressor deliberately adds a touch of distortion as part of its sound. A clean digital compressor like the one in Audacity does the math accurately and adds nothing else. A vintage hardware unit, or a software emulation of one, was built (or modeled) to add a specific character on top of the basic compression. People are paying for that character. They're also paying for the engineering hours spent measuring an old piece of hardware accurately enough to reproduce its quirks in software.</p>
 
-  <p>Choosing a compressor for a particular sound is partly about how aggressively it can reduce gain, but it is mostly about <em>which kind of character</em> you want, and how cleanly or how colorfully the compressor delivers it.</p>
+  <p>Choosing a compressor for a particular sound is partly about how aggressively it can reduce gain, but it's mostly about <em>which kind of character</em> you want, and how cleanly or how colorfully the compressor delivers it.</p>
 
-  <p>For now, the takeaway is simpler: compression is never purely a loudness tool. It always changes the tone of what you put through it. Sometimes the tone change is what you actually wanted; sometimes it is a side effect you want to minimize. Either way, when you reach for a compressor you are reaching for a tool that does two things at once. Treat it that way.</p>
+  <p>Compression always changes the tone of what you put through it. Sometimes that tone change is what you want; sometimes it's a side effect you want to minimize.</p>
 </div>
 
-<h3>Why and when to normalize</h3>
+<h3>when to normalize</h3>
 
-<p>Normalization is the standardization step in sample preparation. When you record sounds for a sample library, you set your input gain conservatively so nothing clips. That's the right thing to do at the time of recording. But you'll end up with samples at all kinds of different peak levels: this one peaks at -10 dB, that one at -16, the loud one at -6. When you later drag these into a session, you'll have to ride the channel fader 10 dB up for one sample and 4 dB down for another, just to get them to a usable working level. That's friction you don't need.</p>
+<p>When you record sounds for a sample library, you set your input gain conservatively so nothing clips. You'll end up with samples at all kinds of different peak levels: this one peaks at −10 dB, that one at −16, the loud one at −6. When you later bring these into a project, you'll have to move a track's gain slider up 6 dB for one sample and down 4 dB for another to get them to the same working level.</p>
 
-<p>The solution is to normalize every sample to a consistent target peak before you save it to the library. After normalization, every sample sits at the same predictable peak, and you can work with them without thinking about base level. Quiet sample, loud sample: they all hit your channel at the same height. The mix is now about <em>your decisions</em> about relative loudness, not about which microphone gain you happened to set three weeks ago.</p>
+<p>In sample prep, you normalize every sample to a consistent target peak before you save it to the library. After normalization, every sample has the same peak level, and you can work with them without thinking about the level each was recorded at.</p>
 
 <p>You'll do this in Module 3 when you build your midterm sample library.</p>
 
-<h3>Headroom and the target level</h3>
+<h3>headroom and the target level</h3>
 
-<p>Audacity's Normalize defaults to a target of 0 dB: the loudest possible level. For sample prep, this is too loud. A normalized sample at 0 dB has zero headroom: any additional processing (EQ boost, pitch shift, layering with another sample) can push it past the digital ceiling and clip.</p>
+<p>A sample normalized to 0 dB, the loudest possible level, has zero headroom: any additional processing (EQ boost, pitch shift, layering with another sample) can push it past the digital ceiling and clip.</p>
 
-<p>For sample prep, normalize to <strong>-1 dB</strong>. This is common in production: it leaves a small margin so that inter-sample peaks (peaks that exist between sampled values, which can show up as clipping after digital-to-analog conversion) stay safe. You'll see -1 dB as the target in a lot of professional sample libraries and in delivery specifications for streaming platforms.</p>
+<p>For sample prep, normalize to <strong>−1 dB</strong>, which is also Audacity's default. The 1 dB margin leaves room for inter-sample peaks (peaks between sampled values, which can clip after digital-to-analog conversion). You'll see −1 dB as the target in a lot of professional sample libraries and in delivery specifications for streaming platforms.</p>
 
-<h3>Normalizing in Audacity</h3>
+<h3>normalizing in Audacity</h3>
 
-<p>The menu path is <code>Effect → Volume and Compression → Normalize</code>. Two settings to know:</p>
+<p>The menu path is <code>Effect → Volume and Compression → Normalize</code>. Set two options:</p>
 
 <ul>
-  <li><strong>Normalize peak amplitude to:</strong> set this to <code>-1.0</code> dB.</li>
-  <li><strong>Remove DC offset:</strong> leave this checked. DC offset is a small but real problem in some recordings where the waveform is shifted slightly off the zero line; the box fixes it as part of the same operation.</li>
+  <li>Set <strong>Normalize peak amplitude to</strong> <code>-1.0</code> dB (the default).</li>
+  <li>Leave <strong>Remove DC offset</strong> checked. DC offset is a shift of the whole waveform off the zero line, found in some recordings; the box fixes it as part of the same operation.</li>
 </ul>
 
-<p>That's it. Apply, save your file. The peak now sits at -1 dB regardless of what level it had before.</p>
+<p>Apply, then save your file. The peak is now −1 dB, whatever it was before.</p>
 
-<h3>A sibling concept: LUFS</h3>
+<h3>a related concept: LUFS</h3>
 
 <p>If you look around the audio world, you'll see references to <span class="term">loudness normalization</span> or <strong>LUFS</strong> (Loudness Units relative to Full Scale). This is a different kind of normalization that targets perceived <em>loudness</em> rather than peak level. Streaming platforms like Spotify, Apple Music, and YouTube use it to play all tracks at roughly the same apparent volume, regardless of how each was mastered.</p>
 
-<p>LUFS measurement uses the same idea you learned in Section 1: integrate the signal's energy over time to get something close to how loud the human ear hears it, then scale the whole file so that measured loudness hits a target (typically -14 LUFS for streaming). It's why a loudly-mastered track and a quietly-mastered track sound about the same volume on Spotify, even though their peak levels can be very different.</p>
+<p>LUFS measurement uses the same idea you learned in Section 1: integrate the signal's energy over time to get something close to how loud the human ear hears it, then scale the whole file so that measured loudness hits a target (typically −14 LUFS for streaming). On Spotify, a loudly mastered track and a quietly mastered track play at about the same volume as a result, even though their peak levels can be very different.</p>
 
-<p>For sample prep in this course we'll stick with peak normalization, because we're standardizing individual sounds, not pieces. LUFS becomes important when you're finishing a full piece for delivery, which you'll meet later in your studies. For now, just know the term exists.</p>
+<p>Sample prep in this course uses peak normalization. LUFS targets apply when you deliver a finished piece to a streaming platform.</p>
 
 <hr>
 
-<h2>3 · The compressor: threshold and ratio</h2>
+<h2>3 · the compressor: threshold and ratio</h2>
 
-<p>You've now heard what compression does. This section names the four controls that determine <em>how</em> it does it.</p>
-
-<p>A <span class="term">compressor</span> reduces dynamic range. It attenuates the loud parts of a signal while leaving the quiet parts alone, reshaping the waveform from moment to moment (which, as Section 2 showed, also affects tone). Two parameters define <em>how much</em> attenuation happens and <em>where</em> it starts: <strong>threshold</strong> and <strong>ratio</strong>. Two more, which the next section covers, define <em>when</em> the compression engages and disengages.</p>
+<p>A <span class="term">compressor</span> reduces dynamic range. It attenuates the loud parts of a signal while leaving the quiet parts alone, reshaping the waveform from moment to moment (which, as Section 2 showed, also affects tone). Two parameters define <em>how much</em> attenuation happens and <em>where</em> it starts: <strong>threshold</strong> and <strong>ratio</strong>. Two more, covered in Section 4, define <em>when</em> the compression engages and disengages.</p>
 
 <p>The <span class="term">threshold</span> is a level (in dB) above which the compressor starts working. Signal below the threshold passes through untouched. Signal above the threshold is reduced.</p>
 
-<p>The <span class="term">ratio</span> determines <em>how much</em> the signal above the threshold is reduced. A ratio of 2:1 means that for every 2 dB the input goes above the threshold, the output only goes up by 1 dB. A ratio of 4:1 means 4 dB in gets 1 dB out. A ratio of 10:1 means 10 dB in gets 1 dB out: the loud signal is barely allowed to get any louder.</p>
+<p>The <span class="term">ratio</span> sets <em>how much</em> the signal above the threshold is reduced. A ratio of 2:1 means that for every 2 dB the input goes above the threshold, the output only goes up by 1 dB. A ratio of 4:1 means 4 dB in gets 1 dB out. A ratio of 10:1 means 10 dB in gets 1 dB out: the loud signal is barely allowed to get any louder.</p>
 
 <figure>
   <svg viewBox="0 0 600 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Compressor transfer curve diagram showing input level vs output level for ratios 1:1, 2:1, 4:1, and 10:1">
@@ -448,27 +446,27 @@
          For output -60: y=330; output 0: y=50. Per dB: 4.67 px. -->
 
     <!-- x ticks -->
-    <text x="80" y="345" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="middle">-60</text>
-    <text x="156.67" y="345" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="middle">-50</text>
-    <text x="233.33" y="345" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="middle">-40</text>
-    <text x="310" y="345" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="middle">-30</text>
-    <text x="386.67" y="345" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="middle">-20</text>
-    <text x="463.33" y="345" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="middle">-10</text>
+    <text x="80" y="345" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="middle">−60</text>
+    <text x="156.67" y="345" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="middle">−50</text>
+    <text x="233.33" y="345" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="middle">−40</text>
+    <text x="310" y="345" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="middle">−30</text>
+    <text x="386.67" y="345" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="middle">−20</text>
+    <text x="463.33" y="345" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="middle">−10</text>
     <text x="540" y="345" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="middle">0</text>
 
     <!-- y ticks -->
-    <text x="70" y="333" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="end">-60</text>
-    <text x="70" y="287" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="end">-50</text>
-    <text x="70" y="240" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="end">-40</text>
-    <text x="70" y="193" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="end">-30</text>
-    <text x="70" y="147" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="end">-20</text>
-    <text x="70" y="100" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="end">-10</text>
+    <text x="70" y="333" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="end">−60</text>
+    <text x="70" y="287" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="end">−50</text>
+    <text x="70" y="240" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="end">−40</text>
+    <text x="70" y="193" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="end">−30</text>
+    <text x="70" y="147" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="end">−20</text>
+    <text x="70" y="100" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="end">−10</text>
     <text x="70" y="53" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="end">0</text>
 
     <!-- Gridlines at threshold (-20 dB) -->
     <!-- Vertical at input = -20: x = 386.67 -->
     <line x1="386.67" y1="50" x2="386.67" y2="330" stroke="var(--ink-soft)" stroke-width="0.8" stroke-dasharray="3,3"/>
-    <text x="386.67" y="42" font-family="DM Mono, monospace" font-size="10" fill="var(--accent)" text-anchor="middle">threshold = -20</text>
+    <text x="386.67" y="42" font-family="DM Mono, monospace" font-size="10" fill="var(--accent)" text-anchor="middle">threshold = −20</text>
 
     <!-- 1:1 reference line (no compression): from (-60, -60) to (0, 0) = (80,330) to (540,50) -->
     <line x1="80" y1="330" x2="540" y2="50" stroke="var(--ink-soft)" stroke-width="1" stroke-dasharray="2,3"/>
@@ -504,10 +502,10 @@
     <text x="465" y="200" font-family="DM Sans, sans-serif" font-size="11" font-style="italic" fill="var(--ink-soft)" text-anchor="middle">above threshold:</text>
     <text x="465" y="214" font-family="DM Sans, sans-serif" font-size="11" font-style="italic" fill="var(--ink-soft)" text-anchor="middle">curves flatten</text>
   </svg>
-  <figcaption>The compressor transfer curve. The diagonal dashed line is no compression (1:1): output equals input. The three solid lines show what happens at increasing ratios with the threshold fixed at -20 dB. Below the threshold every curve follows the 1:1 line. Above it, higher ratios bend the curve more flat: the loud signal is allowed to get less and less louder.</figcaption>
+  <figcaption>The compressor transfer curve. The diagonal dashed line is no compression (1:1): output equals input. The three solid lines show what happens at increasing ratios with the threshold fixed at −20 dB. Below the threshold every curve follows the 1:1 line. Above it, higher ratios flatten the curve more, and the output rises less for each dB of input.</figcaption>
 </figure>
 
-<p>Listen to the same source through three compression settings. The source is six short percussive hits: the first and fourth at a peak level (-3 dB), the second and fifth quieter (-9 dB), and the third and sixth quieter still (-15 dB). In each setting, listen for which hits get compressed and which don't:</p>
+<p>Listen to the same source through three compression settings. The source is six short percussive hits: the first and fourth at a peak level (−3 dB), the second and fifth quieter (−9 dB), and the third and sixth quieter still (−15 dB). In each setting, listen for which hits get compressed and which don't:</p>
 
 <figure class="audio-compare">
   <div class="audio-compare-title">Demo · Threshold and ratio</div>
@@ -519,36 +517,36 @@
   </div>
   <div class="audio-row">
     <span class="audio-label">Light
-      <span class="audio-label-sub">T = -12, R = 2:1</span>
+      <span class="audio-label-sub">T = −12, R = 2:1</span>
     </span>
     <audio controls src="../../assets/audio/module-02-week-05/tr-light.wav"></audio>
   </div>
   <div class="audio-row">
     <span class="audio-label">Medium
-      <span class="audio-label-sub">T = -18, R = 4:1</span>
+      <span class="audio-label-sub">T = −18, R = 4:1</span>
     </span>
     <audio controls src="../../assets/audio/module-02-week-05/tr-medium.wav"></audio>
   </div>
   <div class="audio-row">
     <span class="audio-label">Heavy
-      <span class="audio-label-sub">T = -24, R = 10:1</span>
+      <span class="audio-label-sub">T = −24, R = 10:1</span>
     </span>
     <audio controls src="../../assets/audio/module-02-week-05/tr-heavy.wav"></audio>
   </div>
-  <p class="audio-note">In the <em>light</em> setting, only the loudest hits get touched. In <em>medium</em>, the loud and middle hits are both compressed, and the quietest hits are now nearly the same level as the loud ones. In <em>heavy</em>, almost all the dynamic difference between hits is gone: they all sound roughly the same volume. All four files are normalized to the same peak level, so the perceived differences come from how the compression changed the <em>relationship</em> between hits, not from absolute level.</p>
+  <p class="audio-note">In the <em>light</em> setting, the loud and middle hits are compressed and the quietest hits are untouched. In <em>medium</em>, all three levels of hit are compressed, and the quietest hits are now nearly the same level as the loud ones. In <em>heavy</em>, almost all the dynamic difference between hits is gone: they all sound roughly the same volume. All four files are normalized to the same peak level. The differences you hear come from how the compression changed the <em>relationship</em> between hits.</p>
 </figure>
 
 <hr>
 
-<h2>4 · Attack and release</h2>
+<h2>4 · attack and release</h2>
 
-<p>Threshold and ratio describe <em>how much</em> compression happens. But sound is not static. It changes over time, sometimes very fast. Two more parameters control <em>when</em> the compressor engages and disengages: <strong>attack</strong> and <strong>release</strong>.</p>
+<p>Threshold and ratio describe <em>how much</em> compression happens. Sound changes over time, sometimes very fast, and two more parameters control <em>when</em> the compressor engages and disengages: <strong>attack</strong> and <strong>release</strong>. These are settings of the compressor, separate from the attack and release stages of a sound's envelope.</p>
 
-<p>The <span class="term">attack</span> is how quickly the compressor reacts when the signal crosses the threshold. A fast attack (1–5 ms) clamps down on the signal almost immediately. A slow attack (30–100 ms) lets the first part of a loud transient pass through before kicking in.</p>
+<p>The <span class="term">attack</span> is how quickly the compressor reacts when the signal crosses the threshold. A fast attack (1–5 ms) clamps down on the signal almost immediately. A slow attack (30–100 ms) lets the first part of a loud transient pass through before it starts reducing gain.</p>
 
-<p>The <span class="term">release</span> is how quickly the compressor stops working once the signal drops below the threshold. A fast release (50 ms or less) lets go quickly; useful for sounds with rapid changes, but can sound "pumpy" as the compressor rapidly opens and closes. A slow release (300+ ms) holds the gain reduction for longer, sounding smoother but potentially muting quiet parts that follow loud ones.</p>
+<p>The <span class="term">release</span> is how quickly the compressor stops working once the signal drops below the threshold. A fast release (50 ms or less) lets go quickly. It suits sounds with rapid changes, but it can cause pumping, an audible rise and fall in level, as the compressor rapidly lets go and clamps down again. A slow release (300+ ms) holds the gain reduction for longer, sounding smoother but potentially muting quiet parts that follow loud ones.</p>
 
-<p>Why these matter: the most distinctive parts of many sounds are their transients, the sharp attack of a drum hit, the pluck of a string, the burst at the start of a spoken consonant. A fast attack can squash these transients flat, robbing the sound of its character. A slow attack lets the transient through and only compresses the body of the sound, usually a more natural result.</p>
+<p>The most distinctive parts of many sounds are their <strong>transients</strong>: the sharp attack of a drum hit, the pluck of a string, the burst at the start of a spoken consonant. A fast attack can flatten these transients. A slow attack lets the transient through and only compresses the body of the sound, usually a more natural result.</p>
 
 <figure class="audio-compare">
   <div class="audio-compare-title">Demo · Attack and release</div>
@@ -582,29 +580,28 @@
     </span>
     <audio controls src="../../assets/audio/module-02-week-05/ar-slow-release.wav"></audio>
   </div>
-  <p class="audio-note">All four settings use the same threshold (-30 dB) and ratio (4:1): only the time constants differ. In <em>fast attack</em>, the leading edges of the kick and snare are noticeably softened, robbing the hits of their snap. In <em>slow attack</em>, the transients pop through while the body of each hit is held in check, usually the more natural-sounding choice. In <em>fast release</em>, you may hear the compressor "breathing" as it lets go quickly between hits. <em>Slow release</em> holds the gain reduction longer, giving a smoother, more consistent sound at the cost of some recovery time between events.</p>
+  <p class="audio-note">All four settings use the same threshold (−30 dB) and ratio (4:1); only the time constants differ. In <em>fast attack</em>, the leading edges of the kick and snare are noticeably softer. In <em>slow attack</em>, the transients pop through while the body of each hit is held in check. In <em>fast release</em>, you may hear the compressor pumping as it lets go quickly between hits. <em>Slow release</em> holds the gain reduction longer, giving a smoother, more consistent sound at the cost of some recovery time between events.</p>
 </figure>
 
-<p>A useful starting habit: when in doubt, use a medium attack (10–20 ms) and a medium release (100–200 ms). These let transients through, sound natural on most material, and give you something to adjust from. Aggressive settings (very fast attack, very fast release) are powerful but easy to overdo.</p>
+<p>When in doubt, start with a medium attack (10–20 ms) and a medium release (100–200 ms). Aggressive settings (very fast attack, very fast release) are powerful but easy to overdo.</p>
 
 <hr>
 
-<h2>5 · Limiting</h2>
+<h2>5 · limiting</h2>
 
-<p>A <span class="term">limiter</span> is a compressor pushed to extremes: a very high ratio (often 20:1 or higher, effectively infinite) and a hard ceiling that the signal is not allowed to exceed. Everything you learned about compression still applies; a limiter is the same tool with the threshold and ratio cranked. It is used at the end of a mix to set a maximum level and, often, to push the perceived loudness of the piece up.</p>
+<p>A <span class="term">limiter</span> is a compressor pushed to extremes: a very high ratio (often 20:1 or higher, effectively infinite) and a hard ceiling that the signal isn't allowed to exceed. Everything you learned about compression still applies. It's used at the end of a mix to set a maximum level and, often, to push the perceived loudness of the piece up.</p>
 
-<p>A limiter set with a ceiling of -0.3 dB will not let any sample exceed that level. Anything that would have gone louder gets clamped down. If you then add <strong>input gain</strong> before the limiter (structurally the mirror image of the makeup gain idea from Section 1, applied <em>before</em> the processor instead of after), the loud parts get clamped harder while the quiet parts ride up, and the piece becomes <em>louder on average</em> without ever exceeding the ceiling.</p>
+<p>A limiter set with a ceiling of −0.3 dB won't let any sample exceed that level. Anything that would have gone louder gets clamped down. If you then add <strong>input gain</strong> before the limiter (the mirror image of makeup gain from Section 1, applied <em>before</em> the processor instead of after), the loud parts get clamped harder while the quiet parts rise, and the piece becomes <em>louder on average</em> without ever exceeding the ceiling.</p>
 
-<p>This is useful for delivering finished material to listening contexts that demand consistent level (a class listening folder, an online release, a streaming platform). It is also where the worst habit in modern audio production happens.</p>
+<p>This is useful for delivering finished material to listening contexts that demand consistent level (a class listening folder, an online release, a streaming platform). It's also the tool behind the loudness wars.</p>
 
 <div class="callout">
   <div class="callout-title">The loudness wars</div>
-  <p>Starting in the 1990s and peaking in the early 2000s, commercial recordings competed to be the loudest. The reasoning was that louder records caught the ear when listeners scanned the radio dial, and that perception became an industry-wide arms race. Engineers pushed limiters harder and harder, crushing peaks to make the music feel louder on the listener's playback system.</p>
-  <p>The cost: lost dynamic range, squashed transients, distortion, listener fatigue. Streaming platforms have since added <em>loudness normalization</em>, which automatically lowers loud tracks to match a target level, meaning the loudness wars now lose you something (dynamic range and clarity) without even gaining the original benefit (sounding louder than the next track).</p>
-  <p>The lesson for this course: limiting is a useful tool. Like every tool, it can be abused. A piece doesn't need to be the loudest possible to feel impactful; usually the opposite.</p>
+  <p>Starting in the 1990s and peaking in the early 2000s, commercial recordings competed to be the loudest. The reasoning was that louder records caught the ear when listeners scanned the radio dial, and labels wanted each release to be louder than the last. Engineers pushed limiters harder and harder, crushing peaks to make the music feel louder on the listener's playback system.</p>
+  <p>The cost: lost dynamic range, squashed transients, distortion, listener fatigue. Streaming platforms have since added <em>loudness normalization</em>, which automatically lowers loud tracks to match a target level. A heavily limited track now loses dynamic range and clarity and plays no louder than the next track. Use a limiter gently: a piece doesn't need to be as loud as possible to have impact.</p>
 </div>
 
-<p>Listen to the same source at three levels of limiting. The peak level is identical across all three files: they all touch the same ceiling. But the <em>average level</em> climbs dramatically, and so does the audible damage:</p>
+<p>Listen to the same source at three levels of limiting. The peak level is identical across all three files: they all touch the same ceiling. The <em>average level</em> climbs, and so does the audible damage:</p>
 
 <figure class="audio-compare">
   <div class="audio-compare-title">Demo · Limiting and perceived loudness</div>
@@ -626,35 +623,34 @@
     </span>
     <audio controls src="../../assets/audio/module-02-week-05/limit-crushed.wav"></audio>
   </div>
-  <p class="audio-note"><strong>Listen carefully:</strong> the peak meter on all three would read about the same. But the <em>natural</em> version has clear contrast between the conga slaps and the quieter shaker and clave underneath them. The <em>light</em> version is consistently louder on average, with the slaps still audible as accents but slightly tamed. The <em>crushed</em> version is loud everywhere: the slaps have lost their punch, the quiet moments have been pushed up to nearly the same level, and you can hear distortion on the transients. The piece has been made <em>louder</em> by being made <em>worse</em>.</p>
+  <p class="audio-note">The <em>natural</em> version has clear contrast between the conga slaps and the quieter shaker and clave underneath them. The <em>light</em> version is consistently louder on average, with the slaps still audible as accents but slightly tamed. The <em>crushed</em> version is loud everywhere: the slaps have lost their punch, the quiet moments have been pushed up to nearly the same level, and you can hear distortion on the transients. The piece has been made <em>louder</em> by being made <em>worse</em>.</p>
 </figure>
 
 <hr>
 
-<h2>6 · When to use it, when not to</h2>
-
-<p>Compression and limiting are powerful tools that are easy to overuse. A few useful principles:</p>
+<h2>6 · when to use it, when not to</h2>
+<p>Compression and limiting are easy to overuse. Some working habits:</p>
 
 <ul>
-  <li><strong>Listen with it off first.</strong> If a sound or a mix sounds good without compression, leave it alone. Reach for the compressor when you have a specific problem: a sound that's jumping around in level, a kick that disappears into a wash, a piece whose loud parts overwhelm the quiet ones.</li>
-  <li><strong>Less is usually more.</strong> 1–3 dB of gain reduction is often the right amount. If you find yourself pulling 10 dB of reduction off a sound, ask whether the source itself needs to be different, or whether you should reduce the input level rather than crush the output.</li>
-  <li><strong>Compress for a reason.</strong> "It sounds louder" is not a reason on its own. If a track is just quiet, raise the fader. Reach for compression to even out an inconsistent performance, to control a sound that fights its way to the front of the mix, to add sustain to a sound by raising its tail, or to glue a group of sounds together so they feel like one element. Making a piece audibly louder past the ceiling (the Section 1 effect) is a real use too, but it is the use that asks for the most care. If you can't name what the compressor is doing for you, take it off.</li>
-  <li><strong>Limit only at the end.</strong> A limiter belongs on the master output of a finished piece, set to catch the very loudest peaks. It does not belong on every track. If you find yourself wanting to limit a single sound, you probably want a compressor.</li>
-  <li><strong>Trust your ears, not your eyes.</strong> Meters help, but the question is always how it sounds. A piece with a meter pegged at -3 dB that sounds dull is worse than a piece with peaks at -8 dB that sounds alive.</li>
+  <li>Listen with the compressor off first. If a sound or a mix sounds good without compression, leave it alone. Reach for the compressor when you have a specific problem: a sound that's jumping around in level, a kick that disappears into a wash, a piece whose loud parts overwhelm the quiet ones.</li>
+  <li>Small amounts work: 1–3 dB of gain reduction is often the right amount. If you find yourself pulling 10 dB of reduction off a sound, ask whether the source itself needs to be different, or whether you should reduce the input level rather than crush the output.</li>
+  <li>Compress for a reason. "It sounds louder" isn't a reason on its own. If a track is just quiet, raise its gain slider. Reach for compression to even out an inconsistent performance, to control a sound whose peaks jump far above the rest of the mix, to add sustain to a sound by raising its tail, or to glue a group of sounds together so they feel like one element. Making a piece louder on average at the same peak level (the Section 1 effect) is a real use too, but it's the use that asks for the most care. If you can't name what the compressor is doing for you, take it off.</li>
+  <li>Limit only at the end. A limiter belongs on the finished mix, set to catch the very loudest peaks; in Audacity, that means a mixed-down copy of the piece (see the Audacity dynamics reading). It doesn't belong on every track. If you find yourself wanting to limit a single sound, you probably want a compressor.</li>
+  <li>Trust your ears over the meters. Meters help, but the question is always how it sounds: a piece peaking at −3 dB can sound dull, and a piece peaking at −8 dB can sound alive.</li>
 </ul>
 
 <hr>
 
-<h2>7 · Vocabulary for listening</h2>
+<h2>7 · vocabulary for listening</h2>
 
-<p>Compression has a specific sound, or, more accurately, several specific sounds depending on the settings. Building a vocabulary for what compression <em>does</em> to a sound lets you hear when it's helping and when it's hurting. A few terms you'll hear in conversation:</p>
+<p>Compression has several sounds, depending on the settings. A few terms you'll hear in conversation:</p>
 
 <dl class="vocab">
   <dt>Transient</dt>
-  <dd>The brief, sharp burst of sound at the start of a note or hit before its body settles in: the strike of a drum, the pluck of a string, the consonant at the start of a spoken word. Transients carry most of a sound's character and recognizability. They're also the part of a signal that a compressor reshapes most, which is why attack settings matter so much. Strictly a property of the source signal, not a compression artifact, but the term comes up constantly in any conversation about compression.</dd>
+  <dd>The brief, sharp burst of sound at the start of a note or hit before its body settles in: the strike of a drum, the pluck of a string, the consonant at the start of a spoken word. Much of a sound's character and recognizability is in its transients. They're also the part of a signal that a compressor reshapes most. A transient is a property of the source signal rather than a compression artifact, and the term comes up constantly in conversations about compression.</dd>
 
   <dt>Pumping</dt>
-  <dd>When the compressor's gain reduction is audible as a rhythmic rise and fall: the music seems to "breathe" in and out at the rate of the compressor's release. Caused by aggressive ratios with fast release times. Sometimes used deliberately as an effect; usually a sign that something is set too aggressive.</dd>
+  <dd>When the compressor's gain reduction is audible as a rhythmic rise and fall: the music swells and ducks at the rate of the compressor's release. Caused by aggressive ratios with fast release times. Sometimes used deliberately as an effect; usually a sign that something is set too aggressively.</dd>
 
   <dt>Breathing</dt>
   <dd>A subtler version of pumping, where the noise floor or background of a sound rises and falls audibly as the compressor releases. Especially common on noisy sources.</dd>
@@ -663,29 +659,16 @@
   <dd>The transients have been clamped down too far. The sound has lost its punch and feels lifeless. Caused by very fast attack times on transient-rich material.</dd>
 
   <dt>Glued</dt>
-  <dd>A positive sense: when light compression on a group of sounds makes them feel like a single coherent element rather than separate parts. Often used on a drum bus or a full mix.</dd>
+  <dd>A positive term: light compression on a group of sounds makes them feel like a single coherent element rather than separate parts. Often used on a drum bus or a full mix.</dd>
 
   <dt>Pinned</dt>
   <dd>The signal is hitting the limiter ceiling continuously, with no headroom and no peaks above the rest. Indicates too much input gain into a limiter: the loudness-wars sound.</dd>
 </dl>
 
-<p>These terms aren't required vocabulary, but they're useful shorthand. The deeper skill is the one underneath: hearing what a compressor is doing to a sound, and knowing whether that's what you wanted.</p>
+<p>These terms aren't required vocabulary, but they're useful shorthand for one skill: hearing what a compressor is doing to a sound, and knowing whether that's what you wanted.</p>
 
 <hr>
 
-<div class="summary-box">
-  <h3>What to take from this reading</h3>
-  <ul>
-    <li><strong>Dynamic range</strong> is the difference between the loudest and quietest parts of a sound. Compression reduces it; limiting reduces it more, with a hard ceiling.</li>
-    <li><strong>Normalization</strong> is linear scaling: one number applied to every sample so the peak sits at a target. It changes the scale of a sound without changing its shape. The standard tool for sample prep; -1 dB is a safe target.</li>
-    <li><strong>Compression changes shape as well as scale.</strong> That means it changes tone as well as loudness. Every compressor imparts some character to whatever passes through it.</li>
-    <li><strong>Makeup gain</strong> is the boost applied after compression. Compression alone makes a sound quieter; compression with makeup gain is what makes a piece feel louder.</li>
-    <li><strong>Threshold</strong> sets where the compressor starts working. <strong>Ratio</strong> sets how aggressively. <strong>Attack</strong> sets how quickly the compressor reacts; <strong>release</strong> sets how quickly it lets go.</li>
-    <li><strong>Fast attack</strong> squashes transients. <strong>Slow attack</strong> lets them through. <strong>Fast release</strong> can pump. <strong>Slow release</strong> sounds smooth but can mute quiet moments after loud ones.</li>
-    <li><strong>Limiting</strong> at the end of a mix sets a ceiling. Push it gently. Crushing a piece into the ceiling makes it louder by making it worse.</li>
-    <li>Two habits: compress with a reason, and listen with it off first.</li>
-  </ul>
-</div>
 
 <div class="callout">
   <div class="callout-label">End of session</div>

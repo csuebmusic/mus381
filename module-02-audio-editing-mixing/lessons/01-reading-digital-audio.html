@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MUS 381 · Digital Audio Fundamentals</title>
+  <title>MUS 381 · digital audio fundamentals</title>
   <link rel="stylesheet" href="../../assets/style.css">
   <style>
     /* Reading-specific tweaks */
@@ -148,12 +148,12 @@
 </header>
 
 <div class="title-block">
-  <div class="module-tag">Module 02 · Digital audio, editing &amp; mixing</div>
-  <h1>Digital Audio Fundamentals</h1>
-  <div class="subtitle">What sound is, how computers store it, and why it matters for what you make.</div>
+  <div class="module-tag">Module 02 · digital audio, editing &amp; mixing</div>
+  <h1>digital audio fundamentals</h1>
+  <div class="subtitle">What sound is, how computers store it, and what the settings change in what you hear.</div>
 </div>
 
-<p class="lede">Before you can edit, mix, or produce, you need a working sense of what digital audio actually <em>is</em>. This reading covers the core ideas: sound as a physical phenomenon, the act of turning it into numbers a computer can work with, and the choices that determine how good (or how strange) those numbers can be made to sound. You don't need to memorize numbers or learn engineering. You do need to leave with intuition.</p>
+<p class="lede">Before you can edit, mix, or produce, you need a working sense of what digital audio <em>is</em>. Sound is a physical wave. A computer stores it as numbers, and the settings you choose change how good, or how strange, those numbers sound.</p>
 
 <div class="callout">
   <div class="callout-label">Today's gear</div>
@@ -163,7 +163,7 @@
 
 <hr>
 
-<h2>1 · Sound, before it's digital</h2>
+<h2>1 · sound, before it's digital</h2>
 
 <p>A sound is a tiny disturbance in the air around you. When something vibrates (a string, a vocal cord, a speaker cone, a slamming door) it pushes molecules of air outward, then pulls them back. Those molecules push the next ones, and the next, and so on. The disturbance moves outward in waves of changing pressure. When those waves reach your ear, they push on your eardrum, and your brain interprets the pattern as sound.</p>
 
@@ -182,12 +182,12 @@
     <path d="M 0.00 90.00 L 3.00 84.35 L 6.00 78.76 L 9.00 73.26 L 12.00 67.91 L 15.00 62.76 L 18.00 57.85 L 21.00 53.23 L 24.00 48.93 L 27.00 44.99 L 30.00 41.46 L 33.00 38.36 L 36.00 35.71 L 39.00 33.55 L 42.00 31.89 L 45.00 30.74 L 48.00 30.12 L 51.00 30.03 L 54.00 30.47 L 57.00 31.44 L 60.00 32.94 L 63.00 34.93 L 66.00 37.42 L 69.00 40.38 L 72.00 43.77 L 75.00 47.57 L 78.00 51.75 L 81.00 56.27 L 84.00 61.09 L 87.00 66.17 L 90.00 71.46 L 93.00 76.91 L 96.00 82.48 L 99.00 88.12 L 102.00 93.77 L 105.00 99.39 L 108.00 104.92 L 111.00 110.32 L 114.00 115.55 L 117.00 120.54 L 120.00 125.27 L 123.00 129.68 L 126.00 133.74 L 129.00 137.41 L 132.00 140.66 L 135.00 143.46 L 138.00 145.79 L 141.00 147.62 L 144.00 148.94 L 147.00 149.73 L 150.00 150.00 L 153.00 149.73 L 156.00 148.94 L 159.00 147.62 L 162.00 145.79 L 165.00 143.46 L 168.00 140.66 L 171.00 137.41 L 174.00 133.74 L 177.00 129.68 L 180.00 125.27 L 183.00 120.54 L 186.00 115.55 L 189.00 110.32 L 192.00 104.92 L 195.00 99.39 L 198.00 93.77 L 201.00 88.12 L 204.00 82.48 L 207.00 76.91 L 210.00 71.46 L 213.00 66.17 L 216.00 61.09 L 219.00 56.27 L 222.00 51.75 L 225.00 47.57 L 228.00 43.77 L 231.00 40.38 L 234.00 37.42 L 237.00 34.93 L 240.00 32.94 L 243.00 31.44 L 246.00 30.47 L 249.00 30.03 L 252.00 30.12 L 255.00 30.74 L 258.00 31.89 L 261.00 33.55 L 264.00 35.71 L 267.00 38.36 L 270.00 41.46 L 273.00 44.99 L 276.00 48.93 L 279.00 53.23 L 282.00 57.85 L 285.00 62.76 L 288.00 67.91 L 291.00 73.26 L 294.00 78.76 L 297.00 84.35 L 300.00 90.00 L 303.00 95.65 L 306.00 101.24 L 309.00 106.74 L 312.00 112.09 L 315.00 117.24 L 318.00 122.15 L 321.00 126.77 L 324.00 131.07 L 327.00 135.01 L 330.00 138.54 L 333.00 141.64 L 336.00 144.29 L 339.00 146.45 L 342.00 148.11 L 345.00 149.26 L 348.00 149.88 L 351.00 149.97 L 354.00 149.53 L 357.00 148.56 L 360.00 147.06 L 363.00 145.07 L 366.00 142.58 L 369.00 139.62 L 372.00 136.23 L 375.00 132.43 L 378.00 128.25 L 381.00 123.73 L 384.00 118.91 L 387.00 113.83 L 390.00 108.54 L 393.00 103.09 L 396.00 97.52 L 399.00 91.88 L 402.00 86.23 L 405.00 80.61 L 408.00 75.08 L 411.00 69.68 L 414.00 64.45 L 417.00 59.46 L 420.00 54.73 L 423.00 50.32 L 426.00 46.26 L 429.00 42.59 L 432.00 39.34 L 435.00 36.54 L 438.00 34.21 L 441.00 32.38 L 444.00 31.06 L 447.00 30.27 L 450.00 30.00 L 453.00 30.27 L 456.00 31.06 L 459.00 32.38 L 462.00 34.21 L 465.00 36.54 L 468.00 39.34 L 471.00 42.59 L 474.00 46.26 L 477.00 50.32 L 480.00 54.73 L 483.00 59.46 L 486.00 64.45 L 489.00 69.68 L 492.00 75.08 L 495.00 80.61 L 498.00 86.23 L 501.00 91.88 L 504.00 97.52 L 507.00 103.09 L 510.00 108.54 L 513.00 113.83 L 516.00 118.91 L 519.00 123.73 L 522.00 128.25 L 525.00 132.43 L 528.00 136.23 L 531.00 139.62 L 534.00 142.58 L 537.00 145.07 L 540.00 147.06 L 543.00 148.56 L 546.00 149.53 L 549.00 149.97 L 552.00 149.88 L 555.00 149.26 L 558.00 148.11 L 561.00 146.45 L 564.00 144.29 L 567.00 141.64 L 570.00 138.54 L 573.00 135.01 L 576.00 131.07 L 579.00 126.77 L 582.00 122.15 L 585.00 117.24 L 588.00 112.09 L 591.00 106.74 L 594.00 101.24 L 597.00 95.65 L 600.00 90.00"
           fill="none" stroke="var(--accent)" stroke-width="2"/>
   </svg>
-  <figcaption>A sine wave: the simplest possible waveform. Smooth. Continuous. Infinite resolution.</figcaption>
+  <figcaption>A sine wave: the simplest possible waveform, smooth and continuous.</figcaption>
 </figure>
 
 <p>Two things about a wave matter most for how we hear it: how <strong>fast</strong> it wiggles, and how <strong>big</strong> the wiggles are. Each one has a name in physics, and a different name in music.</p>
 
-<h3>Frequency (heard as pitch)</h3>
+<h3>frequency (heard as pitch)</h3>
 
 <p><strong>Frequency</strong> is how many full wave cycles happen per second. The unit is the <strong>hertz</strong> (Hz). One Hz is one cycle per second; 100 Hz is one hundred cycles per second; 1,000 Hz is one kilohertz (kHz). Faster wiggle means higher frequency.</p>
 
@@ -238,16 +238,16 @@
     <line x1="0" y1="240" x2="600" y2="240" stroke="var(--ink-soft)" stroke-width="0.8"/>
     <text x="300" y="258" font-family="DM Mono, monospace" font-size="10" fill="var(--ink-soft)" text-anchor="middle">time →</text>
   </svg>
-  <figcaption>Two pure tones, drawn over the same span of time. The top wave (220 Hz) completes 2 cycles; the bottom wave (440 Hz) completes 4. The faster wave is heard as a higher pitch. These two are exactly an octave apart, which is what doubling the frequency always sounds like.</figcaption>
+  <figcaption>Two pure tones, drawn over the same span of time. The top wave (220 Hz) completes 2 cycles; the bottom wave (440 Hz) completes 4. The faster wave is heard as a higher pitch. These two are exactly an octave apart: doubling the frequency always raises the pitch an octave.</figcaption>
 </figure>
 
-<h3>Amplitude (heard as loudness)</h3>
+<h3>amplitude (heard as loudness)</h3>
 
-<p><strong>Amplitude</strong> is how big the wave is, measured from the centerline to its peak. A bigger wave moves more air, hits your eardrum harder, and sounds louder. A smaller wave is quieter.</p>
+<p><strong>Amplitude</strong> is how big the wave is, measured from the centerline to its peak. A bigger wave pushes harder on your eardrum and sounds louder. A smaller wave is quieter.</p>
 
-<p>Loudness is conventionally measured in <strong>decibels</strong> (dB). In digital audio, dB values run from 0 (the loudest a digital signal can be) downward into negative numbers. The more negative the number, the quieter the sound. So <strong>0 dB</strong> is the loudest possible (any louder and the signal would clip), and something at <strong>-12 dB</strong> is much quieter than something at <strong>-3 dB</strong>. You'll see these numbers everywhere in Audacity: the level meter shows them while you record, the volume slider on each track is in dB, and the export tool reports your file's peak level in dB.</p>
+<p>Loudness is conventionally measured in <strong>decibels</strong> (dB). In digital audio, dB values run from 0 (the loudest a digital signal can be) downward into negative numbers. The more negative the number, the quieter the sound. Anything above <strong>0 dB</strong> clips: the top of the wave gets cut off. A sound at <strong>-12 dB</strong> is much quieter than one at <strong>-3 dB</strong>. You'll see these numbers everywhere in Audacity: the level meter shows them while you record, the volume slider on each track is in dB, and the export tool reports your file's peak level in dB.</p>
 
-<p>You don't need to memorize the math. The one rule of thumb worth knowing is that <strong>-6 dB is half the amplitude</strong>, so a wave that peaks at -6 dB is half as tall on screen as one that peaks at 0 dB. This is what the next visual shows.</p>
+<p>You don't need to memorize the math. One rule of thumb: <strong>-6 dB is half the amplitude</strong>. A wave that peaks at -6 dB is half as tall on screen as one that peaks at 0 dB.</p>
 
 <figure>
   <svg viewBox="-50 -8 680 240" xmlns="http://www.w3.org/2000/svg">
@@ -289,17 +289,17 @@
   <figcaption>Two waves at the same frequency (same pitch), but different amplitudes. The top wave's peaks reach all the way to the loudest possible value (0 dB); the bottom wave's peaks reach only halfway, which is -6 dB. They sound like the same pitch, but the bottom one is quieter.</figcaption>
 </figure>
 
-<p><strong>Frequency</strong> (Hz) and <strong>amplitude</strong> (dB) are the two basic measurements for any wave. Hold onto both terms; they show up in every audio context for the rest of the course, and they show up in Audacity the moment you import a sound.</p>
+<p><strong>Frequency</strong> (Hz) and <strong>amplitude</strong> (dB) are the two basic measurements for any wave. You'll work with both in Audacity from your first session.</p>
 
-<p>That's sound in the analog world: a continuous, smoothly changing physical phenomenon. A microphone is a device that catches those pressure waves and turns them into a corresponding electrical signal: a tiny voltage that wiggles in time with the air. The signal is still continuous, still analog. It's just electricity instead of air. To work with sound on a computer, we have to do something else: turn that continuous signal into <strong>numbers</strong>.</p>
+<p>A microphone catches those pressure waves and turns them into a matching electrical signal: a tiny voltage that wiggles in time with the air. The signal is still continuous, still analog, in electricity instead of air. To work with sound on a computer, we have to turn that continuous signal into <strong>numbers</strong>.</p>
 
 <hr>
 
-<h2>2 · From wave to numbers: sampling</h2>
+<h2>2 · from wave to numbers: sampling</h2>
 
-<p>Computers don't deal in continuous things. They deal in discrete values: specific numbers, one after another. So to capture an analog signal in a computer, we have to <em>measure</em> it at regular intervals and write down the result. That measurement-at-an-instant is called a <strong>sample</strong>. The act of taking those measurements is called <strong>sampling</strong>.</p>
+<p>Computers don't deal in continuous things. They deal in discrete values: specific numbers, one after another. To capture an analog signal in a computer, we <em>measure</em> it at regular intervals and write down the result. That measurement-at-an-instant is called a <strong>sample</strong>. The act of taking those measurements is called <strong>sampling</strong>.</p>
 
-<p>Imagine you're tracking the height of a ball bouncing across the floor, but instead of recording its position continuously, you only check where it is once every fraction of a second. Each check gives you a single number: the ball's height at that moment. String enough of those numbers together and you have a usable record of the bounce, not perfect, but close enough that you could re-create the motion later. Digital audio works the same way. Many measurements per second, each one a number, all stored in order.</p>
+<p>Imagine you're tracking the height of a ball bouncing across the floor, but instead of recording its position continuously, you only check where it is once every fraction of a second. Each check gives you a single number: the ball's height at that moment. String enough of those numbers together and you have a usable record of the bounce, not perfect, but close enough that you could re-create the motion later. Digital audio works the same way: many measurements per second, each one a number, stored in order.</p>
 
 <figure>
   <svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
@@ -350,17 +350,17 @@
   <figcaption>The same wave, sampled at regular intervals. Each dot is one number stored.</figcaption>
 </figure>
 
-<p>To play the sound back, the computer reads those numbers in order and reconstructs the wave, sending corresponding voltages to a speaker, which moves air, which (eventually) reaches your ear. Two devices make this work in both directions: an <strong>analog-to-digital converter (ADC)</strong> handles the recording side, and a <strong>digital-to-analog converter (DAC)</strong> handles playback. Your audio interface contains both.</p>
+<p>To play the sound back, the computer reads those numbers in order and reconstructs the wave, sending matching voltages to a speaker, which moves air, which (eventually) reaches your ear. Two devices handle the conversion: an <strong>analog-to-digital converter (ADC)</strong> on the recording side, and a <strong>digital-to-analog converter (DAC)</strong> for playback. Your audio interface contains both.</p>
 
-<p>Two questions naturally come up when sampling. First: how often do we measure? Second: how precisely do we measure each one? These are the two fundamental settings of digital audio: <strong>sample rate</strong> and <strong>bit depth</strong>.</p>
+<p>Sampling has two settings: <strong>sample rate</strong> (how often you measure) and <strong>bit depth</strong> (how precisely you measure each sample).</p>
 
 <hr>
 
-<h2>3 · Sample rate</h2>
+<h2>3 · sample rate</h2>
 
-<p><strong>Sample rate</strong> is how many measurements we take per second. The unit is <strong>also hertz</strong> (Hz). Same unit you saw in section 1, counting a different thing: in section 1, Hz was wave cycles per second; here, it's measurements per second. The most familiar sample rate is the one CD audio uses: <strong>44,100 Hz</strong>, usually written as <strong>44.1 kHz</strong>. That means 44,100 measurements per second, per channel. This course works at a slightly higher rate, 48 kHz.</p>
+<p><strong>Sample rate</strong> is how many measurements we take per second. The unit is <strong>also hertz</strong> (Hz). Same unit you saw in section 1, counting a different thing: in section 1, Hz was wave cycles per second; here, it's measurements per second. A familiar sample rate is the one CD audio uses: <strong>44,100 Hz</strong>, usually written as <strong>44.1 kHz</strong>. That means 44,100 measurements per second, per channel. This course works at a slightly higher rate, 48 kHz.</p>
 
-<p>The intuition is straightforward: more measurements per second means a more accurate digital representation of the original wave. Fewer measurements means the digital version starts to lose detail, especially at higher frequencies, where the wave is moving quickly and you need many samples per cycle to track it.</p>
+<p>More measurements per second means a more accurate digital representation of the original wave. Fewer measurements means the digital version starts to lose detail, especially at higher frequencies, where the wave moves quickly and needs more samples per cycle to track it.</p>
 
 <figure>
   <svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
@@ -428,27 +428,27 @@
   <figcaption>Same wave, two sample rates. Up top, plenty of samples track the curve closely. Below, only a handful per cycle: the dashed line is what the digital signal looks like. The wave is still there, but rougher.</figcaption>
 </figure>
 
-<h3>Why 44.1 kHz?</h3>
+<h3>why 44.1 kHz?</h3>
 
-<p>The number isn't arbitrary. It comes from a principle called the <strong>Nyquist theorem</strong>, which says: to accurately capture a sound wave at a given frequency, you need to sample at <em>at least twice that frequency</em>. The highest frequency a typical young human can hear is around 20,000 Hz (20 kHz). Double that is 40 kHz. The actual standard ended up at 44.1 kHz for historical engineering reasons we'll come back to in a moment, with a small margin above 40 kHz to leave room for the electronics to do their work.</p>
+<p>44.1 kHz follows from a principle called the <strong>Nyquist theorem</strong>, which says: to accurately capture a sound wave at a given frequency, you need to sample at <em>more than twice that frequency</em>. The highest frequency a typical young human can hear is around 20,000 Hz (20 kHz). Double that is 40 kHz. The standard ended up at 44.1 kHz, a small margin above 40 kHz that leaves room for the anti-alias filter (section 5).</p>
 
-<p>The Nyquist theorem is the only piece of math you need to know to make sense of why sample rates are what they are. <strong>Half the sample rate is the highest frequency that can be represented.</strong> At 44.1 kHz, you can capture frequencies up to about 22 kHz, which covers the entire audible range, with a little room to spare.</p>
+<p><strong>Half the sample rate is the upper limit: only frequencies below it can be represented.</strong> At 44.1 kHz, you can capture frequencies up to about 22 kHz, which covers the entire audible range, with a little room to spare.</p>
 
 <h3>44.1 kHz vs. 48 kHz</h3>
 
-<p>You'll see two sample rates everywhere in modern audio production: <strong>44.1 kHz</strong> and <strong>48 kHz</strong>. Both work; both cover the audible range with margin to spare. The reason there are two comes down to history.</p>
+<p>You'll see two sample rates everywhere in audio production: <strong>44.1 kHz</strong> and <strong>48 kHz</strong>. Both cover the audible range with room to spare.</p>
 
-<p><strong>44.1 kHz</strong> became the standard for the audio CD in 1980. Early digital audio recorders were built from adapted video equipment, and the math of fitting audio onto video tape ended up at 44.1 kHz. CDs took that rate and ran with it. Anything intended for music distribution today still defaults to 44.1.</p>
+<p><strong>44.1 kHz</strong> became the standard for the audio CD in 1980. Early digital audio recorders were built from adapted video equipment, and the math of fitting audio onto video tape ended up at 44.1 kHz. Much of the music distributed today is still at 44.1 kHz.</p>
 
-<p><strong>48 kHz</strong> became the standard for digital video and film. When sound is paired with picture, 48 kHz syncs more cleanly with various video frame rates. It's the default rate inside most professional video tools, broadcast equipment, and (increasingly) modern audio interfaces. It's what most contemporary digital production environments (including Ableton) assume by default.</p>
+<p><strong>48 kHz</strong> became the standard for digital video and film. When sound is paired with picture, 48 kHz syncs more cleanly with video frame rates. It's the usual rate in video tools and broadcast equipment.</p>
 
-<p>For this course, we work at <strong>48 kHz</strong> the whole way through. You'll still meet 44.1 kHz everywhere in the wild: every CD, much of what you download.</p>
+<p>For this course, we work at <strong>48 kHz</strong> the whole way through. You'll still find 44.1 kHz everywhere outside class: every CD, much of what you download.</p>
 
-<p>Neither is "better." Both are conventions, chosen for different historical reasons. Knowing both exist prevents you from being surprised when a project file or interface uses one when you expected the other.</p>
+<p>Both are conventions, chosen for different historical reasons. A project file or interface can be set to either one.</p>
 
-<h3>What does "human hearing range" actually sound like?</h3>
+<h3>what does "human hearing range" sound like?</h3>
 
-<p>The often-quoted range of human hearing is <strong>20 Hz to 20 kHz</strong>. The numbers are abstract until you hear them. Try the tone generator below: it plays a pure sine wave at whatever frequency you choose. Drag the slider to explore the audible range. (The slider is logarithmic, like musical pitch: every doubling of frequency is one octave higher.)</p>
+<p>The often-quoted range of human hearing is <strong>20 Hz to 20 kHz</strong>. Try the tone generator below: it plays a pure sine wave at whatever frequency you choose. Drag the slider to explore the audible range. (The slider is logarithmic, like musical pitch: every doubling of frequency is one octave higher.)</p>
 
 <div class="tone-tool" id="toneTool">
   <div class="tone-controls">
@@ -544,9 +544,9 @@
 })();
 </script>
 
-<p>A few useful frequencies to find on the slider: <strong>440 Hz</strong> is concert A (the note an oboe plays for an orchestra to tune). <strong>1 kHz</strong> is the reference frequency engineers use for measurements (a kind of mid-range neutral). Below <strong>60 Hz</strong> you're in sub-bass territory where you feel as much as you hear. Above <strong>10 kHz</strong> you're in the very high treble: sibilance, cymbal sheen, "air." Almost no one over 30 can hear above 16 kHz cleanly.</p>
+<p>A few useful frequencies to find on the slider: <strong>440 Hz</strong> is concert A (the note an oboe plays for an orchestra to tune). <strong>1 kHz</strong> is the reference frequency engineers use for measurements (a kind of mid-range neutral). Below <strong>60 Hz</strong> you're in sub-bass territory where you feel as much as you hear. Above <strong>10 kHz</strong> you're in the very high treble: sibilance, cymbal sheen, "air." Hearing above about 16 kHz often fades with age.</p>
 
-<p>Now, with that range in mind, look at where the Nyquist limits actually fall, and how the two sample rates relate to them on the same axis:</p>
+<p>At 44.1 kHz the Nyquist limit is 22.05 kHz; at 48 kHz it's 24 kHz. Both are above the top of human hearing.</p>
 
 <figure>
   <svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
@@ -618,7 +618,7 @@
       <text x="560" y="152">50 kHz</text>
     </g>
   </svg>
-  <figcaption>The audible range, two Nyquist limits, and the two common sample rates on a single linear frequency axis. Each Nyquist limit is exactly half its sample rate (the dotted arrows). Anything above the Nyquist line can't be properly represented by that sample rate: the result is a phenomenon called <em>aliasing</em>, which we'll come back to in section 5.</figcaption>
+  <figcaption>The audible range, two Nyquist limits, and the two common sample rates on a single linear frequency axis. Each Nyquist limit is exactly half its sample rate (the dotted arrows). Anything above the Nyquist line can't be properly represented by that sample rate: the result is <em>aliasing</em> (section 5).</figcaption>
 </figure>
 
 <div class="audio-compare">
@@ -635,16 +635,16 @@
     <div class="audio-label">4 kHz<span class="audio-label-sub">truly lo-fi</span></div>
     <audio controls preload="metadata" src="../../assets/audio/module-02-week-02/sr-4k-16bit.wav"></audio>
   </div>
-  <p class="audio-note">Listen on headphones if you can. As the sample rate drops, high frequencies disappear first: the sharp attacks soften, the brightness dulls, and at 4 kHz everything sounds like it's behind a thick wall. <em>Some artists deliberately reach for low sample rates as an aesthetic. You'll recognize the sound from old video games, lo-fi hip-hop, and certain glitch records.</em></p>
+  <p class="audio-note">Listen on headphones if you can. As the sample rate drops, high frequencies disappear first: the sharp attacks soften, the brightness dulls, and at 4 kHz everything sounds like it's behind a thick wall. <em>Some artists use low sample rates on purpose, for their sound. You'll recognize it from old video games, lo-fi hip-hop, and certain glitch records.</em></p>
 </div>
 
 <hr>
 
-<h2>4 · Bit depth</h2>
+<h2>4 · bit depth</h2>
 
-<p>If sample rate is about <em>when</em> we measure, <strong>bit depth</strong> is about <em>how precisely</em>. Each sample is a number with finite resolution. Bit depth tells you how many possible values that number can take. Each sample is stored as a binary number, and bit depth is how many digits long that number is.</p>
+<p>If sample rate is about <em>when</em> we measure, <strong>bit depth</strong> is about <em>how precisely</em>. Each sample is stored as a binary number, and bit depth is how many bits (binary digits) that number has.</p>
 
-<p>An 8-bit sample can take 256 possible values (because 2 to the power of 8 is 256). A 16-bit sample can take 65,536 values. A 24-bit sample can take over 16 million values. The more bits, the finer the gradations of amplitude available: the more precisely each sample can describe the actual height of the wave at that moment.</p>
+<p>An 8-bit sample can take 256 possible values (2 to the power of 8 is 256). A 16-bit sample can take 65,536 values. A 24-bit sample can take over 16 million values. The more bits, the finer the gradations of amplitude available: the more precisely each sample can describe the height of the wave at that moment.</p>
 
 <figure>
   <svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
@@ -693,15 +693,15 @@
   <figcaption>The same wave at high and low bit depth. With many gradations available, the digital signal closely tracks the original. With only a few, each sample has to round to the nearest available value, and the result is chunky and crude.</figcaption>
 </figure>
 
-<p>What happens when bit depth is too low? The amplitude of each sample has to round to the nearest available value. Subtle differences get flattened. Quiet sounds can disappear entirely if they're too small to register on the coarse grid. Worst of all, the rounding itself produces a kind of low-level hiss: what engineers call <strong>quantization noise</strong>. The result is a noisier, grainier, less detailed sound.</p>
+<p>What happens when bit depth is too low? The amplitude of each sample has to round to the nearest available value. Subtle differences get flattened. Quiet sounds can disappear entirely if they're too small to register on the coarse grid. The rounding also produces a low-level hiss: what engineers call <strong>quantization noise</strong>. The result is a noisier sound with less detail.</p>
 
-<p>The CD standard is <strong>16-bit</strong>, with 65,536 possible values per sample. This is enough for high-quality audio: the noise floor is so low you can barely hear it. Professional recording often uses <strong>24-bit</strong>, which gives even more headroom for processing. <strong>32-bit</strong> goes further still and is the highest resolution offered by modern DAWs like Ableton, Logic, and Pro Tools. <strong>8-bit</strong> audio sounds noticeably grainy and was used in early samplers and video game music. <strong>4-bit</strong> sounds genuinely degraded: a deliberate aesthetic effect.</p>
+<p>The CD standard is <strong>16-bit</strong>, with 65,536 possible values per sample. That's enough for high-quality audio: the noise floor is so low you can barely hear it. Professional recording often uses <strong>24-bit</strong>, with a noise floor lower still and more room to record and process below 0 dB. <strong>32-bit</strong> goes further and is the highest resolution offered by DAWs like Ableton, Logic, and Pro Tools. <strong>8-bit</strong> audio sounds grainy and was used in early samplers and video game music. <strong>4-bit</strong> sounds degraded, and producers use it as a deliberate effect.</p>
 
-<h3>What we'll use in this course</h3>
+<h3>what we'll use in this course</h3>
 
-<p>You work at <strong>24-bit</strong> through Modules 2 and 3, which gives you headroom to edit and record without losing quiet detail. In Module 4 you step up to <strong>32-bit</strong> when you export your finished work in Ableton. The sample rate stays at 48 kHz the whole time; bit depth is the only setting that changes, and only at the end.</p>
+<p>You work at <strong>24-bit</strong> through Modules 2 and 3. In Module 4 you export your finished work from Ableton at <strong>32-bit</strong>. The sample rate stays at 48 kHz the whole time; bit depth is the only setting that changes, and only at the end.</p>
 
-<p>You'll see 16, 24, and 32-bit in the wild. The standards are evolving: what was "professional" twenty years ago (16-bit) is now baseline, and what was high-end ten years ago (24-bit) is now common. The trend is toward more headroom.</p>
+<p>You'll see 16, 24, and 32-bit outside class. Sixteen-bit, once the professional format, is now the baseline; 24-bit, once high-end, is now common.</p>
 
 <div class="audio-compare">
   <div class="audio-compare-title">Listen: same sound, three bit depths</div>
@@ -717,18 +717,18 @@
     <div class="audio-label">4-bit<span class="audio-label-sub">degraded on purpose</span></div>
     <audio controls preload="metadata" src="../../assets/audio/module-02-week-02/bd-4bit-44k.wav"></audio>
   </div>
-  <p class="audio-note">Pay attention to what happens during the quiet decay at the end of each clip. At 16-bit the noise floor is inaudible. At 8-bit you'll hear a low hiss. At 4-bit the noise is loud and obviously grainy: that's the sound of the rounding errors becoming the signal. Notice too that the 4-bit version goes completely silent earlier than the others: when sample values get small enough, they round all the way down to zero. The decay tail is literally lost. <em>Like low sample rates, low bit depths have an aesthetic of their own. Some producers reach for them on purpose.</em></p>
+  <p class="audio-note">Pay attention to what happens during the quiet decay at the end of each clip. At 16-bit the noise floor is inaudible. At 8-bit you'll hear a low hiss. At 4-bit the noise is loud and obviously grainy: that's the sound of the rounding errors becoming the signal. Notice too that the 4-bit version goes completely silent earlier than the others: when sample values get small enough, they round all the way down to zero. The decay tail is lost.</p>
 </div>
 
 <hr>
 
-<h2>5 · When sample rate isn't enough: aliasing</h2>
+<h2>5 · when sample rate isn't enough: aliasing</h2>
 
-<p>Sample rate and bit depth are abstract numbers, but each has a specific audible consequence when it isn't enough for the job. Knowing the names of those consequences turns mysterious artifacts into something you can identify, avoid, or (if you want) deliberately use. The next two sections look at each consequence in turn.</p>
+<p>Too low a sample rate causes aliasing. Too low a bit depth raises the noise floor (section 6).</p>
 
-<p>The Nyquist theorem says you can only capture frequencies below half the sample rate. But what happens to frequencies above that limit? They don't politely disappear. They <strong>fold back</strong> into the audible range as false lower frequencies. This phenomenon is called <strong>aliasing</strong>.</p>
+<p>The Nyquist theorem says you can only capture frequencies below half the sample rate. What happens to frequencies above that limit? They <strong>fold back</strong> into the audible range as false lower frequencies. This is called <strong>aliasing</strong>.</p>
 
-<p>You've seen aliasing without knowing the name. In old movies, a wagon wheel spinning forward sometimes appears to spin backward, because the camera's frame rate isn't fast enough to catch every spoke. The wheel's rotation is "above the camera's Nyquist limit," so the eye (or the film) reconstructs a slower, false rotation. Audio aliasing is the same thing happening to sound: a real high frequency gets reconstructed as a false low one.</p>
+<p>You've seen aliasing without knowing the name. In old movies, a wagon wheel spinning forward sometimes appears to spin backward: the camera's frame rate is too slow to catch every spoke. The wheel's rotation is "above the camera's Nyquist limit," and the eye (or the film) reconstructs a slower, false rotation. Audio aliasing is the same thing happening to sound: a real high frequency gets reconstructed as a false low one.</p>
 
 <figure>
   <svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
@@ -774,9 +774,9 @@
   <figcaption>A sine wave sampled too sparsely. The actual signal (grey) is a high frequency, well above this sample rate's Nyquist limit. The samples (rust dots) catch the wave at unfortunate moments, and connecting them produces a curve (rust dashes) that looks like a much lower frequency. That false low frequency is aliasing: a frequency the source never contained, manufactured by the sampling process.</figcaption>
 </figure>
 
-<p>Aliasing is genuinely strange-sounding. It produces inharmonic whistles, sliding tones, and a kind of sour, "off" quality on bright sounds. Once you hear it, you recognize it.</p>
+<p>Aliasing sounds strange: inharmonic whistles, sliding tones, and a sour, "off" quality on bright sounds. Once you hear it, you recognize it.</p>
 
-<p>This is why <strong>every digital audio system applies an anti-alias filter before sampling</strong>. The filter removes any content above the Nyquist limit before the ADC sees it, so there's nothing left to fold back. Your audio interface does this automatically; so does Audacity when it resamples a file to a lower rate; so do all professional ADCs. You don't have to think about it as long as you stay inside the standard tools. But knowing the filter exists tells you what "above Nyquist" marks: the boundary of what reality the digital system can hold.</p>
+<p>Digital audio systems apply an <strong>anti-alias filter</strong> before sampling. The filter removes any content above the Nyquist limit before the ADC sees it, and nothing is left to fold back. Your audio interface does this automatically; so does Audacity when it resamples a file to a lower rate. Inside the course's tools, you don't have to think about it. The Nyquist limit is the ceiling on the frequencies the digital system can store.</p>
 
 <div class="audio-compare">
   <div class="audio-compare-title">Listen: with vs. without anti-alias filtering</div>
@@ -792,26 +792,26 @@
     <div class="audio-label">8 kHz, no filter<span class="audio-label-sub">aliasing artifacts</span></div>
     <audio controls preload="metadata" src="../../assets/audio/module-02-week-02/alias-8k-no-filter.wav"></audio>
   </div>
-  <p class="audio-note">Start with the source so you have the "real" reference in your ears. Then compare the two 8 kHz versions. The filtered version (the same file you heard in section 3) simply rolls off the high frequencies, sounding muffled. The no-filter version rolls those same high frequencies <em>down</em> into the audible range as false ones, producing whistles and inharmonic ring. The first is what your ADC actually does. The second is what would happen if it didn't, and is also what the 4 kHz file in section 3 would have sounded like if we hadn't filtered it. <em>Some chiptune and 8-bit aesthetics deliberately court aliasing for its specific texture.</em></p>
+  <p class="audio-note">Start with the source, the "real" reference. Then compare the two 8 kHz versions. The filtered version (the same file you heard in section 3) rolls off the high frequencies and sounds muffled. The no-filter version folds those same high frequencies <em>down</em> into the audible range as false ones, producing whistles and inharmonic ring. The first is what your ADC does. The second is what would happen without the filter, and the 4 kHz file in section 3 would have aliased the same way without its filter. <em>Some chiptune and 8-bit music uses aliasing on purpose, for its texture.</em></p>
 </div>
 
 <hr>
 
-<h2>6 · When bit depth isn't enough: signal-to-noise ratio</h2>
+<h2>6 · when bit depth isn't enough: signal-to-noise ratio</h2>
 
 <p>Bit depth limits how soft a sound can be before it disappears into quantization noise. The metric for this is <strong>signal-to-noise ratio (SNR)</strong>: the ratio of your loudest signal to the noise floor, measured in decibels (dB). Higher is better.</p>
 
-<p>There's a clean rule of thumb: <strong>each bit gives you about 6 dB of SNR.</strong> So:</p>
+<p>A rule of thumb: <strong>each bit gives you about 6 dB of SNR.</strong></p>
 
 <ul>
-  <li><strong>4-bit:</strong> ~24 dB SNR (loud hiss)</li>
-  <li><strong>8-bit:</strong> ~48 dB SNR (audible hiss)</li>
-  <li><strong>16-bit:</strong> ~96 dB SNR (inaudible noise floor for music)</li>
-  <li><strong>24-bit:</strong> ~144 dB SNR (more than human hearing can resolve)</li>
-  <li><strong>32-bit:</strong> ~192 dB SNR (vastly more than human hearing can resolve)</li>
+  <li><strong>4-bit</strong> gives about 24 dB of SNR, a loud hiss.</li>
+  <li><strong>8-bit</strong> gives about 48 dB, an audible hiss.</li>
+  <li><strong>16-bit</strong> gives about 96 dB, a noise floor you can't hear in music.</li>
+  <li><strong>24-bit</strong> gives about 144 dB, more than human hearing can resolve.</li>
+  <li><strong>32-bit</strong> gives about 192 dB, far more than human hearing can resolve.</li>
 </ul>
 
-<p>For comparison, alongside the dynamic range of unamplified music:</p>
+<p>Compare these with the dynamic range of unamplified music:</p>
 
 <figure>
   <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
@@ -890,44 +890,44 @@
     <text x="475" y="168" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="middle">ff to pp</text>
     <text x="475" y="181" font-family="DM Mono, monospace" font-size="9" fill="var(--ink-soft)" text-anchor="middle">~80 dB range</text>
   </svg>
-  <figcaption>Dynamic range available at five bit depths, with the dynamic range of a live orchestra shown as a real-world reference. The orchestra spans from fortissimo near full scale down to pianissimo around -86 dBFS, an ~80 dB range. Notice that the orchestra's quietest pianissimo falls below the noise floor of 4-bit and 8-bit, but fits comfortably inside 16-bit and is dwarfed by 24- and 32-bit. That's why CDs went 16-bit, why pro recording moved to 24-bit, and why DAWs offer 32-bit for the working stages where you most want the headroom.</figcaption>
+  <figcaption>Signal-to-noise ratio at five bit depths, with the dynamic range of a live orchestra as a real-world reference. The orchestra spans from fortissimo near full scale down to pianissimo around -86 dB, an ~80 dB range. The orchestra's quietest pianissimo falls below the noise floor of 4-bit and 8-bit, fits inside 16-bit, and is far above the noise floor of 24- and 32-bit.</figcaption>
 </figure>
 
-<p>This is why CDs settled on 16-bit: it covers the full dynamic range of unamplified music with a small margin to spare. It's also why professional recording uses 24-bit even when delivering at 16-bit: the extra headroom protects you from accidentally clipping during recording or losing detail during processing. <strong>You record with margin, then commit to less margin only at the final mixdown.</strong></p>
+<p>CDs settled on 16-bit: it covers the full dynamic range of unamplified music with a small margin to spare. Professional recording uses 24-bit even when the final delivery is 16-bit. With 24 bits you can record well below 0 dB, leaving headroom against clipping, and the quiet parts stay clear of the noise floor through processing. <strong>You record with headroom, and you reduce the bit depth, if at all, only for the final delivery file.</strong></p>
 
-<p>That principle (record with headroom, commit later) recurs throughout audio work. Module 3 returns to it.</p>
+<p>Module 3 returns to headroom.</p>
 
 <hr>
 
-<h2>7 · File formats</h2>
+<h2>7 · file formats</h2>
 
 <p>Once you have an array of numbers representing audio, you have to store them somewhere. A <strong>file format</strong> is an agreement about how those numbers (and information about them: sample rate, bit depth, number of channels, length, etc.) get arranged inside a file. Different formats make different tradeoffs.</p>
 
-<h3>Uncompressed: WAV and AIFF</h3>
+<h3>uncompressed: WAV and AIFF</h3>
 
-<p>The simplest formats just store the numbers as they are. Every sample, written down in order. No clever tricks. <strong>WAV</strong> (developed by Microsoft) and <strong>AIFF</strong> (developed by Apple) are the two industry-standard uncompressed formats. They sound identical to each other, they're just different containers for the same kind of data.</p>
+<p>The simplest formats store the numbers as they are: every sample, written down in order. <strong>WAV</strong> (developed by Microsoft and IBM) and <strong>AIFF</strong> (developed by Apple) are the two common uncompressed formats. They sound identical to each other: they're different containers for the same kind of data.</p>
 
 <p>Uncompressed audio is the highest quality possible from your source recording. The downside is file size. A 3-minute stereo song at 44.1 kHz / 16-bit takes about 30 MB as a WAV file. That was a lot in 1995 when CDs were the main music format. It's nothing now.</p>
 
-<p>For this course, <strong>WAV is your standard format for working files and final exports</strong>. It's what professionals use; it's what we'll grade on; it's what archives well.</p>
+<p>For this course, <strong>WAV is your standard format for working files and final exports</strong>. Projects are graded on WAV files.</p>
 
-<h3>Lossy compression: MP3, AAC, OGG</h3>
+<h3>lossy compression: MP3, AAC, OGG</h3>
 
-<p>Storage and bandwidth used to be expensive. Engineers worked out clever ways to make audio files smaller by throwing away information that the human ear can't easily hear: frequencies that are masked by louder ones, very high frequencies that older listeners can't perceive, redundancies in the signal. The result is a much smaller file that sounds <em>almost</em> the same. This is called <strong>lossy compression</strong>, because the discarded information is gone forever.</p>
+<p>Storage and bandwidth used to be expensive. Engineers worked out clever ways to make audio files smaller by throwing away information that the human ear can't easily hear: frequencies that are masked by louder ones, very high frequencies that older listeners can't perceive, redundancies in the signal. The result is a much smaller file that sounds <em>almost</em> the same. This is called <strong>lossy compression</strong>: the discarded information is gone for good.</p>
 
 <p><strong>MP3</strong>, <strong>AAC</strong> (used by Apple Music and iTunes), and <strong>OGG Vorbis</strong> are common lossy formats. A 3-minute song that's 30 MB as a WAV might be 3 MB as a high-quality MP3, ten times smaller, and most listeners on most playback systems can't hear the difference.</p>
 
-<p>Lossy formats are great for distribution. They're <strong>terrible for working files</strong>. Every time you re-export a lossy file, more information is lost. Editing an MP3, exporting it, editing the export, exporting again, will sound progressively worse, like making photocopies of photocopies. <strong>Always work in WAV. Convert to MP3 only at the end, when you need to share something small.</strong></p>
+<p>Lossy formats are great for distribution. They're <strong>terrible for working files</strong>. Every time you re-export a lossy file, more information is lost. Edit an MP3, export it, edit the export, and export again, and each round sounds worse, like a photocopy of a photocopy. <strong>Always work in WAV. Convert to MP3 only at the end, when you need to share something small.</strong></p>
 
-<h3>Lossless compression: FLAC, ALAC</h3>
+<h3>lossless compression: FLAC, ALAC</h3>
 
-<p>There's a middle option: formats that compress the file (making it smaller) without throwing away any information. <strong>FLAC</strong> (Free Lossless Audio Codec) and <strong>ALAC</strong> (Apple Lossless) are the two main lossless formats. A FLAC of that 30 MB WAV might be 18 MB, smaller than WAV, but able to be decoded back to the exact original. Audiophiles love these formats. You won't need them in this course, but it's worth knowing they exist.</p>
+<p>There's a middle option: formats that compress the file (making it smaller) without throwing away any information. <strong>FLAC</strong> (Free Lossless Audio Codec) and <strong>ALAC</strong> (Apple Lossless) are the two common lossless formats. A FLAC of that 30 MB WAV might be 18 MB, smaller than WAV, but able to be decoded back to the exact original. Audiophiles love these formats. You won't need them in this course.</p>
 
-<h3>Quick comparison</h3>
+<h3>quick comparison</h3>
 
 <table>
   <thead>
-    <tr><th>Format</th><th>Compression</th><th>File size (3 min stereo)</th><th>Best for</th></tr>
+    <tr><th>Format</th><th>Compression</th><th>File size (3 min stereo)</th><th>Used for</th></tr>
   </thead>
   <tbody>
     <tr><td><code>.wav</code></td><td>None</td><td>~30 MB</td><td>Working, final exports, archives</td></tr>
@@ -940,30 +940,20 @@
 
 <hr>
 
-<h2>8 · What this means for what you make</h2>
+<h2>8 · what this means for what you make</h2>
 
-<p>You don't need to think about most of this most of the time. The point of this reading isn't to make you obsess over numbers. It's so that when something goes wrong, or when you want to make a deliberate aesthetic choice, you have the vocabulary to think clearly about it.</p>
+<p>When something goes wrong, or when you want a deliberate aesthetic choice, these terms let you name what's happening. Higher numbers don't make better music. What you record, and how you record it, shapes the result more than the sample rate and bit depth do: a well-made recording at 44.1 kHz, 16-bit holds up better than a careless one at 192 kHz, 24-bit.</p>
 
 <div class="callout warn">
-  <div class="callout-label">Watch out: importing audio at the wrong sample rate</div>
-  <p>This is one of the most common ways a student project goes wrong. You're working in a 48 kHz Ableton session and you drag in a 44.1 kHz sound file (or the other way around). Most DAWs will notice the mismatch and pop up a <em>resample</em> prompt: that's the safe path. But if you click through it, dismiss it, or use a tool that doesn't ask, the file's samples get played out at the project's rate <em>without any conversion</em>. The result is exactly the tape-physics situation from Wk 3: the file plays back at the wrong speed, and its pitch shifts with it.</p>
-  <p>Between 44.1 and 48 kHz the shift is about a semitone and a half: small enough that you might not catch it, but large enough to put a sample out of tune with the rest of your session. Drop a 44.1 kHz drum loop into a 48 kHz project without resampling and it plays slightly faster and higher than it should; do the reverse and it drags slightly slower and lower. Neither sounds obviously broken on its own. It just doesn't sit right.</p>
-  <p><strong>Resampling</strong> is what fixes this: the DAW computes a new set of samples at the project's rate, so the file keeps its original duration and pitch when played back. Always say yes to the resample prompt, or convert the file beforehand (Audacity's <em>File → Export</em> lets you set the target sample rate). The rule of thumb: <em>match the project's sample rate before audio enters the timeline</em>, not after.</p>
+  <div class="callout-label">Watch out: importing audio at a different sample rate</div>
+  <p>Sooner or later you'll bring a 44.1 kHz sound file into a 48 kHz project (or the other way around). Ableton Live and Audacity both convert the rate for you as the file plays, and the file keeps its speed and pitch. A tool that skips the conversion plays the file's samples <em>as they are</em> at the project's rate: the file plays back at the wrong speed, and its pitch shifts with it, like tape running too fast or too slow.</p>
+  <p>Between 44.1 and 48 kHz the shift is about a semitone and a half: small enough that you might not catch it, but large enough to put a sample out of tune with the rest of your session. A 44.1 kHz drum loop played unconverted in a 48 kHz project runs slightly faster and higher than it should; the reverse runs slightly slower and lower. Neither sounds broken on its own, and both are out of tune with the session.</p>
+  <p><strong>Resampling</strong> is that conversion: the software computes a new set of samples at the project's rate, and the file keeps its original duration and pitch. To resample a file yourself, set the target sample rate in Audacity's <em>File → Export</em> dialog. When you can, <em>match the project's sample rate before audio enters the timeline</em>.</p>
 </div>
-
-<p>A few takeaways:</p>
-
-<ul>
-  <li><strong>Always work in WAV.</strong> Convert to MP3 only at the very end and only when needed.</li>
-  <li><strong>48 kHz, 24-bit</strong> is your working standard for Modules 2 and 3.</li>
-  <li><strong>48 kHz, 32-bit</strong> is what you export at in Module 4: same rate, higher bit depth.</li>
-  <li><strong>Lower sample rates and bit depths have an aesthetic.</strong> "Lo-fi" is often literally that: files at low sample rates and bit depths, on purpose.</li>
-  <li><strong>The numbers don't make the music.</strong> A great recording at 44.1 kHz / 16-bit will outlast a mediocre one at 192 kHz / 24-bit. Focus on what you're capturing and how, not on chasing the highest specs.</li>
-</ul>
 
 <hr>
 
-<h2>Vocabulary</h2>
+<h2>vocabulary</h2>
 
 <dl class="vocab">
   <dt>Waveform</dt>
@@ -979,13 +969,13 @@
   <dd>A single measurement of a sound's amplitude at one moment in time. Also (confusingly): a recorded sound used as creative material in music. Context tells you which meaning.</dd>
 
   <dt>Sample rate</dt>
-  <dd>How many samples are taken per second. Measured in Hz or kHz. Common rates: 44.1 kHz (CD) and 48 kHz (video and modern production). This course uses 48 kHz.</dd>
+  <dd>How many samples are taken per second. Measured in Hz or kHz. Common rates: 44.1 kHz (CD) and 48 kHz (video). This course uses 48 kHz.</dd>
 
   <dt>Bit depth</dt>
-  <dd>How many bits are used to store each sample. Higher bit depth = finer amplitude resolution and a lower noise floor. Standards: 16-bit (CD), 24-bit (recording), 32-bit (DAW working files).</dd>
+  <dd>How many bits are used to store each sample. Higher bit depth = finer amplitude resolution and a lower noise floor. Common depths: 16-bit (CD), 24-bit (recording), 32-bit (DAW processing and exports).</dd>
 
   <dt>Nyquist theorem</dt>
-  <dd>The principle that you need to sample at twice the highest frequency you want to capture. Why 44.1 kHz works for human hearing.</dd>
+  <dd>The principle that you need to sample at more than twice the highest frequency you want to capture. It's why 44.1 kHz covers human hearing.</dd>
 
   <dt>Quantization</dt>
   <dd>The process of rounding a continuous amplitude value to the nearest available digital value. Quantization noise is the audible side effect when bit depth is too low.</dd>
@@ -1000,7 +990,7 @@
   <dd>The ratio of the desired signal level to the background noise level, measured in decibels (dB). Higher is better. Bit depth sets a hard ceiling on SNR: roughly 6 dB per bit. 16-bit gives about 96 dB SNR; 8-bit gives about 48 dB.</dd>
 
   <dt>Headroom</dt>
-  <dd>The margin between your loudest signal and the maximum the system can handle. Working with headroom (i.e. signal peaks below 0 dBFS) gives processing chains room to operate without clipping. A standard practice in audio production.</dd>
+  <dd>The margin between your loudest signal and the maximum the system can handle. Working with headroom (signal peaks below 0 dB) leaves room for processing without clipping.</dd>
 
   <dt>ADC / DAC</dt>
   <dd>Analog-to-Digital Converter / Digital-to-Analog Converter. The hardware in your audio interface that handles recording and playback.</dd>
@@ -1012,7 +1002,7 @@
   <dd>A compression strategy that makes audio files smaller by discarding information the human ear can't easily hear (masked frequencies, redundancies, etc.). The discarded information is gone permanently. MP3 and AAC use lossy compression.</dd>
 
   <dt>Lossless compression</dt>
-  <dd>A compression strategy that makes audio files smaller without throwing any information away. The compressed file decodes back to bit-perfect identical with the original. FLAC and ALAC use lossless compression.</dd>
+  <dd>A compression strategy that makes audio files smaller without throwing any information away. The compressed file decodes back to a bit-for-bit copy of the original. FLAC and ALAC use lossless compression.</dd>
 
   <dt>MP3 / AAC</dt>
   <dd>Lossy compressed formats. Smaller files, slight quality loss. Use only for distribution, never for editing.</dd>
@@ -1023,17 +1013,17 @@
 
 <hr>
 
-<h2>For further exploration</h2>
+<h2>for further exploration</h2>
 
-<p>Optional, for the curious. None of this is required.</p>
+<p>Optional reading and viewing.</p>
 
 <ul>
   <li>Hosken, <em>An Introduction to Music Technology</em> (2nd ed., 2015), Chapter 6 "Digital Audio Data": covers the same material as this reading at slightly greater depth, including the math of bit depth and sample rate, and a fuller treatment of file format tradeoffs.</li>
-  <li>Search "Nyquist theorem visualized" on YouTube for short videos that illustrate why double-the-frequency works.</li>
-  <li>The <em>xiph.org</em> "Digital Show &amp; Tell" video by Christopher "Monty" Montgomery is a 25-minute deep dive that's surprisingly watchable, with real oscilloscope demonstrations of sampling concepts.</li>
+  <li>Search "Nyquist theorem visualized" on YouTube for short videos that show why sampling at more than double the frequency works.</li>
+  <li>The <em>xiph.org</em> "Digital Show &amp; Tell" video by Christopher "Monty" Montgomery is a 25-minute video with real oscilloscope demonstrations of sampling.</li>
 </ul>
 
-<p>In Wednesday's lab, we'll spend the first half of class with an interactive tool that builds on Section 1's idea of frequency and amplitude. You'll go from one pure sine wave, to two or three sines layered together, to the <em>harmonic series</em> that makes a stack of sines fuse into a single perceived note, to the recipe of partial amplitudes that gives every instrument its specific sound. The second half of class is your first time in Audacity. Bring your headphones.</p>
+<p>In Wednesday's lab, the first half of class is the Digital Audio Explorer, an interactive tool that starts from section 1's frequency and amplitude. It goes from one pure sine wave, to two or three sines layered together, to the <em>harmonic series</em> that fuses a stack of sines into a single perceived note, to the recipe of partial amplitudes that gives each instrument its sound. The second half of class is your first session in Audacity.</p>
 
 <div class="callout">
   <div class="callout-label">End of session</div>

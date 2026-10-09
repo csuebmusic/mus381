@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MUS 381 · Dynamics Tool</title>
+  <title>MUS 381 · dynamics tool</title>
   <link rel="stylesheet" href="../../assets/style.css">
   <style>
     /* Tool layout */
@@ -289,11 +289,11 @@
 
 <div class="title-block">
   <div class="module-tag">Module 02 · Digital audio, editing &amp; mixing</div>
-  <h1>The compressor: an interactive tool</h1>
-  <div class="subtitle">Hear what threshold, ratio, attack, and release actually do.</div>
+  <h1>the compressor: an interactive tool</h1>
+  <div class="subtitle">Hear what threshold, ratio, attack, and release do.</div>
 </div>
 
-<p class="lede">Load a sound from your Project 1 bank (or use the built-in demo) and apply compression with adjustable threshold, ratio, attack, and release. Watch the transfer curve change as you move the sliders. Watch the gain-reduction trace move with the waveform. Toggle the bypass to A/B against the unprocessed source. The point isn't to learn this specific tool; it's to develop ears and intuition for what each parameter does, so that when you use the Audacity compressor (or any other) you know what to listen for.</p>
+<p class="lede">Load a sound from your Project 1 bank (or use the built-in demo) and apply compression with adjustable threshold, ratio, attack, and release. Watch the transfer curve change as you move the sliders, and watch the gain-reduction trace move with the waveform. Use the tool to train your ears on what each parameter does. The Audacity compressor in the next reading has the same controls, plus two more.</p>
 
 <div class="callout">
   <div class="callout-label">Today's gear</div>
@@ -392,13 +392,13 @@
 </div>
 
 <p class="audio-note">
-  <strong>How to use it:</strong> Try the demo sound first if you've just opened the page. Press Play; let it loop. Move <em>Threshold</em> down. You'll see the transfer curve bend below threshold and the gain-reduction trace start to move. Try <em>Ratio</em> at 2:1 vs 10:1 to feel the difference between gentle and aggressive. Then try <em>Attack</em> very fast (1 ms) vs slow (40 ms) on percussive material: you'll hear transients get squashed, then released. Toggle <em>Bypass</em> to A/B against the unprocessed source. When you find a setting you like, bring up <em>Makeup gain</em> to compensate for the level you've lost.
+  Start with the demo sound. Press Play and let it loop. Move <em>Threshold</em> down: the bend in the transfer curve moves down with it, and the gain-reduction trace starts to move. Compare <em>Ratio</em> at 2:1 (gentle) and at 10:1 (heavy). Then, on percussive material, set <em>Attack</em> very fast (1 ms) and then slow (40 ms). At 1 ms the compressor squashes each transient, and at 40 ms the transients get through before it reacts. Toggle <em>Bypass</em> to switch between the compressed sound and the unprocessed source (an A/B comparison). When you find a setting you like, bring up <em>Makeup gain</em> to restore the level the compression took away.
 </p>
 
 <hr>
 
 <p class="audio-note" style="font-size:0.85rem;color:var(--ink-soft)">
-  The compressor here is a feed-forward digital compressor with a one-pole peak detector and a 2 dB soft knee, one of several standard architectures used in software compressors. The math is exposed in the visualization, but you don't need to know it to use the tool. Trust your ears.
+  The compressor here is a feed-forward digital compressor with a one-pole peak detector and a 2 dB soft knee. The transfer curve plots its math, and you don't need to know the math to use the tool. Trust your ears.
 </p>
 
 <!-- Demo audio for the tool: the 6-second conga/shaker/clave loop used
@@ -15087,7 +15087,7 @@ ADYAGAA2ACkAQQAnAEEAGgA+ABIAPAAEADQA8/8iAOj/EgDf/woA0v/v/8//8f/M//H/z//4/87/AgDR
       });
       setSourceBuffer(buffer, 'Demo (conga, shaker, clave)');
     } catch (err) {
-      els.status.textContent = `Could not load demo: ${err.message || err}`;
+      els.status.textContent = `Couldn't load demo: ${err.message || err}`;
       els.status.classList.add('error');
       console.error('Failed to load embedded demo:', err);
     }
@@ -15104,7 +15104,7 @@ ADYAGAA2ACkAQQAnAEEAGgA+ABIAPAAEADQA8/8iAOj/EgDf/woA0v/v/8//8f/M//H/z//4/87/AgDR
       });
       setSourceBuffer(buffer, file.name);
     } catch (err) {
-      els.status.textContent = `Could not decode "${file.name}". Try a WAV or MP3.`;
+      els.status.textContent = `Couldn't decode "${file.name}". Try a WAV or MP3.`;
       els.status.classList.add('error');
       console.error(err);
     }

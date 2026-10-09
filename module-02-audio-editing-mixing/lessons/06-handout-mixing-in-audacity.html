@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MUS 381 · Mixing in Audacity</title>
+  <title>MUS 381 · mixing in Audacity</title>
   <link rel="stylesheet" href="../../assets/style.css">
   <style>
     /* Menu path display, same pattern as Lab 2 (Editing Techniques). */
@@ -113,11 +113,11 @@
 
 <div class="title-block">
   <div class="module-tag">Module 02 · Digital audio, editing &amp; mixing</div>
-  <h1>Mixing in Audacity</h1>
+  <h1>mixing in Audacity</h1>
   <div class="subtitle">Three new tools: track levels, stereo pan, and EQ. Then back to Project 1.</div>
 </div>
 
-<p class="lede">Today you learn three new tools and then return to Project 1, which is due next Wednesday. The tools are the basics of mixing: <strong>levels</strong> (how loud each track is), <strong>panning</strong> (where each track sits in the stereo field), and <strong>EQ</strong> (which frequencies get emphasized or reduced in a sound). Two of them are simple sliders on each track. The third lives in a dialog and works differently.</p>
+<p class="lede">The basics of mixing are <strong>levels</strong> (how loud each track is), <strong>panning</strong> (where each track appears in the stereo field), and <strong>EQ</strong> (which frequencies get emphasized or reduced in a sound). Levels and panning are simple sliders on each track. EQ opens in a dialog and changes the audio itself.</p>
 
 <div class="callout">
   <div class="callout-label">Today's gear</div>
@@ -125,56 +125,54 @@
 </div>
 
 
-<h2>What we're doing today</h2>
+<h2>what we're doing today</h2>
 
 <ol class="steps">
   <li>Open your Project 1 file and your scratch file from last week.</li>
-  <li>Learn levels and panning. Practice them <em>on your Project 1 file</em>, since they don't change the underlying audio.</li>
-  <li>Learn EQ. Practice in the <em>scratch file</em>, since EQ does change the underlying audio.</li>
+  <li>Learn levels and panning, practicing <em>on your Project 1 file</em>.</li>
+  <li>Learn EQ, practicing in the <em>scratch file</em>.</li>
   <li>Spend the rest of the session working on Project 1.</li>
   <li>Upload everything to the server using the end-of-session routine.</li>
 </ol>
 
 <hr>
 
-<h2>Setup</h2>
+<h2>setup</h2>
 
-<p>Your start-of-session routine on the card already downloads your work from the server, so your Project 1 file should already be local before you open Audacity here. Quick check:</p>
+<p>The start-of-session routine on the card downloads your work from the server. Check that your Project 1 file is local before you open it:</p>
 
 <ol class="steps">
-  <li>In Finder, open <code>~/Documents/netid/project-01/</code> and confirm <code>lastname-project01.aup3</code> is present. If it isn't, run the start-of-session download on the card; the file lives in <code>project-01/</code> inside your own folder on the server.</li>
+  <li>In Finder, open <code>~/Documents/netid/project-01/</code> and confirm <code>lastname-project01.aup3</code> is present. If it isn't, run the start-of-session download on the card; the file is in <code>project-01/</code> inside your own folder on the server.</li>
   <li>Open Audacity. Open <code>lastname-project01.aup3</code>. You should see your Project 1 in progress, with the tracks you've been building.</li>
   <li>Also open your scratch project from last week (<code>lastname-techniques-scratch.aup3</code>). Both projects can be open at once in different Audacity windows.</li>
 </ol>
 
 <hr>
 
-<h2>Destructive vs. non-destructive</h2>
+<h2>destructive vs. non-destructive</h2>
 
-<p>The three tools today split cleanly into two categories. Keep track of which is which.</p>
+<p>A <strong>non-destructive</strong> tool changes how the audio plays back without changing the audio data itself. Move a slider, hear a difference; move it back, the original is exactly there. The underlying file isn't touched. Most things in modern DAWs (Ableton, Logic, Pro Tools) are non-destructive by default: every EQ, compressor, and reverb is a plugin on the track and can be reshaped at any time, even months later.</p>
 
-<p>A <strong>non-destructive</strong> tool changes how the audio plays back without changing the audio data itself. Move a slider, hear a difference; move it back, the original is exactly there. The underlying file isn't touched. Most things in modern DAWs (Ableton, Logic, Pro Tools) are non-destructive by default: every EQ, every compressor, every reverb sits as a plugin on the track and can be reshaped at any time, even months later.</p>
+<p>A <strong>destructive</strong> tool changes the audio data permanently. Once you apply it, the samples on disk are different. Undo can revert it during the current session, but once you save and close the project, the change is permanent.</p>
 
-<p>A <strong>destructive</strong> tool changes the audio data permanently. Once you apply it, the samples on disk are different. Undo can revert it during the current session, but once you save and close the project, the change is baked in. There's no going back to "before."</p>
+<p>Audacity is mostly an audio editor, and most things in Audacity are <strong>destructive</strong>. The Effect menu (every effect: fades, reverse, time-stretch, EQ, compression, all of them) modifies your audio in place. Destructive editing comes from tape: cut a section out or splice in a different one, and the tape is physically different. Audacity works the same way.</p>
 
-<p>Audacity is mostly an audio editor, and as such, most things in Audacity are <strong>destructive</strong>. The Effect menu (every effect: fades, reverse, time-stretch, EQ, compression, all of them) modifies your audio in place. That's the point of an audio editor: most audio editors are destructive by design, which goes back to the tape-editing tradition where every edit is a commitment. Cut a section out, splice in a different one, run it through a filter, and the tape is physically different. Audacity inherits that workflow.</p>
+<p>The two non-destructive mixing controls in Audacity are the <strong>track gain slider</strong> and the <strong>pan slider</strong> on the Track Control Panel. They're applied at playback, and moving them never changes the underlying audio. Audacity also has a <em>Realtime Effects</em> feature (the small <strong>Effects</strong> button on each track that lets you stack non-destructive plugins), but this course doesn't use it. The non-destructive plugin workflow comes in Module 4, in Ableton.</p>
 
-<p>The two non-destructive controls in Audacity that we'll use are the <strong>track gain slider</strong> and the <strong>pan slider</strong> on the Track Control Panel: those work at playback time, so moving them never changes the underlying audio. Audacity does also have a <em>Realtime Effects</em> feature (the small <strong>Effects</strong> button on each track that lets you stack non-destructive plugins), but we're not going to use it in this course. The non-destructive plugin workflow comes in Module 4, in Ableton.</p>
-
-<p>What this means for today, and for the rest of your time in Audacity:</p>
+<p>For today and the rest of your time in Audacity:</p>
 
 <ul>
-  <li><strong>Levels and pan exercises happen on your Project 1 file</strong>, because the sliders don't change anything permanently. Experiment freely.</li>
-  <li><strong>The EQ exercise happens in your scratch file</strong>, because EQ <em>does</em> permanently change the audio. We're not going to commit destructive changes to your real piece during practice.</li>
-  <li>For any destructive effect (EQ today, compression in the next session, anything else later) the discipline is: <strong>Preview before Apply</strong>. Audacity's effect dialogs all have a Preview button. Use it. Build the habit.</li>
-  <li>When we move to Ableton in Module 4, the workflow flips: nearly everything becomes non-destructive. The contrast will be useful; it'll show you both modes.</li>
+  <li>Levels and pan exercises happen on your Project 1 file. Experiment freely with the sliders.</li>
+  <li>The EQ exercise happens in your scratch file.</li>
+  <li>For any destructive effect (EQ today, compression in the next session, anything else later), <strong>Preview before Apply</strong>. Every effect that opens a dialog has a Preview button.</li>
+  <li>In Module 4, Ableton flips the workflow: nearly everything becomes non-destructive.</li>
 </ul>
 
 <hr>
 
-<h2>The three mixing tools</h2>
+<h2>the three mixing tools</h2>
 
-<p>Two of the tools live as sliders on each track's <strong>Track Control Panel</strong> on the left side of the track. Take a look at where they are before we start:</p>
+<p>Two of the tools are sliders on each track's <strong>Track Control Panel</strong>, on the left side of the track:</p>
 
 <figure class="screenshot">
   <img src="../../assets/images/module-02-week-04/audacity-track-controls.png" alt="An Audacity track showing the Track Control Panel on the left, with the gain slider (− to +) and the pan slider (L to R) clearly visible.">
@@ -186,22 +184,22 @@
 <!-- ============================================================ -->
 
 <div class="tool">
-  <h3>1 · Track levels</h3>
+  <h3>1 · track levels</h3>
 
-  <p>The volume of one track relative to the others. The first thing a mixer balances. If a track is too loud, it overwhelms everything else; too quiet, and you don't hear it at all. Most mixing decisions start here.</p>
+  <p>The volume of one track relative to the others. Mixers usually balance levels first. If a track is too loud, it overwhelms everything else; too quiet, and you don't hear it at all.</p>
 
   <div class="where-row">
     <div class="where">Where in Audacity</div>
     Each track has a small horizontal slider in its <strong>Track Control Panel</strong> on the left side. Look for a slider with a <strong>−</strong> on one end and a <strong>+</strong> on the other. Drag it left to make the track quieter, right to make it louder. The slider is called <strong>Gain</strong> (or sometimes <strong>Volume</strong>).
   </div>
 
-  <h4>Gain staging: the two-part habit</h4>
+  <h4>gain staging and balance</h4>
 
-  <p>Setting good levels comes down to two things, in this order:</p>
+  <p>Set levels in two passes:</p>
 
   <ol>
-    <li><strong>Nothing peaks.</strong> No track should ever hit 0 dB on the meters. When a signal hits 0, the waveform gets clipped flat at the top, and the audio distorts. Once a track has clipped, the only fix is to lower its gain and play it back again. Keep peaks comfortably below 0, ideally with the loudest moments hitting around <strong>−6 dB</strong>. That gap between your loudest peak and 0 is called <strong>headroom</strong>.</li>
-    <li><strong>Tracks are balanced relative to each other.</strong> Once nothing is clipping, the next question is: do all the elements of your piece sit at appropriate levels relative to each other? The "main" sound of a moment should be loudest; supporting sounds quieter. As your piece moves through different moments, the balance can shift; the foreground in section A might step back in section B.</li>
+    <li>First, make sure <strong>nothing peaks</strong>. No track should ever hit 0 dB on the meters. When a signal hits 0, the waveform gets clipped flat at the top, and the audio distorts. Once a track has clipped, the only fix is to lower its gain and play it back again. Keep peaks comfortably below 0, with the loudest moments peaking a little below <strong>−6 dB</strong>. The gap between your loudest peak and 0 is called <strong>headroom</strong>. This first pass is called <strong>gain staging</strong>.</li>
+    <li>Then <strong>balance the tracks</strong> against each other. Once nothing is clipping, ask whether each element is at the level you want relative to the others. The "main" sound of a moment should be loudest, with supporting sounds quieter. As your piece moves through different moments, the balance can shift: the foreground in section A might step back in section B.</li>
   </ol>
 
   <figure class="diagram">
@@ -266,7 +264,7 @@
       </g>
 
       <!-- Caption (left) -->
-      <text x="180" y="320" font-family="DM Sans, sans-serif" font-size="11" fill="var(--ink-soft)" text-anchor="middle" font-style="italic">All peaks sit below −6. Headroom intact.</text>
+      <text x="180" y="320" font-family="DM Sans, sans-serif" font-size="11" fill="var(--ink-soft)" text-anchor="middle" font-style="italic">All peaks below −6. Headroom intact.</text>
 
       <!-- ============= RIGHT METER (NEEDS WORK) ============= -->
       <!-- Reference horizontal lines -->
@@ -310,28 +308,28 @@
       <line x1="80" y1="280" x2="280" y2="280" stroke="var(--ink-soft)" stroke-width="1"/>
       <line x1="460" y1="280" x2="660" y2="280" stroke="var(--ink-soft)" stroke-width="1"/>
     </svg>
-    <figcaption>Two contrasting mixes shown on level meters. The black tick on each bar marks the loudest peak that track has hit. Below −6 dB shows green; the orange and red zones above −6 indicate signal getting hot or clipping.</figcaption>
+    <figcaption>Two contrasting mixes shown on level meters. The black tick on each bar marks the loudest peak that track has hit. Below −6 dB shows green; the orange and red zones above −6 show signal getting hot or clipping.</figcaption>
   </figure>
 
-  <p>The black tick on each bar in the diagram marks the highest peak that track has reached. In the healthy mix on the left, every tick sits well below −6 dB, in the green zone; the four tracks are also reasonably close to each other, so no element overwhelms or disappears. In the problem mix on the right, T1 has hit clip and is distorting (its bar fills the green, orange, and red zones because its peak reached all the way to 0); T4 is creeping into the orange hot zone; T2 is comfortably in the green; T3 is also in the green but so quiet (−28 dB) that it'll be hard to hear in the mix. Bars with orange or red show that those tracks have reached into the orange or red zones; an all-green bar means the track's peak stayed safely below −6.</p>
+  <p>In the healthy mix on the left, every tick is well below −6 dB, in the green zone, and the four tracks are close to each other in level. In the problem mix on the right, T1 has hit clip and is distorting (its bar fills the green, orange, and red zones because its peak reached all the way to 0); T4 peaks in the orange hot zone; T2 is comfortably in the green; T3 is also in the green but so quiet (−28 dB) that it'll be hard to hear in the mix.</p>
 
-  <p>You don't have a single big meter for each track in Audacity (that's a feature of more elaborate DAWs), but you do have the <strong>playback meter at the top of the Audacity window</strong>, which shows the master output. As your piece plays, watch that meter. If it ever turns red at the right edge, something is clipping. Lower the gain on whichever track is the culprit (often the loudest element), play again, check.</p>
+  <p>You don't have a single big meter for each track in Audacity (that's a feature of more elaborate DAWs), but you do have the <strong>playback meter at the top of the Audacity window</strong>, which shows the level of the whole mix. As your piece plays, watch that meter. If it ever turns red at the right edge, something is clipping. Lower the gain on whichever track is the culprit (often the loudest element), play again, check.</p>
 
   <div class="exercise-label">Exercise (in your Project 1 file)</div>
-  <p class="exercise">Two passes through your piece. <strong>First, solo each track and check its levels on its own.</strong> Each track's Track Control Panel has a <strong>Solo</strong> button (next to Mute). For each track in turn: click Solo on, press play, watch the playback meter at the top of the Audacity window, and check whether anywhere in the track the signal hits the red zone or sits too quietly to hear. Adjust that track's gain slider until peaks sit below −6. Click Solo off and move to the next track. This is the gain-staging pass: each track gets checked in isolation so you know nothing is clipping or buried before they all play together.</p>
+  <p class="exercise">Two passes through your piece. <strong>First, solo each track and check its levels on its own.</strong> Each track's Track Control Panel has a <strong>Solo</strong> button (next to Mute). For each track in turn: click Solo on, press play, watch the playback meter at the top of the Audacity window, and check whether anywhere in the track the signal reaches the orange or red zone or is too quiet to hear. Adjust that track's gain slider until peaks stay below −6. Click Solo off and move to the next track. This is the gain-staging pass.</p>
 
   <p class="exercise"><strong>Second, un-solo everything and play the whole piece.</strong> Now the question is balance: with all tracks playing together, can you hear every element at the relative loudness you want? Which moments push the meter close to red? Which tracks disappear when other things are playing? Move the gain sliders to balance them in context, in small adjustments (3 to 6 dB at a time). Keep adjusting until: (1) nothing peaks anywhere in the piece, and (2) every element you intend to be heard can be heard.</p>
 
   <div class="callout">
     <div class="callout-label">The solo habit</div>
-    <p>Soloing each track to check its levels individually is a habit worth building now. It comes back constantly: any time you're working on one track's level, EQ, or anything else, soloing lets you hear what you're actually doing without the other tracks getting in the way. We'll use it again in the EQ exercise; the Filter Curve EQ Preview button does this for you automatically.</p>
+    <p>Solo a track whenever you adjust its level, EQ, or anything else. In the EQ exercise, the Filter Curve EQ Preview button plays the selected audio on its own.</p>
   </div>
 
-  <p class="listen">Listen for: small adjustments matter more than large ones. A 3 to 6 dB change is usually enough to bring a track forward or push it back. If you find yourself making 15 dB changes, something else is probably wrong (the source recording may be too loud, or a track is fighting another track's frequency range, which is an EQ problem we'll get to).</p>
+  <p class="listen">Listen for: a 3 to 6 dB change is usually enough to bring a track forward or push it back. If you find yourself making 15 dB changes, something else is probably wrong (the source recording may be too loud, or two tracks have energy in the same frequency range, an EQ problem covered below).</p>
 
   <div class="callout">
-    <div class="callout-label">Master output</div>
-    <p>The slider next to the playback meter at the top of the Audacity window is the <strong>master output</strong>: it controls how loud the whole project plays back. Same idea as gain and pan, applied to the project's master output. Useful when individual tracks are well-balanced but the overall mix feels too loud or too quiet on your headphones. Later in the course we'll add tools to the master output that shape the whole mix together (a limiter, for example), but for now leave it alone unless you need a quick overall adjustment.</p>
+    <div class="callout-label">Playback volume</div>
+    <p>The slider next to the playback meter at the top of the Audacity window sets the <strong>playback volume</strong>: how loud the project plays on your headphones. It doesn't change the project's audio or the exported file. Use it when the tracks are well balanced but the whole mix is too loud or too quiet to listen to comfortably. In Module 4, Ableton's master track can hold effects that shape the whole mix, such as a limiter.</p>
   </div>
 </div>
 
@@ -340,24 +338,24 @@
 <!-- ============================================================ -->
 
 <div class="tool">
-  <h3>2 · Stereo pan</h3>
+  <h3>2 · stereo pan</h3>
 
-  <p>The position of a track in the stereo field, from full left to full right. Pan is what gives a mix space and width: instead of every sound stacked on top of each other in the center, sounds occupy different points across the stereo image, the way instruments occupy different points on a stage.</p>
+  <p>The position of a track in the stereo field, from full left to full right. Pan gives a mix space and width: instead of every sound stacked on top of each other in the center, sounds occupy different points across the stereo field, the way instruments occupy different points on a stage.</p>
 
   <div class="where-row">
     <div class="where">Where in Audacity</div>
     Just below the gain slider in each track's Track Control Panel is a second slider with <strong>L</strong> on one end and <strong>R</strong> on the other. This is the <strong>Pan slider</strong>. Drag it left to push the track toward the left speaker, right to push it toward the right. Centered (the default) means equal in both speakers.
   </div>
 
-  <h4>Why two ears matter</h4>
+  <h4>how you hear position</h4>
 
   <p>Humans localize sound using two cues: <strong>interaural time difference</strong> (sound from the left arrives at the left ear a fraction of a millisecond before the right) and <strong>interaural intensity difference</strong> (sound from the left is slightly louder in the left ear because the head shadows the right). Together, these tiny differences let your brain place a sound somewhere in space.</p>
 
-  <p>When the same signal goes equally to both speakers (or both sides of a pair of headphones), there's no time or intensity difference between your ears, and the brain reads "this sound is straight ahead, between the speakers." That's a centered sound. When you pan to one side, you're changing the proportion sent to each speaker, which changes the intensity difference at your ears, which moves the sound across the perceived space. Stereo width is built entirely on this trick.</p>
+  <p>When the same signal goes equally to both speakers (or both sides of a pair of headphones), there's no time or intensity difference between your ears, and the brain reads "this sound is straight ahead, between the speakers." That's a centered sound. When you pan to one side, you change the proportion sent to each speaker. That changes the intensity difference at your ears and moves the sound across the perceived space. Panning creates stereo width this way.</p>
 
-  <h4>The stereo field</h4>
+  <h4>the stereo field</h4>
 
-  <p>If you imagine looking down at a stage from above, with two speakers in front of you and you sitting in the audience, the space between and around the speakers is the <em>stereo field</em>. Different kinds of sounds tend to live in different parts of it:</p>
+  <p>If you imagine looking down at a stage from above, with two speakers in front of you and you sitting in the audience, the space between and around the speakers is the <em>stereo field</em>. Mixers tend to place different kinds of sounds in different parts of it:</p>
 
   <figure class="diagram">
     <svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="stereofield-title">
@@ -436,41 +434,41 @@
       <!-- Subtle baseline -->
       <line x1="80" y1="295" x2="640" y2="295" stroke="var(--rule)" stroke-width="1"/>
     </svg>
-    <figcaption>The stereo field, viewed from above. The listener is at the bottom; the speakers (L and R) are in front. Different kinds of sounds tend to live at different positions across the field.</figcaption>
+    <figcaption>The stereo field, viewed from above. The listener is at the bottom; the speakers (L and R) are in front.</figcaption>
   </figure>
 
-  <h4>Where things tend to live (and why)</h4>
+  <h4>common pan positions</h4>
 
-  <p>Pop and electronic mixing has developed conventions over decades about which kinds of sounds belong where. The conventions aren't rules, but they're worth knowing because they encode useful perceptual realities:</p>
+  <p>Pop and electronic mixers follow conventions about where different kinds of sounds go. They're conventions, and you can depart from them:</p>
 
   <ul>
-    <li><strong>Center (the focal foundation).</strong> Low-frequency content (anything below roughly <strong>150 Hz</strong>) belongs in the center. The reason is perceptual: your ears can't really localize low frequencies, so panning bass to one side doesn't add stereo width but does cause the speakers to do unequal work, which throws off the mix's balance. The same logic applies to anything you want to be the focal point of a moment: a lead vocal, the kick drum in a beat, the sustained drone that anchors a section. Centering makes a sound feel solid and present.</li>
-    <li><strong>Slight L/R (around 20 to 40 percent pan).</strong> Supporting elements that you want to feel like they have their own space without disappearing into the background. Hi-hats, supporting percussion, secondary voices, complementary textures.</li>
-    <li><strong>Wider (around 50 to 70 percent pan).</strong> Pads, ambient layers, textural material that's there to fill space rather than draw attention. Often these can be panned generously without feeling unbalanced because they're already diffuse in character.</li>
-    <li><strong>Hard left or right (90 to 100 percent pan).</strong> Special effects, deliberate spatial gestures, ping-pong-style alternations between channels. Use sparingly; hard pans call attention to themselves.</li>
+    <li>Low-frequency content (anything below roughly <strong>150 Hz</strong>) goes in the <strong>center</strong>. Your ears localize low frequencies poorly, and panning bass to one side adds no stereo width and puts more low end in one speaker than the other. Mixers also center the focal point of a moment: a lead vocal, the kick drum in a beat, the sustained drone under a section. Centering makes a sound feel solid and present.</li>
+    <li>A <strong>slight</strong> pan left or right (around 20 to 40 percent) suits supporting elements that need their own space without disappearing into the background: hi-hats, supporting percussion, secondary voices, complementary textures.</li>
+    <li>A <strong>wider</strong> pan (around 50 to 70 percent) suits pads, ambient layers, and textural material that fills space without drawing attention. These sounds are already diffuse in character and can often be panned generously without sounding unbalanced.</li>
+    <li>A <strong>hard</strong> pan left or right (90 to 100 percent) suits special effects, deliberate spatial gestures, and ping-pong-style alternations between channels. Hard pans call attention to themselves. Use them sparingly.</li>
   </ul>
 
-  <p>For your Project 1 piece, the rough translation is: <strong>the most foundational or lowest-pitched element of a moment usually wants the center; supporting and textural material can spread out</strong>. You don't have a kick drum and bass guitar to organize, but you do have your own foundation and supporting roles, even in a musique concrète piece.</p>
+  <p>In your Project 1 piece, <strong>the most foundational or lowest-pitched element of a moment usually goes in the center, and supporting and textural material can spread out</strong>. You don't have a kick drum and bass guitar to organize, but you do have your own foundation and supporting roles, even in a musique concrète piece.</p>
 
   <div class="exercise-label">Exercise (in your Project 1 file)</div>
   <p class="exercise">Put on headphones (the stereo effect is most obvious there). For each of your tracks, decide what role it plays: is it a foundational element, a supporting one, or a textural one? Then pan accordingly. Try one track at a slight L (around 25%), another at slight R (around 25%), and leave the most foundational one in the center. Press play and listen. Where does each sound seem to come from?</p>
 
-  <p class="listen">Listen for: the piece now feels wider. Sounds occupy different positions in your headphones rather than all coming from the center. A small pan (20 to 40 percent) is often more effective than a hard pan, because it gives the impression of a real space rather than an artificial split. If something with a lot of low-frequency content suddenly feels lopsided when you pan it, trust that feeling: bring it back to center.</p>
+  <p class="listen">Listen for: the piece now feels wider. Sounds occupy different positions in your headphones rather than all coming from the center. A small pan (20 to 40 percent) sounds like a position in a room; a hard pan sounds like a split between channels. If something with a lot of low-frequency content suddenly feels lopsided when you pan it, trust that feeling: bring it back to center.</p>
 </div>
 
 <div class="tool">
   <h3>3 · EQ</h3>
 
-  <p>EQ, short for <em>equalization</em>, lets you boost or cut specific frequency ranges in a sound. Think of it as a way to shape the <strong>timbre</strong> of a sound, the color of the sound, which we covered in lecture: the same pitch played on a flute versus a violin has different timbre because the harmonics above the fundamental are distributed differently. Another name for that distribution of frequency content is the <strong>spectrum</strong>.</p>
+  <p>EQ, short for <em>equalization</em>, lets you boost or cut specific frequency ranges in a sound. It shapes the <strong>timbre</strong> of a sound, its color, which you met in the Digital Audio Explorer: the same pitch played on a flute and a violin has different timbre because the harmonics above the fundamental are distributed differently. Another name for that distribution of frequency content is the <strong>spectrum</strong>.</p>
 
-  <p>EQ lets you reshape the spectrum: maybe a recording has too much rumble in the low end and you want to reduce it, or a voice sounds dull and you want to brighten the high end. EQ is one of the most-used tools in mixing; it's also one of the easiest to overuse. <strong>Destructive</strong> in Audacity, like the rest of the Effect menu, which is the reason the Preview habit matters.</p>
+  <p>EQ lets you reshape the spectrum: maybe a recording has too much rumble in the low end and you want to reduce it, or a voice sounds dull and you want to brighten the high end. EQ is easy to overuse. In Audacity, EQ is <strong>destructive</strong>, like the rest of the Effect menu.</p>
 
   <div class="where-row">
     <div class="where">Where in Audacity</div>
     <span class="menu-path">Effect → EQ and Filters → Filter Curve EQ…</span>
   </div>
 
-  <p>This is the first time you're seeing an EQ. Before opening the dialog:</p>
+  <p>The dialog opens with a graph like this one:</p>
 
   <figure class="diagram">
     <svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="eqcurve-title">
@@ -572,13 +570,13 @@
       <g>
         <circle cx="680" cy="200" r="3" fill="var(--accent)"/>
         <text x="672" y="225" font-family="DM Sans, sans-serif" font-size="11" font-weight="600" fill="var(--ink)" text-anchor="end">high roll-off</text>
-        <text x="672" y="239" font-family="DM Sans, sans-serif" font-size="10" fill="var(--ink-soft)" text-anchor="end">soften the air</text>
+        <text x="672" y="239" font-family="DM Sans, sans-serif" font-size="10" fill="var(--ink-soft)" text-anchor="end">soften the highs</text>
       </g>
     </svg>
     <figcaption>A typical EQ curve. Frequency runs left to right (low to high) on a log scale, the way real EQ dialogs are laid out; amplitude runs up and down (boost above the dashed center line, cut below it). The curve traces what the EQ does at every frequency.</figcaption>
   </figure>
 
-  <p>The dialog opens with a graph just like this: <strong>frequency</strong> on the horizontal axis (low frequencies on the left, high on the right), and <strong>amplitude in dB</strong> on the vertical axis (boost above the center line, cut below it). You draw a curve by clicking on the graph to add control points and dragging them up or down. The curve shows what the EQ will do to each frequency range, exactly as drawn. Where the curve sits at 0 dB, that frequency passes through unchanged. Where it bows up, that frequency gets boosted; where it bows down, that frequency gets cut.</p>
+  <p>You draw a curve by clicking on the graph to add control points and dragging them up or down. The curve shows what the EQ will do to each frequency range, exactly as drawn. Where the curve is at 0 dB, that frequency passes through unchanged. Where it bows up, that frequency gets boosted; where it bows down, that frequency gets cut.</p>
 
   <div class="exercise-label">Exercise (in your scratch project)</div>
   <p class="exercise"><strong>Switch to your scratch project window</strong> (<code>lastname-techniques-scratch.aup3</code>). Make sure the scratch window is the active one before you continue.</p>
@@ -589,25 +587,23 @@
     <li>Open <span class="menu-path">Effect → EQ and Filters → Filter Curve EQ…</span> The dialog appears, with a flat horizontal line at 0 dB across the graph.</li>
     <li>Click somewhere on the graph around <strong>200 Hz</strong> (the lower-left area) and drag <em>down</em> a few dB. You've created a control point that cuts that frequency range.</li>
     <li>Click somewhere around <strong>4000 Hz</strong> (right of center) and drag <em>up</em> a few dB. You've created a second control point that boosts that range. The curve now bends down on the left and up on the right.</li>
-    <li><strong>Click the Preview button.</strong> Audacity plays the selected audio with the EQ applied, but doesn't modify the file. (Preview also automatically solos the selected track, so you hear just this sound while you're auditioning the curve. That's the same idea as the solo habit from the levels exercise.) Listen carefully. The sound should be brighter in the upper-mids and thinner in the lower-mids than the original.</li>
+    <li><strong>Click the Preview button.</strong> Audacity plays the selected audio with the EQ applied, but doesn't modify it. Preview plays only the selected audio, with no other tracks, while you audition the curve. Listen carefully. The sound should be brighter in the upper-mids and thinner in the lower-mids than the original.</li>
     <li>Don't like it? Adjust the control points (drag them, or drag them off the graph to delete) and Preview again. Try a few different shapes. Keep previewing until you find a curve you might want to commit to. (Or until you've decided EQ doesn't help this sound, which is also a valid conclusion.)</li>
     <li>When you've heard a curve you like, <strong>then</strong> click <strong>Apply</strong>. The dialog closes and the EQ is now permanently part of the audio. Listen one more time without the dialog open.</li>
-    <li>Now press <kbd>Cmd</kbd> + <kbd>Z</kbd> to undo. The audio reverts to its original state. Reapply with a different curve if you want; the point of scratch is that you can experiment freely.</li>
+    <li>Now press <kbd>Cmd</kbd> + <kbd>Z</kbd> to undo. The audio reverts to its original state. Reapply with a different curve if you want.</li>
   </ol>
 
-  <p class="listen">Listen for: every EQ change reshapes the character of the sound. Cuts (curves that go below 0) tend to sound natural; boosts (curves that go above 0) tend to be more obvious and easier to overdo. A small change at the right frequency often does more than a large change at the wrong one. The Preview button lets you experiment without consequence; once you Apply, the change is real.</p>
+  <p class="listen">Listen for: every EQ change reshapes the character of the sound. Cuts (curves that go below 0) tend to sound natural; boosts (curves that go above 0) tend to be more obvious and easier to overdo. A small change at the right frequency often changes the sound more than a large change at the wrong one.</p>
 
   <div class="callout">
-    <div class="callout-label">Two buttons in the dialog worth knowing</div>
-    <p><strong>Flatten</strong> resets the curve to a flat line at 0 dB. Use this if your curve has gotten messy and you want to start over without closing the dialog. <strong>Invert</strong> flips the current curve upside down; what you were boosting becomes a cut, and vice versa. Useful when you want to hear "the opposite" of the curve you just drew.</p>
+    <div class="callout-label">Flatten and Invert</div>
+    <p><strong>Flatten</strong> resets the curve to a flat line at 0 dB. Use this if your curve has gotten messy and you want to start over without closing the dialog. <strong>Invert</strong> flips the current curve upside down; what you were boosting becomes a cut, and vice versa. Use it to hear "the opposite" of the curve you just drew.</p>
   </div>
 </div>
 
 <hr>
 
-<h2>The three tools at a glance</h2>
-
-<p>The destructive and non-destructive tools you've now used:</p>
+<h2>the tools at a glance</h2>
 
 <table>
   <thead>
@@ -625,8 +621,8 @@
       <td>Always; just move the slider back</td>
     </tr>
     <tr>
-      <td>Master output slider</td>
-      <td>Non-destructive (applied at playback)</td>
+      <td>Playback volume slider</td>
+      <td>Non-destructive (headphone level only; not in the mix or the export)</td>
       <td>Always; just move the slider back</td>
     </tr>
     <tr>
@@ -639,39 +635,39 @@
 
 <div class="callout">
   <div class="callout-label">A look ahead: Module 4 with Ableton</div>
-  <p>In Module 4, EQ becomes non-destructive too. There it lives as a plugin on each track, real-time, adjustable any time, never baked in until export. The discipline you're building today (Preview before Apply, save versions before destructive moves) is specific to Audacity's tape-tradition workflow. Learning it makes the contrast with Ableton's modern workflow more vivid when we get there.</p>
+  <p>In Module 4, EQ becomes non-destructive too. There, EQ is a plugin on the track that you can adjust at any time. The discipline you're building today (Preview before Apply, save versions before destructive moves) is specific to Audacity's destructive workflow.</p>
 </div>
 
 <hr>
 
 <h2>Project 1 work time</h2>
 
-<p>The rest of the session is yours. Project 1 is due next Wednesday at the end of class.</p>
+<p>The rest of the session is yours. Project 1 is due at the end of class next Wednesday.</p>
 
-<h3>Suggested approach for the next hour</h3>
+<h3>suggested approach for the next hour</h3>
 
 <ol class="steps">
-  <li><strong>Apply what you just learned to your Project 1 file.</strong> Switch to the Project 1 window. Set track levels and panning so the piece sits the way you want. Both are non-destructive; experiment freely.</li>
-  <li><strong>If a sound in your piece would benefit from EQ</strong>, this is a good time to try it. Important: <em>before</em> applying EQ to a sound in your Project 1 file, save a copy of the file first (<strong>File → Save Project As…</strong> save as <code>lastname-project01-v2.aup3</code>). Then if the EQ doesn't work out, you still have the previous version to fall back to.</li>
-  <li><strong>Keep editing.</strong> Mixing decisions often reveal editing problems (a level imbalance might mean a section is too long, or a click pop you didn't notice before suddenly stands out). Move between editing and mixing as needed.</li>
+  <li><strong>Apply what you just learned to your Project 1 file.</strong> Switch to the Project 1 window. Set track levels and panning until the balance and positions are what you want.</li>
+  <li><strong>If a sound in your piece would benefit from EQ</strong>, this is a good time to try it. <em>Before</em> applying EQ to a sound in your Project 1 file, save a copy of the project (<strong>File → Save Project As…</strong>, as <code>lastname-project01-v2.aup3</code>).</li>
+  <li><strong>Keep editing.</strong> Mixing decisions often reveal editing problems (a level imbalance might mean a section is too long, or a click pop you didn't notice before becomes obvious). Move between editing and mixing as needed.</li>
   <li><strong>Listen to the whole piece all the way through, repeatedly.</strong> Mixing asks you to hear the whole arc as well as the moment you're working on. After every change, play back the full piece and check that it still works as a whole.</li>
 </ol>
 
 <div class="callout">
   <div class="callout-label">Save versions as you go</div>
-  <p>Use <strong>File → Save Project As…</strong> to save numbered versions (v2, v3, v4) at any point you've made significant changes. Especially before destructive operations. Audacity's undo history doesn't survive closing the project; saved versions do. This is the simplest insurance against losing work.</p>
+  <p>Use <strong>File → Save Project As…</strong> to save numbered versions (v2, v3, v4) whenever you've made significant changes, and before every destructive operation. Audacity's undo history doesn't survive closing the project; saved versions do.</p>
 </div>
 
 <hr>
 
-<h2>End of session</h2>
+<h2>end of session</h2>
 
-<h3>What to upload today</h3>
+<h3>what to upload today</h3>
 
 <ol class="steps">
   <li>Save your Project 1 project (<kbd>Cmd</kbd> + <kbd>S</kbd>). If you've made versioned saves (v2, v3), save the current one too.</li>
   <li>Open FileZilla and connect from the Quickconnect bar. Put the <strong>left</strong> pane on <code>~/Documents/netid/</code> and stay in your own folder on the <strong>right</strong>.</li>
-  <li>Select everything in the left pane (<kbd>Cmd</kbd> + <kbd>A</kbd>) and drag it across, choosing <strong>Overwrite if source newer</strong>. Files that haven't changed since last week are skipped, so this is quick.</li>
+  <li>Select everything in the left pane (<kbd>Cmd</kbd> + <kbd>A</kbd>) and drag it across, choosing <strong>Overwrite if source newer</strong>. Files that haven't changed since last week are skipped.</li>
   <li>Verify the upload: the transfer queue empties and your Project 1 file shows today's date in the right pane.</li>
 </ol>
 
@@ -679,9 +675,9 @@
 
 <hr>
 
-<h2>Quick reference</h2>
+<h2>quick reference</h2>
 
-<h3>Non-destructive controls (sliders, applied at playback)</h3>
+<h3>non-destructive controls (sliders, applied at playback)</h3>
 
 <table>
   <thead>
@@ -690,15 +686,15 @@
   <tbody>
     <tr><td>Track gain (volume)</td><td>Slider on each track's Track Control Panel, left side</td></tr>
     <tr><td>Track pan (L/R)</td><td>Slider on each track's Track Control Panel, just below gain</td></tr>
-    <tr><td>Master output</td><td>Slider next to the playback meter at the top of the Audacity window</td></tr>
+    <tr><td>Playback volume (headphones only)</td><td>Slider next to the playback meter at the top of the Audacity window</td></tr>
   </tbody>
 </table>
 
-<h3>Destructive effect (applied to audio data; preview first)</h3>
+<h3>destructive effect (applied to audio data; preview first)</h3>
 
 <table>
   <thead>
-    <tr><th>Effect</th><th>Where in Audacity</th><th>Key habit</th></tr>
+    <tr><th>Effect</th><th>Where in Audacity</th><th>Habit</th></tr>
   </thead>
   <tbody>
     <tr>
