@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MUS 381 · Recording into Audacity</title>
+  <title>MUS 381 · recording into Audacity</title>
   <link rel="stylesheet" href="../../assets/style.css">
   <style>
     /* Screenshot frame: same pattern as Lab 1 (Audacity Orientation). */
@@ -100,24 +100,24 @@
 
 <div class="title-block">
   <div class="module-tag">Module 03 · Recording, sample prep &amp; library building</div>
-  <h1>Recording into Audacity</h1>
+  <h1>recording into Audacity</h1>
   <div class="subtitle">Capture four sounds, prep them into samples, start your library.</div>
 </div>
 
-<p class="lede">Monday's reading covered the basic recording chain on paper. Today you plug it in. By the end of this session you'll have set up Audacity for recording, dialed in a clean level on the interface, captured four short recordings (paper crumble at two speeds, paper rip at two speeds), prepped each one into a usable sample, and organized the lot into a folder structure that's the start of a sample library you'll grow for the rest of the semester. The work today is the foundation for every recording session that follows.</p>
+<p class="lede">Monday's reading covered the basic recording chain on paper. Today you plug it in, record four paper sounds (a crumble and a rip, each at two speeds), and start the sample library you'll add to for the rest of the semester.</p>
 
 <div class="callout">
-  <div class="callout-label">Today's gear</div>
+  <div class="callout-label">today's gear</div>
   <p>Take from the lab's gear storage: <strong>audio interface, headphones, dynamic mic (with stand and XLR cable)</strong>. Plug in and run through the start-of-session steps on the <strong>Session Routines</strong> card before continuing here.</p>
 </div>
 
-<h2>What we're doing today</h2>
+<h2>what we're doing today</h2>
 
 <ol class="steps">
   <li>Set up your sample library folder.</li>
   <li>Configure Audacity for recording: project format, recording device, mono track.</li>
   <li>Set the gain knob on the interface using Audacity's input meter. Aim for peaks at <strong>-12 to -6 dBFS</strong>.</li>
-  <li>Set the monitor blend so you can hear yourself while recording.</li>
+  <li>Set the monitor mix to hear yourself while recording.</li>
   <li>Do a test recording. Listen back. Adjust if needed.</li>
   <li>Capture a short noise-profile clip (room tone) for the denoise step later.</li>
   <li>Record the four paper sounds.</li>
@@ -127,21 +127,21 @@
 </ol>
 
 <div class="callout">
-  <div class="callout-label">First time with the mic</div>
-  <p>The four-stage chain you read about Monday (mic → XLR → interface → computer) is now physically in front of you. If anything looks wrong, or a cable won't plug in cleanly, raise your hand before forcing anything.</p>
+  <div class="callout-label">first time with the mic</div>
+  <p>The five-stage chain you read about Monday (mic → XLR cable → interface → USB cable → computer) is now physically in front of you. If anything looks wrong, or a cable won't plug in cleanly, raise your hand before forcing anything.</p>
 </div>
 
 <hr>
 
-<h2>Step 1 · Set up your sample library folder</h2>
+<h2>Step 1 · set up your sample library folder</h2>
 
-<p>Build the folder now, before you open Audacity. This is the home for every sample you record this semester; you'll be living in it for the rest of the course, so take a minute to get the structure right.</p>
+<p>Build the folder now, before you open Audacity. This folder holds every sample you record this semester.</p>
 
 <ol class="steps">
   <li>In Finder, navigate to your local working folder: <code>~/Documents/netid/</code>. (If you don't have a folder there yet, make one named with your NetID, lowercase.)</li>
   <li>Inside that folder, create a new folder named <strong>sample-library</strong>. Lowercase, hyphenated. This is the library's root.</li>
   <li>Inside <code>sample-library/</code>, create a folder named <strong>paper</strong>. This is the first category folder; you'll add more categories (metal, water, voice, etc.) as you record more sounds in later weeks.</li>
-  <li>Inside <code>sample-library/</code>, also create a folder named <strong>audacity-projects</strong>. This is where your working Audacity project file will live (you'll save it there in a few minutes). Keeping it separate from the prepped samples means you can browse <code>paper/</code> as a flat list of finished sounds without your <code>.aup3</code> file cluttering the view.</li>
+  <li>Inside <code>sample-library/</code>, also create a folder named <strong>audacity-projects</strong>. Your working Audacity project file goes here (you'll save it in a few minutes).</li>
 </ol>
 
 <p>Your folder should now look like this:</p>
@@ -154,11 +154,11 @@
 
 <hr>
 
-<h2>Step 2 · Configure Audacity for recording</h2>
+<h2>Step 2 · configure Audacity for recording</h2>
 
-<p>Open Audacity. Before recording, you need to check the audio settings.</p>
+<p>Open Audacity and check the audio settings before you record.</p>
 
-<h3>Check the project format in Preferences</h3>
+<h3>check the project format in Preferences</h3>
 
 <ol class="steps">
   <li>Open <span class="menu-path">Audacity → Preferences…</span> (or <kbd>Cmd</kbd> + <kbd>,</kbd>). The Preferences window opens.</li>
@@ -167,27 +167,27 @@
 </ol>
 
 <div class="callout">
-  <div class="callout-label">If your interface is the UM2</div>
-  <p>You just set the project to 24-bit, but the Behringer UM2 captures at 16-bit. (The PreSonus AudioBox does the full 24.) Recording a 16-bit interface into a 24-bit project is fine: Audacity wraps exactly what the UM2 sends in a 24-bit file, with no conversion. The recording carries 16 bits of real detail inside a 24-bit container. The audible effect is the noise floor, which at 16-bit sits near -96 dB, far below anything in the sounds you're capturing. Leave the project at 24-bit either way, so every file in your library shares one format. A bit-depth difference on the way in is harmless, unlike a sample-rate mismatch, which would shift the speed and pitch.</p>
+  <div class="callout-label">if your interface is the UM2</div>
+  <p>You just set the project to 24-bit, but the Behringer UM2 captures at 16-bit. (The PreSonus AudioBox captures at 24-bit.) Recording a 16-bit interface into a 24-bit project is fine: Audacity stores exactly what the UM2 sends in a 24-bit file, with no conversion. The file has 16 bits of real detail in a 24-bit container. The audible difference is the noise floor, which is about -96 dB at 16-bit, far below anything in the sounds you're capturing. Leave the project at 24-bit either way.</p>
 </div>
 
 <div class="callout">
-  <div class="callout-label">The recording device lives here too</div>
-  <p>The Audio Settings panel in Preferences also has <strong>Recording Device</strong>, <strong>Playback Device</strong>, and <strong>Recording Channels</strong> dropdowns. You can change them here. The next section shows you the same change from the main window's Audio Setup button, which is what you'll use day to day; the Preferences panel is just where everything lives if you ever need to dig in.</p>
+  <div class="callout-label">device settings are here too</div>
+  <p>The Audio Settings panel in Preferences also has <strong>Recording Device</strong>, <strong>Playback Device</strong>, and <strong>Recording Channels</strong> dropdowns. Day to day, you'll set them from the <strong>Audio Setup</strong> button in the main window, in the next section.</p>
 </div>
 
 <ol class="steps" start="4">
   <li>Click <strong>OK</strong> to close the Preferences window.</li>
 </ol>
 
-<h3>Select the audio interface as your recording device</h3>
+<h3>select the audio interface as your recording device</h3>
 
 <ol class="steps">
   <li>At the top of the Audacity window, find the <strong>Audio Setup</strong> button (marker 5 on the empty-project tour from your orientation lab).</li>
   <li>Click it. A dropdown opens with several sections: <strong>Host</strong>, <strong>Playback Device</strong>, <strong>Recording Device</strong>, <strong>Recording Channels</strong>.</li>
   <li>Under <strong>Recording Device</strong>, choose your audio interface. The PreSonus shows up as <strong>AudioBox USB 96</strong>; the Behringer UM2 shows up as <strong>USB Audio CODEC</strong>, not as Behringer. Pick whichever matches the interface you took from storage.</li>
-  <li>Under <strong>Recording Channels</strong>, choose <strong>1 (Mono)</strong>. The dynamic mic on input 1 is a single source, so you want a single-channel recording. Stereo recording is for setups with two mics; today is one mic, one channel.</li>
-  <li>Under <strong>Playback Device</strong>, the interface should already be selected (so playback goes out the interface's headphone jack into your headphones). If it isn't, select it now.</li>
+  <li>Under <strong>Recording Channels</strong>, choose <strong>1 (Mono)</strong>.</li>
+  <li>Under <strong>Playback Device</strong>, the interface should already be selected, and playback then goes through the interface to your headphones. If it isn't selected, select it now.</li>
 </ol>
 
 <figure class="vocab-video">
@@ -197,27 +197,27 @@
   <figcaption>Audio Setup walkthrough · the dropdown opens to reveal Host, Playback Device, Recording Device, Recording Channels, and Audio Settings; each device row expands into a submenu with the options for that setting</figcaption>
 </figure>
 
-<h3>Add a mono recording track</h3>
+<h3>add a mono recording track</h3>
 
 <ol class="steps">
   <li>From the menu bar, click <strong>Tracks → Add New → Mono Track</strong>.</li>
-  <li>An empty mono track appears in the project. This is where your recording will appear.</li>
+  <li>An empty mono track appears in the project. Your recording goes on this track.</li>
 </ol>
 
 <div class="callout">
-  <div class="callout-label">Why mono?</div>
-  <p>A dynamic mic plugged into one input on the interface is a mono source: one signal, one stream of numbers, one channel. Recording it to a mono track stores it correctly (one channel of audio) and produces a file that's half the size of an unnecessary stereo version. Stereo is for setups with two mics or a stereo source; today is one mic.</p>
+  <div class="callout-label">mono</div>
+  <p>A dynamic mic plugged into one input on the interface is a mono source, a single channel of audio. Recorded to a mono track, it makes a file half the size of a stereo one. Stereo recording is for two mics or a stereo source.</p>
 </div>
 
 <hr>
 
-<h2>Step 3 · Set the gain on the interface</h2>
+<h2>Step 3 · set the gain on the interface</h2>
 
-<p>The gain knob on the audio interface controls how much the preamp amplifies the mic-level signal before the ADC converts it to digital. You met it in Monday's reading. Today you set it. The target you're aiming for: when you make the loudest version of the sound you're about to record, the peaks on Audacity's input meter sit in the <strong>-12 to -6 dBFS</strong> band. That's the window; anything outside it means you need to adjust.</p>
+<p>The gain knob on the audio interface sets how much the preamp amplifies the mic-level signal before the ADC converts it to digital (Monday's reading, section 5). The target: when you make the loudest version of the sound you're about to record, the peaks on Audacity's input meter reach the <strong>-12 to -6 dBFS</strong> band. If they're outside that band, adjust the gain.</p>
 
 <figure class="diagram">
   <svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg"
-       role="img" aria-label="Vertical level meter from -60 to 0 dBFS with a green safe zone, an amber target zone from -12 to -6 dBFS, and a red ceiling zone above -6 to 0 dBFS. A label points to the target zone as the band to aim for.">
+       role="img" aria-label="Vertical level meter from -60 to 0 dBFS with a green low zone, an amber target zone from -12 to -6 dBFS, and a red ceiling zone above -6 to 0 dBFS. A label points to the target zone as the band to aim for.">
 
     <!-- Title above the meter -->
     <text x="260" y="20" text-anchor="middle"
@@ -269,7 +269,7 @@
     <text x="170" y="84" text-anchor="end"
           font-family="DM Mono, monospace" font-size="11" fill="var(--meter-hot)" font-weight="500">TARGET</text>
     <text x="170" y="174" text-anchor="end"
-          font-family="DM Mono, monospace" font-size="11" fill="var(--meter-good)" font-weight="500">SAFE</text>
+          font-family="DM Mono, monospace" font-size="11" fill="var(--meter-good)" font-weight="500">LOW</text>
 
     <!-- Arrow pointing to target band, with note -->
     <path d="M 360 80 L 305 80" stroke="var(--ink)" stroke-width="1.2" fill="none"
@@ -283,32 +283,32 @@
       peaks of the loudest sound
     </text>
     <text x="365" y="90" font-family="DM Sans, sans-serif" font-size="12" fill="var(--ink)">
-      should sit here
+      should reach this band
     </text>
   </svg>
-  <figcaption>The headroom target band on Audacity's input meter</figcaption>
+  <figcaption>The target band on Audacity's input meter</figcaption>
 </figure>
 
-<p>Three bands matter:</p>
+<p>The meter has three bands:</p>
 
 <ul>
-  <li><strong>Safe (below -12 dBFS):</strong> the signal is below the target. The recording will be quiet and you'll need to amplify it later, which also amplifies the room noise. Turn the gain up.</li>
-  <li><strong>Target (-12 to -6 dBFS):</strong> the peaks of your loudest sound sit here. You have <strong>headroom</strong> (room between your loudest moment and the digital ceiling), and the signal is well above the noise floor. This is where you want to be.</li>
-  <li><strong>Ceiling (-6 to 0 dBFS):</strong> the signal is approaching the ceiling and you're close to clipping. If the clip light on the interface flashes, you've already crossed it. Turn the gain down.</li>
+  <li>Below -12 dBFS, the signal is under the target and the recording will be quiet. Turn the gain up.</li>
+  <li>From -12 to -6 dBFS is the <strong>target</strong>: the peaks of your loudest sound should reach this band. You have <strong>headroom</strong> (room between your loudest moment and the digital ceiling), and the signal is well above the noise floor.</li>
+  <li>From -6 to 0 dBFS, the signal is approaching the ceiling and you're close to clipping. If the clip light on the interface flashes, the signal has already clipped. Turn the gain down.</li>
 </ul>
 
 <p>To dial it in:</p>
 
 <ol class="steps">
-  <li>Turn on live monitoring so the meter shows levels before you start recording. Click Audacity's <strong>recording level meter</strong> at the top of the window. (It's the meter on the right side of the top toolbar, with a small mic icon.) A small menu appears with two items: <strong>Enable Silent Monitoring</strong> and <strong>Options…</strong>. Click <strong>Enable Silent Monitoring</strong>. The meter goes live: it shows the signal coming in from the mic in real time, even though you're not recording yet. (The "silent" in the name means the audio isn't routed through Audacity to your headphones, only displayed on the meter; you'll still hear the mic through the interface's monitor blend, set in the next step.)</li>
-  <li>Make a sound at the loudness you'll be aiming for. For the paper sounds, that means a sample crumble or a quick test rip at roughly the speed and intensity you'll use for the real take. Grab a small piece of scrap paper from the stack at your station for this; don't burn through the four sheets you'll need for the actual recordings.</li>
-  <li>Watch the meter. If the peaks sit below -12, turn the gain knob on the interface clockwise (up) a quarter-turn and try again. If the peaks hit the red zone or trip the interface's clip indicator, turn the gain counter-clockwise (down).</li>
-  <li>Repeat until the loudest peaks sit in the -12 to -6 band consistently. Don't chase a single peak; you're aiming for where the loud moments settle, not the absolute maximum of any one try.</li>
+  <li>Turn on live monitoring so the meter shows levels before you start recording. Click Audacity's <strong>recording level meter</strong> at the top of the window. (It's the meter on the right side of the top toolbar, with a small mic icon.) A small menu appears with two items: <strong>Enable Silent Monitoring</strong> and <strong>Options…</strong>. Click <strong>Enable Silent Monitoring</strong>. The meter goes live: it shows the signal coming in from the mic in real time, even though you're not recording yet. (The "silent" in the name means the audio isn't routed through Audacity to your headphones, only displayed on the meter; you'll still hear the mic through the interface's monitor mix, set in the next step.)</li>
+  <li>Make a sound at the loudness you'll be aiming for. For the paper sounds, that means a test crumble or a quick test rip at roughly the speed and intensity you'll use for the real take. Use a small piece of scrap paper from the stack at your station, and save the four full sheets for the real recordings.</li>
+  <li>Watch the meter. If the peaks stay under -12, turn the gain knob on the interface clockwise (up) a quarter-turn and try again. If the peaks reach the red zone or trip the interface's clip indicator, turn the gain counter-clockwise (down).</li>
+  <li>Repeat until the loudest peaks reach the -12 to -6 band every time. Watch where the loud moments usually peak, and ignore a single stray spike.</li>
 </ol>
 
 <div class="callout">
-  <div class="callout-label">Why the monitoring step exists</div>
-  <p>Audacity's default is to keep the input meter dark unless the project is actively recording. To set the gain you need to see live levels <em>before</em> you press record, which is what Enable Silent Monitoring does. Once it's on, the menu item flips to <strong>Disable Silent Monitoring</strong> (so you can turn it back off if you ever need to). For setting gain, leave it on.</p>
+  <div class="callout-label">silent monitoring</div>
+  <p>Audacity keeps the input meter dark unless it's recording or monitoring. Once Silent Monitoring is on, the menu item changes to <strong>Disable Silent Monitoring</strong>. Leave it on while you set gain.</p>
 </div>
 
 <figure class="vocab-video">
@@ -319,29 +319,29 @@
 </figure>
 
 <div class="callout warn">
-  <div class="callout-label">Don't normalize to fix a quiet recording</div>
-  <p>You might be tempted to undershoot the gain ("better safe than clipping") and plan to fix it in editing. Don't. A signal recorded too quietly carries less information than one recorded at the right level, and when you amplify it after the fact you amplify the room noise along with the sound. Set the gain right at the source. Normalize, in the prep step later, is for standardizing across already-good recordings, not for rescuing too-quiet ones.</p>
+  <div class="callout-label">don't normalize to fix a quiet recording</div>
+  <p>You might be tempted to undershoot the gain ("better safe than clipping") and plan to fix it in editing. Don't. A signal recorded too quietly has less detail above the noise floor, and amplifying it later brings the room noise up with it. Set the gain right at the source. Normalize, in the prep step later, evens out peak level across recordings made at a good level.</p>
 </div>
 
 <hr>
 
-<h2>Step 4 · Set the monitor blend</h2>
+<h2>Step 4 · set the monitor mix</h2>
 
-<p>You need to hear yourself through the headphones while you're recording. The interface's monitor blend control decides what you hear: the live signal coming straight from the mic (no latency), the signal coming back from the computer (a few milliseconds late), or a mix of both.</p>
+<p>The interface's monitor mix sets what you hear in your headphones while you record: the live signal straight from the mic (no latency), the signal coming back from the computer (a few milliseconds late), or a mix of both.</p>
 
 <p>Today you want to hear the mic directly, with little or no playback from the computer.</p>
 
 <ul>
-  <li><strong>On a PreSonus AudioBox USB 96:</strong> turn the <strong>Mixer</strong> knob (between the two gain knobs and the main output) toward <strong>Inputs</strong>. Not all the way; about three-quarters of the way toward Inputs is a good starting point. You'll hear yourself in the headphones immediately.</li>
-  <li><strong>On a Behringer U-Phoria UM2:</strong> press the <strong>Direct Monitor</strong> button in (the square button next to the input jacks). The button stays depressed. You're now hearing the live input.</li>
-  <li><strong>If you can't hear yourself at all:</strong> check the headphone volume knob on the interface, then check the in-line slider on the headphone cable, then check the monitor blend is set as above. The headphones plug into the front of the interface, not the computer.</li>
+  <li>On a PreSonus AudioBox USB 96, turn the <strong>Mixer</strong> knob (between the second gain knob and the <strong>Main</strong> knob) about three-quarters of the way toward <strong>Inputs</strong>. You'll hear yourself in the headphones immediately.</li>
+  <li>On a Behringer U-Phoria UM2, press the <strong>Direct Monitor</strong> button in (the square button next to the input jacks). The button stays down, and you hear the live input.</li>
+  <li>If you can't hear yourself at all, check the headphone volume knob on the interface, then the in-line slider on the headphone cable, then the monitor mix setting above. The headphones plug into the interface (on the front of the Behringer, on the back of the PreSonus), not the computer.</li>
 </ul>
 
-<p>Speak into the mic. You should hear yourself in the headphones with no perceptible delay. If you hear a noticeable echo or stutter, the monitor blend is set toward Playback rather than Inputs; adjust it.</p>
+<p>Speak into the mic. You should hear yourself in the headphones with no perceptible delay. If you hear nothing with the Mixer knob turned toward Playback, turn it toward Inputs. If you hear an echo, Audacity's audible input monitoring is on: open <span class="menu-path">Transport → Transport Options</span> and click <strong>Enable audible input monitoring</strong> to uncheck it.</p>
 
 <hr>
 
-<h2>Step 5 · Do a test recording</h2>
+<h2>Step 5 · do a test recording</h2>
 
 <p>Before you commit to the four real recordings, do one practice take to confirm the chain is working end to end.</p>
 
@@ -360,68 +360,66 @@
   <figcaption>Test recording end to end · press record, capture a short phrase, stop, play back</figcaption>
 </figure>
 
-<p>Three things to check as you listen:</p>
+<p>As you listen, check three things:</p>
 
 <ul>
-  <li><strong>Volume.</strong> The recording should be clearly audible. If it's silent or very quiet, the gain may be too low (back to Step 3), or the recording device may not be set right (back to Step 2).</li>
-  <li><strong>Cleanliness.</strong> The sound should be clean, with no crackling or harshness. If you hear distortion, the gain is too high. Turn it down (Step 3) and try again.</li>
-  <li><strong>Background.</strong> A faint room hiss is normal; a strong hum usually means the XLR cable is loose at one end. Push the cable in firmly at the mic and at the interface.</li>
+  <li>The recording should be clearly audible. If it's silent or very quiet, the gain may be too low (back to Step 3), or the recording device may not be set right (back to Step 2).</li>
+  <li>The sound should be clean, with no crackling or harshness. If you hear distortion, the gain is too high. Turn it down (Step 3) and try again.</li>
+  <li>A faint room hiss in the background is normal; a strong hum usually means the XLR cable is loose at one end. Push the cable in firmly at the mic and at the interface.</li>
 </ul>
 
-<p>When the test sounds clean, delete the test clip. Click the <strong>X</strong> in the track header (or select the track and press <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd> to remove the track) and add a fresh mono track. You want the project to start clean.</p>
+<p>When the test sounds clean, delete the test clip: double-click it to select it, then press <kbd>Delete</kbd>. The empty mono track stays, ready for the real recordings.</p>
 
 <div class="callout">
-  <div class="callout-label">Save your work</div>
-  <p>Now is the right moment to save the Audacity project, before you start capturing real recordings. <span class="menu-path">File → Save Project As…</span>, navigate to <code>~/Documents/netid/sample-library/audacity-projects/</code> (the folder you built in Step 1), name the project <code>sample-library.aup3</code>, click <strong>Save</strong>. From this point on, save every few minutes with <kbd>Cmd</kbd> + <kbd>S</kbd>.</p>
+  <div class="callout-label">save your work</div>
+  <p>Save the Audacity project now, before you capture the real recordings. <span class="menu-path">File → Save Project As…</span>, navigate to <code>~/Documents/netid/sample-library/audacity-projects/</code> (the folder you built in Step 1), name the project <code>sample-library.aup3</code>, click <strong>Save</strong>. From this point on, save every few minutes with <kbd>Cmd</kbd> + <kbd>S</kbd>.</p>
 </div>
 
 <hr>
 
-<h2>Step 6 · Capture a noise-profile clip</h2>
+<h2>Step 6 · capture a noise-profile clip</h2>
 
-<p>Every room has a noise floor: the small constant level of background sound from the ventilation, the computers, the building. You can't hear it most of the time because your ears tune it out, but a microphone catches it, and a quiet recording will pick it up alongside the sound you actually want. Audacity has a <strong>Noise Reduction</strong> effect that can subtract it back out, but to use it the effect needs to see a clean sample of just the noise, with no other sound mixed in. That sample is called a <strong>noise profile</strong>, and you're going to record it now.</p>
+<p>Every room has a noise floor: the small constant level of background sound from the ventilation, the computers, the building. Your ears tune it out most of the time, but a microphone picks it up along with the sound you want. Audacity's <strong>Noise Reduction</strong> effect can subtract it. To do that, it needs a clean recording of the noise alone, with no other sound mixed in. That recording is called a <strong>noise profile</strong>. Record it now:</p>
 
 <ol class="steps">
   <li>Stand still and quiet at your station. Don't touch the mic, the cable, or the table.</li>
   <li>Click <strong>Record</strong>.</li>
-  <li>Wait <strong>10 seconds</strong>. Stay quiet. Don't move. Let the room speak.</li>
+  <li>Wait <strong>10 seconds</strong>.</li>
   <li>Click <strong>Stop</strong>.</li>
 </ol>
 
-<p>You now have a 10-second clip of pure room tone on your track. This is your noise-profile clip. The waveform looks almost flat: just the small wiggles of the room noise itself, with no other content. Leave it where it is; you'll use it during the prep step.</p>
+<p>You now have a 10-second clip of room tone on your track: your noise-profile clip. The waveform looks almost flat, with only the small wiggles of the room noise. Leave it where it is; you'll use it in the prep step.</p>
 
 <div class="callout">
-  <div class="callout-label">Why a separate clip and not the start of each recording?</div>
-  <p>You could capture the noise profile at the start of every recording. Recording it once as its own clip is cleaner: you have one definitive sample of room tone, you set the noise profile from it once, then apply Noise Reduction to each of the four sound clips. Less to remember during recording, less to trim during prep.</p>
+  <div class="callout-label">one noise profile for all four sounds</div>
+  <p>You record room tone once, as its own clip, and set the noise profile from it once. Noise Reduction then uses that profile on each of the four sound clips.</p>
 </div>
 
 <hr>
 
-<h2>Step 7 · Record the four paper sounds</h2>
+<h2>Step 7 · record the four paper sounds</h2>
 
 <p>Pick up a sheet of paper from the stack at your station. You're going to record four short sounds, each as its own clip on the same mono track.</p>
 
 <p>The four recordings, in order:</p>
 
 <ol class="steps">
-  <li><strong>Paper crumble, slow.</strong> Take the sheet of paper. Crumble it slowly into a ball over about 8 to 10 seconds. Let the small individual crackles and creases be audible.</li>
-  <li><strong>Paper crumble, fast.</strong> Take a new sheet. Crumble it as quickly as you can, in about 2 to 3 seconds. A burst of sound rather than a gradual one.</li>
-  <li><strong>Paper rip, slow.</strong> Take a new sheet. Rip it slowly down the middle over about 6 to 8 seconds. Let the tearing be audible the whole way through.</li>
-  <li><strong>Paper rip, fast.</strong> Take a new sheet. Rip it as fast as you can, in one quick motion.</li>
+  <li>For <strong>paper crumble, slow</strong>, crumble the sheet slowly into a ball over about 8 to 10 seconds. Let the small individual crackles and creases be audible.</li>
+  <li>For <strong>paper crumble, fast</strong>, take a new sheet and crumble it as quickly as you can, in about 2 to 3 seconds: a burst of sound rather than a gradual one.</li>
+  <li>For <strong>paper rip, slow</strong>, take a new sheet and rip it slowly down the middle over about 6 to 8 seconds. Keep the tearing audible the whole way through.</li>
+  <li>For <strong>paper rip, fast</strong>, take a new sheet and rip it as fast as you can, in one quick motion.</li>
 </ol>
 
 <p>For each recording:</p>
 
 <ol class="steps">
-  <li>Hold the paper about 15 to 20 centimeters in front of the mic (a hand's width away). Not closer; if you get too close, the proximity effect will exaggerate the lows and the sound will feel boomy.</li>
+  <li>Hold the paper about 15 to 20 centimeters (6 to 8 inches) in front of the mic. Any closer and the proximity effect exaggerates the lows, and the sound turns boomy.</li>
   <li>Click <strong>Record</strong>.</li>
   <li>Wait one full second of silence, then make the sound.</li>
   <li>After the sound ends, wait one full second more, then click <strong>Stop</strong>.</li>
 </ol>
 
-<p>The one-second buffer at each end gives you room to trim cleanly in the prep step. If you cut the silence too tight at the recording stage, you risk clipping off the very beginning or end of the sound itself.</p>
-
-<p>Between recordings, listen back. Click on the clip you just made, press <kbd>Space</kbd>, hear it. If a recording didn't capture what you wanted, click the clip's <strong>X</strong> to delete it, and try that one again. Don't move on until each recording sounds like what you intended.</p>
+<p>Without that second of silence at each end, the very beginning or end of the sound can get cut off. Between recordings, listen back: click the clip you just made and press <kbd>Space</kbd>. If a recording didn't capture what you wanted, double-click the clip, press <kbd>Delete</kbd>, and record that one again. Move on once each recording sounds the way you intended.</p>
 
 <figure class="screenshot">
   <img src="../../assets/images/module-03-week-06/audacity-five-clips.png" alt="An Audacity project with one mono track holding five recorded clips in sequence: a flat noise-profile clip, then four paper-sound clips of varying duration and amplitude." loading="lazy">
@@ -430,21 +428,21 @@
 
 <hr>
 
-<h2>Step 8 · Run the prep pipeline on each recording</h2>
+<h2>Step 8 · run the prep pipeline on each recording</h2>
 
-<p>You have five clips on one track: a noise-profile clip first, then the four paper sounds. The prep pipeline turns each of the four sound clips into a <strong>sample</strong>: a clean, standardized file ready to live in the library and be used in later projects. The pipeline has three steps, applied in order: <strong>denoise → trim → normalize</strong>.</p>
+<p>You have five clips on one track: a noise-profile clip first, then the four paper sounds. The prep pipeline turns each of the four sound clips into a <strong>sample</strong>: a clean, standardized file ready for the library and for later projects. The pipeline has three steps, applied in order: <strong>denoise → trim → normalize</strong>.</p>
 
-<p>You'll go through it four times, once per sound. The noise-profile clip itself doesn't get prepped; it's a tool, not a sample.</p>
+<p>You'll go through it four times, once per sound. The noise-profile clip doesn't get prepped.</p>
 
-<h3>Set the noise profile (once)</h3>
+<h3>set the noise profile (once)</h3>
 
-<p>Before the first denoise, Audacity needs to learn what the room noise sounds like. You only do this once; the noise profile stays in memory until you change it or close the program.</p>
+<p>Before the first denoise, Audacity needs to learn what the room noise sounds like. The noise profile stays in memory until you change it or close the program.</p>
 
 <ol class="steps">
   <li>Double-click the noise-profile clip (the flat-looking first clip on the track). Double-clicking inside a clip selects that whole clip and nothing else.</li>
   <li>Open <span class="menu-path">Effect → Noise Removal and Repair → Noise Reduction…</span></li>
   <li>The Noise Reduction dialog opens. Click the <strong>Get Noise Profile</strong> button.</li>
-  <li>The dialog closes immediately. Audacity has captured the noise profile and is now ready to apply the reduction to other clips.</li>
+  <li>The dialog closes immediately. Audacity has stored the noise profile.</li>
 </ol>
 
 <figure class="screenshot">
@@ -452,17 +450,17 @@
   <figcaption>Step 1 of the Noise Reduction dialog · click Get Noise Profile</figcaption>
 </figure>
 
-<h3>For each of the four sound clips</h3>
+<h3>for each of the four sound clips</h3>
 
 <p>Now apply the three pipeline steps to each paper-sound clip in turn. Start with <strong>paper crumble, slow</strong> (the second clip on the track).</p>
 
-<p><strong>1. Denoise.</strong></p>
+<p><strong>1. denoise</strong></p>
 
 <ol class="steps">
   <li>Double-click the clip to select it.</li>
   <li>Open <span class="menu-path">Effect → Noise Removal and Repair → Noise Reduction…</span></li>
-  <li>The dialog opens with three sliders: <strong>Noise reduction (dB)</strong>, <strong>Sensitivity</strong>, <strong>Frequency smoothing (bands)</strong>. Start with <strong>6, 6.00, 6</strong> (a gentle setting that doesn't over-process). Adjust later by ear if needed.</li>
-  <li>Click <strong>OK</strong>. Audacity processes the clip and subtracts the noise profile from it. The clip's waveform may look slightly thinner near the silent portions; the body of the sound should look mostly unchanged.</li>
+  <li>The dialog opens with three sliders: <strong>Noise reduction (dB)</strong>, <strong>Sensitivity</strong>, <strong>Frequency smoothing (bands)</strong>. Start with <strong>6, 6.00, 6</strong>, a gentle setting. Adjust by ear if needed.</li>
+  <li>Click <strong>OK</strong>. Audacity subtracts the noise profile from the clip. The waveform may look slightly thinner in the quiet portions; the body of the sound should look mostly unchanged.</li>
 </ol>
 
 <figure class="screenshot">
@@ -470,52 +468,52 @@
   <figcaption>Step 2 of the Noise Reduction dialog · click OK to apply</figcaption>
 </figure>
 
-<p><strong>2. Trim.</strong></p>
+<p><strong>2. trim</strong></p>
 
 <ol class="steps">
-  <li>The clip still has the one-second silence buffer at the start and end. Trim them away now: the buffer was there for headroom during recording; the finished sample shouldn't have empty silence at either end.</li>
+  <li>The clip still has the one-second silence buffer at the start and end. Trim it away now.</li>
   <li>With the selection tool active (the I-beam), click-and-drag to select <strong>just the sound itself</strong> (from where the sound starts to where it ends, leaving the buffer silence outside the selection).</li>
-  <li>Apply <span class="menu-path">Edit → Remove Special → Trim Audio</span>, or use the shortcut <kbd>Cmd</kbd> + <kbd>T</kbd>. This is the same Trim move you used in Module 2: it keeps the selected region and removes everything else on the clip.</li>
-  <li>The clip now begins where the sound begins and ends where it ends, with no buffer at either edge.</li>
+  <li>Apply <span class="menu-path">Edit → Remove Special → Trim Audio</span>, or use the shortcut <kbd>Cmd</kbd> + <kbd>T</kbd>. Trim (from Module 2) keeps the selected region and removes everything else in the clip.</li>
+  <li>The clip now begins where the sound begins and ends where it ends.</li>
 </ol>
 
 <div class="callout">
-  <div class="callout-label">Don't forget the fades</div>
+  <div class="callout-label">fades</div>
   <p>A hard trim almost always cuts the waveform mid-cycle, which produces an audible click at the start or end of the file. Smooth it out with a short fade at each end of the clip:</p>
   <ol>
-    <li>Zoom into the start of the clip with <kbd>Cmd</kbd> + <kbd>1</kbd> (or <kbd>Cmd</kbd> + <kbd>E</kbd> after selecting near the edge). 50 ms is too small to select cleanly at the default zoom level; you need to be zoomed in enough to see individual cycles of the wave.</li>
+    <li>Zoom into the start of the clip with <kbd>Cmd</kbd> + <kbd>1</kbd> (or <kbd>Cmd</kbd> + <kbd>E</kbd> after selecting near the edge) until you can see individual cycles of the wave. At the default zoom, 50 ms is too small to select cleanly.</li>
     <li>Select about <strong>50 milliseconds</strong> at the start of the clip (click-and-drag with the I-beam).</li>
     <li>Apply <span class="menu-path">Effect → Fading → Fade In</span>.</li>
     <li>Zoom back out with <kbd>Cmd</kbd> + <kbd>F</kbd> (zoom to fit the whole project).</li>
     <li>Repeat at the end of the clip: zoom in, select about 50 ms, apply <span class="menu-path">Effect → Fading → Fade Out</span>, zoom back out.</li>
   </ol>
-  <p>The Fade In / Fade Out commands and the <kbd>Cmd</kbd> + <kbd>E</kbd> ↔ <kbd>Cmd</kbd> + <kbd>F</kbd> zoom pair are all from Module 2; you've used them before.</p>
+  <p>The Fade In / Fade Out commands and the <kbd>Cmd</kbd> + <kbd>E</kbd> ↔ <kbd>Cmd</kbd> + <kbd>F</kbd> zoom pair are from Module 2.</p>
 </div>
 
-<p><strong>3. Normalize.</strong></p>
+<p><strong>3. normalize</strong></p>
 
 <ol class="steps">
   <li>Double-click the trimmed clip to select it.</li>
   <li>Open <span class="menu-path">Effect → Volume and Compression → Normalize…</span></li>
   <li>In the dialog, set <strong>Normalize peak amplitude to</strong>: <strong>-1.0 dB</strong>.</li>
   <li>Make sure <strong>Remove DC offset</strong> is checked. Leave <strong>Normalize stereo channels independently</strong> as is (it has no effect on a mono file).</li>
-  <li>Click <strong>OK</strong>. Audacity scales the clip's amplitude so the loudest sample sits at -1 dBFS. The waveform expands vertically; quiet bits stay quiet relative to loud bits.</li>
+  <li>Click <strong>OK</strong>. Audacity scales the clip's amplitude until its loudest peak is at -1 dBFS. The waveform expands vertically; quiet parts stay quiet relative to loud parts.</li>
 </ol>
 
 <div class="callout">
-  <div class="callout-label">Normalize scales, it doesn't shape</div>
-  <p>Normalize is a single multiplication applied to every sample. It doesn't change the shape of the sound; it changes its size. A quiet sample stays quiet relative to a loud sample within the same clip. What changes is where the loudest peak sits. Every sample in your library will end up normalized to the same -1 dBFS ceiling, which means you can combine them later without one dominating the mix.</p>
+  <div class="callout-label">normalize scales the whole clip</div>
+  <p>Normalize multiplies every sample value in the clip by the same amount. The shape of the sound stays the same and its size changes, along with the level of the loudest peak. Every sample in your library ends up with its peak at -1 dBFS.</p>
 </div>
 
-<p>That's one full pipeline run. The clip is now denoised, trimmed (with fades at both ends), and normalized. Repeat for the other three sounds (<strong>paper crumble fast</strong>, <strong>paper rip slow</strong>, <strong>paper rip fast</strong>). Listen to each after you finish to confirm it sounds right.</p>
+<p>Repeat for the other three sounds (<strong>paper crumble fast</strong>, <strong>paper rip slow</strong>, <strong>paper rip fast</strong>). Listen to each after you finish to confirm it sounds right.</p>
 
 <hr>
 
-<h2>Step 9 · Export each sample as a WAV</h2>
+<h2>Step 9 · export each sample as a WAV</h2>
 
-<p>Now you have four prepped clips. Time to export each one as a standalone WAV file into the <code>paper/</code> folder of your library.</p>
+<p>Export each of the four prepped clips as its own WAV file into the <code>paper/</code> folder of your library.</p>
 
-<p>Audacity exports the whole project by default, which would give you one big file with all four sounds in it. You want four separate files, one per sound. The pattern: <strong>select</strong> a clip first, then export, with the export range set to the current selection.</p>
+<p>Audacity exports the whole project by default: one file with every clip on the track, the noise-profile clip included. To get one file per sound, <strong>select</strong> a clip first, then export with the export range set to the current selection.</p>
 
 <p>For each of the four samples:</p>
 
@@ -524,25 +522,25 @@
   <li>From the menu bar: <span class="menu-path">File → Export Audio…</span></li>
   <li>The Export Audio dialog opens. Fill it in:
     <ul>
-      <li><strong>File Name:</strong> the sample's name following the convention below</li>
-      <li><strong>Folder:</strong> click <strong>Browse…</strong> and pick <code>~/Documents/netid/sample-library/paper/</code></li>
-      <li><strong>Format:</strong> <code>WAV (Microsoft)</code></li>
-      <li><strong>Channels:</strong> <strong>Mono</strong></li>
-      <li><strong>Sample Rate:</strong> <code>48000 Hz</code></li>
-      <li><strong>Encoding:</strong> <code>Signed 24-bit PCM</code></li>
-      <li><strong>Export Range:</strong> <strong>Current selection</strong> (this is what limits the export to just the clip you selected; if it's set to <strong>Entire Project</strong> you'll get all four sounds in one file)</li>
+      <li>Set <strong>File Name</strong> to the sample's name, following the convention below.</li>
+      <li>Next to <strong>Folder</strong>, click <strong>Browse…</strong> and pick <code>~/Documents/netid/sample-library/paper/</code>.</li>
+      <li>Set <strong>Format</strong> to <code>WAV (Microsoft)</code>.</li>
+      <li>Set <strong>Channels</strong> to <strong>Mono</strong>.</li>
+      <li>Set <strong>Sample Rate</strong> to <code>48000 Hz</code>.</li>
+      <li>Set <strong>Encoding</strong> to <code>Signed 24-bit PCM</code>.</li>
+      <li>Set <strong>Export Range</strong> to <strong>Current selection</strong>.</li>
     </ul>
   </li>
   <li>Click <strong>Export</strong>. If a metadata dialog appears, leave it blank and click <strong>OK</strong>.</li>
 </ol>
 
-<h3>Sample filenames</h3>
+<h3>sample filenames</h3>
 
 <p>The naming convention for samples this semester:</p>
 
 <pre><code>[category]-[descriptor]-[variant].wav</code></pre>
 
-<p>Lowercase, hyphens between words, no spaces, no special characters. For today's four sounds:</p>
+<p>Use lowercase letters, with hyphens between words and no spaces or special characters. For today's four sounds:</p>
 
 <div class="sample-list">
   <ol>
@@ -553,7 +551,7 @@
   </ol>
 </div>
 
-<p>The category is <strong>paper</strong>: this matches the folder name, which makes the path itself readable (<code>paper/paper-crumble-slow.wav</code>). The descriptor names what the sound is (a crumble, a rip). The variant distinguishes two takes of the same descriptor (slow vs fast).</p>
+<p>The category, <strong>paper</strong>, matches the folder name: <code>paper/paper-crumble-slow.wav</code>. The descriptor names what the sound is (a crumble, a rip). The variant distinguishes two takes of the same descriptor (slow, fast).</p>
 
 <p>After all four exports, open the <code>paper/</code> folder in Finder. You should see exactly these four files:</p>
 
@@ -565,13 +563,13 @@
   paper-rip-slow.wav</code></pre>
 </figure>
 
-<p>Save the Audacity project one more time (<kbd>Cmd</kbd> + <kbd>S</kbd>) so the prepped state is preserved alongside the exported WAVs.</p>
+<p>Save the Audacity project one more time (<kbd>Cmd</kbd> + <kbd>S</kbd>).</p>
 
 <hr>
 
-<h2>Step 10 · Write the library README, upload to the server</h2>
+<h2>Step 10 · write the library README, upload to the server</h2>
 
-<p>A library without a README is a pile of files. A README is the document at the root of the library that explains what's in it, how it's organized, and how to find things. You write the first version today and update it every time you add to the library.</p>
+<p>A README is the document at the root of the library that says what's in it and how it's organized. You write the first version today and update it every time you add to the library.</p>
 
 <ol class="steps">
   <li>Open <strong>TextEdit</strong> (in the Applications folder or via Spotlight).</li>
@@ -614,13 +612,13 @@ NOTES
 </code></pre>
 
 <div class="callout">
-  <div class="callout-label">The README is for future-you</div>
-  <p>The library will grow to dozens of sounds by the end of the semester. By the time you're picking samples for the final project in Module 4, you won't remember what every recording sounds like just from its filename. The README is the document you write to your future self so future-you can find what current-you recorded.</p>
+  <div class="callout-label">keeping the README current</div>
+  <p>The library will grow to dozens of sounds by the end of the semester. Each time you add to it, give a new category folder a line under ORGANIZATION and each new file a line under CONTENTS describing the sound. In Module 4 you'll pick samples for the final project from these descriptions.</p>
 </div>
 
-<h3>End of session</h3>
+<h3>end of session</h3>
 
-<p>The <strong>Session Routines</strong> card has the full end-of-session routine. The steps below are the lab-specific part (what to upload) that fold into the card's upload phase.</p>
+<p>The <strong>Session Routines</strong> card has the full end-of-session routine. During the card's upload phase, upload today's work this way:</p>
 
 <ol class="steps">
   <li>Open FileZilla and connect from the Quickconnect bar.</li>
@@ -629,21 +627,21 @@ NOTES
   <li>Verify everything copied by opening <code>sample-library/paper/</code> in the right pane and confirming all four WAVs are there.</li>
 </ol>
 
-<p>Then continue with the rest of the card's end-of-session routine: close Audacity and TextEdit, disconnect and quit FileZilla, sign out of browser accounts, quit any remaining apps, knobs back to zero, unplug everything (including the mic's XLR), stow the gear back in the lab's gear storage, chair in.</p>
+<p>Then finish the end-of-session routine on the <strong>Session Routines</strong> card, including unplugging the mic's XLR cable and returning the mic and stand to gear storage.</p>
 
-<p>Your library now lives in two places: your local folder for today, and the server as the master copy. Next session you'll download it to whichever lab machine you sit at, and continue.</p>
+<p>Your library is now in two places: your local folder for today, and the server as the master copy. Next session you'll download it to whichever lab machine you sit at and continue.</p>
 
 <hr>
 
-<h2>Recording on your phone</h2>
+<h2>recording on your phone</h2>
 
-<p>Between now and the next lab, you can grow your library by recording sounds on your phone whenever something catches your ear. The phone-recording reference card covers the basics: which app to use, the settings to set, and the recording technique that makes a take usable. The next lab covers how to get those recordings off your phone, import them into Audacity, and run them through the same prep pipeline you used today.</p>
+<p>Between now and the next lab, you can grow your library by recording sounds on your phone whenever something catches your ear. The phone-recording reference card covers the app, its settings, and recording technique. The next lab moves those recordings into Audacity and through the same prep pipeline you used today.</p>
 
 <p>The card is at the front of the room. Pick one up before you leave: <a href="03-handout-recording-on-phone.html" target="_blank" rel="noopener noreferrer">Recording on your phone (reference card)</a>.</p>
 
 <hr>
 
-<h2>Quick reference</h2>
+<h2>quick reference</h2>
 
 <table class="shortcut-table">
   <thead>

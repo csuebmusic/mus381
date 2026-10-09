@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MUS 381 · The Mixer in Practice · Live Sound</title>
+  <title>MUS 381 · the mixer in practice · live sound</title>
   <link rel="stylesheet" href="../../assets/style.css">
   <style>
     /* Diagram frame: matches the mixer reading (Lecture 3) so the lab feels continuous with it. */
@@ -231,29 +231,29 @@
 
 <div class="title-block">
   <div class="module-tag">Module 03 · Recording, sample prep &amp; library building</div>
-  <h1>The Mixer in Practice · Live Sound</h1>
+  <h1>the mixer in practice · live sound</h1>
 </div>
 
-<p class="lede">Monday's reading walked the console section by section: channel strip, in-line architecture, submasters, master. Today you watch the live side work. The pedagogical move is to take a band, with its instruments and its set of mics, and run all of them through the console for a small live show. The studio scenario lives in its own handout (08); the hardware is the same, the patching changes.</p>
+<p class="lede">Monday's reading walked the console section by section: channel strip, in-line architecture, submasters, master. Today you take a band, with its instruments and mics, and run every signal through the console for a small live show. The studio scenario uses the same hardware with different patching and has its own handout (Lab 4).</p>
 
 <div class="callout">
   <div class="callout-label">Today's gear</div>
   <p>Nothing to take from gear storage today. This session runs at your station with the projector at the front of the room. Open the <strong>Mixer</strong> reading (Lecture 3) in another tab; you'll be referring back to its photos and diagrams as we walk the two scenarios.</p>
 </div>
 
-<h2>What we're doing today</h2>
+<h2>what we're doing today</h2>
 
 <ol class="steps">
-  <li>Meet the band: <strong>The Sound Below</strong>. Five players, twelve signals into the console.</li>
-  <li>Walk <strong>Scenario 1: Live sound.</strong> How the band's signals reach the console at a venue, where each signal arrives on the desk, and how the audience and the performers each get a different mix from the same channels.</li>
-  <li><strong>Scenario 2: You try!</strong> Generate a random lineup and work through the routing yourself, with reveals to check your thinking against one reasonable approach.</li>
+  <li>Meet the band, <strong>The Sound Below</strong>: five players and twelve signals into the console.</li>
+  <li>Walk through <strong>Scenario 1</strong>, live sound: how the band's signals reach the console at a venue, where each signal arrives on the console, and how the audience and the performers each get a different mix from the same channels.</li>
+  <li>In <strong>Scenario 2</strong>, generate a random lineup and work through the routing yourself, with reveals to check your thinking against one reasonable approach.</li>
 </ol>
 
 <hr>
 
-<h2>1 · Meet the band: The Sound Below</h2>
+<h2>1 · meet the band: The Sound Below</h2>
 
-<p>The Sound Below is a five-piece. The instrumentation was chosen to exercise every signal type, mic kind, and cable you've met in this module: a mic-level vocal, a mic-level guitar amp, the canonical DI-dry-plus-amp-wet bass treatment from Lecture 2, the standard four-mic drum setup (kick, snare, and a stereo pair of overhead condensers), and a stage keyboardist with a laptop running alongside (the only line-level signals in the band). Twelve signals total. The console has sixteen input channels; the band fills three-quarters of it.</p>
+<p>The Sound Below is a five-piece: a mic-level vocal, a mic-level guitar amp, a bass captured through a DI box and a mic on its amp (the DI setup from Lecture 2), a four-mic drum setup (kick, snare, and a stereo pair of overhead condensers), and a stage keyboardist with a laptop running alongside (the only line-level signals in the band). That's twelve signals. The console has sixteen input channels, and the band fills three-quarters of them.</p>
 
 <table class="routing">
   <caption>Chart 1 · The Sound Below · the band's twelve signals</caption>
@@ -356,33 +356,33 @@
 
 <div class="callout">
   <div class="callout-label">Why the bass gets two channels</div>
-  <p>Bass is the one source on the band today that gets recorded two ways at once. The bassist's signal hits a DI box first: the box's <strong>direct out</strong> sends a clean, balanced copy straight to the console (the "dry" signal), and the box's <strong>thru</strong> jack passes the instrument signal along to the bass amp, where a dynamic mic on the cab captures the amp's tone (the "wet" signal). Two channels, two mic-level XLRs into the console, both arriving at the same moment. At mixdown the engineer blends them: the DI carries the low-end punch and the note attack; the mic'd amp carries the warmth, the room, the speaker's character. Going DI-only often sounds sterile; going amp-only often sounds muddy; blending the two is the standard solution.</p>
+  <p>Bass is the one source on the band today captured two ways at once. The bassist's signal goes into a DI box first: the box's <strong>direct out</strong> sends a clean, balanced copy straight to the console (the "dry" signal), and the box's <strong>thru</strong> jack passes the instrument signal along to the bass amp, where a dynamic mic on the bass amp's speaker captures the amp's tone (the "wet" signal). That's two channels and two mic-level XLRs into the console. The amp mic's signal arrives a little later than the DI's: sound in air covers about a foot per millisecond. During the show the engineer blends them: the DI gives the low-end punch and the note attack, and the mic'd amp gives the warmth, the room, and the speaker's character. DI alone often sounds sterile, and amp alone often sounds muddy.</p>
 </div>
 
 <div class="callout">
   <div class="callout-label">Why the keyboardist's signals look different</div>
-  <p>The keyboardist's four signals are the first non-microphone sources on the band today, and the first <strong>line-level</strong> signals in the lab. The stage keyboard puts out a stereo pair from its main outputs (L and R, 1/4" TRS, line level); the laptop puts out a second stereo pair from its audio interface (also L and R, 1/4" TRS, line level). Four line-level signals at the source.</p>
-  <p>Line-level signals are already strong enough to pass through a console's circuitry without needing a preamp's amplification: the preamp's job is to boost weak mic-level signals up to the level the rest of the console expects, and sending a line-level signal into a mic preamp without precaution can over-amplify it and clip. How a line-level source is handled on the way to the console depends on the scenario: live sound and studio recording solve it in different ways, both covered in the scenarios below.</p>
+  <p>Apart from the bass DI, the keyboardist's four signals are the band's only non-microphone sources, and they're its only <strong>line-level</strong> signals. The stage keyboard puts out a stereo pair from its main outputs (L and R, 1/4" TRS, line level); the laptop puts out a second stereo pair from its audio interface (also L and R, 1/4" TRS, line level).</p>
+  <p>Line-level signals are already strong enough to pass through a console's circuitry without a preamp's amplification. A mic preamp boosts weak mic-level signals up to the level the rest of the console expects, and a line-level signal sent into a mic preamp without precaution can be over-amplified and clip. Live sound handles line-level sources one way (below); the studio handout (Lab 4) covers the other.</p>
 </div>
 
 <hr>
 
-<h2>2 · Scenario 1 · Live sound</h2>
+<h2>2 · Scenario 1 · live sound</h2>
 
-<p>The Sound Below is playing a small venue. The stage holds the band, the amps, the drums, the keys rig, and five stage monitors (one in front of each performer). Out in front of the stage are the front-of-house speakers facing the audience. Halfway back in the room sits the engineer, behind the console.</p>
+<p>The Sound Below is playing a small venue. The stage holds the band, the amps, the drums, the keys rig, and five stage monitors (one in front of each performer). Out in front of the stage are the front-of-house speakers facing the audience. The engineer is halfway back in the room, behind the console.</p>
 
 <p>The job: take the twelve signals coming off the stage and send them to <strong>two destinations</strong> at once.</p>
 
 <ol class="steps">
-  <li><strong>Front of house (FOH):</strong> the speakers facing the audience. The audience needs to hear the whole band balanced as a mix. The console builds the master mix and sends it out at MASTER O/P, which cables to the FOH power amps that drive the audience speakers.</li>
-  <li><strong>Stage monitors:</strong> a separate mix for each performer, so each player hears what <em>they</em> need to perform well. The vocalist mostly wants their own voice plus a bit of the kick to lock the timing; the bassist wants kick, snare, and their own bass; the drummer wants the bass and the click; the guitarist wants vocal, guitar, and drums; the keyboardist wants vocal, her own keys and laptop, and enough drums to lock in. Five performers, five different mixes, all built from the same twelve channels.</li>
+  <li>The <strong>front of house (FOH)</strong> speakers face the audience, who need to hear the whole band balanced as a mix. The console builds the master mix and sends it out at MASTER O/P, which cables to the FOH power amps that drive the audience speakers.</li>
+  <li>The <strong>stage monitors</strong> each get a separate mix for one performer, with what <em>that</em> player needs to hear to perform. The vocalist mostly wants their own voice plus a bit of the kick to lock the timing; the bassist wants kick, snare, their own bass, and a little vocal; the drummer wants the bass and the vocal; the guitarist wants vocal, guitar, and drums; the keyboardist wants vocal, her own keys and laptop, and enough drums to lock in.</li>
 </ol>
 
-<p>Sketched at the level of inputs and outputs, the scenario looks like this. The band's twelve signals arrive on the left in two cable families: eight mic-level signals on XLR (vocal, guitar amp, bass DI, bass amp, four drum mics) and four line-level signals on TRS from the keyboardist (keys L/R, laptop L/R). All twelve arrive at the same console. From that console, two output mixes go to two destinations: the front-of-house speakers facing the audience, and the five stage monitors facing the performers.</p>
+<p>In the diagram below, the band's twelve signals come in on the left: eight mic-level signals on XLR (vocal, guitar amp, bass DI, bass amp, four drum mics) and four line-level signals on TRS from the keyboardist (keys L/R, laptop L/R), which pass through a DI box on their way to the console. On the right, the console's output goes to two destinations: the front-of-house speakers facing the audience, and the five stage monitors facing the performers.</p>
 
 <figure class="diagram">
   <svg viewBox="0 0 720 460" xmlns="http://www.w3.org/2000/svg"
-       role="img" aria-label="Diagram of the live-sound scenario at the input-output level. On the left, five source groupings labeled with the band's instruments: vocal on XLR, guitar amp on XLR, bass (DI plus amp mic) on two XLRs, drums (kick, snare, two overheads) on four XLRs, and keys plus laptop on four TRS lines. All cables converge into a single console box in the middle marked with a question mark. From the console, two output paths go to the right: one to the FOH speakers (the audience mix), the other to five stage monitors (the performer mixes).">
+       role="img" aria-label="Diagram of the live-sound scenario at the input-output level. On the left, five source groupings labeled with the band's instruments: vocal on XLR, guitar amp on XLR, bass (DI plus amp mic) on two XLRs, drums (kick, snare, two overheads) on four XLRs, and keys plus laptop on four TRS lines through a DI box. All cables converge into a single console box in the middle marked with a question mark. From the console, two output paths go to the right: one to the FOH speakers (the audience mix), the other to five stage monitors (the performer mixes).">
 
     <defs>
       <marker id="ah-twodest-xlr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
@@ -487,7 +487,7 @@
             stroke="var(--cable-trs)" stroke-width="2.5" marker-end="url(#ah-twodest-trs)"/>
       <text x="235" y="342" text-anchor="middle"
             font-family="DM Mono, monospace" font-size="9"
-            fill="var(--cable-trs)">TRS · ×4</text>
+            fill="var(--cable-trs)">TRS → DI → XLR · ×4</text>
     </g>
 
     <!-- OUTPUT 1: FOH speakers -->
@@ -517,16 +517,16 @@
     </g>
 
   </svg>
-  <figcaption>The live-sound scenario at the input-output level. Twelve signals arrive at the console on the left (teal = XLR mic-level, plum = TRS line-level); two output mixes leave on the right. The rest of this section fills in what's inside the box.</figcaption>
+  <figcaption>The live-sound scenario at the input-output level. Twelve signals arrive at the console on the left (teal = XLR at mic level; plum = the keys rig's TRS line outputs, which reach the console on XLR after a DI box); two outputs leave on the right.</figcaption>
 </figure>
 
-<p>Behind the console, halfway back in the room, is the engineer. Their job for the night is to <strong>ride the faders</strong>: listen continuously to what's coming out of the FOH speakers, keep the band balanced as the song moves (vocal up in the chorus, guitar back during the verse, kick steady through it all), and at the same time keep the five stage monitor mixes balanced for each player on stage. The engineer is making small fader moves and EQ adjustments constantly through the show; the work happens in real time and is finished when the band walks off.</p>
+<p>The engineer's job for the night is to <strong>ride the faders</strong>: listen continuously to what's coming out of the FOH speakers, keep the band balanced as the song moves (vocal up in the chorus, guitar back during the verse, kick steady through it all), and at the same time keep the five stage monitor mixes balanced for each player on stage. The engineer makes small fader moves and EQ adjustments in real time throughout the show, until the band walks off.</p>
 
-<h3>From the stage to the console</h3>
+<h3>from the stage to the console</h3>
 
-<p>Before any of that routing happens, the twelve signals have to physically travel from the stage to the console. Venues solve this with two pieces of dedicated hardware: a stage box and a snake.</p>
+<p>Before any routing, the twelve signals have to physically travel from the stage to the console. Venues use two pieces of dedicated hardware for this: a stage box and a snake.</p>
 
-<p>At the side of the stage, sitting on the floor or bolted to a riser, is a sturdy metal box about the size of a thick laptop. Its top face is a grid of jacks: a row of female XLR inputs, labeled 1, 2, 3, ... up to the number of channels on the box. This is the <strong>stage box</strong>. Every mic on the stage plugs into one of its jacks with a short XLR cable. The vocalist's mic on a short run; the kick drum's mic on a short run; each overhead condenser on a short run. The longest cable on the stage at this point is the one from the drum overhead to the stage box, maybe ten feet.</p>
+<p>At the side of the stage, on the floor or bolted to a riser, is a sturdy metal box about the size of a thick laptop. Its top face is a grid of jacks: a row of female XLR inputs, labeled 1, 2, 3, ... up to the number of channels on the box. This is the <strong>stage box</strong>. Every mic on the stage plugs into one of its jacks with a short XLR cable. The longest cable on the stage at this point is the one from the drum overhead to the stage box, maybe ten feet.</p>
 
 <p>From the back of the stage box, one fat black cable runs off the stage, along the wall or under the floor, all the way to the console at front-of-house. This cable is the <strong>snake</strong> (sometimes a <strong>multicore</strong>, or in audio-engineer slang the <strong>multi</strong>). Inside its outer jacket are dozens of individually shielded balanced pairs: one pair per channel of the stage box, often plus a few return pairs going back the other way for monitor speakers on the stage. A 16-channel snake carries 16 signals on a single physical cable; a 32-channel snake carries 32. At the console end, the snake terminates in a fan-out: a bundle of individual XLR connectors, labeled 1 through N, that plug into the back of the console.</p>
 
@@ -538,25 +538,25 @@
   <div class="photo-attribution">Photo via ProX Live Performance Gear.</div>
 </figure>
 
-<p><strong>The stage box jack number becomes the console channel number.</strong> Vocalist's mic plugged into stage box jack 1 arrives on console channel 1. Kick mic plugged into jack 5 arrives on console channel 5. The engineer working at the console knows which physical mic is on which channel because the stage box and the console agree on the numbering. Re-patch the mic into a different jack and the source moves to a different console channel; the engineer at FOH has to re-label the fader.</p>
+<p><strong>The stage box jack number becomes the console channel number.</strong> Vocalist's mic plugged into stage box jack 1 arrives on console channel 1. Kick mic plugged into jack 5 arrives on console channel 5. Re-patch the mic into a different jack and the source moves to a different console channel; the engineer at FOH has to re-label the fader.</p>
 
-<p>That works cleanly for every input on the band today except the keyboardist's. The stage box has female XLR jacks; the keyboard and the laptop have <strong>1/4" TRS line outputs</strong>. The connectors don't match. Stage boxes can carry line-level signals on a balanced XLR pair just fine, but the engineer has to know that's what's happening: at the console end, the preamp gain on those channels needs to be set much lower than for a mic, otherwise a line-level signal hitting a preamp turned up for mic level will clip. Both problems (the connector and the level mismatch) get solved by the same piece of gear: a <strong>DI box</strong>, the same kind that handled the bass guitar back in Lecture 2.</p>
+<p>Every input on the band plugs straight into the stage box except the keyboardist's. The stage box has female XLR jacks; the keyboard and the laptop have <strong>1/4" TRS line outputs</strong>. The connectors don't match. A stage box can carry a line-level signal on a balanced XLR pair, but then the preamp gain on that channel at the console has to be set much lower than for a mic: a line-level signal hitting a preamp turned up for mic level clips. A <strong>DI box</strong>, the same kind that handled the bass guitar in Lecture 2, handles both the connector and the level.</p>
 
-<p>The keyboardist places one DI box at her station with four inputs and four outputs. Her stage keyboard's L and R outputs go into two of the DI's 1/4" TRS inputs; the laptop's L and R outputs go into the other two. On the DI box's front face, a <strong>pad switch</strong> for each channel is engaged: this tells the DI that the incoming signal is line-level (hot) rather than instrument-level, and pads the input down so the DI's internal circuit doesn't clip. Four XLR cables come out of the DI box's outputs, carrying four mic-level signals to four jacks on the stage box. From the snake's point of view, the keyboardist's four channels look exactly like the eight mic channels: balanced, mic-level, on XLR. The engineer at FOH treats them as four more mic inputs with their preamps set a touch lower than for an actual mic.</p>
+<p>The keyboardist has a four-channel DI box at her station. Her stage keyboard's L and R outputs go into two of the DI's 1/4" TRS inputs; the laptop's L and R outputs go into the other two. On the DI box's front face, the <strong>pad switch</strong> for each channel is engaged. The pad lowers the hot line-level input before it reaches the DI's internal circuit, which would otherwise clip. Four XLR cables carry four mic-level signals from the DI box's outputs to four jacks on the stage box. On the snake, the keyboardist's four channels are the same as the eight mic channels: balanced, mic-level, on XLR. The engineer at FOH treats them as four more mic inputs with their preamps set a touch lower than for an actual mic.</p>
 
 <div class="callout">
   <div class="callout-label">Two simpler alternatives, when they're available</div>
-  <p>The DI-box route is the most reliable and the most uniform (every channel arrives at the console as XLR-on-MIC, no exceptions). There are two simpler alternatives, used when the situation allows.</p>
-  <p>First: a <strong>TRS-to-XLR cable</strong>. The signal stays balanced and line-level (TRS and XLR can both carry a balanced signal; a properly wired adapter cable just remaps the conductors), and the keys arrive at the stage box on the XLR jack at line-level instead of mic-level. The console's preamp on that channel gets set much lower than for a mic, because the signal is already strong. Works on most consoles, since the MIC jack will accept up to about +4 dBu, but the engineer has to remember to set the gain differently for the keys channels.</p>
-  <p>Second: many stage boxes (and the consoles they feed into) have a separate row of <strong>1/4" TRS line-level inputs</strong> alongside the XLR row, specifically for keys, DI'd guitars, and other line-level sources. When the stage box has these, the keys plug straight in with regular TRS cables and arrive at the console on the LINE jack at line-level. The simplest setup of all, when the venue's stage box happens to have the right inputs. The ProX in the photo above does not; many touring rigs do.</p>
+  <p>The DI-box route brings every channel to the console as XLR on the MIC jack.</p>
+  <p>The first alternative is a <strong>TRS-to-XLR cable</strong>. The signal stays balanced and line-level (TRS and XLR can both carry a balanced signal; a properly wired adapter cable remaps the conductors), and the keys arrive at the stage box on the XLR jack at line level instead of mic level. The console's preamp on that channel gets set much lower than for a mic. Most consoles' MIC jacks accept up to about +4 dBu, and this works on most of them.</p>
+  <p>For the second, many stage boxes (and the consoles they feed into) have a separate row of <strong>1/4" TRS line-level inputs</strong> alongside the XLR row, for keys, drum machines, and other line-level sources. When the stage box has these, the keys plug straight in with regular TRS cables and arrive at the console on the LINE jack at line level. The ProX in the photo above doesn't have them; many touring rigs do.</p>
 </div>
 
 <div class="callout">
   <div class="callout-label">Modern digital snakes</div>
-  <p>The picture above describes an analog snake: one shielded pair per audio channel, lots of copper, heavy. A modern variant is the <strong>digital snake</strong>: a small box at the stage that does analog-to-digital conversion locally, and sends all the channels as a single digital stream over an ethernet cable (or a fiber-optic cable) to the console. This only works if the console is also digital: a digital snake feeds a digital console with a matching digital input. An analog console (like the Toft ATB in MB2508) expects analog audio on XLR jacks at every input, so it has to be paired with an analog snake. The same Cat6 cable that runs your laptop's internet can carry 32 channels of audio at 48 kHz. The connectors are different and the box at the stage is doing more work, but conceptually it's the same idea: bundle many signals onto one path. Many touring engineers prefer digital snakes for the weight savings; many older venues still use analog snakes because they already own one and they last forever.</p>
+  <p>The picture above describes an analog snake: one shielded pair per audio channel, lots of copper, heavy. A modern variant is the <strong>digital snake</strong>: a small box at the stage that does analog-to-digital conversion locally and sends all the channels as a single digital stream over an ethernet cable (or a fiber-optic cable) to the console. A digital snake feeds a digital console with a matching digital input. An analog console (like the Toft ATB in MB2508) expects analog audio on XLR jacks at every input and needs an analog snake. The same Cat6 cable that runs your laptop's internet can carry 32 channels of audio at 48 kHz. The connectors are different and the stage box also converts analog to digital, but the idea is the same: many signals bundled onto one path. Many touring engineers prefer digital snakes for the weight savings; many older venues still use the analog snakes they already own, which last for decades.</p>
 </div>
 
-<h3>The channel chart</h3>
+<h3>the channel chart</h3>
 
 <p>The twelve signals get assigned to input channels 1 through 12 on the console.</p>
 
@@ -586,30 +586,28 @@
   </tbody>
 </table>
 
-<p>All twelve signals arrive at the console on the MIC (XLR) jack: the eight mic-level signals from microphones and the DI box on the bass, plus the keyboardist's four signals after her DI box. Only the two overhead condensers need phantom power; the dynamics and the DI boxes don't draw +48V. (If you're unsure why, the polar-patterns and condenser-mic sections of Lecture 2 cover it.)</p>
+<p>All twelve signals arrive at the console on the MIC (XLR) jack: the eight mic-level signals from microphones and the DI box on the bass, plus the keyboardist's four signals after her DI box. Only the two overhead condensers need phantom power. The dynamics and the passive DI boxes used here don't draw +48V; an active DI would (Lecture 2, sections 3.1 and 5.1).</p>
 
-<h3>The FOH mix: routing to the master mix</h3>
-
-<p>Three patches to set up the FOH mix, one for each group of channels.</p>
+<h3>the FOH mix: routing to the master mix</h3>
 
 <p><strong>Patch 1 · Vocal, guitar, bass DI, bass amp (channels 1-4) directly to the master mix.</strong></p>
 
 <ol class="steps">
-  <li>On each of channels 1, 2, 3, 4: press the <strong>L-R</strong> button down. The 1-2, 3-4, 5-6, 7-8 buttons stay up.</li>
-  <li>On each of those channels: set the channel pan knob (center for vocal and bass DI, slightly left/right for the two amp mics if the engineer wants width).</li>
+  <li>On each of channels 1, 2, 3, and 4, press the <strong>L-R</strong> button down. The 1-2, 3-4, 5-6, and 7-8 buttons stay up.</li>
+  <li>On each of those channels, set the channel pan knob (center for vocal and bass DI, slightly left or right for the two amp mics if the engineer wants width).</li>
   <li>Adjust each channel's INPUT GAIN, EQ, and fader as the band plays.</li>
 </ol>
 
-<p>The engineer now has four faders, one per channel, riding directly into the master mix.</p>
+<p>Channels 1-4 now feed the master mix directly, each on its own fader.</p>
 
 <p><strong>Patch 2 · Drums (channels 5-8) routed to subgroup pair 1-2, then into the master mix.</strong></p>
 
 <ol class="steps">
-  <li>On each of channels 5 (kick), 6 (snare), 7 (overhead L), 8 (overhead R): press the <strong>1-2</strong> button down. L-R stays up.</li>
-  <li>On the channel pan knobs: kick centered, snare centered, overhead L hard left, overhead R hard right. The four channels now sum into the subgroup pair (sub 1 = left side of the kit, sub 2 = right).</li>
-  <li>On submaster strips 1 and 2: set the <strong>TAPE</strong> button up (the live subgroup is the source, not playback).</li>
-  <li>On submaster strip 1: turn <strong>MON LEVEL</strong> up, set <strong>MON PAN</strong> hard left. On submaster strip 2: MON LEVEL up, MON PAN hard right. The drum kit now arrives in the master mix as a stereo pair.</li>
-  <li>Leave both submaster faders down. They control the level out to the SUBMASTER OUTPUTS jacks (the DAW send), which a live show isn't using.</li>
+  <li>On each of channels 5 (kick), 6 (snare), 7 (overhead L), and 8 (overhead R), press the <strong>1-2</strong> button down. L-R stays up.</li>
+  <li>Pan the kick and snare center, overhead L hard left, and overhead R hard right. The four channels now sum into the subgroup pair (sub 1 = left side of the kit, sub 2 = right).</li>
+  <li>On submaster strips 1 and 2, set the <strong>TAPE</strong> button up (the live subgroup is the source, not playback).</li>
+  <li>On submaster strip 1, turn <strong>MON LEVEL</strong> up and set <strong>MON PAN</strong> hard left. On submaster strip 2, turn MON LEVEL up and set MON PAN hard right. The drum kit now arrives in the master mix as a stereo pair.</li>
+  <li>Leave both submaster faders down. The submaster faders set the level at the SUBMASTER OUTPUTS jacks (the DAW send), and nothing is patched to those jacks in this scenario.</li>
 </ol>
 
 <p>The engineer's drum-control surface is now two knobs: MON LEVEL on submaster 1 (drum bus left), MON LEVEL on submaster 2 (drum bus right). Pull both down by 3 dB during a quiet verse and the whole kit drops by 3 dB in the master mix; the internal balance among the drum mics doesn't move.</p>
@@ -617,10 +615,10 @@
 <p><strong>Patch 3 · Keys and laptop (channels 9-12) routed to subgroup pair 3-4, then into the master mix.</strong></p>
 
 <ol class="steps">
-  <li>On each of channels 9 (keys L), 10 (keys R), 11 (laptop L), 12 (laptop R): press the <strong>3-4</strong> button down. L-R stays up.</li>
-  <li>On the channel pan knobs: channels 9 and 11 hard left, channels 10 and 12 hard right. The two stereo pairs sum across the subgroup pair into one stereo electronic submix.</li>
-  <li>On submaster strips 3 and 4: TAPE up, MON LEVEL up, MON PAN hard left on sub 3 and hard right on sub 4. The electronic submix now arrives in the master mix.</li>
-  <li>Leave submaster faders 3 and 4 down (same reason as the drum subs).</li>
+  <li>On each of channels 9 (keys L), 10 (keys R), 11 (laptop L), and 12 (laptop R), press the <strong>3-4</strong> button down. L-R stays up.</li>
+  <li>Pan channels 9 and 11 hard left and channels 10 and 12 hard right. The two stereo pairs sum across the subgroup pair into one stereo electronic submix.</li>
+  <li>On submaster strips 3 and 4, set TAPE up and MON LEVEL up, with MON PAN hard left on sub 3 and hard right on sub 4. The electronic submix now arrives in the master mix.</li>
+  <li>Leave submaster faders 3 and 4 down.</li>
 </ol>
 
 <p>One pair of knobs (MON LEVEL on submasters 3 and 4) controls everything coming from the keys rig in the FOH mix. The internal balance between the stage keyboard and the laptop stays set wherever the keyboardist's gain-staging at her station put it.</p>
@@ -737,16 +735,16 @@
     <line x1="512" y1="105" x2="563" y2="105" stroke="var(--accent)" stroke-width="2" marker-end="url(#ah-foh-main)"/>
     <text x="537" y="143" text-anchor="middle" font-family="DM Mono, monospace" font-size="8" fill="var(--accent)" font-style="italic">via FOH amps</text>
   </svg>
-  <figcaption>Scenario 1 main routing. Dotted arrows show internal routing on the console (channels and subgroups arriving in the master mix); the solid arrow on the right represents the master mix leaving the console at MASTER O/P and driving the FOH amps that power the audience speakers.</figcaption>
+  <figcaption>Scenario 1 main routing. Dotted arrows show internal routing on the console (channels and subgroups arriving in the master mix); the solid arrow on the right is the master mix leaving the console at MASTER O/P and driving the FOH amps that power the audience speakers.</figcaption>
 </figure>
 
-<h3>The stage monitor mixes: building five different mixes on the aux sends</h3>
+<h3>the stage monitor mixes: building five different mixes on the aux sends</h3>
 
-<p>The five performers each need a different blend in their stage monitor. The aux sends are how that gets built. Each aux is its own bus, with its own master level, going out the back of the console at the <strong>AUX MASTERS</strong> jacks (six 1/4" TRS jacks, balanced, line-level, one per aux).</p>
+<p>Each of the five performers needs a different blend in their stage monitor, and each blend is built on an aux send. Each aux is its own bus, with its own master level, going out the back of the console at the <strong>AUX MASTERS</strong> jacks (six 1/4" TRS jacks, balanced, line-level, one per aux).</p>
 
-<p>Getting that line-level signal back to the stage takes the same kind of cabling you saw on the input side, run in reverse. Most analog snakes have a few <strong>return lines</strong> in addition to their input channels: balanced pairs that travel from the FOH end back to the stage box. The engineer patches an AUX MASTERS jack into one return line at the console end; the same signal appears at the stage box on a corresponding return connector (usually XLR), and from there a short cable runs to the stage monitor. Five auxes use five return lines.</p>
+<p>Getting that line-level signal back to the stage takes the same kind of cabling you saw on the input side, run in reverse. Most analog snakes have a few <strong>return lines</strong> in addition to their input channels: balanced pairs that travel from the FOH end back to the stage box. The engineer patches an AUX MASTERS jack into one return line at the console end; the same signal appears at the stage box on a corresponding return connector (usually XLR), and from there a short cable runs to the stage monitor. Five auxes need five return lines. The ProX snake in the photo has four (A-D), and a fifth monitor feed would need its own cable run or a snake with more returns.</p>
 
-<p>What's at the end of that cable depends on the monitor. A <strong>powered stage monitor</strong> has the amp built into the cabinet: the cable plugs directly into the monitor's balanced input (usually XLR, or sometimes TRS) and the line-level signal drives the speaker through the internal amp. A <strong>passive stage monitor</strong> needs an external amp in between: the cable plugs into the amp's line input, the amp boosts line-level up to speaker-level, and a thick speaker cable carries that to the monitor itself. Either way the AUX MASTERS jack delivers the same line-level signal; what changes is how many boxes sit between the jack and the speaker cone.</p>
+<p>What's at the end of that cable depends on the monitor. A <strong>powered stage monitor</strong> has the amp built into the cabinet: the cable plugs directly into the monitor's balanced input (usually XLR, or sometimes TRS) and the line-level signal drives the speaker through the internal amp. A <strong>passive stage monitor</strong> needs an external amp in between: the cable plugs into the amp's line input, the amp boosts line-level up to speaker-level, and a thick speaker cable carries that to the monitor itself. Either way the AUX MASTERS jack delivers the same line-level signal; what changes is how many boxes are between the jack and the speaker cone.</p>
 
 <p>Each performer gets one aux (auxes 1 through 5, one per stage monitor). The pattern below is the same for all five; only the channels turned up on each aux change.</p>
 
@@ -755,7 +753,7 @@
 <ol class="steps">
   <li>Pick an aux (1, 2, 3, 4, or 5) for this performer's mix.</li>
   <li>Set that aux to <strong>pre-fader</strong> on every input channel. Aux 1 is permanently pre-fader (no switch). For Auxes 2 through 5, press the channel's PRE button down for that aux. Pre-fader means the aux send level is independent of the channel fader: the FOH engineer can pull the vocal fader down between songs and the singer still hears their own voice in their stage monitor at the same level.</li>
-  <li>On the channels this performer needs to hear: turn the aux knob up to a working level. On the channels they don't need: leave the aux knob at zero.</li>
+  <li>On the channels this performer needs to hear, turn the aux knob up to a working level. On the channels they don't need, leave the aux knob at zero.</li>
   <li>Adjust each channel's contribution by ear (the performer's own voice or instrument usually loud, the time-keeping references like kick and snare audible enough to lock in, everything else minimal or off).</li>
   <li>At the master section, set the Aux Master knob for this aux to a working line-level send (about unity, then trim by ear once the monitor is playing).</li>
 </ol>
@@ -790,7 +788,7 @@
     <tr>
       <td class="ch">Aux 4</td>
       <td>Drummer's stage monitor</td>
-      <td>Bass DI · vocal · click (if applicable)</td>
+      <td>Bass DI · vocal</td>
     </tr>
     <tr>
       <td class="ch">Aux 5</td>
@@ -802,22 +800,22 @@
 
 <div class="callout">
   <div class="callout-label">One source, six destinations</div>
-  <p>The vocalist's mic on Ch 1 ends up in six places at once during a live show: the master mix (audience hears it via the FOH amps), the vocal stage monitor (singer hears it), and the four other stage monitors (everyone else hears it in their stage mixes). Six destinations, one mic, one channel strip. The aux sends are what make that possible; the river-with-taps diagram from Monday's reading is exactly this picture at work.</p>
+  <p>The vocalist's mic on Ch 1 ends up in six places at once during a live show: the master mix (audience hears it via the FOH amps), the vocal stage monitor (singer hears it), and the four other stage monitors (everyone else hears it in their stage mixes). This is the river-with-taps diagram from Monday's reading, with each aux send as one tap.</p>
 </div>
 
 <hr>
 
-<h2>3 · Scenario 2 · You try!</h2>
+<h2>3 · Scenario 2 · you try</h2>
 
-<p>Same console, your turn to do the patching. Click <strong>Generate a band</strong> to pull a lineup from the pool below; you'll get a band with its instruments, mics, and stage monitor needs.</p>
+<p>Same console, and now you do the patching. Click <strong>Generate a band</strong> to pull a lineup from the pool below; you'll get a band with its instruments, mics, and stage monitor needs.</p>
 
-<p>Work it through methodically, the same way Scenario 1 did. Read the <strong>signal chart</strong> (player → captured → mic / source → signal type → cable) first; that tells you what's coming off the stage. Then build the <strong>channel chart</strong> yourself (channel → source → MIC or LINE jack → phantom power on/off); that's what you'd write down before patching the back of the console. From there, plan the FOH mix and the stage monitor mixes.</p>
+<p>Work through it the way Scenario 1 did. Read the <strong>signal chart</strong> (player → captured → mic / source → signal type → cable) first: it lists what's coming off the stage. Then build the <strong>channel chart</strong> yourself (channel → source → MIC or LINE jack → phantom power on/off), the sheet you'd write before patching the back of the console. From there, plan the FOH mix and the stage monitor mixes.</p>
 
-<p>The specific mic models listed in the signal chart are for reference: real working examples of the transducer types from Lecture 2's reading. If you want to know why one of them was chosen for a particular source (frequency response, polar pattern, max SPL, anything along those lines), google the mic name and read its spec sheet.</p>
+<p>The mic models in the signal chart are real examples of the transducer types from Lecture 2. To find out why one was chosen for a particular source (frequency response, polar pattern, max SPL), look up the mic's spec sheet.</p>
 
-<p>Each section has a <strong>Show one approach</strong> button that reveals a worked solution, but try to answer first on paper before peeking. There isn't always one right answer; routing is interpretive, and the reveal is one reasonable approach with a note on the trade-offs.</p>
+<p>Each section has a <strong>Show one approach</strong> button that reveals a worked solution. Answer on paper first. Routing often has more than one right answer, and the reveal is one reasonable approach with a note on the trade-offs.</p>
 
-<p>Hit the button again to get a different lineup. The pool has six bands, each chosen to expose a different routing concept past what The Sound Below covered.</p>
+<p>Hit the button again to get a different lineup. The pool has six bands, and each one adds a routing concept The Sound Below didn't cover.</p>
 
 <div class="youtry" id="youtry-widget">
   <div class="youtry-controls">
@@ -834,7 +832,7 @@
   const lineups = [
     {
       name: "Lineup 1 · String quartet at an outdoor festival",
-      tagline: "An outdoor summer festival, traffic noise from a nearby road, light wind. Acoustic projection alone won't carry the instruments past the front rows, and the players need a little of themselves back to hear each other over the ambient noise.",
+      tagline: "An outdoor summer festival, traffic noise from a nearby road, light wind. Acoustic projection alone won't reach past the front rows, and the players need a little of themselves back to hear each other over the ambient noise.",
       band: [
         { player: "Violin I", captured: "Violin", sourceType: "Small-diaphragm condenser (Shure SM81) on a stand, foam windscreen", signalType: "Mic level", cable: "XLR" },
         { player: "Violin II", captured: "Violin", sourceType: "Small-diaphragm condenser (Shure SM81) on a stand, foam windscreen", signalType: "Mic level", cable: "XLR" },
@@ -843,31 +841,31 @@
       ],
       channelCount: 4,
       monitorCount: 2,
-      concept: "When NOT to use subgroups: with low channel count and similarly weighted mono signals, route everything direct to L-R.",
+      concept: "When to skip subgroups: with a low channel count and similarly weighted mono signals, route everything direct to L-R.",
       channelMap: [
         { ch: 1, label: "Violin I", jack: "MIC (XLR)", phantom: "on" },
         { ch: 2, label: "Violin II", jack: "MIC (XLR)", phantom: "on" },
         { ch: 3, label: "Viola", jack: "MIC (XLR)", phantom: "on" },
         { ch: 4, label: "Cello", jack: "MIC (XLR)", phantom: "on" }
       ],
-      channelMapNotes: "All four mics are small-diaphragm condensers and need +48V; engage phantom power on every channel. Engage the 80 Hz HPF too: wind noise on condensers sits below the instruments' fundamentals and the filter knocks it out without touching the music.",
+      channelMapNotes: "All four mics are small-diaphragm condensers and need +48V; engage phantom power on every channel. Engage the 80 Hz HPF on the violins and viola too: wind noise on condensers is mostly low-frequency, and their lowest notes are well above 80 Hz. Leave it off the cello, whose lowest string (C) is about 65 Hz.",
       fohPatches: [
         {
           name: "Patch 1 · All four channels direct to the master mix",
           intro: "With only four channels and similarly weighted mono signals, every channel goes direct to L-R. No subgroups in use.",
           steps: [
-            "On Ch 1, Ch 2, Ch 3, Ch 4: press the <strong>L-R</strong> button down. Leave all eight subgroup buttons (1-2, 3-4, 5-6, 7-8) up.",
+            "On Ch 1, Ch 2, Ch 3, and Ch 4, press the <strong>L-R</strong> button down. Leave the four subgroup buttons (1-2, 3-4, 5-6, 7-8) up.",
             "Set the channel pan knobs to mirror stage positions: Ch 1 (Violin I) about 10 o'clock; Ch 2 (Violin II) about 11 o'clock; Ch 3 (Viola) about 1 o'clock; Ch 4 (Cello) about 2 o'clock.",
-            "Adjust each channel's INPUT GAIN, EQ, and fader as the quartet plays. Four faders, one per channel, riding straight into the master mix.",
+            "Adjust each channel's INPUT GAIN, EQ, and fader as the quartet plays. Each channel feeds the master mix directly on its own fader.",
           ]
         },
       ],
-      fohTradeoff: "Could you put the quartet on subgroup pair 1-2 to get a master 'quartet level' knob? Yes, but you'd be adding an extra control stage with nothing to gain: the four channels are already the smallest unit you'd want to control, and the master fader already gives you a global level. Subgroups earn their place when you have many channels worth grouping; four don't.",
+      fohTradeoff: "You could put the quartet on subgroup pair 1-2 to get a 'quartet level' knob. That control would duplicate the master fader, which already sets the level of all four channels together. Subgroups help when many channels need grouping.",
       monitorMixes: [
         { aux: "Aux 1", performer: "Stage monitor 1 (violins side)", blend: "Violin I, Violin II at moderate level; viola and cello quieter for context" },
         { aux: "Aux 2", performer: "Stage monitor 2 (viola + cello side)", blend: "Viola, cello at moderate level; violins quieter for context" }
       ],
-      monitorTradeoff: "The blend is 'each player wants to hear the others, plus a little of themselves.' Classical players are used to acoustic balance and don't want their own instrument loud in the monitor; they want the ensemble. Keep levels modest to avoid feeding the condensers back into themselves (open condensers + monitor speakers + outdoor stage = feedback risk; the engineer's job is partly to protect against this)."
+      monitorTradeoff: "Each player wants to hear the others, plus a little of themselves. Classical players are used to acoustic balance and want the ensemble in the monitor, with their own instrument quiet. Keep levels modest: open condensers near monitor speakers on an outdoor stage can feed back."
     },
     {
       name: "Lineup 2 · Singer with looper",
@@ -880,7 +878,7 @@
       ],
       channelCount: 4,
       monitorCount: 1,
-      concept: "A stereo line-level source on a subgroup pair: the looper L+R wants one pair of submaster strips to ride as a unit during the show.",
+      concept: "A stereo line-level source on a subgroup pair: the looper's L and R ride together on one pair of submaster strips during the show.",
       channelMap: [
         { ch: 1, label: "Voice", jack: "MIC (XLR)", phantom: "off" },
         { ch: 2, label: "Acoustic guitar", jack: "MIC (XLR)", phantom: "on" },
@@ -891,30 +889,30 @@
       fohPatches: [
         {
           name: "Patch 1 · Vocal and guitar direct to the master mix (channels 1-2)",
-          intro: "Voice and acoustic guitar route directly to L-R. The artist's dry sources sit in front of the looped backing.",
+          intro: "Voice and acoustic guitar route directly to L-R. The artist's live voice and guitar stay in front of the looped backing.",
           steps: [
-            "On Ch 1 and Ch 2: press the <strong>L-R</strong> button down. Leave the subgroup buttons up.",
-            "Pan: Ch 1 (Voice) center (12 o'clock); Ch 2 (Acoustic guitar) just off-center (about 1 o'clock).",
+            "On Ch 1 and Ch 2, press the <strong>L-R</strong> button down. Leave the subgroup buttons up.",
+            "Pan Ch 1 (Voice) center (12 o'clock) and Ch 2 (Acoustic guitar) just off-center (about 1 o'clock).",
             "Adjust INPUT GAIN, EQ, and fader on both channels as the artist plays.",
           ]
         },
         {
           name: "Patch 2 · Looper L+R routed to subgroup pair 1-2, then into the master mix",
-          intro: "The stereo looper output gets its own subgroup pair so the engineer can ride the whole looped layer as a unit, without touching the dry voice and guitar.",
+          intro: "The stereo looper output gets its own subgroup pair, and the engineer can ride the whole looped layer as a unit without touching the dry voice and guitar.",
           steps: [
-            "On Ch 3 (Looper L) and Ch 4 (Looper R): press the <strong>1-2</strong> button down. Leave L-R up.",
-            "Pan: Ch 3 hard left; Ch 4 hard right. The stereo image of the loops arrives intact on the subgroup pair.",
-            "On submaster strips 1 and 2: set the <strong>TAPE</strong> button up (the live subgroup is the source, not playback).",
-            "On submaster strip 1: turn <strong>MON LEVEL</strong> up, set <strong>MON PAN</strong> hard left. On submaster strip 2: MON LEVEL up, MON PAN hard right. The looper now arrives in the master mix as a stereo pair.",
-            "Leave the submaster faders down (no DAW to feed).",
+            "On Ch 3 (Looper L) and Ch 4 (Looper R), press the <strong>1-2</strong> button down. Leave L-R up.",
+            "Pan Ch 3 hard left and Ch 4 hard right. The stereo image of the loops arrives intact on the subgroup pair.",
+            "On submaster strips 1 and 2, set the <strong>TAPE</strong> button up (the live subgroup is the source, not playback).",
+            "On submaster strip 1, turn <strong>MON LEVEL</strong> up and set <strong>MON PAN</strong> hard left. On submaster strip 2, turn MON LEVEL up and set MON PAN hard right. The looper now arrives in the master mix as a stereo pair.",
+            "Leave the submaster faders down.",
           ]
         },
       ],
-      fohTradeoff: "Why not just route the looper to L-R like the voice and guitar? You could, but then you're riding four separate faders that all need to move together when the loops are getting busy. With the looper on its own subgroup pair, the engineer has a single pair of MON LEVEL knobs that brings the whole looped layer up or down as a unit, leaving the dry vocal and guitar untouched. That's the move when one source needs independent control as a group.",
+      fohTradeoff: "You could route the looper to L-R like the voice and guitar, but then the two looper channel faders have to move together whenever the loops get busy. On its own subgroup pair, the whole looped layer comes up or down with the pair of MON LEVEL knobs, and the dry vocal and guitar stay where they are. Use a subgroup when one source spread across several channels needs its own control.",
       monitorMixes: [
         { aux: "Aux 1", performer: "Artist's stage monitor", blend: "Voice (loud) · guitar (audible) · looper L+R (audible): the artist needs to hear everything they're building" }
       ],
-      monitorTradeoff: "One performer, one stage monitor: simple. Pre-fader, of course (this evening's setup default for stage monitors). The artist's whole loop-and-perform workflow depends on hearing what's already been looped; if the looper drops out of the monitor, they can't sing in tune with their own backing."
+      monitorTradeoff: "One performer and one stage monitor, set pre-fader like every stage monitor mix in this lab. The artist has to hear what's already been looped: if the looper drops out of the monitor, they can't sing in tune with their own backing."
     },
     {
       name: "Lineup 3 · Punk power trio with double-mic'd kick",
@@ -944,37 +942,37 @@
         { ch: 8, label: "Overhead L", jack: "MIC (XLR)", phantom: "on" },
         { ch: 9, label: "Overhead R", jack: "MIC (XLR)", phantom: "on" }
       ],
-      channelMapNotes: "Phantom power only on the overhead condensers (channels 8 and 9). The rest are dynamics and a passive DI box, none of which draw +48V. The 80 Hz HPF can go on the vocal and overheads to clean up rumble; leave it off the kick and bass channels (the music lives down there).",
+      channelMapNotes: "Phantom power only on the overhead condensers (channels 8 and 9). The rest are dynamics and a passive DI box, none of which draw +48V. The 80 Hz HPF can go on the vocal and overheads to clean up rumble; leave it off the kick and bass channels, which have musical content below 80 Hz.",
       fohPatches: [
         {
           name: "Patch 1 · Vocal, guitar, bass DI, bass amp direct to the master mix (channels 1-4)",
           intro: "The four front-end channels route directly to L-R, same as channels 1-4 in The Sound Below.",
           steps: [
-            "On Ch 1, Ch 2, Ch 3, Ch 4: press the <strong>L-R</strong> button down. Leave the subgroup buttons up.",
-            "Pan: Ch 1 (Vocal) center; Ch 2 (Guitar) center or slightly off-center; Ch 3 (Bass DI) center; Ch 4 (Bass amp) center.",
+            "On Ch 1, Ch 2, Ch 3, and Ch 4, press the <strong>L-R</strong> button down. Leave the subgroup buttons up.",
+            "Pan Ch 1 (Vocal) center, Ch 2 (Guitar) center or slightly off-center, and Ch 3 (Bass DI) and Ch 4 (Bass amp) center.",
             "Set the bass DI and bass amp channel faders together to blend the dry DI tone with the wet amp tone. They sum at the master mix as one combined bass sound.",
           ]
         },
         {
           name: "Patch 2 · Drums (channels 5-9) routed to subgroup pair 1-2",
-          intro: "Five drum channels collapse to a stereo drum bus on subgroup pair 1-2. The two kick channels (kick-in and kick-out) both go to center, summed in the subgroup as one combined kick.",
+          intro: "Five drum channels sum to a stereo drum bus on subgroup pair 1-2. The two kick channels (kick-in and kick-out) both go to center, summed in the subgroup as one combined kick.",
           steps: [
-            "On Ch 5 (Kick in), Ch 6 (Kick out), Ch 7 (Snare): press the <strong>1-2</strong> button down. Pan all three center.",
-            "On Ch 8 (Overhead L): press the <strong>1-2</strong> button down, pan hard left.",
-            "On Ch 9 (Overhead R): press the <strong>1-2</strong> button down, pan hard right.",
+            "On Ch 5 (Kick in), Ch 6 (Kick out), and Ch 7 (Snare), press the <strong>1-2</strong> button down. Pan all three center.",
+            "On Ch 8 (Overhead L), press the <strong>1-2</strong> button down and pan hard left.",
+            "On Ch 9 (Overhead R), press the <strong>1-2</strong> button down and pan hard right.",
             "Set the kick-in and kick-out faders together to blend attack (in-mic) with body (out-mic). This is the kick tone control, set upstream of the subgroup.",
-            "On submaster strips 1 and 2: TAPE up, MON LEVEL up, MON PAN hard left on sub 1 and hard right on sub 2. The kit arrives in the master mix as a stereo pair.",
+            "On submaster strips 1 and 2, set TAPE up and MON LEVEL up, with MON PAN hard left on sub 1 and hard right on sub 2. The kit arrives in the master mix as a stereo pair.",
             "Leave both submaster faders down.",
           ]
         },
       ],
-      fohTradeoff: "Why two channels for one kick? Blending an in-mic (attack, click) with an out-mic (body, low end) gives the engineer a tone control: more in-mic for a punchy aggressive kick, more out-mic for a deeper rounded kick. Both go to the same place (subgroup 1-2, panned center), but having them on separate channels means the engineer can blend them with the channel faders before they hit the subgroup. Once they're in the subgroup they're one summed signal; the blend is set upstream.",
+      fohTradeoff: "Blending an in-mic (attack, click) with an out-mic (body, low end) gives the engineer a tone control: more in-mic for a punchy, aggressive kick, more out-mic for a deeper, rounder kick. Both go to the same place (subgroup 1-2, panned center). On separate channels, they blend on the channel faders before they reach the subgroup, where they become one summed signal.",
       monitorMixes: [
         { aux: "Aux 1", performer: "Vocalist's stage monitor", blend: "Vocal (loud) · kick in (low) · snare (low)" },
         { aux: "Aux 2", performer: "Guitarist's stage monitor", blend: "Vocal · guitar · kick in · snare" },
-        { aux: "Aux 3", performer: "Drummer's stage monitor", blend: "Bass DI · vocal · click (if used); the drummer hears their own kit acoustically" }
+        { aux: "Aux 3", performer: "Drummer's stage monitor", blend: "Bass DI · vocal; the drummer hears their own kit acoustically" }
       ],
-      monitorTradeoff: "Bassist doesn't get a monitor: bass players in small venues typically stand close to their amp and hear themselves through it. One fewer monitor mix to ride, one more aux send free for other uses. In the kick channels, send kick-in (not kick-out) to monitors: the in-mic gives the timing transient that performers lock to; kick-out is for the FOH low-end body that the audience hears."
+      monitorTradeoff: "The bassist doesn't get a monitor: in small venues, bass players usually stand close to their amp and hear themselves through it. That leaves one fewer monitor mix to ride and one more aux send free. Send kick-in, not kick-out, to the monitors. The in-mic has the timing transient performers lock to; kick-out gives the low-end body the audience hears from FOH."
     },
     {
       name: "Lineup 4 · Jazz quartet",
@@ -1008,41 +1006,41 @@
       fohPatches: [
         {
           name: "Patch 1 · Bass and saxophone direct to the master mix (channels 1, 2, 9)",
-          intro: "The bass arrives on two channels (DI + body mic) but it's mono. Both go to L-R panned center; they sum acoustically in the master mix. The sax is one mono channel direct to L-R.",
+          intro: "The bass arrives on two channels (DI + body mic) but it's mono. Both go to L-R panned center, and they sum in the master mix. The sax is one mono channel direct to L-R.",
           steps: [
-            "On Ch 1 (Bass DI), Ch 2 (Bass body), Ch 9 (Saxophone): press the <strong>L-R</strong> button down. Leave subgroup buttons up.",
-            "Pan: Ch 1 and Ch 2 both center; Ch 9 (Saxophone) slightly off-center (about 11 o'clock or 1 o'clock).",
+            "On Ch 1 (Bass DI), Ch 2 (Bass body), and Ch 9 (Saxophone), press the <strong>L-R</strong> button down. Leave the subgroup buttons up.",
+            "Pan Ch 1 and Ch 2 center and Ch 9 (Saxophone) slightly off-center (about 11 o'clock or 1 o'clock).",
             "Set the two bass channel faders together to blend the DI's articulation with the body mic's resonance.",
           ]
         },
         {
           name: "Patch 2 · Drums (channels 3-6) routed to subgroup pair 1-2",
-          intro: "Standard drum-bus move, same as The Sound Below.",
+          intro: "The same drum bus as The Sound Below.",
           steps: [
-            "On Ch 3 (Kick), Ch 4 (Snare): press the <strong>1-2</strong> button down, pan center.",
-            "On Ch 5 (Overhead L): press <strong>1-2</strong> down, pan hard left.",
-            "On Ch 6 (Overhead R): press <strong>1-2</strong> down, pan hard right.",
-            "On submaster strips 1 and 2: TAPE up, MON LEVEL up, MON PAN hard left / hard right. Submaster faders down.",
+            "On Ch 3 (Kick) and Ch 4 (Snare), press the <strong>1-2</strong> button down and pan center.",
+            "On Ch 5 (Overhead L), press <strong>1-2</strong> down and pan hard left.",
+            "On Ch 6 (Overhead R), press <strong>1-2</strong> down and pan hard right.",
+            "On submaster strips 1 and 2, set TAPE up and MON LEVEL up, with MON PAN hard left on sub 1 and hard right on sub 2. Leave the submaster faders down.",
           ]
         },
         {
           name: "Patch 3 · Piano (channels 7-8) routed to subgroup pair 3-4",
           intro: "The piano's two mics arrive in the master mix as a stereo pair: bass strings on the left, treble strings on the right.",
           steps: [
-            "On Ch 7 (Piano L · bass strings): press the <strong>3-4</strong> button down, pan hard left.",
-            "On Ch 8 (Piano R · treble strings): press the <strong>3-4</strong> button down, pan hard right.",
-            "On submaster strips 3 and 4: TAPE up, MON LEVEL up, MON PAN hard left on sub 3 and hard right on sub 4. Submaster faders down.",
+            "On Ch 7 (Piano L · bass strings), press the <strong>3-4</strong> button down and pan hard left.",
+            "On Ch 8 (Piano R · treble strings), press the <strong>3-4</strong> button down and pan hard right.",
+            "On submaster strips 3 and 4, set TAPE up and MON LEVEL up, with MON PAN hard left on sub 3 and hard right on sub 4. Leave the submaster faders down.",
           ]
         },
       ],
-      fohTradeoff: "Why does the piano get the same treatment as the drums? Both are a single instrument (a piano, a kit) with multiple mics that need to arrive in the mix as a stereo image. Subgroup pairs are the console's way of saying 'treat these channels as a stereo group from now on,' and a piano with two mics earns that treatment the same way a kit does. The bass on two channels doesn't, because the two bass mics are both mono on the same instrument (no stereo width to preserve); they sum to mono at the master mix without needing a subgroup.",
+      fohTradeoff: "The piano gets the same treatment as the drums. Each is a single instrument with multiple mics that arrive in the mix as a stereo image, and a subgroup pair handles those channels as one stereo group. The bass's two channels are both panned center with no stereo width to keep, and they sum to mono at the master mix without a subgroup.",
       monitorMixes: [
         { aux: "Aux 1", performer: "Bassist's stage monitor", blend: "Piano L+R (a lot) · sax (some) · drums (light)" },
-        { aux: "Aux 2", performer: "Drummer's stage monitor", blend: "Bass DI · piano L+R · sax · vocal/sax cues" },
+        { aux: "Aux 2", performer: "Drummer's stage monitor", blend: "Bass DI · piano L+R · sax" },
         { aux: "Aux 3", performer: "Pianist's stage monitor", blend: "Bass DI · sax · drums (light); not much piano (they hear it acoustically)" },
-        { aux: "Aux 4", performer: "Saxophonist's stage monitor", blend: "Bass · piano L+R · drums (light)" }
+        { aux: "Aux 4", performer: "Saxophonist's stage monitor", blend: "Bass DI · piano L+R · drums (light)" }
       ],
-      monitorTradeoff: "Jazz players want to hear each other, not themselves. Each monitor is mostly other instruments: the player's own sound comes from their instrument right in front of them. The exception is the bassist, who stands far from the drums and piano and needs them close. Keep levels modest: this is a quiet acoustic group, and loud monitors leaking into mics destroys the intimate sound the audience came for."
+      monitorTradeoff: "Jazz players want to hear each other, not themselves. Each monitor is mostly other instruments, and each player hears their own instrument acoustically. The bassist often stands far from the drums and piano, and their monitor has the most piano. Keep levels modest: in a quiet acoustic group, loud monitors leak into the mics and muddy the sound in the room."
     },
     {
       name: "Lineup 5 · Electronic duo",
@@ -1060,7 +1058,7 @@
       ],
       channelCount: 9,
       monitorCount: 2,
-      concept: "Everything stereo, mostly line-level. Four stereo pairs onto the desk, all on LINE inputs (preamp untouched), and the subgroup pairs start to feel constraining.",
+      concept: "Everything stereo, mostly line-level. Four stereo pairs come into the console, all on LINE inputs (preamp untouched), and the four subgroup pairs fill up.",
       channelMap: [
         { ch: 1, label: "Synth A L", jack: "LINE (TRS)", phantom: "off" },
         { ch: 2, label: "Synth A R", jack: "LINE (TRS)", phantom: "off" },
@@ -1072,13 +1070,13 @@
         { ch: 8, label: "Sampler R", jack: "LINE (TRS)", phantom: "off" },
         { ch: 9, label: "Synth player vocal", jack: "MIC (XLR)", phantom: "off" }
       ],
-      channelMapNotes: "Eight LINE buttons engaged (channels 1-8) to switch those strips from MIC to LINE input. No phantom power anywhere: the eight line sources don't need it, and the SM58 on Ch 9 is a dynamic. The 80 Hz HPF on the vocal channel.",
+      channelMapNotes: "Eight LINE buttons engaged (channels 1-8) to switch those strips from MIC to LINE input. No phantom power anywhere: the eight line sources don't need it, and the SM58 on Ch 9 is a dynamic. Engage the 80 Hz HPF on the vocal channel.",
       fohPatches: [
         {
           name: "Patch 1 · Vocal direct to the master mix (channel 9)",
-          intro: "The one mono mic-level source sits direct on L-R, the way the vocal did in The Sound Below.",
+          intro: "The one mono mic-level source goes direct to L-R, the way the vocal did in The Sound Below.",
           steps: [
-            "On Ch 9: press the <strong>L-R</strong> button down. Pan center.",
+            "On Ch 9, press the <strong>L-R</strong> button down and pan center.",
             "Adjust INPUT GAIN, EQ, and fader as the synth player sings.",
           ]
         },
@@ -1086,21 +1084,21 @@
           name: "Patch 2 · Four stereo line sources, each on its own subgroup pair",
           intro: "Each stereo source (synth A, synth B, drum machine, sampler) gets a subgroup pair. With one MON LEVEL pair per source, the engineer has independent control over each electronic layer.",
           steps: [
-            "Ch 1 (Synth A L) and Ch 2 (Synth A R): press the <strong>1-2</strong> button down. Pan Ch 1 hard left, Ch 2 hard right.",
-            "Ch 3 (Synth B L) and Ch 4 (Synth B R): press the <strong>3-4</strong> button down. Pan Ch 3 hard left, Ch 4 hard right.",
-            "Ch 5 (Drum machine L) and Ch 6 (Drum machine R): press the <strong>5-6</strong> button down. Pan Ch 5 hard left, Ch 6 hard right.",
-            "Ch 7 (Sampler L) and Ch 8 (Sampler R): press the <strong>7-8</strong> button down. Pan Ch 7 hard left, Ch 8 hard right.",
-            "On every submaster strip 1 through 8: TAPE up, MON LEVEL up. On the odd-numbered subs (1, 3, 5, 7): MON PAN hard left. On the even-numbered (2, 4, 6, 8): MON PAN hard right.",
+            "On Ch 1 (Synth A L) and Ch 2 (Synth A R), press the <strong>1-2</strong> button down. Pan Ch 1 hard left and Ch 2 hard right.",
+            "On Ch 3 (Synth B L) and Ch 4 (Synth B R), press the <strong>3-4</strong> button down. Pan Ch 3 hard left and Ch 4 hard right.",
+            "On Ch 5 (Drum machine L) and Ch 6 (Drum machine R), press the <strong>5-6</strong> button down. Pan Ch 5 hard left and Ch 6 hard right.",
+            "On Ch 7 (Sampler L) and Ch 8 (Sampler R), press the <strong>7-8</strong> button down. Pan Ch 7 hard left and Ch 8 hard right.",
+            "On submaster strips 1 through 8, set TAPE up and MON LEVEL up. Set MON PAN hard left on the odd-numbered subs (1, 3, 5, 7) and hard right on the even-numbered ones (2, 4, 6, 8).",
             "Leave all eight submaster faders down.",
           ]
         },
       ],
-      fohTradeoff: "All eight subgroups are now in use, with one knob-pair per electronic source. The advantage: each source can be brought up or down as a stereo unit without re-balancing internally. The cost: if the band added a fifth stereo source mid-show, there'd be nowhere to put it (the subgroups are full). A larger console with more subgroups wouldn't force the trade-off; on the Toft, the engineer's planning has to fit in eight. Alternative: combine drum machine + sampler onto one subgroup pair (5-6), freeing up subs 7-8 for whatever comes next.",
+      fohTradeoff: "All eight subgroups are now in use, with one knob pair per electronic source, and each source comes up or down as a stereo unit without rebalancing. If the band added a fifth stereo source mid-show, the subgroups would already be full. A larger console with more subgroups avoids the problem; on the Toft, the plan has to fit in eight. One option is to combine the drum machine and sampler on subgroup pair 5-6, which frees subs 7-8 for whatever comes next.",
       monitorMixes: [
         { aux: "Aux 1", performer: "Synth player's stage monitor", blend: "Synth A L+R · synth B L+R · drum machine L+R · vocal" },
         { aux: "Aux 2", performer: "Beat-maker's stage monitor", blend: "Drum machine L+R · sampler L+R · synth A L+R · vocal" }
       ],
-      monitorTradeoff: "Each performer needs to hear primarily their own gear and a reference of what the other performer is doing. Electronic performers are usually careful about timing and benefit from clear drum-machine and synth lines in their monitors. Vocal in both (the synth player sometimes sings; the beat-maker needs to hear it for cueing)."
+      monitorTradeoff: "Each performer mostly hears their own gear, plus a reference of what the other performer is doing. Clear drum-machine and synth lines in the monitors help both performers keep time. The vocal goes in both: the synth player sometimes sings, and the beat-maker cues from it."
     },
     {
       name: "Lineup 6 · Folk band with sit-in fiddler",
@@ -1116,7 +1114,7 @@
       ],
       channelCount: 7,
       monitorCount: 3,
-      concept: "A performer who's only present part of the time. Pre-fader sends are doing real work: the fiddle monitor mix has to be set up before the fiddler walks on, so it's ready the moment the channels come up.",
+      concept: "A performer who's on stage for only part of the set. With pre-fader sends, the fiddle's monitor sends can be set before the fiddler walks on, and the core players' monitor mixes stay the same when the fiddle faders come up.",
       channelMap: [
         { ch: 1, label: "Lead vocal", jack: "MIC (XLR)", phantom: "off" },
         { ch: 2, label: "Acoustic guitar", jack: "MIC (XLR)", phantom: "on" },
@@ -1126,44 +1124,44 @@
         { ch: 6, label: "Fiddle contact", jack: "MIC (XLR)", phantom: "off" },
         { ch: 7, label: "Fiddle ambient", jack: "MIC (XLR)", phantom: "on" }
       ],
-      channelMapNotes: "Four channels need +48V (all condensers: guitar clip-on, cajón boundary, cajón overhead, fiddle ambient). The fiddle contact mic is a piezo pickup, not a condenser, and it doesn't draw +48V (applying it can damage some piezo electronics, so leave it off). The SM58 vocal, the passive bass DI box, and the piezo contact mic all run without phantom.",
+      channelMapNotes: "Four channels need +48V (all condensers: guitar clip-on, cajón boundary, cajón overhead, fiddle ambient). The fiddle contact mic is a piezo pickup, not a condenser; leave phantom off on its channel (+48V can damage some piezo electronics). The SM58 vocal and the passive bass DI box also run without phantom.",
       fohPatches: [
         {
           name: "Patch 1 · Vocal, guitar, bass direct to the master mix (channels 1-3)",
           intro: "The three core mono channels route straight to L-R.",
           steps: [
-            "On Ch 1 (Vocal), Ch 2 (Acoustic guitar), Ch 3 (Bass DI): press the <strong>L-R</strong> button down. Leave subgroups up.",
-            "Pan: Ch 1 center; Ch 2 slightly off-center; Ch 3 center.",
+            "On Ch 1 (Vocal), Ch 2 (Acoustic guitar), and Ch 3 (Bass DI), press the <strong>L-R</strong> button down. Leave the subgroup buttons up.",
+            "Pan Ch 1 center, Ch 2 slightly off-center, and Ch 3 center.",
           ]
         },
         {
           name: "Patch 2 · Cajón (channels 4-5) routed to subgroup pair 1-2",
           intro: "Two cajón mics get the small-stereo-group treatment: face mic for the attack, overhead for the air, panned across the subgroup pair.",
           steps: [
-            "On Ch 4 (Cajón face): press the <strong>1-2</strong> button down, pan slightly off-center (about 11 o'clock).",
-            "On Ch 5 (Cajón overhead): press the <strong>1-2</strong> button down, pan slightly off-center the other way (about 1 o'clock).",
-            "On submaster strips 1 and 2: TAPE up, MON LEVEL up, MON PAN hard left / hard right. Submaster faders down.",
+            "On Ch 4 (Cajón face), press the <strong>1-2</strong> button down and pan slightly off-center (about 11 o'clock).",
+            "On Ch 5 (Cajón overhead), press the <strong>1-2</strong> button down and pan slightly off-center the other way (about 1 o'clock).",
+            "On submaster strips 1 and 2, set TAPE up and MON LEVEL up, with MON PAN hard left on sub 1 and hard right on sub 2. Leave the submaster faders down.",
           ]
         },
         {
           name: "Patch 3 · Fiddle (channels 6-7) routed to subgroup pair 3-4, ready to mute",
-          intro: "The fiddler is on stage for half the set. Routing the two fiddle channels to a subgroup pair lets the engineer mute the entire fiddle contribution to the master mix with two button presses, instead of chasing two channel mutes.",
+          intro: "The fiddler is on stage for half the set. The two fiddle channels go to a subgroup pair with its own mutes.",
           steps: [
-            "On Ch 6 (Fiddle contact): press the <strong>3-4</strong> button down, pan center.",
-            "On Ch 7 (Fiddle ambient): press the <strong>3-4</strong> button down, pan center.",
-            "On submaster strips 3 and 4: TAPE up, MON LEVEL up, MON PAN hard left / hard right. Submaster faders down.",
-            "Before the show starts (fiddler offstage): press the <strong>MUTE</strong> button on submasters 3 and 4. The fiddle group is now patched but silent at the master mix.",
-            "When the fiddler walks on: release MUTE on submasters 3 and 4. The fiddle is in the mix immediately.",
+            "On Ch 6 (Fiddle contact), press the <strong>3-4</strong> button down and pan center.",
+            "On Ch 7 (Fiddle ambient), press the <strong>3-4</strong> button down and pan center.",
+            "On submaster strips 3 and 4, set TAPE up and MON LEVEL up, with MON PAN hard left on sub 3 and hard right on sub 4. Leave the submaster faders down.",
+            "Before the show starts, with the fiddler offstage, press the <strong>MUTE</strong> button on submasters 3 and 4. The fiddle group is now patched but silent at the master mix.",
+            "When the fiddler walks on, release MUTE on submasters 3 and 4. The fiddle is in the mix immediately.",
           ]
         },
       ],
-      fohTradeoff: "Why give the fiddler a subgroup pair? So the engineer can mute and unmute the entire fiddle contribution to the master mix with two button presses, rather than chasing two channel mutes. The subgroup-pair-with-mute pattern is the classic move for a sit-in performer: the routing is built once, the on/off control is fast.",
+      fohTradeoff: "With the fiddle on a subgroup pair, the engineer mutes and unmutes the whole fiddle contribution to the master mix at the submaster strips and leaves the fiddle channels' settings alone. A subgroup pair with mutes suits any sit-in performer: the routing is built once, and the on/off control is fast.",
       monitorMixes: [
         { aux: "Aux 1", performer: "Lead vocalist/guitarist's stage monitor", blend: "Vocal (loud) · guitar · bass · cajón (light)" },
         { aux: "Aux 2", performer: "Bassist's stage monitor", blend: "Vocal · guitar · bass · cajón face (for the rhythm pocket)" },
         { aux: "Aux 3", performer: "Percussionist's stage monitor", blend: "Vocal · guitar · bass" }
       ],
-      monitorTradeoff: "The sit-in fiddler shares the lead vocalist's monitor (or stands near it). When the fiddler walks on, the engineer pulls up the fiddle channel faders, unmutes subs 3-4, and the audience hears the fiddle in the master mix immediately. Because the aux sends to the three core stage monitors are pre-fader, the existing monitor mixes for the three core players don't change at all when the fiddler joins: the channel faders moving doesn't affect their pre-fader monitor levels. This is why pre-fader is the right default for stage monitors; the value is invisible until the engineer starts moving faders during a song."
+      monitorTradeoff: "The sit-in fiddler shares the lead vocalist's monitor (or stands near it). When the fiddler walks on, the engineer pulls up the fiddle channel faders, unmutes subs 3-4, and the audience hears the fiddle in the master mix immediately. The aux sends to the three core stage monitors are pre-fader, and the core players' monitor mixes don't change when the fiddle faders come up. With pre-fader sends, any fader move the engineer makes for the audience leaves every monitor mix where it was."
     }
   ];
 
@@ -1185,7 +1183,7 @@
     html += '<div class="youtry-stat-row">';
     html += '<span><strong>Signals:</strong> ' + lineup.channelCount + '</span>';
     html += '<span><strong>Stage monitors:</strong> ' + lineup.monitorCount + '</span>';
-    html += '<span><strong>Concept:</strong> ' + escapeHTML(lineup.concept) + '</span>';
+    html += '<span>New in this lineup: ' + escapeHTML(lineup.concept) + '</span>';
     html += '</div>';
 
     // Chart 1: Signal chart (what's coming off the stage)
@@ -1224,7 +1222,7 @@
     // Question 2: FOH routing, actionable patches
     html += '<div class="youtry-section">';
     html += '<div class="youtry-section-label">Question 2 · The FOH mix</div>';
-    html += '<p class="youtry-prompt">You\'ve decided how this band should route. Now make it happen at the desk. For each channel, which routing button gets pressed down (L-R, or one of the subgroup pairs 1-2, 3-4, 5-6, 7-8)? Where do the pans go? For any signals routed via a subgroup, what do the submaster strips need to do to route that subgroup into the master mix? Write out the button-by-button steps before peeking.</p>';
+    html += '<p class="youtry-prompt">You\'ve decided how this band should route. Now set it up at the console. For each channel, which routing button gets pressed down (L-R, or one of the subgroup pairs 1-2, 3-4, 5-6, 7-8)? Where do the pans go? For any signals routed via a subgroup, what do the submaster strips need to do to route that subgroup into the master mix? Write out the button-by-button steps before peeking.</p>';
     html += '<button class="youtry-btn reveal" data-target="reveal-foh">Show one approach</button>';
     html += '<div class="youtry-reveal-target" id="reveal-foh">';
     for (const p of lineup.fohPatches) {
@@ -1249,7 +1247,7 @@
     html += '<ol class="steps">';
     html += '<li>Pick an aux for this performer\'s mix (Aux 1, 2, 3, ... as needed).</li>';
     html += '<li>Set that aux to <strong>pre-fader</strong> on every input channel. Aux 1 is permanently pre-fader (no switch). For Auxes 2 through 5, press the channel\'s PRE button down for that aux. Pre-fader means the aux send level is independent of the channel fader.</li>';
-    html += '<li>On the channels this performer needs to hear: turn the aux knob up to a working level. On the channels they don\'t need: leave the aux knob at zero.</li>';
+    html += '<li>On the channels this performer needs to hear, turn the aux knob up to a working level. On the channels they don\'t need, leave the aux knob at zero.</li>';
     html += '<li>Adjust each channel\'s contribution by ear (the table below lists what to turn up for each aux on this band).</li>';
     html += '<li>At the master section, set the Aux Master knob for this aux to a working line-level send (about unity, then trim by ear once the monitor is playing).</li>';
     html += '</ol>';
@@ -1300,12 +1298,12 @@
 
 <hr>
 
-<h2>End of session</h2>
+<h2>end of session</h2>
 
-<h3>Before you leave</h3>
+<h3>before you leave</h3>
 
 <ol class="steps">
-  <li>Take five minutes before leaving to keep your existing sample library moving: open <code>~/Documents/netid/sample-library/</code>, check that any sounds you recorded this week are tagged, and confirm the running README still reflects what's in the folders. If there are sounds you haven't prepped yet, this is a good moment to do one or two more passes through the denoise → trim → normalize pipeline.</li>
+  <li>Take five minutes before leaving to add to your sample library: open <code>~/Documents/netid/sample-library/</code>, check that any sounds you recorded this week follow the <code>[category]-[descriptor]-[variant].wav</code> naming, and confirm the README still reflects what's in the folders. If you have sounds you haven't prepped yet, run one or two more through the denoise → trim → normalize pipeline. If you changed anything in the library, run the upload phase of the <strong>Session Routines</strong> card.</li>
 </ol>
 
 <p>Then continue with the rest of the card's end-of-session routine: disconnect and quit FileZilla, sign out of browser accounts, quit all apps, chair in.</p>

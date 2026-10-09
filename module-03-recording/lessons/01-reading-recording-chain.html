@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MUS 381 · A Simple Recording Chain</title>
+  <title>MUS 381 · a simple recording chain</title>
   <link rel="stylesheet" href="../../assets/style.css">
   <style>
     /* Reading-specific tweaks */
@@ -137,23 +137,23 @@
 
 <div class="title-block">
   <div class="module-tag">Module 03 · Recording, sample prep &amp; library building</div>
-  <h1>A Simple Recording Chain</h1>
+  <h1>a simple recording chain</h1>
   <div class="subtitle">Signal flow from microphone to file.</div>
 </div>
 
-<p class="lede">Up to now, the sounds you've worked with have been handed to you. Starting this week, you make your own. To do that, you have to understand what's happening between the air in front of a microphone and the file on your computer. This reading takes the path one stage at a time, with the four pieces of equipment you'll work with in this module: a dynamic microphone, an XLR cable, an audio interface, and a computer. Wednesday you'll plug them in for real.</p>
+<p class="lede">Up to now, the sounds you've worked with have been handed to you. Starting this week, you make your own, and that means understanding what happens between the air in front of a microphone and the file on your computer. You'll work with five pieces of equipment: a dynamic microphone, an XLR cable, an audio interface, a USB cable, and a computer. Wednesday you'll plug them in for real.</p>
 
 <div class="callout">
-  <div class="callout-label">Today's gear</div>
+  <div class="callout-label">today's gear</div>
   <p>Take from the lab's gear storage: <strong>audio interface, headphones</strong>. Plug in and run through the start-of-session steps on the <strong>Session Routines</strong> card before continuing here.</p>
 </div>
 
 
 <hr>
 
-<h2>1 · Signal flow</h2>
+<h2>1 · signal flow</h2>
 
-<p>Every recording setup has a <strong>signal flow</strong>. That's a fancy phrase for a simple idea: sound starts somewhere (a voice, a guitar, a slammed door, a crumbling sheet of paper) and ends up stored somewhere (a file on a hard drive). Between those two endpoints, the sound passes through equipment. Each piece of equipment has a job, and each piece is a choice. A different mic, a different cable, a different interface, and you get a different recording, even if the source is identical.</p>
+<p>Every recording setup has a <strong>signal flow</strong>: the path sound takes from where it starts (a voice, a guitar, a slammed door, a crumbling sheet of paper) to where it ends up stored (a file on a hard drive). Between those two endpoints, the sound passes through equipment. Each piece of equipment has a job, and each piece is a choice. Swap the mic, the cable, or the interface and you get a different recording of the same source.</p>
 
 <p>The signal flow you'll use most often this semester, and the one MB2525's gear is designed for, is what we'll call the <strong>basic recording chain</strong>. It has five stages: three devices, connected by two cables.</p>
 
@@ -242,23 +242,21 @@
   <figcaption>The basic recording chain. Three devices (mic, interface, computer), connected by two cables (XLR, USB).</figcaption>
 </figure>
 
-<p>Read the diagram left to right and you can see what's happening at each transition. A sound in the air vibrates the microphone, and the microphone produces a small electrical signal (this is what we'll call <strong>mic level</strong>, and it matters more than it sounds like it should). That signal travels down an XLR cable to an audio interface. The interface does two jobs: it amplifies the small mic-level signal up to something the computer can work with, and it converts that analog electrical signal into a stream of numbers (digital audio, the topic of all of Module 2). Those numbers travel over a USB cable to the computer's audio input, where any recording program can read from them.</p>
+<p>Read the diagram left to right and you can see what's happening at each transition. A sound in the air vibrates the microphone, and the microphone produces a small electrical signal (a signal this small is called <strong>mic level</strong>). That signal travels down an XLR cable to an audio interface. The interface amplifies the small mic-level signal, and it converts that analog electrical signal into a stream of numbers (digital audio, which Module 2 introduced). Those numbers travel over a USB cable to the computer's audio input, where any recording program can read from them.</p>
 
-<p>The five stages alternate: <em>device, cable, device, cable, device</em>. The devices do the work of converting and processing the signal; the cables carry the signal from one device to the next. Each cable type has a job that matches the kind of signal it carries: XLR for mic-level analog audio, USB for digital data.</p>
+<p>The five stages alternate: <em>device, cable, device, cable, device</em>. The devices convert and process the signal; the cables carry it from one device to the next. Each cable type matches the kind of signal it carries: XLR for mic-level analog audio, USB for digital data. When you sit down at a station Wednesday, you'll operate every stage of this chain.</p>
 
-<p>Once you've read all the sections that follow, the diagram above should feel less like a sequence of mystery boxes and more like a list of decisions you understand. When you sit down at a station Wednesday, you'll be operating every stage of this chain.</p>
-
-<p>This is one signal flow out of many. There are others. A guitar plugged into the same interface uses a different cable carrying a different kind of signal. A condenser microphone needs power that this dynamic mic doesn't. A synthesizer puts out a signal at a different level entirely. The basic chain you'll learn this week is the most common one and the one every station is built around, but the world of recording has more cables, more mic types, and more signal levels than what's in the diagram above. We'll get to them.</p>
+<p>This is one signal flow out of many. A guitar plugged into the same interface uses a different cable carrying a different kind of signal. A condenser microphone needs power that this dynamic mic doesn't. A synthesizer puts out a signal at a different level entirely. The basic chain you'll learn this week is the one every station in MB2525 is set up for. Recording uses more cables, mic types, and signal levels than the diagram shows, and Week 7 covers them.</p>
 
 <hr>
 
-<h2>2 · The dynamic microphone</h2>
+<h2>2 · the dynamic microphone</h2>
 
-<h3>2.1 · How a dynamic mic works</h3>
+<h3>2.1 · how a dynamic mic works</h3>
 
 <p>A microphone is a <strong>transducer</strong>: a device that converts one kind of energy into another. The mic's job is to convert <em>acoustic energy</em> (changing air pressure in the room) into <em>electrical energy</em> (a small voltage that varies the same way the air did). Every microphone does this. They differ in <em>how</em>.</p>
 
-<p>The mics in MB2525's gear storage are <strong>dynamic microphones</strong>. The word "dynamic" refers to the mechanism inside: a small, lightweight diaphragm is attached to a coil of fine wire, and that coil sits inside the field of a permanent magnet. When sound waves push on the diaphragm, the diaphragm moves, which moves the coil, which moves inside the magnetic field. A coil moving in a magnetic field generates an electrical current. (This is the same principle, in miniature, that makes generators and electric motors work.)</p>
+<p>The mics in MB2525's gear storage are <strong>dynamic microphones</strong>. "Dynamic" names the mechanism inside: a small, lightweight diaphragm is attached to a coil of fine wire, and that coil is inside the field of a permanent magnet. When sound waves push on the diaphragm, the diaphragm moves, which moves the coil, which moves inside the magnetic field. A coil moving in a magnetic field generates an electrical current. (Electric generators use the same principle at a much larger scale.)</p>
 
 <figure class="annotated">
   <img src="../../assets/images/module-03-week-06/dynamic-microphone-cross-section.png"
@@ -268,28 +266,28 @@
     <strong>1.</strong> Acoustic energy (the incoming sound wave)<br>
     <strong>2.</strong> Diaphragm (a thin membrane that vibrates when sound hits it)<br>
     <strong>3.</strong> Voice coil (a coil of fine wire attached to the back of the diaphragm)<br>
-    <strong>4.</strong> Magnet (a permanent magnet sitting inside the coil)<br>
+    <strong>4.</strong> Magnet (a permanent magnet inside the coil)<br>
     <strong>5.</strong> Output wires (the two signal wires carrying the small voltage out to the XLR cable)
   </div>
 </figure>
 
-<p>One thing the image doesn't show: the third connection inside an XLR cable, the <strong>ground</strong>. We'll meet it in section 4 when we look at the cable itself. The ground doesn't connect to the diaphragm-coil-magnet assembly the way the two signal wires do; it connects to the mic body and the cable shield, and its job is electrical safety and noise rejection. For now, the two wires in the image are the two that carry your sound.</p>
+<p>The image leaves out the third connection inside an XLR cable, the <strong>ground</strong>. The ground doesn't connect to the diaphragm, coil, and magnet the way the two signal wires do. It connects to the mic body and the cable shield, and its job is electrical safety and noise rejection. Section 4 looks at the cable itself. The two wires in the image are the two that carry your sound.</p>
 
-<p>Notice that the mic itself doesn't need power to do this. The energy that makes the electrical signal comes from the sound itself, transferred mechanically through the diaphragm and the coil. This is why a dynamic mic just works the moment you plug it in.</p>
+<p>A dynamic mic doesn't need power. The energy for the electrical signal comes from the sound itself, passed mechanically through the diaphragm and the coil, and the mic works the moment you plug it in.</p>
 
-<p>Dynamic mics have characteristic strengths. They're rugged (the moving parts are simple and not delicate). They handle loud sources well without distorting. They have a clear, present sound that flatters voices and many instruments. They're affordable and reliable enough that they end up on stages and in studios all over the world. The Shure SM57 and SM58 are the two most-recorded microphones in history, and both are dynamics.</p>
+<p>Dynamic mics are rugged: the moving parts are simple and sturdy. They handle loud sources without distorting, and they have a clear, present sound on voices and many instruments. They're affordable and reliable, and you'll find them on stages and in studios all over the world. The Shure SM57 and SM58 are both dynamics, and both have been in production since the mid-1960s.</p>
 
-<p>They also have characteristic limits. Because the diaphragm has a coil and magnet attached to it, it's relatively heavy compared to other mic designs, and it doesn't respond to extremely fast or quiet sound details as faithfully as some other mic types. For most of what you'll do in this course, that limit doesn't matter. The dynamic is the right tool. In Week 7 we'll meet a different transducer type (the condenser) that handles those finer details, and we'll talk about when to reach for each.</p>
+<p>Dynamic mics have limits too. The diaphragm has a coil attached to it, which makes it heavier than the diaphragms in other mic designs, and it responds less faithfully to very fast or very quiet details. For the recording you'll do in this course, that limit rarely matters. In Week 7 you'll learn a different transducer type (the condenser) that picks up those finer details, and you'll compare when to use each.</p>
 
-<h3>2.2 · Reading a mic's specs</h3>
+<h3>2.2 · reading a mic's specs</h3>
 
-<p>Every microphone manufacturer publishes a <strong>spec sheet</strong> for each model: a single-page document that lists what the mic is, what it does, and how it does it. Some of the contents are practical numbers (weight, dimensions, what connector it uses). The two parts that tell you about the <em>sound</em> of the mic are two charts: the <strong>polar pattern</strong>, which shows what directions the mic listens to, and the <strong>frequency response</strong>, which shows which parts of the audio spectrum the mic emphasizes. Learning to read both is how you make sense of why two mics from the same manufacturer, that look almost identical from the outside, end up sounding different and getting used for different jobs.</p>
+<p>Every microphone manufacturer publishes a <strong>spec sheet</strong> for each model: a one-page document that describes the mic and lists its measurements. Some of the contents are practical numbers (weight, dimensions, what connector it uses). The parts that tell you about the <em>sound</em> of the mic are two charts: the <strong>polar pattern</strong>, which shows what directions the mic listens to, and the <strong>frequency response</strong>, which shows which parts of the audio spectrum the mic emphasizes. Read both and you can see why two mics from the same manufacturer that look almost identical sound different and get used for different jobs.</p>
 
-<p>Both mics at the lab stations come from this family. The SM57 and the SM58 share the same internal cartridge, the same cardioid polar pattern, and the same chassis design. What separates them is the frequency response tailoring, which the spec sheets make explicit.</p>
+<p>The two mics at the lab stations, the Shure SM57 and SM58, are a pair like this. They share the same internal cartridge, the same cardioid polar pattern, and the same chassis design. Their frequency responses differ, and the spec sheets show how.</p>
 
-<h4>The polar pattern</h4>
+<h4>the polar pattern</h4>
 
-<p>A polar pattern chart shows what a mic picks up from every direction around it. You can think of it as a top-down map of the mic's hearing. The mic sits at the center. The angle around the chart tells you where the sound is coming from: 0° at the bottom is directly in front of the mic (where you'd point it at your source); 90° and 270° are the two sides; 180° at the top is directly behind the mic. The concentric rings, labeled in dB going outward, tell you how loud the mic picks up sound from that angle.</p>
+<p>A polar pattern chart shows what a mic picks up from every direction around it. It's a top-down map of the mic's hearing, with the mic at the center. The angle around the chart tells you where the sound is coming from: 0° at the bottom is directly in front of the mic (where you'd point it at your source); 90° and 270° are the two sides; 180° at the top is directly behind the mic. The concentric rings, labeled in dB going outward, tell you how loud the mic picks up sound from that angle.</p>
 
 <figure>
   <img src="../../assets/images/module-03-week-06/sm57-polar-pattern.png"
@@ -299,26 +297,26 @@
   <div class="photo-attribution">Source: Shure SM57 product spec sheet, ©2009 Shure Incorporated</div>
 </figure>
 
-<p>The curve traced on the chart is what the mic actually does. Reading the plot above: at 0° (directly in front), the curve sits at the outermost ring, which means the mic is most sensitive there. That's full pickup. As you move around toward 90° (the side of the mic), the curve pulls inward, sitting somewhere between the -5 and -10 dB rings depending on frequency. The side of the mic picks up sound, but less strongly than the front does (about a third to half as loud, roughly). Keep going around to 180° (directly behind the mic) and the curve pinches almost to the center: at -20 dB or beyond, the rear of the mic is barely picking up anything at all. This shape, full in front, reduced at the sides, near-zero behind, is what <strong>cardioid</strong> means.</p>
+<p>The curve on the chart shows how sensitive the mic is at each angle. At 0° (directly in front), the curve reaches the outermost ring: the mic is most sensitive there, with full pickup. As you move around toward 90° (the side of the mic), the curve pulls inward, to somewhere between the -5 and -10 dB rings depending on frequency. The side of the mic picks up sound, but less strongly than the front does (roughly a third to half as loud). Keep going around to 180° (directly behind the mic) and the curve pinches almost to the center: at -20 dB or beyond, the rear of the mic barely picks up anything. This shape (full in front, reduced at the sides, near zero behind) is what <strong>cardioid</strong> means.</p>
 
-<p>You'll notice the chart actually shows several curves at once, one for each frequency the manufacturer measured (125, 500, 1000, 2000, 4000, 8000 Hz). The shape isn't perfectly identical at every frequency: at very low frequencies the mic picks up a bit more from the rear than it does at mid frequencies; at very high frequencies the pattern can get a little narrower in front. But all of these curves are recognizably the same cardioid shape. For our purposes, "cardioid" is the right name for what this mic does at any frequency you'd care about.</p>
+<p>The chart shows several curves at once, one for each frequency the manufacturer measured (125, 500, 1000, 2000, 4000, 8000 Hz). The shape changes a little with frequency: at very low frequencies the mic picks up a bit more from the rear than it does at mid frequencies, and at very high frequencies the pattern can get a little narrower in front. All of these curves are recognizably cardioid, and "cardioid" describes this mic at every frequency you'll record.</p>
 
-<p>The operational consequence is simple: <strong>point the front of the mic at the sound you want, and put what you don't want behind it</strong>. If a noisy fluorescent fixture overhead, a classmate's whispering, or the room's general background wash is behind the mic while your source is in front, the mic rejects them. If they're in front and your source is behind, the mic captures the unwanted material and rejects your source. Mic placement is half of getting a good recording.</p>
+<p><strong>Point the front of the mic at the sound you want, and put what you don't want behind it.</strong> If a noisy fluorescent fixture overhead, a classmate's whispering, or the room's general background wash is behind the mic while your source is in front, the mic rejects them. If they're in front and your source is behind, the mic captures the unwanted material and rejects your source. Where you point the mic decides what ends up in the recording.</p>
 
-<h4>The frequency response</h4>
+<h4>the frequency response</h4>
 
-<p>The frequency response chart shows which parts of the audio spectrum the mic emphasizes and which parts it de-emphasizes. The horizontal axis is frequency in Hz, running from low (around 20 Hz, the bottom of human hearing) on the left to high (around 20,000 Hz, the top of human hearing) on the right, on a logarithmic scale so equal distances on the chart correspond to equal musical intervals. The vertical axis is sensitivity in dB, relative to a flat reference of 0 dB. A curve that sits at 0 dB across the whole chart would mean the mic responds equally to every frequency. A curve that rises above 0 at some point means the mic emphasizes that part of the spectrum; a curve that falls below means the mic de-emphasizes that part.</p>
+<p>The frequency response chart shows which parts of the audio spectrum the mic emphasizes and which parts it de-emphasizes. The horizontal axis is frequency in Hz, running from low (around 20 Hz, the bottom of human hearing) on the left to high (around 20,000 Hz, the top of human hearing) on the right, on a logarithmic scale, where equal distances on the chart are equal musical intervals. The vertical axis is sensitivity in dB, relative to a flat reference of 0 dB. A flat curve at 0 dB across the whole chart would mean the mic responds equally to every frequency. A curve that rises above 0 at some point means the mic emphasizes that part of the spectrum; a curve that falls below means the mic de-emphasizes that part.</p>
 
 <figure class="compare">
   <div class="compare-row">
     <div class="compare-item">
       <img src="../../assets/images/module-03-week-06/sm57-frequency-response.png"
-           alt="SM57 frequency response curve from the spec sheet. The curve has a long low-end rolloff, dropping from 0 dB at 200 Hz down to -12 dB at 45 Hz. Through the mids the curve sits near 0 dB. From 2 kHz it climbs into a presence peak of about +6 dB at 6 kHz, then dips to +4 dB at 7 kHz, +3 dB at 8 kHz, back up to +5 dB at 9 kHz, then rolls off sharply at the top.">
+           alt="SM57 frequency response curve from the spec sheet. The curve has a long low-end rolloff, dropping from 0 dB at 200 Hz down to -12 dB at 45 Hz. Through the mids the curve is near 0 dB. From 2 kHz it climbs into a presence peak of about +6 dB at 6 kHz, then dips to +4 dB at 7 kHz, +3 dB at 8 kHz, back up to +5 dB at 9 kHz, then rolls off sharply at the top.">
       <div class="compare-label">SM57</div>
     </div>
     <div class="compare-item">
       <img src="../../assets/images/module-03-week-06/sm58-frequency-response.png"
-           alt="SM58 frequency response curve from the spec sheet. The curve has a shorter low-end rolloff than the SM57, reaching 0 dB at 100 Hz and dropping only to -9 dB at 50 Hz. The mids sit flat. From 1 kHz a gentle climb reaches a presence peak of about +5 dB at 4 kHz, followed by a steep dip at 7.5 kHz that briefly returns to 0 dB, then climbs back up to +5 dB at 9 kHz before rolling off at the top.">
+           alt="SM58 frequency response curve from the spec sheet. The curve has a shorter low-end rolloff than the SM57, reaching 0 dB at 100 Hz and dropping only to -9 dB at 50 Hz. The mids are flat. From 1 kHz a gentle climb reaches a presence peak of about +5 dB at 4 kHz, followed by a steep dip at 7.5 kHz that briefly returns to 0 dB, then climbs back up to +5 dB at 9 kHz before rolling off at the top.">
       <div class="compare-label">SM58</div>
     </div>
   </div>
@@ -326,44 +324,44 @@
   <div class="photo-attribution">Source: Shure SM57 and SM58 product spec sheets, ©2009 Shure Incorporated</div>
 </figure>
 
-<p><strong>SM57.</strong> The low end has a long rolloff: the curve drops from 0 dB at around 200 Hz all the way down to -12 dB at 45 Hz. Through the mids the curve sits near 0 dB. Starting around 2 kHz it climbs into a <strong>presence peak</strong>, reaching about +6 dB at 6 kHz: an emphasis in the upper-mid range where things like the snap of a snare drum, the bite of a guitar amp, and the consonants of a speaking voice all live. From there the curve has a distinctive wobble before rolling off: down to +4 dB at 7 kHz, +3 dB at 8 kHz, back up to +5 dB at 9 kHz, then the high end drops away. The SM57's spec sheet describes this curve as "tailored for drums, guitars, and vocals," and you can see what tailoring means: it's the shape of this curve, designed to flatter the things this mic gets pointed at.</p>
+<p>The SM57's low end has a long rolloff: the curve drops from 0 dB at around 200 Hz all the way down to -12 dB at 45 Hz. Through the mids the curve is near 0 dB. Starting around 2 kHz it climbs into a <strong>presence peak</strong>, reaching about +6 dB at 6 kHz. That's an emphasis in the upper-mid range, where you hear the snap of a snare drum, the bite of a guitar amp, and the consonants of a speaking voice. From there the curve wobbles before rolling off: down to +4 dB at 7 kHz, +3 dB at 8 kHz, back up to +5 dB at 9 kHz, then the high end drops away. The SM57's spec sheet describes this curve as "tailored for drums, guitars, and vocals," and that tailoring is the shape of the curve.</p>
 
-<p><strong>SM58.</strong> Shorter rolloff at the bottom: the curve reaches 0 dB at around 100 Hz and only drops to -9 dB by 50 Hz. Through the mids the curve sits flat, like the SM57. A gentle climb from 1 kHz up to a presence peak of +5 dB at 4 kHz. Then a distinctive feature: a steep dip at 7.5 kHz that briefly returns to 0 dB before climbing back up to +5 dB at 9 kHz, then the high-end rolloff. The SM58's spec sheet calls this "tailored for vocals, with brightened midrange and bass rolloff." The bass rolloff is part of why this mic works well for singers: when a singer holds a cardioid mic close to their mouth, low frequencies get artificially boomy from a thing called <strong>proximity effect</strong>, and the SM58's shorter low-end extension helps compensate.</p>
+<p>The SM58's rolloff starts lower: its curve reaches 0 dB at around 100 Hz and is at only -9 dB by 50 Hz. Its mids are flat, like the SM57's. A gentle climb from 1 kHz reaches a presence peak of +5 dB at 4 kHz. Then comes a steep dip at 7.5 kHz, briefly back to 0 dB, before the curve climbs to +5 dB at 9 kHz and the high end rolls off. The SM58's spec sheet calls this "tailored for vocals, with brightened midrange and bass rolloff to control proximity effect." <strong>Proximity effect</strong> is the boost in low frequencies you get when a singer holds a cardioid mic close to the mouth, and the bass rolloff counters it.</p>
 
-<p>Same family of mic, two different tunings. Both share the cardioid pattern, the flat midrange, and a presence peak in roughly the same upper-mid region. What's different is the low end (the SM57 extends lower, the SM58 reaches flat sooner) and the shape of the high end (the SM57 has a wobble after its peak; the SM58 has a sharp dip-and-recovery). The SM57 is built for instruments that have musical content down low, like kick drums and guitar cabinets. The SM58 is built for the human voice, where the low-end shaping helps with proximity effect and the high-end shaping helps with vocal clarity. The spec sheets are showing the same kind of intentional design choices, expressed as two different curves.</p>
+<p>Both mics have the cardioid pattern, a flat midrange, and a presence peak in roughly the same upper-mid region. They differ in three places. The SM57's low-end rolloff starts higher (around 200 Hz, against the SM58's 100 Hz), its presence peak is higher (6 kHz, against 4 kHz), and after the peak it wobbles where the SM58 has a sharp dip and recovery. In use, the SM57 goes on instruments such as snare drums and guitar amps as well as on voices, and the SM58 is built for singers.</p>
 
-<h4>What to take away</h4>
+<h4>other mics</h4>
 
-<p>Every mic has both a polar pattern and a frequency response. Reading those two charts is how you learn what a mic is built to do, before you ever plug it in. Those same charts shift for other kinds of mics (condensers with different sensitivities, mics with omni or figure-8 polar patterns) and how to read the differences.</p>
+<p>Every mic has both a polar pattern and a frequency response, and you can read both charts before you ever plug the mic in. In Week 7 you'll read them for condensers and for mics with omni and figure-8 polar patterns.</p>
 
 <hr>
 
-<h2>3 · The mic-level signal</h2>
+<h2>3 · the mic-level signal</h2>
 
-<p>When the mic's coil moves and generates electricity, the voltage it produces is <em>tiny</em>. We're talking about a few <em>thousandths of a volt</em>, sometimes less. This is a category called <strong>mic level</strong>, and it's the smallest standard signal level you'll meet in audio work.</p>
+<p>When the mic's coil moves and generates electricity, the voltage it produces is <em>tiny</em>: a few <em>thousandths of a volt</em>, sometimes less. A signal this small is called <strong>mic level</strong>, and it's the smallest standard signal level in audio work.</p>
 
-<p>Mic-level signals are weak because the energy available to generate them is small. A diaphragm the size of a fingernail can only move so much, and the magnetic field can only induce so much voltage in the coil. To get a usable signal out of that, the mic-level signal has to be <em>amplified</em>, by a lot, before it's strong enough to be turned into digital audio. That amplification happens inside the audio interface. We'll get there in section 5.</p>
+<p>The energy available to generate a mic-level signal is small. A diaphragm the size of a fingernail can only move so much, and the magnetic field can only induce so much voltage in the coil. The mic-level signal has to be <em>amplified</em>, by a lot, before it's strong enough to be turned into digital audio. That amplification happens inside the audio interface (section 5).</p>
 
-<p>Two consequences flow from mic level being weak, and they shape almost everything else in the chain:</p>
+<p>A weak signal has two consequences.</p>
 
-<p>First, <strong>weak signals are vulnerable to noise</strong>. Any electrical interference picked up between the mic and the interface (from power cables, fluorescent lights, computer monitors, radio) adds to the signal you actually want. If the interference is loud relative to your mic signal, you've recorded the interference as well as the source. This is why mic cables are built the way they are, and it's the topic of the next section.</p>
+<p>First, <strong>weak signals are vulnerable to noise</strong>. Any electrical interference picked up between the mic and the interface (from power cables, fluorescent lights, computer monitors, radio) adds to the signal you actually want. If the interference is loud relative to your mic signal, you've recorded the interference as well as the source. Section 4 shows how a mic cable rejects that noise.</p>
 
-<p>Second, <strong>weak signals need amplification before they're useful</strong>. The interface contains a circuit called a <em>preamplifier</em>, or <strong>preamp</strong>, whose only job is to take that small mic-level voltage and boost it up to a much larger signal called <em>line level</em>. (Line level is the signal level your computer expects, and the level most other audio gear runs at internally.) The knob you'll turn to set how loud a mic comes through, called the <strong>gain</strong>, is the control for that preamp.</p>
+<p>Second, <strong>weak signals need amplification before they're useful</strong>. The interface contains a circuit called a <em>preamplifier</em>, or <strong>preamp</strong>, that boosts the small mic-level voltage up to a much larger signal called <em>line level</em>. (Line level is the level the interface's converter needs before it turns the signal into numbers, and the level most other audio gear runs at internally.) The knob you'll turn to set how loud a mic comes through, called the <strong>gain</strong>, is the control for that preamp.</p>
 
 <div class="callout">
-  <div class="callout-label">A note on the term "level"</div>
-  <p>In audio, "level" is used in at least two different ways. You'll hear it used to refer to <em>volume</em> ("the bass level is too high"), and you'll hear it used to refer to <em>signal type</em> ("the mic level is too small for a line input"). Both are correct usages; context tells you which one is meant. When this reading says <em>mic level</em>, <em>instrument level</em>, or <em>line level</em>, it's always referring to the second meaning: the standard category of signal that a piece of gear puts out or expects.</p>
+  <div class="callout-label">the word "level"</div>
+  <p>In audio, "level" has two meanings. It can mean <em>volume</em> ("the bass level is too high") or <em>signal type</em> ("the mic level is too small for a line input"), and context tells you which. When this reading says <em>mic level</em>, <em>instrument level</em>, or <em>line level</em>, it means the second: the standard category of signal that a piece of gear puts out or expects.</p>
 </div>
 
 <hr>
 
-<h2>4 · The XLR cable</h2>
+<h2>4 · the XLR cable</h2>
 
-<p>The cable that runs between a microphone and an audio interface is called an <strong>XLR cable</strong>, after the three-pin connector at each end. The connector locks into place with a small spring-loaded latch (you'll feel it click; to release it, press the small tab on the side of the connector and pull). The lock matters because a mic cable that gets pulled out mid-take is the kind of small disaster the design is meant to prevent.</p>
+<p>The cable that runs between a microphone and an audio interface is called an <strong>XLR cable</strong>, after the three-pin connector at each end. The connector locks into place with a small spring-loaded latch (you'll feel it click; to release it, press the small tab on the side of the connector and pull). The latch keeps the cable from being pulled out in the middle of a take.</p>
 
-<p>What makes an XLR cable different from, say, the cable that plugs your headphones into a phone is what's inside. An XLR carries three conductors (three separate wires) where a headphone cable carries two or three depending on the design.</p>
+<p>An XLR cable has three conductors (three separate wires) inside. The cable that plugs your headphones into a phone has two or three, depending on the design.</p>
 
-<p>Inside an XLR cable, two of the three wires carry the audio signal, and the third is a ground (a shield wrapped around the other two). The two signal wires carry the <em>same audio</em>, but one of them carries it <em>flipped upside down</em> compared to the other (the technical term for this is <strong>phase</strong>: when two copies of a signal are flipped this way, they're said to be <em>out of phase</em>). So if wire A has the waveform going up, wire B has the same waveform going down by the same amount. Two copies of the signal, one of them inverted.</p>
+<p>Inside an XLR cable, two of the three wires carry the audio signal, and the third is a ground (a shield wrapped around the other two). The two signal wires carry the <em>same audio</em>, but one of them carries it <em>flipped upside down</em> compared to the other. Flipping a signal upside down is called inverting its <strong>polarity</strong>, and two copies of a signal that move in opposite directions like this are <em>out of phase</em>. If wire A has the waveform going up, wire B has the same waveform going down by the same amount.</p>
 
 <figure>
   <svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg">
@@ -421,22 +419,22 @@
           font-family="var(--mono)" font-size="10" fill="var(--ink-soft)">result: signal doubled, noise cancelled</text>
 
   </svg>
-  <figcaption>The trick of a balanced cable. Noise picked up along the run arrives on both wires the same way; the interface flips wire B upside down and sums it with wire A; the signal (flipped twice, so now in phase) doubles, and the noise (flipped once, so now out of phase) cancels.</figcaption>
+  <figcaption>How a balanced cable cancels noise. Noise picked up along the run arrives on both wires the same way; the interface flips wire B upside down and sums it with wire A; the signal (flipped twice, now in phase) doubles, and the noise (flipped once, now out of phase) cancels.</figcaption>
 </figure>
 
-<p>When the cable picks up interference along its run (electromagnetic noise from a fluorescent light fixture overhead, say), the interference arrives on <em>both</em> wires equally, in the same direction. So at the far end of the cable, the interface sees:</p>
+<p>When the cable picks up interference along its run (electromagnetic noise from a fluorescent light fixture overhead, say), the interference arrives on <em>both</em> wires equally, in the same direction. At the far end of the cable, the interface receives:</p>
 
 <ul>
   <li>Wire A: signal + noise</li>
   <li>Wire B: <em>inverted</em> signal + the same noise</li>
 </ul>
 
-<p>At the receiving end, the interface flips wire B upside down and sums the two wires together. The signal doubles. The noise cancels. Noise gone, signal twice as strong. This is what people mean when they call XLR cables <strong>balanced</strong>.</p>
+<p>At the receiving end, the interface flips wire B upside down and sums the two wires together. The signal doubles and the noise cancels. A cable that works this way is called <strong>balanced</strong>, and XLR cables are balanced.</p>
 
 <div class="pause">
-  <div class="pause-label">Pause</div>
-  <h4>Why summing waves cancels them or doubles them</h4>
-  <p>The cancellation and doubling that make balanced cables work are not specific to cables. They're properties of how waveforms add. When two waveforms get summed together (in any medium: in a cable, in the air, in a mixer, on a track in Audacity), the rule is the same: at every moment in time, you add the two values to get the sum.</p>
+  <div class="pause-label">pause</div>
+  <h4>why summing waves cancels them or doubles them</h4>
+  <p>The cancellation and doubling in a balanced cable are properties of how waveforms add. When two waveforms are summed (in any medium: in a cable, in the air, in a mixer, on a track in Audacity), the rule is the same: at every moment in time, you add the two values to get the sum.</p>
   <p>If the two waveforms are <em>in phase</em> (both going up at the same time, both going down at the same time), every moment of one adds to a matching moment of the other. The peaks line up with peaks, the troughs with troughs. The result is the same waveform, twice as tall.</p>
   <p>If the two waveforms are <em>out of phase</em> (one is the upside-down copy of the other: where A goes up, B goes down by the same amount), every moment of one adds to a matching <em>opposite</em> moment of the other. Peak plus trough equals zero, at every point. The result is silence.</p>
   <figure>
@@ -531,32 +529,32 @@
     </svg>
     <figcaption>Two identical waves sum to a doubled wave; a wave and its upside-down copy sum to silence.</figcaption>
   </figure>
-  <p>A balanced cable engineers this principle to its advantage. When the interface flips wire B upside down before summing the two wires, two things happen at once. The signal, which had been carried as two opposite copies (out of phase), now arrives as two matching copies (in phase) and sums to double. The noise, which had been carried identically on both wires (in phase), now arrives as two opposite copies (out of phase) and sums to silence. The same flip-and-sum does both jobs, because phase is what tells the math which case it's in.</p>
+  <p>A balanced cable uses this principle. The signal travels down the cable as two opposite copies (out of phase); after the interface flips wire B, they're two matching copies (in phase), and they sum to double. The noise travels identically on both wires (in phase); after the flip, it's two opposite copies (out of phase), and it sums to silence.</p>
 </div>
 
-<p>The practical upshot is that XLR cables can run long distances (50, 100 feet or more) carrying small mic-level signals without picking up audible noise. For a course like this one, where cables stay short, the protection isn't strictly necessary. But this is how every professional audio environment is wired, and it's the reason XLR is the standard mic cable.</p>
+<p>XLR cables can run long distances (50, 100 feet or more) carrying small mic-level signals without picking up audible noise. The cables in the lab are short, and the noise protection matters less there. Studios and stages run their mic lines on balanced XLR cables.</p>
 
 <hr>
 
-<h2>5 · The audio interface</h2>
+<h2>5 · the audio interface</h2>
 
 <p>The audio interface is the box on your desk that the mic cable plugs into, and the box that connects to the computer over a USB cable. It's where the signal stops being analog (continuous electrical voltage) and starts being digital (a stream of numbers). The interface has three jobs, in order:</p>
 
 <ol>
-  <li><strong>Amplify the mic signal.</strong> The preamp boosts mic level up to line level. The gain knob controls how much amplification. (If you've already glanced at the Behringer's input label, "Mic/Line 1," that's not a typo: the input accepts either a mic-level signal that needs preamp boost, or a line-level signal that's already at line level and just passes through. We'll come back to what "line level" means as a signal type in Week 7.)</li>
-  <li><strong>Convert analog to digital.</strong> The <strong>analog-to-digital converter</strong> (ADC) samples the now-amplified signal many thousands of times per second. Module 2 covered this in detail.</li>
-  <li><strong>Send the data to the computer.</strong> Over a USB cable, the stream of numbers arrives at the computer's audio input. From there, any program that listens to that input can read it: Audacity (what you'll use this week), QuickTime (the recorder you used on Day 1), Ableton (where Module 4 lives), or the system's own recorder. The interface delivers the signal to the computer; the software you choose decides what to do with it.</li>
+  <li>The preamp amplifies the mic signal, boosting mic level up to line level, and the gain knob sets how much. (The Behringer's input label, "Mic/Line 1," means the input accepts either a mic-level signal that needs preamp boost or a signal that's already at line level. Week 7 covers line level as a signal type.)</li>
+  <li>The <strong>analog-to-digital converter</strong> (ADC) converts the amplified signal from analog to digital, sampling it many thousands of times per second. Module 2 covered sampling in detail.</li>
+  <li>The interface sends the stream of numbers over the USB cable to the computer's audio input. Any program that listens to that input can read it: Audacity (this week), QuickTime (the recorder you used on Day 1), Ableton (the program for Module 4), or the system's own recorder. The interface delivers the signal to the computer, and the software you choose decides what to do with it.</li>
 </ol>
 
 <p>The interface also runs the reverse path for playback: it takes digital audio coming from the computer, converts it back to analog through a <strong>digital-to-analog converter</strong> (DAC), and sends it out to your headphones or speakers.</p>
 
-<p>The stations in MB2525 are equipped with two different interface models: the <strong>PreSonus AudioBox USB 96</strong> at some stations, the <strong>Behringer U-Phoria UM2</strong> at others. Different interfaces lay out their controls differently. The features themselves are universal; the physical layout is the manufacturer's choice. Once you can find the universal features on any interface, you can sit down at any station.</p>
+<p>MB2525 has two interface models: the <strong>PreSonus AudioBox USB 96</strong> at some stations and the <strong>Behringer U-Phoria UM2</strong> at others. They have the same features in different layouts, and once you can find each feature on both, you can work at any station.</p>
 
 <figure class="compare">
   <div class="compare-row">
     <div class="compare-item">
       <img src="../../assets/images/module-03-week-06/presonus-audiobox-usb96-front.png"
-           alt="Front panel of the PreSonus AudioBox USB 96. Left side: two combo XLR/TRS inputs labeled 1 and 2, with a shared Mic/Inst type label between them. Middle: a red 48V phantom power button with red indicator light, and two gain knobs, one per input, each labeled with Inst and Mic positions and a -10 to +30 dB scale, each with a clip indicator LED. Right side: a Mixer blend knob (Inputs to Playback), a Main output knob, a power LED, a headphone output, and a phones level knob.">
+           alt="Front panel of the PreSonus AudioBox USB 96. Left side: two combo XLR/TRS inputs labeled 1 and 2, with a shared Mic/Inst type label between them. Middle: a red 48V phantom power button with red indicator light, and two gain knobs, one per input, each labeled with Inst and Mic positions and a -10 to +30 dB scale, each with a clip indicator LED. Right side: a Mixer blend knob (Inputs to Playback), a Main output knob, a power LED, and a headphone level knob marked with a headphone icon.">
       <div class="compare-label">PreSonus AudioBox USB 96</div>
     </div>
     <div class="compare-item">
@@ -569,25 +567,25 @@
   <div class="photo-attribution">Source: Sweetwater product listings (manufactured by PreSonus and Behringer)</div>
 </figure>
 
-<p>Look at both interfaces and you'll find the same set of controls, even though they're positioned, labeled, and counted differently:</p>
+<p>Both interfaces have each of these controls, in different positions and with different labels:</p>
 
 <ul>
-  <li><strong>Inputs.</strong> Both interfaces have at least one <em>combo jack</em> on the left side: a connector that physically accepts either an XLR plug (for a mic) or a 1/4" plug (for a higher-level signal). The PreSonus has two combo jacks, both labeled <strong>Mic/Inst</strong>, meaning each one can take a mic or an instrument signal. The Behringer has one combo jack labeled <strong>Mic/Line 1</strong> (mic or line-level signal) and, next to it, a dedicated 1/4" jack labeled <strong>Inst 2</strong> for instruments only. We won't use the instrument or line inputs this week (Wednesday's lab plugs an XLR mic into the leftmost input on either interface), but next week we'll talk about what "mic," "line," and "instrument" mean as distinct signal types, and these labels will start to make full sense.</li>
+  <li>For <strong>inputs</strong>, each interface has at least one <em>combo jack</em> on the left side: a connector that physically accepts either an XLR plug (for a mic) or a 1/4" plug (for a higher-level signal). The PreSonus has two combo jacks, both labeled <strong>Mic/Inst</strong>, meaning each one can take a mic or an instrument signal. The Behringer has one combo jack labeled <strong>Mic/Line 1</strong> (mic or line-level signal) and, next to it, a 1/4" jack labeled <strong>Inst 2</strong> for instruments only. Wednesday's lab plugs an XLR mic into the leftmost input on either interface. Week 7 covers what "mic," "line," and "instrument" mean as signal types.</li>
 
-  <li><strong>Gain knob</strong> for each input. The gain knob is the preamp control: it sets how much the mic-level signal gets amplified before the ADC sees it. On the PreSonus, two silver knobs sit on the front panel, one per channel, each marked <strong>1</strong> or <strong>2</strong>, with <strong>Inst</strong> and <strong>Mic</strong> labels around the knob and a numeric scale from <strong>-10</strong> to <strong>+30 dB</strong>. The Inst/Mic labels are rough guideposts for where each signal type typically sits; for a mic recording you'll usually end up somewhere in the lower part of the range. On the Behringer, the gain knobs are on the <em>top</em> of the unit, not the front: <strong>Mic/Line Gain 1</strong> for the combo jack and <strong>Inst Gain 2</strong> for the instrument jack.</li>
+  <li>Each input has a <strong>gain knob</strong>, the preamp control: it sets how much the mic-level signal is amplified before it reaches the ADC. On the PreSonus, two silver knobs on the front panel, one per channel, are marked <strong>1</strong> and <strong>2</strong>, with <strong>Inst</strong> and <strong>Mic</strong> labels around each knob and a numeric scale from <strong>-10</strong> to <strong>+30 dB</strong>. The Inst and Mic labels are rough guideposts for the gain each signal type usually needs. A dynamic mic on a quiet source often needs the upper part of the range. On the Behringer, the gain knobs are on the <em>top</em> of the unit: <strong>Mic/Line Gain 1</strong> for the combo jack and <strong>Inst Gain 2</strong> for the instrument jack.</li>
 
-  <li><strong>Clip indicator</strong> for each input. The clip indicator is a red LED that lights up when the signal coming through the preamp exceeds the digital ceiling, the point at which clipping begins. On the PreSonus, the LED is integrated into the gain knob: a red dot labeled <strong>Clip</strong> just to the right of each gain knob lights up when that input is hitting its limit. On the Behringer, each input has a pair of stacked LEDs to the right of the jack: <strong>Sig</strong> (lights up when the input is receiving any signal at all) and <strong>Clip</strong> (lights up when the signal is clipping). Same diagnostic in two layouts.</li>
+  <li>Each input has a <strong>clip indicator</strong>, a red LED that lights up when the signal coming through the preamp exceeds the digital ceiling, the point where clipping begins. On the PreSonus, a red LED labeled <strong>Clip</strong>, just to the right of each gain knob, lights up when that input is clipping. On the Behringer, each input has a pair of stacked LEDs to the right of the jack: <strong>Sig</strong> (lights up when the input receives any signal at all) and <strong>Clip</strong> (lights up when the signal is clipping).</li>
 
-  <li><strong>Phantom power.</strong> Phantom power is a +48 V DC current that travels up the XLR cable to power a condenser mic's electronics (we'll meet condensers in Week 7; the dynamic mics you'll use this week don't need it and ignore it). On the PreSonus, the control is a red front-panel button labeled <strong>48V</strong>, with a red light when it's on. On the Behringer, the switch is on the back (labeled <strong>+48V</strong>, with off/on positions), and a small <strong>+48V</strong> indicator on the front lights up when it's active. For Wednesday's lab you can leave it off; it does no harm if it's already on, since dynamic mics don't respond to it.</li>
+  <li><strong>Phantom power</strong> is +48 volts DC sent up the XLR cable to power a condenser mic's electronics. Dynamic mics don't need it, and Week 7 covers condensers. On the PreSonus, the control is a red front-panel button labeled <strong>48V</strong>, with a red light when it's on. On the Behringer, the switch is on the back (labeled <strong>+48V</strong>, with off and on positions), and a small <strong>+48V</strong> indicator on the front lights up when it's active. For Wednesday's lab you can leave it off. If it's already on, it does no harm to a dynamic mic.</li>
 
-  <li><strong>Direct monitor control.</strong> The two interfaces handle this differently in a way worth understanding now. The Behringer has a square button labeled <strong>Direct Monitor</strong>: pressed in, the interface routes the incoming signal directly to the headphones with no latency; released, the headphones hear only what's coming back from the computer (with a small round-trip delay). It's a binary switch. The PreSonus has a knob labeled <strong>Mixer</strong> with <strong>Inputs</strong> on one side and <strong>Playback</strong> on the other: it sets a continuous blend between the two, so you can dial in any ratio of live-from-the-mic to back-from-the-computer in your headphones. The same need (hearing the mic without latency, instead of waiting for it to round-trip through the computer) gets solved with a switch on one interface and a continuous blend on the other.</li>
+  <li><strong>Direct monitoring</strong> sends the incoming signal straight to your headphones, and the two interfaces control it differently. The Behringer has a square button labeled <strong>Direct Monitor</strong>. Pressed in, it routes the incoming signal directly to the headphones with no delay; released, the headphones hear only what's coming back from the computer, with a small round-trip delay called <strong>latency</strong>. The PreSonus has a knob labeled <strong>Mixer</strong> with <strong>Inputs</strong> on one side and <strong>Playback</strong> on the other. It sets a continuous blend between the two, your <strong>monitor mix</strong>: any ratio of live-from-the-mic to back-from-the-computer in your headphones.</li>
 
-  <li><strong>Headphone output.</strong> Both interfaces have a 1/4" headphone jack on the front. The PreSonus has a dedicated <strong>Phones</strong> knob next to its main output knob, so headphone volume is controlled independently of the outputs that go to speakers or other gear. On the Behringer, headphone level is controlled by the <strong>Output</strong> knob on top of the unit, which also controls the level going to the rear outputs; one knob controls both destinations.</li>
+  <li>Each interface has a 1/4" <strong>headphone output</strong>: on the front of the Behringer, on the back of the PreSonus. The PreSonus has its own headphone level knob on the front (marked with a headphone icon), next to its <strong>Main</strong> output knob, and it sets headphone volume separately from the outputs that go to speakers or other gear. On the Behringer, the <strong>Output</strong> knob on top of the unit sets the headphone level and the level going to the rear outputs.</li>
 </ul>
 
 <div class="callout">
-  <div class="callout-label">If you're at a Behringer station</div>
-  <p>The Behringer's gain knobs are on the top of the unit, behind the front panel. There are three: <strong>Mic/Line Gain 1</strong>, <strong>Inst Gain 2</strong>, and <strong>Output</strong>. The first two control how much amplification each input gets. The Output knob controls the level going to your headphones and speakers.</p>
+  <div class="callout-label">if you're at a Behringer station</div>
+  <p>The Behringer's knobs are on the top of the unit, behind the front panel. There are three: <strong>Mic/Line Gain 1</strong>, <strong>Inst Gain 2</strong>, and <strong>Output</strong>. The first two are the gain knobs for the two inputs. The Output knob sets the level going to your headphones and speakers.</p>
   <figure>
     <img src="../../assets/images/module-03-week-06/behringer-um2-top.png"
          alt="Top view of the Behringer U-Phoria UM2 showing three knobs labeled, left to right: Mic/Line Gain 1, Inst Gain 2, and Output."
@@ -595,7 +593,7 @@
   </figure>
 </div>
 
-<p>The back of an interface holds the connections: the USB cable to the computer, the output jacks that feed studio monitors or other gear, and (depending on the model) MIDI ports or the phantom power switch.</p>
+<p>The back of an interface has the connections: the USB cable to the computer, the output jacks that feed studio monitors or other gear, and (depending on the model) MIDI ports or the phantom power switch.</p>
 
 <figure class="compare">
   <div class="compare-row">
@@ -613,90 +611,90 @@
   <figcaption>Two backs, again similar but not identical</figcaption>
 </figure>
 
-<p>Both backs have a USB-B port (where the cable that goes to the computer plugs in) and a Kensington security slot. After that they diverge. The PreSonus has two <strong>TRS</strong> output jacks (the same kind of jack a 1/4" cable plugs into, balanced like the XLR cable in section 4) for connecting to studio monitors, plus a pair of MIDI ports for controllers and synthesizers. The Behringer uses <strong>RCA</strong> jacks (the round, plastic-rimmed connectors common on consumer audio gear; unbalanced, meaning they don't have the noise-rejecting trick the XLR and TRS cables use) for its outputs, has no MIDI, and houses the +48V phantom power switch back here instead of on the front.</p>
+<p>Both backs have a USB-B port (where the cable that goes to the computer plugs in) and a Kensington security slot. After that they diverge. The PreSonus has two <strong>TRS</strong> output jacks (the same kind of jack a 1/4" cable plugs into, balanced like the XLR cable in section 4) for connecting to studio monitors, a pair of MIDI ports for controllers and synthesizers, and its headphone jack. The Behringer uses <strong>RCA</strong> jacks (the round, plastic-rimmed connectors common on consumer audio gear) for its outputs, has no MIDI, and has its +48V phantom power switch here on the back. RCA connections are <strong>unbalanced</strong>: they don't have the noise rejection of XLR and TRS cables.</p>
 
 <hr>
 
-<h2>6 · Why audio interfaces vary so much in price</h2>
+<h2>6 · why audio interfaces vary so much in price</h2>
 
-<p>The PreSonus AudioBox USB 96 and the Behringer U-Phoria UM2 both retail for about $100. Look at Sweetwater's audio interface catalog, though, and the price range runs from around $50 at the bottom to over $7,000 at the top. Hosken's <em>Introduction to Music Technology</em> calls out the same range: from a few hundred dollars for a simple interface to about $1,000 for a midrange unit to over $10,000 for a high-end studio system. What changes across that range?</p>
+<p>The PreSonus AudioBox USB 96 and the Behringer U-Phoria UM2 both retail for about $100. Sweetwater's audio interface catalog runs from around $50 at the bottom to over $7,000 at the top. Hosken's <em>Introduction to Music Technology</em> gives a similar spread: from a few hundred dollars for a simple interface to about $1,000 for a midrange unit to over $10,000 for a high-end studio system. What changes across that range?</p>
 
-<p>More expensive doesn't automatically mean better-sounding for what you're doing. Hosken puts it well: "price is often some sort of indicator of quality, though it is as uneven an indicator for audio interfaces as it is for cars or refrigerators." A $100 interface from a reputable manufacturer can produce recordings indistinguishable from a $1,000 one for many situations. What expensive interfaces buy you is some combination of more inputs and outputs, higher-quality components, additional features for specific workflows, and (sometimes) brand cachet. Several dimensions of variation cluster together as price climbs.</p>
+<p>More expensive doesn't automatically mean better-sounding for what you're doing. Hosken writes: "price is often some sort of indicator of quality, though it is as uneven an indicator for audio interfaces as it is for cars or refrigerators." A $100 interface from a reputable manufacturer can produce recordings indistinguishable from a $1,000 one in many situations. Expensive interfaces buy you some combination of more inputs and outputs, higher-quality components, features for specific workflows, and (sometimes) brand cachet. Six things change as price climbs:</p>
 
 <ul>
-  <li><strong>Channel count (I/O).</strong> The biggest single driver. Both lab interfaces are 2-in / 2-out: two inputs come in, two outputs go out. If you want to record a four-piece band live (drums alone might want six or eight mics), you need an interface with at least that many simultaneous inputs and preamps. Step up to mid-range and you'll see 4-in / 4-out, 8-in / 8-out, and (in flagship units) 18-in / 20-out or higher. Most of the price climb from $100 to $500 is paying for more channels.</li>
+  <li><strong>Channel count</strong> (I/O) is the number of inputs and outputs. Both lab interfaces are 2-in / 2-out. To record a four-piece band live (drums alone might use six or eight mics), you need an interface with at least that many simultaneous inputs and preamps. Mid-range units have 4-in / 4-out or 8-in / 8-out, and flagship units have 18-in / 20-out or more. Most of the price climb from $100 to $500 pays for more channels.</li>
 
-  <li><strong>Preamp count and character.</strong> Each mic input needs its own preamp circuit, so more inputs means more preamps; that's part of the channel-count story. Beyond count, some interfaces are designed around a particular preamp <em>sound</em>: the warmth of a vintage tube preamp, the punch of a 1970s console, the transparency of a modern boutique design. Universal Audio's Apollo line, Solid State Logic's SSL series, and Neve's interfaces all sell partly on the strength of their preamp character. For the technical work in this course, the standard solid-state preamps in the lab interfaces are fine; preamp character becomes a creative tool once you're recording the kinds of musical sources where its color makes a perceptible difference.</li>
+  <li><strong>Preamp count and character</strong> change too. Each mic input has its own preamp circuit, and more inputs means more preamps. Some interfaces are also built around a particular preamp <em>sound</em>, such as that of a vintage tube preamp or a 1970s console. Universal Audio's Apollo line, Solid State Logic's SSL series, and Neve's interfaces are all marketed partly on their preamp character. The lab interfaces have standard solid-state preamps. Preamp character becomes a creative choice on sources where its color is audible.</li>
 
-  <li><strong>Conversion quality (ADC/DAC).</strong> Module 2 introduced bit depth and sample rate. The two lab interfaces sit at the standard end: one runs 24-bit at up to 96 kHz, the other 16-bit at 48 kHz. Both are perfectly serviceable for the work we do. Higher-end interfaces push further: 32-bit, sample rates up to 192 kHz or 384 kHz, with converters designed for wider dynamic range (the gap between the quietest detail the converter can resolve and the loudest signal it can handle without clipping) and lower self-noise. The gain from a $2,000 converter over a $100 one is real but small, and audible mainly on sources that are themselves very quiet and very dynamic (a solo voice in a treated room, an unaccompanied acoustic instrument).</li>
+  <li><strong>Conversion quality</strong> (ADC and DAC) goes up with price. Module 2 introduced bit depth and sample rate. The two lab interfaces are entry-level: one runs 24-bit at up to 96 kHz, the other 16-bit at 48 kHz. Both handle everything in this course. Higher-end interfaces go further: 32-bit, sample rates up to 192 kHz or 384 kHz, and converters with wider dynamic range (the gap between the quietest detail the converter can resolve and the loudest signal it can handle without clipping) and lower self-noise. The gain from a $2,000 converter over a $100 one is real but small, and audible mainly on sources that are themselves very quiet and very dynamic (a solo voice in a treated room, an unaccompanied acoustic instrument).</li>
 
-  <li><strong>Connectivity and latency.</strong> Latency is the round-trip delay described in section 5: how long it takes a signal to leave the mic, reach the computer, and come back to the headphones. Faster connection protocols and better-engineered drivers cut that delay. The lab interfaces use USB 2.0 (the slower, older USB), which is fine for the work we'll do because direct monitoring sidesteps the latency problem entirely. Mid-range interfaces often use USB-C; high-end interfaces use Thunderbolt (much faster, much lower latency) or PCIe (the interface installs directly inside the computer). Below about 5 milliseconds of round-trip latency, you can monitor through the computer with plug-in effects running in real time without it feeling lagged. That's a workflow the lab interfaces don't enable, and a real reason to spend more.</li>
+  <li>The <strong>connection</strong> to the computer affects latency, the round-trip delay from section 5: how long it takes a signal to leave the mic, reach the computer, and come back to the headphones. Faster connections and better-engineered drivers cut that delay. The lab interfaces use USB 2.0, the older, slower USB standard. Direct monitoring avoids latency on the lab interfaces. Many mid-range interfaces have a USB-C connector; USB-C is a plug shape, and the data through it can run at USB 2.0 speed or faster. High-end interfaces use Thunderbolt (much faster, much lower latency) or PCIe (a card installed inside the computer). Below about 5 milliseconds of round-trip latency, you can monitor through the computer with plug-in effects running in real time without noticeable lag. The lab interfaces don't support that workflow.</li>
 
-  <li><strong>Onboard DSP.</strong> Some higher-end interfaces include their own processors (the Apollo line and the SSL 2+ are two examples) that run audio effects (compressors, EQs, reverbs, even amp simulations) directly on the interface, before the signal ever reaches the computer. This is how you get plug-in effects with near-zero latency. The lab interfaces have none of this; any processing has to happen inside Audacity or Ableton after the fact.</li>
+  <li><strong>Onboard DSP</strong> (digital signal processing) is a set of processors built into some higher-end interfaces, such as Universal Audio's Apollo line. They run audio effects (compressors, EQs, reverbs, even amp simulations) on the interface, before the signal reaches the computer, and the result is plug-in effects with near-zero latency. The lab interfaces have no onboard DSP. Any processing happens in Audacity or Ableton after recording.</li>
 
-  <li><strong>Digital I/O and expansion.</strong> Look at the back of a $1,000 interface and you'll see connectors the lab interfaces don't have: <strong>ADAT</strong> (an 8-channel optical digital connection for adding eight more preamps via an external preamp box), <strong>S/PDIF</strong> (a stereo digital connection for routing audio digitally between gear), <strong>AES/EBU</strong> (the professional version of S/PDIF, carried over XLR cables), <strong>MADI</strong> (up to 64 channels of audio over a single cable, used in large studios), and <strong>word clock</strong> (a timing reference that keeps multiple digital devices sample-accurate together). These are the connections that let an interface scale up beyond its built-in channel count, by connecting to other digital gear.</li>
+  <li><strong>Digital I/O and expansion</strong> connectors appear on the back of a $1,000 interface and not on the lab interfaces: <strong>ADAT</strong> (an 8-channel optical digital connection for adding eight more preamps via an external preamp box), <strong>S/PDIF</strong> (a stereo digital connection for routing audio digitally between gear), <strong>AES/EBU</strong> (the professional version of S/PDIF, carried over XLR cables), <strong>MADI</strong> (up to 64 channels of audio over a single cable, used in large studios), and <strong>word clock</strong> (a timing reference that keeps multiple digital devices sample-accurate together). These connections let an interface expand beyond its built-in channel count by connecting to other digital gear.</li>
 </ul>
 
-<p>The two interfaces in MB2525 are entry-level by deliberate design. A 2-in / 2-out interface, a few hundred dollars cheaper than the next tier up, is exactly enough for the work this course covers: one source recorded at a time, prepped into a sample library, used in compositional work in Audacity (Module 3) and Ableton (Module 4). The features that justify a $500 or $1,000 or $5,000 interface are real, but they answer questions the lab interfaces don't need to answer. Once you can read a spec sheet (the manufacturer's, or a retailer's like Sweetwater's), you can match an interface to a workflow rather than pricing alone.</p>
+<p>The two interfaces in MB2525 are entry-level 2-in / 2-out units. In this course you'll record one source at a time with them, prep the recordings into a sample library in Audacity (Module 3), and compose with that library in Ableton (Module 4). The features of a $500, $1,000, or $5,000 interface are real, and this course doesn't use them. Once you can read a spec sheet (the manufacturer's, or a retailer's like Sweetwater's), you can match an interface to a workflow rather than to a price.</p>
 
 <hr>
 
-<h2>Vocabulary</h2>
+<h2>vocabulary</h2>
 
 <dl class="vocab">
   <dt>Signal flow</dt>
-  <dd>The path that sound takes from acoustic source to stored file. Every recording setup has one. The basic recording chain is the most common version of it.</dd>
+  <dd>The path that sound takes from acoustic source to stored file. Every recording setup has one. The basic recording chain is one version of it.</dd>
 
-  <dt>Recording chain</dt>
-  <dd>The specific signal flow used in this module: a dynamic mic and a computer, connected through an audio interface, with an XLR cable between mic and interface and a USB cable between interface and computer.</dd>
+  <dt>Basic recording chain</dt>
+  <dd>The signal flow used in this module: a dynamic mic and a computer, connected through an audio interface, with an XLR cable between mic and interface and a USB cable between interface and computer.</dd>
 
   <dt>Transducer</dt>
   <dd>A device that converts one kind of energy into another. A microphone converts acoustic energy (air pressure) into electrical energy (voltage). A speaker does the reverse.</dd>
 
   <dt>Dynamic microphone</dt>
-  <dd>A microphone that uses a moving coil and a magnet to generate its signal. Rugged, no power needed, common on stages and in studios. The kind of mic in MB2525's gear storage.</dd>
+  <dd>A microphone that uses a moving coil and a magnet to generate its signal. It's rugged and needs no power. The mics in MB2525's gear storage are dynamic mics.</dd>
 
   <dt>Cardioid</dt>
-  <dd>The pickup pattern of most dynamic mics, including the ones in the lab. Most sensitive in front, less sensitive at the sides, rejects sound from behind. The shape of the response curve resembles a heart, which is where the name comes from.</dd>
+  <dd>The polar pattern of the dynamic mics in the lab: most sensitive in front, less sensitive at the sides, and picking up very little from behind. The shape of the curve resembles a heart, and the name means "heart-shaped."</dd>
 
   <dt>Polar pattern</dt>
-  <dd>A chart on a microphone's spec sheet that shows what directions the mic picks up sound from. Concentric rings = sensitivity in dB; angles around the chart = direction relative to the front of the mic. Cardioid is one polar pattern; we'll meet others (omni, figure-8) in Week 7.</dd>
+  <dd>A chart on a microphone's spec sheet that shows what directions the mic picks up sound from. Concentric rings = sensitivity in dB; angles around the chart = direction relative to the front of the mic. Cardioid is one polar pattern; Week 7 covers others (omni, figure-8).</dd>
 
   <dt>Frequency response</dt>
   <dd>A chart on a microphone's spec sheet that shows which parts of the audio spectrum the mic emphasizes and which it de-emphasizes. Horizontal axis = frequency in Hz (low to high); vertical axis = sensitivity in dB relative to a flat reference. A curve above 0 dB means emphasis at that frequency; a curve below means de-emphasis.</dd>
 
   <dt>Presence peak</dt>
-  <dd>A bump in a mic's frequency response in the upper-mid range (typically around 3 to 8 kHz) that emphasizes consonants, snare snap, and guitar bite. Most dynamic mics designed for live and studio work have one.</dd>
+  <dd>A bump in a mic's frequency response in the upper-mid range (typically around 3 to 8 kHz) that emphasizes consonants, snare snap, and guitar bite. The SM57 and SM58 both have one.</dd>
 
   <dt>Proximity effect</dt>
-  <dd>The boost in low frequencies that happens when a directional mic (like a cardioid) is held very close to its source. Vocal mics like the SM58 are designed with a built-in low-frequency rolloff to compensate.</dd>
+  <dd>The boost in low frequencies that happens when a directional mic (like a cardioid) is held very close to its source. The SM58 has a bass rolloff to control it.</dd>
 
   <dt>Mic level</dt>
   <dd>The very small signal level that comes out of a microphone. Measured in thousandths of a volt. Needs amplification (by a preamp) before it's useful.</dd>
 
   <dt>Line level</dt>
-  <dd>The standard signal level that audio gear uses internally, and that your computer expects. Much larger than mic level. The preamp's job is to lift mic level up to line level.</dd>
+  <dd>The standard signal level that audio gear uses internally, and the level the interface's ADC expects. Much larger than mic level. The preamp lifts mic level up to line level.</dd>
 
   <dt>Preamp (preamplifier)</dt>
   <dd>The circuit inside an audio interface that boosts mic-level signals up to line level. The gain knob is the control for it.</dd>
 
   <dt>Gain</dt>
-  <dd>The knob on an audio interface that sets how much the preamp amplifies the incoming signal. The control that decides whether a recording is clean.</dd>
+  <dd>The knob on an audio interface that sets how much the preamp amplifies the incoming signal. Too little gain gives a quiet, noisy recording; too much causes clipping.</dd>
 
   <dt>XLR cable</dt>
-  <dd>The standard cable for mic-level audio. Three-conductor, balanced. Carries the signal as two opposite-polarity copies, which lets the interface cancel out picked-up noise at the far end.</dd>
+  <dd>A three-conductor, balanced cable for mic-level audio. It carries the signal as two out-of-phase copies, and the interface uses them to cancel picked-up noise at the far end.</dd>
 
   <dt>Balanced cable</dt>
-  <dd>A cable design that carries two opposite-polarity copies of the signal. At the receiving end, one copy is flipped upside down and summed with the other: the signal (now in phase) doubles, the noise (now out of phase) cancels. XLR is the most common balanced cable type.</dd>
+  <dd>A cable design that carries two out-of-phase copies of the signal. At the receiving end, one copy is flipped upside down and summed with the other: the signal (now in phase) doubles, and the noise (now out of phase) cancels. XLR and TRS cables are balanced.</dd>
 
   <dt>Phase</dt>
   <dd>The position of a signal in its cycle of going up and down. Two copies of a signal that move together (both going up at the same time, both going down at the same time) are <em>in phase</em>. Two copies where one is flipped upside down relative to the other (one going up while the other is going down) are <em>out of phase</em>. When out-of-phase copies are summed, they cancel; this is the principle a balanced cable uses to reject noise.</dd>
 
   <dt>USB cable</dt>
-  <dd>The cable that carries digital data between the audio interface and the computer. Doesn't carry audio in the analog sense; carries the stream of numbers the ADC produces.</dd>
+  <dd>The cable that carries digital data between the audio interface and the computer: the stream of numbers the ADC produces.</dd>
 
   <dt>Audio interface</dt>
-  <dd>The hardware box that plugs into the computer over a USB cable and handles the conversion between analog audio and digital audio. Houses the preamp, the ADC, and the DAC.</dd>
+  <dd>The hardware box that plugs into the computer over a USB cable and handles the conversion between analog audio and digital audio. It contains the preamp, the ADC, and the DAC.</dd>
 
   <dt>ADC</dt>
   <dd>Analog-to-digital converter. The circuit inside the interface that turns an analog electrical signal into a stream of digital samples. Module 2 covered the sample-rate and bit-depth choices that shape what the ADC produces.</dd>
@@ -708,16 +706,16 @@
   <dd>The harsh distortion that happens when a signal exceeds the digital ceiling (0 dBFS, the maximum a digital signal can represent). Unrecoverable in editing. The clip indicator on an audio interface lights up when this is happening.</dd>
 
   <dt>Direct monitoring</dt>
-  <dd>An audio-interface feature that routes the incoming signal straight to the headphone output without going through the computer. Avoids the small but distracting delay of round-tripping the signal through the recording software.</dd>
+  <dd>An audio-interface feature that routes the incoming signal straight to the headphone output without going through the computer. It avoids latency.</dd>
 
   <dt>Monitor mix</dt>
-  <dd>The knob on an audio interface that blends the live input signal with the computer playback in your headphones. Turn it toward "input" when you want to hear what the mic is picking up; toward "playback" when you want to hear what's already in the recording software.</dd>
+  <dd>The blend of live input and computer playback in your headphones. On the PreSonus, the <strong>Mixer</strong> knob sets it: toward Inputs to hear what the mic is picking up, toward Playback to hear what's already in the recording software. On the Behringer, the <strong>Direct Monitor</strong> button switches the live input on or off.</dd>
 
   <dt>Latency</dt>
-  <dd>The round-trip delay between a sound entering an interface and coming back out of the headphones after a trip through the computer. Measured in milliseconds. Direct monitoring avoids it by routing the live signal around the computer entirely. Faster connection protocols (Thunderbolt, USB-C) lower it; older USB 2.0 interfaces have more of it.</dd>
+  <dd>The round-trip delay between a sound entering an interface and coming back out of the headphones after a trip through the computer. Measured in milliseconds. Direct monitoring avoids it by routing the live signal around the computer entirely. Faster connections (Thunderbolt, PCIe) lower it; USB 2.0 interfaces have more of it.</dd>
 
   <dt>DSP</dt>
-  <dd>Digital signal processing. The audio computations a computer (or a dedicated processor inside an interface) performs on a digital signal: EQ, compression, reverb, modeling, etc. Higher-end interfaces include onboard DSP that runs effects without taxing the computer.</dd>
+  <dd>Digital signal processing. The audio computations a computer (or a dedicated processor inside an interface) performs on a digital signal: EQ, compression, reverb, modeling, and so on. Some higher-end interfaces have onboard DSP that runs effects without using the computer's processor.</dd>
 
   <dt>Digital I/O</dt>
   <dd>Inputs and outputs that carry audio as a digital signal rather than as an analog voltage. Common types: ADAT (8 channels of optical audio over a single cable), S/PDIF (2 channels of digital audio over RCA or optical), AES/EBU (the professional version of S/PDIF over XLR), MADI (up to 64 channels over a single cable). Higher-end interfaces include digital I/O for expanding their channel count by connecting to other digital gear.</dd>
@@ -725,19 +723,19 @@
 
 <hr>
 
-<h2>For further exploration</h2>
+<h2>for further exploration</h2>
 
-<p>Optional, for the curious. None of this is required.</p>
+<p>Optional reading.</p>
 
 <ul>
-  <li>Shure (the company that makes the SM57 and SM58) publishes <a href="https://www.shure.com/en-US/docs/education/Microphone-Techniques-for-Recording" target="_blank" rel="noopener noreferrer">Microphone Techniques for Recording</a>, a free educational booklet covering microphone selection and placement for vocals, acoustic instruments, drums, and amplified instruments. Plain-spoken, no marketing fluff, and a useful companion to anything else you read about mic'ing.</li>
-  <li>The Wikipedia article on the <a href="https://en.wikipedia.org/wiki/XLR_connector" target="_blank" rel="noopener noreferrer">XLR connector</a> has a good cutaway diagram and a brief history of why audio settled on this connector design.</li>
+  <li>Shure (the company that makes the SM57 and SM58) publishes <a href="https://www.shure.com/en-US/docs/education/Microphone-Techniques-for-Recording" target="_blank" rel="noopener noreferrer">Microphone Techniques for Recording</a>, a free educational booklet covering microphone selection and placement for vocals, acoustic instruments, drums, and amplified instruments. It's written in plain language.</li>
+  <li>The Wikipedia article on the <a href="https://en.wikipedia.org/wiki/XLR_connector" target="_blank" rel="noopener noreferrer">XLR connector</a> has a cutaway diagram and a short history of the connector.</li>
   <li>If you want a deeper look at preamps, audio interfaces, and the analog-to-digital conversion process, the <a href="https://www.soundonsound.com/" target="_blank" rel="noopener noreferrer">Sound on Sound</a> magazine archive (free online) has decades of accessible articles. Search for "gain staging" or "preamp basics" as starting points.</li>
-  <li>Sweetwater's InSync articles are the most accessible reference for understanding what's on the market. <a href="https://www.sweetwater.com/insync/choosing-the-best-usb-audio-interface-on-any-budget/" target="_blank" rel="noopener noreferrer">Choosing the Best USB Audio Interface on Any Budget</a> and the annual <a href="https://www.sweetwater.com/insync/best-usb-audio-interfaces/" target="_blank" rel="noopener noreferrer">Best USB Audio Interfaces</a> roundup cover specific units in each tier, with the kind of plain-language explanations that translate spec-sheet jargon into what it actually means for a recording workflow.</li>
+  <li>Sweetwater's InSync articles describe what's on the market. <a href="https://www.sweetwater.com/insync/choosing-the-best-usb-audio-interface-on-any-budget/" target="_blank" rel="noopener noreferrer">Choosing the Best USB Audio Interface on Any Budget</a> and the annual <a href="https://www.sweetwater.com/insync/best-usb-audio-interfaces/" target="_blank" rel="noopener noreferrer">Best USB Audio Interfaces</a> roundup cover specific units in each tier and explain in plain language what spec-sheet terms mean for a recording workflow.</li>
 </ul>
 
 <div class="callout">
-  <div class="callout-label">End of session</div>
+  <div class="callout-label">end of session</div>
   <p>Before leaving the station, run the end-of-session routine on the <strong>Session Routines</strong> card. Upload first, gear teardown second.</p>
 </div>
 
