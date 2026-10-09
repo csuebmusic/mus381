@@ -125,16 +125,14 @@ Note that the empty Audacity window does not display the project sample rate any
 
 **Used in:** `module-03-recording/lessons/08-handout-studio.html` (Lab 4, the self-guided studio walkthrough)
 
-**Status:** provided (manufacturer product photos of the MB2508 side-rack gear).
+**Status:** provided (manufacturer product photos of the MB2508 gear), except the Furman HDS-6 hub and HR-6 station photos, which are needed. The AudioBox photo in handout 08 is `module-03-week-06/presonus-audiobox-usb96-front.png`.
 
 | Filename | Shows |
 |---|---|
-| `focusrite-isa-828-mkii.png` | Focusrite ISA 828 MkII, first preamp in the live-room rack |
-| `focusrite-octopre-platinum.jpg` | Focusrite OctoPre Platinum, second preamp in the live-room rack |
+| `focusrite-isa-828-mkii.png` | Focusrite ISA 828 MkII, first preamp in the control-room preamp rack |
+| `focusrite-octopre-platinum.jpg` | Focusrite OctoPre Platinum, second preamp in the control-room preamp rack |
 | `hosa-pdr-369-mic-panel.jpg` | Hosa 16-jack mic input panel (one per preamp; jacks 9-16 unused) |
 | `ssl-xlogic-g-compressor.jpg` | SSL XLogic G Series bus compressor |
-| `behringer-xenyx-qx1204usb.webp` | Behringer Xenyx QX1204USB, the desk mixer doing three jobs at once |
-| `rane-mh4-headphone-console.jpg` | Rane MH4 headphone amp (one cue mix, four players) |
 | `avid-hdx-io.webp` | Avid HDX I/O, the bridge between the analog console and Pro Tools |
 | `db25-to-trs-fan-cable.webp` | DB25-to-8×TRS fan cable |
 | `db25-to-xlr-fan-cable.webp` | DB25-to-8×XLR fan cable |
