@@ -88,7 +88,7 @@ Award full credit when the student conveys the idea, even if the wording differs
 
 ## Part B (4 points each)
 
-9. **Session view** is the grid of clips, for trying ideas and looping. **Arrangement view** is the linear timeline. You commit to a final arrangement in **Arrangement view**. *(2 for naming both views correctly, 2 for picking Arrangement for the final structure.)*
+9. **Session View** is the grid of clips, for trying ideas and looping. **Arrangement View** is the linear timeline. You commit to a final arrangement in **Arrangement View**. *(2 for naming both views correctly, 2 for picking Arrangement for the final structure.)*
 10. **Simpler** plays one sample across the keyboard; in Classic mode each note has an attack-decay-sustain-release envelope. **Drum Rack** is the grid of pads, one sample per pad. *(2 each.)*
 11. The reverb goes on a **return track**. Each of the four tracks turns up its **send** to that return, so all four feed the one reverb. On the Toft this is the **aux send and aux return** (the auxiliary send routing). *(2 for the return-plus-sends routing, 2 for naming the aux send/return on the console.)*
 12. **Adobe Audition.** It is not a DAW because it has no instruments and no MIDI. It is an advanced audio editor (a hybrid: nondestructive and with live effects, but missing the instrument and MIDI side that define a DAW). *(2 for naming Audition, 2 for "no instruments / no MIDI.")*
