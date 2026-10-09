@@ -75,7 +75,7 @@ Award full credit when the student conveys the idea, even if the wording differs
 
 1. **The session workflow.** Download your folder from the server at the start of a session, work locally on the Mac, upload it back to the server at the end. Keeps the master copy current and protects work if a lab Mac is wiped. *(Full credit for the download/work-local/upload pattern.)*
 2. **Sample rate.** How many samples are taken per second, in Hz or kHz. Common rates are 44.1 kHz (CD) and 48 kHz (the course standard). *(1 point for "samples per second," 1 for the unit or naming a standard rate.)*
-3. **Nyquist theorem.** You must sample at twice the highest frequency you want to capture. This is why 44.1 kHz covers human hearing. *(Full credit for the "twice the highest frequency" idea.)*
+3. **Nyquist theorem.** You must sample at more than twice the highest frequency you want to capture. This is why 44.1 kHz covers human hearing. *(Full credit for "more than twice the highest frequency". Also give full credit for "twice".)*
 4. **Crossfade.** An overlapping fade-out and fade-in: one sound fades out as another fades in, so the seam blends instead of jumping.
 5. **Transient.** The brief, sharp burst at the start of a note or hit, before the body settles (a drum strike, a string pluck, a spoken consonant). Carries much of a sound's character.
 6. **Transducer.** A device that converts one kind of energy into another. A microphone turns air pressure into voltage; a speaker does the reverse.
@@ -108,10 +108,10 @@ Award full credit when the student conveys the idea, even if the wording differs
 ## Part D (2 points each)
 
 16. **Noise floor, 16-bit vs 24-bit.** Bit depth sets the noise floor, roughly 6 dB of range per bit (so 16-bit gives about 96 dB). Fewer bits means coarser quantization, so the quantization noise sits louder relative to the signal. 24-bit has more bits, a lower floor, and more headroom for quiet detail. *(Full credit for tying the floor to bit depth and quantization.)*
-17. **Balanced cable.** It carries two opposite-polarity copies of the signal. Noise picked up along the run arrives on both copies the same way (in phase). At the far end one copy is flipped and summed with the other: the signal doubles and the noise cancels. **Phase** (the opposite polarity of the two copies) is the property that makes it work.
+17. **Balanced cable.** It carries two copies of the signal, one with its polarity flipped, so the two copies are **out of phase**. Noise picked up along the run arrives on both copies the same way (in phase). At the far end the flipped copy is flipped back and summed with the other: the signal doubles and the noise cancels. The copies being out of phase (opposite polarity) is the property that makes it work. *(Accept "opposite polarity" or "out of phase".)*
 18. **Clipping.** No, it cannot be fixed in editing. Clipping happens at capture when the signal exceeds the digital ceiling (0 dBFS) and the peaks are flattened off. That information is gone, so there is nothing to restore. Prevent it with gain and headroom while recording. *(Full credit for "unrecoverable because the peaks were lost at capture.")*
 19. **Sample prep pipeline, in order:**
     1. **Denoise**, using a captured silence sample, to remove background hiss and hum.
-    2. **Trim** the silence at the start and end, to tighten the sample.
-    3. **Peak-normalize** to a consistent ceiling, so every sample in the library sits at a uniform level.
+    2. **Trim** the silence at the start and end, with short fades, to tighten the sample and avoid clicks.
+    3. **Peak-normalize** to -1 dBFS, so every sample in the library has the same peak level.
     *(1 point for the correct order, 1 for what the steps fix. Full credit needs all three in order.)*

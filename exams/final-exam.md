@@ -65,9 +65,9 @@ Give a one or two sentence definition for each term.
 
 16. **(4 points)** Explain the beginner model of MIDI as a trigger. What does a MIDI note carry, what does it do, and what actually makes the sound the listener hears?
 
-17. **(3 points)** Across the course you worked in Audacity, on the studio console, and in Ableton. Name two concepts that appear in all three, and explain why "the skills transfer, the tool changes" is the point of the final week.
+17. **(3 points)** Across the course you worked in Audacity, on the studio console, and in Ableton. Name two concepts that appear in all three, and explain why "the skills transfer, the tool changes" is the point of the Adobe Audition session.
 
-18. **(3 points)** Your library files are 48 kHz / 24-bit. Your Ableton set runs at 48 kHz. When you import a library sound into the set, what converts and what does not? At what bit depth do you export the finished piece?
+18. **(3 points)** Your library files are 48 kHz, 24-bit. Your Ableton set runs at 48 kHz. When you import a library sound into the set, what converts and what does not? At what bit depth do you export the finished piece?
 
 ---
 
@@ -84,12 +84,12 @@ Award full credit when the student conveys the idea, even if the wording differs
 5. **Send and return track.** A send routes a copy of a track's signal to a return track, where a shared effect (such as reverb) lives. One effect, many tracks feeding it.
 6. **Group track.** Several tracks folded into one for combined level and processing. Ableton's version of a subgroup.
 7. **Sample rate.** How many samples are taken per second, in Hz or kHz. The course standard is 48 kHz. *(1 point for "samples per second," 1 for the unit or the 48 kHz standard.)*
-8. **Clipping.** When a signal goes past the digital ceiling (0 dBFS) and its peaks are flattened off. It happens at capture and cannot be undone. *(Full credit for "past 0 dBFS, peaks lost, unrecoverable.")*
+8. **Clipping.** When a signal goes past the digital ceiling (0 dBFS) and its peaks are flattened off. Clipping in a recording can't be undone in editing. In a mix, the summed signal can also clip at the master; a Limiter at the end of the master chain keeps the export under the ceiling. *(Full credit for "past 0 dBFS, peaks flattened"; the recording-versus-mix distinction isn't required.)*
 
 ## Part B (4 points each)
 
 9. **Session view** is the grid of clips, for trying ideas and looping. **Arrangement view** is the linear timeline. You commit to a final arrangement in **Arrangement view**. *(2 for naming both views correctly, 2 for picking Arrangement for the final structure.)*
-10. **Simpler** plays one sample across the keyboard with an attack-decay-sustain-release envelope. **Drum Rack** is the grid of pads, one sample per pad. *(2 each.)*
+10. **Simpler** plays one sample across the keyboard; in Classic mode each note has an attack-decay-sustain-release envelope. **Drum Rack** is the grid of pads, one sample per pad. *(2 each.)*
 11. The reverb goes on a **return track**. Each of the four tracks turns up its **send** to that return, so all four feed the one reverb. On the Toft this is the **aux send and aux return** (the auxiliary send routing). *(2 for the return-plus-sends routing, 2 for naming the aux send/return on the console.)*
 12. **Adobe Audition.** It is not a DAW because it has no instruments and no MIDI. It is an advanced audio editor (a hybrid: nondestructive and with live effects, but missing the instrument and MIDI side that define a DAW). *(2 for naming Audition, 2 for "no instruments / no MIDI.")*
 
@@ -109,5 +109,5 @@ Award full credit when the student conveys the idea, even if the wording differs
 
 15. **(4 points)** Shortening a clip or adding a fade changes the clip's instructions (its start, end, and fades), not the audio file underneath. The file's samples stay exactly as recorded, so you can always pull the clip's edge back out or remove the fade. You cannot ruin the source because every edit is layered on top of a file that is never altered. *(Full credit for tying "edits are on the clip" to "the file is untouched, so it is recoverable.")*
 16. **(4 points)** A MIDI note carries pitch, timing, and velocity (how hard). It does not make any sound on its own; it triggers an instrument, and the instrument is what produces the audio. The chain is note, then instrument, then sound. *(2 for what the note carries, 2 for "the instrument makes the sound.")*
-17. **(3 points)** Any two of: sample rate, bit depth, gain staging, EQ, compression, fades, multitrack arrangement. They carry because they are properties of digital audio and audio production, not of any one program. The final week (Adobe Audition) makes the point that the next tool will look different and work the same, so what students learned is portable rather than tied to Ableton's buttons. *(2 for two transferable concepts, 1 for the portability point.)*
-18. **(3 points)** The sample rate already matches (48 kHz library into a 48 kHz set), so nothing resamples on import. The only format change is bit depth, and it happens at export, not import. You export the finished piece at **32-bit** (48 kHz / 32-bit). *(2 for "rate matches, nothing resamples," 1 for "export at 32-bit.")*
+17. **(3 points)** Any two of: sample rate, bit depth, gain staging, EQ, compression, fades, multitrack arrangement. They carry because they are properties of digital audio and audio production, not of any one program. The Adobe Audition session (Mon Wk 13) makes the point that the next tool will look different and work the same, so what students learned is portable rather than tied to Ableton's buttons. *(2 for two transferable concepts, 1 for the portability point.)*
+18. **(3 points)** The sample rate already matches (48 kHz library into a 48 kHz set), so nothing resamples on import. The only format change is bit depth, and it happens at export, not import. You export the finished piece at **32-bit** (48 kHz, 32-bit). *(2 for "rate matches, nothing resamples," 1 for "export at 32-bit.")*
