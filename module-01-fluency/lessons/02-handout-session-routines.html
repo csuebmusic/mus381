@@ -3,87 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MUS 381 · Session Routines</title>
+  <title>MUS 381 · session routines</title>
   <link rel="stylesheet" href="../../assets/style.css">
 </head>
 <body>
 
 <header class="handout-header">
   <span class="course">MUS 381 · Essentials of Music Technology</span>
-  <span class="meta">Lab · Reference card</span>
+  <span class="meta">Lab · reference card</span>
 </header>
 
 <div class="title-block">
   <div class="module-tag">Lab reference · MB2525</div>
-  <h1>Session Routines</h1>
+  <h1>session routines</h1>
   <div class="subtitle">How you start and end every session in the lab.</div>
 </div>
 
-<p class="lede">In this class, you work locally on whichever lab computer you're sitting at, and use the class server to keep your work in sync between sessions. The lab is shared with the Art department, so audio gear lives in storage between sessions and comes out at the start of yours. This card covers both halves of every session: what to do when you arrive (set up gear, download from the server), and what to do before you leave (upload to the server, stow gear). Each half takes a few minutes. Do them every time.</p>
+<p class="lede">In this class, you work locally on whichever lab computer you're sitting at, and use the class server to keep your work in sync between sessions. The start-of-session and end-of-session routines each take a few minutes. Do them every time.</p>
 
 <hr>
 
-<h2>How the workflow works</h2>
+<h2>how the workflow works</h2>
 
 <p>You always have <strong>two copies</strong> of your work:</p>
 
 <ul>
-  <li><strong>Local:</strong> at <code>~/Documents/netid/</code> on whichever lab computer you're using, where <code>netid</code> is your NetID. This is where you actually work during a session. Local files load fast and are reliable.</li>
-  <li><strong>Server:</strong> your own folder on the class server, which you reach with an app called <strong>FileZilla</strong>. This is the master copy. It's how your work moves between computers.</li>
+  <li>The <strong>local</strong> copy is at <code>~/Documents/netid/</code> on whichever lab computer you're using, where <code>netid</code> is your NetID. You work in it during a session.</li>
+  <li>The <strong>server</strong> copy is in your own folder on the class server, which you reach with an app called <strong>FileZilla</strong>. It's the master copy, and it's how your work moves between stations.</li>
 </ul>
 
-<p>The pattern is: <strong>download from the server at the start, upload to the server at the end.</strong> The local copy is where you work; the server is how you transport.</p>
+<p>The pattern is: <strong>download from the server at the start, upload to the server at the end.</strong></p>
 
-<p>Audio gear lives in the <strong>lab's gear storage</strong>. At the start of every session you take what today's session needs; at the end you stow it back. The room gets reset for the Art department between our class meetings, so nothing stays at the station.</p>
+<p>Audio gear is kept in the <strong>lab's gear storage</strong>, and the room gets reset for the Art department between our class meetings. At the start of every session, take what the session needs; at the end, stow it back.</p>
 
 <ul>
-  <li><strong>Every session:</strong> audio interface and headphones.</li>
-  <li><strong>Recording labs (Day 1 and Module 3):</strong> also a dynamic mic, its stand, and an XLR cable.</li>
-  <li><strong>Module 4 (sessions that use MIDI):</strong> also a MIDI keyboard.</li>
+  <li>Every session needs an audio interface and headphones.</li>
+  <li>Recording labs (Day 1 and Module 3) also need a dynamic mic, its stand, and an XLR cable.</li>
+  <li>Module 4 sessions that use MIDI also need a MIDI keyboard.</li>
 </ul>
 
-<p>The day's lab handout will tell you which applies. Headphones always go through the interface, never directly into the computer.</p>
+<p>The day's lab handout tells you which applies. Headphones always plug into the interface, never directly into the computer.</p>
 
 <div class="callout warn">
   <div class="callout-label">The rule</div>
-  <p>Always upload to the server before you leave. You can reach the server from inside the lab only. Anything you forget to upload stays on that one computer until you are back in the room, and if you sit somewhere else next session you'll be working from an older version.</p>
+  <p>Always upload to the server before you leave. You can reach the server from inside the lab only. Anything you forget to upload stays on that one computer until you're back in the room, and if you sit somewhere else next session you'll be working from an older version.</p>
 </div>
 
 <hr>
 
-<h2>Start of session</h2>
+<h2>start of session</h2>
 
-<h3>Gear</h3>
+<h3>gear</h3>
 
 <ol class="steps">
   <li>From the <strong>lab's gear storage</strong>, take the <strong>audio interface</strong> and <strong>headphones</strong>. If today's lab handout calls for it, also take the <strong>dynamic mic, mic stand, and XLR cable</strong>, or the <strong>MIDI keyboard</strong>.</li>
   <li>Set everything down at your station. Before plugging anything in: turn all interface knobs (<strong>gain</strong>, <strong>main / output</strong>, <strong>headphone</strong>) all the way down (counterclockwise, to zero).</li>
   <li>Plug the interface's USB cable into the hub. Plug the headphones into the interface's headphone jack. <strong>Slide the in-line headphone slider all the way up.</strong> If you brought the mic, set it in its stand and plug the XLR from the mic to <strong>input 1</strong> of the interface. If you brought the MIDI keyboard, plug its USB cable into the hub.</li>
-  <li>Open <strong>Audio MIDI Setup</strong> (<kbd>Cmd</kbd> + <kbd>Space</kbd>, type the name, <kbd>return</kbd>). Confirm your interface is listed on the left. If it is, right-click it once and choose <strong>Use this device for sound input</strong>, then right-click again and choose <strong>Use this device for sound output</strong>. With your interface selected, check that its <strong>Format</strong> reads <strong>48,000 Hz</strong>, the rate this course works at; if it shows a different rate, click the Format dropdown and pick a 48,000 Hz option. (On the UM2, the input and output are separate entries, so check the rate on both.) Quit Audio MIDI Setup (<kbd>Cmd</kbd> + <kbd>Q</kbd>). If your interface isn't listed, unplug the USB cable from the hub, wait a moment, and plug it back into a different port on the hub.</li>
+  <li>Open <strong>Audio MIDI Setup</strong> (<kbd>Cmd</kbd> + <kbd>Space</kbd>, type the name, <kbd>return</kbd>). Confirm your interface is listed on the left. If it is, right-click it once and choose <strong>Use this device for sound input</strong>, then right-click again and choose <strong>Use this device for sound output</strong>. With your interface selected, check that its <strong>Format</strong> reads <strong>48,000 Hz</strong>, the rate this course uses; if it shows a different rate, click the Format dropdown and pick a 48,000 Hz option. (The UM2 has two entries: set <strong>USB Audio CODEC 2</strong> as the input and <strong>USB Audio CODEC 1</strong> as the output, and check the rate on both.) Quit Audio MIDI Setup (<kbd>Cmd</kbd> + <kbd>Q</kbd>). If your interface isn't listed, unplug the USB cable from the hub, wait a moment, and plug it back into a different port on the hub.</li>
 </ol>
 
-<h3>Connect to the server</h3>
+<h3>connect to the server</h3>
 
 <ol class="steps" start="5">
   <li>Open <strong>FileZilla</strong> (<kbd>Cmd</kbd> + <kbd>Space</kbd>, type the name, <kbd>return</kbd>).</li>
   <li>Fill in the <strong>Quickconnect bar</strong> across the top of the window:
     <ul>
-      <li><strong>Host:</strong> <code>sftp://134.154.190.239</code></li>
-      <li><strong>Username:</strong> your NetID</li>
-      <li><strong>Password:</strong> your NetID password, the same one you use for Canvas and campus email</li>
-      <li><strong>Port:</strong> <code>22</code></li>
+      <li>In <strong>Host</strong>, type <code>sftp://134.154.190.239</code>.</li>
+      <li>In <strong>Username</strong>, type your NetID.</li>
+      <li>In <strong>Password</strong>, type your NetID password, the same one you use for Canvas and campus email.</li>
+      <li>In <strong>Port</strong>, type <code>22</code>.</li>
     </ul>
     Press <strong>Quickconnect</strong>.</li>
   <li>FileZilla shows a message about an unknown host key. Tick <strong>Always trust this host, add this key to the cache</strong>, then click <strong>OK</strong>.</li>
-  <li>Look at the two halves of the window. The <strong>left side is this computer</strong>; the <strong>right side is the server</strong>. You arrive inside your own folder on the server, and everything in it is yours alone.</li>
+  <li>Look at the two halves of the window. The <strong>left side is this computer</strong>; the <strong>right side is the server</strong>. FileZilla opens your own folder on the server, and everything in it is yours alone.</li>
 </ol>
 
 <div class="callout">
   <div class="callout-label">You type your password every session</div>
-  <p>FileZilla on the lab computers is set to leave passwords unsaved, so you enter yours at the start of each session. Use the Quickconnect bar rather than the Site Manager.</p>
+  <p>FileZilla on the lab computers doesn't save passwords. Enter yours at the start of each session, in the Quickconnect bar rather than the Site Manager.</p>
 </div>
 
-<h3>Download your work</h3>
+<h3>download your work</h3>
 
 <ol class="steps" start="9">
   <li>On the <strong>left side</strong>, navigate to <code>~/Documents/</code>. If a folder named with your NetID is there, open it. If this is a computer you haven't used before, make one first: in Finder, open <strong>Documents</strong>, press <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>, and name it your NetID.</li>
@@ -96,7 +96,7 @@
   <p>To compare the two sides before you drag anything, choose <strong>View → Directory Comparison → Compare modification time</strong>, then <strong>View → Directory Comparison → Enable</strong>. FileZilla colors any file that differs between the two sides and marks any file that exists on one side only.</p>
 </div>
 
-<p>If you need anything from the shared folder today, get it now, before you disconnect: see <a href="#shared-files">Shared files</a> below.</p>
+<p>If you need anything from the shared folder today, get it now, before you disconnect: see <a href="#shared-files">shared files</a> below.</p>
 
 <ol class="steps" start="12">
   <li>Choose <strong>Server → Disconnect</strong>, then quit FileZilla (<kbd>Cmd</kbd> + <kbd>Q</kbd>).</li>
@@ -106,41 +106,41 @@
 
 <hr>
 
-<h2 id="shared-files">Shared files</h2>
+<h2 id="shared-files">shared files</h2>
 
-<p>Material from your instructor, and files your classmates post for peer review, live in a folder called <code>public</code> at the top level of the server. From your own folder, click the <code>/</code> at the top of the server's directory tree on the right side, then open <code>public</code>. Download what you need the same way you download your own work, while you're still connected. The day's handout or project prompt names the exact folder.</p>
+<p>Material from your instructor and the files your classmates post for peer review are in a folder called <code>public</code> at the top level of the server. From your own folder, click the <code>/</code> at the top of the server's directory tree on the right side, then open <code>public</code>. Download what you need the same way you download your own work, while you're still connected. The day's handout or project prompt names the exact folder.</p>
 
 <hr>
 
-<h2>End of session</h2>
+<h2>end of session</h2>
 
-<p>Do this before you leave the lab. Every session.</p>
+<p>Do this before you leave the lab, every session.</p>
 
-<h3>Upload your work</h3>
+<h3>upload your work</h3>
 
 <ol class="steps">
   <li>Save your work in whatever app you've been using (<kbd>Cmd</kbd> + <kbd>S</kbd>).</li>
   <li>Open FileZilla and connect again with the Quickconnect bar.</li>
   <li>On the <strong>left side</strong>, open <code>~/Documents/netid/</code>. On the <strong>right side</strong>, stay in your own folder on the server.</li>
   <li>Click into the left side, select everything (<kbd>Cmd</kbd> + <kbd>A</kbd>), and drag it across into the right side.</li>
-  <li>Choose <strong>Overwrite if source newer</strong>, tick <strong>Always use this action</strong>, and click <strong>OK</strong>.</li>
+  <li>If FileZilla asks about files that already exist, choose <strong>Overwrite if source newer</strong>, tick <strong>Always use this action</strong> and <strong>Apply to current queue only</strong>, and click <strong>OK</strong>.</li>
   <li>Watch the <strong>transfer queue</strong> along the bottom of the window. When it empties and your files appear under <strong>Successful transfers</strong>, the upload is finished.</li>
   <li>Choose <strong>Server → Disconnect</strong>, then quit FileZilla (<kbd>Cmd</kbd> + <kbd>Q</kbd>).</li>
 </ol>
 
 <div class="callout warn">
   <div class="callout-label">The overwrite dialog</div>
-  <p>FileZilla asks what to do whenever a file exists on both sides. <strong>Overwrite if source newer</strong> is the choice in both directions: downloading, it takes the server's copy when the server is ahead; uploading, it takes today's work over last session's. <strong>Always use this action</strong> applies your choice to every file in the transfer. Tick <strong>Apply to current queue only</strong> next to it so the choice stops there rather than applying to your next transfer.</p>
+  <p>FileZilla asks what to do whenever a file exists on both sides. <strong>Overwrite if source newer</strong> is the choice in both directions: downloading, it takes the server's copy when the server is ahead; uploading, it takes today's work over last session's. <strong>Always use this action</strong> applies your choice to every file in the transfer. <strong>Apply to current queue only</strong>, next to it, limits that choice to this transfer, and FileZilla asks again on your next one.</p>
 </div>
 
-<h3>Sign out and quit</h3>
+<h3>sign out and quit</h3>
 
 <ol class="steps" start="8">
   <li>Sign out of any browser accounts (Canvas, Google, Microsoft, etc.) and quit your browser (<kbd>Cmd</kbd> + <kbd>Q</kbd>).</li>
   <li>Quit all apps with <kbd>Cmd</kbd> + <kbd>Q</kbd>. Look at the Dock: any app with a small dot under its icon is still running.</li>
 </ol>
 
-<h3>Gear</h3>
+<h3>gear</h3>
 
 <ol class="steps" start="10">
   <li>Turn all interface knobs (gain, main / output, headphone) back to zero.</li>
@@ -151,7 +151,7 @@
 
 <footer class="handout-footer">
   <span>MUS 381 · CSU East Bay</span>
-  <span>Lab · Reference card</span>
+  <span>Lab · reference card</span>
 </footer>
 
 </body>
