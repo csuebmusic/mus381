@@ -469,14 +469,14 @@
 <p>A two-channel USB audio interface. It's the same interface as at the PreSonus stations in MB2525. In this studio it connects a laptop to the Toft in both directions: the laptop's playback comes out of the AudioBox into the Toft, and the Toft's submasters 1 and 2 go into the AudioBox to be recorded on the laptop.</p>
 
 <ul>
-  <li>The two front combo inputs receive Toft <strong>submaster outputs 1 and 2</strong> (input 1 is submaster 1, input 2 is submaster 2). This is the stereo recording feed to the laptop.</li>
+  <li>The two front combo inputs receive Toft <strong>submaster outputs 1 and 2</strong> on 1/4" cables, which plug into the inputs' instrument jacks (input 1 is submaster 1, input 2 is submaster 2). This is the stereo recording feed to the laptop.</li>
   <li>The two rear <strong>Main outputs</strong> (1/4" TRS) send the laptop's playback to Toft <strong>LINE inputs 9 (L) and 10 (R)</strong>.</li>
   <li>The rear USB port connects to the laptop, and audio goes both ways over that one cable.</li>
 </ul>
 
 <div class="callout">
   <div class="callout-label">Line level into the AudioBox</div>
-  <p>The AudioBox's inputs are built for microphones and instruments. The Toft's submaster outputs are line level, much stronger than either. Keep the AudioBox's two Gain knobs fully counter-clockwise and set the recording level with the Toft's submaster 1 and 2 faders, which end up well below unity. Part 5 of the walkthrough covers this step by step.</p>
+  <p>The submaster cables plug into the AudioBox's 1/4" instrument inputs, which are built for guitars and basses. The Toft's submaster outputs are line level, much stronger than an instrument signal, and PreSonus warns that a line-level source in the instrument inputs can distort and can damage them. Keep the AudioBox's two Gain knobs fully counter-clockwise, bring the submaster 1 and 2 faders up slowly from the bottom, and set the recording level with those faders, which end up well below unity. Part 5 of the walkthrough covers this step by step.</p>
 </div>
 
 <h4 id="cr-hds6">7. Furman HDS-6 (headphone distribution hub)</h4>
@@ -495,7 +495,7 @@
 
 <ul>
   <li>The monitor speakers are on <strong>MASTER O/P</strong>. The <strong>master fader</strong> sets how loud they are.</li>
-  <li>The subwoofer is on <strong>MAIN SPKR</strong>, the Toft's speaker output. The <strong>MONITOR LEVEL</strong> knob in the master section sets how much low end the sub adds; turn it down and the low end goes away.</li>
+  <li>The subwoofer is on <strong>MAIN SPKR</strong>, the Toft's speaker output. The <strong>MONITOR LEVEL</strong> knob in the master section sets how much low end the sub adds; turn it down and the low end goes away. The speaker output comes after the master fader, so the sub plays only while the master fader is up.</li>
 </ul>
 
 <div class="callout">
@@ -711,7 +711,7 @@
       <td class="jack">MAIN SPKR L+R</td>
       <td>TRS</td>
       <td>Subwoofer</td>
-      <td>Speaker feed from the master section; the MONITOR LEVEL knob sets how much low end the sub adds</td>
+      <td>Speaker feed from the master section, after the master fader; the MONITOR LEVEL knob sets how much low end the sub adds</td>
     </tr>
     <tr>
       <td class="jack">ALT SPKR L+R</td>
@@ -793,13 +793,13 @@
   <tbody>
     <tr>
       <td class="jack">Input 1</td>
-      <td>Combo jack</td>
+      <td>1/4" (instrument jack of the combo input)</td>
       <td>Toft submaster OUTPUT 1</td>
       <td>The recording feed, left side; recorded by the laptop</td>
     </tr>
     <tr>
       <td class="jack">Input 2</td>
-      <td>Combo jack</td>
+      <td>1/4" (instrument jack of the combo input)</td>
       <td>Toft submaster OUTPUT 2</td>
       <td>The recording feed, right side; recorded by the laptop</td>
     </tr>
@@ -911,7 +911,7 @@
   <li><strong>In the live room:</strong> place the mic on a stand at the singer's mouth height. Plug an XLR cable into the bottom of the mic; plug the other end into <strong>jack 1 of Hosa panel 1</strong> (the top panel) on the rack.</li>
   <li><strong>At the Toft master section, silence the room before any gain-staging.</strong> All of the work below is done with the speakers off so that the student learns to set gain by the meters, not by ear.
     <ul>
-      <li><strong>Master fader:</strong> pull <strong>all the way down</strong>. This silences the monitor speakers.</li>
+      <li><strong>Master fader:</strong> pull <strong>all the way down</strong>. This silences the monitor speakers and the sub.</li>
       <li><strong>MONITOR LEVEL knob</strong> (the knob feeding the subwoofer, in the master section): turn <strong>fully counter-clockwise</strong> to zero.</li>
     </ul>
   </li>
@@ -971,7 +971,7 @@
       <li><strong>AUX 5 and AUX 6:</strong> both at zero.</li>
       <li><strong>SOLO:</strong> off.</li>
       <li><strong>MON PAN:</strong> submaster 1 fully <strong>left</strong>, submaster 2 fully <strong>right</strong>.</li>
-      <li><strong>MON LEVEL:</strong> turn both up by the same amount, to about <strong>3 o'clock</strong>. MON LEVEL puts the subgroup into the master mix, so what you record on submasters 1 and 2 is also what you hear in the room.</li>
+      <li><strong>MON LEVEL:</strong> turn both up to <strong>noon</strong> (12 o'clock). MON LEVEL puts the subgroup into the master mix, so what you record on submasters 1 and 2 is also what you hear in the room.</li>
     </ul>
   </li>
   <li><strong>Finish gain-staging at the master fader, then add the sub.</strong> Up to this point everything has been done silently, with the meters as the only feedback. That's intentional: gain staging is a visual discipline first. The master fader is the last stage, and in this studio it also brings the sound into the room, since the monitor speakers are on MASTER O/P.
@@ -979,9 +979,9 @@
       <li><strong>Ask the singer to sing</strong> at performance volume.</li>
       <li><strong>Slowly raise the MASTER FADER</strong> from the bottom of its travel toward <strong>unity</strong>. The voice comes up on the monitor speakers as the fader rises. Watch the <strong>master left/right bargraph meters</strong> in the master section: they should respond to the singing, peaking comfortably in the upper green range without lighting the top red segments.</li>
       <li><strong>If the master meters are peaking into the red</strong> with the master fader at unity, something upstream is too loud. The first place to fix it is at the channel: pull the <strong>channel 1 fader</strong> down a couple of dB at a time until the master meters settle. Don't go back to the ISA or the channel INPUT GAIN to fix this; those were set for healthy recording level, and lowering them now would mean a quieter signal in the chain.</li>
-      <li><strong>If the room is too loud</strong> before the master fader reaches unity, stop there. The master fader sets how loud the monitor speakers are and nothing else: the recording comes from submasters 1 and 2.</li>
+      <li><strong>If the room is too loud</strong> before the master fader reaches unity, stop there. The master fader sets how loud the room is, monitor speakers and sub together, and nothing else: the recording comes from submasters 1 and 2.</li>
       <li><strong>Once the master meters look healthy</strong> and the room is at a comfortable level, add the sub: <strong>slowly turn the MONITOR LEVEL knob</strong> clockwise from zero until the low end blends with the monitor speakers.</li>
-      <li><strong>From here on</strong>, the master fader sets how loud the monitor speakers are and MONITOR LEVEL sets how much sub. Neither one changes the recording; the submaster 1 and 2 faders set the recording level in Part 5.</li>
+      <li><strong>From here on</strong>, the master fader sets the room level and MONITOR LEVEL sets how much sub is added on top of it. With the master fader down, the sub is silent too. Neither one changes the recording; the submaster 1 and 2 faders set the recording level in Part 5.</li>
       <li><strong>If the room is silent</strong> with the master fader up, walk back through the chain: master meters showing signal, submaster 1 and 2 MON LEVEL up and TAPE up, channel 1 routing button 1-2 down, channel MUTE off, channel fader at unity, Toft channel meter showing signal during singing. Fix whichever step broke and try again.</li>
     </ul>
   </li>
@@ -1101,7 +1101,7 @@
   <li><strong>At the AudioBox:</strong> confirm the front panel from Part 2. <strong>Gain 1</strong> and <strong>Gain 2</strong> fully counter-clockwise, <strong>48V</strong> off, <strong>Mixer</strong> fully to Playback.</li>
   <li><strong>At the Toft, submasters 1 and 2:</strong> confirm both subgroup faders are <strong>all the way down</strong>.</li>
   <li><strong>At the laptop, in the recording project from Part 2:</strong> add a new <strong>stereo</strong> audio track and set its input to the AudioBox, <strong>inputs 1 and 2</strong>. This track records submasters 1 and 2. Turn the track's input monitoring off; with it on, the vocal comes back a second time, slightly late, on channels 9 and 10. The project is already at 48 kHz, 24-bit, matching the interface, so the take records at the session rate.</li>
-  <li><strong>Arm the track and set the recording level.</strong> Ask the singer to sing at performance volume. Raise the <strong>submaster 1 and 2 faders</strong> together, slowly, from the bottom, while you watch the laptop's input meter and the AudioBox's clip LEDs. The target is the same one you've used all session: loudest peaks around -6 to -3 dBFS, never lighting the red clip indicator. The Toft's submaster outputs are line level and the AudioBox's inputs are built for microphones and instruments, so the faders stop well below unity. Set the level here, at the submaster faders, and leave the AudioBox's Gain knobs at minimum.</li>
+  <li><strong>Arm the track and set the recording level.</strong> Ask the singer to sing at performance volume. Raise the <strong>submaster 1 and 2 faders</strong> together, slowly, from the bottom, while you watch the laptop's input meter and the AudioBox's clip LEDs. The target is the same one you've used all session: loudest peaks around -6 to -3 dBFS, never lighting the red clip indicator. The Toft's submaster outputs are line level and the AudioBox's 1/4" inputs are built for instruments, so the faders stop well below unity. Bring them up slowly: a line-level signal pushed hard into those inputs distorts and can damage them. Set the level here, at the submaster faders, and leave the AudioBox's Gain knobs at minimum.</li>
   <li><strong>If the input meters don't move,</strong> walk back through the chain: track input set to AudioBox inputs 1 and 2, track armed, AudioBox USB cable connected, submaster 1 and 2 faders up, channel 1 routing button 1-2 down, channel 1 fader up, singer singing.</li>
   <li><strong>Record.</strong> Press record in the app, count the singer in, capture the take. Then play it back. The laptop's playback comes into the Toft on channels 9 and 10, the same channels as the reference, so you hear the take on the monitor speakers with the reference under it. The recording has the dry vocal and the compression, summed on submasters 1 and 2.</li>
 </ol>
