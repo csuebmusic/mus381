@@ -310,6 +310,14 @@ The title block's module tag (`<div class="module-tag">`) holds the module's *th
 
 The title block's subtitle is a one-sentence description of the document's content. **Subtitles do not contain dates.**
 
+#### Headings
+
+Every heading, the `<h1>`, and the page title in `<title>` are lowercase, except proper nouns, product names, acronyms, and chrome tokens (`MUS 381`, `Module 03`, `Lab 4`, `Project 1`). Example: `<title>MUS 381 · recording into Audacity</title>`, `<h1>recording into Audacity</h1>`.
+
+#### Labeled items
+
+No list item or paragraph uses the bold-label pattern (`<strong>Term:</strong> explanation`). A labeled item is written as a sentence; bold may mark a control or term name inside the sentence. Step lists stay ordered lists, and each step opens with a sentence.
+
 #### Intro paragraph
 
 The intro paragraph (the first `<p>` after the title block) is **exactly one paragraph at lede size** (`<p class="lede">`).
