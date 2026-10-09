@@ -30,7 +30,7 @@
        styling. Used for product photos that ground a prose explanation.
        Photos render at a uniform width (480px) and a uniform max-height
        (220px); object-fit: contain preserves source aspect ratios.
-       Wide rack units fill the width; square units (Behringer) sit
+       Wide rack units fill the width; square units (the AudioBox) sit
        within the max-height, narrower than the box. */
     figure.photo {
       margin: 1.75rem 0 2rem;
@@ -205,8 +205,8 @@
       text-align: left;
     }
 
-    /* h5 used inside the Behringer-configuration chart to subdivide
-       by direction (inputs, outputs, internal routing). Sits below h4
+    /* h5 used inside the AudioBox-and-headphone chart to subdivide
+       by unit. Sits below h4
        in weight; doesn't compete with the h4 parent heading. */
     h5 {
       font-family: var(--sans);
@@ -236,7 +236,7 @@
     /* Wrapper around each H4 group in 'How the studio's signals
        actually flow': a soft tinted box that visually scopes the
        INS / OUTS / LOOPS charts (or the H5 sub-sections in the
-       Behringer-configuration case) belonging to one signal block. */
+       AudioBox-and-headphone case) belonging to one signal block. */
     .signal-group {
       background: var(--bg-alt);
       border: 1px solid var(--rule);
@@ -274,30 +274,30 @@
   <h1>The Mixer in Practice · Studio Recording</h1>
 </div>
 
-<p class="lede">A guide to recording in our studio. It covers the studio's gear and how it's all wired together (live room, control room, the path each signal takes from a mic on a stand to the console), then closes with a six-part walkthrough that takes a single vocal mic from the live room onto the console, into a headphone cue and bus processing, and out to a recording on a laptop. A final section covers comping afterward.</p>
+<p class="lede">A guide to recording in our studio. It covers the studio's gear and how it's all wired together (live room, control room, the path each signal takes from a mic on a stand to the console), then closes with a five-part walkthrough that takes a single vocal mic from the live room onto the console, into a headphone cue and parallel compression, and out to a recording on a laptop. A final section covers comping afterward.</p>
 
-<p>MB2508 has two rooms: the <strong>control room</strong> (where the engineer sits at the Toft) and the <strong>live room</strong> (where the band plays, behind the internal door). The two rooms share a wall full of XLR feed-throughs and TRS pass-throughs that connect everything in one room to everything in the other. This guide documents what's in each room and how it's all wired.</p>
+<p>MB2508 has two rooms: the <strong>control room</strong> (where the engineer sits at the Toft) and the <strong>live room</strong> (where the band plays, behind the internal door). The cables between them run through the shared wall: mic lines from the live room to the preamps in the control room, and the headphone feed back to the live room. This guide documents what's in each room and how it's all wired.</p>
 
 <nav class="part-index" aria-label="Guide contents">
   <div class="index-group">
-    <span class="index-title"><a href="#live-room-rack">The live-room rack</a></span>
+    <span class="index-title"><a href="#live-room">The live room</a></span>
     <ul>
-      <li><a href="#lr-furman">1. Furman PL-8</a></li>
-      <li><a href="#lr-isa">2. Focusrite ISA 828</a></li>
-      <li><a href="#lr-hosa-1">3. Hosa mic input panel 1</a></li>
-      <li><a href="#lr-octopre">4. Focusrite OctoPre Platinum</a></li>
-      <li><a href="#lr-hosa-2">5. Hosa mic input panel 2</a></li>
-      <li><a href="#lr-hosa-line">6. Hosa PHB-350 line panel</a></li>
-      <li><a href="#lr-rane">7. Rane MH4</a></li>
+      <li><a href="#lr-hosa-1">1. Hosa mic input panel 1</a></li>
+      <li><a href="#lr-hosa-2">2. Hosa mic input panel 2</a></li>
+      <li><a href="#lr-hr6">3. Furman HR-6 headphone stations</a></li>
     </ul>
   </div>
   <div class="index-group">
-    <span class="index-title"><a href="#control-room-rack">The control-room console and side rack</a></span>
+    <span class="index-title"><a href="#control-room">The control room</a></span>
     <ul>
-      <li><a href="#cr-furman">1. Furman PL-8</a></li>
-      <li><a href="#cr-hdx">2. Avid HDX I/O</a></li>
-      <li><a href="#cr-ssl">3. SSL XLogic G compressor</a></li>
-      <li><a href="#cr-behringer">4. Behringer Xenyx</a></li>
+      <li><a href="#cr-isa">1. Focusrite ISA 828</a></li>
+      <li><a href="#cr-octopre">2. Focusrite OctoPre Platinum</a></li>
+      <li><a href="#cr-furman">3. Furman PL-8</a></li>
+      <li><a href="#cr-hdx">4. Avid HDX I/O</a></li>
+      <li><a href="#cr-ssl">5. SSL XLogic G compressor</a></li>
+      <li><a href="#cr-audiobox">6. PreSonus AudioBox USB 96</a></li>
+      <li><a href="#cr-hds6">7. Furman HDS-6</a></li>
+      <li><a href="#cr-speakers">8. The speakers</a></li>
     </ul>
   </div>
   <div class="index-group">
@@ -306,7 +306,7 @@
       <li><a href="#sf-channels">Input channels 1-16</a></li>
       <li><a href="#sf-submasters">Submasters 1-8</a></li>
       <li><a href="#sf-master">Master section</a></li>
-      <li><a href="#sf-behringer">Behringer Xenyx configuration</a></li>
+      <li><a href="#sf-audiobox">AudioBox and headphone system</a></li>
     </ul>
   </div>
   <div class="index-group">
@@ -315,9 +315,8 @@
       <li><a href="#part-1-starting">Part 1. Mic from live room to control-room speakers</a></li>
       <li><a href="#part-2-reference">Part 2. Bring a reference track from the laptop into the Toft</a></li>
       <li><a href="#part-3-cue">Part 3. Build the singer's headphone cue</a></li>
-      <li><a href="#part-4-reverb">Part 4. Add a reverb on the vocal via the Behringer FX</a></li>
-      <li><a href="#part-5-compression">Part 5. Add parallel compression on the vocal via the SSL</a></li>
-      <li><a href="#part-6-record">Part 6. Record the master mix to the laptop</a></li>
+      <li><a href="#part-4-compression">Part 4. Add parallel compression on the vocal via the SSL</a></li>
+      <li><a href="#part-5-record">Part 5. Record submasters 1-2 to the laptop</a></li>
     </ul>
   </div>
   <div class="index-group">
@@ -329,28 +328,51 @@
   </div>
 </nav>
 
-<h3 id="live-room-rack">The live-room rack</h3>
+<h3 id="live-room">The live room</h3>
 
-<p>One rack against the wall. Seven pieces of gear, top to bottom:</p>
+<p>One small rack against the wall holds two mic panels, one above the other. The live room also has two headphone stations for the performers.</p>
 
-<h4 id="lr-furman">1. Furman PL-8 Series 2 (power conditioner)</h4>
+<h4 id="lr-hosa-1">1. Hosa mic input panel 1 (top, wired to the ISA)</h4>
 
-<p>Every piece of gear in the rack plugs into the back of the Furman; the Furman plugs into one wall outlet. The conditioner filters electrical noise on the power line, protects everything plugged into it from surges, and gives the studio a single power switch that turns the whole rack on or off. This is the first thing turned on at the start of a session and the last thing turned off.</p>
+<figure class="photo">
+  <img src="../../assets/images/module-03-week-09/hosa-pdr-369-mic-panel.jpg" alt="A 1U rack panel with sixteen XLR female jacks across the front, numbered 1 through 16. Labeled MIC IN PANEL." loading="lazy">
+  <figcaption>Hosa 16-jack mic input panel. One per preamp; jacks 9-16 unused.</figcaption>
+  <div class="photo-attribution">Photo via Hosa Technology.</div>
+</figure>
 
-<h4 id="lr-isa">2. Focusrite ISA 828 MkII (8-channel mic preamp)</h4>
+<p>A Hosa mic panel with 16 XLR female jacks across its front, numbered 1 through 16. Jacks 1-8 are wired through the wall to the ISA's mic inputs 1-8 in the control room (jacks 9-16 are unused, left in place in case the studio expands at some point). A mic plugged into panel 1 jack N reaches Toft channel N.</p>
+
+<h4 id="lr-hosa-2">2. Hosa mic input panel 2 (bottom, wired to the OctoPre)</h4>
+
+<p>Identical to panel 1: 16 XLR female jacks, jacks 1-8 wired through the wall to the OctoPre's mic inputs 1-8 (9-16 unused). A mic plugged into panel 2 jack N reaches Toft channel N+8, so panel 2 jack 1 is Toft channel 9.</p>
+
+<p>The panels are passive. Plug in an XLR cable and the mic is connected; gain, phantom power, and every other preamp control are on the preamps in the control room.</p>
+
+<h4 id="lr-hr6">3. Furman HR-6 headphone stations (two)</h4>
+
+<p>Performers in the live room wear headphones during tracking so they can hear themselves and the other tracks while playing. Each HR-6 station gets the cue mix from the Furman HDS-6 hub in the control room over Ethernet cable, through the wall. Each station has two headphone jacks, so the two stations take up to four players.</p>
+
+<p>Each station has five level knobs: four for the hub's mono feeds and one for its stereo feed. In this studio only the stereo feed is connected, and it's the cue mix from Toft <strong>Aux Master 1 (L) + Aux Master 2 (R)</strong>. The stereo-feed knob sets how loud the cue is at that station. The four mono knobs have nothing on them.</p>
+
+<p>This is different from the live-sound setup you read about in Lab 3, where each performer's monitor had its own custom mix on its own aux. Sessions in our studio work from one shared cue mix, and each station sets its own level.</p>
+
+<h3 id="control-room">The control room</h3>
+
+<p>The Toft sits on a console desk in the control room. Beside it is a rack with the two preamps. Built into the right end of the desk is a side rack holding the gear the Toft sends to and receives from. A pair of monitor speakers and a subwoofer play the mix into the room.</p>
+
+<h4 id="cr-isa">1. Focusrite ISA 828 MkII (8-channel mic preamp)</h4>
 
 <figure class="photo">
   <img src="../../assets/images/module-03-week-09/focusrite-isa-828-mkii.png" alt="Front and rear views of the Focusrite ISA 828 MkII. The front has eight identical input strips: gain, impedance, +48V, phase, HPF, mic/line/insert select. The rear has 8 XLR mic inputs, 8 balanced 1/4-inch TRS line inputs, and a DB25 connector for 8 line outputs." loading="lazy">
-  <figcaption>Focusrite ISA 828 MkII. First preamp in the live-room rack.</figcaption>
+  <figcaption>Focusrite ISA 828 MkII. First preamp in the control-room preamp rack.</figcaption>
   <div class="photo-attribution">Photo via Focusrite.</div>
 </figure>
 
 <p>A <strong>preamp</strong> takes a mic-level signal (small, fragile, from a microphone) and lifts it to <strong>line level</strong> (large, robust, ready to travel a long cable to the next stage). You met one preamp already, the one inside the audio interface at every lab station; this is the same job done by a dedicated 8-channel unit with its own personality. The ISA is the studio's higher-grade preamp, which is why it sits on the first eight channels.</p>
 
 <ul>
-  <li><strong>Mic inputs (rear):</strong> 8 mic-level XLR jacks, one per channel. Each is wired internally to the corresponding jack on Hosa panel 1 below.</li>
-  <li><strong>Line inputs (rear):</strong> 8 line-level balanced 1/4" TRS jacks, fed from PHB-350 jacks 1-8. Selected on a per-channel basis from the front panel; useful for running a line-level source (a synth, a DI'd guitar, an outboard preamp) through the ISA's circuit for its character rather than for gain.</li>
-  <li><strong>Outputs (rear):</strong> 8 line-level outputs on a single DB25 connector, broken out via a fan cable to 8 male XLRs. These run through the wall into Toft <strong>XLR (MIC) inputs 1 through 8</strong>.</li>
+  <li><strong>Mic inputs (rear):</strong> 8 mic-level XLR jacks, one per channel. Each is wired through the wall to the corresponding jack on Hosa panel 1 in the live room.</li>
+  <li><strong>Outputs (rear):</strong> 8 line-level outputs on a single DB25 connector, broken out via a fan cable to 8 male XLRs. These run to Toft <strong>XLR (MIC) inputs 1 through 8</strong>.</li>
 </ul>
 
 <figure class="photo-pair">
@@ -368,80 +390,33 @@
 
 <div class="callout">
   <div class="callout-label">What's a DB25 connector?</div>
-  <p>A <strong>DB25</strong> (sometimes called DSUB-25) is a 25-pin connector that carries <strong>eight balanced audio signals on a single plug</strong>. Behind the racks in this studio, almost every multi-channel connection between two pieces of gear runs as DB25 to keep the wiring tidy. <strong>Fan cables</strong> (also called <strong>snakes</strong>) translate between DB25 and individual plugs at the gear that needs them. The two images above show the same idea in two flavors: DB25-to-8×TRS (used at the HDX, the Toft submasters, and the PHB-350 line panel) and DB25-to-8×XLR (used at the two preamp outputs, which fan out into the Toft's MIC inputs). These snakes are everywhere in the studio's internal wiring, but you almost never have to touch them once they're in place.</p>
+  <p>A <strong>DB25</strong> (sometimes called DSUB-25) is a 25-pin connector that carries <strong>eight balanced audio signals on a single plug</strong>. Behind the racks in this studio, almost every multi-channel connection between two pieces of gear runs as DB25 to keep the wiring tidy. <strong>Fan cables</strong> (also called <strong>snakes</strong>) translate between DB25 and individual plugs at the gear that needs them. The two images above show the same idea in two flavors: DB25-to-8×TRS (used at the HDX and the Toft submasters) and DB25-to-8×XLR (used at the two preamp outputs, which fan out into the Toft's MIC inputs). These snakes are everywhere in the studio's internal wiring, but you almost never have to touch them once they're in place.</p>
 </div>
 
 <p>The Toft inputs are labeled MIC, but they accept line-level too: an XLR cable can carry mic-level or line-level (you read this in Lecture 2). With a line-level signal arriving at the Toft's MIC input, the Toft's onboard preamp doesn't need to amplify; the channel's INPUT GAIN knob becomes a <strong>trim</strong>, set low to fine-tune the level. The preamp has already done the gain work; the Toft's gain knob just nudges what's there.</p>
 
-<h4 id="lr-hosa-1">3. Hosa mic input panel 1 (wired to the ISA)</h4>
-
-<figure class="photo">
-  <img src="../../assets/images/module-03-week-09/hosa-pdr-369-mic-panel.jpg" alt="A 1U rack panel with sixteen XLR female jacks across the front, numbered 1 through 16. Labeled MIC IN PANEL." loading="lazy">
-  <figcaption>Hosa 16-jack mic input panel. One per preamp; jacks 9-16 unused.</figcaption>
-  <div class="photo-attribution">Photo via Hosa Technology.</div>
-</figure>
-
-<p>A Hosa mic panel with 16 XLR female jacks across its front, numbered 1 through 16. Jacks 1-8 are wired internally to the ISA's mic inputs 1-8 (jacks 9-16 are unused, left in place in case the studio expands at some point). A mic plugged into panel 1 jack N reaches the studio on Toft channel N.</p>
-
-<h4 id="lr-octopre">4. Focusrite OctoPre Platinum (8-channel mic preamp)</h4>
+<h4 id="cr-octopre">2. Focusrite OctoPre Platinum (8-channel mic preamp)</h4>
 
 <figure class="photo">
   <img src="../../assets/images/module-03-week-09/focusrite-octopre-platinum.jpg" alt="Front and rear views of the Focusrite OctoPre Platinum. The front has eight input strips with gain, +48V, phase, HPF, level meter, and a mic/line source switch. The rear has 8 XLR mic inputs and two DB25 connectors carrying the line inputs and the line outputs." loading="lazy">
-  <figcaption>Focusrite OctoPre Platinum. Second preamp in the live-room rack.</figcaption>
+  <figcaption>Focusrite OctoPre Platinum. Second preamp in the control-room preamp rack.</figcaption>
   <div class="photo-attribution">Photo via Focusrite.</div>
 </figure>
 
 <p>Same job as the ISA, a different sound, slightly different controls. Eight more preamp channels, arriving on the second bank of Toft inputs.</p>
 
 <ul>
-  <li><strong>Mic inputs (rear):</strong> 8 mic-level XLR jacks, one per channel. Each is wired internally to the corresponding jack on Hosa panel 2 below.</li>
-  <li><strong>Line inputs (rear):</strong> 8 line-level inputs on a DB25 connector, fed from PHB-350 jacks 9-16. Selected on a per-channel basis from the front panel; same idea as the ISA's line inputs: route a line-level source through the OctoPre's circuit for its character.</li>
-  <li><strong>Outputs (rear):</strong> 8 line-level outputs on a single DB25 connector, broken out via a fan cable to 8 male XLRs. These run through the wall into Toft <strong>XLR (MIC) inputs 9 through 16</strong> (same trim-not-gain situation as the ISA's outputs into channels 1-8).</li>
+  <li><strong>Mic inputs (rear):</strong> 8 mic-level XLR jacks, one per channel. Each is wired through the wall to the corresponding jack on Hosa panel 2 in the live room.</li>
+  <li><strong>Outputs (rear):</strong> 8 line-level outputs on a single DB25 connector, broken out via a fan cable to 8 male XLRs. These run to Toft <strong>XLR (MIC) inputs 9 through 16</strong> (same trim-not-gain situation as the ISA's outputs into channels 1-8).</li>
 </ul>
 
-<h4 id="lr-hosa-2">5. Hosa mic input panel 2 (wired to the OctoPre)</h4>
+<p>The rest of the control-room gear is in the side rack and on the console desk.</p>
 
-<p>Identical to panel 1: 16 XLR female jacks, jacks 1-8 wired to the OctoPre's mic inputs 1-8 (9-16 unused). A mic plugged into panel 2 jack N reaches the studio on Toft channel N+8, so panel 2 jack 1 arrives on Toft channel 9.</p>
+<h4 id="cr-furman">3. Furman PL-8 Series 2 (power conditioner)</h4>
 
-<h4 id="lr-hosa-line">6. Hosa PHB-350 (TRS line input panel)</h4>
+<p>Every piece of gear in the side rack plugs into the back of the Furman; the Furman plugs into one wall outlet. The conditioner filters electrical noise on the power line, protects everything plugged into it from surges, and gives the rack a single power switch. (The Toft itself has its own power switch and plugs into a separate dedicated outlet.)</p>
 
-<p>A patchbay panel with balanced 1/4" TRS jacks on its front, used as the live room's line-input panel. Anywhere a performer wants to send a line-level source from the live room into one of the preamps (a synth, a DI'd guitar, a hardware effects unit, an outboard preamp's line output), they plug it into the front of this panel.</p>
-
-<ul>
-  <li><strong>Front jacks 1-8:</strong> route to ISA line inputs 1-8.</li>
-  <li><strong>Front jacks 9-16:</strong> route to OctoPre line inputs 1-8.</li>
-</ul>
-
-<p>Both preamps accept a line-level source at the rear in addition to the mic-level XLR, selected with a per-channel front-panel switch. The reason for routing a line-level source through the preamp this way is sonic, not technical: the signal arrives already strong, so the preamp's gain knob acts as a trim. What you're getting is the preamp's <strong>circuit character</strong> on a source that didn't need the preamp's gain.</p>
-
-<p>From the preamp onward, the signal travels the same path as a mic-level signal would: through the preamp's circuit, out the DB25 line output, through the wall to the Toft. PHB-350 jacks 1-8 reach Toft channels 1-8 via the ISA; jacks 9-16 reach Toft channels 9-16 via the OctoPre.</p>
-
-<h4 id="lr-rane">7. Rane MH4 Mojo Series (4-out headphone splitter)</h4>
-
-<figure class="photo">
-  <img src="../../assets/images/module-03-week-09/rane-mh4-headphone-console.jpg" alt="A 1U rack-mount unit with four channels, each having a 1/4-inch headphone jack and a level knob, plus a mono/stereo source switch. Labeled Rane MH4 Stereo Headphone Console." loading="lazy">
-  <figcaption>Rane MH4. One cue mix, four players, four volume knobs.</figcaption>
-  <div class="photo-attribution">Photo via Rane Corporation.</div>
-</figure>
-
-<p>Performers in the live room wear headphones during tracking so they can hear themselves and the other tracks while playing. The MH4 takes one stereo cue mix from the control room and sends <strong>four copies of that same mix</strong> to four headphone jacks on its front, each with its own volume knob.</p>
-
-<p>This is different from the live-sound setup you read about in Lab 3, where each performer's monitor had its own custom mix on its own aux. Most sessions in our studio are small enough that everyone in the live room can work from a single shared cue mix; different players just need different volumes, which is what the MH4's four independent level knobs are for. (A larger studio might run a different headphone amp where each output gets its own custom mix; we don't.)</p>
-
-<ul>
-  <li><strong>Inputs (rear):</strong> One stereo cue source on two TRS jacks (L+R), coming from the control room: Toft <strong>Aux Master 1 (L) + Aux Master 2 (R)</strong>.</li>
-  <li><strong>Outputs (front):</strong> Four 1/4" headphone jacks, each with its own level knob. Players plug their headphones in here.</li>
-</ul>
-
-<h3 id="control-room-rack">The control-room console and side rack</h3>
-
-<p>The Toft sits on a console desk in the control room. Built into the right end of the desk is a side rack holding everything the Toft routes to or from. Three pieces of gear in the side rack, plus one more sitting on the console desk next to the Toft:</p>
-
-<h4 id="cr-furman">1. Furman PL-8 Series 2 (power conditioner)</h4>
-
-<p>Same model as the live-room rack's. Powers everything in the side rack from one outlet, with one master switch. (The Toft itself has its own power switch and plugs into a separate dedicated outlet.)</p>
-
-<h4 id="cr-hdx">2. Avid HDX I/O (audio interface)</h4>
+<h4 id="cr-hdx">4. Avid HDX I/O (audio interface)</h4>
 
 <figure class="photo">
   <img src="../../assets/images/module-03-week-09/avid-hdx-io.webp" alt="Front and rear views of the Avid HDX I/O. The front has level meters for 16 inputs and 16 outputs plus sample-rate and sync-mode indicators. The rear has two DB25 analog input connectors (+4dBu and -10dBV), a DB25 analog output connector, AES/EBU, TDIF, ADAT optical, S/PDIF, and BNC word-clock I/O." loading="lazy">
@@ -452,7 +427,8 @@
 <p>The audio interface connecting the Toft to Pro Tools. 16 analog inputs become Pro Tools record tracks; 16 analog outputs return Pro Tools playback to the console.</p>
 
 <ul>
-  <li><strong>Analog inputs 1-8 (DB25, +4 dBu):</strong> Receive the Toft <strong>submaster outputs 1-8</strong> via a DB25-to-8×TRS fan cable.</li>
+  <li><strong>Analog inputs 1-2 (DB25, +4 dBu):</strong> Empty. Toft submasters 1 and 2 go to the AudioBox instead (item 6 below).</li>
+  <li><strong>Analog inputs 3-8 (DB25, +4 dBu):</strong> Receive the Toft <strong>submaster outputs 3-8</strong> via a DB25-to-8×TRS fan cable.</li>
   <li><strong>Analog inputs 9-16 (DB25, +4 dBu):</strong> Receive the Toft <strong>channel direct outs 9-16</strong> via a DB25-to-8×TRS fan cable. Each direct out taps its channel's post-fader signal as a single dedicated track to Pro Tools, separate from anything the submasters are doing.</li>
   <li><strong>Analog outputs 1-8 (DB25):</strong> Return Pro Tools playback to the Toft <strong>submaster MONITOR RETURNS 1-8</strong> via a second DB25-to-8×TRS fan cable.</li>
   <li><strong>Analog outputs 9-16 (DB25):</strong> Return Pro Tools playback to the Toft <strong>channel MON inputs 9-16</strong> via a second DB25-to-8×TRS fan cable. Each MON input is the in-line monitor path on its channel strip, controlled by the channel's MON LEVEL and MON PAN.
@@ -465,7 +441,7 @@
   <li><strong>Connection to Mac Pro:</strong> A single proprietary cable to the HDX PCIe card installed inside the Mac Pro. The PCIe card carries far more simultaneous channels than a USB or Thunderbolt interface would, which is why the HDX uses one.</li>
 </ul>
 
-<h4 id="cr-ssl">3. SSL XLogic G Series Compressor (stereo bus compressor)</h4>
+<h4 id="cr-ssl">5. SSL XLogic G Series Compressor (stereo bus compressor)</h4>
 
 <figure class="photo">
   <img src="../../assets/images/module-03-week-09/ssl-xlogic-g-compressor.jpg" alt="Front view of the SSL XLogic G Series Compressor. A 1U rack-mount unit with a large analog VU meter on the left and six knobs and two buttons across the front: threshold, attack, ratio, release, make-up gain, compressor in/out, external sidechain, auto fade." loading="lazy">
@@ -482,21 +458,50 @@
   <li><strong>Return from the compressor:</strong> LINE input 13 (L) + LINE input 14 (R).</li>
 </ul>
 
-<h4 id="cr-behringer">4. Behringer Xenyx QX1204USB (small mixer + USB interface, on the console desk)</h4>
+<h4 id="cr-audiobox">6. PreSonus AudioBox USB 96 (audio interface for the laptop)</h4>
 
 <figure class="photo">
-  <img src="../../assets/images/module-03-week-09/behringer-xenyx-qx1204usb.webp" alt="Top view of the Behringer Xenyx QX1204USB mixer. A small 8-channel mixer with four mono mic/line input strips, two stereo line-input strips, a USB port, master fader, and a multi-FX processor on the right." loading="lazy">
-  <figcaption>Behringer Xenyx QX1204USB. A small mixer that sits on the console desk and does three jobs at once.</figcaption>
-  <div class="photo-attribution">Photo via Behringer.</div>
+  <img src="../../assets/images/module-03-week-06/presonus-audiobox-usb96-front.png" alt="Front panel of the PreSonus AudioBox USB 96. Left side: two combo XLR/TRS inputs labeled 1 and 2. Middle: a 48V phantom power button and two gain knobs, each with a clip indicator LED. Right side: a Mixer blend knob (Inputs to Playback), a Main output knob, a headphone output, and a phones level knob." loading="lazy">
+  <figcaption>PreSonus AudioBox USB 96. The laptop's connection to the Toft.</figcaption>
+  <div class="photo-attribution">Photo via PreSonus.</div>
 </figure>
 
-<p>A small 8-channel mixer that sits on the console desk next to the Toft. In this studio it does three jobs at once: an effects unit (using its built-in Klark Teknik FX processor), a way to bring laptop audio into the Toft, and a way to send the Toft's master mix out to the laptop for recording. All three jobs run simultaneously through the same little box.</p>
+<p>A two-channel USB audio interface. It's the same interface as at the PreSonus stations in MB2525. In this studio it connects a laptop to the Toft in both directions: the laptop's playback comes out of the AudioBox into the Toft, and the Toft's submasters 1 and 2 go into the AudioBox to be recorded on the laptop.</p>
 
-<p><strong>Role 1: Effects unit.</strong> The Toft sends a stereo signal to the Behringer via <strong>Aux 3 (L) and Aux 4 (R)</strong>, which arrive on the Behringer's <strong>XLR inputs on channels 3 and 4</strong>. Those two channels are routed inside the Behringer to its <strong>ALT 3-4 bus</strong>, which carries the signal through the built-in effects processor and back out the Behringer's <strong>ALT 3-4 outputs</strong>. From there the wet signal returns to the Toft on <strong>LINE inputs 11 (L) and 12 (R)</strong>. The Toft channels carrying that return become the "wet" channels for any effect loaded on the Behringer (reverb, delay, chorus, and so on).</p>
+<ul>
+  <li>The two front combo inputs receive Toft <strong>submaster outputs 1 and 2</strong> (input 1 is submaster 1, input 2 is submaster 2). This is the stereo recording feed to the laptop.</li>
+  <li>The two rear <strong>Main outputs</strong> (1/4" TRS) send the laptop's playback to Toft <strong>LINE inputs 9 (L) and 10 (R)</strong>.</li>
+  <li>The rear USB port connects to the laptop, and audio goes both ways over that one cable.</li>
+</ul>
 
-<p><strong>Role 2: Laptop audio into the Toft (dry).</strong> When a student plugs a laptop into the Behringer via USB, the laptop's audio appears inside the Behringer as a source for the <strong>Control Room bus</strong>, selected by pressing the <strong>USB/2-track</strong> button on the Control Room source matrix. The Control Room bus then sends the laptop audio out the Behringer's <strong>Control Room outputs</strong> and into the Toft on <strong>LINE inputs 9 (L) and 10 (R)</strong>. This path is independent of the Behringer's main mix fader, so it's the laptop's <em>dry</em> signal arriving at the Toft, untouched by anything happening on the Behringer's main mix.</p>
+<div class="callout">
+  <div class="callout-label">Line level into the AudioBox</div>
+  <p>The AudioBox's inputs are built for microphones and instruments. The Toft's submaster outputs are line level, much stronger than either. Keep the AudioBox's two Gain knobs fully counter-clockwise and set the recording level with the Toft's submaster 1 and 2 faders, which end up well below unity. Part 5 of the walkthrough covers this step by step.</p>
+</div>
 
-<p><strong>Role 3: Toft master mix back to the laptop.</strong> The Toft's <strong>Master O/P (L+R)</strong> is patched into the Behringer's <strong>LINE inputs on channels 1 and 2</strong>. Those two channels are routed to the Behringer's main mix bus, which is sent back out the USB cable to the laptop. The laptop sees the full Toft master mix as its USB input and can record it as a stereo file. The laptop is recording, the Behringer is the bridge.</p>
+<h4 id="cr-hds6">7. Furman HDS-6 (headphone distribution hub)</h4>
+
+<p>The hub of the studio's headphone system. It takes the cue mix from the Toft and sends it over Ethernet cable, through the wall, to the two HR-6 stations in the live room. The same cable powers the stations.</p>
+
+<ul>
+  <li>The hub's stereo input receives Toft <strong>Aux Master 1 (L) + Aux Master 2 (R)</strong>: the cue mix.</li>
+  <li>The hub's four mono inputs are empty.</li>
+  <li>Ethernet (Cat-5) cables run from the hub through the wall to the HR-6 stations.</li>
+</ul>
+
+<h4 id="cr-speakers">8. The speakers</h4>
+
+<p>The control room has a pair of monitor speakers and a subwoofer. They're wired to two different outputs on the Toft, and each has its own control:</p>
+
+<ul>
+  <li>The monitor speakers are on <strong>MASTER O/P</strong>. The <strong>master fader</strong> sets how loud they are.</li>
+  <li>The subwoofer is on <strong>MAIN SPKR</strong>, the Toft's speaker output. The <strong>MONITOR LEVEL</strong> knob in the master section sets how much low end the sub adds; turn it down and the low end goes away.</li>
+</ul>
+
+<div class="callout">
+  <div class="callout-label">Solo and the speaker buttons in this studio</div>
+  <p>The Toft's SOLO buttons, MONO, and ALT MONITOR act on the speaker output. In this studio the speaker output feeds only the sub, so those buttons change what the sub plays and leave the monitor speakers as they are. The mixer reading describes the more common wiring, with the monitor speakers on the speaker output.</p>
+</div>
 
 <h3 id="signal-flow">How the studio's signals actually flow</h3>
 
@@ -514,14 +519,14 @@
     <tr>
       <td class="jack">MIC 1-8</td>
       <td>XLR-F</td>
-      <td>Through-wall XLR-M from ISA preamp line outputs 1-8</td>
-      <td>Line-level signals from the live-room rack's first preamp; Toft INPUT GAIN acts as a trim, not a true preamp gain stage</td>
+      <td>ISA preamp line outputs 1-8 (DB25-to-XLR fan cable)</td>
+      <td>Line-level signals from the first preamp; Toft INPUT GAIN acts as a trim, not a true preamp gain stage</td>
     </tr>
     <tr>
       <td class="jack">MIC 9-16</td>
       <td>XLR-F</td>
-      <td>Through-wall XLR-M from OctoPre preamp line outputs 1-8</td>
-      <td>Line-level signals from the live-room rack's second preamp; same trim-not-gain situation as channels 1-8</td>
+      <td>OctoPre preamp line outputs 1-8 (DB25-to-XLR fan cable)</td>
+      <td>Line-level signals from the second preamp; same trim-not-gain situation as channels 1-8</td>
     </tr>
     <tr>
       <td class="jack">LINE 1-8</td>
@@ -532,14 +537,14 @@
     <tr>
       <td class="jack">LINE 9-10</td>
       <td>TRS</td>
-      <td>Behringer Control Room outputs (L+R)</td>
-      <td>Dry laptop signal: laptop USB into the Behringer, routed via the Control Room bus (USB/2-track button on the Behringer's source matrix) out the Control Room outputs</td>
+      <td>AudioBox Main outputs (L+R)</td>
+      <td>Laptop playback: the laptop's USB audio out the AudioBox's Main outputs, at the level set by the AudioBox's Main knob</td>
     </tr>
     <tr>
       <td class="jack">LINE 11-12</td>
       <td>TRS</td>
-      <td>Behringer ALT 3-4 outputs</td>
-      <td>Wet effects return: Toft Aux 3-4 sends, routed into Behringer channels 3 and 4, through the FX processor, out the ALT 3-4 bus</td>
+      <td><span class="empty">Empty</span></td>
+      <td></td>
     </tr>
     <tr>
       <td class="jack">LINE 13-14</td>
@@ -642,10 +647,16 @@
   </thead>
   <tbody>
     <tr>
-      <td class="jack">OUTPUT 1-8</td>
+      <td class="jack">OUTPUT 1-2</td>
       <td>TRS</td>
-      <td>HDX analog inputs 1-8</td>
-      <td>The 8 subgroup outputs feeding Pro Tools as 8 separate tracks</td>
+      <td>AudioBox inputs 1-2</td>
+      <td>The recording bus: whatever is routed to submasters 1 and 2, recorded on the laptop</td>
+    </tr>
+    <tr>
+      <td class="jack">OUTPUT 3-8</td>
+      <td>TRS</td>
+      <td>HDX analog inputs 3-8</td>
+      <td>Six subgroup outputs feeding Pro Tools as separate tracks</td>
     </tr>
   </tbody>
 </table>
@@ -693,14 +704,14 @@
     <tr>
       <td class="jack">MASTER O/P L+R</td>
       <td>TRS</td>
-      <td>Behringer channels 1-2</td>
-      <td>The stereo summed master mix</td>
+      <td>Control-room monitor speakers</td>
+      <td>The stereo summed master mix; the master fader sets how loud the monitor speakers are</td>
     </tr>
     <tr>
       <td class="jack">MAIN SPKR L+R</td>
       <td>TRS</td>
-      <td>Control-room monitor speakers</td>
-      <td>Speaker feed from the master section's MONITOR LEVEL knob</td>
+      <td>Subwoofer</td>
+      <td>Speaker feed from the master section; the MONITOR LEVEL knob sets how much low end the sub adds</td>
     </tr>
     <tr>
       <td class="jack">ALT SPKR L+R</td>
@@ -711,26 +722,26 @@
     <tr>
       <td class="jack">AUX MASTER 1</td>
       <td>TRS</td>
-      <td>headphone unit stereo cue input (L), direct cable</td>
-      <td>Aux 1 sends the headphone cue L channel to the live-room headphones</td>
+      <td>HDS-6 stereo input (L)</td>
+      <td>Aux 1 sends the headphone cue L channel to the HR-6 stations in the live room</td>
     </tr>
     <tr>
       <td class="jack">AUX MASTER 2</td>
       <td>TRS</td>
-      <td>headphone unit stereo cue input (R), direct cable</td>
-      <td>Aux 2 sends the headphone cue R channel to the live-room headphones</td>
+      <td>HDS-6 stereo input (R)</td>
+      <td>Aux 2 sends the headphone cue R channel to the HR-6 stations in the live room</td>
     </tr>
     <tr>
       <td class="jack">AUX MASTER 3</td>
       <td>TRS</td>
-      <td>Behringer channel 3 XLR input (via TRS-to-XLR cable)</td>
-      <td>Aux 3 sends the L effects channel to the Behringer's FX processor; returns to Toft LINE 11 via the Behringer's ALT 3-4 outputs</td>
+      <td><span class="empty">Empty</span></td>
+      <td></td>
     </tr>
     <tr>
       <td class="jack">AUX MASTER 4</td>
       <td>TRS</td>
-      <td>Behringer channel 4 XLR input (via TRS-to-XLR cable)</td>
-      <td>Aux 4 sends the R effects channel to the Behringer's FX processor; returns to Toft LINE 12 via the Behringer's ALT 3-4 outputs</td>
+      <td><span class="empty">Empty</span></td>
+      <td></td>
     </tr>
     <tr>
       <td class="jack">AUX MASTER 5</td>
@@ -770,114 +781,110 @@
 </div>
 
 <div class="signal-group">
-<h4 id="sf-behringer">Behringer configuration</h4>
+<h4 id="sf-audiobox">AudioBox and headphone system</h4>
 
-<p>The Behringer's three roles, expressed as INs and OUTs. Inputs are jacks that receive signal arriving at the Behringer (from the Toft or the laptop). Outputs are jacks that send signal leaving the Behringer (back to the Toft or to the laptop). The routing notes section explains how each input gets to its corresponding output inside the box.</p>
-
-<h5>Inputs (signals arriving at the Behringer)</h5>
+<h5>PreSonus AudioBox USB 96</h5>
 
 <table class="routing">
-  <caption>INS · signals arriving at the Behringer</caption>
+  <caption>INS · signals arriving at the AudioBox</caption>
   <thead>
     <tr><th>Jack</th><th>Connector</th><th>Source from</th><th>Carries</th></tr>
   </thead>
   <tbody>
     <tr>
-      <td class="jack">Ch 1 LINE</td>
-      <td>TRS</td>
-      <td>Toft Master O/P L</td>
-      <td>The Toft's master mix, left channel; on its way to the laptop for recording</td>
+      <td class="jack">Input 1</td>
+      <td>Combo jack</td>
+      <td>Toft submaster OUTPUT 1</td>
+      <td>The recording feed, left side; recorded by the laptop</td>
     </tr>
     <tr>
-      <td class="jack">Ch 2 LINE</td>
-      <td>TRS</td>
-      <td>Toft Master O/P R</td>
-      <td>The Toft's master mix, right channel; on its way to the laptop for recording</td>
+      <td class="jack">Input 2</td>
+      <td>Combo jack</td>
+      <td>Toft submaster OUTPUT 2</td>
+      <td>The recording feed, right side; recorded by the laptop</td>
     </tr>
     <tr>
-      <td class="jack">Ch 3 XLR</td>
-      <td>XLR-F</td>
-      <td>Toft Aux Master 3</td>
-      <td>Effects send from the Toft, left channel; on its way through the Behringer's FX processor</td>
-    </tr>
-    <tr>
-      <td class="jack">Ch 4 XLR</td>
-      <td>XLR-F</td>
-      <td>Toft Aux Master 4</td>
-      <td>Effects send from the Toft, right channel; on its way through the Behringer's FX processor</td>
-    </tr>
-    <tr>
-      <td class="jack">USB IN</td>
+      <td class="jack">USB</td>
       <td>USB-B</td>
-      <td>Laptop USB output</td>
-      <td>Laptop playback (a backing track, a sample, etc.); becomes the dry laptop signal on the Control Room bus</td>
+      <td>Laptop</td>
+      <td>Laptop playback (the reference track, a take); sent out the Main outputs</td>
     </tr>
   </tbody>
 </table>
 
-<h5>Outputs (signals leaving the Behringer)</h5>
-
 <table class="routing">
-  <caption>OUTS · signals leaving the Behringer</caption>
+  <caption>OUTS · signals leaving the AudioBox</caption>
   <thead>
     <tr><th>Jack</th><th>Connector</th><th>Destination</th><th>Carries</th></tr>
   </thead>
   <tbody>
     <tr>
-      <td class="jack">ALT 3-4 L</td>
-      <td>TRS</td>
-      <td>Toft LINE input 11</td>
-      <td>The Toft's Aux 3 send after passing through Behringer ch 3 + the FX processor; the "wet" effects return</td>
-    </tr>
-    <tr>
-      <td class="jack">ALT 3-4 R</td>
-      <td>TRS</td>
-      <td>Toft LINE input 12</td>
-      <td>The Toft's Aux 4 send after passing through Behringer ch 4 + the FX processor; the "wet" effects return</td>
-    </tr>
-    <tr>
-      <td class="jack">Control Room L</td>
+      <td class="jack">Main out L</td>
       <td>TRS</td>
       <td>Toft LINE input 9</td>
-      <td>The dry laptop signal from the Control Room bus (with the USB/2-track source button pressed)</td>
+      <td>Laptop playback, left side</td>
     </tr>
     <tr>
-      <td class="jack">Control Room R</td>
+      <td class="jack">Main out R</td>
       <td>TRS</td>
       <td>Toft LINE input 10</td>
-      <td>The dry laptop signal from the Control Room bus (with the USB/2-track source button pressed)</td>
+      <td>Laptop playback, right side</td>
     </tr>
     <tr>
-      <td class="jack">USB OUT</td>
+      <td class="jack">USB</td>
       <td>USB-B</td>
-      <td>Laptop USB input</td>
-      <td>The Behringer's main mix bus, which carries channels 1+2 (the Toft's master mix); recorded by the laptop</td>
+      <td>Laptop</td>
+      <td>Inputs 1 and 2 (submasters 1 and 2), recorded by the laptop</td>
     </tr>
   </tbody>
 </table>
 
-<h5>Routing inside the Behringer</h5>
+<p>Front-panel settings for every session:</p>
+
+<ul>
+  <li>Turn <strong>Gain 1</strong> and <strong>Gain 2</strong> fully counter-clockwise. The submaster faders set the recording level.</li>
+  <li>Leave <strong>48V</strong> off.</li>
+  <li>Turn the <strong>Mixer</strong> knob fully to <strong>Playback</strong>, so the Main outputs send only the laptop's playback.</li>
+  <li>Set the <strong>Main</strong> knob to noon. It sets the playback level into Toft LINE 9-10.</li>
+</ul>
+
+<h5>Furman HDS-6 and HR-6 stations</h5>
 
 <table class="routing">
-  <caption>How each input reaches its output</caption>
+  <caption>INS · signals arriving at the HDS-6</caption>
   <thead>
-    <tr><th>From input</th><th>Through bus</th><th>To output</th></tr>
+    <tr><th>Jack</th><th>Source from</th><th>Carries</th></tr>
   </thead>
   <tbody>
     <tr>
-      <td>Ch 1 + Ch 2 (LINE)</td>
-      <td>Main mix bus</td>
-      <td>USB OUT (to laptop)</td>
+      <td class="jack">Stereo input L</td>
+      <td>Toft Aux Master 1</td>
+      <td>The headphone cue, left side</td>
     </tr>
     <tr>
-      <td>Ch 3 + Ch 4 (XLR), with FX engaged on those channels</td>
-      <td>ALT 3-4 bus</td>
-      <td>ALT 3-4 OUT (to Toft LINE 11-12)</td>
+      <td class="jack">Stereo input R</td>
+      <td>Toft Aux Master 2</td>
+      <td>The headphone cue, right side</td>
     </tr>
     <tr>
-      <td>USB IN</td>
-      <td>Control Room bus (USB/2-track source button pressed)</td>
-      <td>Control Room OUT (to Toft LINE 9-10)</td>
+      <td class="jack">Mono inputs 1-4</td>
+      <td><span class="empty">Empty</span></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="routing">
+  <caption>OUTS · signals leaving the HDS-6</caption>
+  <thead>
+    <tr><th>Jack</th><th>Connector</th><th>Destination</th><th>Carries</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="jack">Link outputs</td>
+      <td>Ethernet (Cat-5)</td>
+      <td>HR-6 stations 1 and 2 in the live room, through the wall</td>
+      <td>The headphone cue, plus power for the stations</td>
     </tr>
   </tbody>
 </table>
@@ -887,7 +894,7 @@
 
 <h3 id="walkthrough">Walkthrough: a vocal mic, end to end</h3>
 
-<p>This walkthrough follows one vocal from the moment it hits the mic to a finished, recorded take. A singer stands in the live room at a mic on a stand, singing along to a reference track that plays from a laptop on the console desk. Each part adds one stage to the chain and assumes the one before it is working. The singer hears the reference in their headphones, but it stays off the recording: what the laptop captures is the vocal, plus the reverb and compression you add along the way.</p>
+<p>This walkthrough follows one vocal from the moment it hits the mic to a finished, recorded take. A singer stands in the live room at a mic on a stand, singing along to a reference track that plays from a laptop on the console desk. Each part adds one stage to the chain and assumes the one before it is working. The singer hears the reference in their headphones, but it stays off the recording: what the laptop captures is the vocal, plus the compression you add along the way.</p>
 
 <h4 id="part-1-starting">Part 1 · Mic from live room to control-room speakers</h4>
 
@@ -901,16 +908,16 @@
 </div>
 
 <ol>
-  <li><strong>In the live room:</strong> place the mic on a stand at the singer's mouth height. Plug an XLR cable into the bottom of the mic; plug the other end into <strong>jack 1 of Hosa panel 1</strong> on the rack.</li>
+  <li><strong>In the live room:</strong> place the mic on a stand at the singer's mouth height. Plug an XLR cable into the bottom of the mic; plug the other end into <strong>jack 1 of Hosa panel 1</strong> (the top panel) on the rack.</li>
   <li><strong>At the Toft master section, silence the room before any gain-staging.</strong> All of the work below is done with the speakers off so that the student learns to set gain by the meters, not by ear.
     <ul>
-      <li><strong>Master fader:</strong> pull <strong>all the way down</strong>.</li>
-      <li><strong>MONITOR LEVEL knob</strong> (the knob feeding the control-room speakers, in the master section): turn <strong>fully counter-clockwise</strong> to zero.</li>
+      <li><strong>Master fader:</strong> pull <strong>all the way down</strong>. This silences the monitor speakers.</li>
+      <li><strong>MONITOR LEVEL knob</strong> (the knob feeding the subwoofer, in the master section): turn <strong>fully counter-clockwise</strong> to zero.</li>
     </ul>
   </li>
   <li><strong>At the ISA 828 front panel, channel 1, set the controls before sending any signal:</strong>
     <ul>
-      <li><strong>Input select:</strong> set to <strong>MIC</strong> (not LINE, not INSERT). The channel is now listening to the rear XLR jack, which is fed by Hosa panel 1 jack 1.</li>
+      <li><strong>Input select:</strong> set to <strong>MIC</strong> (not LINE, not INSERT). The channel is now listening to the rear XLR jack, which is wired through the wall to Hosa panel 1 jack 1.</li>
       <li><strong>Gain and Trim:</strong> the ISA splits its gain across two controls, a stepped <strong>Gain</strong> switch (0 to 60 dB in 10 dB steps) and a continuous <strong>Trim</strong>. Set the Gain switch to 0 and the Trim to minimum before the source makes sound.</li>
       <li><strong>Impedance:</strong> set to the standard position for now. This control changes how the preamp loads the mic, which shifts the tone; the standard setting is a safe default, and you can experiment with it once a clean signal is moving.</li>
     </ul>
@@ -932,7 +939,7 @@
       <li><strong>Phase:</strong> leave it off. Polarity matters when two mics capture the same source; with a single vocal mic there's nothing to be out of phase with.</li>
     </ul>
   </li>
-  <li><strong>Now stage the gain at the source:</strong> the goal is to set the loudness of the signal here, before it leaves the ISA, so that everything downstream (the Toft, the Behringer, the laptop) receives a clean, healthy line-level signal it doesn't have to fight.
+  <li><strong>Now stage the gain at the source:</strong> the goal is to set the loudness of the signal here, before it leaves the ISA, so that everything downstream (the Toft, the AudioBox, the laptop) receives a clean, healthy line-level signal it doesn't have to fight.
     <ul>
       <li><strong>Ask the singer to sing the loudest part of the song</strong> at full performance volume. Not a polite test, the real thing. The gain is being set for the loudest moment that will ever hit this mic during tracking.</li>
       <li><strong>Watch the channel 1 meter on the ISA.</strong> The lower lights show that signal is arriving; the overload indicator near the top warns that the signal is getting too hot. If the overload light catches, the signal is too loud.</li>
@@ -951,42 +958,53 @@
       <li><strong>MON LEVEL:</strong> turn fully counter-clockwise (zero). Nothing is returning to MON yet.</li>
       <li><strong>MON PAN:</strong> center (12 o'clock).</li>
       <li><strong>MUTE / AFL button:</strong> leave <strong>off</strong> (up, no LED lit).</li>
-      <li><strong>Routing buttons (1-2, 3-4, 5-6, 7-8):</strong> pull all four <strong>up</strong> so they're off. The channel goes to the master mix directly, not via a subgroup.</li>
-      <li><strong>L-R button:</strong> push <strong>down</strong> so the channel feeds the master mix bus.</li>
-      <li><strong>Channel PAN:</strong> center (12 o'clock). A mono vocal sits in the middle.</li>
+      <li><strong>Routing buttons (1-2, 3-4, 5-6, 7-8):</strong> press <strong>1-2</strong> down; leave 3-4, 5-6, and 7-8 up. The channel goes to submasters 1 and 2, the pair that feeds the AudioBox and the laptop.</li>
+      <li><strong>L-R button:</strong> leave <strong>up</strong>. The vocal reaches the master mix through submasters 1 and 2 (next step), not directly.</li>
+      <li><strong>Channel PAN:</strong> center (12 o'clock). With 1-2 pressed, center pan splits the vocal equally between submaster 1 and submaster 2, so a mono vocal is in the middle of the stereo pair.</li>
       <li><strong>Channel FADER:</strong> set at <strong>unity</strong> (the line marked 0 on the fader strip, usually about 3/4 of the way up the travel).</li>
     </ul>
   </li>
-  <li><strong>Finish gain-staging at the output, then bring the sound into the room.</strong> Up to this point everything has been done silently, with the meters as the only feedback. That's intentional: gain staging is a visual discipline first. The output is the last stage to check before opening the speakers.
+  <li><strong>At the Toft, submasters 1 and 2:</strong> these two strips are the recording bus. Set both the same way, except for MON PAN.
     <ul>
-      <li><strong>Ask the singer to sing</strong> at performance volume.</li>
-      <li><strong>Slowly raise the MASTER FADER</strong> from the bottom of its travel toward <strong>unity</strong>. Nothing in the room yet (MONITOR LEVEL is still at zero), so watch the <strong>master left/right bargraph meters</strong> in the master section. They should respond to the singing, peaking comfortably in the upper green range without lighting the top red segments.</li>
-      <li><strong>If the master meters are peaking into the red</strong> with the master fader at unity, something upstream is too loud. The first place to fix it is at the channel: pull the <strong>channel 1 fader</strong> down a couple of dB at a time until the master meters settle. Don't go back to the ISA or the channel INPUT GAIN to fix this; those were set for healthy recording level, and lowering them now would mean a quieter signal in the chain.</li>
-      <li><strong>Once the master meters look healthy</strong>, bring the sound into the room: <strong>slowly turn the MONITOR LEVEL knob</strong> clockwise from zero until the speakers are at a comfortable listening volume. The room fills with the singer's voice.</li>
-      <li><strong>From here on</strong>, leave the master fader alone and use the MONITOR LEVEL knob to change how loud things are in the room. The master fader sets what the master mix bus is doing (which is what the Behringer will eventually send to the laptop for recording); MONITOR LEVEL just sets how loud the speakers are.</li>
-      <li><strong>If the room is silent</strong> when MONITOR LEVEL reaches noon, walk back through the chain: master fader at unity, master meters showing signal, channel fader at unity, channel L-R button down, channel MUTE off, Toft channel meter showing signal during singing. Fix whichever step broke and try again.</li>
+      <li><strong>TAPE button:</strong> leave <strong>up</strong> on both, so each strip follows its live subgroup.</li>
+      <li><strong>Subgroup FADER:</strong> pull <strong>all the way down</strong> on both. These faders set the level at the SUBMASTER OUTPUT jacks, which go to the AudioBox and the laptop. They come up in Part 5.</li>
+      <li><strong>AUX 5 and AUX 6:</strong> both at zero.</li>
+      <li><strong>SOLO:</strong> off.</li>
+      <li><strong>MON PAN:</strong> submaster 1 fully <strong>left</strong>, submaster 2 fully <strong>right</strong>.</li>
+      <li><strong>MON LEVEL:</strong> turn both up by the same amount, to about <strong>3 o'clock</strong>. MON LEVEL puts the subgroup into the master mix, so what you record on submasters 1 and 2 is also what you hear in the room.</li>
     </ul>
   </li>
-  <li><strong>The principle behind all of this:</strong> the loudness was set at the ISA (the earliest stage that can do it cleanly), and the Toft's INPUT GAIN only had to nudge or do nothing. If the Toft meter was silent or weak in the previous step and required a large INPUT GAIN move to come up, that's a sign the ISA gain is too low; go back and add gain there, not at the Toft. The rule is always the same: set the loudness at the earliest stage in the chain that can do the job cleanly. Adding gain later (at the Toft trim, in a recording app after capture) amplifies noise along with the signal.</li>
+  <li><strong>Finish gain-staging at the master fader, then add the sub.</strong> Up to this point everything has been done silently, with the meters as the only feedback. That's intentional: gain staging is a visual discipline first. The master fader is the last stage, and in this studio it also brings the sound into the room, since the monitor speakers are on MASTER O/P.
+    <ul>
+      <li><strong>Ask the singer to sing</strong> at performance volume.</li>
+      <li><strong>Slowly raise the MASTER FADER</strong> from the bottom of its travel toward <strong>unity</strong>. The voice comes up on the monitor speakers as the fader rises. Watch the <strong>master left/right bargraph meters</strong> in the master section: they should respond to the singing, peaking comfortably in the upper green range without lighting the top red segments.</li>
+      <li><strong>If the master meters are peaking into the red</strong> with the master fader at unity, something upstream is too loud. The first place to fix it is at the channel: pull the <strong>channel 1 fader</strong> down a couple of dB at a time until the master meters settle. Don't go back to the ISA or the channel INPUT GAIN to fix this; those were set for healthy recording level, and lowering them now would mean a quieter signal in the chain.</li>
+      <li><strong>If the room is too loud</strong> before the master fader reaches unity, stop there. The master fader sets how loud the monitor speakers are and nothing else: the recording comes from submasters 1 and 2.</li>
+      <li><strong>Once the master meters look healthy</strong> and the room is at a comfortable level, add the sub: <strong>slowly turn the MONITOR LEVEL knob</strong> clockwise from zero until the low end blends with the monitor speakers.</li>
+      <li><strong>From here on</strong>, the master fader sets how loud the monitor speakers are and MONITOR LEVEL sets how much sub. Neither one changes the recording; the submaster 1 and 2 faders set the recording level in Part 5.</li>
+      <li><strong>If the room is silent</strong> with the master fader up, walk back through the chain: master meters showing signal, submaster 1 and 2 MON LEVEL up and TAPE up, channel 1 routing button 1-2 down, channel MUTE off, channel fader at unity, Toft channel meter showing signal during singing. Fix whichever step broke and try again.</li>
+    </ul>
+  </li>
+  <li><strong>The principle behind all of this:</strong> the loudness was set at the ISA (the earliest stage that can do it cleanly), and the Toft's INPUT GAIN only had to nudge or do nothing. If the Toft meter was silent or weak in step 5 and required a large INPUT GAIN move to come up, that's a sign the ISA gain is too low; go back and add gain there, not at the Toft. The rule is always the same: set the loudness at the earliest stage in the chain that can do the job cleanly. Adding gain later (at the Toft trim, in a recording app after capture) amplifies noise along with the signal.</li>
 </ol>
 
 <hr>
 
 <h4 id="part-2-reference">Part 2 · Bring a reference track from the laptop into the Toft</h4>
 
-<p>The singer often wants to sing along to a reference track: a backing instrumental, the song they're covering, a rough mix of their arrangement. The reference lives on the laptop and travels into the Toft via the Behringer. While you build the session, the reference plays on the master mix so you can hear it on the control-room monitors and balance it against the vocal. In Part 6, before you record, you'll mute the reference channels so it stays out of the recorded take while the singer keeps hearing it in the headphone cue (Part 3).</p>
+<p>The singer often wants to sing along to a reference track: a backing instrumental, the song they're covering, a rough mix of their arrangement. The reference lives on the laptop and comes into the Toft through the AudioBox. It plays on the master mix, so you hear it on the monitor speakers and balance it against the vocal, and it goes into the singer's headphone cue (Part 3). It never goes to submasters 1 and 2, so it stays off the recording.</p>
 
 <ol>
-  <li><strong>Plug in and set the interface format.</strong> Connect a USB cable from the laptop to the USB port on the rear of the Behringer. On the Mac, open <strong>Audio MIDI Setup</strong> (Applications &gt; Utilities), select the Behringer in the device list (it appears as <em>USB Audio CODEC</em> or <em>Xenyx QX1204USB</em>), and set its Format to <strong>48,000 Hz</strong> and <strong>16-bit</strong>. That is the most this interface offers; it does not do 24- or 32-bit. Make the Behringer the system output and input device while you are here.
+  <li><strong>Plug in and set the interface format.</strong> Connect a USB cable from the laptop to the USB port on the rear of the AudioBox. On the Mac, open <strong>Audio MIDI Setup</strong> (Applications &gt; Utilities), select the AudioBox in the device list (it appears as <em>AudioBox USB 96</em>), and set its Format to <strong>48,000 Hz</strong> and <strong>24-bit</strong>. Make the AudioBox the system output and input device while you are here.
     <div class="callout">
       <div class="callout-label">Match the project to the hardware</div>
-      <p>The rule for a clean recording: the project you record into runs at the same sample rate and bit depth as the interface you record through. This Behringer tops out at 48 kHz / 16-bit, so the whole session runs there: the reference, the project, and the take. Other gear sets other numbers (the phone recordings earlier in this module were 48 kHz / 24-bit; the Ableton sessions in Module 4 run at 48 kHz / 32-bit). The skill is reading what the interface supports and matching the project to it, every time you sit down at new gear.</p>
+      <p>The rule for a clean recording: the project you record into runs at the same sample rate and bit depth as the interface you record through. The AudioBox records at up to 96 kHz, 24-bit; in this studio the session runs at 48 kHz, 24-bit: the reference, the project, and the take. Other gear sets other numbers (the Behringer UM2 at some lab stations records at 16-bit; the Ableton sessions in Module 4 run at 48 kHz, 32-bit). The skill is reading what the interface supports and matching the project to it, every time you sit down at new gear.</p>
     </div>
   </li>
   <li><strong>Build the recording project.</strong> The reference and the recording both live in one project, set to match the interface.
     <ul>
-      <li><strong>Bounce the reference</strong> from wherever it lives as a <strong>48 kHz / 16-bit stereo WAV</strong>.</li>
-      <li><strong>Open a new project</strong> in your DAW, set it to <strong>48 kHz / 16-bit</strong>, and point its audio device at the Behringer.</li>
+      <li><strong>Bounce the reference</strong> from wherever it lives as a <strong>48 kHz, 24-bit stereo WAV</strong>.</li>
+      <li><strong>Open a new project</strong> in your DAW, set it to <strong>48 kHz, 24-bit</strong>, and point its audio device at the AudioBox.</li>
       <li><strong>Import the reference WAV</strong> onto a track. This is what the singer sings along to, and what plays out to the monitors and the cue.</li>
       <li><strong>Save and name the project</strong> before you go further.</li>
     </ul>
@@ -995,24 +1013,24 @@
       <p>Save the project in your own folder, <code>~/Documents/netid/recordings/</code>, with a name that still makes sense months later: lowercase, words joined by hyphens, performer and date. A vocal session for a singer named Garcia on September 23 becomes <code>garcia-vocal-2026-09-23</code>. Name the tracks inside plainly too: <code>reference</code> for the backing track, <code>vocal</code> for what you record. Clear labels are what let you reopen the session later and know what everything is.</p>
     </div>
   </li>
-  <li><strong>At the Behringer:</strong> route the USB return to the Control Room bus, which is what feeds the cable going into Toft LINE 9-10.
+  <li><strong>At the AudioBox:</strong> set the front panel so the Main outputs, which run to Toft LINE 9-10, send only the laptop's playback.
     <ul>
-      <li><strong>USB/2-TR source button</strong> (on the Control Room source matrix): press it <strong>in</strong>. The laptop's audio now appears on the Control Room bus.</li>
-      <li><strong>Important: do NOT press USB/2-TR TO MAIN.</strong> That button would route the laptop also onto the Behringer's Main Mix bus, which is the bus that will eventually carry the Toft's master mix back to the laptop for recording. If the laptop's reference ends up on the Main Mix, it gets recorded into itself (feedback loop on the recording side). Keep USB/2-TR TO MAIN off.</li>
-      <li><strong>Control Room level knob:</strong> set to <strong>noon</strong>. This is the level out of the Behringer's Control Room outputs, which run to Toft LINE 9-10.</li>
+      <li><strong>Mixer knob:</strong> turn it fully to <strong>Playback</strong>. Toward Input, the AudioBox also sends whatever reaches its inputs (submasters 1 and 2) out the Main outputs, and the vocal comes back into the Toft a second time on channels 9 and 10.</li>
+      <li><strong>Gain 1 and Gain 2:</strong> fully counter-clockwise. <strong>48V:</strong> off. The inputs come into use in Part 5.</li>
+      <li><strong>Main knob:</strong> set to <strong>noon</strong>. This is the level out of the AudioBox's Main outputs into Toft LINE 9-10.</li>
     </ul>
   </li>
-  <li><strong>Play the reference track in your project</strong> at a moderate level. The Behringer's main meters won't move (the reference isn't on the Main Mix), but the Toft's LINE 9 and 10 jacks are now receiving signal.</li>
+  <li><strong>Play the reference track in your project</strong> at a moderate level. The Toft's LINE 9 and 10 jacks are now receiving signal.</li>
   <li><strong>At the Toft, channels 9 and 10:</strong> set up both strips the same way you set up channel 1 in Part 1, with one key difference. Pause the laptop first so this happens silently.
     <ul>
       <li><strong>+48V, PHASE, I/P REV:</strong> all <strong>off</strong>.</li>
-      <li><strong>LINE button:</strong> <strong>press it in</strong> on both. This is the key difference from channel 1. With LINE pressed, each channel listens to its rear LINE jack (the Behringer's Control Room outputs, left on 9 and right on 10) instead of the mic XLR.</li>
+      <li><strong>LINE button:</strong> <strong>press it in</strong> on both. This is the key difference from channel 1. With LINE pressed, each channel listens to its rear LINE jack (the AudioBox's Main outputs, left on 9 and right on 10) instead of the mic XLR.</li>
       <li><strong>INPUT GAIN:</strong> start both fully counter-clockwise.</li>
       <li><strong>EQ section:</strong> leave alone (EQ IN off, knobs centered, HPF off).</li>
       <li><strong>Aux sends 1-6:</strong> all at zero. Aux 1 will come up in Part 3 to put the reference in the headphone cue.</li>
       <li><strong>MON LEVEL:</strong> zero. MUTE/AFL off.</li>
-      <li><strong>Routing buttons (1-2, 3-4, 5-6, 7-8):</strong> all up.</li>
-      <li><strong>L-R button: press it in</strong> on both, the same as the vocal. The reference now plays on the master mix, so you can hear it on the control-room monitors while you build the chain. In Part 6 you'll mute channels 9 and 10 to keep the reference out of the recorded take.</li>
+      <li><strong>Routing buttons (1-2, 3-4, 5-6, 7-8):</strong> all up. Channels 9 and 10 never go to submasters 1 and 2; that keeps the reference off the recording.</li>
+      <li><strong>L-R button: press it in</strong> on both. The reference plays on the master mix, so you hear it on the monitor speakers while you build the chain.</li>
       <li><strong>Channel PAN:</strong> turn channel 9 fully <strong>left</strong> and channel 10 fully <strong>right</strong>. The two channels carry the left and right sides of the laptop's stereo image.</li>
       <li><strong>Channel FADER:</strong> set both at <strong>unity</strong>. With L-R in, these faders set how loud the reference sits on the monitors against the vocal; unity is a good starting point.</li>
     </ul>
@@ -1023,86 +1041,45 @@
       <li>Match the move on channel 10: turn its INPUT GAIN by roughly the same amount.</li>
     </ul>
   </li>
-  <li><strong>Confirm the reference is in the room.</strong> With the monitors up from Part 1, you now hear the reference track alongside the vocal. Set the balance between them with the channel 9 and 10 faders against the vocal on channel 1. This is the working mix you'll build the reverb and compression around in Parts 4 and 5.</li>
+  <li><strong>Confirm the reference is in the room.</strong> With the monitor speakers up from Part 1, you now hear the reference track alongside the vocal. Set the balance between them with the channel 9 and 10 faders against the vocal on channel 1. This is the working mix you'll build the compression around in Part 4.</li>
 </ol>
 
 <hr>
 
 <h4 id="part-3-cue">Part 3 · Build the singer's headphone cue</h4>
 
-<p>The singer needs to hear themselves and the reference track in the headphones. The studio's headphone path is: Toft <strong>Aux 1 (L)</strong> and <strong>Aux 2 (R)</strong> → Rane MH4 → headphones in the live room. Whatever channels turn up their Aux 1 and Aux 2 knobs reach the singer's ears.</p>
+<p>The singer needs to hear themselves and the reference track in the headphones. The studio's headphone path is: Toft <strong>Aux 1 (L)</strong> and <strong>Aux 2 (R)</strong> → Furman HDS-6 in the control room → Ethernet cable through the wall → HR-6 stations in the live room. Whatever channels turn up their Aux 1 and Aux 2 knobs reach the singer's ears.</p>
 
 <ol>
-  <li><strong>In the live room:</strong> plug the singer's headphones into <strong>jack 1</strong> on the front of the Rane MH4.</li>
-  <li><strong>Set the Rane MH4 jack 1 level knob</strong> to about <strong>9 o'clock</strong> (low, so nothing startling reaches the singer's ears when signal first arrives).</li>
+  <li><strong>In the live room:</strong> plug the singer's headphones into one of the two headphone jacks on <strong>HR-6 station 1</strong>.</li>
+  <li><strong>Set station 1's stereo-feed knob</strong> to about <strong>9 o'clock</strong> (low, so nothing startling reaches the singer's ears when signal first arrives). Leave the four mono knobs down; nothing is connected to them.</li>
   <li><strong>At the Toft master section:</strong> find the <strong>Aux 1</strong> and <strong>Aux 2</strong> knobs at the top of the master strip (the row of six small green Aux Master knobs). Set both to unity (around 12 o'clock).</li>
-  <li><strong>Put the vocal in the cue.</strong> On Toft channel 1 (the vocal): set <strong>Aux 1</strong> and <strong>Aux 2</strong> to <strong>pre-fader</strong> (the small PRE switch next to each knob; pre is engaged). Pre-fader is correct here: the engineer's channel fader is for the control-room mix, not for what the singer hears. Slowly turn the channel 1 Aux 1 and Aux 2 knobs up together, by the same amount, so the vocal sits in the center of the cue. Ask the singer to speak; if needed, raise the Rane jack 1 level knob until they say it's comfortable.</li>
+  <li><strong>Put the vocal in the cue.</strong> On Toft channel 1 (the vocal): set <strong>Aux 1</strong> and <strong>Aux 2</strong> to <strong>pre-fader</strong> (the small PRE switch next to each knob; pre is engaged). Pre-fader is correct here: the engineer's channel fader is for the control-room mix, not for what the singer hears. Slowly turn the channel 1 Aux 1 and Aux 2 knobs up together, by the same amount, so the vocal sits in the center of the cue. Ask the singer to speak; if needed, raise the stereo-feed knob on the singer's station until they say it's comfortable.</li>
   <li><strong>Put the reference track in the cue.</strong> On channel 9 (reference L): turn up <strong>Aux 1</strong> (which is the L side of the cue), leave Aux 2 down. On channel 10 (reference R): turn up <strong>Aux 2</strong>, leave Aux 1 down. Set both to pre-fader. The reference now plays in stereo in the singer's headphones, parallel to the vocal.</li>
-  <li><strong>Balance the cue with the singer:</strong> ask "more of your voice or more of the track?" Adjust the Aux 1 and Aux 2 sends on channel 1 (the vocal), and on channels 9 and 10 (the reference), until the blend is what the singer wants. If the whole cue is too loud or too quiet, use the Rane jack 1 level knob.</li>
+  <li><strong>Balance the cue with the singer:</strong> ask "more of your voice or more of the track?" Adjust the Aux 1 and Aux 2 sends on channel 1 (the vocal), and on channels 9 and 10 (the reference), until the blend is what the singer wants. If the whole cue is too loud or too quiet, use the stereo-feed knob on the singer's station.</li>
 </ol>
 
-<p>The cue mix is now independent of the control-room mix. The engineer can mute the vocal in the room, ride a fader, or solo something for inspection, and the singer hears none of it. If a second player joins on a later take, plug their headphones into Rane jack 2 and set jack 2's level knob to their preference. Everyone shares the same blend with their own volume.</p>
+<p>The cue mix is now independent of the control-room mix. The engineer can mute the vocal in the room or ride a fader, and the singer hears none of it. If a second player joins on a later take, plug their headphones into the second jack on station 1 or into station 2. Everyone hears the same blend; each station sets its own level with its stereo-feed knob.</p>
 
 <hr>
 
-<h4 id="part-4-reverb">Part 4 · Add a reverb on the vocal via the Behringer FX</h4>
+<h4 id="part-4-compression">Part 4 · Add parallel compression on the vocal via the SSL</h4>
 
-<p>A reverb on the vocal makes it sit in a sense of space (a room, a hall, a plate). The send-and-return setup: Toft channel 1 sends a copy of the dry vocal to <strong>Aux 3 (L)</strong> and <strong>Aux 4 (R)</strong>; the Aux 3-4 sends arrive at the Behringer on channels 3 and 4 XLR; those channels feed the Behringer's <strong>ALT 3-4 bus</strong> through the built-in FX processor (loaded with a reverb preset); the wet stereo output of the FX returns to the Toft on <strong>LINE inputs 11 and 12</strong>. The wet returns join the master mix on their own channels, blended against the dry vocal on channel 1.</p>
-
-<ol>
-  <li><strong>At the Toft master section:</strong> set <strong>Aux 3</strong> and <strong>Aux 4</strong> on the Aux Master row to unity (around 12 o'clock).</li>
-  <li><strong>At the Behringer, load a reverb preset.</strong> The <strong>Multi-FX processor</strong> sits on the right-hand side of the Behringer, near the master section, with a small numeric display and a knob marked <strong>PROGRAM</strong>. Turn the PROGRAM knob to scroll the presets; the number blinks on the display as you pass each one. The reverbs are grouped at the start of the list (hall, room, plate, and a few more). Stop on one and <strong>press the PROGRAM knob in</strong> to load it; the blinking stops, which tells you the preset is active.
-    <div class="callout">
-      <div class="callout-label">Want a different effect?</div>
-      <p>The Multi-FX processor runs one preset at a time, so reaching for something other than reverb is the same move: turn the PROGRAM knob to a new preset and press to load. A few worth trying on a vocal: a <strong>delay</strong> or <strong>echo</strong> for repeats trailing each phrase; a <strong>chorus</strong> to thicken and widen a thin voice; a <strong>flanger</strong> or <strong>phaser</strong> for slow, sweeping motion; a <strong>pitch shift</strong> or <strong>detune</strong> for a doubled or harmonized sound; or a <strong>delay-plus-reverb</strong> combination patch for one spacious wash. To layer two of these at once you would need a second processor, which is why the studio runs compression on the separate SSL rather than here.</p>
-    </div>
-  </li>
-  <li><strong>At the Behringer, channels 3 and 4:</strong> set the strip controls so the Aux 3-4 sends from the Toft pass through the FX and out to the ALT 3-4 bus.
-    <ul>
-      <li><strong>Gain (channels 3 and 4):</strong> start at noon. The Toft is sending a line-level Aux signal into the Behringer's XLR mic input; the Behringer's preamp is the gain stage. Watch the FX send meter as you turn up the Toft's Aux 3-4 sends in step 5; adjust gain on Behringer ch 3-4 if needed.</li>
-      <li><strong>FX send (channels 3 and 4):</strong> turn up to noon. This feeds the channel into the built-in FX processor; the processed signal returns to the channel.</li>
-      <li><strong>MUTE button (channels 3 and 4):</strong> press <strong>in</strong>. On the Xenyx, MUTE takes the channel off the Main mix and routes it to the <strong>ALT 3-4 bus</strong> instead. That bus leaves the Behringer on the ALT 3-4 outputs and returns to the Toft on LINE 11-12, carrying the wet reverb.</li>
-      <li><strong>Channel faders (channels 3 and 4):</strong> set to <strong>unity</strong>, so the muted channels feed the ALT 3-4 bus at a healthy level.</li>
-    </ul>
-  </li>
-  <li><strong>At the Toft, channels 11 and 12:</strong> set up the strips like channels 9 and 10 in Part 2, with the L-R button pressed so the wet reverb reaches the master mix.
-    <ul>
-      <li><strong>LINE button:</strong> pressed in (the channels listen to the rear LINE jacks 11 and 12, which receive the Behringer ALT 3-4 outputs).</li>
-      <li><strong>Other top-of-strip controls:</strong> +48V off, PHASE off, I/P REV off, INPUT GAIN at zero (you'll trim in step 6).</li>
-      <li><strong>EQ section:</strong> leave alone.</li>
-      <li><strong>Aux sends 3-6:</strong> at zero. Aux 1 and Aux 2 come up at the end of this part to put reverb in the singer's cue.</li>
-      <li><strong>MON LEVEL:</strong> zero. MUTE/AFL off.</li>
-      <li><strong>Subgroup routing buttons:</strong> all up.</li>
-      <li><strong>L-R button: press DOWN</strong> on both channels. The wet reverb joins the master mix.</li>
-      <li><strong>Channel PAN:</strong> hard left on channel 11, hard right on channel 12. (Preserves the reverb's stereo width.)</li>
-      <li><strong>Channel FADERS:</strong> start at <strong>-∞</strong> (all the way down) so the wet doesn't blast into the master before you've staged its gain.</li>
-    </ul>
-  </li>
-  <li><strong>Send the vocal to the reverb.</strong> On Toft channel 1: find the <strong>Aux 3</strong> and <strong>Aux 4</strong> knobs. Set both to <strong>post-fader</strong> (the PRE switch next to each knob is up). Post-fader is correct for an effects send: if you pull the dry vocal down, the wet should follow. Turn Aux 3 and Aux 4 up together, by the same amount, while the singer sings.</li>
-  <li><strong>Stage the wet return.</strong> Watch Toft channels 11 and 12 meters; bring up <strong>INPUT GAIN</strong> on each until the green meter LED pulses with the reverb tails. Then bring up the channel 11 and 12 faders from -∞ toward unity, watching the master meters and listening in the room. The wet sits behind the dry; how far back is a creative choice.</li>
-  <li><strong>Adjust to taste.</strong> Two controls for the wet/dry balance: the Aux 3-4 send on channel 1 (how much vocal goes to the reverb in the first place) and the channel 11-12 faders (how loud the wet return joins the master mix). Move whichever feels right for the gesture you want.</li>
-  <li><strong>Put a little reverb in the singer's cue.</strong> Singers perform better with some space around the voice. On Toft channel 11, turn up <strong>Aux 1</strong> (the left side of the cue); on channel 12, turn up <strong>Aux 2</strong> (the right side). Set both to pre-fader, matching the rest of the cue. The wet reverb now reaches the headphones in stereo, independent of how much reverb sits in the room and on the recording (which the channel 11-12 faders set). A light touch is plenty.</li>
-</ol>
-
-<hr>
-
-<h4 id="part-5-compression">Part 5 · Add parallel compression on the vocal via the SSL</h4>
-
-<p>Parallel compression keeps the dry vocal intact on channel 1 and adds a heavily compressed copy alongside it on the master mix. The blend is the engineer's main control: full dynamics on the dry, full squash on the wet, dialed together. Same send-and-return shape as the reverb in Part 4, with two differences: the send goes on Aux 5-6 (which run direct to the SSL), and the return arrives on Toft LINE 13-14.</p>
+<p>Parallel compression keeps the dry vocal intact on channel 1 and adds a heavily compressed copy alongside it. The blend is the engineer's main control: full dynamics on the dry, full squash on the wet, dialed together. The send goes out on Aux 5-6 (which run direct to the SSL), and the return comes back on Toft LINE 13-14. The return channels go to submasters 1 and 2 with the vocal, so the compression is on the recording.</p>
 
 <ol>
   <li><strong>At the Toft master section:</strong> set <strong>Aux 5</strong> and <strong>Aux 6</strong> on the Aux Master row to unity (around 12 o'clock).</li>
-  <li><strong>At the Toft, channels 13 and 14:</strong> set up like channels 11 and 12 in Part 4.
+  <li><strong>At the Toft, channels 13 and 14:</strong> set up like channels 9 and 10 in Part 2, with one difference: they route to submasters 1 and 2, the same as the vocal.
     <ul>
       <li><strong>LINE button:</strong> pressed in.</li>
-      <li><strong>+48V, PHASE, I/P REV:</strong> off. <strong>INPUT GAIN:</strong> zero. EQ alone. Auxes at zero. MON LEVEL zero. MUTE/AFL off. Subgroup routing up.</li>
-      <li><strong>L-R button: press DOWN</strong> on both channels.</li>
-      <li><strong>Channel PAN:</strong> hard left on 13, hard right on 14.</li>
+      <li><strong>+48V, PHASE, I/P REV:</strong> off. <strong>INPUT GAIN:</strong> zero. EQ alone. Auxes at zero. MON LEVEL zero. MUTE/AFL off.</li>
+      <li><strong>Routing buttons:</strong> press <strong>1-2</strong> down on both channels; leave 3-4, 5-6, 7-8, and <strong>L-R</strong> up. The compressed return joins the vocal on submasters 1 and 2.</li>
+      <li><strong>Channel PAN:</strong> hard left on 13, hard right on 14. With 1-2 pressed, channel 13 goes to submaster 1 and channel 14 to submaster 2.</li>
       <li><strong>Channel FADERS:</strong> start at -∞.</li>
     </ul>
   </li>
   <li><strong>At the SSL:</strong> press <strong>IN</strong> so the compressor is engaged. Set gentle starting points: <strong>Ratio</strong> 2:1, <strong>Attack</strong> 30 ms, <strong>Release</strong> 0.3 s, <strong>Threshold</strong> high (clockwise, no gain reduction yet), <strong>Make-up gain</strong> 0 dB. Leave the unit's other two buttons <strong>out</strong>: the external side-chain (<strong>KEY</strong>) button, which would make the compressor trigger from the rear key input instead of the vocal itself, and <strong>Auto Fade</strong>, a timed fade feature unrelated to compression (its <strong>Rate</strong> knob does nothing while Auto Fade is off).</li>
-  <li><strong>Send the vocal to the compressor.</strong> On Toft channel 1: find the <strong>Aux 5</strong> and <strong>Aux 6</strong> knobs. Set both to <strong>post-fader</strong> (same logic as the reverb: pull the dry down, the wet follows). Turn Aux 5 and Aux 6 up together while the singer sings. Watch the SSL's VU meter; bring the threshold down (counter-clockwise) until the loudest words pull the needle down by <strong>3 to 6 dB</strong>. The compressor is squashing the wet copy hard, which is what parallel compression wants.</li>
+  <li><strong>Send the vocal to the compressor.</strong> On Toft channel 1: find the <strong>Aux 5</strong> and <strong>Aux 6</strong> knobs. Set both to <strong>post-fader</strong> (pull the dry down and the wet follows). Turn Aux 5 and Aux 6 up together while the singer sings. Watch the SSL's VU meter; bring the threshold down (counter-clockwise) until the loudest words pull the needle down by <strong>3 to 6 dB</strong>. The compressor is squashing the wet copy hard, which is what parallel compression wants.</li>
   <li><strong>Stage the wet return.</strong> Watch Toft channels 13 and 14 meters; bring up INPUT GAIN on each until the meters pulse with the compressed signal. Then bring the channel 13 and 14 faders up from -∞ toward unity.</li>
   <li><strong>Blend.</strong> The dry vocal lives on channel 1's fader. The wet (compressed) lives on the channel 13 and 14 faders. Pull both up together to fill out the vocal; pull the wet back if it's overwhelming the dry. The blend is the parallel-comp control. A common starting place is dry at unity, wet about -6 dB below the dry.</li>
 </ol>
@@ -1111,39 +1088,31 @@
 
 <hr>
 
-<h4 id="part-6-record">Part 6 · Record the master mix to the laptop</h4>
+<h4 id="part-5-record">Part 5 · Record submasters 1-2 to the laptop</h4>
 
-<p>The full mix on the master fader (dry vocal + wet reverb on 11-12 + wet compression on 13-14) is what the engineer hears in the room and what gets recorded. The singer hears something close but not identical in their headphones: their cue carries the dry vocal, the reference, and the reverb you sent to it in Part 4, but not the compression. To capture this mix, the Toft's <strong>Master O/P</strong> runs to the Behringer's <strong>LINE inputs 1 and 2</strong>; the Behringer routes those channels to its <strong>main mix bus</strong>; the main mix bus is what the laptop sees as its USB input, where the recording project on the laptop captures it as a stereo file.</p>
-
-<p>Before recording, <strong>mute channels 9 and 10 on the Toft</strong>. While you built the chain the reference played on the monitors (L-R in, Part 2); muting it now drops it out of the master mix so it stays off the recorded take. The singer keeps hearing the reference in the headphone cue, which is fed from the pre-fader Aux 1-2 sends set in Part 3 and is independent of the channel mute.</p>
+<p>Submasters 1 and 2 are the recording bus: the dry vocal from channel 1 and the compressed return on channels 13 and 14, all routed with the 1-2 buttons. The submaster outputs run to the AudioBox's inputs 1 and 2, and the laptop records them as a stereo file. The reference on channels 9 and 10 goes to the master mix and the cue only, so the room and the singer hear it and the recording doesn't. The singer's cue has the dry vocal and the reference, without the compression.</p>
 
 <div class="callout">
-  <div class="callout-label">Avoiding a feedback loop</div>
-  <p>This mute does more than keep the reference out of the recording. Channels 9 and 10 carry the laptop's playback returning from the Behringer's Control Room output, and the Toft master feeds the Behringer, which feeds the laptop. Leave 9 and 10 live on the master while the laptop monitors its input, and the signal circles: master into the Behringer, into the laptop, back out to channels 9 and 10, into the master again, louder on each pass. That is feedback. Muting 9 and 10 breaks the loop, so the only thing reaching the recording is the vocal and its effects.</p>
+  <div class="callout-label">Why there's no feedback loop</div>
+  <p>The laptop's playback comes back into the Toft on channels 9 and 10, and those channels go only to the master mix. Nothing the laptop plays can reach submasters 1 and 2, so nothing it plays can reach its own input. Pressing 1-2 on channel 9 or 10 would close the loop: submasters into the AudioBox, into the laptop, back out to channels 9 and 10, into the submasters again, louder on each pass. That is feedback. Keep 1-2 up on channels 9 and 10.</p>
 </div>
 
 <ol>
-  <li><strong>At the Behringer, channels 1 and 2:</strong> these are receiving the Toft's Master O/P L+R.
-    <ul>
-      <li><strong>Gain (channels 1 and 2):</strong> start at noon. The Toft is sending a line-level master signal into the Behringer's LINE inputs; adjust gain as needed once the singer is performing.</li>
-      <li><strong>Main mix faders (channels 1 and 2):</strong> bring up to <strong>unity</strong>. The Toft's master mix now appears on the Behringer's main mix bus.</li>
-      <li><strong>Other channel buttons:</strong> ALT 3-4 off (not engaged), MUTE off, FX send down (you don't need to route the master mix through the Behringer's FX).</li>
-    </ul>
-  </li>
-  <li><strong>Confirm the Behringer's main mix is sending out USB.</strong> The QX1204USB sends its main mix bus back out USB to the laptop automatically; there's no separate switch. Watch the Behringer's main mix meter LEDs respond to the singer.</li>
-  <li><strong>At the laptop, in the recording project from Part 2:</strong> add a new <strong>stereo</strong> audio track and set its input to the Behringer (the same <em>USB Audio CODEC</em> / <em>Xenyx QX1204USB</em>). This track captures the Toft master mix arriving over USB. The project is already at 48 kHz / 16-bit, matching the interface, so the take records at the session rate.</li>
-  <li><strong>Arm that track and watch the input meters in the app.</strong> They should respond to the singer. If they don't move, walk back through the chain: Behringer ch 1-2 main mix faders up, Behringer master fader up, Toft Master fader up, Toft channel 1 L-R down, channel 1 fader up, singer singing.</li>
-  <li><strong>Set the recording level.</strong> The target on the laptop's input meter is the same target you've been using all session: loudest peaks sitting around -6 to -3 dBFS, never lighting the red clip indicator. If peaks are too hot, the first place to fix it is at the Toft master fader (not at the laptop's input gain, not at the Behringer ch 1-2 gain). The Toft master is the cleanest stage to control the recording level.</li>
-  <li><strong>Record.</strong> Press record in the app, count the singer in, capture the take. Listen back to the take. The laptop's playback returns through the Behringer and out the Control Room outs to Toft LINE 9-10, the same channels the reference track uses. Un-mute channels 9 and 10 (you muted them to record) to hear the take on the control-room speakers. The recording captures dry vocal + wet reverb + wet compression, summed at the Toft master fader.</li>
+  <li><strong>At the AudioBox:</strong> confirm the front panel from Part 2. <strong>Gain 1</strong> and <strong>Gain 2</strong> fully counter-clockwise, <strong>48V</strong> off, <strong>Mixer</strong> fully to Playback.</li>
+  <li><strong>At the Toft, submasters 1 and 2:</strong> confirm both subgroup faders are <strong>all the way down</strong>.</li>
+  <li><strong>At the laptop, in the recording project from Part 2:</strong> add a new <strong>stereo</strong> audio track and set its input to the AudioBox, <strong>inputs 1 and 2</strong>. This track records submasters 1 and 2. Turn the track's input monitoring off; with it on, the vocal comes back a second time, slightly late, on channels 9 and 10. The project is already at 48 kHz, 24-bit, matching the interface, so the take records at the session rate.</li>
+  <li><strong>Arm the track and set the recording level.</strong> Ask the singer to sing at performance volume. Raise the <strong>submaster 1 and 2 faders</strong> together, slowly, from the bottom, while you watch the laptop's input meter and the AudioBox's clip LEDs. The target is the same one you've used all session: loudest peaks around -6 to -3 dBFS, never lighting the red clip indicator. The Toft's submaster outputs are line level and the AudioBox's inputs are built for microphones and instruments, so the faders stop well below unity. Set the level here, at the submaster faders, and leave the AudioBox's Gain knobs at minimum.</li>
+  <li><strong>If the input meters don't move,</strong> walk back through the chain: track input set to AudioBox inputs 1 and 2, track armed, AudioBox USB cable connected, submaster 1 and 2 faders up, channel 1 routing button 1-2 down, channel 1 fader up, singer singing.</li>
+  <li><strong>Record.</strong> Press record in the app, count the singer in, capture the take. Then play it back. The laptop's playback comes into the Toft on channels 9 and 10, the same channels as the reference, so you hear the take on the monitor speakers with the reference under it. The recording has the dry vocal and the compression, summed on submasters 1 and 2.</li>
 </ol>
 
 <hr>
 
 <h3 id="comping">Comping the takes</h3>
 
-<p>You rarely keep one take whole. Across several passes, one take has the strongest first verse, another nails the last chorus, a third has the cleanest line into the bridge. <strong>Comping</strong> (short for compositing) is building one final performance from the best moments of several takes. You do it right in the recording project from Part 6, where the passes you recorded sit on the vocal track at the session's 48 kHz / 16-bit.</p>
+<p>You rarely keep one take whole. Across several passes, one take has the strongest first verse, another nails the last chorus, a third has the cleanest line into the bridge. <strong>Comping</strong> (short for compositing) is building one final performance from the best moments of several takes. You do it right in the recording project from Part 5, where the passes you recorded sit on the vocal track at the session's 48 kHz, 24-bit.</p>
 
-<p>Recording several passes over the same stretch of the song already stacked them for you: Logic groups them into a Take Folder, Live into Take Lanes. The two guides below pick up from there; use the one for the DAW you recorded in. (If you recorded in a different app, first export each take as a 48 kHz / 16-bit WAV and import them onto one track in Logic or Ableton.)</p>
+<p>Recording several passes over the same stretch of the song already stacked them for you: Logic groups them into a Take Folder, Live into Take Lanes. The two guides below pick up from there; use the one for the DAW you recorded in. (If you recorded in a different app, first export each take as a 48 kHz, 24-bit WAV and import them onto one track in Logic or Ableton.)</p>
 
 <h4 id="comp-logic">Comping in Logic Pro</h4>
 
@@ -1153,7 +1122,7 @@
   <li><strong>Find your takes on the vocal track.</strong> Several passes over the same section stack into a <strong>Take Folder</strong> automatically. If your takes are separate regions instead, select them all, Control-click one, and choose <strong>Folder &gt; Pack Take Folder</strong> so each take sits on its own lane inside one folder.</li>
   <li><strong>Swipe to comp.</strong> Open the folder with its disclosure triangle to see every take. Drag across the part of any take you want to keep; the swiped section highlights and plays, and the comp row at the top of the folder shows the result. Move through the song phrase by phrase, swiping the best take for each.</li>
   <li><strong>Audition and refine.</strong> Play it back. To change a choice, swipe a different take over that span; Logic crossfades the join automatically, so phrase-to-phrase transitions stay smooth.</li>
-  <li><strong>Flatten and export.</strong> When the comp is right, open the Take Folder menu (top-left of the folder) and choose <strong>Flatten</strong> to render it to one region. Then bounce the project (File &gt; Bounce) or export the region (File &gt; Export) as a <strong>WAV at 48 kHz / 16-bit</strong>.</li>
+  <li><strong>Flatten and export.</strong> When the comp is right, open the Take Folder menu (top-left of the folder) and choose <strong>Flatten</strong> to render it to one region. Then bounce the project (File &gt; Bounce) or export the region (File &gt; Export) as a <strong>WAV at 48 kHz, 24-bit</strong>.</li>
 </ol>
 
 <h4 id="comp-ableton">Comping in Ableton Live</h4>
@@ -1164,7 +1133,7 @@
   <li><strong>Show your take lanes.</strong> Several passes over the same section stack into <strong>Take Lanes</strong> under the vocal track. Right-click the track and choose <strong>Show Take Lanes</strong> to reveal them, one pass per lane.</li>
   <li><strong>Comp phrase by phrase.</strong> In a take lane, drag a time range across the part you want; that selection is promoted to the main lane at the top and becomes the active take for that span. Work through the song, choosing the best take in each take lane for each phrase.</li>
   <li><strong>Audition and refine.</strong> Play the main lane back. To swap a choice, select the same range in a different take lane. If you hear a click at a join, drag the fade handle at the clip edge to add a short crossfade.</li>
-  <li><strong>Consolidate and export.</strong> Select the full span of the finished comp in the main lane and press <strong>Cmd-J</strong> (Ctrl-J on Windows) to consolidate it into one clip. Then File &gt; Export Audio/Video and render a <strong>WAV at 48 kHz / 16-bit</strong>.</li>
+  <li><strong>Consolidate and export.</strong> Select the full span of the finished comp in the main lane and press <strong>Cmd-J</strong> (Ctrl-J on Windows) to consolidate it into one clip. Then File &gt; Export Audio/Video and render a <strong>WAV at 48 kHz, 24-bit</strong>.</li>
 </ol>
 
 <footer class="handout-footer">
