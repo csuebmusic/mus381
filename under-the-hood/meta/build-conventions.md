@@ -409,10 +409,8 @@ Markdown docs (module specs, TA notes, this folder) use the H1 to identify thems
 
 | Document type | H1 line |
 |---|---|
-| Module spec / TA notes (merged) | `# Module XX — [Module title]` |
+| Module README (spec and TA notes) | `# Module XX · [module title]`, title in lowercase |
 | Operational doc (server archival policy, sample bank prep, this folder's files) | `# [Document title]` (no module reference) |
-
-The repository README (`README.md` at the repo root) is student-facing and takes no em dashes. The em-dash H1 form in the table above applies to internal Markdown only.
 
 If a metadata line is useful immediately under the H1, put it as bold text and keep it dateless. For example: `**Weeks 2–5** (7 sessions)`. Calendar date ranges belong in `syllabus.html`.
 
