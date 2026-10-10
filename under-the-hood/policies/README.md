@@ -4,7 +4,7 @@ Cross-cutting course policies that apply across modules. Operational documents t
 
 ## Contents
 
-- [`server-archival-policy.md`](./server-archival-policy.md) — what happens to student working files on the class server over time. Files stay until the instructor removes them; the annual summer review clears folders for students who have left or are not continuing.
+- [`server-archival-policy.md`](./server-archival-policy.md): what happens to student working files on the class server over time. Files stay until the instructor removes them; the annual summer review clears folders for students who have left or are not continuing.
 
 ## Adding new policies
 

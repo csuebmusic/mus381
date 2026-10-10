@@ -1,4 +1,4 @@
-# Server file retention and archival policy — MUS 381
+# Server file retention and archival policy
 
 **Status:** Current.
 **Owner:** Inés Thiebaut (course PI and lab manager).
@@ -30,10 +30,10 @@ An SFTP server at `sftp://134.154.190.239`, port 22, reachable from inside the l
 
 Files exist in one of two states:
 
-1. **On the server** — read-write, in the student's own folder or in `/public`. This is the normal state and has no expiry.
-2. **Deleted** — permanently removed. Cannot be recovered.
+1. On the server, read-write, in the student's own folder or in `/public`. This is the normal state and has no expiry.
+2. Deleted, permanently, with no recovery.
 
-There is no separate archive tier and no automatic deletion. Nothing leaves the server except by a deliberate action taken by the instructor.
+Files leave the server only when the instructor deletes them. There is no archive tier and no automatic deletion.
 
 ## Lifecycle
 
@@ -47,30 +47,16 @@ Once a year, in summer, the instructor reviews the student folders and clears fo
 
 Students are notified twice:
 
-- **At enrollment in MUS 381**, the syllabus and Day 1 orientation mention file retention and point to this document.
-- **Before any deletion**, students receive an email from the instructor at least four weeks before the review date. The notice includes the date, instructions for downloading their files, and a contact path for questions or requests for extension.
+- At enrollment in MUS 381, the syllabus and Day 1 orientation mention file retention and point to this document.
+- Before any deletion, students receive an email from the instructor at least four weeks before the review date. The notice includes the date, instructions for downloading their files, and a contact path for questions or requests for extension.
 
 ## Responsibilities
 
-**Instructor (course PI):**
+The instructor (course PI) owns this policy, confirms the "not continuing" student list each summer, sends the notification email, performs the deletions, handles requests for extension, and updates the policy.
 
-- Owns this policy.
-- Confirms the "not continuing" student list each summer.
-- Sends the notification email.
-- Performs the deletions.
-- Handles requests for extension.
-- Updates this policy as the course evolves.
+The teaching assistant builds the term's `/public` folders before the semester starts, verifies student uploads through the term, and drafts the notification email for the instructor's signature.
 
-**Teaching assistant:**
-
-- Builds the term's `/public` folders before the semester starts.
-- Verifies student uploads through the term.
-- Drafts the notification email for the instructor's signature.
-
-**IT:**
-
-- Provides and maintains the server, accounts, and capacity.
-- Handles NetID authentication and password resets.
+IT provides and maintains the server, accounts, and capacity, and handles NetID authentication and password resets.
 
 ## Student rights
 

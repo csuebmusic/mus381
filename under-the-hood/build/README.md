@@ -22,57 +22,41 @@ Output directory: `assets/audio/module-02-week-02/`
 | `bd-4bit-44k.wav` | 44.1 kHz | 4-bit (quantized) | Severely degraded |
 | `alias-8k-no-filter.wav` | 44.1 kHz playback, 8 kHz bandwidth | 16-bit | Aliasing demo: same bandwidth as `sr-8k-16bit` but produced via naive decimation (no anti-alias filter), so high frequencies fold back as audible artifacts |
 
-All six files play at 44.1 kHz so they sound at the same speed in any
-browser's `<audio>` element. The "sample rate" demos are bandwidth-
-reduced via proper polyphase filtering to simulate what a real ADC
-captures at low rate; the "aliasing" demo skips the filter to expose
-the artifact that anti-alias filters exist to prevent. The "bit
-depth" demos are quantized to fewer levels to expose quantization
-noise.
+All six files play at 44.1 kHz. The sample-rate demos are band-limited
+with polyphase filtering, matching what an ADC captures at a low rate.
+The aliasing demo skips the filter, so high frequencies fold back. The
+bit-depth demos are quantized to fewer levels.
 
 ### The source sound
 
-A ~7.5-second sequence of 4 plucked-string-like notes (A major
-arpeggio: A3, C#4, E4, A4) using a Karplus-Strong-style synthesis
-algorithm. Designed to demonstrate both kinds of degradation:
-
-- **Sharp attacks** with high-frequency content reveal sample rate
-  effects (sample rate degradation rolls off the highs)
-- **Long natural decays into near-silence** reveal bit depth effects
-  (quantization noise becomes audible during quiet passages)
+A 7.5-second A major arpeggio (A3, C#4, E4, A4) of Karplus-Strong
+plucked-string notes. The sharp attacks have the high-frequency content
+that sample-rate reduction removes. The long decays into near-silence
+are where quantization noise becomes audible.
 
 ### Re-running
 
-To regenerate any of the audio files (e.g. if the source sound
-should change, or if you want to add more degradation steps):
 
 ```
 python3 under-the-hood/build/generate-audio-demos.py
 ```
 
-Requires `numpy` and `scipy`. The script is self-contained and idempotent —
-running it always produces the same output (the random seed used in
-the Karplus-Strong noise burst is not fixed, so each run produces
-slightly different timbral content, but the structural properties are
-the same).
-
-If you want the exact same output every time, add a line near the top:
-
-```python
-np.random.seed(42)
-```
+Requires `numpy` and `scipy`. The Karplus-Strong noise burst is
+unseeded, so each run differs slightly in timbre and keeps the same
+structure. For identical output, add `np.random.seed(42)` near the top
+of the script.
 
 ## `generate-audio-demos-week-03.py`
 
 Generates the audio demo files used in the Module 2 Week 3 reading
 (`module-02-audio-editing-mixing/lessons/04-reading-editing-envelope.html`). Twelve
-files in total, supporting four pedagogical moments in the reading.
+files in four sets.
 
 ### What it produces
 
 Output directory: `assets/audio/module-02-week-03/`
 
-**Three contrasting envelopes** (Section 1, the envelope concept):
+Section 1 (the envelope concept) has three contrasting envelopes:
 
 | File | Synthesis | Purpose |
 |---|---|---|
@@ -80,7 +64,7 @@ Output directory: `assets/audio/module-02-week-03/`
 | `env-sustained.wav` | Sine mixture with curved 1.8 s attack + 1.5 s release | Slow swell, long sustain, gentle decay (pad-like) |
 | `env-evolving.wav` | Filtered noise with slow LFO on cutoff | Continuous texture with no clear ASR boundaries |
 
-**One source, four envelopes** (Section 3, editing changes envelope):
+Section 3 (editing changes envelope) has one source with four envelopes:
 
 | File | Operation | Purpose |
 |---|---|---|
@@ -89,14 +73,14 @@ Output directory: `assets/audio/module-02-week-03/`
 | `edit-reversed.wav` | Source played backward | Demonstrates: attack ↔ release swap |
 | `edit-fade-in.wav` | Source with 1 s linear fade-in | Demonstrates: replacing a sharp attack with a slow one |
 
-**Edit-boundary seam** (Section 3, click pops at hard cuts):
+Section 3 also has the edit-boundary seam (click pops at hard cuts):
 
 | File | Operation | Purpose |
 |---|---|---|
 | `seam-hardcut.wav` | Two band-passed noise textures concatenated | Audible click at the boundary |
 | `seam-crossfade.wav` | Same two textures with 200 ms crossfade | No audible click |
 
-**Time-pitch coupling** (Section 2, tape physics):
+Section 2 (tape physics) has the time-pitch coupling set:
 
 | File | Operation | Purpose |
 |---|---|---|
@@ -108,10 +92,7 @@ The tape demos use ffmpeg's `asetrate` filter rather than DSP-based
 time-stretch or pitch-shift. `asetrate` reinterprets the file's
 sample rate without changing the sample data, which is mathematically
 identical to what a tape machine does at non-standard playback speed:
-duration and pitch shift together, by exactly the same ratio. This
-preserves the pedagogical claim of the section (time and pitch are
-*physically* coupled in this regime) — the demo doesn't cheat with
-modern processing.
+duration and pitch shift together, by exactly the same ratio.
 
 ### Re-running
 
@@ -134,28 +115,28 @@ Generates the audio demo files and two SVG diagrams used in the Module 2 Week 5 
 (`module-02-audio-editing-mixing/lessons/07-reading-dynamics.html`)
 and the source for the dynamics tool's embedded demo
 (`module-02-audio-editing-mixing/lessons/08-tool-mixing-dynamics.html`).
-Nineteen files in total, supporting the four main pedagogical moments
-in the reading (dynamic range, threshold + ratio, attack + release,
-limiting / loudness-wars) plus three smaller supplements (normalization
-contrast, timbre A/B, dynamics-tool demo source).
+Nineteen audio files: one set for each of the reading's four main
+sections (dynamic range, threshold and ratio, attack and release,
+limiting and the loudness wars) and three supplements (normalization
+contrast, timbre A/B, the dynamics tool's demo source).
 
 ### What it produces
 
 Output directory: `assets/audio/module-02-week-05/`
 
-- `range-wide.wav`, `range-narrow.wav` — Section 1 (dynamic range)
-- `tr-source.wav`, `tr-light.wav`, `tr-medium.wav`, `tr-heavy.wav` — Section 2 (threshold + ratio)
+- `range-wide.wav`, `range-narrow.wav`: Section 1 (dynamic range)
+- `tr-source.wav`, `tr-light.wav`, `tr-medium.wav`, `tr-heavy.wav`: Section 2 (threshold and ratio)
 - `ar-source.wav`, `ar-fast-attack.wav`, `ar-slow-attack.wav`,
-  `ar-fast-release.wav`, `ar-slow-release.wav` — Section 3 (attack + release)
-- `limit-natural.wav`, `limit-light.wav`, `limit-crushed.wav` — Section 4 (limiting / loudness wars)
-- `norm-quiet.wav`, `norm-loud.wav` — Section 2 supplement (normalization contrast: same shape, different peak; pairs with the wide/narrow demo to make the "scale vs. shape" distinction)
-- `timbre-scaled.wav`, `timbre-compressed.wav` — Section 2 supplement (timbre A/B at matched loudness: a scaled-only vs. compressed-then-makeup version, both peak-matched, so students can hear how compression changes the *sound* once the loudness illusion is removed)
-- `dynamic-tool-demo.wav` — source audio for the dynamics tool's built-in demo button (`08-tool-mixing-dynamics.html`). The tool embeds this file as base64 inside the HTML; see `embed-tool-demo.py` below for the re-embed step.
+  `ar-fast-release.wav`, `ar-slow-release.wav`: Section 3 (attack and release)
+- `limit-natural.wav`, `limit-light.wav`, `limit-crushed.wav`: Section 4 (limiting and the loudness wars)
+- `norm-quiet.wav`, `norm-loud.wav`: Section 2 supplement (normalization contrast, same shape at two peak levels)
+- `timbre-scaled.wav`, `timbre-compressed.wav`: Section 2 supplement (timbre A/B, a scaled-only version and a compressed version with makeup gain, peak-matched)
+- `dynamic-tool-demo.wav`: source audio for the dynamics tool's built-in demo button (`08-tool-mixing-dynamics.html`). The tool embeds this file as base64 inside the HTML; see `embed-tool-demo.py` below for the re-embed step.
 
 Diagrams (`assets/images/module-02-week-05/`), rendered as the source of truth and inlined into the reading:
 
-- `wide-vs-narrow.svg` — Section 1 (dynamic range): the source loop as wide and narrow waveform panels stacked on one shared vertical scale.
-- `norm-quiet-vs-loud.svg` — Section 2 (normalizing): quiet and peak-normalized versions of one loop stacked under a shared dashed ceiling, showing that normalization changes scale, not shape.
+- `wide-vs-narrow.svg`: Section 1 (dynamic range), the source loop as wide and narrow waveform panels stacked on one shared vertical scale.
+- `norm-quiet-vs-loud.svg`: Section 2 (normalizing), quiet and peak-normalized versions of one loop stacked under a shared dashed ceiling.
 
 ### Implementation notes
 
@@ -167,31 +148,25 @@ time constants of the form `exp(-1/(t*sr))`.
 Sections 1 and 4 (dynamic-range and limiter demos) use a real
 Ableton-rendered stereo loop as source material: conga slaps at
 maximum velocity, shaker and clave at low velocity. The natural
-dynamic range of the loop (~21 dB crest factor, ~57 dB spread between
-loudest and quietest 100 ms windows) makes the compression-vs-no
-demonstrations much clearer than any synthesized source.
-The loop lives at `assets/audio/source/dynamic-loop.wav`. These two
+dynamic range of the loop is about 21 dB crest factor, with about 57 dB
+between the loudest and quietest 100 ms windows.
+The loop is at `assets/audio/source/dynamic-loop.wav`. These two
 sections use stereo-linked compression (`compress_stereo`,
 `limit_stereo`): a single sidechain detector reads `max(|L|, |R|)` so
 both channels are reduced equally and the stereo image stays stable.
 
-Sections 2 and 3 use synthesized mono sources, because they need
-precise level control across multiple hits (Section 2's six varied-level
-hits) and precise transient timing (Section 3's percussion loop) that
-are easier to guarantee from code than from a recorded source.
+Sections 2 and 3 use synthesized mono sources: six hits at set levels
+in Section 2, and a percussion loop with exact transient timing in
+Section 3.
 
-Makeup gain is deliberately **not** applied to the Section 2 and 3
-compression demos — every demo in those sections is normalized to a
-peak of -3 dBFS at write time, so the audible squashing reflects actual
-compression, not the loudness illusion of automatic makeup. The
+The Section 2 and 3 compression demos have no makeup gain. Every file
+in those sections is normalized to a -3 dBFS peak at write time. The
 dynamic-range pair (Section 1) and the limiter trio (Section 4) are
-written without normalization so students can hear the loudness-wars
-effect: peak levels are matched within each comparison set, but
-perceived loudness rises dramatically (and audibly) with the
-compression amount.
+written without normalization: peaks match within each set, and
+perceived loudness rises with the amount of compression.
 
-The peak limiter has no lookahead, so fast transients can punch through
-the ceiling by a couple of dB. A final hard-clip pass at the ceiling
+The peak limiter has no lookahead, so fast transients can exceed the
+ceiling by a couple of dB. A final hard-clip pass at the ceiling
 enforces the peak exactly, so the peak meter reads identically across
 files within a comparison set.
 
@@ -226,7 +201,7 @@ are touched.
 python3 under-the-hood/build/embed-tool-demo.py
 ```
 
-Standard library only — no extra dependencies. Idempotent.
+Standard library only. Idempotent.
 
 ## `generate-orientation-sample.py`
 
@@ -253,19 +228,16 @@ burst at the onset for the mallet contact. Upper partials are given short
 T60s so the strike brightness falls away in the first few seconds and
 leaves the low ringing body behind; the spectral centroid runs from about
 860 Hz at the onset to about 550 Hz by 7 s. A global `(1 - t/16) ** 1.25`
-envelope carries the whole sound to true digital silence at the final
-sample.
+envelope reaches digital silence at the final sample.
 
 Measured decay, peak per second: -3 dBFS at 0 s, -13 at 5 s, -17 at 7 s,
--29 at 12 s, -47 at 15 s. The level at the 7-second mark is what the lab
-depends on: students select from roughly there to the end, delete, and fade
-what remains, so the region has to be audible on headphones and visible on
-the waveform. Anything steeper leaves them selecting a flat line.
+-29 at 12 s, -47 at 15 s. The signal from 7 s to the end is audible on
+headphones and visible on the waveform.
 
 The two channels share partial phases and differ by 4 cents of detune in
 opposite directions, a 6 percent difference in decay rate, and a 4 ms
-inter-channel delay. This gives slow beating and a wide image; the mono
-sum loses 1.7 dB against the stereo peak, with no deep cancellation.
+inter-channel delay. The result has slow beating and a wide image; the
+mono sum is 1.7 dB below the stereo peak, with no deep cancellation.
 
 ### Re-running
 

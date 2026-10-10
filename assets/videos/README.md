@@ -1,6 +1,6 @@
 # Videos
 
-Short Audacity screen recordings used as inline demos inside readings and lab handouts. Each clip shows a single operation in the DAW so students see in their own copy exactly what a term, control, or workflow looks like.
+Short Audacity screen recordings used as inline demos inside readings and lab handouts. Each clip shows one operation in Audacity.
 
 ## Directory layout
 
@@ -20,21 +20,20 @@ videos/
 └── …
 ```
 
-The editing-vocabulary set in Module 2 has six videos. The *loop* term doesn't get a video because Audacity's looping is split between a playback-only feature and the manual copy-paste-in-succession workaround. Both are covered in the prose definition with a forward pointer to Module 4 (Ableton), where looping is a first-class compositional tool.
+The Module 2 editing-vocabulary set has six videos. The loop term has no video; the reading defines it in prose and points ahead to Module 4 (Ableton).
 
-The Module 3 set is the recording lab's three UI-walkthrough clips. They differ from the editing-vocabulary clips: those show *operations on a waveform*, these show *UI navigation and live signal*. Same encoding, same embedding pattern; the recording specs below still apply with a couple of natural relaxations (no shared source audio, no rigid 5-to-12-second budget for a long end-to-end demo).
+The Module 3 set is the recording lab's three clips of the Audacity interface and live input. They use the same encoding and embedding as the Module 2 set, and the recording specs below apply except for the shared source audio and the 5-to-12-second length.
 
 ## Recording specs
 
-For consistency across the editing-vocabulary set, each clip should:
+Each clip in the editing-vocabulary set:
 
-- **Use the same source audio.** A single voice recording (or other sound with a clear envelope) used across all clips in the set. Reinforces the "one source, transformed by edits" framing of the module.
-- **Be silent.** No audio track. Record video only, or strip the audio in post. Browsers block autoplay-with-sound by default, and silent clips don't make surprise noise when students scroll past.
-- **Be short.** 5 to 12 seconds. Long enough to show source → operation → result. Short enough that students don't lose patience.
-- **Capture the Audacity track view, not the whole desktop.** The waveform region with at least the timeline, transport, and Edit menu visible. Avoid showing the whole macOS window with menus and the dock.
-- **Show the cursor.** Students need to see where you click. Hiding it makes the operation look magical.
-- **Hold the source for ~1 second** before doing anything, so students see the starting state.
-- **Hold the result for ~1 second** after the operation, so they see what changed.
+- uses the same source audio as the rest of the set, one voice recording or another sound with a clear envelope
+- is silent, with no audio track (record video only, or strip the audio in post)
+- runs 5 to 12 seconds and shows the source, the operation, and the result
+- captures the Audacity track view with at least the timeline, transport, and Edit menu visible, without the rest of the macOS window or the dock
+- shows the cursor
+- holds the source for about 1 second before the operation and the result for about 1 second after
 
 ## Encoding
 
@@ -51,8 +50,8 @@ ffmpeg -i input.mov \
 
 Notes on the flags:
 - `scale=1280:-2` resizes to 1280px wide preserving aspect ratio, with height rounded to an even number (required by H.264)
-- `fps=30` drops 60fps screen recordings to 30 — invisible quality loss for screen content, halves the file size
-- `crf 23` is a good quality/size sweet spot for screen recordings; lower (18-20) for higher quality, higher (26-28) for smaller files
+- `fps=30` drops 60 fps screen recordings to 30 and halves the file size, with no visible loss for screen content
+- `crf 23` sets the quality; lower (18–20) for higher quality, higher (26–28) for smaller files
 - `preset slow` spends more CPU during encoding for better compression
 - `+faststart` moves the MP4 metadata to the front so the video can start playing before fully loaded
 - `-an` strips any audio track
