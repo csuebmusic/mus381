@@ -105,7 +105,7 @@ Build conventions (naming, document chrome, dates, the visual system) are in [`u
 
 Student-facing pages are HTML sharing `assets/style.css`. TA notes, specs, and policies are Markdown.
 
-The file workflow is local-first, with the class server as sync. Students work in `~/Documents/[netid]/` on whichever lab computer they're at, download from the server at the start of a session, and upload at the end, using FileZilla. The server is reachable from the lab only.
+The file workflow is local-first, with the class server as sync. Students work in `~/Documents/netid/` on whichever lab computer they're at, download from the server at the start of a session, and upload at the end, using FileZilla. The server is reachable from the lab only.
 
 ## for the TA
 

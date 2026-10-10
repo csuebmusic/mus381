@@ -19,7 +19,7 @@ Circulate constantly. Don't lecture for more than 5 minutes at a stretch: demo a
 By the end of this session, students should be able to:
 
 1. Locate, open, and navigate Finder; understand file paths, folders, and basic keyboard shortcuts
-2. Set up a local working folder at `~/Documents/[netid]/` and connect to the class server with FileZilla
+2. Set up a local working folder at `~/Documents/netid/` and connect to the class server with FileZilla
 3. Save files using the course naming convention (lowercase, hyphens, no spaces, no special characters)
 4. Identify the gear used today (USB hub, audio interface, mic, headphones, XLR cable) and connect it correctly
 5. Set the three interface knobs (gain, main / output, headphone) in the correct order, starting from zero
@@ -47,7 +47,7 @@ Closing a window on macOS isn't the same as quitting the app. Two audio apps lef
 
 ## deliverable
 
-`week-01/lastname-hello.m4a`, uploaded into the student's own folder on the server (created by the server on first login, named with the student's NetID). The local copy at `~/Documents/[netid]/week-01/` should also exist. It isn't graded; it confirms each student made it through Day 1 with the workflow set up.
+`week-01/lastname-hello.m4a`, uploaded into the student's own folder on the server (created by the server on first login, named with the student's NetID). The local copy at `~/Documents/netid/week-01/` should also exist. It isn't graded; it confirms each student made it through Day 1 with the workflow set up.
 
 ---
 
@@ -143,7 +143,7 @@ That sequence takes about five minutes and covers Finder, folder creation, scree
 
 Show file extensions. Walk them through Finder → Settings → Advanced → **Show all filename extensions**. Some students will have it on already. Make sure everyone leaves with extensions visible. With extensions showing, students can tell a `.wav` from an `.mp3` at a glance.
 
-Point out two callouts in Part 1. The lab Desktop gets cleared periodically, and students save work in `~/Documents/[netid]/`, never on the Desktop or in Downloads. Clicking the red dot closes a window but leaves the app running; `Cmd + Q` quits.
+Point out two callouts in Part 1. The lab Desktop gets cleared periodically, and students save work in `~/Documents/netid/`, never on the Desktop or in Downloads. Clicking the red dot closes a window but leaves the app running; `Cmd + Q` quits.
 
 Students don't realize that Documents, Desktop, and Downloads are folders like any other. Show the same locations in Finder's sidebar, and show that the Desktop in the sidebar is the Desktop behind their windows.
 
@@ -281,7 +281,7 @@ Most students are seeing input level on a meter for the first time. Pause briefl
 
 Don't go deeper on Day 1. Digital headroom, dBFS, and the relationship between input gain and noise floor are Module 3 material.
 
-Record and save (Steps 9 and 10). Students click record, say their name and one word about why they're taking this class, stop, and listen back. Then File → Save, name it `lastname-hello`, and save it in `~/Documents/[netid]/week-01/` (local). The upload happens in Block 5.
+Record and save (Steps 9 and 10). Students click record, say their name and one word about why they're taking this class, stop, and listen back. Then File → Save, name it `lastname-hello`, and save it in `~/Documents/netid/week-01/` (local). The upload happens in Block 5.
 
 #### Block 4 confusions: gear, signal chain, recording
 
@@ -295,10 +295,10 @@ Record and save (Steps 9 and 10). Students click record, say their name and one 
 
 If gear is broken, swap in a spare or move the student to a working station. Every student leaves with a recording saved locally and uploaded to the server. Fix the failed gear after class.
 
-Before Block 5, circulate and confirm each student's file is in `~/Documents/[netid]/week-01/`. If a student's file isn't there:
+Before Block 5, circulate and confirm each student's file is in `~/Documents/netid/week-01/`. If a student's file isn't there:
 
 - Don't single them out publicly.
-- Most often they saved to Desktop or Downloads. Walk them through Recents in Finder to find the file, then drag it into `~/Documents/[netid]/week-01/`.
+- Most often they saved to Desktop or Downloads. Walk them through Recents in Finder to find the file, then drag it into `~/Documents/netid/week-01/`.
 
 ### Block 5 · exit routine (10 min)
 
@@ -306,7 +306,7 @@ Walk students through the end-of-session routine on the projector. The Session R
 
 1. Save the recording in QuickTime if they haven't already (`Cmd + S`)
 2. Open FileZilla and reconnect from the Quickconnect bar
-3. Left pane to `~/Documents/[netid]/`; right pane stays in their own folder on the server
+3. Left pane to `~/Documents/netid/`; right pane stays in their own folder on the server
 4. Click into the left pane, `Cmd + A`, drag across to the right pane
 5. On the overwrite dialog, choose **Overwrite if source newer**, tick **Always use this action** and **Apply to current queue only**, then OK
 6. Confirm the upload: the transfer queue empties, the file appears under **Successful transfers**, and the right pane shows `week-01/lastname-hello.m4a`
@@ -325,7 +325,7 @@ Once everyone is done, connect on the projector and scroll the student folders. 
 #### Block 5 confusions: the upload
 
 - Students mix up which pane is which. Say it the same way every time: left is this computer, right is the server. Point at the screen when you say it.
-- A student who drags `~/Documents/[netid]/` itself into their server folder ends up with `netid/netid/week-01/`. Teach the pattern once and hold to it: click into the pane, `Cmd + A`, drag the selection.
+- A student who drags `~/Documents/netid/` itself into their server folder ends up with `netid/netid/week-01/`. Teach the pattern once and hold to it: click into the pane, `Cmd + A`, drag the selection.
 - When nothing appears to happen, the transfer ran in the queue at the bottom of the window and finished in under a second. Show them the queue and the **Successful transfers** tab.
 - When an upload looks empty, the student probably chose **Skip** on the overwrite dialog, which uploads nothing. **Overwrite** and **Overwrite if source newer** both work at the end of a session.
 
@@ -338,7 +338,7 @@ Once everyone is done, connect on the projector and scroll the student folders. 
 - *"Can I use my own headphones?"* Yes. The lab provides them, and personal wired headphones are fine.
 - *"What if my audio interface isn't working?"* Unplug it from the hub, plug it into a different hub port, and check Audio MIDI Setup. If it still doesn't work, switch stations and report it.
 - *"Can I take my files home on a USB drive?"* Yes. Copy the folder from `~/Documents/` to a USB drive or personal cloud storage. Audacity is free and runs anywhere, so working at home on Module 2 material is fine. Ableton Live is lab-license-only, so Module 4 work mostly stays in the lab.
-- *"What if I forget to upload at the end?"* The work stays on that machine. At that same station it'll still be in `~/Documents/[netid]/`, but at a different station they'll be working from an older version. Always upload.
+- *"What if I forget to upload at the end?"* The work stays on that machine. At that same station it'll still be in `~/Documents/netid/`, but at a different station they'll be working from an older version. Always upload.
 - *"What if I forget to download at the start?"* They'll be working from an older version. If they notice mid-session, they save what they've done, then connect and check the server to see what they should have started with.
 - *"Do I need to buy a textbook?"* No. Course materials are free on the course website (csuebmusic.github.io/mus381) and on Canvas.
 
@@ -348,7 +348,7 @@ Once everyone is done, connect on the projector and scroll the student folders. 
 
 Block-specific confusions are with their blocks above.
 
-- A student who says "I saved it but I can't find it" saved to Desktop or Downloads instead of `~/Documents/[netid]/`. Walk them through Recents in Finder to find the file, then drag it into place.
+- A student who says "I saved it but I can't find it" saved to Desktop or Downloads instead of `~/Documents/netid/`. Walk them through Recents in Finder to find the file, then drag it into place.
 - A screenshot that didn't work means the wrong key combination: `Cmd + Shift + 4`, then drag a region. The screenshot saves to the Desktop.
 - When FileZilla can't connect, check the `sftp://` prefix and port 22 first, then the password.
 - When the local and server folders look different, it's a sync issue. The copy with the newer modification date is the one to keep; copy it over the older one. To see the difference, choose View → Directory Comparison → Compare modification time, then View → Directory Comparison → Enable. If a student can't tell which is newer, they ask you before deleting anything.

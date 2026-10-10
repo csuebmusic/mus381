@@ -166,7 +166,7 @@ Students open Audacity in every Module 2 lab and in the Mon Wk 5 work block. The
 1. Run the start-of-session routine on the Session Routines card (gear, connect, download).
 2. Open Audacity (it's in the Dock on lab machines).
 3. Check the project format in **Audacity → Settings… → Audio Settings**: Project Sample Rate 48000 Hz, Default Sample Format 24-bit PCM. This is the Module 2 format.
-4. Open last session's project file from `~/Documents/[netid]/` (from Wed Wk 3 on, `project-01/lastname-project01.aup3`).
+4. Open last session's project file from `~/Documents/netid/` (from Wed Wk 3 on, `project-01/lastname-project01.aup3`).
 
 Demonstrate this once on Wed Wk 2 and reinforce it on Wed Wk 3 and Wed Wk 4. If a student is still fumbling with it in Wk 5, they've been disengaging; check in.
 
@@ -218,7 +218,7 @@ From Module 1 (Wed Aug 19, five days earlier), they:
 
 - recorded a short audio file through the interface and mic in QuickTime (`lastname-hello.m4a`), saved it locally, and uploaded it
 - did a light first pass at gain staging (Module 1 names the move and says Module 3 covers it in depth)
-- know `~/Documents/[netid]/` and the server workflow
+- know `~/Documents/netid/` and the server workflow
 - know the basic gear in the room (interface, mic, headphones)
 
 What they don't know:
@@ -363,13 +363,13 @@ Your job in this block is to catch the moments where someone misses a step and f
 
 Suggested pacing within Block 3:
 
-- Step 1 (download the orientation sample, 6 min) is the first time students use the server workflow for course material. Watch for students who try to open `orientation-sample.wav` directly from the server instead of copying it into `~/Documents/[netid]/orientation/` first.
+- Step 1 (download the orientation sample, 6 min) is the first time students use the server workflow for course material. Watch for students who try to open `orientation-sample.wav` directly from the server instead of copying it into `~/Documents/netid/orientation/` first.
 - Step 2 (open Audacity, set the project format, 4 min) is quick: **Audacity → Settings… → Audio Settings**, Project Sample Rate 48000 Hz, Default Sample Format 24-bit PCM.
 - Step 3 (interface tour, 5 min): point at the eight numbered regions on the projector. The annotated screenshot is a reference; students don't need to memorize it today.
 - Step 4 (import, play, listen, 4 min) should be quick. Watch for students who double-click the WAV in Finder instead of using **File → Import → Audio…**.
 - Step 5 (select, cut, fade, 12 min) is the core of Part 2. Demonstrate each move on the projector. Pause after the cut so students play the sample and hear the abrupt ending before they add the fade. The fade turns a broken-sounding edit into a deliberate one; make sure they hear that contrast.
 - Step 6 (save the project, then export to WAV, 9 min): the project-vs-export distinction trips students up. Reinforce: "Save the project to keep working next time. Export the WAV to have something you can submit or share." On first export, Audacity shows a "How would you like to export?" prompt (Share to audio.com vs. On your computer). Make sure students click **Export to computer** and tick **Don't show again**. The export settings are WAV (Microsoft), Stereo, 48000 Hz, Signed 24-bit PCM, Entire Project.
-- Step 7 (end of session, 5 min): students upload everything in `~/Documents/[netid]/`, including the `orientation/` folder.
+- Step 7 (end of session, 5 min): students upload everything in `~/Documents/netid/`, including the `orientation/` folder.
 
 #### Block 4: wrap and preview (10 min)
 
@@ -550,8 +550,8 @@ Students take their gear and run the start-of-session steps on the card.
 
 Walk students through the handout's "setup" and "before the techniques" sections together on the projector. Four parts:
 
-- In FileZilla, students make `project-01/sources/` inside `~/Documents/[netid]/`, then copy the entire sample bank (40 to 80 sounds) from `/public/sample-banks/project-01/` into it. They work from this local copy for the rest of the module. The first copy takes a minute or two.
-- In Audacity, students save an empty project as `lastname-project01.aup3` in `~/Documents/[netid]/project-01/`. This is the Project 1 file they'll keep returning to. It stays empty until Block 3.
+- In FileZilla, students make `project-01/sources/` inside `~/Documents/netid/`, then copy the entire sample bank (40 to 80 sounds) from `/public/sample-banks/project-01/` into it. They work from this local copy for the rest of the module. The first copy takes a minute or two.
+- In Audacity, students save an empty project as `lastname-project01.aup3` in `~/Documents/netid/project-01/`. This is the Project 1 file they'll keep returning to. It stays empty until Block 3.
 - Then **File → New**, and save as `lastname-techniques-scratch.aup3` in the same folder. Today's technique exercises go here. If students lose track of which file they're in, the window's title bar shows the filename.
 - Walk through the zoom and zero-crossing prelude in the scratch project. Show the Cmd + E (zoom to selection) and Cmd + F (fit to width) pair on the projector. Then make a selection, press Z (**Select → At Zero Crossings**), and point out how the edges shift slightly onto zero crossings. Students do the handout's "try it" exercise on their own machines after the demo. The prelude takes about 5 minutes of this block.
 
@@ -610,7 +610,7 @@ A student stuck on "I don't know what I want to make" is normal. Suggest the han
 
 #### end of session: upload (last 5 min)
 
-Students follow the handout's end-of-session steps. Save the project (Cmd + S), connect in FileZilla, select everything in `~/Documents/[netid]/`, and drag it into their own folder on the server with **Overwrite if source newer**. Today that includes the sample bank, so it runs about a minute long; from Wk 4 on, the bank is already on the server and gets skipped. Then the rest of the card's routine: disconnect and quit FileZilla, sign out of browser accounts, quit all apps, knobs back to zero, unplug, stow the gear, chair in.
+Students follow the handout's end-of-session steps. Save the project (Cmd + S), connect in FileZilla, select everything in `~/Documents/netid/`, and drag it into their own folder on the server with **Overwrite if source newer**. Today that includes the sample bank, so it runs about a minute long; from Wk 4 on, the bank is already on the server and gets skipped. Then the rest of the card's routine: disconnect and quit FileZilla, sign out of browser accounts, quit all apps, knobs back to zero, unplug, stow the gear, chair in.
 
 ### common confusions
 
@@ -688,7 +688,7 @@ Open: "Show of hands: who's spent at least an hour on Project 1 since last Wedne
 
 Quick survey: "What's the hardest thing about it so far?" Listen to a few responses. Common answers: "I don't know what to make," "my edits sound choppy," "I don't know when to stop." All normal. Today's mixing tools often help with the second one.
 
-Then students follow the handout's setup section: confirm `lastname-project01.aup3` is in `~/Documents/[netid]/project-01/`, then open both `lastname-project01.aup3` and `lastname-techniques-scratch.aup3`. Both should be open in separate Audacity windows before Block 2.
+Then students follow the handout's setup section: confirm `lastname-project01.aup3` is in `~/Documents/netid/project-01/`, then open both `lastname-project01.aup3` and `lastname-techniques-scratch.aup3`. Both should be open in separate Audacity windows before Block 2.
 
 #### Block 2: destructive vs. non-destructive, levels and pan (15 min)
 
@@ -747,7 +747,7 @@ For students who haven't engaged, this is your check-in moment. Sit with them, a
 
 #### end of session: upload (last 5 min)
 
-Students follow the handout's end-of-session steps. Save Project 1 (Cmd + S), including the current versioned save if they made one, then connect in FileZilla, select everything in `~/Documents/[netid]/`, and drag it across with **Overwrite if source newer**; unchanged files (the bank, for instance) are skipped. They check that the Project 1 file shows today's date on the server, then finish the card's routine.
+Students follow the handout's end-of-session steps. Save Project 1 (Cmd + S), including the current versioned save if they made one, then connect in FileZilla, select everything in `~/Documents/netid/`, and drag it across with **Overwrite if source newer**; unchanged files (the bank, for instance) are skipped. They check that the Project 1 file shows today's date on the server, then finish the card's routine.
 
 ### common confusions
 

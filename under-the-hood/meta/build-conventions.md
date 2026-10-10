@@ -174,9 +174,9 @@ Shared material lives under `/public`, reached by clicking the `/` at the top of
 
 Students create their own subfolders inside `/public` when a submission has more than one file. The top-level structure is built for them before the term.
 
-The local mirror is `~/Documents/[netid]/`, matching the server-side folder name so FileZilla's two panes line up. Filenames still lead with last name.
+The local mirror is `~/Documents/netid/`, matching the server-side folder name so FileZilla's two panes line up. Filenames still lead with last name.
 
-Student-facing pages write the placeholder bare, as `~/Documents/netid/`. Internal docs bracket it, as `~/Documents/[netid]/`.
+Every document, student-facing and internal, writes the placeholder bare: `~/Documents/netid/`.
 
 The `mus-381-fall-YYYY/` prefix is the only place a semester date appears in a path. Every other path is semester-stable.
 
@@ -239,7 +239,7 @@ The token `project01` in filenames does **not** take an internal hyphen, but the
 
 Treat the filename's hyphen as the separator between last name and project token; inside the project token, no further hyphen. In folder names, the hyphen reads as a visual break between the word `project` and the number, since folder names tend to be longer and read better with the hyphen.
 
-The Project 1 working file is `~/Documents/[netid]/project-01/lastname-project01.aup3` (versions `lastname-project01-v1.aup3`, `-v2`, `-v3`), and the submitted file is `lastname-project01.wav`: hyphenated folder, unhyphenated filename.
+The Project 1 working file is `~/Documents/netid/project-01/lastname-project01.aup3` (versions `lastname-project01-v1.aup3`, `-v2`, `-v3`), and the submitted file is `lastname-project01.wav`: hyphenated folder, unhyphenated filename.
 
 #### Listening filename NN meaning
 
