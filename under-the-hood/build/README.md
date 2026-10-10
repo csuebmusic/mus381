@@ -231,8 +231,8 @@ leaves the low ringing body behind; the spectral centroid runs from about
 envelope reaches digital silence at the final sample.
 
 Measured decay, peak per second: -3 dBFS at 0 s, -13 at 5 s, -17 at 7 s,
--29 at 12 s, -47 at 15 s. The signal from 7 s to the end is audible on
-headphones and visible on the waveform.
+-29 at 12 s, -47 at 15 s. The audible-at-7-seconds requirement is in
+[`assets/asset-recipes.md`](../../assets/asset-recipes.md).
 
 The two channels share partial phases and differ by 4 cents of detune in
 opposite directions, a 6 percent difference in decay rate, and a 4 ms
@@ -247,10 +247,3 @@ python3 under-the-hood/build/generate-orientation-sample.py
 
 Requires `numpy` and `scipy`. Fully seeded: every run produces byte-identical
 output.
-
-## File naming convention
-
-Build scripts use lowercase with hyphens, matching the rest of the
-repo's naming convention. Output paths and file names within
-`assets/audio/` follow the same convention: `module-XX-week-YY/` for
-folders, `descriptive-shortname.ext` for files.
