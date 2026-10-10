@@ -1,37 +1,27 @@
 # Page templates
 
-Skeletal HTML files that embody the conventions in [`build-conventions.md`](../build-conventions.md). Copy one of these as the starting point for a new page.
+Skeletal HTML files for new pages. Copy one as the starting point; the rules they follow are in [`build-conventions.md`](../build-conventions.md).
 
-| Template | Used for | Today's gear callout |
-|---|---|---|
-| `reading.html` | Mon-lecture readings | audio interface, headphones |
-| `tool.html` | Interactive in-class tools | audio interface, headphones |
-| `handout-module-02.html` | Wed-lab handouts in Module 2 | audio interface, headphones |
-| `handout-module-03.html` | Wed-lab handouts in Module 3 | audio interface, headphones, dynamic mic (with stand and XLR cable) |
-| `handout-module-04.html` | Wed-lab handouts in Module 4 | audio interface, headphones, MIDI keyboard |
+| Template | Used for |
+|---|---|
+| `reading.html` | Monday-lecture readings |
+| `tool.html` | Interactive in-class tools |
+| `handout-module-02.html` | Wednesday lab handouts in Module 2 |
+| `handout-module-03.html` | Wednesday lab handouts in Module 3 |
+| `handout-module-04.html` | Wednesday lab handouts in Module 4 |
 
-Each template includes the right module-tag, header/footer chrome, title block, lede slot, and **Today's gear** callout matching the file type's gear tier. Readings and tools also include an **End of session** callout placed just before the footer; handouts use an `<h2>End of session</h2>` block instead, with session-specific upload steps.
+## what to fill in
 
-## What to fill in
+Bracketed placeholders mark every slot to edit:
 
-Bracketed placeholders mark every slot that needs editing:
+- `[Reading title]`, `[Lab title]`, `[Tool title]`: the page's H1, also used in `<title>`
+- `Module XX · Lecture N`, `Module XX · Lab N`, `Module XX · Tool N`: the role line in the header and footer and the module number in the title block, with `XX` as the zero-padded module number and `N` as the count within the module
+- `[Module thematic label]`: the module's thematic label, shared by every document in the module (for Module 02, `Digital audio, editing & mixing`)
+- `[One-sentence subtitle, no dates]`: the title-block subtitle
+- `[One-paragraph lede ...]`: the lede, one paragraph
 
-- `[Reading title]` / `[Lab title]` / `[Tool title]` — the page's H1, also drop into the `<title>` and (for headers/footers) any title-tied chrome
-- `Module XX · Lecture N` / `Module XX · Lab N` / `Module XX · Tool N` — the role chrome in the header and footer right spans, plus the module tag in the title block. Replace `XX` with the zero-padded module number and `N` with the within-module count
-- `[Module thematic label]` — the module's shared thematic label (e.g. `Digital audio, editing & mixing` for Module 02). One-line label shared by every document in that module
-- `[One-sentence subtitle, no dates]` — the title-block subtitle
-- `[One-paragraph lede ...]` — the lede paragraph, exactly one paragraph at lede size
+## what stays fixed
 
-## What not to change
+The Today's gear callout text is fixed for each file type. A session that needs different gear gets a new row in the gear table in `build-conventions.md` first, then a template change.
 
-The **Today's gear** callout is the same text every time within its file-type variant. If a session's gear differs from the template's variant (e.g. a Module 2 handout that for some reason needs a mic), don't edit the callout inline — first update `meta/chrome-conventions.md` to define a new variant, then update the template here.
-
-The `End of session` closing paragraph that points back to the routines card is also reusable across handouts; tweak its wording only when the session genuinely changes the unplug sequence (e.g. a Module 4 handout might need to call out the MIDI keyboard's USB instead of the mic's XLR).
-
-## When to skip the Today's gear callout
-
-Per the chrome section of `build-conventions.md`:
-
-- The Session Routines card itself (`module-01-fluency/lessons/02-handout-session-routines.html`)
-- The Day 1 reading (`module-01-fluency/lessons/01-reading-first-day-setup.html`), which teaches the take-out cycle from scratch
-- Listening pages and project prompts, which students consult at home and across sessions; the day's lab handout owns the gear context, not these
+The end-of-session closing sentence in the handout templates changes only when the session's unplug sequence changes, as in a Module 4 handout that names the MIDI keyboard's USB cable instead of the mic's XLR.
