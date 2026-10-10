@@ -93,7 +93,7 @@ The annotated strip photos are specific to the Toft ATB; a re-capture is re-anno
 
 ### Mon Wk 9 studio visit · studio gear images
 
-The files are in `assets/images/module-03-week-09/`, used in `module-03-recording/lessons/08-handout-studio.html` (Lab 4). They're manufacturer product photos of the MB2508 gear. Photos of the Furman HDS-6 hub and the HR-6 stations are needed. The AudioBox photo in handout 08 is `module-03-week-06/presonus-audiobox-usb96-front.png`.
+The files are in `assets/images/module-03-week-09/`, used in `module-03-recording/lessons/08-handout-studio.html` (Lab 4). They're manufacturer product photos of the MB2508 gear. The handout has no photos of the Furman HDS-6 hub or the HR-6 stations. The AudioBox photo in handout 08 is `module-03-week-06/presonus-audiobox-usb96-front.png`.
 
 | Filename | Shows |
 |---|---|
