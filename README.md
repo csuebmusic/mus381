@@ -111,7 +111,7 @@ The file workflow is local-first, with the class server as sync. Students work i
 
 To prep a week, open the module's `README.md`: it has the session-by-session plan (what to say, where students get stuck, how to use each tool, what to assess and how).
 
-Faculty reference texts for the materials (not assigned to students): Hosken, *An Introduction to Music Technology* (primary); Huber, *Modern Recording Techniques*; Holmes, *Electronic and Experimental Music*; *The Cambridge Companion to Electronic Music*.
+Faculty reference texts for the materials (not assigned to students): Hosken, *An Introduction to Music Technology* (primary); Huber, *Modern Recording Techniques*; Holmes, ed., *The Routledge Guide to Music Technology*; Holmes, *Technology, Music, and Culture*; *The Cambridge Companion to Electronic Music*.
 
 ## license and use
 
