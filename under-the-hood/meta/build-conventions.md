@@ -219,3 +219,19 @@ Build scripts write project and library audio in the module's format. Demo clips
 ### page structure
 
 A page is `<header class="handout-header">`, then `<div class="title-block">`, then `<p class="lede">`, then the first `<hr>`, the body, and `<footer class="handout-footer">`. The page width is set on `body` in `style.css`. A tool that needs more room overrides the width on its own block.
+
+---
+
+## audience and level
+
+Most MUS 381 students are true beginners, and many have never opened a DAW. Student-facing material is written for a first encounter with each concept, with its accuracy intact.
+
+Inés's first-year music producers take MUS 381 and also study with her privately. Material in `music-production` goes one step deeper than the course materials, not more.
+
+When a tool or handout could belong to either repo, Claude asks Inés which one it's for.
+
+## sources
+
+The faculty reference texts are listed in the root `README.md`, with Hosken, *An Introduction to Music Technology*, as the primary reference. The texts are uploaded to the Claude project, and Claude searches them before answering a conceptual or pedagogical question. Each topic uses whichever text covers it best. Where no text covers a topic well, Claude flags the gap and proposes a supplementary source or a custom handout.
+
+The advanced texts of Sound Design (Cook, Puckette, Roads, Kapur, Wang) are cited only to mark the bridge to Sound Design and are never assigned to MUS 381 students.
