@@ -734,12 +734,7 @@ The handout's "look ahead: Module 4 with Ableton" callout says EQ becomes a non-
 
 Students work on their pieces with the new tools. The handout's "suggested approach for the next hour" gives them a starting framework: apply levels and pan to Project 1, save a versioned copy (`lastname-project01-v2.aup3`) before any EQ, keep editing as needed, and listen to the whole piece repeatedly.
 
-This is the main block of the week for individual mentoring. Walk the room. Listen to short excerpts on student headphones and give specific, actionable feedback now that there's material:
-
-- "Your loudest moment is too loud relative to your quietest. Bring the loud ones down 4 or 5 dB."
-- "These two elements are fighting in the same frequency range. Try cutting some of the low-mids on one of them."
-- "Everything is dead center in the stereo field. Pan something, even just 20% L on one track."
-- "The beginning is interesting; the middle loses energy. What if you brought back the opening sound somewhere in the second half?"
+This is the main block of the week for individual mentoring. Walk the room and listen to short excerpts on student headphones.
 
 Students still assembling their material may not be ready to mix. Let them keep building.
 
