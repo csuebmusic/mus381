@@ -235,3 +235,14 @@ When a tool or handout could belong to either repo, Claude asks Inés which one 
 The faculty reference texts are listed in the root `README.md`, with Hosken, *An Introduction to Music Technology*, as the primary reference. The texts are uploaded to the Claude project, and Claude searches them before answering a conceptual or pedagogical question. Each topic uses whichever text covers it best. Where no text covers a topic well, Claude flags the gap and proposes a supplementary source or a custom handout.
 
 The advanced texts of Sound Design (Cook, Puckette, Roads, Kapur, Wang) are cited only to mark the bridge to Sound Design and are never assigned to MUS 381 students.
+
+## repo workflow
+
+These rules cover this repo and `music-production`.
+
+- Commits go directly to `main`, authored as Inés Thiebaut (ines.thiebaut@csueastbay.edu).
+- Each commit holds one logical change and is pushed when it's made.
+- A commit message names what changed and stops.
+- A reorganization, mass rename, deletion, or other wide-reaching change is proposed to Inés first and made after she confirms.
+- Repo files aren't attached in chat. Inés pulls locally.
+- No access token is written into either repo.
