@@ -1,6 +1,6 @@
 # Build conventions
 
-Naming, chrome, dates, and the visual system for this repo. For Inés and Claude; the TA doesn't need this file.
+Naming, chrome, dates, the visual system, audience and level, sources, and the repo workflow for this repo. For Inés and Claude; the TA doesn't need this file.
 
 Style, register, feedback, correspondence, and argued writing are governed by the "how I want you to communicate" section of Inés's profile instructions. Per-asset specs are in [`assets/asset-recipes.md`](../../assets/asset-recipes.md). Page skeletons are in [`templates/`](./templates/README.md); copy one as the starting point for a new page.
 

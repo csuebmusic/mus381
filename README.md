@@ -101,7 +101,7 @@ module-XX-name/
 
 ## conventions
 
-Build conventions (naming, document chrome, dates, the visual system) are in [`under-the-hood/meta/build-conventions.md`](under-the-hood/meta/build-conventions.md), with page templates beside it and per-asset specs in [`assets/asset-recipes.md`](assets/asset-recipes.md). Anyone drafting new student-facing material reads them first. Teaching from the finished pages doesn't require them.
+Build conventions (naming, document chrome, dates, the visual system, audience and level, sources, and the repo workflow) are in [`under-the-hood/meta/build-conventions.md`](under-the-hood/meta/build-conventions.md), with page templates beside it and per-asset specs in [`assets/asset-recipes.md`](assets/asset-recipes.md). Anyone drafting new student-facing material reads them first. Teaching from the finished pages doesn't require them.
 
 Student-facing pages are HTML sharing `assets/style.css`. TA notes, specs, and policies are Markdown.
 
