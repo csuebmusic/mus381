@@ -2,7 +2,7 @@
 
 Naming, chrome, dates, and the visual system for this repo. For Inés and Claude; the TA doesn't need this file.
 
-Prose and register rules are in Inés's profile instructions. Per-asset specs are in [`assets/asset-recipes.md`](../../assets/asset-recipes.md). Page skeletons are in [`templates/`](./templates/README.md); copy one as the starting point for a new page.
+Style, register, feedback, correspondence, and argued writing are governed by the "how I want you to communicate" section of Inés's profile instructions. Per-asset specs are in [`assets/asset-recipes.md`](../../assets/asset-recipes.md). Page skeletons are in [`templates/`](./templates/README.md); copy one as the starting point for a new page.
 
 Each rule is stated once. What a page, `assets/style.css`, a template, or the Session Routines card states is owned by that file, and this file points to it.
 
@@ -101,7 +101,7 @@ Counts restart in each module, except project numbers, which are global. Lecture
 
 ### separators
 
-A middle dot (`·`, U+00B7) separates title metadata in `<title>` elements and in metadata-style headings: `Step 1 · Turn the knobs down`. En dashes (U+2013) stay in typographic compounds (`musique concrète–style`) and number ranges.
+A middle dot (`·`, U+00B7) separates title metadata in `<title>` elements and in metadata-style headings: `Step 1 · Turn the knobs down`.
 
 ### title block
 
@@ -111,9 +111,9 @@ The module tag (`<div class="module-tag">`) holds the module's thematic label, t
 
 Every heading, the `<h1>`, and the page title in `<title>` are lowercase, except proper nouns, product names, acronyms, and chrome tokens (`MUS 381`, `Module 03`, `Lab 4`, `Project 1`): `<title>MUS 381 · recording into Audacity</title>`, `<h1>recording into Audacity</h1>`.
 
-### labeled items
+### step lists and bold
 
-No list item or paragraph uses the bold-label pattern (`<strong>Term:</strong> explanation`). A labeled item is a sentence; bold may mark a control or term name inside it. Step lists are ordered lists, and each step opens with a sentence.
+Bold may mark a control or term name inside a sentence. Step lists are ordered lists, and each step opens with a sentence.
 
 ### lede
 
