@@ -66,6 +66,8 @@ Every document, student-facing and internal, writes the placeholder bare: `~/Doc
 
 A semester date appears in a path only in the `mus-381-fall-YYYY/` folder under `/public`.
 
+Every reference to the file workflow in student materials matches the local-first routine on the Session Routines card.
+
 ### sample library files
 
 `sample-library/[category]/[category]-[descriptor]-[variant].wav`. The category is the kind of sound and matches its folder (`paper`, `metal`). The descriptor names the sound in a word or two (`crumble`, `clang`). The variant distinguishes sibling takes of one descriptor (`slow`, `close`, `corner`) and is left off when a descriptor has one take.
@@ -142,6 +144,14 @@ Readings and tools end with the template's End of session callout, immediately b
 
 Every link that leaves a student-facing page opens in a new tab, written `target="_blank" rel="noopener noreferrer"`, for external links and for links to other pages in the repo. In-page links to `#section` anchors stay in the same tab.
 
+### listening pages
+
+External audio is a `.listen-link` card, never an iframe. A listening page opens with a short historical or contextual section before the listening list when the framing changes what students listen for. Inés provides all photos.
+
+### submission cards
+
+Every handed-in deliverable has a `.submission-card` block, styled in `assets/style.css`. A written submission has the rows Where, File format, Filename, Length, Formatting, Citations, and Due, as on the Module 2 listening page. An audio submission has the rows Working folder, Class listening folder (when there's peer listening), File format, Filename, and Due, as in the Project 1 prompt.
+
 ### Markdown files
 
 Internal Markdown docs identify themselves in the H1:
@@ -216,9 +226,13 @@ Each module's first reading introduces its format. Write the depth as `32-bit`, 
 
 Build scripts write project and library audio in the module's format. Demo clips embedded in readings, handouts, and lectures keep the rate and depth they were rendered at.
 
+44.1 kHz, the CD, and Nyquist are taught as historical concepts, not working standards.
+
 ### page structure
 
 A page is `<header class="handout-header">`, then `<div class="title-block">`, then `<p class="lede">`, then the first `<hr>`, the body, and `<footer class="handout-footer">`. The page width is set on `body` in `style.css`. A tool that needs more room overrides the width on its own block.
+
+Pages are self-contained and open in a browser with no build step. The Google Fonts import at the top of `style.css` is the only external request.
 
 ---
 
