@@ -2,11 +2,11 @@
 
 Per-asset specs for assets made by hand (recorded audio, photographs, screenshots): where each one is, what it is, and how to recreate or substitute it. Generated assets are documented with their scripts in [`under-the-hood/build/README.md`](../under-the-hood/build/README.md).
 
-For Inés and anyone who rebuilds the course infrastructure. The TA only needs each asset at its path, and reports a missing one to Inés.
+This file is for Inés and anyone who rebuilds the course infrastructure. The instructor only needs each asset at its path, and reports a missing one to Inés.
 
 ---
 
-## Module 02 · audio editing & mixing
+## Module 02 · Digital audio, editing & mixing
 
 ### Wed Wk 2 lab handout · `orientation-sample.wav`
 
@@ -20,7 +20,7 @@ A substitute is any stereo sustained sound of about 10 to 18 seconds with a grad
 
 ### Wed Wk 2 lab handout · Audacity screenshots
 
-The files are in `assets/images/module-02-week-02/`, used in Lab 1 (`module-02-audio-editing-mixing/lessons/03-handout-audacity-orientation.html`). They were re-captured in June 2026 at the 48 kHz, 24-bit standard.
+The files are in `assets/images/module-02-week-02/`, used in Lab 1 (`module-02-audio-editing-mixing/lessons/03-handout-audacity-orientation.html`). They show the 48 kHz, 24-bit format.
 
 | Filename | Content |
 |---|---|
@@ -38,11 +38,11 @@ The empty Audacity 3.6 window shows no project sample rate; the rate is inside t
 
 ---
 
-## Module 03 · recording, sample prep & library building
+## Module 03 · Recording, sample prep & library building
 
 ### Wed Wk 6 lab handout · Audacity screenshots
 
-The files are in `assets/images/module-03-week-06/`, used in Lab 1 (`module-03-recording/lessons/02-handout-recording-into-audacity.html`). Inés captured them on her Mac in May 2026.
+The files are in `assets/images/module-03-week-06/`, used in Lab 1 (`module-03-recording/lessons/02-handout-recording-into-audacity.html`). Inés captured them on her Mac.
 
 | Filename | Content |
 |---|---|
@@ -93,7 +93,7 @@ The annotated strip photos are specific to the Toft ATB; a re-capture is re-anno
 
 ### Mon Wk 9 studio visit · studio gear images
 
-The files are in `assets/images/module-03-week-09/`, used in `module-03-recording/lessons/08-handout-studio.html` (Lab 4). They're manufacturer product photos of the MB2508 gear. The handout has no photos of the Furman HDS-6 hub or the HR-6 stations. The AudioBox photo in handout 08 is `module-03-week-06/presonus-audiobox-usb96-front.png`.
+The files are in `assets/images/module-03-week-09/`, used in `module-03-recording/lessons/08-handout-studio.html` (Lab 4). They're manufacturer product photos of the MB2508 gear. The AudioBox photo in handout 08 is `module-03-week-06/presonus-audiobox-usb96-front.png`.
 
 | Filename | Shows |
 |---|---|
@@ -109,7 +109,7 @@ A substitute is any manufacturer product photo of the same unit.
 
 ---
 
-## Module 04 · the DAW
+## Module 04 · The DAW
 
 ### Mon Wk 11 listening · sampling-lineage photos
 
