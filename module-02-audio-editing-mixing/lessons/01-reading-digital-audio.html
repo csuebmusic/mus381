@@ -148,7 +148,7 @@
 </header>
 
 <div class="title-block">
-  <div class="module-tag">Module 02 · digital audio, editing &amp; mixing</div>
+  <div class="module-tag">Module 02 · Digital audio, editing &amp; mixing</div>
   <h1>digital audio fundamentals</h1>
   <div class="subtitle">What sound is, how computers store it, and what the settings change in what you hear.</div>
 </div>
@@ -170,7 +170,7 @@
 <p>If we could plot the air pressure at one point in space against time, we'd see a wavy line: pressure rising and falling, faster or slower, bigger or smaller. That line is what we call a <strong>waveform</strong>. Every sound has one. A pure flute tone has a smooth, almost mathematical waveform. A cymbal crash has a chaotic one. Your voice saying "hello" has a complex shape that changes from moment to moment.</p>
 
 <figure>
-  <svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
+  <svg role="img" aria-label="A sine wave: one smooth, continuous curve" viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <pattern id="mathgrid1" width="20" height="20" patternUnits="userSpaceOnUse">
         <path d="M 20 0 L 0 0 0 20" fill="none" stroke="var(--rule-soft)" stroke-width="0.5"/>
@@ -191,10 +191,10 @@
 
 <p><strong>Frequency</strong> is how many full wave cycles happen per second. The unit is the <strong>hertz</strong> (Hz). One Hz is one cycle per second; 100 Hz is one hundred cycles per second; 1,000 Hz is one kilohertz (kHz). Faster wiggle means higher frequency.</p>
 
-<p>In music, what we hear as <strong>pitch</strong> is exactly this: the frequency of the sound wave reaching our ears. A low bass note is a slow wiggle (maybe 60 Hz); a high vocal note is a fast one (maybe 1,000 Hz or more). Pitch and frequency describe the same physical thing from two angles. A musician says "A above middle C." A physicist says "440 Hz." Same wave.</p>
+<p>In music, what we hear as <strong>pitch</strong> is exactly this: the frequency of the sound wave reaching our ears. A low bass note is a slow wiggle (maybe 60 Hz); a high vocal note is a fast one (maybe 1,000 Hz or more). Pitch and frequency describe the same physical thing from two angles. A musician says "A above middle C," and a physicist says "440 Hz" about the same wave.</p>
 
 <figure>
-  <svg viewBox="-50 -8 680 280" xmlns="http://www.w3.org/2000/svg">
+  <svg role="img" aria-label="Two sine waves over the same span of time: 220 Hz completes two cycles and 440 Hz completes four" viewBox="-50 -8 680 280" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <pattern id="freqgrid" width="20" height="20" patternUnits="userSpaceOnUse">
         <path d="M 20 0 L 0 0 0 20" fill="none" stroke="var(--rule-soft)" stroke-width="0.5"/>
@@ -245,12 +245,12 @@
 
 <p><strong>Amplitude</strong> is how big the wave is, measured from the centerline to its peak. A bigger wave pushes harder on your eardrum and sounds louder. A smaller wave is quieter.</p>
 
-<p>Loudness is conventionally measured in <strong>decibels</strong> (dB). In digital audio, dB values run from 0 (the loudest a digital signal can be) downward into negative numbers. The more negative the number, the quieter the sound. Anything above <strong>0 dB</strong> clips: the top of the wave gets cut off. A sound at <strong>-12 dB</strong> is much quieter than one at <strong>-3 dB</strong>. You'll see these numbers everywhere in Audacity: the level meter shows them while you record, the volume slider on each track is in dB, and the export tool reports your file's peak level in dB.</p>
+<p>Level is measured in <strong>decibels</strong> (dB). In digital audio, dB values run from 0 (the loudest a digital signal can be) downward into negative numbers. The more negative the number, the quieter the sound. Anything above <strong>0 dB</strong> clips: the top of the wave gets cut off. A sound at <strong>-12 dB</strong> is much quieter than one at <strong>-3 dB</strong>. You'll see these numbers everywhere in Audacity: the level meter shows them while you record, the volume slider on each track is in dB, and the export tool reports your file's peak level in dB.</p>
 
 <p>You don't need to memorize the math. One rule of thumb: <strong>-6 dB is half the amplitude</strong>. A wave that peaks at -6 dB is half as tall on screen as one that peaks at 0 dB.</p>
 
 <figure>
-  <svg viewBox="-50 -8 680 240" xmlns="http://www.w3.org/2000/svg">
+  <svg role="img" aria-label="Two sine waves at the same frequency: one peaks at 0 dB and the other at half the amplitude, -6 dB" viewBox="-50 -8 680 240" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <pattern id="ampgrid" width="20" height="20" patternUnits="userSpaceOnUse">
         <path d="M 20 0 L 0 0 0 20" fill="none" stroke="var(--rule-soft)" stroke-width="0.5"/>
@@ -302,7 +302,7 @@
 <p>Imagine you're tracking the height of a ball bouncing across the floor, but instead of recording its position continuously, you only check where it is once every fraction of a second. Each check gives you a single number: the ball's height at that moment. String enough of those numbers together and you have a usable record of the bounce, not perfect, but close enough that you could re-create the motion later. Digital audio works the same way: many measurements per second, each one a number, stored in order.</p>
 
 <figure>
-  <svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
+  <svg role="img" aria-label="A sine wave with dots marking samples taken at regular intervals" viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <pattern id="mathgrid2" width="20" height="20" patternUnits="userSpaceOnUse">
         <path d="M 20 0 L 0 0 0 20" fill="none" stroke="var(--rule-soft)" stroke-width="0.5"/>
@@ -358,12 +358,12 @@
 
 <h2>3 · sample rate</h2>
 
-<p><strong>Sample rate</strong> is how many measurements we take per second. The unit is <strong>also hertz</strong> (Hz). Same unit you saw in section 1, counting a different thing: in section 1, Hz was wave cycles per second; here, it's measurements per second. A familiar sample rate is the one CD audio uses: <strong>44,100 Hz</strong>, usually written as <strong>44.1 kHz</strong>. That means 44,100 measurements per second, per channel. This course works at a slightly higher rate, 48 kHz.</p>
+<p><strong>Sample rate</strong> is how many measurements we take per second. The unit is <strong>also hertz</strong> (Hz). It's the same unit as in section 1, counting a different thing: in section 1, Hz was wave cycles per second; here, it's measurements per second. A familiar sample rate is the one CD audio uses: <strong>44,100 Hz</strong>, usually written as <strong>44.1 kHz</strong>. That means 44,100 measurements per second, per channel. This course works at a slightly higher rate, 48 kHz.</p>
 
 <p>More measurements per second means a more accurate digital representation of the original wave. Fewer measurements means the digital version starts to lose detail, especially at higher frequencies, where the wave moves quickly and needs more samples per cycle to track it.</p>
 
 <figure>
-  <svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+  <svg role="img" aria-label="The same wave at a high sample rate, tracked closely by many samples, and at a low sample rate, traced roughly by a few" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <pattern id="mathgrid3" width="20" height="20" patternUnits="userSpaceOnUse">
         <path d="M 20 0 L 0 0 0 20" fill="none" stroke="var(--rule-soft)" stroke-width="0.5"/>
@@ -544,12 +544,12 @@
 })();
 </script>
 
-<p>A few useful frequencies to find on the slider: <strong>440 Hz</strong> is concert A (the note an oboe plays for an orchestra to tune). <strong>1 kHz</strong> is the reference frequency engineers use for measurements (a kind of mid-range neutral). Below <strong>60 Hz</strong> you're in sub-bass territory where you feel as much as you hear. Above <strong>10 kHz</strong> you're in the very high treble: sibilance, cymbal sheen, "air." Hearing above about 16 kHz often fades with age.</p>
+<p>A few useful frequencies to find on the slider: <strong>440 Hz</strong> is concert A (the note an oboe plays for an orchestra to tune). <strong>1 kHz</strong> is the reference frequency engineers use for measurements. Below <strong>60 Hz</strong> you're in sub-bass territory where you feel as much as you hear. Above <strong>10 kHz</strong> you're in the very high treble: sibilance, cymbal sheen, "air." Hearing above about 16 kHz often fades with age.</p>
 
 <p>At 44.1 kHz the Nyquist limit is 22.05 kHz; at 48 kHz it's 24 kHz. Both are above the top of human hearing.</p>
 
 <figure>
-  <svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
+  <svg role="img" aria-label="A frequency axis showing human hearing from 20 Hz to 20 kHz, the 44.1 kHz and 48 kHz sample rates, and their Nyquist limits at 22.05 kHz and 24 kHz" viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--accent)"/>
@@ -647,7 +647,7 @@
 <p>An 8-bit sample can take 256 possible values (2 to the power of 8 is 256). A 16-bit sample can take 65,536 values. A 24-bit sample can take over 16 million values. The more bits, the finer the gradations of amplitude available: the more precisely each sample can describe the height of the wave at that moment.</p>
 
 <figure>
-  <svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+  <svg role="img" aria-label="The same wave at high bit depth, in fine amplitude steps, and at low bit depth, in coarse steps" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <pattern id="mathgrid4" width="20" height="20" patternUnits="userSpaceOnUse">
         <path d="M 20 0 L 0 0 0 20" fill="none" stroke="var(--rule-soft)" stroke-width="0.5"/>
@@ -701,7 +701,7 @@
 
 <p>You work at <strong>24-bit</strong> through Modules 2 and 3. In Module 4 you export your finished work from Ableton at <strong>32-bit</strong>. The sample rate stays at 48 kHz the whole time; bit depth is the only setting that changes, and only at the end.</p>
 
-<p>You'll see 16, 24, and 32-bit outside class. Sixteen-bit, once the professional format, is now the baseline; 24-bit, once high-end, is now common.</p>
+<p>You'll see 16, 24, and 32-bit outside class.</p>
 
 <div class="audio-compare">
   <div class="audio-compare-title">Listen: same sound, three bit depths</div>
@@ -731,7 +731,7 @@
 <p>You've seen aliasing without knowing the name. In old movies, a wagon wheel spinning forward sometimes appears to spin backward: the camera's frame rate is too slow to catch every spoke. The wheel's rotation is "above the camera's Nyquist limit," and the eye (or the film) reconstructs a slower, false rotation. Audio aliasing is the same thing happening to sound: a real high frequency gets reconstructed as a false low one.</p>
 
 <figure>
-  <svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <svg role="img" aria-label="A high-frequency wave sampled too sparsely, with the samples tracing a false low-frequency wave" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <pattern id="mathgrid5" width="20" height="20" patternUnits="userSpaceOnUse">
         <path d="M 20 0 L 0 0 0 20" fill="none" stroke="var(--rule-soft)" stroke-width="0.5"/>
@@ -814,7 +814,7 @@
 <p>Compare these with the dynamic range of unamplified music:</p>
 
 <figure>
-  <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
+  <svg role="img" aria-label="Signal-to-noise ratio at five bit depths on a decibel scale, with the dynamic range of a live orchestra for reference" viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
     <rect width="600" height="320" fill="var(--bg-alt)"/>
 
     <!-- Vertical scale: 0 dB at top (y=30), -192 dB at bottom (y=270). 240 px / 192 dB = 1.25 px/dB -->
@@ -1023,7 +1023,7 @@
   <li>The <em>xiph.org</em> "Digital Show &amp; Tell" video by Christopher "Monty" Montgomery is a 25-minute video with real oscilloscope demonstrations of sampling.</li>
 </ul>
 
-<p>In Wednesday's lab, the first half of class is the Digital Audio Explorer, an interactive tool that starts from section 1's frequency and amplitude. It goes from one pure sine wave, to two or three sines layered together, to the <em>harmonic series</em> that fuses a stack of sines into a single perceived note, to the recipe of partial amplitudes that gives each instrument its sound. The second half of class is your first session in Audacity.</p>
+<p>In Wednesday's lab, the first half of class is the Digital Audio Explorer, and the second half is your first session in Audacity.</p>
 
 <div class="callout">
   <div class="callout-label">end of session</div>
