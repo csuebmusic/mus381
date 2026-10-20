@@ -1,6 +1,6 @@
 # Assets
 
-Shared resources for the course's student-facing materials.
+This folder holds the shared resources for the course's student-facing materials.
 
 ## contents
 

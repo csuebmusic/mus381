@@ -1,6 +1,6 @@
 # Videos
 
-Short Audacity screen recordings used as inline demos inside readings and lab handouts. Each clip shows one operation in Audacity.
+This folder holds short Audacity screen recordings used as inline demos in readings and lab handouts. Each clip shows one operation in Audacity.
 
 ## Directory layout
 

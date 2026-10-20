@@ -1,14 +1,14 @@
 # Page templates
 
-Skeletal HTML files for new pages. Copy one as the starting point; the rules they follow are in [`build-conventions.md`](../build-conventions.md).
+These are skeletal HTML files for new pages. Copy one as the starting point; the rules they follow are in [`build-conventions.md`](../build-conventions.md).
 
 | Template | Used for |
 |---|---|
 | `reading.html` | Monday-lecture readings |
 | `tool.html` | Interactive in-class tools |
-| `handout-module-02.html` | Wednesday lab handouts in Module 2 |
-| `handout-module-03.html` | Wednesday lab handouts in Module 3 |
-| `handout-module-04.html` | Wednesday lab handouts in Module 4 |
+| `handout-module-02.html` | Lab handouts in Module 2 |
+| `handout-module-03.html` | Lab handouts in Module 3 |
+| `handout-module-04.html` | Lab handouts in Module 4 |
 
 ## what to fill in
 
