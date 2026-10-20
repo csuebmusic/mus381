@@ -48,9 +48,7 @@ Students don't see these categories as a checklist. When the Mon Wk 3 lecture in
 ```
 /public/sample-banks/project-01/
   attack-sharp/
-  attack-soft/
   sustain-long/
-  sustain-short/
   texture-continuous/
   voice-and-language/
   found-objects/
@@ -59,7 +57,7 @@ Students don't see these categories as a checklist. When the Mon Wk 3 lecture in
   README.txt   <- what's in the bank, license terms
 ```
 
-The categories are a starting point; adjust them to what the bank holds. Students browse by character (envelope) or by source type.
+The Lab 2 handout's exercises name these seven folders, so the bank uses exactly these names. Students browse by character (envelope) or by source type.
 
 The `README.txt` in the bank, written for students, covers:
 
