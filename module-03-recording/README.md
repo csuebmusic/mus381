@@ -8,14 +8,14 @@ Wks 6 to 9 (Sep 21 to Oct 14) · 8 sessions of 100 minutes
 
 In Module 2 students worked with sound that was handed to them. In Module 3 they make their own. By the end of the four weeks they can plug in a microphone, capture a clean recording, prepare the file for use, and organize it into a usable library.
 
-The deliverable is the library: the curated, organized collection of their own sounds that students draw from in Module 4. The midterm has two parts, the library and a terminology exam covering Modules 1 through 3.
+The deliverable is the library: the curated, organized collection of their own sounds that students use in Module 4. The midterm has two parts, the library and a terminology exam covering Modules 1 through 3.
 
 The module runs in this order: the basic recording chain from mic to computer → recording into Audacity → moving phone recordings into the library → other signal levels, cables, mics, and signal modifiers → how a mixer routes many signals at once (the Toft ATB in detail) → the live-sound scenario in lab → a walk around the MB2508 studio, with the studio-recording walkthrough (handout 08) for students to work through on their own time → the library submission and exam.
 
 Two ideas apply in every session.
 
-1. Signal flow is a sequence of decisions. Sound becomes signal, then a recording, then a sample, then part of a library. At every stage something is chosen: which mic, which signal level, which cable, which input, which interface, which prep step, which destination folder. Students should be able to look at any setup (a stage, a studio, a phone propped against a doorframe) and name the flow from acoustic source to stored file. The basic recording chain is the flow at every lab station; Session 3 (other signal levels, cables, mics, DI boxes, and preamps) and Sessions 5 to 7 (the console, the live-sound scenario, and the studio visit) widen it.
-2. A recording and a sample are different things. A recording is what comes out of the mic; a sample is what goes into the library. Turning one into the other happens at two stages. While recording, students leave headroom (peaks around -12 to -6 dBFS). After recording, they denoise, trim with short fades, normalize, name, and file.
+1. Signal flow is a sequence of decisions. Sound becomes signal, then a recording, then a sample, then part of a library. At every stage something is chosen: which mic, which signal level, which cable, which input, which interface, which prep step, which destination folder. Students should be able to look at any setup (a stage, a studio, a phone propped against a doorframe) and name the flow from acoustic source to stored file. Session 3 (other signal levels, cables, mics, DI boxes, and preamps) and Sessions 5 to 7 (the console, the live-sound scenario, and the studio visit) widen the basic recording chain.
+2. A recording and a sample are different things. A recording is what comes out of the mic; a sample is what goes into the library. Turning one into the other happens at two stages. While recording, students leave headroom. After recording, they denoise, trim with short fades, normalize, name, and file.
 
 By the end of Wk 9, each student has a library of their own recordings, prepped to one standard and organized in a documented folder structure, ready to load into Ableton Live 11 in Module 4.
 
@@ -41,7 +41,7 @@ By the end of this module, students should be able to:
 
 ## concepts introduced
 
-- Signal flow is the path sound takes from acoustic source to stored file. Every recording setup has one: a phone recording has a shorter flow, and a live show with a mixer has a wider one. Students should be able to point at any setup and trace it.
+- Signal flow is the path sound takes from acoustic source to stored file. Every recording setup has one: a phone recording has a shorter flow, and a live show with a mixer has a wider one.
 - The basic recording chain is dynamic mic → XLR cable → audio interface → USB cable → computer: three devices connected by two cables, with a mic-level signal on the XLR. It's the flow at every lab station.
 - There are three transducer types. Dynamic mics (moving coil; SM57 and SM58 at the lab stations) are rugged and need no power. Condenser mics are more sensitive, capture more detail, and need phantom power. Ribbon mics are covered in the reading and not used in the lab.
 - Polar patterns are taught at a beginner level. The lab mics are cardioid. Omni and figure-8 are the other two common patterns; super-cardioid, hyper-cardioid, and shotgun are introduced as variants.
@@ -66,13 +66,13 @@ A folder of the student's own recorded sounds, prepped through the pipeline and 
 
 Prompt and rubric: [Project 2: sample library](https://csuebmusic.github.io/mus381/module-03-recording/projects/project-02-sample-library.html)
 
-The library has at least 20 prepped sounds (20 to 25 is the target). Every sound is the student's own recording, made in the lab or on their phone; downloaded or borrowed sounds aren't allowed. Every sample is a mono WAV, 48 kHz, 24-bit, normalized to -1 dBFS, and named [category]-[descriptor]-[variant].wav (lowercase, hyphens, no spaces). Samples are sorted into category folders, with a README.txt the student writes at the root and the Audacity project in audacity-projects/. The rubric has five dimensions at 20 points each: recording quality, sample prep, organization, naming, and range and curation.
+The library has at least 20 prepped sounds (20 to 25 is the target). Every sound is the student's own recording, made in the lab or on their phone; downloaded or borrowed sounds aren't allowed. Every sample is a mono WAV, 48 kHz, 24-bit, normalized to -1 dBFS, and named [category]-[descriptor]-[variant].wav (lowercase, hyphens, no spaces). Samples are sorted into category folders, with a README.txt the student writes at the root and the Audacity project in audacity-projects/.
 
 The library builds up across the module:
 
 - Wed Wk 6: students record their first four sounds in Lab 1 (paper crumble and paper rip, each at two speeds), prep them, and set up the library folder and README.
 - From Wk 6 on: students record on their phones outside class with the phone reference card.
-- Wed Wk 7: Lab 2 moves phone recordings into Audacity and through the pipeline, with worktime for recording and prepping more.
+- Wed Wk 7: Lab 2 moves phone recordings into Audacity and through the pipeline, with work time for recording and prepping more.
 - Wk 8: the Monday mixer lecture and the Wednesday live-sound lab. Students keep adding to the library between sessions; Lab 3 ends with a five-minute library check.
 - Mon Wk 9: the MB2508 studio visit. Handout 08 goes home, and so does the midterm review packet (handout 09).
 - Wed Wk 9: the library is due at the start of class, before the terminology exam.
@@ -103,7 +103,7 @@ Due Mon Oct 12 (Wk 9), before class.
 
 ### peer listening
 
-After the midterm, students browse classmates' libraries in /public/mus-381-fall-2026/project-02-libraries/ on the class server (reachable from inside the lab only) and write 50 to 80 words on each of three or four libraries: whose library it is, one specific thing they noticed, and one file they'd borrow and how they'd use it in a piece. The response is lastname-peer-listening-03 (.docx or PDF, about 200 to 320 words), uploaded to Canvas. The libraries are discussed in class on Mon Wk 10, the first day of Module 4.
+After the midterm, students browse classmates' libraries in /public/mus-381-fall-2026/project-02-libraries/ on the class server and write 50 to 80 words on each of three or four libraries: whose library it is, one specific thing they noticed, and one file they'd borrow and how they'd use it in a piece. The response is lastname-peer-listening-03 (.docx or PDF, about 200 to 320 words), uploaded to Canvas. The libraries are discussed in class on Mon Wk 10, the first day of Module 4.
 
 Assignment page: [peer listening: sample libraries](https://csuebmusic.github.io/mus381/module-03-recording/listening/peer-midterm.html)
 
@@ -135,13 +135,11 @@ Due Mon Oct 19 (Wk 10), before class.
 | 6 | Mon Sep 21 | Session 1 · Lecture 1: a simple recording chain. Signal flow; the five-stage chain (dynamic mic, XLR cable, audio interface, USB cable, computer); reading a mic's spec sheet; balanced cables; the two lab interfaces. |
 | 6 | Wed Sep 23 | Session 2 · Lab 1: recording into Audacity. Library folder set up, Audacity configured for mono recording, gain and monitor mix, noise-profile clip, four paper recordings (crumble slow and fast, rip slow and fast), the denoise → trim → normalize pipeline, export, library README, upload. Students pick up the phone reference card on the way out. |
 | 7 | Mon Sep 28 | Session 3 · Lecture 2: widening the flow. Mic, instrument, and line level; XLR, TS, TRS, and RCA; condenser and ribbon mics; polar patterns; DI boxes and hardware preamps. |
-| 7 | Wed Sep 30 | Session 4 · Lab 2: phone recordings into Audacity. LocalSend transfer, import, sample-rate check and resampling, the pipeline with a noise profile taken from the phone recording, export to a new category folder, worktime on the library. |
+| 7 | Wed Sep 30 | Session 4 · Lab 2: phone recordings into Audacity. LocalSend transfer, import, sample-rate check and resampling, the pipeline with a noise profile taken from the phone recording, export to a new category folder, work time on the library. |
 | 8 | Mon Oct 5 | Session 5 · Lecture 3: the mixer. The Toft ATB top to bottom: channel strip, in-line architecture, submasters, master section. |
 | 8 | Wed Oct 7 | Session 6 · Lab 3: the mixer in practice · live sound. The Sound Below through one live show (FOH mix and five stage-monitor mixes on the same desk), then the Generate a band widget, where students route a random lineup themselves. |
 | 9 | Mon Oct 12 | Session 7 · Lab 4: studio visit to MB2508. A walk around the live room, the control room, the Toft, the preamp rack, and the side rack. Handout 08 (the self-guided studio-recording walkthrough) and handout 09 (midterm review) go home. Module 3 listening due. |
 | 9 | Wed Oct 14 | Session 8 · Midterm: library submission, then the terminology exam. |
-
-Session 2 has block-by-block notes. The other sessions have a roadmap and notes on their reading or handout.
 
 ---
 
@@ -165,9 +163,9 @@ Session 2 has block-by-block notes. The other sessions have a roadmap and notes 
 - "My recording is too quiet" almost always means the gain knob is too low. If the recording looks fine on the meter but the headphones are quiet, check the headphone knob, then the in-line slider, then the monitor mix.
 - "My recording is too loud or clipping" means the gain knob is too high. Reinforce the -12 to -6 dBFS target.
 - "I can't hear myself while recording" means the monitor mix is turned toward Playback (PreSonus) or Direct Monitor isn't pressed in (Behringer).
-- "My file disappeared" is the Module 2 problem again. Reinforce download at the start and upload at the end, every session: the library is now weeks of the student's own recordings.
+- "My file disappeared" is the Module 2 problem again. Reinforce download at the start and upload at the end, every session: the library is now weeks of the student's own recordings. The server is reachable only from the lab.
 
-### gear setup baseline (every Wednesday)
+### gear storage baseline (every Wednesday)
 
 Same as Module 2. In Module 3 students also take the mic, stand, and XLR cable from gear storage. Each station's mic is a Shure SM57 or SM58; both are cardioid dynamics, and the handouts call either one "the dynamic mic."
 
@@ -175,7 +173,7 @@ Same as Module 2. In Module 3 students also take the mic, stand, and XLR cable f
 
 Wed Wk 6 is tight on time. Every student needs to leave with four samples recorded, prepped through the full pipeline at least once, exported, and in a named folder. Plan the session so the full pipeline gets done, along with the recordings.
 
-Wed Wk 7 has the module's one long unstructured stretch: the worktime half, after the phone transfers. Students who've been recording on their own time spend it on prep and organization; students who haven't spend it recording. Watch for a student with nothing to work on. Lab 2's "If you arrive without a recording" callout has them record one sound at the station before starting Step 1.
+Wed Wk 7 has the module's one long unstructured stretch: the work time half, after the phone transfers. Students who've been recording on their own time spend it on prep and organization; students who haven't spend it recording. Watch for a student with nothing to work on. Lab 2's "If you arrive without a recording" callout has them record one sound at the station before starting Step 1.
 
 ### when to escalate to Inés
 
@@ -189,7 +187,7 @@ Same as Module 2.
 
 ### roadmap
 
-The lecture names the umbrella concept (signal flow, the path from acoustic source to stored file) and then covers the basic recording chain stage by stage: dynamic mic → XLR cable → audio interface → USB cable → computer, three devices connected by two cables. Students should leave able to draw the five-stage chain from memory and say what kind of signal is on each cable.
+The lecture names the umbrella concept (signal flow, the path from acoustic source to stored file) and then covers the basic recording chain stage by stage. Students should leave able to draw the five-stage chain from memory and say what kind of signal is on each cable.
 
 The reading has six sections:
 
@@ -292,7 +290,7 @@ The card covers setup on each platform. On iPhone that's mic mode (bottom, front
 
 ### pre-class checklist
 
-- Walk the room: gear setup baseline (module-wide concerns above).
+- Walk the room: gear storage baseline (module-wide concerns above).
 - In the lab's gear storage, confirm every set is present and intact: audio interface, headphones, dynamic mic, mic stand, XLR cable. Students take these out following the Session Routines card.
 - Put paper at every station (paper supplies, below).
 - Confirm Audacity has Effect → Noise Removal and Repair → Noise Reduction… on three stations during the walk-through. It's standard in Audacity 3.x.
@@ -311,9 +309,11 @@ The card covers setup on each platform. On iPhone that's mic mode (bottom, front
 | 5. Export and upload | 15 min | Steps 9–10 | Mono WAV export, README, end-of-session upload |
 | 6. Wrap and phone card | 5 min | | Phone reference card, preview Mon Wk 7 |
 
-The 100 minutes assume students arrive on time and finish the start-of-session routine before Block 1. Students take the mic, stand, and XLR cable from gear storage for the first time since Day 1, and the routine runs longer than usual: allow 8 to 10 minutes. Demo the mic-and-XLR setup on the instructor station as students arrive, alongside the handout's today's gear callout. Monday's five-stage chain diagram is the model: students should be able to point at their own setup and name each stage.
+The 100 minutes assume students arrive on time and finish the start-of-session routine before Block 1. Students take the mic, stand, and XLR cable from gear storage for the first time since Day 1, and the routine runs longer than usual: allow 8 to 10 minutes. Demo the mic-and-XLR setup on the instructor station as students arrive, alongside the handout's today's gear callout.
 
-Block 1 · folder, setup, and gain (25 min, Steps 1–3). Step 1 takes about 5 minutes. Students build `~/Documents/netid/sample-library/` with `paper/` and `audacity-projects/` inside it, before opening Audacity. Walk the room and check the folder at every station before anyone moves on.
+#### Block 1: folder, setup, and gain (25 min, Steps 1–3)
+
+Step 1 takes about 5 minutes. Students build `~/Documents/netid/sample-library/` with `paper/` and `audacity-projects/` inside it, before opening Audacity. Walk the room and check the folder at every station before anyone moves on.
 
 Then walk through Step 2 on the projector with students mirroring at their stations. In Preferences → Audio Settings they confirm Project Sample Rate 48000 Hz and Default Sample Format 24-bit PCM. Students haven't opened the Audio Setup button before; they saw it as marker 5 in the orientation lab's empty-project tour. Today they set Recording Device, Recording Channels, and Playback Device. The PreSonus shows up as AudioBox USB 96 and the Behringer UM2 as USB Audio CODEC. Recording Channels → 1 (Mono) is the setting students miss. A student who records to a stereo track with a mono input gets the mic on the left channel and silence on the right; it's audible only if you pan hard, and the file is wrong. Then the mono track: Tracks → Add New → Mono Track.
 
@@ -321,11 +321,15 @@ Step 3 (set gain) takes most of the block. Demo on the projector: click the reco
 
 The error to expect in this block: students set gain by speech rather than by the paper sound. Speech into a dynamic mic at 15 to 20 cm reads quieter than a close paper rip, and they set gain too high. Demo the test-crumble approach explicitly.
 
-Block 2 · monitor and test (10 min, Steps 4–5). Most students already hear themselves from Block 1. Step 4 confirms and adjusts the monitor mix: on PreSonus stations, turn the Mixer knob about three-quarters toward Inputs; on Behringer stations, press Direct Monitor in. A student who hears an echo has Audacity's audible input monitoring on: Transport → Transport Options → uncheck Enable audible input monitoring. Step 5 is one test recording of a spoken phrase. After it, students delete the test clip (double-click it, press Delete) and keep the empty mono track for the noise-profile clip in Block 3. Then they save the project with File → Save Project As… as `sample-library.aup3` in `sample-library/audacity-projects/`, and save every few minutes with Cmd + S from then on.
+#### Block 2: monitor and test (10 min, Steps 4–5)
+
+Most students already hear themselves from Block 1. Step 4 confirms and adjusts the monitor mix: on PreSonus stations, turn the Mixer knob about three-quarters toward Inputs; on Behringer stations, press Direct Monitor in. A student who hears an echo has Audacity's audible input monitoring on: Transport → Transport Options → uncheck Enable audible input monitoring. Step 5 is one test recording of a spoken phrase. After it, students delete the test clip (double-click it, press Delete) and keep the empty mono track for the noise-profile clip in Block 3. Then they save the project with File → Save Project As… as `sample-library.aup3` in `sample-library/audacity-projects/`, and save every few minutes with Cmd + S from then on.
 
 This block goes quickly.
 
-Block 3 · noise profile and recording (20 min, Steps 6–7). Students skip or rush the noise-profile clip. Walk the room during the 10-second capture: every student still, hands off the mic, the cable, and the table, mouth closed. Movement or audible breathing contaminates the profile, and denoise in Block 4 then produces strange artifacts. Stop the clock if needed and have a student who moved redo it.
+#### Block 3: noise profile and recording (20 min, Steps 6–7)
+
+Students skip or rush the noise-profile clip. Walk the room during the 10-second capture: every student still, hands off the mic, the cable, and the table, mouth closed. Movement or audible breathing contaminates the profile, and denoise in Block 4 then produces strange artifacts. Stop the clock if needed and have a student who moved redo it.
 
 Then the four recordings. The handout says: hold the paper 15 to 20 cm from the mic, click Record, wait one full second of silence, make the sound, wait one full second more, click Stop. Watch for students who skip the silence and start the sound on Record. Without it they risk cutting off the start of the sound when they trim.
 
@@ -333,7 +337,9 @@ The four sounds are short (the slow crumble is about 8 to 10 seconds, the fast r
 
 By the end of Block 3, every student has five clips on one mono track: the noise-profile clip, then paper crumble slow, paper crumble fast, paper rip slow, paper rip fast. Have them save (Cmd + S) before moving on.
 
-Block 4 · prep pipeline (25 min, Step 8). This step is procedure-dense and students rush it. Demo the full pipeline on the instructor station on one clip, start to finish, before students try it:
+#### Block 4: prep pipeline (25 min, Step 8)
+
+This step is procedure-dense and students rush it. Demo the full pipeline on the instructor station on one clip, start to finish, before students try it:
 
 1. Capture the noise profile, once. Double-click the noise-profile clip → Effect → Noise Removal and Repair → Noise Reduction… → Get Noise Profile. The dialog closes. Audacity keeps the profile until it's replaced or the program closes.
 2. Prep paper crumble slow (the second clip on the track). Double-click it, open Noise Reduction again, set 6, 6.00, 6, click OK. Select just the sound with the I-beam and press Cmd + T (Trim Audio). Zoom in with Cmd + 1 at the start, select about 50 ms, Effect → Fading → Fade In; zoom out with Cmd + F and repeat at the end with Fade Out. Double-click the trimmed clip, Effect → Volume and Compression → Normalize…, peak -1.0 dB, OK.
@@ -342,12 +348,14 @@ Students then repeat the pipeline for the other three sounds. By the end of the 
 
 Errors to expect in this block:
 
-- Clicking Get Noise Profile on a sound clip instead of OK. The dialog closes without changing anything, and the student thinks denoise has been applied; the profile has been replaced with the sound clip. If a student opens Noise Reduction on a sound clip and clicks Get Noise Profile, step in.
-- Selecting only part of a sound clip for denoise (just the loud middle, say). The unselected edges stay noisy. Double-clicking the clip selects the whole clip.
-- Skipping the fades. The file clicks at the start or end. It's easy to miss on screen; remind the room when most students reach the trim.
-- Trimming too tight and cutting off the natural decay of the sound. The handout says to select from where the sound starts to where it ends; let the ring or scrape decay into silence before the cut.
+- A student clicks Get Noise Profile on a sound clip instead of OK. The dialog closes without changing anything, and the student thinks denoise has been applied; the profile has been replaced with the sound clip. If a student opens Noise Reduction on a sound clip and clicks Get Noise Profile, step in.
+- A student selects only part of a sound clip for denoise (the loud middle, say). The unselected edges stay noisy. Double-clicking the clip selects the whole clip.
+- A student skips the fades, and the file clicks at the start or end. It's easy to miss on screen; remind the room when most students reach the trim.
+- A student trims too tight and cuts off the natural decay of the sound. The handout says to select from where the sound starts to where it ends; let the ring or scrape decay into silence before the cut.
 
-Block 5 · export and upload (15 min, Steps 9–10). Export first. Demo the first export on the instructor station: double-click the clip, File → Export Audio…, fill in the dialog, and point to Export Range → Current selection. Students leave Export Range at its default and get one file with every clip on the track, the noise-profile clip included. Walk the room during each student's first export and catch it there; the remaining three go right.
+#### Block 5: export and upload (15 min, Steps 9–10)
+
+Export first. Demo the first export on the instructor station: double-click the clip, File → Export Audio…, fill in the dialog, and point to Export Range → Current selection. Students leave Export Range at its default and get one file with every clip on the track, the noise-profile clip included. Walk the room during each student's first export and catch it there; the remaining three go right.
 
 The first file is `sample-library/paper/paper-crumble-slow.wav`, and the other three follow the same pattern.
 
@@ -355,30 +363,32 @@ Then the README. Students open TextEdit and choose Format → Make Plain Text (C
 
 Then the end-of-session upload. In FileZilla the left pane is on `~/Documents/netid/` and the right pane stays in the student's own folder; students drag `sample-library/` across, choosing Overwrite if source newer if asked. Watch which folder they drag: a student who drags the parent folder ends up with `netid/netid/sample-library/` on the server. Check a few uploads by opening `sample-library/paper/` in the student's server folder and counting four WAVs.
 
-Block 6 · wrap and phone card (5 min). Students pick up a phone reference card on the way out. Say something like: "From this week on, you can add to your library on your own time with your phone. The card has the iPhone and Android setup. Next session covers other signal levels (instrument level, line level), condenser mics, DI boxes, and the cables that go with them."
+#### Block 6: wrap and phone card (5 min)
+
+Students pick up a phone reference card on the way out. Say something like: "From this week on, you can add to your library on your own time with your phone. The card has the iPhone and Android setup. Next session covers other signal levels (instrument level, line level), condenser mics, DI boxes, and the cables that go with them."
 
 Remind students to finish the end-of-session routine on the Session Routines card before leaving the station: disconnect and quit FileZilla, quit all apps, interface knobs back to zero, unplug everything (including the mic's XLR at both ends), return the gear (with the mic and stand) to gear storage, chair in.
 
 ### common confusions
 
-- Recording device not set. The student clicks Record and no waveform appears. Audio Setup was skipped or the wrong device was chosen (the PreSonus is AudioBox USB 96, the UM2 is USB Audio CODEC). This shows up in Block 1; check Audio Setup → Recording Device on that station.
-- Mono mic recorded to a stereo track. Recording Channels was left at 2 (Stereo). The mic is on the left channel and the right is silent; the waveform looks half-empty. Set Recording Channels to 1 (Mono), delete the stereo track, add a new mono track (Tracks → Add New → Mono Track), and record again.
-- The meter shows nothing. The student is setting gain without silent monitoring on. Click the recording level meter and choose Enable Silent Monitoring; the menu item then reads Disable Silent Monitoring.
-- Monitor mix turned toward Playback. The student can't hear the mic. On the PreSonus, turn the Mixer knob toward Inputs. On the Behringer, press Direct Monitor in. If the student hears the mic with an echo, Audacity's audible input monitoring is on; uncheck it in Transport → Transport Options.
-- Noise-profile clip captured with movement. During the 10-second capture the student breathed audibly, shifted, or touched the cable. Denoise then subtracts things that aren't constant background and produces artifacts (a whispery, underwater sound). Record the noise-profile clip again and capture a new profile.
-- Get Noise Profile and OK in the same dialog. Get Noise Profile captures the profile and closes the dialog with nothing audible changing, and students think it's broken. OK applies the reduction. Demo both on the projector and expect to repeat the distinction at individual stations.
-- No silence buffer in a recording. The student started the sound on Record. Trimming then risks cutting off the start of the sound. Have them select from just inside the visible silence, leaving 10 to 20 ms before the waveform starts.
-- Clicks at the trim points. The student skipped the 50 ms fades. Listen to one of their samples on headphones; if it clicks at the start or end, take them back to the fades.
-- Export Range left at its default. One WAV with every clip in it instead of one sample. Catch it on the first export.
-- README saved as .rtf. Format → Make Plain Text was skipped. Open the file in TextEdit, choose Format → Make Plain Text, and save over it, or delete it and start again from the template in the handout.
-- An extra folder level on the server. The student dragged `netid/` instead of `sample-library/` and has `netid/netid/sample-library/`. Check by opening the upload destination; fix it by moving the inner folder up one level.
+- When the recording device isn't set, the student clicks Record and no waveform appears. Audio Setup was skipped or the wrong device was chosen (the PreSonus is AudioBox USB 96, the UM2 is USB Audio CODEC). This shows up in Block 1; check Audio Setup → Recording Device on that station.
+- When a mono mic is recorded to a stereo track, Recording Channels was left at 2 (Stereo). The mic is on the left channel and the right is silent; the waveform looks half-empty. Set Recording Channels to 1 (Mono), delete the stereo track, add a new mono track (Tracks → Add New → Mono Track), and record again.
+- When the meter shows nothing, the student is setting gain without silent monitoring on. Click the recording level meter and choose Enable Silent Monitoring; the menu item then reads Disable Silent Monitoring.
+- When the monitor mix is turned toward Playback, the student can't hear the mic. On the PreSonus, turn the Mixer knob toward Inputs. On the Behringer, press Direct Monitor in. If the student hears the mic with an echo, Audacity's audible input monitoring is on; uncheck it in Transport → Transport Options.
+- When the noise-profile clip was captured with movement, the student breathed audibly, shifted, or touched the cable. Denoise then subtracts things that aren't constant background and produces artifacts (a whispery, underwater sound). Record the noise-profile clip again and capture a new profile.
+- Get Noise Profile and OK are in the same dialog. Get Noise Profile captures the profile and closes the dialog with nothing audible changing, and students think it's broken. OK applies the reduction. Demo both on the projector and expect to repeat the distinction at individual stations.
+- When a recording has no silence buffer, the student started the sound on Record. Trimming then risks cutting off the start of the sound. Have them select from just inside the visible silence, leaving 10 to 20 ms before the waveform starts.
+- When a sample clicks at the trim points, the student skipped the 50 ms fades. Listen to one of their samples on headphones; if it clicks at the start or end, take them back to the fades.
+- When Export Range is left at its default, the student gets one WAV with every clip in it instead of one sample. Catch it on the first export.
+- When the README is saved as .rtf, Format → Make Plain Text was skipped. Open the file in TextEdit, choose Format → Make Plain Text, and save over it, or delete it and start again from the template in the handout.
+- When the server has an extra folder level, the student dragged `netid/` instead of `sample-library/` and has `netid/netid/sample-library/`. Check by opening the upload destination; fix it by moving the inner folder up one level.
 
 ### pacing fallbacks
 
-- Running long in Block 1 (gain). Students are probably stuck on silent monitoring. Demo it once more with the whole room watching, and have neighbors check each other's meters before moving on.
-- Running long in Block 4 (prep). Students can prep three sounds in class and the fourth at their next session; the project goes up to the server with the library. Keep at least three full passes in class.
-- Running short. Add a fifth recording: students invent a paper sound (paper sliding against itself, a sharp fold, a slow-motion crinkle) and name it themselves following the convention, choosing their own descriptor and variant.
-- One station's interface fails partway through. Pair the student with a neighbor at a working station; they share the interface for recording and split the prep across two stations. Note the failed interface for after class.
+- If Block 1 (gain) runs long, students are probably stuck on silent monitoring. Demo it once more with the whole room watching, and have neighbors check each other's meters before moving on.
+- If Block 4 (prep) runs long, students can prep three sounds in class and the fourth at their next session; the project goes up to the server with the library. Keep at least three full passes in class.
+- If the session runs short, add a fifth recording: students invent a paper sound (paper sliding against itself, a sharp fold, a slow-motion crinkle) and name it themselves following the convention, choosing their own descriptor and variant.
+- If one station's interface fails partway through, pair the student with a neighbor at a working station; they share the interface for recording and split the prep across two stations. Note the failed interface for after class.
 
 ### paper supplies
 
@@ -386,8 +396,6 @@ Standard 8.5×11 printer paper: four full sheets per student for the recordings,
 
 ### reminders for the TA
 
-- Noise-profile clip first. Before students record any paper sound, they record 10 seconds of room tone. Walk the room during Step 6; a student who skips it can't denoise. The clip should look almost flat, with nothing audible in it.
-- Peaks at -12 to -6 dBFS while recording. Don't let students push to -3 or above to be loud.
 - Normalize doesn't fix a recording made too quiet. It evens out the peak level across recordings made at a good level.
 - Students leave with the library folder set up and the README started. Check both before anyone leaves.
 
@@ -438,13 +446,13 @@ The first half moves one phone recording into Audacity and through the prep pipe
 - The prep pipeline is the one from Lab 1, with one change: the noise profile comes from a quiet second or two of the phone recording itself. From this session on, students record a second or two of silence at the start of every take.
 - Export the sample as a mono WAV, 48 kHz, 24-bit, into a new category folder the student names (kitchen/, metal/, fabric/, and so on), and update the README's ORGANIZATION, CONTENTS, and Last updated lines.
 
-The second half is worktime on the library: more phone recordings through the pipeline, new sounds recorded at the station with the dynamic mic, recordings from the hallway, stairwell, or courtyard, and reorganizing what's there. The TA circulates, asks questions, and catches students who are stuck. Students aim for at least two or three new prepped samples by the end of the session.
+The second half is work time on the library: more phone recordings through the pipeline, new sounds recorded at the station with the dynamic mic, recordings from the hallway, stairwell, or courtyard, and reorganizing what's there. You circulate, ask questions, and catch students who are stuck. Students aim for at least two or three new prepped samples by the end of the session.
 
 ### handout
 
 [phone recordings into Audacity](https://csuebmusic.github.io/mus381/module-03-recording/lessons/05-handout-phone-to-audacity.html) (Lab 2)
 
-Seven steps, then the end-of-session upload: (1) send the recording from the phone to the Mac with LocalSend; (2) download the library and open a new Audacity project for the day; (3) import the phone recording and check its rate, format, and channel count; (4) when a file isn't at 48 kHz, with the reinterpret-or-resample experiment; (5) run the prep pipeline, with the noise profile taken from the phone recording; (6) export to a category folder and update the README; (7) worktime. The handout points to Lab 1, Step 8, for the full pipeline walkthrough with screenshots.
+Seven steps, then the end-of-session upload: (1) send the recording from the phone to the Mac with LocalSend; (2) download the library and open a new Audacity project for the day; (3) import the phone recording and check its rate, format, and channel count; (4) when a file isn't at 48 kHz, with the reinterpret-or-resample experiment; (5) run the prep pipeline, with the noise profile taken from the phone recording; (6) export to a category folder and update the README; (7) work time. The handout points to Lab 1, Step 8, for the full pipeline walkthrough with screenshots.
 
 ### common confusions
 
@@ -515,7 +523,7 @@ Section 2, Scenario 1 (live sound, walked), puts the band in a small venue. The 
 
 Section 3, Scenario 2 (you try), is the widget. Generate a band pulls a random lineup from a pool of six, each adding one routing concept The Sound Below didn't cover: a string quartet (when to skip subgroups), a singer with a looper (a stereo line source on a subgroup pair), a punk trio with a double-mic'd kick, a jazz quartet (two stereo subgroup pairs), an electronic duo (stereo line sources on LINE inputs), and a folk band with a sit-in fiddler (a subgroup pair ready to mute). Students read the signal chart, build the channel chart themselves, then plan the FOH mix and the stage monitor mixes. Each section has a Show one approach button that reveals a worked solution with a trade-off note. Students answer on paper before revealing.
 
-Aux sends, subgroups, and the master all route signal, and they look the same on the desk in every context; what's plugged into them and where their outputs go changes. The studio version, with Aux 1 and Aux 2 feeding one shared headphone cue in MB2508, is in handout 08, which students work through on their own time after the Wk 9 visit.
+The studio version of the routing, with Aux 1 and Aux 2 feeding one shared headphone cue in MB2508, is in handout 08, which students work through on their own time after the Wk 9 visit.
 
 ### handout
 
@@ -574,7 +582,7 @@ Handed out at the end of Session 7 for study at home. It gathers the vocabulary 
 
 Two parts.
 
-Part 1, library submission (roughly the first 30 minutes). Students upload their final library to the server following the submission details on the Project 2 page. The TA checks each library before moving on:
+Part 1, library submission (roughly the first 30 minutes). Students upload their final library to the server following the submission details on the Project 2 page. Check each library before moving on:
 
 - `sample-library/` is inside the student's own folder on the server
 - samples are in category folders, with the Audacity project in `audacity-projects/`
