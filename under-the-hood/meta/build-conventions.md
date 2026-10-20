@@ -89,6 +89,7 @@ The header `<span class="meta">` and the matching footer span hold the role line
 | Document type | Role line |
 |---|---|
 | Reading (Monday lecture) | `Module XX · Lecture N` |
+| Reading not tied to a numbered lecture | `Module XX · Reading` |
 | Reading that supplements a lecture | `Module XX · Lecture N (supplement)` |
 | Lab handout, principal document for one lab session | `Module XX · Lab N` |
 | Module-tied handout not paired with one lab session | `Module XX · Handout N` |
@@ -97,9 +98,10 @@ The header `<span class="meta">` and the matching footer span hold the role line
 | Peer listening assignment | `Module XX · Peer listening` |
 | Numbered project prompt | `Module XX · Project N` |
 | Final project prompt | `Module XX · Final project` |
+| Exam review handout | `Module XX · Midterm review` or `Module XX · Final review` |
 | Handout used all semester | `Lab · Reference card` |
 
-Counts restart in each module, except project numbers, which are global. Lecture N counts Monday lectures, Lab N counts Wednesday lab sessions, Handout N counts module-tied handouts not paired with one lab (none at present), and Tool N counts interactive tools.
+Counts restart in each module, except project numbers, which are global. Lecture N counts lectures, Lab N counts lab sessions, Handout N counts module-tied handouts not paired with one lab (none at present), and Tool N counts interactive tools.
 
 ### separators
 
@@ -107,7 +109,7 @@ A middle dot (`·`, U+00B7) separates title metadata in `<title>` elements and i
 
 ### title block
 
-The module tag (`<div class="module-tag">`) holds the module's thematic label, the same on every document in the module: `Module 02 · Digital audio, editing & mixing`. The subtitle is one sentence describing the document, with no dates.
+The module tag (`<div class="module-tag">`) holds the module's thematic label in sentence case, the same on every document in the module: `Module 02 · Digital audio, editing & mixing`. A reference card's module tag is `Lab reference · [room or topic]`: `Lab reference · MB2525`. The subtitle is one sentence describing the document, with no dates.
 
 ### headings
 
@@ -127,18 +129,18 @@ Every document students use during a lab session has the template's Today's gear
 
 | File type | Gear list |
 |---|---|
-| Reading (Monday lecture) | audio interface, headphones |
+| Module 2 reading (Lectures 1–3) | audio interface, headphones |
 | Interactive tool | audio interface, headphones |
 | Module 2 lab handout | audio interface, headphones |
 | Module 3 lab handout | audio interface, headphones, dynamic mic (with stand and XLR cable) |
 | Module 4 sampling handout (`03-handout-sampling-in-practice.html`) | audio interface, headphones, MIDI keyboard |
 | Other Module 4 lab handouts | audio interface, headphones |
 
-The Session Routines card, the Day 1 reading, listening pages, and project prompts have no Today's gear callout. Body prose doesn't repeat the gear list.
+The Session Routines card, the reference cards, the Day 1 reading, the Module 2 Lecture 3 supplement, the Module 3 and Module 4 readings, Module 3's Lab 4 (handout 08), the exam review handouts, listening pages, and project prompts have no Today's gear callout. Body prose doesn't repeat the gear list.
 
 ### end of session
 
-Readings and tools end with the template's End of session callout, immediately before the footer. Lab handouts have an `<h2>end of session</h2>` block instead, with that session's upload steps, closing with the template's sentence that continues into the Session Routines card's routine. When the card's routine changes, update the card first, then that sentence in every lab handout. Module 3's Lab 4 (handout 08) has no end-of-session block. The documents without a Today's gear callout have no End of session callout.
+Module 2's Lectures 1–3 and the tools end with the template's End of session callout, immediately before the footer. The Module 4 reading has a Start of session callout after the lede and an End of session callout before the footer, for the download and upload, with no gear. Lab handouts have an end-of-session block instead, as an `<h2>` that names end of session or as the last numbered step, with that session's upload steps, closing with the template's sentence that continues into the Session Routines card's routine. When the card's routine changes, update the card first, then that sentence in every lab handout. Module 3's Lab 4 (handout 08) has no end-of-session block. Apart from the Module 4 reading, the documents without a Today's gear callout have no End of session callout.
 
 ### links
 
@@ -254,8 +256,8 @@ The advanced texts of Sound Design (Cook, Puckette, Roads, Kapur, Wang) are cite
 
 These rules cover this repo and `music-production`.
 
-- Commits go directly to `main`, authored as Inés Thiebaut (ines.thiebaut@csueastbay.edu).
-- Each commit holds one logical change and is pushed when it's made.
+- Claude commits to `main` in Inés's local clones, authored as Inés Thiebaut (ines.thiebaut@csueastbay.edu), and Inés pushes.
+- Each commit holds one logical change.
 - A commit message names what changed and stops.
 - A reorganization, mass rename, deletion, or other wide-reaching change is proposed to Inés first and made after she confirms.
 - Repo files aren't attached in chat. Inés pulls locally.
