@@ -1,6 +1,6 @@
 # Build scripts
 
-Internal scripts that generate assets for the course. Not student-facing.
+This folder holds the scripts that generate course assets. None of it is student-facing.
 
 ## `generate-audio-demos.py`
 
@@ -88,11 +88,10 @@ Section 2 (tape physics) has the time-pitch coupling set:
 | `tape-slow.wav` | Same source via `asetrate=33075,aresample=44100` | 0.75× speed, ~7.6 s, ~5 semitones lower |
 | `tape-fast.wav` | Same source via `asetrate=58800,aresample=44100` | 1.33× speed, ~4.3 s, ~5 semitones higher |
 
-The tape demos use ffmpeg's `asetrate` filter rather than DSP-based
-time-stretch or pitch-shift. `asetrate` reinterprets the file's
-sample rate without changing the sample data, which is mathematically
-identical to what a tape machine does at non-standard playback speed:
-duration and pitch shift together, by exactly the same ratio.
+The tape demos use ffmpeg's `asetrate` filter, which reinterprets the
+file's sample rate without changing the sample data: duration and pitch
+shift together, by the same ratio, as on a tape machine at a
+non-standard playback speed.
 
 ### Re-running
 
@@ -183,12 +182,7 @@ copy should reflect the new audio.
 
 ### The embedded copy
 
-Browsers block `fetch()` across origins under the `file://` protocol, so
-fetching a sibling WAV from the tool's HTML fails when the page is
-opened by double-clicking. The WAV is embedded in the HTML instead,
-which takes the file from ~30 KB to ~1.4 MB.
-
-The script reads the canonical WAV from
+The tool HTML holds the WAV as base64, about 1.4 MB. The script reads the canonical WAV from
 `assets/audio/module-02-week-05/dynamic-tool-demo.wav`, base64-encodes
 it, and replaces the contents of the
 `<script type="application/octet-stream" id="demo-audio-b64">` block
@@ -211,14 +205,9 @@ Week 2 Audacity orientation lab
 
 ### What it produces
 
-Output directory: `assets/audio/module-02-week-02/`
-
-| File | Sample rate | Bit depth | Length | Purpose |
-|---|---|---|---|---|
-| `orientation-sample.wav` | 48 kHz | 24-bit | 16.0 s | Stereo bell-like resonance for the Lab 1 import, cut, and fade exercises |
-
-The lab copy is uploaded to `/public/module-02/orientation/` on the class
-server; the repo copy is the source of truth.
+Output: `assets/audio/module-02-week-02/orientation-sample.wav`. The
+asset's spec, server path, and substitute are in
+[`assets/asset-recipes.md`](../../assets/asset-recipes.md).
 
 ### The sound
 
