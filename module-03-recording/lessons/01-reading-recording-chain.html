@@ -250,12 +250,12 @@
 
 <h3>2.1 · how a dynamic mic works</h3>
 
-<p>A microphone is a <strong>transducer</strong>: a device that converts one kind of energy into another. The mic's job is to convert <em>acoustic energy</em> (changing air pressure in the room) into <em>electrical energy</em> (a small voltage that varies the same way the air did). Every microphone does this. They differ in <em>how</em>.</p>
+<p>A microphone is a <strong>transducer</strong>: a device that converts one kind of energy into another. The mic's job is to convert <em>acoustic energy</em> (changing air pressure in the room) into <em>electrical energy</em> (a small voltage that varies the same way the air did). Every microphone does this, and microphones differ in <em>how</em>.</p>
 
 <p>The mics in MB2525's gear storage are <strong>dynamic microphones</strong>. "Dynamic" names the mechanism inside: a small, lightweight diaphragm is attached to a coil of fine wire, and that coil is inside the field of a permanent magnet. When sound waves push on the diaphragm, the diaphragm moves, which moves the coil, which moves inside the magnetic field. A coil moving in a magnetic field generates an electrical current. (Electric generators use the same principle at a much larger scale.)</p>
 
 <figure class="annotated">
-  <img src="../../assets/images/module-03-week-06/dynamic-microphone-cross-section.png"
+  <img loading="lazy" src="../../assets/images/module-03-week-06/dynamic-microphone-cross-section.png"
        alt="Cross-section of a dynamic microphone with five numbered red arrows: an arrow approaching from the left showing the incoming sound wave, an arrow pointing to the thin vertical diaphragm at the front of the mic, an arrow pointing to the coil of wire wrapped just behind the diaphragm, an arrow pointing to the cylindrical magnet inside the coil, and an arrow exiting to the right showing the two output wires leaving the mic.">
   <figcaption>The working parts of a dynamic microphone</figcaption>
   <div class="annotation-key">
@@ -286,7 +286,7 @@
 <p>A polar pattern chart shows what a mic picks up from every direction around it. It's a top-down map of the mic's hearing, with the mic at the center. The angle around the chart tells you where the sound is coming from: 0° at the bottom is directly in front of the mic (where you'd point it at your source); 90° and 270° are the two sides; 180° at the top is directly behind the mic. The concentric rings, labeled in dB going outward, tell you how loud the mic picks up sound from that angle.</p>
 
 <figure>
-  <img src="../../assets/images/module-03-week-06/sm57-polar-pattern.png"
+  <img loading="lazy" src="../../assets/images/module-03-week-06/sm57-polar-pattern.png"
        alt="The cardioid polar pattern as published in the SM57 spec sheet. Two polar plots are shown side by side: the left one shows curves for 125 Hz, 500 Hz, and 1000 Hz; the right one shows curves for 2000 Hz, 4000 Hz, and 8000 Hz. All curves trace a heart-shaped pattern, full at 0 degrees in front, narrowing through the sides, and pinching toward zero at 180 degrees behind."
        style="max-width: 100%; height: auto;">
   <figcaption>Cardioid polar pattern (SM57 and SM58 share this pattern)</figcaption>
@@ -306,12 +306,12 @@
 <figure class="compare">
   <div class="compare-row">
     <div class="compare-item">
-      <img src="../../assets/images/module-03-week-06/sm57-frequency-response.png"
+      <img loading="lazy" src="../../assets/images/module-03-week-06/sm57-frequency-response.png"
            alt="SM57 frequency response curve from the spec sheet. The curve has a long low-end rolloff, dropping from 0 dB at 200 Hz down to -12 dB at 45 Hz. Through the mids the curve is near 0 dB. From 2 kHz it climbs into a presence peak of about +6 dB at 6 kHz, then dips to +4 dB at 7 kHz, +3 dB at 8 kHz, back up to +5 dB at 9 kHz, then rolls off sharply at the top.">
       <div class="compare-label">SM57</div>
     </div>
     <div class="compare-item">
-      <img src="../../assets/images/module-03-week-06/sm58-frequency-response.png"
+      <img loading="lazy" src="../../assets/images/module-03-week-06/sm58-frequency-response.png"
            alt="SM58 frequency response curve from the spec sheet. The curve has a shorter low-end rolloff than the SM57, reaching 0 dB at 100 Hz and dropping only to -9 dB at 50 Hz. The mids are flat. From 1 kHz a gentle climb reaches a presence peak of about +5 dB at 4 kHz, followed by a steep dip at 7.5 kHz that briefly returns to 0 dB, then climbs back up to +5 dB at 9 kHz before rolling off at the top.">
       <div class="compare-label">SM58</div>
     </div>
@@ -360,7 +360,7 @@
 <p>Inside an XLR cable, two of the three wires carry the audio signal, and the third is a ground (a shield wrapped around the other two). The two signal wires carry the <em>same audio</em>, but one of them carries it <em>flipped upside down</em> compared to the other. Flipping a signal upside down is called inverting its <strong>polarity</strong>, and two copies of a signal that move in opposite directions like this are <em>out of phase</em>. If wire A has the waveform going up, wire B has the same waveform going down by the same amount.</p>
 
 <figure>
-  <svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three panels: wire A carries the signal plus noise, wire B carries the flipped signal plus the same noise, and the interface flips wire B back and sums the two, so the signal doubles and the noise cancels.">
     <defs>
       <pattern id="balgrid" width="20" height="20" patternUnits="userSpaceOnUse">
         <path d="M 20 0 L 0 0 0 20" fill="none" stroke="var(--rule-soft)" stroke-width="0.5"/>
@@ -549,12 +549,12 @@
 <figure class="compare">
   <div class="compare-row">
     <div class="compare-item">
-      <img src="../../assets/images/module-03-week-06/presonus-audiobox-usb96-front.png"
+      <img loading="lazy" src="../../assets/images/module-03-week-06/presonus-audiobox-usb96-front.png"
            alt="Front panel of the PreSonus AudioBox USB 96. Left side: two combo XLR/TRS inputs labeled 1 and 2, with a shared Mic/Inst type label between them. Middle: a red 48V phantom power button with red indicator light, and two gain knobs, one per input, each labeled with Inst and Mic positions and a -10 to +30 dB scale, each with a clip indicator LED. Right side: a Mixer blend knob (Inputs to Playback), a Main output knob, a power LED, and a headphone level knob marked with a headphone icon.">
       <div class="compare-label">PreSonus AudioBox USB 96</div>
     </div>
     <div class="compare-item">
-      <img src="../../assets/images/module-03-week-06/behringer-um2-front.png"
+      <img loading="lazy" src="../../assets/images/module-03-week-06/behringer-um2-front.png"
            alt="Front panel of the Behringer U-Phoria UM2. Left side: a combo XLR/TRS input labeled Mic/Line 1 with Clip and Sig LEDs. Middle: a 1/4 inch instrument input labeled Inst 2 with its own Clip and Sig LEDs, and a square Direct Monitor button. Right side: a Power LED with a +48V indicator below it, and a headphone output. Note: the gain knobs for this interface are on the top of the unit, not the front.">
       <div class="compare-label">Behringer U-Phoria UM2</div>
     </div>
@@ -583,7 +583,7 @@
   <div class="callout-label">if you're at a Behringer station</div>
   <p>The Behringer's knobs are on the top of the unit, behind the front panel. There are three: <strong>Mic/Line Gain 1</strong>, <strong>Inst Gain 2</strong>, and <strong>Output</strong>. The first two are the gain knobs for the two inputs. The Output knob sets the level going to your headphones and speakers.</p>
   <figure>
-    <img src="../../assets/images/module-03-week-06/behringer-um2-top.png"
+    <img loading="lazy" src="../../assets/images/module-03-week-06/behringer-um2-top.png"
          alt="Top view of the Behringer U-Phoria UM2 showing three knobs labeled, left to right: Mic/Line Gain 1, Inst Gain 2, and Output."
          style="max-width: 100%; height: auto;">
   </figure>
@@ -594,12 +594,12 @@
 <figure class="compare">
   <div class="compare-row">
     <div class="compare-item">
-      <img src="../../assets/images/module-03-week-06/presonus-audiobox-usb96-back.png"
+      <img loading="lazy" src="../../assets/images/module-03-week-06/presonus-audiobox-usb96-back.png"
            alt="Back panel of the PreSonus AudioBox USB 96. From left to right: USB-B port, two MIDI DIN connectors labeled In and Out, two 1/4 inch TRS Main Out jacks labeled L and R, a Kensington security slot, and a 1/4 inch Phones output.">
       <div class="compare-label">PreSonus back</div>
     </div>
     <div class="compare-item">
-      <img src="../../assets/images/module-03-week-06/behringer-um2-back.png"
+      <img loading="lazy" src="../../assets/images/module-03-week-06/behringer-um2-back.png"
            alt="Back panel of the Behringer U-Phoria UM2. From left to right: two RCA output jacks labeled 2 (R) and 1 (L), a USB-B port, a Kensington security slot, and a +48V phantom power switch with off and on positions.">
       <div class="compare-label">Behringer back</div>
     </div>
