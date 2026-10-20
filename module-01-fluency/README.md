@@ -79,7 +79,7 @@ Do all of this at least one day before the first session, ideally two.
 - [ ] Walk through every station: confirm the USB hub is connected to the Mac mini behind the monitor and has open ports.
 - [ ] Walk through the lab's gear storage and inventory enough sets for the class: one audio interface, one pair of headphones, one dynamic mic, one mic stand, and one XLR cable per student (or per pair, depending on enrollment). Confirm each audio interface is recognized when test-connected. Confirm the headphones' in-line slider is all the way up.
 - [ ] Test-record end to end: take a gear set from storage, plug in at one station, and run mic → interface → Audio MIDI Setup (Format at 48,000 Hz) → QuickTime → local save → FileZilla upload, then stow the gear.
-- [ ] The day before, walk through the entire session yourself on a lab machine as if you were a student, and time yourself. This finds anything broken.
+- [ ] The day before, go through the entire session yourself on a lab machine as if you were a student, and time yourself. This finds anything broken.
 - [ ] Have a backup plan if the server is down: students save locally only, and you collect their work on a USB drive at the end. Don't cancel the session over a network issue.
 - [ ] Have at least one spare hub, one spare XLR cable, and one spare pair of headphones ready in case something fails during class.
 
@@ -111,14 +111,8 @@ Pace the session so the slowest student keeps up, and give the fast students sid
 
 ### Block 1 · welcome (10 min)
 
-- Introduce yourself briefly: you're the course instructor, a grad student in [program], and Inés Thiebaut supervises the course.
-- Walk them through the highlights of the syllabus. Don't read it aloud; flag the parts that affect their semester.
-  - There are three projects. Project 1 (Module 2) is a musique concrète piece of 90 seconds to 2 minutes, due Wed Sep 16 (Wk 5). The midterm (Module 3) is a sample library plus an in-class terminology exam, due Wed Oct 14 (Wk 9). The final project (Module 4) is a piece built in Ableton Live, with drafts due Wed Nov 18 (Wk 14) and Wed Dec 2 (Wk 15), completed during finals.
-  - The final exam is a cumulative in-class exam during finals week (date and time TBD in the syllabus).
-  - The grade weights are Project 1 20%, midterm 20%, final project 25%, final exam 20%, and listening and peer responses 15%.
-  - This is a hands-on lab course, and most of the work happens in the room with gear they don't have at home. Students who have to miss a session email you ahead of time.
-  - Late assignments lose 2% per day late, up to a maximum deduction of 50%.
-  - Generative AI isn't allowed for any graded work.
+- Introduce yourself briefly: you're the course instructor, a grad student in [program], and Inés Thiebaut is the faculty coordinator.
+- Go over the highlights of the syllabus. Don't read it aloud; flag the parts that affect their semester: the three projects and their due dates, the final exam, the grade weights, attendance, late work, and the generative AI policy.
 - Tell them the full syllabus is on the course website and on Canvas, and that your headlines don't replace reading it.
 - Tell them: *"You don't need to know any of this already. That's why we're here."*
 - Tell them about the server in plain words: *"Everyone in this room is going to be working with big audio files all semester. The department runs a file server, and that's where your work is kept between sessions. By the end of today you'll have connected to it and put your first recording on it. You reach it from inside this room, using your NetID."*
@@ -127,21 +121,21 @@ Keep the syllabus walkthrough to about 3 minutes: name each policy and say where
 
 ### Block 2 · Mac & Finder (25 min)
 
-This is the longest single block. Pace it carefully.
+Pace it carefully.
 
 Demo each step on the projector first, then have students do it. Introduce shortcuts as they come up. The sequence follows reading Part 1:
 
 - "Open Finder." (Some students don't know what Finder is. Show the blue and white smiley-face icon in the Dock.)
 - "Make a new folder on the Desktop called `test`." (Click **Desktop** in the Finder sidebar, then File → New Folder, or `Cmd + Shift + N`.)
 - "Take a screenshot." (`Cmd + Shift + 4`, drag a region.)
-- "Now find that screenshot." (It saves to the Desktop by default. Many students freeze here; walk them through opening Desktop in Finder.)
+- "Now find that screenshot." (It saves to the Desktop by default. Many students freeze here; show them how to open Desktop in Finder.)
 - "Rename it to `my-screenshot`." (Click once to select, press `return`, type, press `return` again.) This previews the naming rules in Block 3. Students often double-click and open the file instead of renaming it.
 - "Drag the screenshot into the `test` folder."
 - "Now delete the folder." (Select it and press `Cmd + Delete`.)
 
 That sequence takes about five minutes and covers Finder, folder creation, screenshots, the Desktop location, renaming, drag and drop, and deletion.
 
-Show file extensions. Walk them through Finder → Settings → Advanced → **Show all filename extensions**. Some students will have it on already. Make sure everyone leaves with extensions visible. With extensions showing, students can tell a `.wav` from an `.mp3` at a glance.
+Show file extensions. Take them step by step through Finder → Settings → Advanced → **Show all filename extensions**. Some students will have it on already. Make sure everyone leaves with extensions visible. With extensions showing, students can tell a `.wav` from an `.mp3` at a glance.
 
 Point out two callouts in Part 1. The lab Desktop gets cleared periodically, and students save work in `~/Documents/netid/`, never on the Desktop or in Downloads. Clicking the red dot closes a window but leaves the app running; `Cmd + Q` quits.
 
@@ -261,7 +255,7 @@ Right-click the interface → **Use this device for sound input**, then right-cl
 
 With the interface selected, have students check that the **Format** line reads **48,000 Hz**. If it shows another rate, they pick a 48,000 Hz option from the Format dropdown. On the UM2 they check both entries. The reading has a clip showing where to look, and tells students they'll learn what the numbers mean in Module 2. Then quit Audio MIDI Setup (`Cmd + Q`).
 
-Open QuickTime → New Audio Recording (Step 5). Walk students through opening QuickTime Player, choosing File → New Audio Recording, clicking the small arrow to the right of the record button, and selecting their audio interface as the source.
+Open QuickTime → New Audio Recording (Step 5). Show students how to open QuickTime Player, choosing File → New Audio Recording, clicking the small arrow to the right of the record button, and selecting their audio interface as the source.
 
 Bring up monitoring (Step 6). Have students put the headphones on (slider already up), turn the headphone knob up to about noon (12 o'clock, knob pointing straight up), then the main / output knob to about noon. They probably won't hear anything yet because the gain is still at zero.
 
@@ -298,11 +292,11 @@ If gear is broken, swap in a spare or move the student to a working station. Eve
 Before Block 5, circulate and confirm each student's file is in `~/Documents/netid/week-01/`. If a student's file isn't there:
 
 - Don't single them out publicly.
-- Most often they saved to Desktop or Downloads. Walk them through Recents in Finder to find the file, then drag it into `~/Documents/netid/week-01/`.
+- Most often they saved to Desktop or Downloads. Show them Recents in Finder to find the file, then drag it into `~/Documents/netid/week-01/`.
 
 ### Block 5 · exit routine (10 min)
 
-Walk students through the end-of-session routine on the projector. The Session Routines reference card at every station has the same steps, and the reading ends with them ("before you leave today"). This is the first time students run the routine end to end, including the gear teardown.
+Go through the end-of-session routine on the projector. The Session Routines reference card at every station has the same steps, and the reading ends with them ("before you leave today"). This is the first time students run the routine end to end, including the gear teardown.
 
 1. Save the recording in QuickTime if they haven't already (`Cmd + S`)
 2. Open FileZilla and reconnect from the Quickconnect bar
@@ -348,7 +342,7 @@ Once everyone is done, connect on the projector and scroll the student folders. 
 
 Block-specific confusions are with their blocks above.
 
-- A student who says "I saved it but I can't find it" saved to Desktop or Downloads instead of `~/Documents/netid/`. Walk them through Recents in Finder to find the file, then drag it into place.
+- A student who says "I saved it but I can't find it" saved to Desktop or Downloads instead of `~/Documents/netid/`. Show them Recents in Finder to find the file, then drag it into place.
 - A screenshot that didn't work means the wrong key combination: `Cmd + Shift + 4`, then drag a region. The screenshot saves to the Desktop.
 - When FileZilla can't connect, check the `sftp://` prefix and port 22 first, then the password.
 - When the local and server folders look different, it's a sync issue. The copy with the newer modification date is the one to keep; copy it over the older one. To see the difference, choose View → Directory Comparison → Compare modification time, then View → Directory Comparison → Enable. If a student can't tell which is newer, they ask you before deleting anything.
