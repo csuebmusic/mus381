@@ -152,7 +152,7 @@
   <div class="subtitle">Shaping how loud a sound is, and how loud it <em>seems</em>.</div>
 </div>
 
-<p class="lede">The last mixing tool in Module 2 is <strong>dynamics processing</strong>: changing the relationship between the loud and quiet parts of a sound. The tools are <em>compression</em> and <em>limiting</em>. <em>Normalization</em>, which changes overall level only, is covered alongside them. This is the last new content of the module. Wednesday is the final work session and Project 1 submission.</p>
+<p class="lede">The last mixing tool in Module 2 is <strong>dynamics processing</strong>: changing the relationship between the loud and quiet parts of a sound. The tools are <em>compression</em> and <em>limiting</em>. <em>Normalization</em>, which changes overall level only, is covered alongside them.</p>
 
 <div class="callout">
   <div class="callout-label">today's gear</div>
@@ -164,7 +164,7 @@
 
 <h2>1 · dynamic range</h2>
 
-<p>The <span class="term">dynamic range</span> of a sound is the difference between its quietest and loudest parts, measured in decibels (dB). A whisper followed by a shout has a wide dynamic range. A car alarm has a narrow one: it's loud, it stays loud, the loud and quiet parts aren't very different.</p>
+<p>The <span class="term">dynamic range</span> of a sound is the difference between its quietest and loudest parts, measured in decibels (dB). A whisper followed by a shout has a wide dynamic range. A car alarm has a narrow one: it's loud and stays loud, with little difference between its loud and quiet parts.</p>
 
 <p>Pieces of music have dynamic range too. A solo piano recording has a wide range: a soft passage might be 30 or 40 dB below a loud chord. A modern pop song mastered for radio has a narrow range: from start to finish, everything is within a few dB of the loudest peak.</p>
 
@@ -266,11 +266,11 @@
 
   <p>Commercial masters get loud this way. You can't make a piece louder by pushing the peaks higher: they're already at the ceiling. You make it louder by pulling the average level up toward the peaks. That's what compression and limiting do.</p>
 
-  <p>The narrow version above is <em>compressed and then boosted</em>, with two separate controls. Compression by itself reduces the loud parts of a signal, which makes the file quieter overall (the loud bits got smaller, the quiet bits didn't change). The louder result you just heard comes from boosting the whole compressed signal until the peaks are back up at the ceiling.</p>
+  <p>The narrow version above is <em>compressed and then boosted</em>, with two separate controls. Compression by itself reduces the loud parts of a signal, which makes the file quieter overall (the loud bits got smaller, the quiet bits didn't change). Boosting the whole compressed signal until the peaks are back up at the ceiling makes the louder result you just heard.</p>
 
   <p>Most compressor plugins have a dedicated knob for this second step, usually labeled <strong>makeup gain</strong> (sometimes "output" or "gain"). It's a multiplier applied after compression: the compressor squashes, and makeup gain brings the squashed version back up.</p>
 
-  <p>The interactive compressor tool and Audacity's Compressor, both later in this session, have a makeup gain control. Sometimes you'll want it; sometimes you won't. Compression <em>without</em> makeup gain is useful when you just want to tame a sound that's too loud, leaving the quiet parts where they are. Compression <em>with</em> makeup gain is what makes a piece feel louder.</p>
+  <p>The interactive compressor tool and Audacity's Compressor, both later in this session, have a makeup gain control. Sometimes you'll want it; sometimes you won't. Compression <em>without</em> makeup gain is useful when you want to tame a sound that's too loud, leaving the quiet parts where they are. Compression <em>with</em> makeup gain is what makes a piece feel louder.</p>
 </div>
 
 <p>The piece in your Project 1 has some dynamic range, whether you've thought about it or not. Some moments are louder, some are quieter, and that contrast is part of how the piece holds attention. Compression and limiting change that relationship; normalization changes the overall level.</p>
@@ -371,9 +371,9 @@
     <p class="audio-note">The compressed version has more presence in the upper-mids and high frequencies. The slaps feel a little thicker; the shaker and clave feel a little more forward. The compressor reshaped the waveform, and the reshaping added spectral content that the scaled version doesn't have.</p>
   </figure>
 
-  <p>The name "dynamics processing" describes only half of what these tools do. Compression and limiting are sold as loudness tools, and they are. They're also <em>color</em> tools. Every compressor imparts some character to whatever passes through it, and different compressors have different characters.</p>
+  <p>The name "dynamics processing" describes only half of what these tools do. Compression and limiting change loudness, and they also change <em>tone</em>. Every compressor imparts some character to whatever passes through it, and different compressors have different characters.</p>
 
-  <p>This isn't only marketing. The basic idea of a compressor (detect when the signal is loud, reduce the gain) is the same everywhere. But the specifics vary: how the detection works, what shape the gain reduction follows, how quickly it engages, whether the compressor deliberately adds a touch of distortion as part of its sound. A clean digital compressor like the one in Audacity does the math accurately and adds nothing else. A vintage hardware unit, or a software emulation of one, was built (or modeled) to add a specific character on top of the basic compression. People are paying for that character. They're also paying for the engineering hours spent measuring an old piece of hardware accurately enough to reproduce its quirks in software.</p>
+  <p>The basic idea of a compressor (detect when the signal is loud, reduce the gain) is the same everywhere. But the specifics vary: how the detection works, what shape the gain reduction follows, how quickly it engages, whether the compressor deliberately adds a touch of distortion as part of its sound. A clean digital compressor like the one in Audacity does the math accurately and adds nothing else. A vintage hardware unit, or a software emulation of one, was built (or modeled) to add a specific character on top of the basic compression.</p>
 
   <p>Choosing a compressor for a particular sound is partly about how aggressively it can reduce gain, but it's mostly about <em>which kind of character</em> you want, and how cleanly or how colorfully the compressor delivers it.</p>
 
@@ -392,7 +392,7 @@
 
 <p>A sample normalized to 0 dB, the loudest possible level, has zero headroom: any additional processing (EQ boost, pitch shift, layering with another sample) can push it past the digital ceiling and clip.</p>
 
-<p>For sample prep, normalize to <strong>−1 dB</strong>, which is also Audacity's default. The 1 dB margin leaves room for inter-sample peaks (peaks between sampled values, which can clip after digital-to-analog conversion). You'll see −1 dB as the target in a lot of professional sample libraries and in delivery specifications for streaming platforms.</p>
+<p>For sample prep, normalize to <strong>−1 dB</strong>, which is also Audacity's default. The 1 dB margin leaves room for inter-sample peaks (peaks between sampled values, which can clip after digital-to-analog conversion).</p>
 
 <h3>normalizing in Audacity</h3>
 
@@ -533,7 +533,7 @@
     </span>
     <audio controls src="../../assets/audio/module-02-week-05/tr-heavy.wav"></audio>
   </div>
-  <p class="audio-note">In the <em>light</em> setting, the loud and middle hits are compressed and the quietest hits are untouched. In <em>medium</em>, all three levels of hit are compressed, and the quietest hits are now nearly the same level as the loud ones. In <em>heavy</em>, almost all the dynamic difference between hits is gone: they all sound roughly the same volume. All four files are normalized to the same peak level. The differences you hear come from how the compression changed the <em>relationship</em> between hits.</p>
+  <p class="audio-note">In the <em>light</em> setting, the loud and middle hits are compressed and the quietest hits are untouched. In <em>medium</em>, all three levels of hit are compressed, and the quietest hits are now nearly the same level as the loud ones. In <em>heavy</em>, almost all the dynamic difference between hits is gone: they all sound roughly the same volume. All four files are normalized to the same peak level. The compression changed the <em>relationship</em> between hits, and that change is the difference you hear.</p>
 </figure>
 
 <hr>
