@@ -104,7 +104,7 @@
   <div class="subtitle">Signal levels, cables, and mic types beyond the basic chain, and the boxes that connect mismatched stages.</div>
 </div>
 
-<p class="lede">Last week we walked the basic recording chain: a dynamic mic, an XLR cable, an audio interface, a computer. In that chain, every stage matches the one before it. Outside the lab you'll find other signal levels, cables, and mics, plus two small boxes that make mismatched stages fit together: the DI box and the hardware preamp.</p>
+<p class="lede">Last week's reading covered the basic recording chain: a dynamic mic, an XLR cable, an audio interface, a computer. In that chain, every stage matches the one before it. Outside the lab you'll find other signal levels, cables, and mics, plus two small boxes that make mismatched stages fit together: the DI box and the hardware preamp.</p>
 
 
 <hr>
@@ -173,7 +173,7 @@
 
 <h3>1.1 · mic level</h3>
 
-<p>Mic level is the signal a microphone puts out. The energy producing it (sound waves vibrating a diaphragm) is small, and so is the signal. A mic-level signal has to be amplified by a <strong>preamp</strong> before it can be used or recorded. Every audio interface has built-in preamps on its mic inputs. The XLR jack on the front of the PreSonus or the Behringer is a mic input, and the gain knob controls how much that preamp amplifies the signal. Preamps also come outside interfaces: a mixer's channel strip has one on each input, and a standalone hardware preamp is one in a box of its own. We'll come back to those in section 5.</p>
+<p>Mic level is the signal a microphone puts out. The energy producing it (sound waves vibrating a diaphragm) is small, and so is the signal. A mic-level signal has to be amplified by a <strong>preamp</strong> before it can be used or recorded. Every audio interface has built-in preamps on its mic inputs. The XLR jack on the front of the PreSonus or the Behringer is a mic input, and the gain knob controls how much that preamp amplifies the signal. Preamps also come outside interfaces: a mixer's channel strip has one on each input, and a standalone hardware preamp is one in a box of its own. Section 5 covers them.</p>
 
 <h3>1.2 · instrument level</h3>
 
@@ -314,7 +314,7 @@
   <figcaption>XLR, TS, and TRS, with their connector ends and the number of conductors inside. RCA (section 2.4) isn't drawn here.</figcaption>
 </figure>
 
-<h3>2.1 · XLR (recap)</h3>
+<h3>2.1 · XLR at line level</h3>
 
 <p>The XLR cable from Lecture 1 carries <strong>mic-level signals</strong> from microphones to interface inputs. It has three pins and three conductors inside, and it's balanced: two out-of-phase copies of the signal and a ground. The balanced design lets the receiving end cancel out any electromagnetic noise picked up along the cable's run. On a weak mic-level signal, any added noise would be obvious.</p>
 
@@ -375,7 +375,7 @@
 <div class="callout">
   <div class="callout-label">A word on mono and stereo</div>
   <p>A <strong>mono</strong> signal is one channel of audio: one stream of sound, one waveform. A <strong>stereo</strong> signal is two channels, conventionally called left and right, played back through two speakers (or the two sides of a pair of headphones) to give the listener a sense of where sounds are positioned in space. Stereo is two complete audio signals traveling alongside each other, not a single signal split in two.</p>
-  <p>A single TRS cable can carry balanced mono or unbalanced stereo, but never both at once. Three conductors, two ways to spend them: in balanced mono they're (signal+, signal-, ground), one channel with an inverted copy that cancels noise at the receiver; in unbalanced stereo they're (left, right, ground), two channels with no spare conductor for the noise-canceling copy of either one. To send stereo with the noise rejection of balanced, you run <em>two</em> cables, one balanced mono for the left channel and one balanced mono for the right. (The PreSonus has two separate TRS Main Out jacks labeled L and R: each one is a balanced mono output, and together they make a balanced stereo pair.)</p>
+  <p>A single TRS cable can carry balanced mono or unbalanced stereo, but never both at once. Three conductors, two ways to wire them: in balanced mono they're (signal+, signal-, ground), one channel with an inverted copy that cancels noise at the receiver; in unbalanced stereo they're (left, right, ground), two channels with no spare conductor for the noise-canceling copy of either one. To send stereo with the noise rejection of balanced, you run <em>two</em> cables, one balanced mono for the left channel and one balanced mono for the right. (The PreSonus has two separate TRS Main Out jacks labeled L and R: each one is a balanced mono output, and together they make a balanced stereo pair.)</p>
 </div>
 
 <h3>2.4 · RCA</h3>
@@ -395,7 +395,7 @@
   <div class="callout-label">Too many cables?</div>
   <p>There are a lot of cables for one job (moving audio around), and each type handles a specific problem. XLR is balanced, and it rejects the noise a long mic run picks up. TS is a cheap, simple cable for guitar signals, which are strong enough not to need balancing. TRS uses the same quarter-inch connector for balanced runs between pro gear and for stereo to headphones. RCA is the cheap push-on connector of home audio. What you need to know is which cable plugs into which jack and what signal is on it, and the labels on a piece of gear (Mic, Line, Inst, +48V) tell you most of that.</p>
   <p>XLR locks into place, and a cable someone trips over on stage stays plugged in. Quarter-inch plugs go in and out fast for guitarists who swap cables constantly, and RCA pushes on and is cheap to manufacture. In the lab you'll find one practical crossover: a TS plug fits into a TRS jack (and the reverse), and audio flows. The TS plug shorts the ring to the sleeve, and the connection becomes unbalanced. An XLR plug doesn't fit a quarter-inch jack at all.</p>
-  <p>On cost: cables span a huge price range, and the audible differences across that range are smaller than the marketing suggests. A 10-foot TS guitar cable from a reputable maker (Hosa, Live Wire, Monoprice) costs around $10 to $15 and works fine. A 10-foot XLR mic cable from the same makers is $15 to $25. Boutique cables (Mogami, Canare for the cable itself; Neutrik for connectors) cost more, are better built, and last longer in heavy use. Many professional studios use them. Cables priced in the hundreds or thousands tend to trade on claims about audio quality that don't hold up to blind tests. For this course, well-made budget cables are enough.</p>
+  <p>On cost: cables span a huge price range, and the audible differences across that range are smaller than the marketing suggests. A 10-foot TS guitar cable from a reputable maker (Hosa, Live Wire, Monoprice) costs around $10 to $15 and works fine. A 10-foot XLR mic cable from the same makers is $15 to $25. Boutique cables (Mogami, Canare for the cable itself; Neutrik for connectors) cost more, are better built, and last longer in heavy use. Many professional studios use them. Cables priced in the hundreds or thousands are sold on claims about audio quality that are hard to hear in practice. For this course, well-made budget cables are enough.</p>
 </div>
 
 <hr>
@@ -409,7 +409,7 @@
 <p>Inside a condenser mic, instead of a coil-and-magnet assembly (like the one we saw in the dynamic mic last week), there are two thin metal plates held very close together, with one of them free to move. Sound waves push the movable plate back and forth, changing the distance between the two plates. The mic measures that changing distance as a changing electrical capacitance, and turns it into an output signal.</p>
 
 <figure class="annotated">
-  <img src="../../assets/images/module-03-week-07/condenser-microphone-cross-section.webp"
+  <img loading="lazy" src="../../assets/images/module-03-week-07/condenser-microphone-cross-section.webp"
        alt="Cross-section of a condenser microphone with six numbered red arrows: an arrow approaching from the left showing the incoming sound wave, arrows pointing to two thin vertical plates at the front of the mic (the backplate and the movable diaphragm), an arrow pointing to a capacitor symbol that represents the two plates electrically, an arrow pointing to a resistor symbol that represents the impedance-converter circuit, and an arrow exiting to the right showing the output wire leaving the mic.">
   <figcaption>The working parts of a condenser microphone</figcaption>
   <div class="annotation-key">
@@ -510,7 +510,7 @@
 <p>A <strong>preamp</strong> takes a mic-level signal and amplifies it to line level. Audio interfaces have built-in preamps on their mic inputs (the gain knob controls them). A <strong>hardware preamp</strong> is the same circuit in a standalone box, often built with design choices that give the amplification a distinctive sound.</p>
 
 <figure>
-  <img src="../../assets/images/module-03-week-07/rme-quadmic-preamp.jpg"
+  <img loading="lazy" src="../../assets/images/module-03-week-07/rme-quadmic-preamp.jpg"
        alt="An RME QuadMic four-channel hardware preamp, shown from the front and the back. The front panel has four identical channel strips, each with a +48V phantom power button, Lo Cut button, Phase button, a large gain knob ranging from +6 to +60 dB, and Sig and Clip LEDs. The back panel shows four combo XLR jacks labeled Microphone / Line Inputs on the right and four 1/4 inch Line Level Outputs on the left, plus a power input.">
   <figcaption>An RME QuadMic four-channel hardware preamp, front and back. Each channel has its own gain knob, +48V switch, and signal indicators on the front. On the back, mic-level XLR signals come in on the right, and line-level outputs leave on TRS jacks on the left. You'd add a standalone preamp like this to get more channels than your interface has, or a particular preamp's sound on the way to the recorder.</figcaption>
 </figure>
@@ -717,7 +717,7 @@
   <dd>A signal made of one audio channel. One waveform, one stream of sound. The signal a single mic produces is mono. A signal sent over a balanced TRS or XLR cable between pro gear is mono (the second conductor is an inverted copy of the same channel, not a different one).</dd>
 
   <dt>Stereo</dt>
-  <dd>A signal made of two audio channels, conventionally called left and right, played back through two speakers (or the two sides of a pair of headphones) to give the listener a sense of where sounds are positioned in space. Two complete audio signals traveling alongside each other, not one signal split in two. A TRS cable carrying stereo is unbalanced: its three conductors are spent on left, right, and ground, with none left over for the noise-canceling inverted copy.</dd>
+  <dd>A signal made of two audio channels, conventionally called left and right, played back through two speakers (or the two sides of a pair of headphones) to give the listener a sense of where sounds are positioned in space. Two complete audio signals traveling alongside each other, not one signal split in two. A TRS cable carrying stereo is unbalanced: its three conductors are used for left, right, and ground, with none left over for the noise-canceling inverted copy.</dd>
 
   <dt>Condenser microphone</dt>
   <dd>A mic that uses two close-spaced metal plates instead of a coil and magnet. The plate spacing changes when sound hits the diaphragm, and the mic measures that change as a changing capacitance. More sensitive to detail and high frequencies than a dynamic. Needs phantom power.</dd>
