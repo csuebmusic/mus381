@@ -66,7 +66,7 @@ A folder of the student's own recorded sounds, prepped through the pipeline and 
 
 Prompt and rubric: [Project 2: sample library](https://csuebmusic.github.io/mus381/module-03-recording/projects/project-02-sample-library.html)
 
-The library has at least 20 prepped sounds (20 to 25 is the target). Every sound is the student's own recording, made in the lab or on their phone; downloaded or borrowed sounds aren't allowed. Every sample is a mono WAV, 48 kHz, 24-bit, normalized to -1 dBFS, and named [category]-[descriptor]-[variant].wav (lowercase, hyphens, no spaces). Samples are sorted into category folders, with a README.txt the student writes at the root and the Audacity project in audacity-projects/.
+The library has at least 20 prepped sounds (20 to 25 is the target). Every sound is the student's own recording, made in the lab or on their phone; downloaded or borrowed sounds aren't allowed. Every sample is a mono WAV, 48 kHz, 24-bit, normalized to -1 dBFS, and named [category]-[descriptor]-[variant].wav, with the variant only for sibling takes (lowercase, hyphens, no spaces). Samples are sorted into category folders, with a README.txt the student writes at the root and the Audacity project in audacity-projects/.
 
 The library builds up across the module:
 
@@ -588,7 +588,7 @@ Part 1, library submission (roughly the first 30 minutes). Students upload their
 - samples are in category folders, with the Audacity project in `audacity-projects/`
 - README.txt is at the root and filled in
 - every sample is a mono WAV, 48 kHz, 24-bit
-- every filename follows [category]-[descriptor]-[variant].wav
+- every filename follows [category]-[descriptor]-[variant].wav, with the variant only for sibling takes
 - there are at least 20 prepped samples
 
 Once a library is verified, copy it into the peer-listening folder at `/public/mus-381-fall-2026/project-02-libraries/<lastname>/`. The peer-listening assignment, due Mon Oct 19 (Wk 10), reads from there.
