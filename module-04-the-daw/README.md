@@ -28,9 +28,9 @@ By the end of Wk 13, students should be able to set up an Ableton Set from scrat
 
 The lab runs **Ableton Live 11 Suite**. This module teaches the subset of Live listed below. These sections are the source of truth for drafting each week's lessons: menu paths and terminology match Live 11. Draft lessons against the manual, not from memory.
 
-Module 4 pages don't embed Ableton screenshots. The reading and the labs run alongside a live instructor walk-through and link the version-pinned Live 11 manual sections, so students see the current interface in the app.
+Module 4 pages don't embed Ableton screenshots. The reading and the labs run alongside a live instructor walk-through in the app and link the version-pinned Live 11 manual sections.
 
-Ableton's [Learn Live](https://www.ableton.com/en/live/learn-live/) video library covers most of the topics below (sorted into Setup, Interface, Instruments & Effects, and Workflows) and is linked from the reading. Send students there for a second pass on a concept or when a manual page is dense. The videos show the current shipping version of Live (Live 12), so the interface may look newer than the lab's Live 11; for the concepts in this module the difference is cosmetic. Menu paths and terminology come from the Live 11 manual links.
+Ableton's [Learn Live](https://www.ableton.com/en/live/learn-live/) video library covers most of the topics below (sorted into Setup, Interface, Instruments & Effects, and Workflows) and is linked from the reading. Send students there for a second pass on a concept or when a manual page is dense. The videos show the current shipping version of Live (Live 12), so the interface may look newer than the lab's Live 11; for the concepts in this module the difference is cosmetic. Menu paths and terminology follow the Live 11 manual.
 
 Week 10 (the environment and audio editing):
 - First Steps: https://www.ableton.com/en/live-manual/11/first-steps/
@@ -79,7 +79,7 @@ Exporting is used across the module: Exporting Audio and Video, https://www.able
 
 By the end of this module, students should be able to:
 
-1. Describe the difference between Session View and Arrangement View and say which they'd reach for in a given situation
+1. Describe the difference between Session View and Arrangement View and say which they'd use in a given situation
 2. Explain nondestructive editing: a clip is a view of a file, and edits are instructions stored on the clip, with the source unchanged
 3. Import audio from their own sample library into an Ableton Set and arrange it on the timeline
 4. Use warping at a basic level: turn it on and off, understand that it maps a sample to the Set's tempo, and know when they want it and when they don't
@@ -93,7 +93,7 @@ By the end of this module, students should be able to:
 
 ## concepts introduced
 
-- A **DAW** (digital audio workstation) is one program that records, edits, arranges, and mixes sound and plays instruments: multitrack, nondestructive, with instruments, MIDI, and a built-in mixer. Audacity is an *audio editor*: it records and edits audio but has no instruments, no MIDI, and no full mixer. Ableton is the first DAW students meet. Define the term here and draw the line between audio editor and DAW explicitly, since students spent two modules in an audio editor. Don't call Audacity a DAW.
+- A **DAW** (digital audio workstation) is one program that records, edits, arranges, and mixes sound and plays instruments: multitrack, nondestructive, with instruments, MIDI, and a built-in mixer. Audacity is an *audio editor*: it records and edits audio but has no instruments, no MIDI, and no full mixer. Ableton is the first DAW students meet. Define the term here and draw the line between audio editor and DAW explicitly. Don't call Audacity a DAW.
 - **Session View and Arrangement View** are two views of one Set. Session View is the clip grid for trying ideas and launching loops; Arrangement View is the timeline, left to right, for committing to a structure. Students build in Arrangement View throughout the module (it resembles Audacity's timeline). Session View appears in the reading and Lab 1 as the clip grid (Tab switches views), and in Lab 3 as the view that shows the mixer. Students don't launch clips in this module; Lab 3 tells them to leave the empty clip slots alone.
 - A **clip** is a reference to an audio file (or to MIDI), with its own start, end, gain, fades, and warp settings. It's the unit of work in Ableton. The clip isn't the file; it points at the file.
 - **Nondestructive editing** means edits are stored on the clip, not in the source audio. Contrast it explicitly with Audacity, where edits rewrote samples. The reading pairs it with **live processing**, where an effect on a track processes the sound during playback and never changes the recording.
@@ -106,7 +106,7 @@ By the end of this module, students should be able to:
 - A **send** routes a copy of a track's signal to a **return track**, where an effect (reverb, delay) is loaded. One reverb takes signal from many tracks. It's the aux-send mechanism from the Toft, now in Ableton; name the connection explicitly.
 - **Group tracks** fold several tracks into one channel for combined level and processing. A group track is Ableton's subgroup, the console's subgroup strip (the Toft labels its subgroups submasters).
 - **Bouncing** prints what a track plays into a fixed audio file. In Lab 3 students bounce each MIDI track in two steps: Freeze Track (reversible), then Flatten (permanent). They do it on a separate mixing copy of the Set, so the original keeps its notes and instruments.
-- **Built-in devices** are the same effect types from Modules 2 and 3, now as Live devices, in two roles. Insert effects go in a track, group, or master chain, where order matters. Send effects are loaded on return tracks and shared across tracks. Map each onto the EQ and dynamics from Module 2 and the aux-send architecture from Module 3. The locked list, with where each insert goes, is in reference scope.
+- **Built-in devices** are the same effect types from Modules 2 and 3, now as Live devices. Map each onto the EQ and dynamics from Module 2 and the aux-send architecture from Module 3. The locked list, with each device's role and where each insert goes, is in reference scope.
 - **Transferable concepts** (the Audition session) are sample rate, bit depth, gain staging, fades, EQ, compression, and multitrack arrangement. These are properties of digital audio and audio production, not of Ableton. Audition is the worked example of the same concepts in a different program.
 
 ---
@@ -117,15 +117,11 @@ By the end of this module, students should be able to:
 
 Built: [final project](https://csuebmusic.github.io/mus381/module-04-the-daw/projects/final-project.html) (`projects/final-project.html`).
 
-- The prompt is open: any kind of piece (arranged audio clips, sampler-driven, or both) that demonstrates fluency with the semester's skills, built in Ableton Live.
-- The piece is 2 to 3 minutes long.
-- Every sound must be student-recorded: the Module 3 library plus anything new they record. No pre-recorded, found, or downloaded sound, and no pre-made loops. One exception: a student may use another student's recording *with permission* and must credit it. Credits go in `lastname-final-credits.txt` in the working folder; if every sound is their own, the file says so.
-- Students start the project Set in Session 1, following the end of the reading: a folder named `final` inside `~/Documents/netid/`, holding a Live Set named `lastname-final-v1`. They save versions as they go (`lastname-final-v1`, `v2`, `v3`). Labs 1–3 each end with a "before class ends: your project" block for adding the day's work to it. The project page tells students to start in Wk 12 at the latest.
-- Draft 1 is due Wed Wk 14: a complete rough pass, end to end, even if it's unmixed. Students submit it to their working folder, and you give written feedback. There's no in-class listening for drafts.
-- Draft 2 is due Wed Wk 15: the revision, after acting on the Draft 1 feedback.
-- The final version is due during finals week (the exact date is on Canvas). The WAV is 48 kHz, 32-bit, named `lastname-final.wav`. The server folder `final/` holds the master copy of the `.als` Set, all version saves, recordings, the credits file, and the final WAV; a copy of the WAV also goes in `/public/mus-381-fall-2026/final-pieces/` for the class.
-- The rubric is out of 100, with no revision criterion: technique & tools 35, form & shape 30, sound material & sourcing 20, mix & craft 15. Style, genre, and where the length falls within 2 to 3 minutes aren't graded.
-- A cumulative final exam runs during finals week (it covers the whole course), separate from this project. Exam and answer key: [`exams/final-exam.md`](../exams/final-exam.md) *(TA-facing)*.
+The final project is a 2-to-3-minute piece built in Live from the student's own recordings, in two drafts and a final version. The prompt has the spec, the due dates, the submission folders, and the rubric.
+
+- Students start the project Set in Session 1, following the end of the reading. Labs 1–3 each end with a "before class ends: your project" block for adding the day's work to it.
+- You give written feedback on Draft 1. There's no in-class listening for drafts.
+- A cumulative final exam runs during finals week (it covers the whole course), separate from this project. Exam and answer key: [`exams/final-exam.md`](../exams/final-exam.md) *(instructor-facing)*.
 
 ### final review packet
 
@@ -181,7 +177,7 @@ Block-by-block facilitation, demo scripts, and pacing fallbacks for each session
 
 ---
 
-## pre-module preparation (Inés / TA)
+## pre-module preparation (Inés / instructor)
 
 - Check the Ableton install. The lab version is **Ableton Live 11 Suite**. Menu paths and manual links on the pages all target Live 11 (see reference scope above for the exact sections). Simpler and Drum Rack are in every edition.
 - Check the lab's default Live Set. A new Set opens with two audio tracks, two MIDI tracks, and two return tracks, with Reverb on return A and Delay on return B. Handouts 02 to 04 assume this layout.
@@ -317,7 +313,7 @@ A fresh MIDI clip opens with Loop on, so dragging its edge repeats the content. 
 
 ### roadmap
 
-The Ableton mixer as the **digital version of the Module 3 console**. Walk the mapping explicitly: track fader = channel fader, pan = pan, send to a return = aux send, group track = subgroup (the Toft's submaster), Master track = master mix. Then the built-in devices, the same effect types students met in Modules 2 and 3, now as Live devices. Insert effects go in a chain and their order matters: Utility on every track, EQ Eight before Compressor on a track, Auto Filter often at the end, Multiband Dynamics when one band needs control (the de-esser), Glue Compressor on a group (Ableton's version of the SSL bus compressor from the Module 3 studio), and a Limiter last on the master. Send effects are loaded on return tracks and shared across tracks: return A holds Reverb (Hybrid Reverb is the swap) and return B holds Delay (Echo is the swap). That's the aux-send mechanism from the Toft. The full locked list is in reference scope.
+The Ableton mixer as the **digital version of the Module 3 console**. Go through the mapping explicitly: track fader = channel fader, pan = pan, send to a return = aux send, group track = subgroup (the Toft's submaster), Master track = master mix. Then the built-in devices, the same effect types students met in Modules 2 and 3, now as Live devices. Insert effects go in a chain and their order matters: Utility on every track, EQ Eight before Compressor on a track, Auto Filter often at the end, Multiband Dynamics when one band needs control (the de-esser), Glue Compressor on a group (Ableton's version of the SSL bus compressor from the Module 3 studio), and a Limiter last on the master. Send effects are loaded on return tracks and shared across tracks: return A holds Reverb (Hybrid Reverb is the swap) and return B holds Delay (Echo is the swap). That's the aux-send mechanism from the Toft. The full locked list is in reference scope.
 
 Lab 3 has no videos; the manual pages linked at each step are the reference. Students leave the MIDI keyboard in storage.
 
@@ -374,7 +370,7 @@ Students follow handout 05 hands-on:
 6. In the Multitrack Editor, set levels and pan and add a Parametric Equalizer from the Effects Rack. Optionally try clip stretching: Varispeed links pitch and duration, like Audacity's Change Speed and Pitch; the other stretch types hold pitch, like Ableton's warp.
 7. Export a multitrack mixdown as WAV, 48 kHz, 32-bit, and upload the working folder.
 
-Nothing in this session is graded or submitted. As you walk through each step, point back to where students met the concept in Ableton or Audacity.
+Nothing in this session is graded or submitted. As you go through each step, point back to where students met the concept in Ableton or Audacity.
 
 ### handout
 
