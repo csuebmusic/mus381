@@ -290,12 +290,12 @@
 </header>
 
 <div class="title-block">
-  <div class="module-tag">Module 02 · digital audio, editing &amp; mixing</div>
+  <div class="module-tag">Module 02 · Digital audio, editing &amp; mixing</div>
   <h1>digital audio explorer</h1>
   <div class="subtitle">Sines, sums, the harmonic series, and timbre: by ear and by hand.</div>
 </div>
 
-<p class="lede">Monday's reading introduced waveforms, frequency, and amplitude. <strong>Keep your headphones at a moderate volume the whole way through.</strong> Sine tones are loud and fatiguing. Start quiet, listen briefly, stop when you're done.</p>
+<p class="lede"><strong>Keep your headphones at a moderate volume the whole way through.</strong> Sine tones are loud and fatiguing. Start quiet, listen briefly, stop when you're done.</p>
 
 <div class="callout">
   <div class="callout-label">Today's gear</div>
@@ -328,7 +328,7 @@
 <div class="tool" id="sineTool">
   <div class="tool-title">sine maker</div>
 
-  <svg class="scope" id="sineScope" viewBox="0 0 600 140" xmlns="http://www.w3.org/2000/svg" aria-label="Live waveform of the sine wave">
+  <svg role="img" aria-label="Oscilloscope view of the sine wave you're playing" class="scope" id="sineScope" viewBox="0 0 600 140" xmlns="http://www.w3.org/2000/svg" aria-label="Live waveform of the sine wave">
     <line x1="0" y1="70" x2="600" y2="70" stroke="var(--rule)" stroke-width="0.8"/>
     <path id="sinePath" d="" fill="none" stroke="var(--accent)" stroke-width="2"/>
   </svg>
@@ -373,7 +373,7 @@
 <div class="tool" id="summerTool">
   <div class="tool-title">sine summer</div>
 
-  <svg class="scope" id="summerScope" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg" aria-label="Live summed waveform">
+  <svg role="img" aria-label="Oscilloscope view of the sum of the partials you've turned up" class="scope" id="summerScope" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg" aria-label="Live summed waveform">
     <line x1="0" y1="80" x2="600" y2="80" stroke="var(--rule)" stroke-width="0.8"/>
     <path id="summerPath" d="" fill="none" stroke="var(--accent)" stroke-width="2"/>
   </svg>
@@ -403,16 +403,14 @@
 
 <h2 id="sec-harmonic">3 · the harmonic series</h2>
 
-<p>How does a real instrument, which is also a sum of sines, sound like a single, unified pitch?</p>
-
-<p>The answer is the <strong>harmonic series</strong>. When the partials of a sound are at <em>integer multiples</em> of the fundamental frequency (1×, 2×, 3×, 4×, 5×, 6×, ...), your ear fuses them together and hears a single note at the fundamental's pitch. The higher partials don't get heard as separate notes; they become part of the character of that one note.</p>
+<p>A real instrument is also a sum of sines, and it still sounds like a single, unified pitch because of the <strong>harmonic series</strong>. When the partials of a sound are at <em>integer multiples</em> of the fundamental frequency (1×, 2×, 3×, 4×, 5×, 6×, ...), your ear fuses them together and hears a single note at the fundamental's pitch. The higher partials don't get heard as separate notes; they become part of the character of that one note.</p>
 
 <p>The tool below has the same six partials as before, but the frequencies are now <strong>locked</strong> to harmonic ratios of a fundamental you choose. You only control the amplitudes. Press play with all amplitudes at zero, then turn them up one at a time and listen.</p>
 
 <div class="tool" id="harmonicTool">
   <div class="tool-title">harmonic series</div>
 
-  <svg class="scope" id="harmonicScope" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg" aria-label="Live summed waveform of harmonic series">
+  <svg role="img" aria-label="Oscilloscope view of the harmonic partials summed into one waveform" class="scope" id="harmonicScope" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg" aria-label="Live summed waveform of harmonic series">
     <line x1="0" y1="80" x2="600" y2="80" stroke="var(--rule)" stroke-width="0.8"/>
     <path id="harmonicPath" d="" fill="none" stroke="var(--accent)" stroke-width="2"/>
   </svg>
@@ -447,9 +445,7 @@
 
 <h2 id="sec-timbre">4 · timbre</h2>
 
-<p>If a flute and a clarinet play the same note (same fundamental, same harmonic ratios), why do they sound completely different?</p>
-
-<p>The answer is <strong>timbre</strong>: the quality that tells two sounds apart when their pitch and loudness match. It's how you tell a violin from a trumpet without seeing them. An instrument's timbre depends largely on <em>the recipe of partial amplitudes</em>. Two sounds with the same fundamental and the same harmonic ratios but different relative amplitudes for each partial will sound like two different instruments.</p>
+<p>A flute and a clarinet playing the same note (same fundamental, same harmonic ratios) still sound completely different. The difference is <strong>timbre</strong>: the quality that tells two sounds apart when their pitch and loudness match. It's how you tell a violin from a trumpet without seeing them. An instrument's timbre depends largely on <em>the recipe of partial amplitudes</em>. Two sounds with the same fundamental and the same harmonic ratios but different relative amplitudes for each partial will sound like two different instruments.</p>
 
 <p>The previous tools used <strong>six</strong> partials. Real instruments have many more: a bowed violin tone can have thirty or more audible partials, and a trumpet, a clarinet, or a singing voice also stacks far more than six. The tool below has <strong>twelve</strong>, still fewer than a real instrument.</p>
 
@@ -458,7 +454,7 @@
 <div class="tool" id="timbreTool">
   <div class="tool-title">Timbre</div>
 
-  <svg class="scope" id="timbreScope" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg" aria-label="Live summed waveform">
+  <svg role="img" aria-label="Oscilloscope view of the waveform made by the current recipe of partial amplitudes" class="scope" id="timbreScope" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg" aria-label="Live summed waveform">
     <line x1="0" y1="80" x2="600" y2="80" stroke="var(--rule)" stroke-width="0.8"/>
     <path id="timbrePath" d="" fill="none" stroke="var(--accent)" stroke-width="2"/>
   </svg>
@@ -493,7 +489,7 @@
 
 <div class="recipe-card">
   <div class="recipe-card-head">
-    <svg viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg" aria-label="Ideal sawtooth waveform: ramps up, drops vertically, repeats">
+    <svg role="img" viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg" aria-label="Ideal sawtooth waveform: ramps up, drops vertically, repeats">
       <line x1="0" y1="30" x2="140" y2="30" stroke="var(--rule-soft)" stroke-width="0.8"/>
       <path d="M 5 50 L 65 10 L 65 50 L 125 10 L 125 50" fill="none" stroke="var(--accent)" stroke-width="2"/>
     </svg>
@@ -512,7 +508,7 @@
 
 <div class="recipe-card">
   <div class="recipe-card-head">
-    <svg viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg" aria-label="Ideal square waveform: alternates between high and low, vertical edges">
+    <svg role="img" viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg" aria-label="Ideal square waveform: alternates between high and low, vertical edges">
       <line x1="0" y1="30" x2="140" y2="30" stroke="var(--rule-soft)" stroke-width="0.8"/>
       <path d="M 5 10 L 35 10 L 35 50 L 65 50 L 65 10 L 95 10 L 95 50 L 125 50" fill="none" stroke="var(--accent)" stroke-width="2"/>
     </svg>
@@ -531,7 +527,7 @@
 
 <div class="recipe-card">
   <div class="recipe-card-head">
-    <svg viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg" aria-label="Ideal triangle waveform: linear ramps up and down">
+    <svg role="img" viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg" aria-label="Ideal triangle waveform: linear ramps up and down">
       <line x1="0" y1="30" x2="140" y2="30" stroke="var(--rule-soft)" stroke-width="0.8"/>
       <path d="M 5 30 L 20 10 L 50 50 L 80 10 L 110 50 L 125 30" fill="none" stroke="var(--accent)" stroke-width="2"/>
     </svg>
