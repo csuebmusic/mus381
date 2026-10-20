@@ -276,7 +276,7 @@
 
 <p class="lede">A guide to recording in our studio, MB2508: the gear in each room, how it's wired, a five-part walkthrough that records one vocal mic to a laptop, and comping the takes.</p>
 
-<p>MB2508 has two rooms: the <strong>control room</strong> (where the engineer sits at the Toft) and the <strong>live room</strong> (where the band plays, behind the internal door). The cables between them run through the shared wall: mic lines from the live room to the preamps in the control room, and the headphone feed back to the live room.</p>
+<p>MB2508 has two rooms: the <strong>control room</strong> (where the engineer sits at the Toft) and the <strong>live room</strong> (where the band plays, behind the internal door). The cables between them run through the shared wall: mic lines from the live room to the preamps in the control room, and the headphone cue back to the live room.</p>
 
 <nav class="part-index" aria-label="Guide contents">
   <div class="index-group">
@@ -312,7 +312,7 @@
   <div class="index-group">
     <span class="index-title"><a href="#walkthrough">walkthrough: a vocal mic, end to end</a></span>
     <ul>
-      <li><a href="#part-1-starting">Part 1. mic from the live room to the monitor speakers</a></li>
+      <li><a href="#part-1-starting">Part 1. mic from the live room to the control-room speakers</a></li>
       <li><a href="#part-2-reference">Part 2. bring a reference track from the laptop into the Toft</a></li>
       <li><a href="#part-3-cue">Part 3. build the singer's headphone cue</a></li>
       <li><a href="#part-4-compression">Part 4. add parallel compression on the vocal through the SSL</a></li>
@@ -350,15 +350,15 @@
 
 <h4 id="lr-hr6">3. Furman HR-6 headphone stations (two)</h4>
 
-<p>Performers in the live room wear headphones during tracking so they can hear themselves and the other tracks while playing. Each HR-6 station gets the cue mix from the Furman HDS-6 hub in the control room over Ethernet cable, through the wall. Each station has two headphone jacks, so the two stations take up to four players.</p>
+<p>Performers in the live room wear headphones during tracking so they can hear themselves and the other tracks while playing. Each HR-6 station gets the headphone cue from the Furman HDS-6 hub in the control room over Ethernet cable, through the wall. Each station has two headphone jacks, so the two stations take up to four players.</p>
 
-<p>Each station has five level knobs: four for the hub's mono feeds and one for its stereo feed. In this studio only the stereo feed is connected, and it's the cue mix from Toft <strong>Aux Master 1 (L) + Aux Master 2 (R)</strong>. The stereo-feed knob sets how loud the cue is at that station. The four mono knobs have nothing on them.</p>
+<p>Each station has five level knobs: four for the hub's mono feeds and one for its stereo feed. In this studio only the stereo feed is connected, and it's the headphone cue from Toft <strong>Aux Master 1 (L) + Aux Master 2 (R)</strong>. The stereo-feed knob sets how loud the headphone cue is at that station. The four mono knobs have nothing on them.</p>
 
-<p>This is different from the live-sound setup you read about in Lab 3, where each performer's monitor had its own custom mix on its own aux. Sessions in our studio work from one shared cue mix, and each station sets its own level.</p>
+<p>This is different from the live-sound setup you read about in Lab 3, where each performer's monitor had its own custom mix on its own aux. Sessions in our studio work from one shared headphone cue, and each station sets its own level.</p>
 
 <h3 id="control-room">the control room</h3>
 
-<p>The Toft is on a console desk in the control room. Beside it is a rack with the two preamps. Built into the right end of the desk is a side rack holding the gear the Toft sends to and receives from. A pair of monitor speakers and a subwoofer play the mix into the room.</p>
+<p>The Toft is on a console desk in the control room. Beside it is a rack with the two preamps. Built into the right end of the desk is a side rack holding the gear the Toft sends to and receives from. A pair of control-room speakers and a subwoofer play the mix into the room.</p>
 
 <h4 id="cr-isa">1. Focusrite ISA 828 MkII (8-channel mic preamp)</h4>
 
@@ -481,26 +481,26 @@
 
 <h4 id="cr-hds6">7. Furman HDS-6 (headphone distribution hub)</h4>
 
-<p>The HDS-6 is the hub of the studio's headphone system. It takes the cue mix from the Toft and sends it over Ethernet cable, through the wall, to the two HR-6 stations in the live room. The same cable powers the stations.</p>
+<p>The HDS-6 is the hub of the studio's headphone system. It takes the headphone cue from the Toft and sends it over Ethernet cable, through the wall, to the two HR-6 stations in the live room. The same cable powers the stations.</p>
 
 <ul>
-  <li>The hub's stereo input receives Toft <strong>Aux Master 1 (L) + Aux Master 2 (R)</strong>: the cue mix.</li>
+  <li>The hub's stereo input receives Toft <strong>Aux Master 1 (L) + Aux Master 2 (R)</strong>: the headphone cue.</li>
   <li>The hub's four mono inputs are empty.</li>
   <li>Ethernet (Cat-5) cables run from the hub through the wall to the HR-6 stations.</li>
 </ul>
 
 <h4 id="cr-speakers">8. the speakers</h4>
 
-<p>The control room has a pair of monitor speakers and a subwoofer. They're wired to two different outputs on the Toft, and each has its own control:</p>
+<p>The control room has a pair of speakers and a subwoofer. They're wired to two different outputs on the Toft, and each has its own control:</p>
 
 <ul>
-  <li>The monitor speakers are on <strong>MASTER O/P</strong>. The <strong>master fader</strong> sets how loud they are.</li>
+  <li>The control-room speakers are on <strong>MASTER O/P</strong>. The <strong>master fader</strong> sets how loud they are.</li>
   <li>The subwoofer is on <strong>MAIN SPKR</strong>, the Toft's speaker output. The <strong>MONITOR LEVEL</strong> knob in the master section sets how much low end the sub adds; turn it down and the low end goes away. The speaker output comes after the master fader, so the sub plays only while the master fader is up.</li>
 </ul>
 
 <div class="callout">
   <div class="callout-label">Solo and the speaker buttons in this studio</div>
-  <p>The Toft's SOLO buttons, MONO, and ALT MONITOR act on the speaker output. In this studio the speaker output feeds only the sub, so those buttons change what the sub plays and leave the monitor speakers as they are. The mixer reading describes a different wiring, with the monitor speakers on the speaker output.</p>
+  <p>The Toft's SOLO buttons, MONO, and ALT MONITOR act on the speaker output. In this studio the speaker output feeds only the sub, so those buttons change what the sub plays and leave the control-room speakers as they are. The mixer reading describes a different wiring, with the control-room speakers on the speaker output.</p>
 </div>
 
 <h3 id="signal-flow">how the studio's signals flow</h3>
@@ -704,8 +704,8 @@
     <tr>
       <td class="jack">MASTER O/P L+R</td>
       <td>TRS</td>
-      <td>Control-room monitor speakers</td>
-      <td>The stereo summed master mix; the master fader sets how loud the monitor speakers are</td>
+      <td>Control-room speakers</td>
+      <td>The stereo summed master mix; the master fader sets how loud the control-room speakers are</td>
     </tr>
     <tr>
       <td class="jack">MAIN SPKR L+R</td>
@@ -896,9 +896,9 @@
 
 <p>A singer stands in the live room at a mic on a stand, singing along to a reference track that plays from a laptop on the console desk. The singer hears the reference in their headphones, but it stays off the recording: what the laptop captures is the vocal, plus the compression you add along the way. Do the parts in order. Each one needs the one before it working.</p>
 
-<h4 id="part-1-starting">Part 1 · mic from the live room to the monitor speakers</h4>
+<h4 id="part-1-starting">Part 1 · mic from the live room to the control-room speakers</h4>
 
-<p>Get a signal from the singer's mic to the monitor speakers in the control room, with the level set cleanly at every stage. This walkthrough runs the vocal through the ISA on <strong>channel 1</strong>.</p>
+<p>Get a signal from the singer's mic to the control-room speakers, with the level set cleanly at every stage. This walkthrough runs the vocal through the ISA on <strong>channel 1</strong>.</p>
 
 <div class="callout">
   <div class="callout-label">The ISA and the OctoPre</div>
@@ -909,7 +909,7 @@
   <li>In the live room, place the mic on a stand at the singer's mouth height. Plug an XLR cable into the bottom of the mic and the other end into <strong>jack 1 of Hosa panel 1</strong> (the top panel) on the rack.</li>
   <li><strong>At the Toft master section, silence the room before any gain staging.</strong> Set the gain in the steps below by the meters, with the speakers off.
     <ul>
-      <li>Pull the <strong>master fader</strong> <strong>all the way down</strong>. This silences the monitor speakers and the sub.</li>
+      <li>Pull the <strong>master fader</strong> <strong>all the way down</strong>. This silences the control-room speakers and the sub.</li>
       <li>Turn the <strong>MONITOR LEVEL</strong> knob (the knob feeding the subwoofer, in the master section) <strong>fully counter-clockwise</strong> to zero.</li>
     </ul>
   </li>
@@ -917,15 +917,15 @@
     <ul>
       <li>Set <strong>Input select</strong> to <strong>MIC</strong>. The channel now takes its signal from the rear XLR jack, which is wired through the wall to Hosa panel 1 jack 1.</li>
       <li>The ISA splits its gain across two controls, a stepped <strong>Gain</strong> switch (0 to 60 dB in 10 dB steps) and a continuous <strong>Trim</strong>. Set the Gain switch to 0 and the Trim to minimum before the source makes sound.</li>
-      <li>Set the <strong>Impedance</strong> switch to the standard position for now. It changes how the preamp loads the mic, which shifts the tone. Once a clean signal is moving, you can try the other settings.</li>
+      <li>Set the <strong>Impedance</strong> switch to ISA 110 for now. It changes how the preamp loads the mic, which shifts the tone. Once a clean signal is moving, you can try the other settings.</li>
     </ul>
 
     <div class="callout">
       <div class="callout-label">The impedance options</div>
-      <p>The Impedance switch (marked Z) steps through four settings. A lower setting loads the mic harder and brings out more of its character in the lows and mids; a higher setting is flatter there, brighter on top, and a little louder. The standard position is ISA 110.</p>
+      <p>The Impedance switch (marked Z) steps through four settings. A lower setting loads the mic harder and brings out more of its character in the lows and mids; a higher setting is flatter there, brighter on top, and a little louder. Start at ISA 110.</p>
       <ul>
         <li><strong>Low</strong> (600 Ω) is the heaviest load and gives the most colored result.</li>
-        <li><strong>ISA 110</strong> (1.4 kΩ) is the original Focusrite preamp's impedance and the standard position. It's also the setting for ribbon mics.</li>
+        <li><strong>ISA 110</strong> (1.4 kΩ) is the original Focusrite preamp's impedance and the starting position. It's also the setting for ribbon mics.</li>
         <li><strong>Med</strong> (2.4 kΩ) is a step flatter and brighter.</li>
         <li><strong>High</strong> (6.8 kΩ) is the lightest load, with the flattest response and the brightest top end.</li>
       </ul>
@@ -944,7 +944,7 @@
       <li><strong>While the singer is singing, bring the gain up.</strong> Raise the <strong>Gain</strong> switch a step at a time until the loudest peaks reach the upper part of the meter, then fine-tune with the <strong>Trim</strong> so those peaks register strongly and the overload indicator stays dark. For a singer at normal performance distance, you'll end at a moderate setting.</li>
     </ul>
   </li>
-  <li><strong>At the Toft, walk the channel 1 strip top to bottom and set every control.</strong>
+  <li><strong>At the Toft, go down the channel 1 strip top to bottom and set every control.</strong>
     <ul>
       <li>Leave <strong>+48V</strong> <strong>off</strong>. The ISA supplies phantom power to a condenser mic. The Toft's +48V button supplies phantom to the channel's own XLR input, which here receives a line-level signal from the ISA.</li>
       <li>Leave <strong>PHASE (Ø)</strong> <strong>off</strong> (up, not engaged).</li>
@@ -972,15 +972,15 @@
       <li>Turn <strong>MON LEVEL</strong> up to <strong>noon</strong> (12 o'clock) on both. MON LEVEL puts the submaster into the master mix, so what you record on submasters 1 and 2 is also what you hear in the room.</li>
     </ul>
   </li>
-  <li><strong>Finish gain staging at the master fader, then add the sub.</strong> The master fader is the last stage. In this studio it also sets the level of the monitor speakers on MASTER O/P.
+  <li><strong>Finish gain staging at the master fader, then add the sub.</strong> The master fader is the last stage. In this studio it also sets the level of the control-room speakers on MASTER O/P.
     <ul>
       <li><strong>Ask the singer to sing</strong> at performance volume.</li>
-      <li><strong>Slowly raise the MASTER FADER</strong> from the bottom of its travel toward <strong>unity</strong>. The voice comes up on the monitor speakers as the fader rises. Watch the <strong>master left/right bargraph meters</strong> in the master section: they should respond to the singing, peaking comfortably in the upper green range without lighting the top red segments.</li>
+      <li><strong>Slowly raise the MASTER FADER</strong> from the bottom of its travel toward <strong>unity</strong>. The voice comes up on the control-room speakers as the fader rises. Watch the <strong>master left/right bargraph meters</strong> in the master section: they should respond to the singing, peaking comfortably in the upper green range without lighting the top red segments.</li>
       <li><strong>If the master meters are peaking into the red</strong> with the master fader at unity, turn the <strong>MON LEVEL</strong> knobs on submasters 1 and 2 down together until the master meters settle. Submaster MON LEVEL sets how much of the recording bus reaches the master mix, and the recording stays as it is. Leave the ISA gain and the channel INPUT GAIN where they are.</li>
-      <li><strong>If the room is too loud</strong> before the master fader reaches unity, stop there. The master fader sets how loud the room is, monitor speakers and sub together.</li>
-      <li><strong>Once the master meters look healthy</strong> and the room is at a comfortable level, add the sub: <strong>slowly turn the MONITOR LEVEL knob</strong> clockwise from zero until the low end blends with the monitor speakers.</li>
+      <li><strong>If the room is too loud</strong> before the master fader reaches unity, stop there. The master fader sets how loud the room is, control-room speakers and sub together.</li>
+      <li><strong>Once the master meters look healthy</strong> and the room is at a comfortable level, add the sub: <strong>slowly turn the MONITOR LEVEL knob</strong> clockwise from zero until the low end blends with the control-room speakers.</li>
       <li>The master fader and MONITOR LEVEL leave the recording as it is. The submaster 1 and 2 faders set the recording level, in Part 5.</li>
-      <li><strong>If the room is silent</strong> with the master fader up, walk back through the chain: master meters showing signal, submaster 1 and 2 MON LEVEL up and TAPE up, channel 1 routing button 1-2 down, channel MUTE off, channel fader at unity, Toft channel meter showing signal during singing. Fix whichever step broke and try again.</li>
+      <li><strong>If the room is silent</strong> with the master fader up, check each stage of the chain in order: master meters showing signal, submaster 1 and 2 MON LEVEL up and TAPE up, channel 1 routing button 1-2 down, channel MUTE off, channel fader at unity, Toft channel meter showing signal during singing. Fix whichever step broke and try again.</li>
     </ul>
   </li>
   <li><strong>Check which stage set the gain.</strong> If the Toft meter was weak in step 5 and needed a large INPUT GAIN move, add gain at the ISA instead. Set the level at the earliest stage in the chain that can set it cleanly. Gain added later (at the Toft trim, or in a recording app after capture) raises the noise along with the signal.</li>
@@ -990,7 +990,7 @@
 
 <h4 id="part-2-reference">Part 2 · bring a reference track from the laptop into the Toft</h4>
 
-<p>The singer often wants to sing along to a reference track: a backing instrumental, the song they're covering, a rough mix of their arrangement. The reference is on the laptop and comes into the Toft through the AudioBox. It plays on the master mix, so you hear it on the monitor speakers and balance it against the vocal, and it goes into the singer's headphone cue (Part 3). It never goes to submasters 1 and 2, so it stays off the recording.</p>
+<p>The singer often wants to sing along to a reference track: a backing instrumental, the song they're covering, a rough mix of their arrangement. The reference is on the laptop and comes into the Toft through the AudioBox. It plays on the master mix, so you hear it on the control-room speakers and balance it against the vocal, and it goes into the singer's headphone cue (Part 3). It never goes to submasters 1 and 2, so it stays off the recording.</p>
 
 <ol>
   <li><strong>Plug in and set the interface format.</strong> Connect a USB cable from the laptop to the USB port on the rear of the AudioBox. On the Mac, open <strong>Audio MIDI Setup</strong> (Applications &gt; Utilities), select the AudioBox in the device list (it appears as <em>AudioBox USB 96</em>), and set its Format to <strong>48,000 Hz</strong> and <strong>24-bit</strong>. Make the AudioBox the system output and input device while you're here.
@@ -1003,7 +1003,7 @@
     <ul>
       <li><strong>Bounce the reference</strong> from wherever it's saved as a <strong>48 kHz, 24-bit stereo WAV</strong>.</li>
       <li><strong>Open a new project</strong> in your DAW, set it to <strong>48 kHz, 24-bit</strong>, and point its audio device at the AudioBox.</li>
-      <li><strong>Import the reference WAV</strong> onto a track. This is what the singer sings along to, and what plays out to the monitor speakers and the cue.</li>
+      <li><strong>Import the reference WAV</strong> onto a track. This is what the singer sings along to, and what plays out to the control-room speakers and the headphone cue.</li>
       <li><strong>Save and name the project</strong> before you go further.</li>
     </ul>
     <div class="callout">
@@ -1028,9 +1028,9 @@
       <li>Set <strong>aux sends 1-6</strong> to zero. In Part 3, Aux 1 on channel 9 and Aux 2 on channel 10 put the reference in the headphone cue.</li>
       <li>Set <strong>MON LEVEL</strong> to zero, and leave <strong>MUTE/AFL</strong> off.</li>
       <li>Leave all four <strong>routing buttons</strong> (1-2, 3-4, 5-6, 7-8) up. Channels 9 and 10 never go to submasters 1 and 2.</li>
-      <li><strong>Press L-R in</strong> on both. The reference plays on the master mix, so you hear it on the monitor speakers while you build the chain.</li>
+      <li><strong>Press L-R in</strong> on both. The reference plays on the master mix, so you hear it on the control-room speakers while you build the chain.</li>
       <li>Turn the channel <strong>PAN</strong> fully <strong>left</strong> on channel 9 and fully <strong>right</strong> on channel 10. The two channels carry the left and right sides of the laptop's stereo image.</li>
-      <li>Set both channel <strong>FADERS</strong> at <strong>unity</strong> as a starting point. With L-R in, these faders set how loud the reference is on the monitor speakers against the vocal.</li>
+      <li>Set both channel <strong>FADERS</strong> at <strong>unity</strong> as a starting point. With L-R in, these faders set how loud the reference is on the control-room speakers against the vocal.</li>
     </ul>
   </li>
   <li><strong>Stage the gain on channels 9 and 10.</strong> Play the reference track at its normal level.
@@ -1039,7 +1039,7 @@
       <li>Match the move on channel 10: turn its INPUT GAIN by roughly the same amount.</li>
     </ul>
   </li>
-  <li><strong>Confirm the reference is in the room.</strong> With the monitor speakers up from Part 1, you now hear the reference track alongside the vocal. Set the balance between them with the channel 9 and 10 faders against the vocal on channel 1.</li>
+  <li><strong>Confirm the reference is in the room.</strong> With the control-room speakers up from Part 1, you now hear the reference track alongside the vocal. Set the balance between them with the channel 9 and 10 faders against the vocal on channel 1.</li>
 </ol>
 
 <hr>
@@ -1052,12 +1052,12 @@
   <li>In the live room, plug the singer's headphones into one of the two headphone jacks on <strong>HR-6 station 1</strong>.</li>
   <li><strong>Set station 1's stereo-feed knob</strong> low, to about <strong>9 o'clock</strong>. Leave the four mono knobs down; nothing is connected to them.</li>
   <li>At the Toft master section, find the <strong>Aux 1</strong> and <strong>Aux 2</strong> knobs at the top of the master strip (the row of six small green Aux Master knobs). Set both to unity (around 12 o'clock).</li>
-  <li><strong>Put the vocal in the cue.</strong> On Toft channel 1 (the vocal), Aux 1 is always pre-fader. Press the <strong>PRE</strong> button for <strong>Aux 2</strong> so it's pre-fader too. Slowly turn the channel 1 Aux 1 and Aux 2 knobs up together, by the same amount, so the vocal is in the center of the cue. Ask the singer to speak; if needed, raise the stereo-feed knob on the singer's station until they say it's comfortable.</li>
-  <li><strong>Put the reference track in the cue.</strong> On channel 9 (reference L), turn up <strong>Aux 1</strong> (the L side of the cue) and leave Aux 2 down. On channel 10 (reference R), press the <strong>PRE</strong> button for <strong>Aux 2</strong>, turn Aux 2 up, and leave Aux 1 down. The reference now plays in stereo in the singer's headphones, alongside the vocal.</li>
-  <li><strong>Balance the cue with the singer.</strong> Ask "more of your voice or more of the track?" Adjust the Aux 1 and Aux 2 sends on channel 1 (the vocal), and on channels 9 and 10 (the reference), until the blend is what the singer wants. If the whole cue is too loud or too quiet, use the stereo-feed knob on the singer's station.</li>
+  <li><strong>Put the vocal in the headphone cue.</strong> On Toft channel 1 (the vocal), Aux 1 is always pre-fader. Press the <strong>PRE</strong> button for <strong>Aux 2</strong> so it's pre-fader too. Slowly turn the channel 1 Aux 1 and Aux 2 knobs up together, by the same amount, so the vocal is in the center of the headphone cue. Ask the singer to speak; if needed, raise the stereo-feed knob on the singer's station until they say it's comfortable.</li>
+  <li><strong>Put the reference track in the headphone cue.</strong> On channel 9 (reference L), turn up <strong>Aux 1</strong> (the L side of the headphone cue) and leave Aux 2 down. On channel 10 (reference R), press the <strong>PRE</strong> button for <strong>Aux 2</strong>, turn Aux 2 up, and leave Aux 1 down. The reference now plays in stereo in the singer's headphones, alongside the vocal.</li>
+  <li><strong>Balance the headphone cue with the singer.</strong> Ask "more of your voice or more of the track?" Adjust the Aux 1 and Aux 2 sends on channel 1 (the vocal), and on channels 9 and 10 (the reference), until the blend is what the singer wants. If the whole cue is too loud or too quiet, use the stereo-feed knob on the singer's station.</li>
 </ol>
 
-<p>The cue mix is now independent of the control-room mix: the engineer can ride the channel faders or mute the vocal, and the singer's cue stays the same. If a second player joins on a later take, plug their headphones into the second jack on station 1 or into station 2. Everyone hears the same blend, and each station sets its own level with its stereo-feed knob.</p>
+<p>The headphone cue is now independent of the control-room mix: the engineer can ride the channel faders or mute the vocal, and the singer's headphone cue stays the same. If a second player joins on a later take, plug their headphones into the second jack on station 1 or into station 2. Everyone hears the same blend, and each station sets its own level with its stereo-feed knob.</p>
 
 <hr>
 
@@ -1100,8 +1100,8 @@
   <li>At the Toft, confirm that the submaster 1 and 2 faders are <strong>all the way down</strong>.</li>
   <li>At the laptop, in the recording project from Part 2, add a new <strong>stereo</strong> audio track and set its input to the AudioBox, <strong>inputs 1 and 2</strong>. This track records submasters 1 and 2. Turn the track's input monitoring off; with it on, the vocal comes back a second time, slightly late, on channels 9 and 10.</li>
   <li><strong>Arm the track and set the recording level.</strong> Ask the singer to sing at performance volume. Raise the <strong>submaster 1 and 2 faders</strong> together, slowly, from the bottom, while you watch the laptop's input meter and the AudioBox's clip LEDs. Aim for loudest peaks in the -12 to -6 dBFS band from Lab 1, with the clip LEDs dark. The faders stop well below unity (see "Line level into the AudioBox" under the AudioBox, above). Leave the AudioBox's Gain knobs at minimum.</li>
-  <li><strong>If the input meters don't move,</strong> walk back through the chain: track input set to AudioBox inputs 1 and 2, track armed, AudioBox USB cable connected, submaster 1 and 2 faders up, channel 1 routing button 1-2 down, channel 1 fader up, singer singing.</li>
-  <li><strong>Record.</strong> Press record in the app, count the singer in, and capture the take. Then play it back. The laptop's playback comes into the Toft on channels 9 and 10, the same channels as the reference, so you hear the take on the monitor speakers with the reference under it.</li>
+  <li><strong>If the input meters don't move,</strong> check each stage of the chain in order: track input set to AudioBox inputs 1 and 2, track armed, AudioBox USB cable connected, submaster 1 and 2 faders up, channel 1 routing button 1-2 down, channel 1 fader up, singer singing.</li>
+  <li><strong>Record.</strong> Press record in the app, count the singer in, and capture the take. Then play it back. The laptop's playback comes into the Toft on channels 9 and 10, the same channels as the reference, so you hear the take on the control-room speakers with the reference under it.</li>
 </ol>
 
 <hr>
