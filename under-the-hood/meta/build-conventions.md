@@ -1,6 +1,6 @@
 # Build conventions
 
-Naming, chrome, dates, the visual system, audience and level, sources, and the repo workflow for this repo. For Inés and Claude; the TA doesn't need this file.
+Naming, chrome, dates, the visual system, audience and level, sources, and the repo workflow for this repo. For Inés and Claude; the instructor doesn't need this file.
 
 Style, register, feedback, correspondence, and argued writing are governed by the "how I want you to communicate" section of Inés's profile instructions. Per-asset specs are in [`assets/asset-recipes.md`](../../assets/asset-recipes.md). Page skeletons are in [`templates/`](./templates/README.md); copy one as the starting point for a new page.
 
@@ -26,7 +26,7 @@ Module folders are `module-XX-shortname/`, with a few hyphenated words as the sh
 README.md     the module: purpose, learning outcomes, live page links, session-by-session teaching notes
 lessons/      student-facing material in encounter order: readings, interactive tools, lab handouts
 listening/    listening assignments
-projects/     project prompts and project-specific TA notes
+projects/     project prompts and project-specific instructor notes
 ```
 
 A module adds a subfolder when it has something to put in it.
@@ -41,7 +41,7 @@ A module adds a subfolder when it has something to put in it.
 
 ### project files
 
-A numbered project's prompt is `project-NN-shortname.html` and its TA and prep notes are `project-NN-shortname-notes.md`. Project numbers are global across the semester; Project 2 is the midterm. The final project's prompt is `final-project.html`.
+A numbered project's prompt is `project-NN-shortname.html` and its instructor and prep notes are `project-NN-shortname-notes.md`. Project numbers are global across the semester; Project 2 is the midterm. The final project's prompt is `final-project.html`.
 
 ### assets
 
@@ -160,7 +160,7 @@ Internal Markdown docs identify themselves in the H1:
 
 | Document type | H1 line |
 |---|---|
-| Module README (spec and TA notes) | `# Module XX · [module title]`, title in lowercase |
+| Module README (spec and instructor notes) | `# Module XX · [module title]`, title in lowercase |
 | Operational doc | `# [Document title]`, with no module reference |
 
 A metadata line under the H1 is bold and dateless: `**Weeks 2–5** (7 sessions)`. Calendar date ranges are in `syllabus.html`.

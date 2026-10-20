@@ -81,7 +81,7 @@ The library builds up across the module:
 
 A cumulative in-class exam on Modules 1 through 3, closed-book, no devices, 50 points in four parts (define, identify, trace a signal flow, short answer). It runs in the second part of the Wed Wk 9 session, after every library is submitted and verified. The exam tests only what the midterm review packet covers.
 
-Exam and answer key: [`exams/midterm-exam.md`](../exams/midterm-exam.md) (TA-facing only)
+Exam and answer key: [`exams/midterm-exam.md`](../exams/midterm-exam.md) (instructor-facing)
 
 ---
 
@@ -143,7 +143,7 @@ Due Mon Oct 19 (Wk 10), before class.
 
 ---
 
-## pre-module preparation (Inés and the TA)
+## pre-module preparation (Inés and the instructor)
 
 - Put paper at every station for Wed Wk 6. See paper supplies under Session 2.
 - Inventory the recording gear in the lab's gear storage: one set per workstation of audio interface, headphones, dynamic mic, mic stand, and XLR cable. Check that nothing is missing before Wk 6.
@@ -394,7 +394,7 @@ Remind students to finish the end-of-session routine on the Session Routines car
 
 Standard 8.5×11 printer paper: four full sheets per student for the recordings, plus a stack of scrap at each station for the test crumble or rip in Step 3. A ream of 500 lasts several semesters. Avoid cardstock (its crackle is harsh) and tissue paper (it tears too quietly to register clearly on a dynamic mic).
 
-### reminders for the TA
+### reminders for the instructor
 
 - Normalize doesn't fix a recording made too quiet. It evens out the peak level across recordings made at a good level.
 - Students leave with the library folder set up and the README started. Check both before anyone leaves.
@@ -498,7 +498,7 @@ Lecture 3 doesn't cover the live-sound or studio scenarios. Lab 3 (Session 6) co
 
 ### roadmap
 
-Students take the console from Monday's reading through one fully worked live-sound scenario, then route bands of their own in a widget. Students take nothing from gear storage. They work at their stations with the mixer reading open in another tab, and the TA demonstrates routing decisions on the projector.
+Students take the console from Monday's reading through one fully worked live-sound scenario, then route bands of their own in a widget. Students take nothing from gear storage. They work at their stations with the mixer reading open in another tab, and you demonstrate routing decisions on the projector.
 
 The fictional band, The Sound Below, is a five-piece with twelve signals into the console:
 
@@ -597,7 +597,7 @@ Part 2, terminology exam (the remaining hour). Cumulative, Modules 1 through 3, 
 
 ### exam scope
 
-The exam and answer key are in [`exams/midterm-exam.md`](../exams/midterm-exam.md) (TA-facing). The exam tests only what the midterm review packet covers, in four parts: define in plain language (Part A), identify from a description (Part B), trace a signal flow from voice to WAV and back to the headphones (Part C), and short answer on the noise floor, balanced cables, clipping, and the prep pipeline (Part D). The packet's ten sections are the scope:
+The exam and answer key are in [`exams/midterm-exam.md`](../exams/midterm-exam.md) (instructor-facing). The exam tests only what the midterm review packet covers, in four parts: define in plain language (Part A), identify from a description (Part B), trace a signal flow from voice to WAV and back to the headphones (Part C), and short answer on the noise floor, balanced cables, clipping, and the prep pipeline (Part D). The packet's ten sections are the scope:
 
 - Working in the lab: the local working folder, the class server, the session workflow, file naming, file extensions (Module 1)
 - Digital audio: sample rate, bit depth, Nyquist, quantization, aliasing, SNR, headroom, ADC and DAC, file formats (Module 2)
