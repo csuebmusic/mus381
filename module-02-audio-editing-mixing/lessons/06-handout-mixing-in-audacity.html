@@ -155,7 +155,7 @@
 
 <p>A <strong>destructive</strong> tool changes the audio data permanently. Once you apply it, the samples on disk are different. Undo can revert it during the current session, but once you save and close the project, the change is permanent.</p>
 
-<p>Audacity is mostly an audio editor, and most things in Audacity are <strong>destructive</strong>. The Effect menu (every effect: fades, reverse, time-stretch, EQ, compression, all of them) modifies your audio in place. Destructive editing comes from tape: cut a section out or splice in a different one, and the tape is physically different. Audacity works the same way.</p>
+<p>Audacity is mostly an audio editor, and most things in Audacity are <strong>destructive</strong>. The Effect menu (every effect: fades, reverse, time-stretch, EQ, compression, all of them) modifies your audio in place. Destructive editing started with tape: cut a section out or splice in a different one, and the tape is physically different. Audacity works the same way.</p>
 
 <p>The two non-destructive mixing controls in Audacity are the <strong>track gain slider</strong> and the <strong>pan slider</strong> on the Track Control Panel. They're applied at playback, and moving them never changes the underlying audio. Audacity also has a <em>Realtime Effects</em> feature (the small <strong>Effects</strong> button on each track that lets you stack non-destructive plugins), but this course doesn't use it. The non-destructive plugin workflow comes in Module 4, in Ableton.</p>
 
@@ -175,7 +175,7 @@
 <p>Two of the tools are sliders on each track's <strong>Track Control Panel</strong>, on the left side of the track:</p>
 
 <figure class="screenshot">
-  <img src="../../assets/images/module-02-week-04/audacity-track-controls.png" alt="An Audacity track showing the Track Control Panel on the left, with the gain slider (− to +) and the pan slider (L to R) clearly visible.">
+  <img src="../../assets/images/module-02-week-04/audacity-track-controls.png" alt="An Audacity track showing the Track Control Panel on the left, with the gain slider (− to +) and the pan slider (L to R) clearly visible." loading="lazy">
   <figcaption>The Track Control Panel: gain slider (top, − to +) and pan slider (below, L to R). Both are non-destructive.</figcaption>
 </figure>
 
@@ -198,7 +198,7 @@
   <p>Set levels in two passes:</p>
 
   <ol>
-    <li>First, make sure <strong>nothing peaks</strong>. No track should ever hit 0 dB on the meters. When a signal hits 0, the waveform gets clipped flat at the top, and the audio distorts. Once a track has clipped, the only fix is to lower its gain and play it back again. Keep peaks comfortably below 0, with the loudest moments peaking a little below <strong>−6 dB</strong>. The gap between your loudest peak and 0 is called <strong>headroom</strong>. This first pass is called <strong>gain staging</strong>.</li>
+    <li>First, make sure <strong>nothing clips</strong>. No track should ever hit 0 dB on the meters. When a signal hits 0, the waveform gets clipped flat at the top, and the audio distorts. Once a track has clipped, the only fix is to lower its gain and play it back again. Keep peaks comfortably below 0, with the loudest moments peaking a little below <strong>−6 dB</strong>. The gap between your loudest peak and 0 is called <strong>headroom</strong>. This first pass is called <strong>gain staging</strong>.</li>
     <li>Then <strong>balance the tracks</strong> against each other. Once nothing is clipping, ask whether each element is at the level you want relative to the others. The "main" sound of a moment should be loudest, with supporting sounds quieter. As your piece moves through different moments, the balance can shift: the foreground in section A might step back in section B.</li>
   </ol>
 
@@ -318,7 +318,7 @@
   <div class="exercise-label">Exercise (in your Project 1 file)</div>
   <p class="exercise">Two passes through your piece. <strong>First, solo each track and check its levels on its own.</strong> Each track's Track Control Panel has a <strong>Solo</strong> button (next to Mute). For each track in turn: click Solo on, press play, watch the playback meter at the top of the Audacity window, and check whether anywhere in the track the signal reaches the orange or red zone or is too quiet to hear. Adjust that track's gain slider until peaks stay below −6. Click Solo off and move to the next track. This is the gain-staging pass.</p>
 
-  <p class="exercise"><strong>Second, un-solo everything and play the whole piece.</strong> Now the question is balance: with all tracks playing together, can you hear every element at the relative loudness you want? Which moments push the meter close to red? Which tracks disappear when other things are playing? Move the gain sliders to balance them in context, in small adjustments (3 to 6 dB at a time). Keep adjusting until: (1) nothing peaks anywhere in the piece, and (2) every element you intend to be heard can be heard.</p>
+  <p class="exercise"><strong>Second, un-solo everything and play the whole piece.</strong> Now the question is balance: with all tracks playing together, can you hear every element at the relative loudness you want? Which moments push the meter close to red? Which tracks disappear when other things are playing? Move the gain sliders to balance them in context, in small adjustments (3 to 6 dB at a time). Keep adjusting until: (1) nothing clips anywhere in the piece, and (2) every element you intend to be heard can be heard.</p>
 
   <div class="callout">
     <div class="callout-label">The solo habit</div>
@@ -453,13 +453,13 @@
   <div class="exercise-label">Exercise (in your Project 1 file)</div>
   <p class="exercise">Put on headphones (the stereo effect is most obvious there). For each of your tracks, decide what role it plays: is it a foundational element, a supporting one, or a textural one? Then pan accordingly. Try one track at a slight L (around 25%), another at slight R (around 25%), and leave the most foundational one in the center. Press play and listen. Where does each sound seem to come from?</p>
 
-  <p class="listen">Listen for: the piece now feels wider. Sounds occupy different positions in your headphones rather than all coming from the center. A small pan (20 to 40 percent) sounds like a position in a room; a hard pan sounds like a split between channels. If something with a lot of low-frequency content suddenly feels lopsided when you pan it, trust that feeling: bring it back to center.</p>
+  <p class="listen">Listen for: the piece now feels wider. Sounds occupy different positions in your headphones rather than all coming from the center. A slight pan (20 to 40 percent) sounds like a position in a room; a hard pan sounds like a split between channels. If something with a lot of low-frequency content suddenly feels lopsided when you pan it, trust that feeling: bring it back to center.</p>
 </div>
 
 <div class="tool">
   <h3>3 · EQ</h3>
 
-  <p>EQ, short for <em>equalization</em>, lets you boost or cut specific frequency ranges in a sound. It shapes the <strong>timbre</strong> of a sound, its color, which you met in the Digital Audio Explorer: the same pitch played on a flute and a violin has different timbre because the harmonics above the fundamental are distributed differently. Another name for that distribution of frequency content is the <strong>spectrum</strong>.</p>
+  <p>EQ, short for <em>equalization</em>, lets you boost or cut specific frequency ranges in a sound. It shapes the <strong>timbre</strong> of a sound, which you met in the Digital Audio Explorer: the same pitch played on a flute and a violin has different timbre because the harmonics above the fundamental are distributed differently. Another name for that distribution of frequency content is the <strong>spectrum</strong>.</p>
 
   <p>EQ lets you reshape the spectrum: maybe a recording has too much rumble in the low end and you want to reduce it, or a voice sounds dull and you want to brighten the high end. EQ is easy to overuse. In Audacity, EQ is <strong>destructive</strong>, like the rest of the Effect menu.</p>
 
@@ -655,7 +655,7 @@
 
 <div class="callout">
   <div class="callout-label">Save versions as you go</div>
-  <p>Use <strong>File → Save Project As…</strong> to save numbered versions (v2, v3, v4) whenever you've made significant changes, and before every destructive operation. Audacity's undo history doesn't survive closing the project; saved versions do.</p>
+  <p>Use <strong>File → Save Project As…</strong> to save numbered versions (v2, v3, v4) whenever you've made a change you'd want to go back to, and before every destructive operation. Audacity's undo history doesn't survive closing the project; saved versions do.</p>
 </div>
 
 <hr>
