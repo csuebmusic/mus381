@@ -1,12 +1,12 @@
 # Server file retention and archival policy
 
 **Status:** Current.
-**Owner:** Inés Thiebaut (course PI and lab manager).
+**Owner:** Inés Thiebaut (faculty coordinator).
 **Last updated:** August 2026.
 
 ## Purpose
 
-To define what happens to MUS 381 student working files on the class server over time: when they stay, when they are removed, and who removes them.
+This policy covers what happens to MUS 381 student working files on the class server over time: when they stay, when they're removed, and who removes them.
 
 ## Scope
 
@@ -14,9 +14,9 @@ This policy applies to:
 
 - Student working folders on the class server, one per student, created by the server on first login and named with the student's NetID
 - Project deliverables and final exports stored in those folders
-- The contents of `/public`: the shared sample bank, class listening folders, and any TA or instructor working files for MUS 381
+- The contents of `/public`: the shared sample bank, class listening folders, and any instructor or faculty coordinator working files for MUS 381
 
-This policy does **not** apply to:
+This policy doesn't apply to:
 
 - Grade records, course rosters, or other registrar-managed data
 - Student-owned files stored on personal devices or personal cloud accounts
@@ -33,28 +33,25 @@ Files exist in one of two states:
 1. On the server, read-write, in the student's own folder or in `/public`. This is the normal state and has no expiry.
 2. Deleted, permanently, with no recovery.
 
-Files leave the server only when the instructor deletes them. There is no archive tier and no automatic deletion.
+Files leave the server only when the faculty coordinator deletes them. There is no archive tier and no automatic deletion.
 
 ## Lifecycle
 
 Student folders remain on the server after the semester ends. They stay through winter and summer breaks, through a repeat of MUS 381 in a later term, and through continuation into Sound Design or other downstream courses.
 
-Once a year, in summer, the instructor reviews the student folders and clears folders belonging to students who have left CSUEB or who are not continuing with coursework that uses the lab. "Not continuing" means: not enrolled in MUS 381 again, not enrolled in Sound Design or another course that uses the lab server, and not in a graduate program with continued lab access.
+Once a year, in summer, the faculty coordinator reviews the student folders and clears folders belonging to students who have left CSUEB or who aren't continuing with coursework that uses the lab. "Not continuing" means: not enrolled in MUS 381 again, not enrolled in Sound Design or another course that uses the lab server, and not in a graduate program with continued lab access.
 
 `/public` is cleared of the prior term's `mus-381-fall-YYYY/` folder at the same review. The sample bank and module asset folders under `/public` are semester-stable and stay.
 
 ## Notification
 
-Students are notified twice:
-
-- At enrollment in MUS 381, the syllabus and Day 1 orientation mention file retention and point to this document.
-- Before any deletion, students receive an email from the instructor at least four weeks before the review date. The notice includes the date, instructions for downloading their files, and a contact path for questions or requests for extension.
+Before any deletion, students receive an email from the faculty coordinator at least four weeks before the review date. The notice includes the date, instructions for downloading their files, and a contact path for questions or requests for extension.
 
 ## Responsibilities
 
-The instructor (course PI) owns this policy, confirms the "not continuing" student list each summer, sends the notification email, performs the deletions, handles requests for extension, and updates the policy.
+The faculty coordinator owns this policy, confirms the "not continuing" student list each summer, sends the notification email, performs the deletions, handles requests for extension, and updates the policy.
 
-The teaching assistant builds the term's `/public` folders before the semester starts, verifies student uploads through the term, and drafts the notification email for the instructor's signature.
+The instructor builds the term's `/public` folders before the semester starts, verifies student uploads through the term, and drafts the notification email for the faculty coordinator's signature.
 
 IT provides and maintains the server, accounts, and capacity, and handles NetID authentication and password resets.
 
@@ -64,17 +61,17 @@ Students may, at any time before deletion:
 
 - Download their own files from their folder on the server, from inside the lab.
 - Request an extension if they need more time, are returning from leave, or have an ongoing project that would benefit from continued access.
-- Request that their files be deleted earlier than the default lifecycle would dictate.
+- Request that their files be deleted before the annual review.
 
-Requests go to the instructor by email.
+Requests go to the faculty coordinator by email.
 
 ## Exceptions
 
-The annual review skips a folder in cases including but not limited to:
+The annual review skips a folder in cases such as these:
 
 - A student takes a leave of absence and intends to return.
 - A student's MUS 381 work is part of an ongoing research project, performance, or portfolio.
 - A student is using their final project as part of a graduate school or job application.
-- The instructor or another faculty member identifies pedagogical or archival value in retaining a piece of student work as a reference example (with the student's written permission).
+- The instructor, the faculty coordinator, or another faculty member identifies pedagogical or archival value in retaining a piece of student work as a reference example (with the student's written permission).
 
-Extensions run in one-year increments. The instructor reviews active extensions each summer.
+Extensions run in one-year increments. The faculty coordinator reviews active extensions each summer.
