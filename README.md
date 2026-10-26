@@ -55,15 +55,15 @@ Students record their own sound in the lab and on their phones, prepare it in Au
 - [peer listening: sample libraries](https://csuebmusic.github.io/mus381/module-03-recording/listening/peer-midterm.html) (peer listening)
 - [Project 2: sample library](https://csuebmusic.github.io/mus381/module-03-recording/projects/project-02-sample-library.html) (Project 2)
 
-### Module 4: the DAW · Wks 10–13
+### Module 4: the DAW · Wks 11–14
 
-Three weeks in Ableton Live 11 (audio editing and warping, sampling with Simpler and Drum Rack from a MIDI keyboard, mixing), working from each student's own Module 3 library, then one session in Adobe Audition (Lab 4, Mon Wk 13). The deliverable is the final project, a piece built in Live in two drafts and a final version. The cumulative final exam is a separate assessment during finals week.
+Three labs in Ableton Live 11 (audio editing and warping, sampling with Simpler and Drum Rack from a MIDI keyboard, mixing), working from each student's own Module 3 library. An optional handout shows the same concepts in Adobe Audition. The deliverable is the final project, a piece built in Live in one draft and a final version. The cumulative final exam is a separate assessment during finals week.
 
 - [into the DAW](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/01-reading-the-daw-environment.html) (reading)
 - [audio editing in Ableton](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/02-handout-audio-editing.html) (Lab 1)
 - [sampling in Ableton](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/03-handout-sampling-in-practice.html) (Lab 2)
 - [mixing in Ableton](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/04-handout-mixing-in-practice.html) (Lab 3)
-- [Adobe Audition](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/05-handout-transferable-concepts.html) (Lab 4)
+- [Adobe Audition](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/05-handout-transferable-concepts.html) (Handout 1, optional)
 - [final review](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/06-handout-final-review.html) (final review)
 - [listening: sampling](https://csuebmusic.github.io/mus381/module-04-the-daw/listening/historical.html) (listening)
 - [final project](https://csuebmusic.github.io/mus381/module-04-the-daw/projects/final-project.html) (final project)
@@ -80,7 +80,7 @@ syllabus.html                        student-facing syllabus (served through Pag
 module-01-fluency/                   Wk 1 · computer & studio fluency
 module-02-audio-editing-mixing/      Wks 2–5 · Audacity: editing, mixing, dynamics → Project 1
 module-03-recording/                 Wks 6–9 · recording, the mixer, sample library → midterm
-module-04-the-daw/                   Wks 10–13 · Ableton Live, then Adobe Audition → final project
+module-04-the-daw/                   Wks 11–14 · Ableton Live → final project
 exams/                               midterm and final: administration notes, exam, answer key
 assets/                              shared CSS, audio, images, videos
 under-the-hood/                      build material for the course author, and course policies
