@@ -1,6 +1,6 @@
 # Module 04 · the DAW
 
-**Wks 10–15 · instruction Wks 10–13 (7 sessions), final project Wks 14–15 and finals**
+**Wks 11–15 · instruction Wks 11–14 (6 sessions), final project Wks 14–15 and finals**
 
 ---
 
@@ -10,17 +10,17 @@ Modules 2 and 3 used Audacity: students edited sound they were given (Module 2) 
 
 The module answers one beginner question: what is a DAW, and what can you do in it that a destructive audio editor like Audacity can't? Each session answers part of it. The arc:
 
-the DAW environment (Session View and Arrangement View, the timeline, nondestructive editing) → audio editing in Ableton (import the library, edit and arrange clips, warp) → the sampler instruments (Simpler and Drum Rack), triggered from MIDI for the first time → a short playable idea built from library sounds → mixing in Ableton (the channel strip, sends and returns, group tracks, built-in EQ and dynamics) → one session in Adobe Audition, an audio editor, showing the same concepts in a different program → final project.
+the DAW environment (Session View and Arrangement View, the timeline, nondestructive editing) → audio editing in Ableton (import the library, edit and arrange clips, warp) → the sampler instruments (Simpler and Drum Rack), triggered from MIDI for the first time → a short playable idea built from library sounds → mixing in Ableton (the channel strip, sends and returns, group tracks, built-in EQ and dynamics) → final project.
 
 Three throughlines:
 
 1. Nondestructive editing is the new mental model. Audacity edits the file: a cut removes samples, a fade rewrites them. Ableton edits a clip: the clip points at the audio file, and the edits (start, end, fades, warp, gain) are instructions stored on the clip. The source file doesn't change. This reframes everything students learned about editing in Module 2. Lead with it in Session 1 and come back to it every time a student is afraid of ruining a sample.
 
-2. The student's library is the raw material. Labs 1 and 2 (Sessions 1–4), the Audition lab (Session 7), and the final project all use the student's own Module 3 sample library. Lab 3 (Sessions 5–6) uses a prepared session from the server. A student with a well-organized library moves fast in Labs 1 and 2; a student without one spends the time searching, so point them back to their naming and folders.
+2. The student's library is the raw material. Labs 1 and 2 (Sessions 1–4) and the final project use the student's own Module 3 sample library. Lab 3 (Sessions 5–6) uses a prepared session from the server. A student with a well-organized library moves fast in Labs 1 and 2; a student without one spends the time searching, so point them back to their naming and folders.
 
-3. Concepts transfer; tools differ. The module teaches "a DAW" through Ableton, and Session 7 shows the same concepts in Adobe Audition under a different interface and different names. Sample rate, bit depth, gain staging, EQ, compression, fades, and multitrack arrangement exist in any audio program. Many students, the art majors especially, already use the Adobe suite and know where Audition belongs in it.
+3. Concepts transfer; tools differ. The module teaches "a DAW" through Ableton. Sample rate, bit depth, gain staging, EQ, compression, fades, and multitrack arrangement exist in any audio program, and students met them first in Audacity. The optional handout 05 shows the same concepts in Adobe Audition under a different interface and different names. Many students, the art majors especially, already use the Adobe suite and know where Audition belongs in it.
 
-By the end of Wk 13, students should be able to set up an Ableton Set from scratch, import and warp audio from their library, build a short playable idea with a sampler instrument, mix it with the built-in devices, and name which of those skills apply in any DAW. Wks 14–15 turn that fluency into the final project.
+By the end of Session 6 (Mon Wk 14), students should be able to set up an Ableton Set from scratch, import and warp audio from their library, build a short playable idea with a sampler instrument, mix it with the built-in devices, and name which of those skills apply in any DAW. Wks 14–15 turn that fluency into the final project.
 
 ---
 
@@ -32,14 +32,14 @@ Module 4 pages don't embed Ableton screenshots. The reading and the labs run alo
 
 Ableton's [Learn Live](https://www.ableton.com/en/live/learn-live/) video library covers most of the topics below (sorted into Setup, Interface, Instruments & Effects, and Workflows) and is linked from the reading. Send students there for a second pass on a concept or when a manual page is dense. The videos show the current shipping version of Live (Live 12), so the interface may look newer than the lab's Live 11; for the concepts in this module the difference is cosmetic. Menu paths and terminology follow the Live 11 manual.
 
-Week 10 (the environment and audio editing):
+Week 11 (the environment and audio editing):
 - First Steps: https://www.ableton.com/en/live-manual/11/first-steps/
 - Live Concepts: https://www.ableton.com/en/live-manual/11/live-concepts/
-- Arrangement View, audio portions only (audio tracks and clips on the timeline; skip the MIDI-clip and Session View launch material, which comes in Wk 11 or stays out of scope): https://www.ableton.com/en/live-manual/11/arrangement-view/
+- Arrangement View, audio portions only (audio tracks and clips on the timeline; skip the MIDI-clip and Session View launch material, which comes in Wk 12 or stays out of scope): https://www.ableton.com/en/live-manual/11/arrangement-view/
 - Clip View: https://www.ableton.com/en/live-manual/11/clip-view/
 - Audio Clips, Tempo, and Warping: https://www.ableton.com/en/live-manual/11/audio-clips-tempo-and-warping/
 
-Week 11 (sampling and MIDI as a trigger):
+Week 12 (sampling and MIDI as a trigger):
 - Simpler: https://www.ableton.com/en/live-manual/11/live-instrument-reference/#simpler
 - Drum Racks: https://www.ableton.com/en/live-manual/11/instrument-drum-and-effect-racks/#drum-racks
 - Editing MIDI Notes and Velocities, scoped to drawing and editing notes: https://www.ableton.com/en/live-manual/11/editing-midi-notes-and-velocities/
@@ -47,7 +47,7 @@ Week 11 (sampling and MIDI as a trigger):
 - Arming tracks: https://www.ableton.com/en/live-manual/11/recording-new-clips/#arming-record-enabling-tracks
 - Monitoring, the track Monitor setting paired with arming a MIDI track to play the instrument (Live work in this module doesn't record audio): https://www.ableton.com/en/live-manual/11/routing-and-i-o/#monitoring
 
-Week 12 (mixing):
+Weeks 13–14 (mixing):
 - Track Freeze (freezing before flattening): https://www.ableton.com/en/live-manual/11/computer-audio-resources-and-strategies/
 - Consolidate (Arrangement View): https://www.ableton.com/en/live-manual/11/arrangement-view/
 - Internal Routings: https://www.ableton.com/en/live-manual/11/routing-and-i-o/#internal-routings
@@ -69,7 +69,7 @@ Week 12 (mixing):
 - Delay: https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#delay
 - Echo: https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#echo
 
-Week 13 (Adobe Audition) is outside the Ableton manual. Audition runs on the lab Macs, so Session 7 is a hands-on lab (Lab 4, handout 05). The handout links three guides instead of the Live manual: Adobe's Get started with Adobe Audition, a beginner's walkthrough, and John Roach's Adobe Audition Beginners Guide (PDF).
+Adobe Audition is outside the Ableton manual and outside class: handout 05 is an optional resource for students who want to see the module's concepts in another program, and they work through it in MB2525 on their own time. It links three guides instead of the Live manual: Adobe's Get started with Adobe Audition, a beginner's walkthrough, and John Roach's Adobe Audition Beginners Guide (PDF).
 
 Exporting is used across the module: Exporting Audio and Video, https://www.ableton.com/en/live-manual/11/managing-files-and-sets/#exporting-audio-and-video . Students export finished work at 48 kHz, 32-bit. They export in Labs 1, 2, and 3 and for the final project.
 
@@ -87,7 +87,7 @@ By the end of this module, students should be able to:
 6. Explain the beginner-level model of MIDI: a MIDI note is data (which pitch, when, how hard) that triggers an instrument, and the instrument makes the sound
 7. Mix a small session using Ableton's built-in tools: track faders, pan, sends to a return track, group tracks, and the built-in EQ and compressor
 8. Map Ableton's mixer onto the console architecture from Module 3: track fader = channel fader, send = aux send, group track = subgroup (the Toft's submaster), Master track = master mix
-9. Recognize the same core concepts (sample rate, bit depth, editing, EQ, dynamics, multitrack) in a different program (Adobe Audition, an audio editor) and explain that the concepts apply across programs
+9. Recognize the same core concepts (sample rate, bit depth, editing, EQ, dynamics, multitrack) in Audacity and in Ableton and explain that the concepts apply across programs
 
 ---
 
@@ -107,7 +107,7 @@ By the end of this module, students should be able to:
 - **Group tracks** fold several tracks into one channel for combined level and processing. A group track is Ableton's subgroup, the console's subgroup strip (the Toft labels its subgroups submasters).
 - **Bouncing** prints what a track plays into a fixed audio file. In Lab 3 students bounce each MIDI track in two steps: Freeze Track (reversible), then Flatten (permanent). They do it on a separate mixing copy of the Set, so the original keeps its notes and instruments.
 - **Built-in devices** are the same effect types from Modules 2 and 3, now as Live devices. Map each onto the EQ and dynamics from Module 2 and the aux-send architecture from Module 3. The locked list, with each device's role and where each insert goes, is in reference scope.
-- **Transferable concepts** (the Audition session) are sample rate, bit depth, gain staging, fades, EQ, compression, and multitrack arrangement. These are properties of digital audio and audio production, not of Ableton. Audition is the worked example of the same concepts in a different program.
+- **Transferable concepts** are sample rate, bit depth, gain staging, fades, EQ, compression, and multitrack arrangement. These are properties of digital audio and audio production, not of Ableton. Students used them in Audacity before Ableton, and the optional handout 05 shows them in Adobe Audition.
 
 ---
 
@@ -117,10 +117,10 @@ By the end of this module, students should be able to:
 
 Built: [final project](https://csuebmusic.github.io/mus381/module-04-the-daw/projects/final-project.html) (`projects/final-project.html`).
 
-The final project is a 2-to-3-minute piece built in Live from the student's own recordings, in two drafts and a final version. The prompt has the spec, the due dates, the submission folders, and the rubric.
+The final project is a 2-to-3-minute piece built in Live from the student's own recordings, in one draft and a final version. The prompt has the spec, the due dates, the submission folders, and the rubric.
 
 - Students start the project Set in Session 1, following the end of the reading. Labs 1–3 each end with a "before class ends: your project" block for adding the day's work to it.
-- You give written feedback on Draft 1. There's no in-class listening for drafts.
+- You give written feedback on the draft. There's no in-class listening for it.
 - A cumulative final exam runs during finals week (it covers the whole course), separate from this project. Exam and answer key: [`exams/final-exam.md`](../exams/final-exam.md) *(instructor-facing)*.
 
 ### final review packet
@@ -135,9 +135,9 @@ A take-home study packet for the cumulative final, parallel to the Module 3 midt
 
 [listening: sampling](https://csuebmusic.github.io/mus381/module-04-the-daw/listening/historical.html) (`listening/historical.html`)
 
-Module 4 has one historical listening assignment, on sampling: building music from recorded sound, from musique concrète through turntables, the MPC, and the DAW. The page ties back to Module 2's musique concrète listening (the same idea on tape) and to the Wk 11 sampling lab. Students listen to four pieces: Grandmaster Flash (1981), DJ Shadow (1996), The Avalanches (2000), and J Dilla (2006), plus one sampling piece of their choice from the last 20 years. They answer four questions, the last asking for one concrete thing they want to try in their final project. The page has two photos (Grandmaster Flash at the turntables, an Akai MPC60) and a lineage timeline SVG.
+Module 4 has one historical listening assignment, on sampling: building music from recorded sound, from musique concrète through turntables, the MPC, and the DAW. The page ties back to Module 2's musique concrète listening (the same idea on tape) and to the Wk 12 sampling lab. Students listen to four pieces: Grandmaster Flash (1981), DJ Shadow (1996), The Avalanches (2000), and J Dilla (2006), plus one sampling piece of their choice from the last 20 years. They answer four questions, the last asking for one concrete thing they want to try in their final project. The page has two photos (Grandmaster Flash at the turntables, an Akai MPC60) and a lineage timeline SVG.
 
-It's due Mon Wk 13, before class, on Canvas: `lastname-listening-04.docx` (or PDF), about 250 to 350 words. It's the last historical listening assignment of the course.
+It's due Mon Wk 14, before class, on Canvas: `lastname-listening-04.docx` (or PDF), about 250 to 350 words. It's the last historical listening assignment of the course.
 
 Module 4 has no peer listening. Final pieces go in the class folder for everyone to hear, with no written response assignment.
 
@@ -149,7 +149,7 @@ Module 4 has no peer listening. Final pieces go in the class folder for everyone
 - [audio editing in Ableton](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/02-handout-audio-editing.html) (`lessons/02-handout-audio-editing.html`), Lab 1
 - [sampling in Ableton](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/03-handout-sampling-in-practice.html) (`lessons/03-handout-sampling-in-practice.html`), Lab 2
 - [mixing in Ableton](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/04-handout-mixing-in-practice.html) (`lessons/04-handout-mixing-in-practice.html`), Lab 3
-- [Adobe Audition](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/05-handout-transferable-concepts.html) (`lessons/05-handout-transferable-concepts.html`), Lab 4
+- [Adobe Audition](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/05-handout-transferable-concepts.html) (`lessons/05-handout-transferable-concepts.html`), optional handout
 - [final review](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/06-handout-final-review.html) (`lessons/06-handout-final-review.html`)
 - [listening: sampling](https://csuebmusic.github.io/mus381/module-04-the-daw/listening/historical.html) (`listening/historical.html`)
 - [final project](https://csuebmusic.github.io/mus381/module-04-the-daw/projects/final-project.html) (`projects/final-project.html`)
@@ -158,19 +158,19 @@ Module 4 has no peer listening. Final pieces go in the class folder for everyone
 
 ## session overview
 
-The module reading (`01-reading-the-daw-environment.html`) opens Monday of Wk 10 as the map of the module, and the class refers back to it all module. After it, each week runs on one handout. The three Ableton lab handouts (`02` audio editing, `03` sampling, `04` mixing) each run a full week, Monday and Wednesday: you work through the handout while students follow hands-on. Wks 11 and 12 have no separate Monday lecture document. Wk 13 is a Monday-only Audition lab (Lab 4, `05-handout-transferable-concepts.html`); there's no Wednesday class (Veterans Day). Handout `06` is the take-home final review packet, not a session document.
+The module reading (`01-reading-the-daw-environment.html`) opens Monday of Wk 11 as the map of the module, and the class refers back to it all module. After it, each of the three Ableton lab handouts (`02` audio editing, `03` sampling, `04` mixing) runs two sessions: you work through the handout while students follow hands-on. Lab 1 runs Mon and Wed Wk 11, and Lab 2 runs Mon and Wed Wk 12. Lab 3 runs Mon Wk 13 and Mon Wk 14, with no class Wed Wk 13 (Veterans Day). Wks 12 to 14 have no separate Monday lecture document. Handout `05` (Adobe Audition) is an optional resource outside class, and handout `06` is the take-home final review packet; neither is a session document.
 
 | Wk | Day | Focus |
 |---|---|---|
-| 10 | Mon | Session 1 · Reading (the module map), then begin Lab 1 (handout 02). What a DAW is, Session View and Arrangement View, the clip, nondestructive editing. Students create their final-project Set (`lastname-final-v1`). |
-| 10 | Wed | Session 2 · Lab 1 continues (handout 02). Import the library, place clips on the Arrangement timeline, clip edits (start and end, gain, fades), a 30-second arrangement, warping in a second version, export. |
-| 11 | Mon | Session 3 · Begin Lab 2 (handout 03). Connect the MIDI keyboard. MIDI as a trigger: a MIDI note triggers an instrument; the instrument makes the sound. Simpler plays one sample across the keyboard; a Drum Rack is a grid of one-sample pads. |
-| 11 | Wed | Session 4 · Lab 2 continues (handout 03). Build a Drum Rack kit from library sounds, sequence a short part by drawing notes, build one short playable idea from the student's own samples, export. |
-| 12 | Mon | Session 5 · Begin Lab 3 (handout 04). The Ableton mixer as the digital console: track faders, pan, sends and return tracks, group tracks, the Master. Inserts and sends mapped onto Module 2 and the Module 3 console. |
-| 12 | Wed | Session 6 · Lab 3 continues (handout 04). Bounce the prepared session to audio (freeze and flatten the MIDI tracks, consolidate), then mix: levels, pan, groups, inserts, reverb and delay sends, export. |
-| 13 | Mon | Session 7 · Lab 4, Adobe Audition (handout 05). *(Mon only; no class Wed, Veterans Day.)* The same concepts in a different program: editing, fades, noise reduction, multitrack levels and pan, EQ, sample rate and bit depth, under Audition's interface and names. Module 4 listening due before class. |
-| 14 | Mon / Wed | Final project worktime; Draft 1 due Wed Wk 14. |
-| 15 | Mon / Wed | Final project revision; Draft 2 due Wed Wk 15. Final review packet (handout 06) handed out for the finals-week exam. |
+| 11 | Mon | Session 1 · Reading (the module map), then begin Lab 1 (handout 02). What a DAW is, Session View and Arrangement View, the clip, nondestructive editing. Students create their final-project Set (`lastname-final-v1`). |
+| 11 | Wed | Session 2 · Lab 1 continues (handout 02). Import the library, place clips on the Arrangement timeline, clip edits (start and end, gain, fades), a 30-second arrangement, warping in a second version, export. |
+| 12 | Mon | Session 3 · Begin Lab 2 (handout 03). Connect the MIDI keyboard. MIDI as a trigger: a MIDI note triggers an instrument; the instrument makes the sound. Simpler plays one sample across the keyboard; a Drum Rack is a grid of one-sample pads. |
+| 12 | Wed | Session 4 · Lab 2 continues (handout 03). Build a Drum Rack kit from library sounds, sequence a short part by drawing notes, build one short playable idea from the student's own samples, export. |
+| 13 | Mon | Session 5 · Begin Lab 3 (handout 04). The Ableton mixer as the digital console: track faders, pan, sends and return tracks, group tracks, the Master. Inserts and sends mapped onto Module 2 and the Module 3 console. |
+| 13 | Wed | No class (Veterans Day). |
+| 14 | Mon | Session 6 · Lab 3 continues (handout 04). Bounce the prepared session to audio (freeze and flatten the MIDI tracks, consolidate), then mix: levels, pan, groups, inserts, reverb and delay sends, export. Module 4 listening due before class. |
+| 14 | Wed | Final project worktime. |
+| 15 | Mon / Wed | Final project worktime; draft due Wed Wk 15. Final review packet (handout 06) handed out for the finals-week exam. |
 | Finals | | Final piece to the server and the class folder; cumulative final exam. |
 
 Block-by-block facilitation, demo scripts, and pacing fallbacks for each session aren't written yet.
@@ -181,11 +181,11 @@ Block-by-block facilitation, demo scripts, and pacing fallbacks for each session
 
 - Check the Ableton install. The lab version is **Ableton Live 11 Suite**. Menu paths and manual links on the pages all target Live 11 (see reference scope above for the exact sections). Simpler and Drum Rack are in every edition.
 - Check the lab's default Live Set. A new Set opens with two audio tracks, two MIDI tracks, and two return tracks, with Reverb on return A and Delay on return B. Handouts 02 to 04 assume this layout.
-- Inventory and test the MIDI keyboards at every station before Wk 11. Confirm each one is present, connects over USB through the station hub, shows in full color in Audio MIDI Setup's MIDI Studio, and appears in Live's Link, Tempo & MIDI preferences. Lab keyboards don't auto-arm: students turn on the keyboard's **Track** switch in those preferences and arm the MIDI track.
-- Install and test Adobe Audition on the lab Macs before Wk 13. Audition runs at every station, so Session 7 is hands-on. Confirm it launches under the campus Adobe license.
-- Stage the files for Labs 3 and 4 in `/public/module-04/` before Wk 12. Session 6 uses a prepared session: a longer piece with several instruments, some played from MIDI and some recorded as audio, so there are MIDI tracks to bounce and clips to consolidate. Inés provides it. The noise recording for the Wk 13 Audition lab goes in the same folder.
+- Inventory and test the MIDI keyboards at every station before Wk 12. Confirm each one is present, connects over USB through the station hub, shows in full color in Audio MIDI Setup's MIDI Studio, and appears in Live's Link, Tempo & MIDI preferences. Lab keyboards don't auto-arm: students turn on the keyboard's **Track** switch in those preferences and arm the MIDI track.
+- Check that Adobe Audition launches on the lab Macs under the campus Adobe license. The optional handout 05 sends students to MB2525 to use it outside class.
+- Stage the files for Lab 3 and the optional Audition handout in `/public/module-04/` before Wk 13. Session 6 uses a prepared session: a longer piece with several instruments, some played from MIDI and some recorded as audio, so there are MIDI tracks to bounce and clips to consolidate. Inés provides it. The noise recording for the optional Audition handout goes in the same folder.
 - Be ready for the final-project Set. Students create it in Session 1, following the end of the reading: a folder named `final` inside `~/Documents/netid/`, and a Live Set saved in it as `lastname-final-v1`. Nothing to pre-stage; help with the create-and-save step on the day.
-- Check library readiness before Wk 10. Sessions 1 through 4 and Session 7 assume each student has a usable Module 3 library in `sample-library/` in their own server folder. Spot-check that the libraries are there and findable after the midterm.
+- Check library readiness before Wk 11. Sessions 1 through 4 assume each student has a usable Module 3 library in `sample-library/` in their own server folder. Spot-check that the libraries are there and findable after the midterm.
 
 ---
 
@@ -205,15 +205,12 @@ The reading has no gear callout. Each lab handout lists the gear to take from th
 - Lab 1 (Sessions 1–2) uses an audio interface and headphones.
 - Lab 2 (Sessions 3–4) uses an audio interface, headphones, and a MIDI keyboard. The keyboard plugs into the USB hub at the station.
 - Lab 3 (Sessions 5–6) uses an audio interface and headphones. The MIDI keyboard stays in storage.
-- Lab 4 (Session 7) uses an audio interface and headphones.
 
-No session in this module uses a mic or XLR cable. In Wk 11, confirm each MIDI keyboard registers in Live before the room fills.
+No session in this module uses a mic or XLR cable. In Wk 12, confirm each MIDI keyboard registers in Live before the room fills.
 
 ### pacing across the module
 
 Plan for **Session 3 → 4** (MIDI as a trigger). MIDI is the one new abstraction in a module otherwise built on familiar material (audio, editing, mixing). Plan the Monday (Session 3) so students can state the note → instrument → sound chain before they build with it on Wednesday; the Wednesday build depends on it.
-
-Keep **Session 7 (Audition)** on the concepts, not on Audition's feature set. The message is "you already know this; here it is under different names."
 
 ### when to escalate to Inés
 
@@ -221,7 +218,7 @@ Same as Modules 2 and 3.
 
 ---
 
-## Session 1 · Mon Wk 10: the DAW environment, through Ableton
+## Session 1 · Mon Wk 11: the DAW environment, through Ableton
 
 **100 min · reading, then Lab 1 begins · MB2525**
 
@@ -245,13 +242,13 @@ Module 2 taught editing as something you do *to a file*. This reading reframes e
 
 ---
 
-## Session 2 · Wed Wk 10: audio editing in Ableton (Lab 1)
+## Session 2 · Wed Wk 11: audio editing in Ableton (Lab 1)
 
 **100 min · lab · MB2525**
 
 ### roadmap
 
-Lab 1 sets up Live (the lab interface as Live's audio device, ins and outs), then students download their `sample-library/` from the server, add it to Live's browser, and drag four to six sounds onto audio tracks in Arrangement View. They edit clips in Clip View (start and end, clip gain, fades), arrange three or more sounds into about thirty seconds, and save as `lastname-wk10-v1`. They save a copy as `lastname-wk10-v2` and do all warping there (warp on for a loop, off for a one-shot, mode left at default). The library is already 48 kHz, so it imports into the 48 kHz Set with nothing to convert. They export `lastname-wk10-edit.wav` at 48 kHz, 32-bit, run **Collect All and Save**, and upload both Project folders and the WAV.
+Lab 1 sets up Live (the lab interface as Live's audio device, ins and outs), then students download their `sample-library/` from the server, add it to Live's browser, and drag four to six sounds onto audio tracks in Arrangement View. They edit clips in Clip View (start and end, clip gain, fades), arrange three or more sounds into about thirty seconds, and save as `lastname-wk11-v1`. They save a copy as `lastname-wk11-v2` and do all warping there (warp on for a loop, off for a one-shot, mode left at default). The library is already 48 kHz, so it imports into the 48 kHz Set with nothing to convert. They export `lastname-wk11-edit.wav` at 48 kHz, 32-bit, run **Collect All and Save**, and upload both Project folders and the WAV.
 
 Watch for:
 - In Live's audio device list, the Behringer UM2 shows as USB Audio CODEC and the PreSonus AudioBox as AudioBox USB 96.
@@ -268,13 +265,13 @@ Arrangement View (audio portions); Clip View; Audio Clips, Tempo, and Warping; E
 
 ---
 
-## Session 3 · Mon Wk 11: Simpler and Drum Rack
+## Session 3 · Mon Wk 12: Simpler and Drum Rack
 
 **100 min · Lab 2 begins · MB2525**
 
 ### roadmap
 
-This is the module's one new abstraction: **MIDI as a trigger**. Build the model carefully: a MIDI note is data (pitch, timing, velocity), a MIDI note triggers an instrument, and the instrument makes the sound. Students start a Set named `lastname-wk11` and connect the MIDI keyboard: check it in Audio MIDI Setup's MIDI Studio (Cmd-2), then turn on its **Track** switch in Live's Preferences under Link, Tempo & MIDI. Then the two sampler instruments, on MIDI tracks. **Simpler** plays one sample across the keyboard; students try Classic mode (the ADSR envelope) and One-Shot mode (Fade In and Fade Out). A **Drum Rack** is a grid of pads, each pad one sample (a Simpler), each triggered by a MIDI note. Frame both as ways to *play* the student's library, not only arrange it.
+This is the module's one new abstraction: **MIDI as a trigger**. Build the model carefully: a MIDI note is data (pitch, timing, velocity), a MIDI note triggers an instrument, and the instrument makes the sound. Students start a Set named `lastname-wk12` and connect the MIDI keyboard: check it in Audio MIDI Setup's MIDI Studio (Cmd-2), then turn on its **Track** switch in Live's Preferences under Link, Tempo & MIDI. Then the two sampler instruments, on MIDI tracks. **Simpler** plays one sample across the keyboard; students try Classic mode (the ADSR envelope) and One-Shot mode (Fade In and Fade Out). A **Drum Rack** is a grid of pads, each pad one sample (a Simpler), each triggered by a MIDI note. Frame both as ways to *play* the student's library, not only arrange it.
 
 Watch for:
 - A silent keyboard: check the Track switch in preferences, the track's **Arm** button (lab keyboards don't auto-arm), and the track's Monitor setting (Auto, not Off).
@@ -291,13 +288,13 @@ MIDI and Key Remote Control; Simpler; Arming tracks; Monitoring; Drum Racks; Edi
 
 ---
 
-## Session 4 · Wed Wk 11: sampling in practice (Lab 2)
+## Session 4 · Wed Wk 12: sampling in practice (Lab 2)
 
 **100 min · lab · MB2525**
 
 ### roadmap
 
-Hands-on with the Session 3 instruments. Students load their own library sounds into Simpler and a Drum Rack (three or four pads), make a MIDI clip, and sequence a short part by drawing notes in the MIDI Note Editor (Draw Mode, B). The keyboard is for hearing the instrument; students don't record MIDI. They vary velocity in the lane under the notes. They build one short playable idea, about fifteen to thirty seconds, from their own samples, export `lastname-wk11-idea.wav` at 48 kHz, 32-bit, run **Collect All and Save**, and upload. This is the first time the library is played as an instrument.
+Hands-on with the Session 3 instruments. Students load their own library sounds into Simpler and a Drum Rack (three or four pads), make a MIDI clip, and sequence a short part by drawing notes in the MIDI Note Editor (Draw Mode, B). The keyboard is for hearing the instrument; students don't record MIDI. They vary velocity in the lane under the notes. They build one short playable idea, about fifteen to thirty seconds, from their own samples, export `lastname-wk12-idea.wav` at 48 kHz, 32-bit, run **Collect All and Save**, and upload. This is the first time the library is played as an instrument.
 
 A fresh MIDI clip opens with Loop on, so dragging its edge repeats the content. Students turn Loop off to resize the clip, draw the part, then turn Loop back on and set the loop brace.
 
@@ -307,7 +304,7 @@ A fresh MIDI clip opens with Loop on, so dragging its edge repeats the content. 
 
 ---
 
-## Session 5 · Mon Wk 12: mixing in Ableton
+## Session 5 · Mon Wk 13: mixing in Ableton
 
 **100 min · Lab 3 begins · MB2525**
 
@@ -319,7 +316,7 @@ Lab 3 has no videos; the manual pages linked at each step are the reference. Stu
 
 ### handout
 
-[mixing in Ableton](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/04-handout-mixing-in-practice.html) (`lessons/04-handout-mixing-in-practice.html`), Lab 3. One document for the whole week: this Monday session works through the mixer concepts, and Session 6 continues into bouncing to audio and mixing.
+[mixing in Ableton](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/04-handout-mixing-in-practice.html) (`lessons/04-handout-mixing-in-practice.html`), Lab 3. One document for both sessions: this session works through the mixer concepts, and Session 6, a week later, continues into bouncing to audio and mixing.
 
 ### manual (Live 11)
 
@@ -331,50 +328,25 @@ Module 2's EQ and compression (what these devices do) and Module 3's console arc
 
 ---
 
-## Session 6 · Wed Wk 12: mixing in practice (Lab 3)
+## Session 6 · Mon Wk 14: mixing in practice (Lab 3)
 
 **100 min · lab · MB2525**
 
 ### roadmap
 
-The Wednesday half of the mixing week. Students copy the prepared session's project folder from `/public/module-04/` into `~/Documents/netid/`, open it, and listen once through before changing anything. They save the original, then **Save As** `lastname-wk12-mix` and work only in that copy. They bounce each MIDI track to audio (right-click, **Freeze Track**, then **Edit → Flatten**) and consolidate every track into one clip (Cmd-A, Cmd-J). Then they mix in Session View (Tab): levels first, pan (kick and bass centered), a group with Cmd-G, inserts where they hear the need (EQ Eight, Compressor, Glue Compressor on a group, Limiter on the master), and Send A (reverb) and Send B (delay). They export `lastname-wk12-mix.wav` at 48 kHz, 32-bit, run **Collect All and Save**, and upload.
+The second half of the mixing lab, a week after Session 5 (Veterans Day falls between them). Students copy the prepared session's project folder from `/public/module-04/` into `~/Documents/netid/`, open it, and listen once through before changing anything. They save the original, then **Save As** `lastname-wk13-mix` and work only in that copy. They bounce each MIDI track to audio (right-click, **Freeze Track**, then **Edit → Flatten**) and consolidate every track into one clip (Cmd-A, Cmd-J). Then they mix in Session View (Tab): levels first, pan (kick and bass centered), a group with Cmd-G, inserts where they hear the need (EQ Eight, Compressor, Glue Compressor on a group, Limiter on the master), and Send A (reverb) and Send B (delay). They export `lastname-wk13-mix.wav` at 48 kHz, 32-bit, run **Collect All and Save**, and upload.
 
 Watch for:
-- Flatten is permanent and there's no unflatten. Check students are in `lastname-wk12-mix` before they flatten; the original Set keeps every note and instrument.
+- Flatten is permanent and there's no unflatten. Check students are in `lastname-wk13-mix` before they flatten; the original Set keeps every note and instrument.
 - Students who run short on time set levels and a little pan, export that, and upload.
 
 ### handout
 
-[mixing in Ableton](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/04-handout-mixing-in-practice.html) (`lessons/04-handout-mixing-in-practice.html`), Lab 3. The same handout begun on Monday (Session 5); Wednesday continues into bouncing to audio and mixing.
+[mixing in Ableton](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/04-handout-mixing-in-practice.html) (`lessons/04-handout-mixing-in-practice.html`), Lab 3. The same handout begun in Session 5; this session continues into bouncing to audio and mixing.
 
 ### manual (Live 11)
 
 Track Freeze; Consolidate; Mixing; the device pages for EQ Eight, Compressor, Glue Compressor, Limiter, Reverb, Hybrid Reverb, Delay, Echo, Utility, Auto Filter, and Multiband Dynamics.
-
----
-
-## Session 7 · Mon Wk 13: Adobe Audition (Lab 4)
-
-**100 min · lab · MB2525** *(Mon only; no class Wed Wk 13, Veterans Day.)*
-
-### roadmap
-
-Step out of Ableton to show that the module's concepts belong to digital audio, not to one program. Adobe Audition is the worked example. It has two editors: the Waveform Editor edits one file destructively, like Audacity, and the Multitrack Editor edits clips nondestructively, like Ableton. Audition has nondestructive editing and live effects but no instruments or MIDI, so by this course's definition it's an audio editor, not a DAW.
-
-Students follow handout 05 hands-on:
-1. Make a multitrack session at 48000 Hz, 32-bit, saved in its own folder in `~/Documents/netid/` (Audition saves a `.sesx` file).
-2. Download a handful of library sounds into the session folder and import them.
-3. In the Waveform Editor, delete a selection and add fades with the fade handles.
-4. Download the noise recording from `/public/module-04/`, capture a noise print, and apply Noise Reduction at about 70 to 80 percent (past about 90 percent the sound turns hollow). It's the same two-step move as the noise profile in their Audacity sample-prep pipeline.
-5. Try the Spectral Frequency Display: select a bright shape and delete it or use Auto Heal (four seconds or less).
-6. In the Multitrack Editor, set levels and pan and add a Parametric Equalizer from the Effects Rack. Optionally try clip stretching: Varispeed links pitch and duration, like Audacity's Change Speed and Pitch; the other stretch types hold pitch, like Ableton's warp.
-7. Export a multitrack mixdown as WAV, 48 kHz, 32-bit, and upload the working folder.
-
-Nothing in this session is graded or submitted. As you go through each step, point back to where students met the concept in Ableton or Audacity.
-
-### handout
-
-[Adobe Audition](https://csuebmusic.github.io/mus381/module-04-the-daw/lessons/05-handout-transferable-concepts.html) (`lessons/05-handout-transferable-concepts.html`), Lab 4
 
 ---
 
@@ -388,7 +360,7 @@ Students at the end of Module 4 should be able to:
 2. Edit clips nondestructively and warp where appropriate
 3. Trigger a sampler instrument from MIDI and build a short playable idea
 4. Mix a small session with faders, pan, sends, groups, EQ, and compression
-5. Recognize the same concepts in a different program (an audio editor) and explain that the skills transfer
+5. Name the concepts that apply in any audio program, from Audacity to Ableton, and explain that the skills transfer
 
 ### bridge to Sound Design
 
