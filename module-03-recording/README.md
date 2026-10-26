@@ -1,12 +1,12 @@
 # Module 03 · recording, sample prep & library building
 
-Wks 6 to 9 (Sep 21 to Oct 14) · 8 sessions of 100 minutes
+Wks 6 to 10 (Sep 21 to Oct 21) · 10 sessions of 100 minutes
 
 ---
 
 ## module purpose
 
-In Module 2 students worked with sound that was handed to them. In Module 3 they make their own. By the end of the four weeks they can plug in a microphone, capture a clean recording, prepare the file for use, and organize it into a usable library.
+In Module 2 students worked with sound that was handed to them. In Module 3 they make their own. By the end of the five weeks they can plug in a microphone, capture a clean recording, prepare the file for use, and organize it into a usable library.
 
 The deliverable is the library: the curated, organized collection of their own sounds that students use in Module 4. The midterm has two parts, the library and a terminology exam covering Modules 1 through 3.
 
