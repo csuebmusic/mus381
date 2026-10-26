@@ -87,7 +87,7 @@ Award full credit when the student conveys the idea, even if the wording differs
 9. **Session View** is the grid of clips, for trying ideas and looping. **Arrangement View** is the linear timeline. You commit to a final arrangement in **Arrangement View**. *(2 for naming both views correctly, 2 for picking Arrangement for the final structure.)*
 10. **Simpler** plays one sample across the keyboard; in Classic mode each note has an attack-decay-sustain-release envelope. **Drum Rack** is the grid of pads, one sample per pad. *(2 each.)*
 11. The reverb goes on a **return track**. Each of the four tracks turns up its **send** to that return, so all four feed the one reverb. On the Toft this is the **aux send and aux return** (the auxiliary send routing). *(2 for the return-plus-sends routing, 2 for naming the aux send/return on the console.)*
-12. Any two of: instruments, MIDI, a full mixer. Audacity is an audio editor: it records and edits audio, and those are the parts it lacks. *(2 for each.)*
+12. Any two of: instruments, MIDI, a full mixer. Audacity records and edits audio but has none of these, so by this course's definition it's an audio editor. *(2 for each.)*
 
 ## Part C
 
