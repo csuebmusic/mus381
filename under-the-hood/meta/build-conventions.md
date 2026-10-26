@@ -101,7 +101,7 @@ The header `<span class="meta">` and the matching footer span hold the role line
 | Exam review handout | `Module XX · Midterm review` or `Module XX · Final review` |
 | Handout used all semester | `Lab · Reference card` |
 
-Counts restart in each module, except project numbers, which are global. Lecture N counts lectures, Lab N counts lab sessions, Handout N counts module-tied handouts not paired with one lab (none at present), and Tool N counts interactive tools.
+Counts restart in each module, except project numbers, which are global. Lecture N counts lectures, Lab N counts lab sessions, Handout N counts module-tied handouts not paired with one lab (Module 4 Handout 1, the optional Adobe Audition handout, at present), and Tool N counts interactive tools.
 
 ### separators
 
@@ -136,7 +136,7 @@ Every document students use during a lab session has the template's Today's gear
 | Module 4 sampling handout (`03-handout-sampling-in-practice.html`) | audio interface, headphones, MIDI keyboard |
 | Other Module 4 lab handouts | audio interface, headphones |
 
-The Session Routines card, the reference cards, the Day 1 reading, the Module 2 Lecture 3 supplement, the Module 3 and Module 4 readings, Module 3's Lab 4 (handout 08), the exam review handouts, listening pages, and project prompts have no Today's gear callout. Body prose doesn't repeat the gear list.
+The Session Routines card, the reference cards, the Day 1 reading, the Module 2 Lecture 3 supplement, the Module 3 and Module 4 readings, Module 3's Lab 4 (handout 08), Module 4's Handout 1 (handout 05), the exam review handouts, listening pages, and project prompts have no Today's gear callout. Body prose doesn't repeat the gear list.
 
 ### end of session
 
