@@ -42,7 +42,7 @@ Give a one or two sentence definition for each term.
 
 11. A producer wants a single reverb shared across four tracks rather than four separate copies. Describe the routing they would set up in Ableton: where the reverb goes, and what each of the four tracks uses to feed it. Then name the feature on our Module 3 Toft console that this is the digital version of.
 
-12. An audio editor in the Adobe suite has nondestructive editing and live effects like a DAW, but it has no instruments and no MIDI. Name the program, and say why, by this course's definition, it isn't a DAW.
+12. Audacity records and edits audio, but by this course's definition it isn't a DAW. Name two things a DAW has that Audacity doesn't.
 
 ## Part C: Trace and map (14 points)
 
@@ -61,7 +61,7 @@ Give a one or two sentence definition for each term.
 
 16. **(4 points)** Explain the beginner model of MIDI as a trigger. What does a MIDI note carry, what does it do, and what actually makes the sound the listener hears?
 
-17. **(3 points)** Across the course you worked in Audacity, on the studio console, and in Ableton. Name two concepts that appear in all three, and explain why "the skills transfer, the tool changes" is the point of the Adobe Audition session.
+17. **(3 points)** Across the course you worked in Audacity, on the studio console, and in Ableton. Name two concepts that appear in all three, and explain what that means for the next audio tool you learn.
 
 18. **(3 points)** Your library files are 48 kHz, 24-bit. Your Ableton Set runs at 48 kHz. When you import a library sound into the Set, what converts and what doesn't? At what bit depth do you export the finished piece?
 
@@ -87,7 +87,7 @@ Award full credit when the student conveys the idea, even if the wording differs
 9. **Session View** is the grid of clips, for trying ideas and looping. **Arrangement View** is the linear timeline. You commit to a final arrangement in **Arrangement View**. *(2 for naming both views correctly, 2 for picking Arrangement for the final structure.)*
 10. **Simpler** plays one sample across the keyboard; in Classic mode each note has an attack-decay-sustain-release envelope. **Drum Rack** is the grid of pads, one sample per pad. *(2 each.)*
 11. The reverb goes on a **return track**. Each of the four tracks turns up its **send** to that return, so all four feed the one reverb. On the Toft this is the **aux send and aux return** (the auxiliary send routing). *(2 for the return-plus-sends routing, 2 for naming the aux send/return on the console.)*
-12. Adobe Audition. It isn't a DAW because it has no instruments and no MIDI. It's an advanced audio editor (a hybrid: nondestructive and with live effects, but missing the instrument and MIDI side that define a DAW). *(2 for naming Audition, 2 for "no instruments / no MIDI.")*
+12. Any two of: instruments, MIDI, a full mixer. Audacity is an audio editor: it records and edits audio, and those are the parts it lacks. *(2 for each.)*
 
 ## Part C
 
@@ -105,5 +105,5 @@ Award full credit when the student conveys the idea, even if the wording differs
 
 15. **(4 points)** Shortening a clip or adding a fade changes the clip's instructions (its start, end, and fades), not the audio file underneath. The file's samples stay exactly as recorded, so you can always pull the clip's edge back out or remove the fade. You can't ruin the source because every edit is layered on top of a file that's never altered. *(Full credit for tying "edits are on the clip" to "the file is untouched, so it's recoverable.")*
 16. **(4 points)** A MIDI note carries pitch, timing, and velocity (how hard). It doesn't make any sound on its own; it triggers an instrument, and the instrument is what produces the audio. The chain is note, then instrument, then sound. *(2 for what the note carries, 2 for "the instrument makes the sound.")*
-17. **(3 points)** Any two of: sample rate, bit depth, gain staging, EQ, compression, fades, multitrack arrangement. They transfer because they're properties of digital audio and audio production, not of any one program. The Adobe Audition session (Mon Wk 13) makes the point that the next tool will look different and work the same, so what students learned is portable rather than tied to Ableton's buttons. *(2 for two transferable concepts, 1 for the portability point.)*
+17. **(3 points)** Any two of: sample rate, bit depth, gain staging, EQ, compression, fades, multitrack arrangement. They transfer because they're properties of digital audio and audio production, not of any one program. The next tool will look different and work the same, so what students learned is portable rather than tied to Ableton's buttons. *(2 for two transferable concepts, 1 for the portability point.)*
 18. **(3 points)** The sample rate already matches (48 kHz library into a 48 kHz set), so nothing resamples on import. The only format change is bit depth, and it happens at export, not import. You export the finished piece at **32-bit** (48 kHz, 32-bit). *(2 for "rate matches, nothing resamples," 1 for "export at 32-bit.")*
