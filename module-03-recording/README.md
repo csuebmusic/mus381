@@ -103,7 +103,7 @@ Due Mon Oct 12 (Wk 9), before class.
 
 ### peer listening
 
-After the midterm, students browse classmates' libraries in /public/mus-381-fall-2026/project-02-libraries/ on the class server and write 50 to 80 words on each of three or four libraries: whose library it is, one specific thing they noticed, and one file they'd borrow and how they'd use it in a piece. The response is lastname-peer-listening-03 (.docx or PDF, about 200 to 320 words), uploaded to Canvas. The libraries are discussed in class on Mon Wk 10, the first day of Module 4.
+After the midterm, students browse classmates' libraries in /public/mus-381-fall-2026/project-02-libraries/ on the class server and write 50 to 80 words on each of three or four libraries: whose library it is, one specific thing they noticed, and one file they'd borrow and how they'd use it in a piece. The response is lastname-peer-listening-03 (.docx or PDF, about 200 to 320 words), uploaded to Canvas. The libraries are discussed in class on Mon Wk 10.
 
 Assignment page: [peer listening: sample libraries](https://csuebmusic.github.io/mus381/module-03-recording/listening/peer-midterm.html)
 
