@@ -635,7 +635,7 @@ Students at the end of Module 3 can:
 
 ### into Module 4
 
-The libraries from this module are the source material for Module 4. Students load their library into Ableton Live 11 in Wk 10 (Lab 1, audio editing) and build instruments from it in Wk 11 (Lab 2, sampling).
+The libraries from this module are the source material for Module 4. Students load their library into Ableton Live 11 in Wk 11 (Lab 1, audio editing) and build instruments from it in Wk 12 (Lab 2, sampling).
 
 ### retrospective
 
@@ -645,4 +645,4 @@ After Module 3 ends, write a short retrospective: what went well, what didn't, p
 
 ## what follows
 
-Module 4 (Wks 10 to 13) is in Ableton Live 11: the DAW environment, audio editing, sampling, and mixing, then a transferable-concepts session in Adobe Audition on Mon Wk 13. Students build their final project from their own recorded material, starting with the library from this module.
+Module 4 (Wks 11 to 14) is in Ableton Live 11: the DAW environment, audio editing, sampling, and mixing. Students build their final project from their own recorded material, starting with the library from this module.
