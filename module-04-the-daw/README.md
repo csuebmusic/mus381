@@ -368,7 +368,7 @@ Synthesis (oscillators, filters, envelopes, LFOs, the instruments this module le
 
 ### what gets logged
 
-After Module 4 ends, write a short retrospective: pacing, what worked, and what the final-project drafts showed about which skills stuck.
+After Module 4 ends, write a short retrospective: pacing, what worked, and what the final-project draft showed about which skills stuck.
 
 ---
 
