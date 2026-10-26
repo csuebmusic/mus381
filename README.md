@@ -38,7 +38,7 @@ Digital audio fundamentals, then editing, mixing, and dynamics (compression and 
 - [peer listening: Project 1](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/listening/peer-project-01.html) (peer listening)
 - [Project 1: musique concrète](https://csuebmusic.github.io/mus381/module-02-audio-editing-mixing/projects/project-01-musique-concrete.html) (Project 1)
 
-### Module 3: recording, sample prep & library building · Wks 6–9
+### Module 3: recording, sample prep & library building · Wks 6–10
 
 Students record their own sound in the lab and on their phones, prepare it in Audacity, and learn the mixer (the Toft ATB) through a live-sound scenario and a studio-recording walkthrough of MB2508. The deliverable is the midterm: Project 2, a sample library of the student's own prepped sounds, and the terminology exam in the same session.
 
@@ -79,7 +79,7 @@ README.md                            this file: the teaching-side map
 syllabus.html                        student-facing syllabus (served through Pages)
 module-01-fluency/                   Wk 1 · computer & studio fluency
 module-02-audio-editing-mixing/      Wks 2–5 · Audacity: editing, mixing, dynamics → Project 1
-module-03-recording/                 Wks 6–9 · recording, the mixer, sample library → midterm
+module-03-recording/                 Wks 6–10 · recording, the mixer, sample library → midterm
 module-04-the-daw/                   Wks 11–14 · Ableton Live → final project
 exams/                               midterm and final: administration notes, exam, answer key
 assets/                              shared CSS, audio, images, videos
